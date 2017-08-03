@@ -1,0 +1,17 @@
+Key contributors to the development of the Cross Town Improvement Project (C-TIP) Drayage Optimization Proof of Concept Application, and development of the documentation include:
+
+From Productivity Apex, Inc.
+	Sam Fayez (Director, Transportation and Supply Chain Solution)
+	Fabio Zavagnini (Transportation and Business Analyst)
+	Ahmed El-Nashar (Operations Research Expert)
+	Joseph Tapia (Lead Software Developer)
+	Alex Hijab (Software Developer)
+
+
+The developers also wish to acknowledge several contributors to this study:
+
+
+From the U.S. Department of Transportation: Randy Butler (Transportation Specialist, Freight Technology and Operations Office of Freight Management and Operations)
+From Jamac Logistics, Inc.: Bill Pallme (Owner) and Jay Pallme (Manager) for the effort and collaboration on this project
+From TomTom Telematics: Dante Passaro (International Sales Development Manager)
+Addtional thanks to: Dan Pallme (Freight Transportation Specialist) for his support and effort on this project 

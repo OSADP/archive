@@ -1,0 +1,28 @@
+This solution does not accepts input data files for automated/batch optimization tasks. Plan configurations are defined programatically, and custom data import mechanism can be build on top the provided code. Optimized solutions are provided at run time and are not persisted to a data medium.   
+Below is a representation of the key objects accepted by the optimzation algorithm (programatically):
+
+INPUT===============================
+The Drayage Optimizer requires three inputs, a list of drivers to schedule, a default driver, and a list of jobs to schedule.  The objects are defined by the following properties:
+	Driver:
+		DisplayName - What the driver is identified by in the output (string)
+		StartingLocation - A location object representing the drivers home (string)
+		EarliestStartTime - The earliest time that a driver may start work (timespan)
+		AvailableDrivingHours - The number of hours a driver can driver during one 24 hour window ( integer (hours))
+		AvailableDutyHours - The number of continuous hours that a driver may work before a scheduled break (integer (hours))
+		AvailableDrivingTime - A TimeSpan representing the AvailableDrivingHoursAvailableDutyTime - A TimeSpan representing the AvailableDutyHours (timespan)
+
+	Job:
+		DisplayName - What the job is identified by in the output (string)
+		EquipmentConfiguration - The Chassis, ChassisOwner, Container, and ContainerOwner required to satisfy the job (string), is loaded (boolean)
+		RouteStops - 
+		- List of the locations (latitude and longitude coordinates (doubles)), 
+		- time window (Timespan), 
+		- stop delay (nullable timespam), 
+		- and stop actions (No action, pickup chassis, dropoff chassis, pickup load, dropoff load, pickup empty, dropoff empty, pickup load with chassis, dropoff load with chassis, pickup empty with chassis, dropoff empty with chassis, live load, live unload (string)).
+  
+
+OUTPUT==============================
+The Drayage Optimizer returns a Solution object, which consists of the following properties:
+	RouteSolutions - A list of Solution objects, with one per driver scheduled
+	UnassignedJobNodes - A list of any jobs that were unable to be assigned 
+	RouteStatistics - A statistics object representing time spend in various activities and distance travelled

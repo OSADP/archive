@@ -1,0 +1,35 @@
+LICENSE:
+
+    Copyright 2014 Productivity Apex Inc.
+        http:www.productivityapex.com/
+ 
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+ 
+        http:www.apache.org/licenses/LICENSE-2.0
+ 
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+
+Projects Included in this Solution:
+
+ConsoleDemo - Executable - Sample Application Demonstrating Usage. Includes Ninject open source package for Dependency Injection
+
+Packages - Open source and NuGet packages used in creating the Drayage Optimization Library [Moq.4.2.1402.2112, Ninject.3.0.1.10, Ninject.3.2.2.0, ninject.extensions.conventions.3.2.0.0, Ninject.MockingKernel.3.2.0.0, Ninject.MockingKernel.Moq.3.2.0.0, NUnit.2.6.3]
+
+PAI.Core - Provides basic core objects and their implementation that are accessed across the other projects of the class library
+
+PAI.CTIP.Optimization - Optimization Algorithm
+Provides all the supporting objects, methods, and services necessary to transform the supplied list of drivers and jobs into an optimized route schedule.  
+
+Tests - An NUnit Unit Test project that confirms the optimization algorithm is operating as expected and is producing the correct output.
+
+==============================================================================================================
+
+The Drayage Optimizer will produce a solution set that represents the best determined sequence of stops, minimizing the total time for execution based upon Locations, Divers, Jobs and Routes provided to the algorithm.
+The solution is built leveraging v4.5 of the .NET Framework.  The optimization class library has a small footprint, and should run successfully on any computer capable of supporting .NET v4.5.  
