@@ -1,0 +1,27 @@
+Key contributors to the development of theLos Angeles-Gateway Freight Advanced Traveler Information System, and development of the documentation include:
+
+From Cambridge Systematics, Inc.
+	Mark A. Jensen (Project Manager)
+	Roger Schiller (Deputy Project Manager)
+From Productivity Apex, Inc.
+	Sam Fayez (Director, Transportation and Supply Chain Solution)
+	Fabio Zavagnini (Transportation and Business Analyst)
+	Ahmed El-Nashar (Operations Research Expert)
+	Joseph Tapia (Lead Software Developer)
+	Alex Hijab (Software Developer)
+	Chris Strube (Software Developer)
+
+
+The developers also wish to acknowledge several contributors to this study:
+
+
+From the U.S. Department of Transportation: Randy Butler (Transportation Specialist, Freight Technology and Operations Office of Freight Management and Operations)
+From Port Logistics Group, Inc.: Michael Johnson (Truck Operations Manager) and all PLG staff for their effort and collaboration on this project
+From Yusen Terminals, Inc.: Douglas Hansen (GM, Startegic Planning) and Dan Blackburn (IT Manager) for their support and effort on this project 
+From TomTom Telematics: Dante Passaro (International Sales Development Manager)
+From Acyclica: Daniel Benhammou (President & Chief Engineer) 
+From Arellano Associates: Susan A. DeSantis (Stakeholder outreach) for her effort and collaboration on this project 
+From Gateway Cities Council of Governments: Jerry Wood (Director of Transportation and Engineering)
+
+
+Addtional thanks to: HERE MAPS, the Gateway Cities Council of Governments, and the Port of LA
