@@ -1,0 +1,884 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IDTO.DataProcessor.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager">
+            <summary>Shim type of IDTO.DataProcessor.Common.BaseProcManager</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.#ctor(IDTO.DataProcessor.Common.BaseProcManager)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.ConstructorIProcessWorker">
+            <summary>Sets the shim of BaseProcManager.BaseProcManager(IProcessWorker procWorker)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.IsRunning">
+            <summary>Sets the shim of BaseProcManager.IsRunning()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.ProcessWorkerGet">
+            <summary>Sets the shim of BaseProcManager.get_ProcessWorker()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.Start">
+            <summary>Sets the shim of BaseProcManager.Start()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.Stop">
+            <summary>Sets the shim of BaseProcManager.Stop()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.AllInstances.IsRunning">
+            <summary>Sets the shim of BaseProcManager.IsRunning()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.AllInstances.ProcessWorkerGet">
+            <summary>Sets the shim of BaseProcManager.get_ProcessWorker()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.AllInstances.Start">
+            <summary>Sets the shim of BaseProcManager.Start()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcManager.AllInstances.Stop">
+            <summary>Sets the shim of BaseProcManager.Stop()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker">
+            <summary>Shim type of IDTO.DataProcessor.Common.BaseProcWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.#ctor(IDTO.DataProcessor.Common.BaseProcWorker)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.Bind(IDTO.DataProcessor.Common.IProcessWorker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.Constructor">
+            <summary>Sets the shim of BaseProcWorker.BaseProcWorker()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.DiagnosticsGet">
+            <summary>Sets the shim of BaseProcWorker.get_Diagnostics()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.DiagnosticsSetIIdtoDiagnostics">
+            <summary>Sets the shim of BaseProcWorker.set_Diagnostics(IIdtoDiagnostics value)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.Run">
+            <summary>Sets the shim of BaseProcWorker.Run()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.SecondsBetweenIterationsGet">
+            <summary>Sets the shim of BaseProcWorker.get_SecondsBetweenIterations()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.SecondsBetweenIterationsSetInt32">
+            <summary>Sets the shim of BaseProcWorker.set_SecondsBetweenIterations(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.Setup">
+            <summary>Sets the shim of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.StopProcessingGet">
+            <summary>Sets the shim of BaseProcWorker.get_StopProcessing()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.StopProcessingSetBoolean">
+            <summary>Sets the shim of BaseProcWorker.set_StopProcessing(Boolean value)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.AllInstances.DiagnosticsGet">
+            <summary>Sets the shim of BaseProcWorker.get_Diagnostics()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.AllInstances.DiagnosticsSetIIdtoDiagnostics">
+            <summary>Sets the shim of BaseProcWorker.set_Diagnostics(IIdtoDiagnostics value)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.AllInstances.Run">
+            <summary>Sets the shim of BaseProcWorker.Run()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.AllInstances.SecondsBetweenIterationsGet">
+            <summary>Sets the shim of BaseProcWorker.get_SecondsBetweenIterations()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.AllInstances.SecondsBetweenIterationsSetInt32">
+            <summary>Sets the shim of BaseProcWorker.set_SecondsBetweenIterations(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.AllInstances.Setup">
+            <summary>Sets the shim of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.AllInstances.StopProcessingGet">
+            <summary>Sets the shim of BaseProcWorker.get_StopProcessing()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.ShimBaseProcWorker.AllInstances.StopProcessingSetBoolean">
+            <summary>Sets the shim of BaseProcWorker.set_StopProcessing(Boolean value)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.Common.Fakes.StubBaseProcManager">
+            <summary>Stub type of IDTO.DataProcessor.Common.BaseProcManager</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubBaseProcManager.#ctor(IDTO.DataProcessor.Common.IProcessWorker)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubBaseProcManager.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseProcManager</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.StubBaseProcManager.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.StubBaseProcManager.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.StubBaseProcManager.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker">
+            <summary>Stub type of IDTO.DataProcessor.Common.BaseProcWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseProcWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker.PerformWork">
+            <summary>Sets the stub of BaseProcWorker.PerformWork()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker.PerformWork01">
+            <summary>Sets the stub of BaseProcWorker.PerformWork()</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker.Setup">
+            <summary>Sets the stub of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker.Setup01">
+            <summary>Sets the stub of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.StubBaseProcWorker.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker">
+            <summary>Stub type of IDTO.DataProcessor.Common.IProcessWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.#ctor">
+            <summary>Initializes a new instance of type StubIProcessWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.AttachBackingFieldToDiagnostics">
+            <summary>Attaches delegates to emulate StubIProcessWorker.Diagnostics as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.AttachBackingFieldToSecondsBetweenIterations">
+            <summary>Attaches delegates to emulate StubIProcessWorker.SecondsBetweenIterations as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.AttachBackingFieldToStopProcessing">
+            <summary>Attaches delegates to emulate StubIProcessWorker.StopProcessing as a property with a backing field.</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.DiagnosticsGet">
+            <summary>Sets the stub of IProcessWorker.get_Diagnostics()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.DiagnosticsSetIIdtoDiagnostics">
+            <summary>Sets the stub of IProcessWorker.set_Diagnostics(IIdtoDiagnostics value)</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.idtodp::IDTO#DataProcessor#Common#IProcessWorker#Run">
+            <summary>Sets the stub of IProcessWorker.Run()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.Run">
+            <summary>Sets the stub of IProcessWorker.Run()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.SecondsBetweenIterationsGet">
+            <summary>Sets the stub of IProcessWorker.get_SecondsBetweenIterations()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.SecondsBetweenIterationsSetInt32">
+            <summary>Sets the stub of IProcessWorker.set_SecondsBetweenIterations(Int32 value)</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.StopProcessingGet">
+            <summary>Sets the stub of IProcessWorker.get_StopProcessing()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.StopProcessingSetBoolean">
+            <summary>Sets the stub of IProcessWorker.set_StopProcessing(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.idtodp::IDTO#DataProcessor#Common#IProcessWorker#Diagnostics">
+            <summary>Sets the stub of IProcessWorker.get_Diagnostics()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.idtodp::IDTO#DataProcessor#Common#IProcessWorker#SecondsBetweenIterations">
+            <summary>Sets the stub of IProcessWorker.get_SecondsBetweenIterations()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Common.Fakes.StubIProcessWorker.idtodp::IDTO#DataProcessor#Common#IProcessWorker#StopProcessing">
+            <summary>Sets the stub of IProcessWorker.get_StopProcessing()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.Fakes.ShimWorkerRole">
+            <summary>Shim type of IDTO.DataProcessor.WorkerRole</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Fakes.ShimWorkerRole.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Fakes.ShimWorkerRole.#ctor(IDTO.DataProcessor.WorkerRole)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Fakes.ShimWorkerRole.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Fakes.ShimWorkerRole.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.ConfigureDiagnosticMonitor">
+            <summary>Sets the shim of WorkerRole.ConfigureDiagnosticMonitor()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.Constructor">
+            <summary>Sets the shim of WorkerRole.WorkerRole()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.DiagnosticsConfig_OnStart">
+            <summary>Sets the shim of WorkerRole.DiagnosticsConfig_OnStart()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.GetBusSchedules">
+            <summary>Sets the shim of WorkerRole.GetBusSchedules()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.GetSleepTimeForWorkerString">
+            <summary>Sets the shim of WorkerRole.GetSleepTimeForWorker(String workerName)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.HasNonExemptConfigurationChangesReadOnlyCollectionOfRoleEnvironmentChange">
+            <summary>Sets the shim of WorkerRole.HasNonExemptConfigurationChanges(ReadOnlyCollection`1&lt;RoleEnvironmentChange&gt; chgs)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.OnStart">
+            <summary>Sets the shim of WorkerRole.OnStart()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.OnStop">
+            <summary>Sets the shim of WorkerRole.OnStop()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.RoleEnvironmentChangedObjectRoleEnvironmentChangedEventArgs">
+            <summary>Sets the shim of WorkerRole.RoleEnvironmentChanged(Object sender, RoleEnvironmentChangedEventArgs e)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.RoleEnvironmentChangingObjectRoleEnvironmentChangingEventArgs">
+            <summary>Sets the shim of WorkerRole.RoleEnvironmentChanging(Object sender, RoleEnvironmentChangingEventArgs e)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.Run">
+            <summary>Sets the shim of WorkerRole.Run()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.SetUpBindingForDiagnostics">
+            <summary>Sets the shim of WorkerRole.SetUpBindingForDiagnostics()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.SetupIoCBindings">
+            <summary>Sets the shim of WorkerRole.SetupIoCBindings()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.StaticConstructor">
+            <summary>Sets the shim of WorkerRole.WorkerRole()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole._HasNonExemptConfigurationChangesb__0RoleEnvironmentConfigurationSettingChange">
+            <summary>Sets the shim of WorkerRole.&lt;HasNonExemptConfigurationChanges&gt;b__0(RoleEnvironmentConfigurationSettingChange x)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.ConfigureDiagnosticMonitor">
+            <summary>Sets the shim of WorkerRole.ConfigureDiagnosticMonitor()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.DiagnosticsConfig_OnStart">
+            <summary>Sets the shim of WorkerRole.DiagnosticsConfig_OnStart()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.GetBusSchedules">
+            <summary>Sets the shim of WorkerRole.GetBusSchedules()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.GetSleepTimeForWorkerString">
+            <summary>Sets the shim of WorkerRole.GetSleepTimeForWorker(String workerName)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.HasNonExemptConfigurationChangesReadOnlyCollectionOfRoleEnvironmentChange">
+            <summary>Sets the shim of WorkerRole.HasNonExemptConfigurationChanges(ReadOnlyCollection`1&lt;RoleEnvironmentChange&gt; chgs)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.OnStart">
+            <summary>Sets the shim of WorkerRole.OnStart()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.OnStop">
+            <summary>Sets the shim of WorkerRole.OnStop()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.RoleEnvironmentChangedObjectRoleEnvironmentChangedEventArgs">
+            <summary>Sets the shim of WorkerRole.RoleEnvironmentChanged(Object sender, RoleEnvironmentChangedEventArgs e)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.RoleEnvironmentChangingObjectRoleEnvironmentChangingEventArgs">
+            <summary>Sets the shim of WorkerRole.RoleEnvironmentChanging(Object sender, RoleEnvironmentChangingEventArgs e)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.Run">
+            <summary>Sets the shim of WorkerRole.Run()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.ShimWorkerRole.AllInstances.SetUpBindingForDiagnostics">
+            <summary>Sets the shim of WorkerRole.SetUpBindingForDiagnostics()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.Fakes.StubWorkerRole">
+            <summary>Stub type of IDTO.DataProcessor.WorkerRole</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Fakes.StubWorkerRole.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Fakes.StubWorkerRole.InitializeStub">
+            <summary>Initializes a new instance of type StubWorkerRole</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Fakes.StubWorkerRole.OnStart">
+            <summary>Sets the stub of WorkerRole.OnStart()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Fakes.StubWorkerRole.OnStart01">
+            <summary>Sets the stub of WorkerRole.OnStart()</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Fakes.StubWorkerRole.OnStop">
+            <summary>Sets the stub of WorkerRole.OnStop()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Fakes.StubWorkerRole.OnStop01">
+            <summary>Sets the stub of WorkerRole.OnStop()</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.Fakes.StubWorkerRole.Run">
+            <summary>Sets the stub of WorkerRole.Run()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.Fakes.StubWorkerRole.Run01">
+            <summary>Sets the stub of WorkerRole.Run()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.StubWorkerRole.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.StubWorkerRole.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.Fakes.StubWorkerRole.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorManager">
+            <summary>Shim type of IDTO.DataProcessor.TConnectMonitor.TConnectMonitorManager</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorManager.#ctor(IDTO.DataProcessor.TConnectMonitor.TConnectMonitorManager)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorManager.ConstructorListOfIBusSchedule">
+            <summary>Sets the shim of TConnectMonitorManager.TConnectMonitorManager(List`1&lt;IBusSchedule&gt; busSchedulerAPIs)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorManager.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker">
+            <summary>Shim type of IDTO.DataProcessor.TConnectMonitor.TConnectMonitorWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.#ctor(IDTO.DataProcessor.TConnectMonitor.TConnectMonitorWorker)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.Bind(IDTO.DataProcessor.Common.IProcessWorker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.ConstructorListOfIBusSchedule">
+            <summary>Sets the shim of TConnectMonitorWorker.TConnectMonitorWorker(List`1&lt;IBusSchedule&gt; busSchedulerAPIs)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.CreateNewTConnectRequestIfNeededIUnitOfWorkTConnectDateTimeStep">
+            <summary>Sets the shim of TConnectMonitorWorker.CreateNewTConnectRequestIfNeeded(IUnitOfWork Uow, TConnect tConnect, DateTime newEta, Step outboundStep)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.GetEtaForTConnectAsyncIUnitOfWorkTConnectListOfIBusSchedule">
+            <summary>Sets the shim of TConnectMonitorWorker.GetEtaForTConnectAsync(IUnitOfWork Uow, TConnect mt, List`1&lt;IBusSchedule&gt; busSchedulerAPIs)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.GetOrCreateTConnectedVehicleKeyIUnitOfWorkStepInt32Out">
+            <summary>Sets the shim of TConnectMonitorWorker.GetOrCreateTConnectedVehicleKey(IUnitOfWork Uow, Step outboundStep, Int32&amp; acceptedHoldMinutes)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.LogTripEventIfDifferentFromLastIUnitOfWorkInt32String">
+            <summary>Sets the shim of TConnectMonitorWorker.LogTripEventIfDifferentFromLast(IUnitOfWork Uow, Int32 tripId, String message)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.MonitorLocationTimesTConnect">
+            <summary>Sets the shim of TConnectMonitorWorker.MonitorLocationTimes(TConnect mt)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.MonitorTConnectIUnitOfWorkTConnectDateTime">
+            <summary>Sets the shim of TConnectMonitorWorker.MonitorTConnect(IUnitOfWork Uow, TConnect mt, DateTime newEta)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.MonitorTConnectsIUnitOfWork">
+            <summary>Sets the shim of TConnectMonitorWorker.MonitorTConnects(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.MonitorTravelerLocationTConnect">
+            <summary>Sets the shim of TConnectMonitorWorker.MonitorTravelerLocation(TConnect mt)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.PerformWork">
+            <summary>Sets the shim of TConnectMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.SendTripStartNotificationsIUnitOfWork">
+            <summary>Sets the shim of TConnectMonitorWorker.SendTripStartNotifications(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.SetupNewTConnectsIUnitOfWork">
+            <summary>Sets the shim of TConnectMonitorWorker.SetupNewTConnects(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.UpdateExistingTConnectRequestIUnitOfWorkTConnectDateTimeTConnectRequest">
+            <summary>Sets the shim of TConnectMonitorWorker.UpdateExistingTConnectRequest(IUnitOfWork Uow, TConnect tConnect, DateTime newEta, TConnectRequest tr)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances.CreateNewTConnectRequestIfNeededIUnitOfWorkTConnectDateTimeStep">
+            <summary>Sets the shim of TConnectMonitorWorker.CreateNewTConnectRequestIfNeeded(IUnitOfWork Uow, TConnect tConnect, DateTime newEta, Step outboundStep)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances.GetOrCreateTConnectedVehicleKeyIUnitOfWorkStepInt32Out">
+            <summary>Sets the shim of TConnectMonitorWorker.GetOrCreateTConnectedVehicleKey(IUnitOfWork Uow, Step outboundStep, Int32&amp; acceptedHoldMinutes)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances.MonitorLocationTimesTConnect">
+            <summary>Sets the shim of TConnectMonitorWorker.MonitorLocationTimes(TConnect mt)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances.MonitorTConnectIUnitOfWorkTConnectDateTime">
+            <summary>Sets the shim of TConnectMonitorWorker.MonitorTConnect(IUnitOfWork Uow, TConnect mt, DateTime newEta)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances.MonitorTConnectsIUnitOfWork">
+            <summary>Sets the shim of TConnectMonitorWorker.MonitorTConnects(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances.MonitorTravelerLocationTConnect">
+            <summary>Sets the shim of TConnectMonitorWorker.MonitorTravelerLocation(TConnect mt)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances.PerformWork">
+            <summary>Sets the shim of TConnectMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances.SendTripStartNotificationsIUnitOfWork">
+            <summary>Sets the shim of TConnectMonitorWorker.SendTripStartNotifications(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.ShimTConnectMonitorWorker.AllInstances.SetupNewTConnectsIUnitOfWork">
+            <summary>Sets the shim of TConnectMonitorWorker.SetupNewTConnects(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorManager">
+            <summary>Stub type of IDTO.DataProcessor.TConnectMonitor.TConnectMonitorManager</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorManager.#ctor(System.Collections.Generic.List{IDTO.BusScheduleInterface.IBusSchedule})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorManager.InitializeStub">
+            <summary>Initializes a new instance of type StubTConnectMonitorManager</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorManager.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorManager.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorManager.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker">
+            <summary>Stub type of IDTO.DataProcessor.TConnectMonitor.TConnectMonitorWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker.#ctor(System.Collections.Generic.List{IDTO.BusScheduleInterface.IBusSchedule})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker.InitializeStub">
+            <summary>Initializes a new instance of type StubTConnectMonitorWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker.PerformWork">
+            <summary>Sets the stub of TConnectMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker.PerformWork01">
+            <summary>Sets the stub of TConnectMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker.Setup">
+            <summary>Sets the stub of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker.Setup01">
+            <summary>Sets the stub of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TConnectMonitor.Fakes.StubTConnectMonitorWorker.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker">
+            <summary>Shim type of IDTO.DataProcessor.TravelerMonitor.TravelerMonitorWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.#ctor(IDTO.DataProcessor.TravelerMonitor.TravelerMonitorWorker)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.Bind(IDTO.DataProcessor.Common.IProcessWorker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.Constructor">
+            <summary>Sets the shim of TravelerMonitorWorker.TravelerMonitorWorker()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.PerformWork">
+            <summary>Sets the shim of TravelerMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.SendEmailsAtEndOfTripIUnitOfWork">
+            <summary>Sets the shim of TravelerMonitorWorker.SendEmailsAtEndOfTrip(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.SendInactivityEmailsIUnitOfWork">
+            <summary>Sets the shim of TravelerMonitorWorker.SendInactivityEmails(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.SendTConnectEmailIUnitOfWork">
+            <summary>Sets the shim of TravelerMonitorWorker.SendTConnectEmail(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.StaticConstructor">
+            <summary>Sets the shim of TravelerMonitorWorker.TravelerMonitorWorker()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.sendEmailStringStringString">
+            <summary>Sets the shim of TravelerMonitorWorker.sendEmail(String emailAddress, String subject, String html)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.AllInstances.PerformWork">
+            <summary>Sets the shim of TravelerMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.AllInstances.SendEmailsAtEndOfTripIUnitOfWork">
+            <summary>Sets the shim of TravelerMonitorWorker.SendEmailsAtEndOfTrip(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.AllInstances.SendInactivityEmailsIUnitOfWork">
+            <summary>Sets the shim of TravelerMonitorWorker.SendInactivityEmails(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.AllInstances.SendTConnectEmailIUnitOfWork">
+            <summary>Sets the shim of TravelerMonitorWorker.SendTConnectEmail(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.ShimTravelerMonitorWorker.AllInstances.sendEmailStringStringString">
+            <summary>Sets the shim of TravelerMonitorWorker.sendEmail(String emailAddress, String subject, String html)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker">
+            <summary>Stub type of IDTO.DataProcessor.TravelerMonitor.TravelerMonitorWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker.InitializeStub">
+            <summary>Initializes a new instance of type StubTravelerMonitorWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker.PerformWork">
+            <summary>Sets the stub of TravelerMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker.PerformWork01">
+            <summary>Sets the stub of TravelerMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker.Setup">
+            <summary>Sets the stub of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker.Setup01">
+            <summary>Sets the stub of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.TravelerMonitor.Fakes.StubTravelerMonitorWorker.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation">
+            <summary>Shim type of IDTO.DataProcessor.VehicleLocationMonitor.CabsVehicleLocation</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.#ctor(IDTO.DataProcessor.VehicleLocationMonitor.CabsVehicleLocation)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.Bind(IDTO.DataProcessor.VehicleLocationMonitor.IVehicleLocation)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.CalculateEstimatedTimeOfArrivalAsyncTConnectIUnitOfWork">
+            <summary>Sets the shim of CabsVehicleLocation.CalculateEstimatedTimeOfArrivalAsync(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.ConstructorIBusSchedule">
+            <summary>Sets the shim of CabsVehicleLocation.CabsVehicleLocation(IBusSchedule busTimeApi)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.GetInboundVehicleNameTConnectIUnitOfWork">
+            <summary>Sets the shim of CabsVehicleLocation.GetInboundVehicleName(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.ProviderNameGet">
+            <summary>Sets the shim of CabsVehicleLocation.get_ProviderName()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.AllInstances.CalculateEstimatedTimeOfArrivalAsyncTConnectIUnitOfWork">
+            <summary>Sets the shim of CabsVehicleLocation.CalculateEstimatedTimeOfArrivalAsync(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.AllInstances.GetInboundVehicleNameTConnectIUnitOfWork">
+            <summary>Sets the shim of CabsVehicleLocation.GetInboundVehicleName(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCabsVehicleLocation.AllInstances.ProviderNameGet">
+            <summary>Sets the shim of CabsVehicleLocation.get_ProviderName()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation">
+            <summary>Shim type of IDTO.DataProcessor.VehicleLocationMonitor.CapTransVehicleLocation</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.#ctor(IDTO.DataProcessor.VehicleLocationMonitor.CapTransVehicleLocation)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.Bind(IDTO.DataProcessor.VehicleLocationMonitor.IVehicleLocation)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.CalcPointBEtaFromPointAGeoCoordinateDateTimeGeoCoordinate">
+            <summary>Sets the shim of CapTransVehicleLocation.CalcPointBEtaFromPointA(GeoCoordinate PointB, DateTime TimeAtPointA, GeoCoordinate PointA)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.CalculateEstimatedTimeOfArrivalAsyncTConnectIUnitOfWork">
+            <summary>Sets the shim of CapTransVehicleLocation.CalculateEstimatedTimeOfArrivalAsync(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.Constructor">
+            <summary>Sets the shim of CapTransVehicleLocation.CapTransVehicleLocation()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.GetCoordForInboundStepTConnectIUnitOfWork">
+            <summary>Sets the shim of CapTransVehicleLocation.GetCoordForInboundStep(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.GetInboundVehicleNameTConnectIUnitOfWork">
+            <summary>Sets the shim of CapTransVehicleLocation.GetInboundVehicleName(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.ProviderNameGet">
+            <summary>Sets the shim of CapTransVehicleLocation.get_ProviderName()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.AllInstances.CalculateEstimatedTimeOfArrivalAsyncTConnectIUnitOfWork">
+            <summary>Sets the shim of CapTransVehicleLocation.CalculateEstimatedTimeOfArrivalAsync(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.AllInstances.GetCoordForInboundStepTConnectIUnitOfWork">
+            <summary>Sets the shim of CapTransVehicleLocation.GetCoordForInboundStep(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.AllInstances.GetInboundVehicleNameTConnectIUnitOfWork">
+            <summary>Sets the shim of CapTransVehicleLocation.GetInboundVehicleName(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimCapTransVehicleLocation.AllInstances.ProviderNameGet">
+            <summary>Sets the shim of CapTransVehicleLocation.get_ProviderName()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorManager">
+            <summary>Shim type of IDTO.DataProcessor.VehicleLocationMonitor.VehicleLocationMonitorManager</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorManager.#ctor(IDTO.DataProcessor.VehicleLocationMonitor.VehicleLocationMonitorManager)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorManager.Constructor">
+            <summary>Sets the shim of VehicleLocationMonitorManager.VehicleLocationMonitorManager()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorManager.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker">
+            <summary>Shim type of IDTO.DataProcessor.VehicleLocationMonitor.VehicleLocationMonitorWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.#ctor(IDTO.DataProcessor.VehicleLocationMonitor.VehicleLocationMonitorWorker)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.Bind(IDTO.DataProcessor.Common.IProcessWorker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.Constructor">
+            <summary>Sets the shim of VehicleLocationMonitorWorker.VehicleLocationMonitorWorker()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.PerformWork">
+            <summary>Sets the shim of VehicleLocationMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.ResolveVehicleLocationProviderTypeTConnectIUnitOfWorkListOfIBusSchedule">
+            <summary>Sets the shim of VehicleLocationMonitorWorker.ResolveVehicleLocationProviderType(TConnect mt, IUnitOfWork Uow, List`1&lt;IBusSchedule&gt; busScheduleAPIs)</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.UpdateEstimatedArrivalsIUnitOfWork">
+            <summary>Sets the shim of VehicleLocationMonitorWorker.UpdateEstimatedArrivals(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.AllInstances.PerformWork">
+            <summary>Sets the shim of VehicleLocationMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.ShimVehicleLocationMonitorWorker.AllInstances.UpdateEstimatedArrivalsIUnitOfWork">
+            <summary>Sets the shim of VehicleLocationMonitorWorker.UpdateEstimatedArrivals(IUnitOfWork Uow)</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCabsVehicleLocation">
+            <summary>Stub type of IDTO.DataProcessor.VehicleLocationMonitor.CabsVehicleLocation</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCabsVehicleLocation.#ctor(IDTO.BusScheduleInterface.IBusSchedule)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCabsVehicleLocation.InitializeStub">
+            <summary>Initializes a new instance of type StubCabsVehicleLocation</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCabsVehicleLocation.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCabsVehicleLocation.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCabsVehicleLocation.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCapTransVehicleLocation">
+            <summary>Stub type of IDTO.DataProcessor.VehicleLocationMonitor.CapTransVehicleLocation</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCapTransVehicleLocation.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCapTransVehicleLocation.InitializeStub">
+            <summary>Initializes a new instance of type StubCapTransVehicleLocation</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCapTransVehicleLocation.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCapTransVehicleLocation.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubCapTransVehicleLocation.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubIVehicleLocation">
+            <summary>Stub type of IDTO.DataProcessor.VehicleLocationMonitor.IVehicleLocation</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubIVehicleLocation.#ctor">
+            <summary>Initializes a new instance of type StubIVehicleLocation</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubIVehicleLocation.CalculateEstimatedTimeOfArrivalAsyncTConnectIUnitOfWork">
+            <summary>Sets the stub of IVehicleLocation.CalculateEstimatedTimeOfArrivalAsync(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubIVehicleLocation.GetInboundVehicleNameTConnectIUnitOfWork">
+            <summary>Sets the stub of IVehicleLocation.GetInboundVehicleName(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubIVehicleLocation.idtodp::IDTO#DataProcessor#VehicleLocationMonitor#IVehicleLocation#CalculateEstimatedTimeOfArrivalAsync(IDTO.Entity.Models.TConnect,Repository.IUnitOfWork)">
+            <summary>Sets the stub of IVehicleLocation.CalculateEstimatedTimeOfArrivalAsync(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubIVehicleLocation.idtodp::IDTO#DataProcessor#VehicleLocationMonitor#IVehicleLocation#GetInboundVehicleName(IDTO.Entity.Models.TConnect,Repository.IUnitOfWork)">
+            <summary>Sets the stub of IVehicleLocation.GetInboundVehicleName(TConnect tConnect, IUnitOfWork Uow)</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubIVehicleLocation.ProviderNameGet">
+            <summary>Sets the stub of IVehicleLocation.get_ProviderName()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubIVehicleLocation.idtodp::IDTO#DataProcessor#VehicleLocationMonitor#IVehicleLocation#ProviderName">
+            <summary>Sets the stub of IVehicleLocation.get_ProviderName()</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorManager">
+            <summary>Stub type of IDTO.DataProcessor.VehicleLocationMonitor.VehicleLocationMonitorManager</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorManager.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorManager.InitializeStub">
+            <summary>Initializes a new instance of type StubVehicleLocationMonitorManager</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorManager.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorManager.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorManager.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker">
+            <summary>Stub type of IDTO.DataProcessor.VehicleLocationMonitor.VehicleLocationMonitorWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker.InitializeStub">
+            <summary>Initializes a new instance of type StubVehicleLocationMonitorWorker</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker.PerformWork">
+            <summary>Sets the stub of VehicleLocationMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker.PerformWork01">
+            <summary>Sets the stub of VehicleLocationMonitorWorker.PerformWork()</summary>
+        </member>
+        <member name="M:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker.Setup">
+            <summary>Sets the stub of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="F:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker.Setup01">
+            <summary>Sets the stub of BaseProcWorker.Setup()</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.DataProcessor.VehicleLocationMonitor.Fakes.StubVehicleLocationMonitorWorker.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

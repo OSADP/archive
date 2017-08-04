@@ -1,0 +1,96 @@
+﻿@model IDTO.TravelerPortal.Models.LoginViewModel
+
+<div id="PartialLoginForm" style="padding-right:1.5em">
+    @using (Html.BeginForm("LoginPartial", "Account", FormMethod.Post, new { id = "login" }))
+    { 
+        @Html.AntiForgeryToken()
+        <table id="PartialloginForm" align="center">
+            <tr>
+                <td>
+                    <table align="center" style="width:90%">
+                        <tr>
+                            <td align="left" valign="top" style="font-size:24px">
+                                Login
+                            </td>
+                        </tr>
+                        <tr style="height:10px">
+                            <td>
+                            </td>
+                        </tr>
+                        <tr> 
+                            <td align="left">
+                                Don't have an account? <a href="#" onclick="document.getElementById('StudyTerms').style.visibility = 'visible'; document.getElementById('StudyTermsContent').scrollTop = 0;" style="color:white ; text-decoration: underline">Register</a>
+                            </td>
+                        </tr>
+                        <tr style="height:10px"><td></td></tr>
+                        <tr>
+                            <td id="test" style="color:red" align="left">
+                                @Html.ValidationSummary(true)
+                            </td>
+                        </tr>
+                        <tr style="height:10px"><td></td></tr>
+                        <tr>
+                            <td align="left">
+                                @Html.TextBoxFor(m => m.Email, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.Email).ToHtmlString()) })
+                                @Html.ValidationMessageFor(m => m.Email)
+                            </td>
+                        </tr>
+                        <tr style="height:20px"><td></td></tr>
+                        <tr>
+                            <td align="left">
+                                @Html.PasswordFor(m => m.Password, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.Password).ToHtmlString()) })
+                                @Html.ValidationMessageFor(m => m.Password)
+                            </td>
+                        </tr>
+                        <tr style="height:25px"><td align="left" valign="bottom">@Html.ActionLink("Forgot your password?", "ForgotPassword", "Account", new { }, new { @style = "color:white ; text-decoration: underline" })</td></tr>
+                        <tr style="height:15px"><td></td></tr>
+                        <tr>
+                            <td align="left">
+                                @Html.CheckBoxFor(m => m.RememberMe)
+                                @Html.LabelFor(m => m.RememberMe)
+                            </td>
+                        </tr>
+                        <tr style="height:10px"><td></td></tr>
+                        <tr>
+                            <td align="center">
+                                <input id="PartialSubmitLogin" type="submit" value="Log in" class="btn btn-IDTOdefault" />
+                            </td>
+                        </tr>
+
+                        <tr style="height:20px"><td></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="height: 1px; background-color: white">
+                <td></td>
+            </tr>
+        </table>
+        
+   <script>
+       $(function () {
+           $('#login').unbind('submit');
+
+           $('#login')
+               .attr('action', '/Account/LoginPartial')
+               .bind('submit', function () {
+                   var form = this;
+                   if ($("#login").valid()) {
+                       $.post($(form).attr('action'), $(form).serialize(), function (data) {
+                           if (data.errors) {
+                               $('#test').empty().append(data.errors);
+                           } else {
+                               document.location = data.redirect;
+                           }
+                       });
+                   }
+
+                   return false;
+               });
+       });
+    </script>
+    }
+</div>   
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

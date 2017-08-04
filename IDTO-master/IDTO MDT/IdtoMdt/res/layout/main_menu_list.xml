@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="@string/clock_12hr_format"
+            android:textAppearance="@style/TextExtraLargeLight"
+            android:textColor="@color/idto_light_text" />
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="@string/clock_am_pm_format"
+            android:textAppearance="@style/TextSmallLight"
+            android:textColor="@color/idto_light_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_menu_connections_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp" >
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/connections_dashboard"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="@string/menu_connections_string"
+            android:textAppearance="@style/TextMediumBold"
+            android:textColor="@color/idto_light_text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="2dp"
+        android:text="@string/menu_gate_string"
+        android:textAppearance="@style/TextLargeBold"
+        android:textColor="@color/idto_light_text" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/idto_white" />
+    
+    <ListView
+        android:id="@+id/routeListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingLeft="5dp" >
+
+    </ListView>
+    
+</LinearLayout>

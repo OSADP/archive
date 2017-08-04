@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB80D502-E953-42DF-B24E-3364FC020BD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDTO.Data</RootNamespace>
+    <AssemblyName>IDTO.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|AnyCPU'">
+    <OutputPath>bin\Production\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IDTOContext.cs" />
+    <Compile Include="Migrations\201311180203162_Initial.cs" />
+    <Compile Include="Migrations\201311180203162_Initial.Designer.cs">
+      <DependentUpon>201311180203162_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201311262159379_UnknownChange.cs" />
+    <Compile Include="Migrations\201311262159379_UnknownChange.Designer.cs">
+      <DependentUpon>201311262159379_UnknownChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201311271530061_TravelerTripFull.cs" />
+    <Compile Include="Migrations\201311271530061_TravelerTripFull.Designer.cs">
+      <DependentUpon>201311271530061_TravelerTripFull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201312031714410_tripstopdate.cs" />
+    <Compile Include="Migrations\201312031714410_tripstopdate.Designer.cs">
+      <DependentUpon>201312031714410_tripstopdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201312051825274_StepsProviders.cs" />
+    <Compile Include="Migrations\201312051825274_StepsProviders.Designer.cs">
+      <DependentUpon>201312051825274_StepsProviders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201401102227368_tconnect.cs" />
+    <Compile Include="Migrations\201401102227368_tconnect.Designer.cs">
+      <DependentUpon>201401102227368_tconnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201401232041282_Indexes.cs" />
+    <Compile Include="Migrations\201401232041282_Indexes.Designer.cs">
+      <DependentUpon>201401232041282_Indexes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201402051524134_TripEvent.cs" />
+    <Compile Include="Migrations\201402051524134_TripEvent.Designer.cs">
+      <DependentUpon>201402051524134_TripEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201402071331517_LastVehiclePosition.cs" />
+    <Compile Include="Migrations\201402071331517_LastVehiclePosition.Designer.cs">
+      <DependentUpon>201402071331517_LastVehiclePosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201402262254520_tconnectedvehicle_fromname.cs" />
+    <Compile Include="Migrations\201402262254520_tconnectedvehicle_fromname.Designer.cs">
+      <DependentUpon>201402262254520_tconnectedvehicle_fromname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403112110142_travelerloginlocation.cs" />
+    <Compile Include="Migrations\201403112110142_travelerloginlocation.Designer.cs">
+      <DependentUpon>201403112110142_travelerloginlocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403181535256_loginidchange.cs" />
+    <Compile Include="Migrations\201403181535256_loginidchange.Designer.cs">
+      <DependentUpon>201403181535256_loginidchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403311349181_blockId.cs" />
+    <Compile Include="Migrations\201403311349181_blockId.Designer.cs">
+      <DependentUpon>201403311349181_blockId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404011908047_tripnotification.cs" />
+    <Compile Include="Migrations\201404011908047_tripnotification.Designer.cs">
+      <DependentUpon>201404011908047_tripnotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mapping\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IDTO.Entity\IDTO.Entity.csproj">
+      <Project>{573df4a0-3c34-435a-a4eb-5bc2b8b8ebf0}</Project>
+      <Name>IDTO.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{6e682a14-c872-4813-b620-76e108dea683}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201311180203162_Initial.resx">
+      <DependentUpon>201311180203162_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201311262159379_UnknownChange.resx">
+      <DependentUpon>201311262159379_UnknownChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201311271530061_TravelerTripFull.resx">
+      <DependentUpon>201311271530061_TravelerTripFull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201312031714410_tripstopdate.resx">
+      <DependentUpon>201312031714410_tripstopdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201312051825274_StepsProviders.resx">
+      <DependentUpon>201312051825274_StepsProviders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201401102227368_tconnect.resx">
+      <DependentUpon>201401102227368_tconnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201401232041282_Indexes.resx">
+      <DependentUpon>201401232041282_Indexes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201402051524134_TripEvent.resx">
+      <DependentUpon>201402051524134_TripEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201402071331517_LastVehiclePosition.resx">
+      <DependentUpon>201402071331517_LastVehiclePosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201402262254520_tconnectedvehicle_fromname.resx">
+      <DependentUpon>201402262254520_tconnectedvehicle_fromname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403112110142_travelerloginlocation.resx">
+      <DependentUpon>201403112110142_travelerloginlocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403181535256_loginidchange.resx">
+      <DependentUpon>201403181535256_loginidchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403311349181_blockId.resx">
+      <DependentUpon>201403311349181_blockId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404011908047_tripnotification.resx">
+      <DependentUpon>201404011908047_tripnotification.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

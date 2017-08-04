@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Dispatcher Portal</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript" src="@Url.Content("/Scripts/IDTO.js")">    </script>
+    <script type="text/javascript">
+
+
+    </script>
+</head>
+<body>
+    <table class="dashHeader">
+
+        <tr>
+            <td>
+                <h1 id="clock">
+                    @*<script type="text/javascript">
+                        var localTime = new Date();
+                        var localdatetime = deMilitarize(localTime.getHours()) + ":" + padToTwo(localTime.getMinutes());
+                        document.write(localdatetime);*@
+                //var options = { hour: "numeric", minute: "2-digit" };
+                //document.write(localTime.toLocaleString("en-US", options));
+
+
+                </script>
+            </h1>
+        </td>
+        <td align="right"><img src="../Images/idto_lockup.png" /></td>
+    </tr>
+</table>
+
+
+<div class="container body-content" id="grad">
+    @RenderBody()
+    <hr />
+
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+<script type="text/javascript">
+    function display_c() {
+        var refreshclock = 1000; // Refresh rate in milli seconds
+        mytime = setTimeout('display_ct()', refreshclock)
+    }
+
+    function display_ct() {
+        var strcount
+        var x = new Date()
+        document.getElementById('clock').innerHTML = deMilitarize(x.getHours()) + ":" + padToTwo(x.getMinutes());
+        tt = display_c();
+    }
+
+    $(document).ready(function () {
+
+        display_ct();
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+﻿@using System;
+@using IDTO.TravelerPortal.Common.ExtensionMethods;
+@using IDTO.TravelerPortal.Common;
+@model IDTO.TravelerPortal.Models.TripDashboardViewModel
+
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<div style="margin-top: 152px">
+
+    <table width="660">
+        <tr>
+            <td valign="top" rowspan="3">
+                @Html.Action("SearchPartial", "Search")
+            </td>
+            <td width="28px"></td>
+            <td valign="top">
+                <table width="316" align="center" style="box-shadow: 3px 3px 4px #000000;">
+                    <tr>
+                        <td>
+                            <table style="position: relative;" align="center">
+                                <tr>
+                                    <td>
+                                        <img width="40" height="40" src="../Content/images/Icon_UpcomingTrips.png" style="position:absolute; top: -20px; left:-20px" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td>
+                            <table align="center" style="width:100%">
+                                <tr>
+                                    <td height="80px" align="left" style="color: #5A3056; font-size:24px">
+                                        <div style="padding-top:0.5em; padding-left:0.5em">Upcoming Trips</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: 1px solid #6E6E6E"></td>
+                                </tr>
+                                @if (Model.UpcomingTrips != null)
+                                {
+                                    Html.RenderPartial("_DashboardUpcomingTripsPartial", Model.UpcomingTrips);
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td height="5px"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><div style="padding-top:0.5em; padding-left:0.5em">No scheduled trips</div></td>
+                                    </tr>
+                                }
+
+                            </table>
+                        </td>
+                    </tr>
+                    @if (Model.UpcomingTrips != null)
+                    {
+                        <tr style="height: 40px; background-color: white;">
+                            <td align="left" valign="middle">
+                                <div style="padding-left:0.5em">
+                                    @Html.ActionLink("View other scheduled trips", "UpcomingTrips", "Search", null, new { @style = "color:black; text-decoration:underline; " })
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr style="height: 10px; background-color: white;">
+                            <td></td>
+                        </tr>
+                    }
+                    <tr style="height: 5px; background-color: #F9AE40">
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr style="height: 48px; background-color: transparent">
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <table width="316" align="center" style="box-shadow: 3px 3px 4px #000000;">
+                    <tr>
+                        <td>
+                            <table style="position: relative;" align="center">
+                                <tr>
+                                    <td>
+                                        <img width="40" height="40" src="../Content/images/Icon_TripHistory.png" style="position:absolute; top: -20px; left:-20px" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td>
+                            <table align="center" style="width:100%; ">
+                                <tr>
+                                    <td height="80px" align="left" style="color: #5A3056; font-size:24px">
+                                        <div style="padding-top:0.5em; padding-left:0.5em">Trip History</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: 1px solid #6E6E6E"></td>
+                                </tr>
+                                @if (Model.PastTrips != null)
+                                {
+                                    Html.RenderPartial("_DashboardPastTripsPartial", Model.PastTrips);
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td height="5px"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><div style="padding-top:0.5em; padding-left:0.5em">No previous trips</div></td>
+                                    </tr>
+                                }
+
+                            </table>
+                        </td>
+                    </tr>
+                    @if (Model.PastTrips != null)
+                    {
+                        <tr style="height: 40px; background-color: white;">
+                            <td align="left" valign="middle">
+                                <div style="padding-left:0.5em">
+                                    @Html.ActionLink("View all previous trips", "PreviousTrips", "Search", null, new { @style = "color:black; text-decoration:underline; " })
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr style="height: 10px; background-color: white;">
+                            <td></td>
+                        </tr>
+                    }
+                    <tr style="height: 5px; background-color: #F9AE40">
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<IDTO.TravelerPortal.Common.Models.Trip>
+
+@{
+    int count = 1;
+    foreach (var pastTrip in Model)
+    {
+        DateTime tripStart = TimeZoneInfo.ConvertTimeFromUtc(pastTrip.TripStartDate.Value, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
+        string todayTomorrowString = IDTO.TravelerPortal.Common.ExtensionMethods.ExtensionMethods.GetTodayTomorrowString(tripStart);
+        var startFirstNonWalk = pastTrip.GetFirstStepString();
+        <tr>
+            <td>
+                <table style="width:100%;" align="center" cellpadding="10" cellspacing="10">
+                    <tr>
+                        <td colspan="7" height="5px"></td>
+                    </tr>
+                    <tr>
+                        <td width="10px"></td>
+                        <td width="40px" align="left" style="font-size: 12px; font-weight:bold; color: #6E6E6E">@todayTomorrowString</td>
+                        <td width="10px"></td>
+                        <td width="60px" align="left" style="font-size: 12px; font-weight:bold; color: #6E6E6E">@tripStart.ToShortTimeString()</td>
+                        <td width="10px"></td>
+                        <td align="left" valign="middle" style="font-size: 12px; color: #6E6E6E">@startFirstNonWalk</td>
+                        <td width="10px"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" height="5px"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="border-bottom: 1px solid #6E6E6E"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        count++;
+        if (count > 3) { break; }
+    }
+}

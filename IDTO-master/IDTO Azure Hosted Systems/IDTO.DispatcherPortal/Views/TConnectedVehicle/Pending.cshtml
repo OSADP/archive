@@ -1,0 +1,72 @@
+﻿@model IEnumerable<IDTO.DispatcherPortal.Models.TConnVehicleViewModel>
+
+@{
+    ViewBag.Title = "Pending Requests";
+}
+
+<h2>Pending Requests</h2>
+
+<p>Shows buses that have pending TConnect requests.</p>
+<p>
+    <b>Accepting</b> a request agrees that bus will wait past the scheduled departure to allow for arrival of late travelers.
+</p>
+<p> <b>Rejecting</b> a request indicates that the bus will leave on time and not wait.</p>
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+           Scheduled Departure Time
+        </th>
+        <th>
+           StopCode
+        </th>
+        <th>
+            Route
+        </th>
+        <th>
+            Current Accepted Min. Bus Will Wait
+        </th>
+        <th>
+            Number of Pending Requests
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @Html.HiddenFor(modelItem => item.Id)
+            <td>
+
+                @using (Html.BeginForm("Pending", "TConnectedVehicle", new { id = @item.Id }))
+                {
+                    <input type="submit" name="btnSubmit" value="Accept" />
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OriginallyScheduledDeparture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TConnectStopCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TConnectRoute)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentAcceptedHoldMinutes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberRequests)
+            </td>
+            <td>
+                @using (Html.BeginForm("Pending", "TConnectedVehicle", new { id = @item.Id }))
+                {
+                    <input type="submit" name="btnSubmit" value="Reject" />
+                }
+
+            </td>
+        </tr>
+    }
+
+</table>

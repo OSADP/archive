@@ -1,0 +1,82 @@
+﻿@model IEnumerable<IDTO.DispatcherPortal.Models.DashboardViewModel>
+@{
+    Layout = null;
+
+}
+<script type="text/javascript" src="@Url.Content("/Scripts/IDTO.js")">    </script>
+
+@*<script type="text/javascript">
+        function dateFromUTCString(s) {
+            s = s.split(/[\D]/ig);
+            return new Date(Date.UTC(s[0], --s[1], s[2], s[3], s[4], s[5], s[6] || 0));
+        }
+    </script>*@
+<h3>New T-Connections</h3>
+<hr class="blue" />
+
+<table class="idtotable">
+
+    @{int rowNo = 0;}
+    @foreach (var item in Model)
+    {
+        <tr>
+            @Html.HiddenFor(modelItem => item.Id)
+            <td>
+                @if (item.SoundReminder)
+                {
+                    <audio src="../Content/audio/audio.mp3" autoplay></audio>
+                }
+                <img src="@Url.Action( "Image" , "Dashboard" , new { id = ++rowNo} )" alt="" />
+            </td>
+            <td>
+                <b>
+                    @if (item.Block != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.Block.BlockName)
+                    }
+
+                </b>
+            </td>
+
+            <td>
+                Hold
+                <b>
+                    @Html.DisplayFor(modelItem => item.RequestedHoldMinutes)
+                </b>Min
+            </td>
+            <td id="time_@item.Id">
+
+                <script type="text/javascript">
+                    var strDate = new String('@item.DepartureTime.ToString()');
+                    var options = { hour: "numeric", minute: "2-digit" };
+                    var local = new Date(strDate + ' UTC');
+                    var localtime = deMilitarize(local.getHours()) + ":" + padToTwo(local.getMinutes());
+                    document.getElementById("time_@item.Id").innerHTML = localtime;
+                </script>
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TConnectFromName)
+            </td>
+
+
+            <td>
+
+                @using (Html.BeginForm("PendingAccept", "Dashboard", new { id = @item.Id }))
+                {
+
+                    <input type="image" name="btnSubmit" value="" class="AcceptButton" />
+
+                }
+            </td>
+            <td>
+                @using (Html.BeginForm("PendingReject", "Dashboard", new { id = @item.Id }))
+                {
+                    <input type="image" name="btnSubmit" value="" class="RejectButton" />
+                }
+
+            </td>
+        </tr>
+    }
+
+</table>

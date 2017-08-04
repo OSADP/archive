@@ -1,0 +1,446 @@
+﻿@using IDTO.TravelerPortal.Common.ExtensionMethods;
+@using System;
+@using IDTO.TravelerPortal.Common;
+@model IDTO.TravelerPortal.Common.Models.Trip
+
+@{
+    ViewBag.Title = "Trip Details";
+    var steps = Model.Steps.OrderBy(l => l.StartDate);
+    var travelTime = TimeZoneInfo.ConvertTimeFromUtc(Model.TripStartDate.Value, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
+    var duration = Model.Duration_min();
+    var walkTotal = Model.GetWalkTime_min();
+    // Count how many back-to-back bus legs there are and that is how
+    // many transfers there are.
+    int numTransfers = 0;
+    bool prevIsBus = false;
+    foreach (var step in steps)
+    {
+        if (string.Compare("bus", ModeType.IdToString((int)step.ModeId), true) == 0)
+        {
+            if (prevIsBus)
+            {
+                numTransfers++;
+            }
+            else
+            {
+                prevIsBus = true;
+            }
+        }
+        else
+        {
+            prevIsBus = false;
+        }
+    }
+    var transfers = numTransfers;
+}
+
+<script>
+    $(function () {
+        $(".accordion").accordion(
+            {
+                active: false,
+                collapsible: true
+            }
+        );
+    });
+</script>
+
+{
+<script>
+    function printDetails() {
+
+        var myWindow = window.open("", "MsgWindow", "width=100, height=100");
+
+        var prtTitle = document.getElementById('PrintTitle');
+        var prtSummary = document.getElementById('PrintSummary');
+        var prtDetails = document.getElementById('legParent');
+
+        var html = '<html><head>' +
+        '</head><body style="background:#ffffff;">' +
+        prtTitle.innerHTML + prtSummary.innerHTML + prtDetails.innerHTML +
+        '<hr />' + 'Printed on ' + '@DateTime.Now' +
+        '</body></html>';
+
+        myWindow.document.writeln(html);
+        myWindow.document.close();
+        myWindow.focus();
+        myWindow.print();
+        myWindow.close();
+
+    }
+</script>
+
+
+@using (Html.BeginForm("CancelTrip", "Search", new { tripId = Model.Id }))
+{
+    <div style="margin-top: 152px">
+        <table width="660" style="box-shadow: 3px 3px 4px #000000;">
+            <tr>
+                <td>
+                    <table style="width: 100%; background-color: white;">
+                        <tr style="border-bottom: 1px solid #6E6E6E">
+                            <td width="20px"></td>
+                            <td align="left" valign="top" style="font-size: 24px; color: #5A3056;">
+                                <div id="PrintTitle">@ViewBag.Title</div>
+                            </td>
+                            <td class="DoNotPrint" align="right">
+                                <a style="font-size:10px" href="javascript:printDetails()">
+                                    Print Trip Details <img width="18" src="../Content/images/Printer_Icon.png" />
+                                </a>
+                            </td>
+                            <td width="20px"></td>
+                        </tr>
+                        <tr>
+                            <td height="10px"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2" align="left">
+                                <div id="PrintSummary">
+                                    <table style="font-size: 11px; color: #6E6E6E; width:100%">
+                                        <tr>
+                                            <td>
+                                                Travel
+                                            </td>
+                                            <td width="20px"></td>
+                                            <td>
+                                                @ExtensionMethods.GetTodayTomorrowString(TimeZoneInfo.ConvertTimeFromUtc(Model.TripStartDate.Value, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"))),
+                                                @travelTime.ToShortTimeString()
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Total Time
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                @duration min
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Total Walk
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                @walkTotal min
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Transfers
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                @transfers
+                                            </td>
+                                            <td align="right" style="padding-right: 1em">
+                                                <a style="font-size:10px" href="javascript: history.go(-1)">Return to Upcoming Trips</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="10px"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr style="height: 5px; background-color: #F9AE40">
+                            <td colspan="4"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table class="DoNotPrint" width="660">
+            <tr>
+                <td height="14px"></td>
+            </tr>
+        </table>
+        <table width="660" style="box-shadow: 3px 3px 4px #000000;">
+            <tr class="DoNotPrint">
+                <td>
+                    @Html.Partial("~/Views/Search/Map.cshtml", Model)
+                </td>
+            </tr>
+            <tr>
+                <td id="legParent" style="background-color: white; background-image: url(../../Content/images/vertLine4pxOrange.png); background-position: 62px 0px, center; background-repeat: repeat-y; background-size: auto; "></td>
+            </tr>
+
+            <tr class="DoNotPrint">
+                <td align="left" height="70px" style="background-color: white; padding-left:1em; ">
+                    <input type="submit" onclick="return confirm('Are you sure you want to delete this trip?');" value="Delete Trip" class="btn btn-IDTOsecondaryCancel" />
+                </td>
+            </tr>
+
+            <tr style="height: 5px; background-color: #F9AE40">
+                <td colspan="4"></td>
+            </tr>
+
+
+        </table>
+    </div>
+    
+    
+
+
+    
+    
+}
+
+
+@{
+    bool prevModeIsBus = false;
+    int accordionIdIndex = 0;
+    string iconString = "";
+    int rowNo = 1;
+    DateTime start, end;
+    string fromText, toText;
+    string stepDetail = "";
+}
+
+
+@foreach (var step in steps)
+{
+    start = TimeZoneInfo.ConvertTimeFromUtc(step.StartDate, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
+    end = TimeZoneInfo.ConvertTimeFromUtc(step.EndDate, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
+    if (step.FromProviderId.HasValue)
+    {
+        stepDetail = Providers.IdToString((int)step.FromProviderId);
+    }
+    stepDetail = stepDetail + " " + step.RouteNumber + " " + step.GetFromName() + " to " + step.GetToName();
+    
+
+    if (string.Compare("BUS", ModeType.IdToString((int)step.ModeId), true) == 0)
+    {
+        iconString = "../Content/images/TripDetails_Bus.png";
+        fromText = Providers.IdToString((int)step.FromProviderId) + " " + step.RouteNumber + " " + step.GetFromName();
+        toText = @step.GetToName();
+    }
+    else
+    {
+        iconString = "../Content/images/TripDetails_Walking.png";
+        fromText = "Walk from " + @step.GetFromName();
+        toText = "to " + @step.GetToName();
+    }
+
+
+    var legDuration = step.Duration_min();
+    if (prevModeIsBus && string.Compare("BUS", ModeType.IdToString((int)step.ModeId), true) == 0)
+    {
+       
+        
+        
+        <script>
+
+            //var div = document.createElement('div');
+            //div.className = 'accordion';
+
+            //var div2 = document.createElement('div');
+            //div.appendChild(div2);
+
+            //var table = document.createElement('table');
+            //div2.appendChild(table);
+
+            //table.style.width = "100%";
+            //table.style.fontSize = "14px";
+            //table.style.color = "#6E6E6E";
+
+            //var row = document.createElement('tr');
+            //table.appendChild(row);
+
+            //var col1 = document.createElement('td');
+            //row.appendChild(col1);
+
+            //col1.height = "10px";
+            //col1.style.backgroundImage = "url(../../Content/images/vertLine4pxOrange.png)";
+            //col1.style.backgroundPosition = "center";
+            //col1.style.backgroundRepeat = "repeat-y";
+            //col1.style.backgroundSize = "auto";
+
+            //row.appendChild(document.createElement('td'));
+            //row.appendChild(document.createElement('td'));
+
+            //row = document.createElement('tr');
+            //table.appendChild(row);
+
+            //col1 = document.createElement('td');
+            //row.appendChild(col1);
+
+            //col1.width = "60px";
+            //col1.vAlign = "top";
+            //col1.align = "center";
+            //col1.style.backgroundImage = "url(../../Content/images/vertLine4pxOrange.png)";
+            //col1.style.backgroundPosition = "center";
+            //col1.style.backgroundRepeat = "repeat-y";
+            //col1.style.backgroundSize = "auto";
+
+            //var image = document.createElement('img');
+            //col1.appendChild(image);
+
+            //image.width = "30";
+            //image.height = "30";
+            //image.src = "../Content/images/TripDetails_Transfer.png";
+
+            //var col2 = document.createElement('td');
+            //row.appendChild(col2);
+
+            //col2.width = "100px";
+            //col2.align = "left";
+            //col2.style.fontWeight = "bold";
+            //col2.textContent = "Bus Transfer";
+
+            //var col3 = document.createElement('td');
+            //row.appendChild(col3);
+
+            //    var table2 = document.createElement('table');
+            //    col3.appendChild(table2);
+
+            //    table2.style.width = "100%";
+            //    row = document.createElement('tr');
+            //    table2.appendChild(row);
+            //    col = document.createElement('td');
+            //    row.appendChild(col);
+            //    col.height = "2px";
+            //    col.style.backgroundColor = "purple";
+
+
+            
+
+
+
+            $('#legParent').append('\
+            <div style="padding:0em 0em 0em 2.45em; border:none">\
+                <table style="width:100%; font-size: 14px; color: #6E6E6E">\
+                    <tr>\
+                        <td height="10px"></td>\
+                        <td></td>\
+                        <td></td>\
+                    </tr>\
+                    <tr>\
+                        <td width="60px" valign="top" align="center">\
+                            <img width="30" height="30" src="../Content/images/TripDetails_Transfer.png" />\
+                        </td>\
+                        <td width="100px" align="left" style="font-weight:bold">\
+                            Bus Transfer\
+                        </td>\
+                        <td>\
+                            <table style="width:100%">\
+                                <tr><td height="2px" style="background-color:#AA66CC"></td></tr>\
+                            </table>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td height="10px"></td>\
+                        <td colspan="2"></td>\
+                    </tr>\
+                    <tr>\
+                        <td height="10px"></td>\
+                        <td colspan="2" style="border-bottom: 1px solid #6E6E6E;"></td>\
+                    </tr>\
+                </table>\
+            </div>\
+            ');
+        </script>
+    }
+
+    string accordionId = string.Format("accordion{0}", accordionIdIndex++);
+
+    <script>
+        $('#legParent').append('\
+        <div class="accordion">\
+            <div>\
+                <table style="width: 100%; font-size: 14px; color: #6E6E6E; ">\
+                    <tr>\
+                        <td height="10px" ></td>\
+                        <td></td>\
+                        <td></td>\
+                    </tr>\
+                    <tr>\
+                        <td width="60px" valign="top" align="center" >\
+                            <img width="30" height="30" src="@iconString"/>\
+                        </td>\
+                        <td valign="top" width="70px" align="left" style="font-weight:bold">\
+                            @legDuration Min\
+                        </td>\
+                        <td valign="top" align="left">\
+                            @stepDetail\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td height="10px" ></td>\
+                        <td colspan="2" style="border-bottom: 1px solid #6E6E6E;"></td>\
+                    </tr>\
+                    <tr>\
+                        <td height="10px" ></td>\
+                        <td colspan="2"></td>\
+                    </tr>\
+                </table>\
+            </div>\
+            <div style="padding:0em 0em 0em 0em; border:none;" >\
+                 <table style="width: 100%; font-size: 14px; color: #6E6E6E; ">\
+                    <tr>\
+                        <td width="93px" valign="top" align="center" >\
+                        </td>\
+                        <td width="90px" valign="top" align="left" style="font-weight:bold">\
+				            @start.ToShortTimeString()\
+                        </td>\
+                        <td valign="top" align="left">\
+				            @fromText\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td height="10px" ></td>\
+                        <td colspan="2"></td>\
+                    </tr>\
+                    <tr>\
+                        <td valign="top" align="center" >\
+                        </td>\
+                        <td valign="top" align="left" style="font-weight:bold">\
+	                        @end.ToShortTimeString()\
+                        </td>\
+                        <td valign="top" align="left">\
+				            @toText\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td height="10px" ></td>\
+                        <td colspan="2" style="border-bottom: 1px solid #6E6E6E;"></td>\
+                    </tr>\
+                </table>\
+            </div>\
+        </div>');
+
+
+    
+
+
+    </script>    
+
+
+    prevModeIsBus = (string.Compare("BUS", ModeType.IdToString((int)step.ModeId), true) == 0) ? true : false;
+    rowNo++;
+
+
+
+    @*<dd>
+            @Html.Partial("~/Views/Search/FromPartial.cshtml", Model.from);
+        </dd>
+
+        <dd>
+            @Html.Partial("~/Views/Search/ToPartial.cshtml", Model.to);
+        </dd>*@
+    
+    
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+﻿<div style="margin-top: 152px; box-shadow: 3px 3px 4px #000000;">
+    <table width="660">
+        <tr style="background-color: white;">
+            <td>
+                <table align="center" style="width:90%; " cellpadding="5">
+                    <tr style="height: 10px;">
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            @{Html.RenderAction("RegistrationAgreementPartial", "Home");}
+                        </td>
+                    </tr>
+                    <tr style="height: 10px;">
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="height: 5px; background-color: #F9AE40">
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

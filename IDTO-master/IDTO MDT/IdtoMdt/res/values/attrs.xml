@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="Theme">
+        <attr name="textSmallLight" format="reference" />
+        <attr name="textMedium" format="reference" />
+        <attr name="textMediumBold" format="reference" />
+        <attr name="textLargeBold" format="reference" />
+        <attr name="textExtraLargeLight" format="reference" />
+        </declare-styleable>
+</resources>

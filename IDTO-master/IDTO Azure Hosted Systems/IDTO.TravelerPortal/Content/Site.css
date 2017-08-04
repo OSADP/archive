@@ -1,0 +1,423 @@
+﻿body {
+    font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #5c87b2;
+    color: #696969;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+@media print {
+    .DoNotPrint {
+        display : none;
+    }
+}
+
+/*** pop-up div to cover entire area ***/
+.divModalDialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*! important !*/
+    display: none;
+    /* last attribute set darkness on scale: 0...1.0 */
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    z-index: 101;
+}
+
+    /*** ! target attribute does the job ! ***/
+    .divModalDialog:target {
+        display: block;
+    }
+
+    /*** virtual frame containing controls, image and caption ***/
+    .divModalDialog div {
+        /* either absolute or fixed */
+        position: fixed;
+        top: 5%;
+        width: 100%;
+        height: 80%;
+        overflow: auto;
+        /* rounded corners */
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        z-index: 102;
+    }
+
+.grad {
+    background-color: #18283C; /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(to bottom, #18283C 0px, #18283C 370px, #18283C 370px, #5A3056 100%); /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(to bottom, #18283C 0px, #18283C 370px, #18283C 370px, #5A3056 100%); /* For old Fx (3.6 to 15) */
+    background-image: -ms-linear-gradient(to bottom, #18283C 0px, #18283C 370px, #18283C 370px, #5A3056 100%); /* For pre-releases of IE 10*/
+    background-image: -o-linear-gradient(to bottom, #18283C 0px, #18283C 370px, #18283C 370px, #5A3056 100%); /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to bottom, #18283C 0px, #18283C 370px, #18283C 370px, #5A3056 100%); /* Standard syntax; must be last */
+
+    background-attachment: fixed;
+
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr.border_bottom td {
+    border-bottom: 1pt solid black;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  border:none;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid black;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.btn-default {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background-color: #F7AC40;
+  border: 1px solid #F7AC40;
+  width: 260px;
+  border-radius: 5px;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: white;
+  background-color: #FFCB04;
+  border-color: #FFCB04;
+}
+
+.form-IDTOcontrol {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-IDTOcontrol:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-IDTOcontrol::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-IDTOcontrol:-ms-input-placeholder {
+  color: #999;
+}
+.form-IDTOcontrol::-webkit-input-placeholder {
+  color: #999;
+}
+.form-IDTOcontrol[disabled],
+.form-IDTOcontrol[readonly],
+fieldset[disabled] .form-IDTOcontrol {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+textarea.form-IDTOcontrol {
+  height: auto;
+}
+
+.btn-IDTOdefault {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background-color: #F9AE40;
+  border: 1px solid #F9AE40;
+  width: 260px;
+  border-radius: 5px;
+}
+.btn-IDTOdefault:hover,
+.btn-IDTOdefault:focus,
+.btn-IDTOdefault:active,
+.btn-IDTOdefault.active,
+.open .dropdown-toggle.btn-IDTOdefault {
+  color: white;
+  background-color: #FFCB04;
+  border-color: #FFCB04;
+}
+.btn-IDTOdefault:active,
+.btn-IDTOdefault.active,
+.open .dropdown-toggle.btn-IDTOdefault {
+  background-image: none;
+}
+.btn-IDTOdefault.disabled,
+.btn-IDTOdefault[disabled],
+fieldset[disabled] .btn-IDTOdefault,
+.btn-IDTOdefault.disabled:hover,
+.btn-IDTOdefault[disabled]:hover,
+fieldset[disabled] .btn-IDTOdefault:hover,
+.btn-IDTOdefault.disabled:focus,
+.btn-IDTOdefault[disabled]:focus,
+fieldset[disabled] .btn-IDTOdefault:focus,
+.btn-IDTOdefault.disabled:active,
+.btn-IDTOdefault[disabled]:active,
+fieldset[disabled] .btn-IDTOdefault:active,
+.btn-IDTOdefault.disabled.active,
+.btn-IDTOdefault[disabled].active,
+fieldset[disabled] .btn-IDTOdefault.active {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-IDTOdefault .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+.btn-IDTOsecondarySave {
+  font-weight: bold;
+  font-size: 10px;
+  color: white;
+  background-color: #F9AE40;
+  border: 1px solid #F9AE40;
+  width: 80px;
+  border-radius: 3px;
+}
+.btn-IDTOsecondarySave:hover,
+.btn-IDTOsecondarySave:focus,
+.btn-IDTOsecondarySave:active,
+.btn-IDTOsecondarySave.active,
+.open .dropdown-toggle.btn-IDTOsecondarySave {
+  color: white;
+  background-color: #FFCB04;
+  border-color: #FFCB04;
+}
+.btn-IDTOsecondarySave:active,
+.btn-IDTOsecondarySave.active,
+.open .dropdown-toggle.btn-IDTOsecondarySave {
+  background-image: none;
+}
+.btn-IDTOsecondarySave.disabled,
+.btn-IDTOsecondarySave[disabled],
+fieldset[disabled] .btn-IDTOsecondarySave,
+.btn-IDTOsecondarySave.disabled:hover,
+.btn-IDTOsecondarySave[disabled]:hover,
+fieldset[disabled] .btn-IDTOsecondarySave:hover,
+.btn-IDTOsecondarySave.disabled:focus,
+.btn-IDTOsecondarySave[disabled]:focus,
+fieldset[disabled] .btn-IDTOsecondarySave:focus,
+.btn-IDTOsecondarySave.disabled:active,
+.btn-IDTOsecondarySave[disabled]:active,
+fieldset[disabled] .btn-IDTOsecondarySave:active,
+.btn-IDTOsecondarySave.disabled.active,
+.btn-IDTOsecondarySave[disabled].active,
+fieldset[disabled] .btn-IDTOsecondarySave.active {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-IDTOsecondarySave .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+.btn-IDTOsecondaryDetails {
+  font-weight: bold;
+  font-size: 10px;
+  color: white;
+  background-color: #AA66CC;
+  border: 1px solid #AA66CC;
+  width: 80px;
+  border-radius: 3px;
+}
+.btn-IDTOsecondaryDetails:hover,
+.btn-IDTOsecondaryDetails:focus,
+.btn-IDTOsecondaryDetails:active,
+.btn-IDTOsecondaryDetails.active,
+.open .dropdown-toggle.btn-IDTOsecondaryDetails {
+  color: white;
+  background-color: #D493F9;
+  border-color: #D493F9;
+}
+.btn-IDTOsecondaryDetails:active,
+.btn-IDTOsecondaryDetails.active,
+.open .dropdown-toggle.btn-IDTOsecondaryDetails {
+  background-image: none;
+}
+.btn-IDTOsecondaryDetails.disabled,
+.btn-IDTOsecondaryDetails[disabled],
+fieldset[disabled] .btn-IDTOsecondaryDetails,
+.btn-IDTOsecondaryDetails.disabled:hover,
+.btn-IDTOsecondaryDetails[disabled]:hover,
+fieldset[disabled] .btn-IDTOsecondaryDetails:hover,
+.btn-IDTOsecondaryDetails.disabled:focus,
+.btn-IDTOsecondaryDetails[disabled]:focus,
+fieldset[disabled] .btn-IDTOsecondaryDetails:focus,
+.btn-IDTOsecondaryDetails.disabled:active,
+.btn-IDTOsecondaryDetails[disabled]:active,
+fieldset[disabled] .btn-IDTOsecondaryDetails:active,
+.btn-IDTOsecondaryDetails.disabled.active,
+.btn-IDTOsecondaryDetails[disabled].active,
+fieldset[disabled] .btn-IDTOsecondaryDetails.active {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-IDTOsecondaryDetails .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+.btn-IDTOsecondaryCancel {
+  align-content:center;
+  font-weight: bold;
+  font-size: 10px;
+  color: white;
+  background-color: #FF5F5F;
+  border: 1px solid #FF5F5F;
+  width: 80px;
+  border-radius: 3px;
+}
+.btn-IDTOsecondaryCancel:hover,
+.btn-IDTOsecondaryCancel:focus,
+.btn-IDTOsecondaryCancel:active,
+.btn-IDTOsecondaryCancel.active,
+.open .dropdown-toggle.btn-IDTOsecondaryCancel {
+  color: white;
+  background-color: #EE334B;
+  border-color: #EE334B;
+}
+.btn-IDTOsecondaryCancel:active,
+.btn-IDTOsecondaryCancel.active,
+.open .dropdown-toggle.btn-IDTOsecondaryCancel {
+  background-image: none;
+}
+.btn-IDTOsecondaryCancel.disabled,
+.btn-IDTOsecondaryCancel[disabled],
+fieldset[disabled] .btn-IDTOsecondaryCancel,
+.btn-IDTOsecondaryCancel.disabled:hover,
+.btn-IDTOsecondaryCancel[disabled]:hover,
+fieldset[disabled] .btn-IDTOsecondaryCancel:hover,
+.btn-IDTOsecondaryCancel.disabled:focus,
+.btn-IDTOsecondaryCancel[disabled]:focus,
+fieldset[disabled] .btn-IDTOsecondaryCancel:focus,
+.btn-IDTOsecondaryCancel.disabled:active,
+.btn-IDTOsecondaryCancel[disabled]:active,
+fieldset[disabled] .btn-IDTOsecondaryCancel:active,
+.btn-IDTOsecondaryCancel.disabled.active,
+.btn-IDTOsecondaryCancel[disabled].active,
+fieldset[disabled] .btn-IDTOsecondaryCancel.active {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-IDTOsecondaryCancel .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: 0em .5em 0em .7em;
+	min-height: 0; /* support: IE7 */
+}
+
+.ui-accordion .ui-accordion-header {
+    border-radius:0px;
+    border:none;
+    background:none;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 0px 0px 0px 0px;
+	padding: 0em 1em 0em 0em;
+	min-height: 0; /* support: IE7 */
+}
+
+.ui-accordion .ui-accordion-content {
+	padding: 0em 0em 0em 0em;
+    border:none;
+    background:none;
+	overflow: auto;
+}
+
+
+
+
+
+
+

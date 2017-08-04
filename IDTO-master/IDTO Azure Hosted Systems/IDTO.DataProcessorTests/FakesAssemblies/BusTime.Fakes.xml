@@ -1,0 +1,3005 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BusTime.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException">
+            <summary>Shim type of IDTO.BusTime.Exceptions.GetPredictionsException</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.#ctor(IDTO.BusTime.Exceptions.GetPredictionsException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.ConstructorGetPredictionsErrorArray">
+            <summary>Sets the shim of GetPredictionsException.GetPredictionsException(GetPredictionsError[] getPredictionsError)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.GetPredictionsErrorsGet">
+            <summary>Sets the shim of GetPredictionsException.get_GetPredictionsErrors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.GetPredictionsErrorsSetIEnumerableOfGetPredictionsError">
+            <summary>Sets the shim of GetPredictionsException.set_GetPredictionsErrors(IEnumerable`1&lt;GetPredictionsError&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.AllInstances.GetPredictionsErrorsGet">
+            <summary>Sets the shim of GetPredictionsException.get_GetPredictionsErrors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetPredictionsException.AllInstances.GetPredictionsErrorsSetIEnumerableOfGetPredictionsError">
+            <summary>Sets the shim of GetPredictionsException.set_GetPredictionsErrors(IEnumerable`1&lt;GetPredictionsError&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException">
+            <summary>Shim type of IDTO.BusTime.Exceptions.GetRouteDirectionsException</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.#ctor(IDTO.BusTime.Exceptions.GetRouteDirectionsException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.ConstructorGetDirectionsErrorArray">
+            <summary>Sets the shim of GetRouteDirectionsException.GetRouteDirectionsException(GetDirectionsError[] getDirectionsError)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.ErrorsGet">
+            <summary>Sets the shim of GetRouteDirectionsException.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.ErrorsSetIEnumerableOfGetDirectionsError">
+            <summary>Sets the shim of GetRouteDirectionsException.set_Errors(IEnumerable`1&lt;GetDirectionsError&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.AllInstances.ErrorsGet">
+            <summary>Sets the shim of GetRouteDirectionsException.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRouteDirectionsException.AllInstances.ErrorsSetIEnumerableOfGetDirectionsError">
+            <summary>Sets the shim of GetRouteDirectionsException.set_Errors(IEnumerable`1&lt;GetDirectionsError&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException">
+            <summary>Shim type of IDTO.BusTime.Exceptions.GetRoutesException</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException.#ctor(IDTO.BusTime.Exceptions.GetRoutesException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException.ConstructorGetRoutesErrorArray">
+            <summary>Sets the shim of GetRoutesException.GetRoutesException(GetRoutesError[] error)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException.ConstructorStringException">
+            <summary>Sets the shim of GetRoutesException.GetRoutesException(String msg, Exception innerException)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException._ctorb__0GetRoutesError">
+            <summary>Sets the shim of GetRoutesException.&lt;.ctor&gt;b__0(GetRoutesError e)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetRoutesException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException">
+            <summary>Shim type of IDTO.BusTime.Exceptions.GetStopsException</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.#ctor(IDTO.BusTime.Exceptions.GetStopsException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.ConstructorGetStopsErrorArray">
+            <summary>Sets the shim of GetStopsException.GetStopsException(GetStopsError[] getStopsErrors)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.GetStopsErrorsGet">
+            <summary>Sets the shim of GetStopsException.get_GetStopsErrors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.GetStopsErrorsSetIEnumerableOfGetStopsError">
+            <summary>Sets the shim of GetStopsException.set_GetStopsErrors(IEnumerable`1&lt;GetStopsError&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.AllInstances.GetStopsErrorsGet">
+            <summary>Sets the shim of GetStopsException.get_GetStopsErrors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetStopsException.AllInstances.GetStopsErrorsSetIEnumerableOfGetStopsError">
+            <summary>Sets the shim of GetStopsException.set_GetStopsErrors(IEnumerable`1&lt;GetStopsError&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException">
+            <summary>Shim type of IDTO.BusTime.Exceptions.GetVehiclesException</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.#ctor(IDTO.BusTime.Exceptions.GetVehiclesException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.ConstructorGetVehiclesErrorArray">
+            <summary>Sets the shim of GetVehiclesException.GetVehiclesException(GetVehiclesError[] getVehiclesError)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.ConstructorStringException">
+            <summary>Sets the shim of GetVehiclesException.GetVehiclesException(String msg, Exception innerException)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.GetVehiclesErrorsGet">
+            <summary>Sets the shim of GetVehiclesException.get_GetVehiclesErrors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.GetVehiclesErrorsSetIEnumerableOfGetVehiclesError">
+            <summary>Sets the shim of GetVehiclesException.set_GetVehiclesErrors(IEnumerable`1&lt;GetVehiclesError&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.AllInstances.GetVehiclesErrorsGet">
+            <summary>Sets the shim of GetVehiclesException.get_GetVehiclesErrors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.ShimGetVehiclesException.AllInstances.GetVehiclesErrorsSetIEnumerableOfGetVehiclesError">
+            <summary>Sets the shim of GetVehiclesException.set_GetVehiclesErrors(IEnumerable`1&lt;GetVehiclesError&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException">
+            <summary>Stub type of IDTO.BusTime.Exceptions.GetPredictionsException</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.#ctor(IDTO.BusTime.Response.GetPredictionsError[])">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubGetPredictionsException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubGetPredictionsException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.InitializeStub">
+            <summary>Initializes a new instance of type StubGetPredictionsException</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetPredictionsException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException">
+            <summary>Stub type of IDTO.BusTime.Exceptions.GetRouteDirectionsException</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.#ctor(IDTO.BusTime.Response.GetDirectionsError[])">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubGetRouteDirectionsException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubGetRouteDirectionsException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.InitializeStub">
+            <summary>Initializes a new instance of type StubGetRouteDirectionsException</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRouteDirectionsException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException">
+            <summary>Stub type of IDTO.BusTime.Exceptions.GetRoutesException</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubGetRoutesException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubGetRoutesException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.InitializeStub">
+            <summary>Initializes a new instance of type StubGetRoutesException</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetRoutesException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException">
+            <summary>Stub type of IDTO.BusTime.Exceptions.GetVehiclesException</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.#ctor(IDTO.BusTime.Response.GetVehiclesError[])">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubGetVehiclesException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubGetVehiclesException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.InitializeStub">
+            <summary>Initializes a new instance of type StubGetVehiclesException</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Exceptions.Fakes.StubGetVehiclesException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimBusRoute">
+            <summary>Shim type of IDTO.BusTime.BusRoute</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusRoute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusRoute.#ctor(IDTO.BusTime.BusRoute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusRoute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusRoute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.ConstructorStringString">
+            <summary>Sets the shim of BusRoute.BusRoute(String routeID, String name)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.IDGet">
+            <summary>Sets the shim of BusRoute.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.IDSetString">
+            <summary>Sets the shim of BusRoute.set_ID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.NameGet">
+            <summary>Sets the shim of BusRoute.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.NameSetString">
+            <summary>Sets the shim of BusRoute.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimBusRoute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.AllInstances.IDGet">
+            <summary>Sets the shim of BusRoute.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.AllInstances.IDSetString">
+            <summary>Sets the shim of BusRoute.set_ID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.AllInstances.NameGet">
+            <summary>Sets the shim of BusRoute.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusRoute.AllInstances.NameSetString">
+            <summary>Sets the shim of BusRoute.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimBusTimeAPI">
+            <summary>Shim type of IDTO.BusTime.BusTimeAPI</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusTimeAPI.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusTimeAPI.#ctor(IDTO.BusTime.BusTimeAPI)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusTimeAPI.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusTimeAPI.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusTimeAPI.Bind(IDTO.BusTime.IBusTimeAPI)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimBusTimeAPI.XmlDeserializeFromStringOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,``0})">
+            <summary>Sets the shim of BusTimeAPI.XmlDeserializeFromString(String objectData)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.Constructor">
+            <summary>Sets the shim of BusTimeAPI.BusTimeAPI()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetNextVehicleIDAsyncStringString">
+            <summary>Sets the shim of BusTimeAPI.GetNextVehicleIDAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetPredictionsAsyncString">
+            <summary>Sets the shim of BusTimeAPI.GetPredictionsAsync(String url)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetPredictionsAsyncStringString">
+            <summary>Sets the shim of BusTimeAPI.GetPredictionsAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetPredictionsForStopsAsyncStringArray">
+            <summary>Sets the shim of BusTimeAPI.GetPredictionsForStopsAsync(String[] stopIDs)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetPredictionsForVehiclesAsyncStringArray">
+            <summary>Sets the shim of BusTimeAPI.GetPredictionsForVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetRouteDirectionsAsyncString">
+            <summary>Sets the shim of BusTimeAPI.GetRouteDirectionsAsync(String route)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetRoutesAsync">
+            <summary>Sets the shim of BusTimeAPI.GetRoutesAsync()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetStopsAsyncStringString">
+            <summary>Sets the shim of BusTimeAPI.GetStopsAsync(String route, String direction)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetTime">
+            <summary>Sets the shim of BusTimeAPI.GetTime()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetVehiclesAsyncString">
+            <summary>Sets the shim of BusTimeAPI.GetVehiclesAsync(String route)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetVehiclesAsyncStringArray">
+            <summary>Sets the shim of BusTimeAPI.GetVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.GetVehiclesByUrlAsyncString">
+            <summary>Sets the shim of BusTimeAPI.GetVehiclesByUrlAsync(String url)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.XmlDeserializeFromStringStringType">
+            <summary>Sets the shim of BusTimeAPI.XmlDeserializeFromString(String objectData, Type type)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI._GetPredictionsAsyncb__43PredictionResponse">
+            <summary>Sets the shim of BusTimeAPI.&lt;GetPredictionsAsync&gt;b__43(PredictionResponse pr)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI._GetRoutesAsyncb__0RouteResponse">
+            <summary>Sets the shim of BusTimeAPI.&lt;GetRoutesAsync&gt;b__0(RouteResponse rr)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI._GetVehiclesByUrlAsyncb__39VehicleResponse">
+            <summary>Sets the shim of BusTimeAPI.&lt;GetVehiclesByUrlAsync&gt;b__39(VehicleResponse vr)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetNextVehicleIDAsyncStringString">
+            <summary>Sets the shim of BusTimeAPI.GetNextVehicleIDAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetPredictionsAsyncString">
+            <summary>Sets the shim of BusTimeAPI.GetPredictionsAsync(String url)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetPredictionsAsyncStringString">
+            <summary>Sets the shim of BusTimeAPI.GetPredictionsAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetPredictionsForStopsAsyncStringArray">
+            <summary>Sets the shim of BusTimeAPI.GetPredictionsForStopsAsync(String[] stopIDs)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetPredictionsForVehiclesAsyncStringArray">
+            <summary>Sets the shim of BusTimeAPI.GetPredictionsForVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetRouteDirectionsAsyncString">
+            <summary>Sets the shim of BusTimeAPI.GetRouteDirectionsAsync(String route)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetRoutesAsync">
+            <summary>Sets the shim of BusTimeAPI.GetRoutesAsync()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetStopsAsyncStringString">
+            <summary>Sets the shim of BusTimeAPI.GetStopsAsync(String route, String direction)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetTime">
+            <summary>Sets the shim of BusTimeAPI.GetTime()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetVehiclesAsyncString">
+            <summary>Sets the shim of BusTimeAPI.GetVehiclesAsync(String route)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetVehiclesAsyncStringArray">
+            <summary>Sets the shim of BusTimeAPI.GetVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimBusTimeAPI.AllInstances.GetVehiclesByUrlAsyncString">
+            <summary>Sets the shim of BusTimeAPI.GetVehiclesByUrlAsync(String url)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimPrediction">
+            <summary>Shim type of IDTO.BusTime.Prediction</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimPrediction.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimPrediction.#ctor(IDTO.BusTime.Prediction)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimPrediction.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimPrediction.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.ConstructorPredictionResponse">
+            <summary>Sets the shim of Prediction.Prediction(PredictionResponse pr)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.DistanceToStopGet">
+            <summary>Sets the shim of Prediction.get_DistanceToStop()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.FinalDestinationGet">
+            <summary>Sets the shim of Prediction.get_FinalDestination()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.IsDelaySpecifiedGet">
+            <summary>Sets the shim of Prediction.get_IsDelaySpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.IsDelayedGet">
+            <summary>Sets the shim of Prediction.get_IsDelayed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.PredictedTimeOfArrivalOrDepartureGet">
+            <summary>Sets the shim of Prediction.get_PredictedTimeOfArrivalOrDeparture()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.RouteDirectionGet">
+            <summary>Sets the shim of Prediction.get_RouteDirection()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.RouteIDGet">
+            <summary>Sets the shim of Prediction.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.StopIDGet">
+            <summary>Sets the shim of Prediction.get_StopID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.StopNameGet">
+            <summary>Sets the shim of Prediction.get_StopName()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.TABlockIDGet">
+            <summary>Sets the shim of Prediction.get_TABlockID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.TATripIDGet">
+            <summary>Sets the shim of Prediction.get_TATripID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.TimeStampGet">
+            <summary>Sets the shim of Prediction.get_TimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.TypeGet">
+            <summary>Sets the shim of Prediction.get_Type()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.VehicleIDGet">
+            <summary>Sets the shim of Prediction.get_VehicleID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.ZoneGet">
+            <summary>Sets the shim of Prediction.get_Zone()</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimPrediction.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.DistanceToStopGet">
+            <summary>Sets the shim of Prediction.get_DistanceToStop()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.FinalDestinationGet">
+            <summary>Sets the shim of Prediction.get_FinalDestination()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.IsDelaySpecifiedGet">
+            <summary>Sets the shim of Prediction.get_IsDelaySpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.IsDelayedGet">
+            <summary>Sets the shim of Prediction.get_IsDelayed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.PredictedTimeOfArrivalOrDepartureGet">
+            <summary>Sets the shim of Prediction.get_PredictedTimeOfArrivalOrDeparture()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.RouteDirectionGet">
+            <summary>Sets the shim of Prediction.get_RouteDirection()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.RouteIDGet">
+            <summary>Sets the shim of Prediction.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.StopIDGet">
+            <summary>Sets the shim of Prediction.get_StopID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.StopNameGet">
+            <summary>Sets the shim of Prediction.get_StopName()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.TABlockIDGet">
+            <summary>Sets the shim of Prediction.get_TABlockID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.TATripIDGet">
+            <summary>Sets the shim of Prediction.get_TATripID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.TimeStampGet">
+            <summary>Sets the shim of Prediction.get_TimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.TypeGet">
+            <summary>Sets the shim of Prediction.get_Type()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.VehicleIDGet">
+            <summary>Sets the shim of Prediction.get_VehicleID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimPrediction.AllInstances.ZoneGet">
+            <summary>Sets the shim of Prediction.get_Zone()</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimStop">
+            <summary>Shim type of IDTO.BusTime.Stop</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimStop.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimStop.#ctor(IDTO.BusTime.Stop)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimStop.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimStop.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.ConstructorStopResponseStringString">
+            <summary>Sets the shim of Stop.Stop(StopResponse sr, String routeID, String direction)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.DirectionGet">
+            <summary>Sets the shim of Stop.get_Direction()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.DirectionSetString">
+            <summary>Sets the shim of Stop.set_Direction(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.IDGet">
+            <summary>Sets the shim of Stop.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.LatitudeGet">
+            <summary>Sets the shim of Stop.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.LongitudeGet">
+            <summary>Sets the shim of Stop.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.NameGet">
+            <summary>Sets the shim of Stop.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.RouteIDGet">
+            <summary>Sets the shim of Stop.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.RouteIDSetString">
+            <summary>Sets the shim of Stop.set_RouteID(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimStop.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.AllInstances.DirectionGet">
+            <summary>Sets the shim of Stop.get_Direction()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.AllInstances.DirectionSetString">
+            <summary>Sets the shim of Stop.set_Direction(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.AllInstances.IDGet">
+            <summary>Sets the shim of Stop.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.AllInstances.LatitudeGet">
+            <summary>Sets the shim of Stop.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.AllInstances.LongitudeGet">
+            <summary>Sets the shim of Stop.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.AllInstances.NameGet">
+            <summary>Sets the shim of Stop.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.AllInstances.RouteIDGet">
+            <summary>Sets the shim of Stop.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimStop.AllInstances.RouteIDSetString">
+            <summary>Sets the shim of Stop.set_RouteID(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimVehicle">
+            <summary>Shim type of IDTO.BusTime.Vehicle</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimVehicle.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimVehicle.#ctor(IDTO.BusTime.Vehicle)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimVehicle.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.ShimVehicle.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.BlockIDGet">
+            <summary>Sets the shim of Vehicle.get_BlockID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.ConstructorVehicleResponse">
+            <summary>Sets the shim of Vehicle.Vehicle(VehicleResponse vr)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.DestinationGet">
+            <summary>Sets the shim of Vehicle.get_Destination()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.HeadingGet">
+            <summary>Sets the shim of Vehicle.get_Heading()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.IDGet">
+            <summary>Sets the shim of Vehicle.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.IsDelayedGet">
+            <summary>Sets the shim of Vehicle.get_IsDelayed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.LatitudeGet">
+            <summary>Sets the shim of Vehicle.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.LongitudeGet">
+            <summary>Sets the shim of Vehicle.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.PatternDistanceGet">
+            <summary>Sets the shim of Vehicle.get_PatternDistance()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.PatternIDGet">
+            <summary>Sets the shim of Vehicle.get_PatternID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.RouteIDGet">
+            <summary>Sets the shim of Vehicle.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.ServerTimeStampGet">
+            <summary>Sets the shim of Vehicle.get_ServerTimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.SpeedGet">
+            <summary>Sets the shim of Vehicle.get_Speed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.TimeStampGet">
+            <summary>Sets the shim of Vehicle.get_TimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.TripIDGet">
+            <summary>Sets the shim of Vehicle.get_TripID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.ZoneGet">
+            <summary>Sets the shim of Vehicle.get_Zone()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.blkSpecifiedGet">
+            <summary>Sets the shim of Vehicle.get_blkSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.tablockidGet">
+            <summary>Sets the shim of Vehicle.get_tablockid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.tatripidGet">
+            <summary>Sets the shim of Vehicle.get_tatripid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.tripidSpecifiedGet">
+            <summary>Sets the shim of Vehicle.get_tripidSpecified()</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.ShimVehicle.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.BlockIDGet">
+            <summary>Sets the shim of Vehicle.get_BlockID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.DestinationGet">
+            <summary>Sets the shim of Vehicle.get_Destination()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.HeadingGet">
+            <summary>Sets the shim of Vehicle.get_Heading()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.IDGet">
+            <summary>Sets the shim of Vehicle.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.IsDelayedGet">
+            <summary>Sets the shim of Vehicle.get_IsDelayed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.LatitudeGet">
+            <summary>Sets the shim of Vehicle.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.LongitudeGet">
+            <summary>Sets the shim of Vehicle.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.PatternDistanceGet">
+            <summary>Sets the shim of Vehicle.get_PatternDistance()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.PatternIDGet">
+            <summary>Sets the shim of Vehicle.get_PatternID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.RouteIDGet">
+            <summary>Sets the shim of Vehicle.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.ServerTimeStampGet">
+            <summary>Sets the shim of Vehicle.get_ServerTimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.SpeedGet">
+            <summary>Sets the shim of Vehicle.get_Speed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.TimeStampGet">
+            <summary>Sets the shim of Vehicle.get_TimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.TripIDGet">
+            <summary>Sets the shim of Vehicle.get_TripID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.ZoneGet">
+            <summary>Sets the shim of Vehicle.get_Zone()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.blkSpecifiedGet">
+            <summary>Sets the shim of Vehicle.get_blkSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.tablockidGet">
+            <summary>Sets the shim of Vehicle.get_tablockid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.tatripidGet">
+            <summary>Sets the shim of Vehicle.get_tatripid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.ShimVehicle.AllInstances.tripidSpecifiedGet">
+            <summary>Sets the shim of Vehicle.get_tripidSpecified()</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.StubBusRoute">
+            <summary>Stub type of IDTO.BusTime.BusRoute</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubBusRoute.#ctor(System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubBusRoute.InitializeStub">
+            <summary>Initializes a new instance of type StubBusRoute</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubBusRoute.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubBusRoute.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubBusRoute.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.StubBusTimeAPI">
+            <summary>Stub type of IDTO.BusTime.BusTimeAPI</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubBusTimeAPI.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubBusTimeAPI.InitializeStub">
+            <summary>Initializes a new instance of type StubBusTimeAPI</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubBusTimeAPI.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubBusTimeAPI.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubBusTimeAPI.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.StubIBusTimeAPI">
+            <summary>Stub type of IDTO.BusTime.IBusTimeAPI</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.#ctor">
+            <summary>Initializes a new instance of type StubIBusTimeAPI</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetNextVehicleIDAsyncStringString">
+            <summary>Sets the stub of IBusTimeAPI.GetNextVehicleIDAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetPredictionsAsyncStringString">
+            <summary>Sets the stub of IBusTimeAPI.GetPredictionsAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetPredictionsForStopsAsyncStringArray">
+            <summary>Sets the stub of IBusTimeAPI.GetPredictionsForStopsAsync(String[] stopIDs)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetPredictionsForVehiclesAsyncStringArray">
+            <summary>Sets the stub of IBusTimeAPI.GetPredictionsForVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetRouteDirectionsAsyncString">
+            <summary>Sets the stub of IBusTimeAPI.GetRouteDirectionsAsync(String route)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetRoutesAsync">
+            <summary>Sets the stub of IBusTimeAPI.GetRoutesAsync()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetStopsAsyncStringString">
+            <summary>Sets the stub of IBusTimeAPI.GetStopsAsync(String route, String direction)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetTime">
+            <summary>Sets the stub of IBusTimeAPI.GetTime()</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetVehiclesAsyncString">
+            <summary>Sets the stub of IBusTimeAPI.GetVehiclesAsync(String route)</summary>
+        </member>
+        <member name="F:IDTO.BusTime.Fakes.StubIBusTimeAPI.GetVehiclesAsyncStringArray">
+            <summary>Sets the stub of IBusTimeAPI.GetVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetNextVehicleIDAsync(System.String,System.String)">
+            <summary>Sets the stub of IBusTimeAPI.GetNextVehicleIDAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetPredictionsAsync(System.String,System.String)">
+            <summary>Sets the stub of IBusTimeAPI.GetPredictionsAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetPredictionsForStopsAsync(System.String[])">
+            <summary>Sets the stub of IBusTimeAPI.GetPredictionsForStopsAsync(String[] stopIDs)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetPredictionsForVehiclesAsync(System.String[])">
+            <summary>Sets the stub of IBusTimeAPI.GetPredictionsForVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetRouteDirectionsAsync(System.String)">
+            <summary>Sets the stub of IBusTimeAPI.GetRouteDirectionsAsync(String route)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetRoutesAsync">
+            <summary>Sets the stub of IBusTimeAPI.GetRoutesAsync()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetStopsAsync(System.String,System.String)">
+            <summary>Sets the stub of IBusTimeAPI.GetStopsAsync(String route, String direction)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetTime">
+            <summary>Sets the stub of IBusTimeAPI.GetTime()</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetVehiclesAsync(System.String[])">
+            <summary>Sets the stub of IBusTimeAPI.GetVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubIBusTimeAPI.bt::IDTO#BusTime#IBusTimeAPI#GetVehiclesAsync(System.String)">
+            <summary>Sets the stub of IBusTimeAPI.GetVehiclesAsync(String route)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.StubPrediction">
+            <summary>Stub type of IDTO.BusTime.Prediction</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubPrediction.#ctor(IDTO.BusTime.Response.PredictionResponse)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubPrediction.InitializeStub">
+            <summary>Initializes a new instance of type StubPrediction</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubPrediction.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubPrediction.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubPrediction.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.StubStop">
+            <summary>Stub type of IDTO.BusTime.Stop</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubStop.#ctor(IDTO.BusTime.Response.StopResponse,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubStop.InitializeStub">
+            <summary>Initializes a new instance of type StubStop</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubStop.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubStop.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubStop.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Fakes.StubVehicle">
+            <summary>Stub type of IDTO.BusTime.Vehicle</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubVehicle.#ctor(IDTO.BusTime.Response.VehicleResponse)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Fakes.StubVehicle.InitializeStub">
+            <summary>Initializes a new instance of type StubVehicle</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubVehicle.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubVehicle.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Fakes.StubVehicle.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError">
+            <summary>Shim type of IDTO.BusTime.Response.GetDirectionsError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.#ctor(IDTO.BusTime.Response.GetDirectionsError)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.Constructor">
+            <summary>Sets the shim of GetDirectionsError.GetDirectionsError()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.MessageGet">
+            <summary>Sets the shim of GetDirectionsError.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.MessageSetString">
+            <summary>Sets the shim of GetDirectionsError.set_Message(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.RouteIDGet">
+            <summary>Sets the shim of GetDirectionsError.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.RouteIDSetString">
+            <summary>Sets the shim of GetDirectionsError.set_RouteID(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.AllInstances.MessageGet">
+            <summary>Sets the shim of GetDirectionsError.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.AllInstances.MessageSetString">
+            <summary>Sets the shim of GetDirectionsError.set_Message(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.AllInstances.RouteIDGet">
+            <summary>Sets the shim of GetDirectionsError.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsError.AllInstances.RouteIDSetString">
+            <summary>Sets the shim of GetDirectionsError.set_RouteID(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse">
+            <summary>Shim type of IDTO.BusTime.Response.GetDirectionsResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.#ctor(IDTO.BusTime.Response.GetDirectionsResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.Constructor">
+            <summary>Sets the shim of GetDirectionsResponse.GetDirectionsResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.DirectionsGet">
+            <summary>Sets the shim of GetDirectionsResponse.get_Directions()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.DirectionsSetStringArray">
+            <summary>Sets the shim of GetDirectionsResponse.set_Directions(String[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.ErrorsGet">
+            <summary>Sets the shim of GetDirectionsResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.ErrorsSetGetDirectionsErrorArray">
+            <summary>Sets the shim of GetDirectionsResponse.set_Errors(GetDirectionsError[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.AllInstances.DirectionsGet">
+            <summary>Sets the shim of GetDirectionsResponse.get_Directions()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.AllInstances.DirectionsSetStringArray">
+            <summary>Sets the shim of GetDirectionsResponse.set_Directions(String[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.AllInstances.ErrorsGet">
+            <summary>Sets the shim of GetDirectionsResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetDirectionsResponse.AllInstances.ErrorsSetGetDirectionsErrorArray">
+            <summary>Sets the shim of GetDirectionsResponse.set_Errors(GetDirectionsError[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError">
+            <summary>Shim type of IDTO.BusTime.Response.GetPredictionsError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.#ctor(IDTO.BusTime.Response.GetPredictionsError)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.Constructor">
+            <summary>Sets the shim of GetPredictionsError.GetPredictionsError()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.msgGet">
+            <summary>Sets the shim of GetPredictionsError.get_msg()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.msgSetString">
+            <summary>Sets the shim of GetPredictionsError.set_msg(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.stpidGet">
+            <summary>Sets the shim of GetPredictionsError.get_stpid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.stpidSetInt32">
+            <summary>Sets the shim of GetPredictionsError.set_stpid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.stpidSpecifiedGet">
+            <summary>Sets the shim of GetPredictionsError.get_stpidSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.stpidSpecifiedSetBoolean">
+            <summary>Sets the shim of GetPredictionsError.set_stpidSpecified(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.vidGet">
+            <summary>Sets the shim of GetPredictionsError.get_vid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.vidSetString">
+            <summary>Sets the shim of GetPredictionsError.set_vid(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.AllInstances.msgGet">
+            <summary>Sets the shim of GetPredictionsError.get_msg()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.AllInstances.msgSetString">
+            <summary>Sets the shim of GetPredictionsError.set_msg(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.AllInstances.stpidGet">
+            <summary>Sets the shim of GetPredictionsError.get_stpid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.AllInstances.stpidSetInt32">
+            <summary>Sets the shim of GetPredictionsError.set_stpid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.AllInstances.stpidSpecifiedGet">
+            <summary>Sets the shim of GetPredictionsError.get_stpidSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.AllInstances.stpidSpecifiedSetBoolean">
+            <summary>Sets the shim of GetPredictionsError.set_stpidSpecified(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.AllInstances.vidGet">
+            <summary>Sets the shim of GetPredictionsError.get_vid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsError.AllInstances.vidSetString">
+            <summary>Sets the shim of GetPredictionsError.set_vid(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse">
+            <summary>Shim type of IDTO.BusTime.Response.GetPredictionsResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.#ctor(IDTO.BusTime.Response.GetPredictionsResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.Constructor">
+            <summary>Sets the shim of GetPredictionsResponse.GetPredictionsResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.ErrorsGet">
+            <summary>Sets the shim of GetPredictionsResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.ErrorsSetGetPredictionsErrorArray">
+            <summary>Sets the shim of GetPredictionsResponse.set_Errors(GetPredictionsError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.prdGet">
+            <summary>Sets the shim of GetPredictionsResponse.get_prd()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.prdSetPredictionResponseArray">
+            <summary>Sets the shim of GetPredictionsResponse.set_prd(PredictionResponse[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.AllInstances.ErrorsGet">
+            <summary>Sets the shim of GetPredictionsResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.AllInstances.ErrorsSetGetPredictionsErrorArray">
+            <summary>Sets the shim of GetPredictionsResponse.set_Errors(GetPredictionsError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.AllInstances.prdGet">
+            <summary>Sets the shim of GetPredictionsResponse.get_prd()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetPredictionsResponse.AllInstances.prdSetPredictionResponseArray">
+            <summary>Sets the shim of GetPredictionsResponse.set_prd(PredictionResponse[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetRoutesError">
+            <summary>Shim type of IDTO.BusTime.Response.GetRoutesError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.#ctor(IDTO.BusTime.Response.GetRoutesError)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.Constructor">
+            <summary>Sets the shim of GetRoutesError.GetRoutesError()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.MessageGet">
+            <summary>Sets the shim of GetRoutesError.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.MessageSetString">
+            <summary>Sets the shim of GetRoutesError.set_Message(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.AllInstances.MessageGet">
+            <summary>Sets the shim of GetRoutesError.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesError.AllInstances.MessageSetString">
+            <summary>Sets the shim of GetRoutesError.set_Message(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse">
+            <summary>Shim type of IDTO.BusTime.Response.GetRoutesResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.#ctor(IDTO.BusTime.Response.GetRoutesResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.Constructor">
+            <summary>Sets the shim of GetRoutesResponse.GetRoutesResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.ErrorsGet">
+            <summary>Sets the shim of GetRoutesResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.ErrorsSetGetRoutesErrorArray">
+            <summary>Sets the shim of GetRoutesResponse.set_Errors(GetRoutesError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.RoutesGet">
+            <summary>Sets the shim of GetRoutesResponse.get_Routes()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.RoutesSetRouteResponseArray">
+            <summary>Sets the shim of GetRoutesResponse.set_Routes(RouteResponse[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.AllInstances.ErrorsGet">
+            <summary>Sets the shim of GetRoutesResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.AllInstances.ErrorsSetGetRoutesErrorArray">
+            <summary>Sets the shim of GetRoutesResponse.set_Errors(GetRoutesError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.AllInstances.RoutesGet">
+            <summary>Sets the shim of GetRoutesResponse.get_Routes()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetRoutesResponse.AllInstances.RoutesSetRouteResponseArray">
+            <summary>Sets the shim of GetRoutesResponse.set_Routes(RouteResponse[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError">
+            <summary>Shim type of IDTO.BusTime.Response.GetServiceBulletinsError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.#ctor(IDTO.BusTime.Response.GetServiceBulletinsError)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.Constructor">
+            <summary>Sets the shim of GetServiceBulletinsError.GetServiceBulletinsError()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.msgGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_msg()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.msgSetString">
+            <summary>Sets the shim of GetServiceBulletinsError.set_msg(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.rtGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_rt()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.rtSetString">
+            <summary>Sets the shim of GetServiceBulletinsError.set_rt(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.rtdirGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_rtdir()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.rtdirSetString">
+            <summary>Sets the shim of GetServiceBulletinsError.set_rtdir(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.stpidGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_stpid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.stpidSetInt32">
+            <summary>Sets the shim of GetServiceBulletinsError.set_stpid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.stpidSpecifiedGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_stpidSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.stpidSpecifiedSetBoolean">
+            <summary>Sets the shim of GetServiceBulletinsError.set_stpidSpecified(Boolean value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.msgGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_msg()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.msgSetString">
+            <summary>Sets the shim of GetServiceBulletinsError.set_msg(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.rtGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_rt()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.rtSetString">
+            <summary>Sets the shim of GetServiceBulletinsError.set_rt(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.rtdirGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_rtdir()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.rtdirSetString">
+            <summary>Sets the shim of GetServiceBulletinsError.set_rtdir(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.stpidGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_stpid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.stpidSetInt32">
+            <summary>Sets the shim of GetServiceBulletinsError.set_stpid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.stpidSpecifiedGet">
+            <summary>Sets the shim of GetServiceBulletinsError.get_stpidSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsError.AllInstances.stpidSpecifiedSetBoolean">
+            <summary>Sets the shim of GetServiceBulletinsError.set_stpidSpecified(Boolean value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse">
+            <summary>Shim type of IDTO.BusTime.Response.GetServiceBulletinsResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.#ctor(IDTO.BusTime.Response.GetServiceBulletinsResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.Constructor">
+            <summary>Sets the shim of GetServiceBulletinsResponse.GetServiceBulletinsResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.errorGet">
+            <summary>Sets the shim of GetServiceBulletinsResponse.get_error()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.errorSetGetServiceBulletinsErrorArray">
+            <summary>Sets the shim of GetServiceBulletinsResponse.set_error(GetServiceBulletinsError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.sbGet">
+            <summary>Sets the shim of GetServiceBulletinsResponse.get_sb()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.sbSetservicebulletinArray">
+            <summary>Sets the shim of GetServiceBulletinsResponse.set_sb(servicebulletin[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.AllInstances.errorGet">
+            <summary>Sets the shim of GetServiceBulletinsResponse.get_error()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.AllInstances.errorSetGetServiceBulletinsErrorArray">
+            <summary>Sets the shim of GetServiceBulletinsResponse.set_error(GetServiceBulletinsError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.AllInstances.sbGet">
+            <summary>Sets the shim of GetServiceBulletinsResponse.get_sb()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetServiceBulletinsResponse.AllInstances.sbSetservicebulletinArray">
+            <summary>Sets the shim of GetServiceBulletinsResponse.set_sb(servicebulletin[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetStopsError">
+            <summary>Shim type of IDTO.BusTime.Response.GetStopsError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetStopsError.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetStopsError.#ctor(IDTO.BusTime.Response.GetStopsError)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetStopsError.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetStopsError.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.Constructor">
+            <summary>Sets the shim of GetStopsError.GetStopsError()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.DirectionGet">
+            <summary>Sets the shim of GetStopsError.get_Direction()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.DirectionSetString">
+            <summary>Sets the shim of GetStopsError.set_Direction(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.MessageGet">
+            <summary>Sets the shim of GetStopsError.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.MessageSetString">
+            <summary>Sets the shim of GetStopsError.set_Message(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.RouteIDGet">
+            <summary>Sets the shim of GetStopsError.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.RouteIDSetString">
+            <summary>Sets the shim of GetStopsError.set_RouteID(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetStopsError.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.AllInstances.DirectionGet">
+            <summary>Sets the shim of GetStopsError.get_Direction()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.AllInstances.DirectionSetString">
+            <summary>Sets the shim of GetStopsError.set_Direction(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.AllInstances.MessageGet">
+            <summary>Sets the shim of GetStopsError.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.AllInstances.MessageSetString">
+            <summary>Sets the shim of GetStopsError.set_Message(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.AllInstances.RouteIDGet">
+            <summary>Sets the shim of GetStopsError.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsError.AllInstances.RouteIDSetString">
+            <summary>Sets the shim of GetStopsError.set_RouteID(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse">
+            <summary>Shim type of IDTO.BusTime.Response.GetStopsResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.#ctor(IDTO.BusTime.Response.GetStopsResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.Constructor">
+            <summary>Sets the shim of GetStopsResponse.GetStopsResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.ErrorsGet">
+            <summary>Sets the shim of GetStopsResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.ErrorsSetGetStopsErrorArray">
+            <summary>Sets the shim of GetStopsResponse.set_Errors(GetStopsError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.StopsGet">
+            <summary>Sets the shim of GetStopsResponse.get_Stops()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.StopsSetStopResponseArray">
+            <summary>Sets the shim of GetStopsResponse.set_Stops(StopResponse[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.AllInstances.ErrorsGet">
+            <summary>Sets the shim of GetStopsResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.AllInstances.ErrorsSetGetStopsErrorArray">
+            <summary>Sets the shim of GetStopsResponse.set_Errors(GetStopsError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.AllInstances.StopsGet">
+            <summary>Sets the shim of GetStopsResponse.get_Stops()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetStopsResponse.AllInstances.StopsSetStopResponseArray">
+            <summary>Sets the shim of GetStopsResponse.set_Stops(StopResponse[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetTimeError">
+            <summary>Shim type of IDTO.BusTime.Response.GetTimeError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetTimeError.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetTimeError.#ctor(IDTO.BusTime.Response.GetTimeError)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetTimeError.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetTimeError.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeError.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeError.Constructor">
+            <summary>Sets the shim of GetTimeError.GetTimeError()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeError.msgGet">
+            <summary>Sets the shim of GetTimeError.get_msg()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeError.msgSetString">
+            <summary>Sets the shim of GetTimeError.set_msg(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetTimeError.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeError.AllInstances.msgGet">
+            <summary>Sets the shim of GetTimeError.get_msg()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeError.AllInstances.msgSetString">
+            <summary>Sets the shim of GetTimeError.set_msg(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse">
+            <summary>Shim type of IDTO.BusTime.Response.GetTimeResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.#ctor(IDTO.BusTime.Response.GetTimeResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.Constructor">
+            <summary>Sets the shim of GetTimeResponse.GetTimeResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.errorGet">
+            <summary>Sets the shim of GetTimeResponse.get_error()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.errorSetGetTimeErrorArray">
+            <summary>Sets the shim of GetTimeResponse.set_error(GetTimeError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.tmGet">
+            <summary>Sets the shim of GetTimeResponse.get_tm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.tmSetString">
+            <summary>Sets the shim of GetTimeResponse.set_tm(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.AllInstances.errorGet">
+            <summary>Sets the shim of GetTimeResponse.get_error()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.AllInstances.errorSetGetTimeErrorArray">
+            <summary>Sets the shim of GetTimeResponse.set_error(GetTimeError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.AllInstances.tmGet">
+            <summary>Sets the shim of GetTimeResponse.get_tm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetTimeResponse.AllInstances.tmSetString">
+            <summary>Sets the shim of GetTimeResponse.set_tm(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError">
+            <summary>Shim type of IDTO.BusTime.Response.GetVehiclesError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.#ctor(IDTO.BusTime.Response.GetVehiclesError)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.Constructor">
+            <summary>Sets the shim of GetVehiclesError.GetVehiclesError()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.IDGet">
+            <summary>Sets the shim of GetVehiclesError.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.IDSetString">
+            <summary>Sets the shim of GetVehiclesError.set_ID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.MessageGet">
+            <summary>Sets the shim of GetVehiclesError.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.MessageSetString">
+            <summary>Sets the shim of GetVehiclesError.set_Message(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.RouteIDGet">
+            <summary>Sets the shim of GetVehiclesError.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.RouteIDSetString">
+            <summary>Sets the shim of GetVehiclesError.set_RouteID(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.AllInstances.IDGet">
+            <summary>Sets the shim of GetVehiclesError.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.AllInstances.IDSetString">
+            <summary>Sets the shim of GetVehiclesError.set_ID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.AllInstances.MessageGet">
+            <summary>Sets the shim of GetVehiclesError.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.AllInstances.MessageSetString">
+            <summary>Sets the shim of GetVehiclesError.set_Message(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.AllInstances.RouteIDGet">
+            <summary>Sets the shim of GetVehiclesError.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesError.AllInstances.RouteIDSetString">
+            <summary>Sets the shim of GetVehiclesError.set_RouteID(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse">
+            <summary>Shim type of IDTO.BusTime.Response.GetVehiclesResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.#ctor(IDTO.BusTime.Response.GetVehiclesResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.Constructor">
+            <summary>Sets the shim of GetVehiclesResponse.GetVehiclesResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.ErrorsGet">
+            <summary>Sets the shim of GetVehiclesResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.ErrorsSetGetVehiclesErrorArray">
+            <summary>Sets the shim of GetVehiclesResponse.set_Errors(GetVehiclesError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.VehiclesGet">
+            <summary>Sets the shim of GetVehiclesResponse.get_Vehicles()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.VehiclesSetVehicleResponseArray">
+            <summary>Sets the shim of GetVehiclesResponse.set_Vehicles(VehicleResponse[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.AllInstances.ErrorsGet">
+            <summary>Sets the shim of GetVehiclesResponse.get_Errors()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.AllInstances.ErrorsSetGetVehiclesErrorArray">
+            <summary>Sets the shim of GetVehiclesResponse.set_Errors(GetVehiclesError[] value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.AllInstances.VehiclesGet">
+            <summary>Sets the shim of GetVehiclesResponse.get_Vehicles()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimGetVehiclesResponse.AllInstances.VehiclesSetVehicleResponseArray">
+            <summary>Sets the shim of GetVehiclesResponse.set_Vehicles(VehicleResponse[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimPredictionResponse">
+            <summary>Shim type of IDTO.BusTime.Response.PredictionResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.#ctor(IDTO.BusTime.Response.PredictionResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.Constructor">
+            <summary>Sets the shim of PredictionResponse.PredictionResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.desGet">
+            <summary>Sets the shim of PredictionResponse.get_des()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.desSetString">
+            <summary>Sets the shim of PredictionResponse.set_des(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.dlyGet">
+            <summary>Sets the shim of PredictionResponse.get_dly()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.dlySetBoolean">
+            <summary>Sets the shim of PredictionResponse.set_dly(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.dlySpecifiedGet">
+            <summary>Sets the shim of PredictionResponse.get_dlySpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.dlySpecifiedSetBoolean">
+            <summary>Sets the shim of PredictionResponse.set_dlySpecified(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.dstpGet">
+            <summary>Sets the shim of PredictionResponse.get_dstp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.dstpSetInt32">
+            <summary>Sets the shim of PredictionResponse.set_dstp(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.prdtmGet">
+            <summary>Sets the shim of PredictionResponse.get_prdtm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.prdtmSetString">
+            <summary>Sets the shim of PredictionResponse.set_prdtm(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.rtGet">
+            <summary>Sets the shim of PredictionResponse.get_rt()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.rtSetString">
+            <summary>Sets the shim of PredictionResponse.set_rt(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.rtdirGet">
+            <summary>Sets the shim of PredictionResponse.get_rtdir()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.rtdirSetString">
+            <summary>Sets the shim of PredictionResponse.set_rtdir(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.stpidGet">
+            <summary>Sets the shim of PredictionResponse.get_stpid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.stpidSetInt32">
+            <summary>Sets the shim of PredictionResponse.set_stpid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.stpnmGet">
+            <summary>Sets the shim of PredictionResponse.get_stpnm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.stpnmSetString">
+            <summary>Sets the shim of PredictionResponse.set_stpnm(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.tablockidGet">
+            <summary>Sets the shim of PredictionResponse.get_tablockid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.tablockidSetString">
+            <summary>Sets the shim of PredictionResponse.set_tablockid(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.tatripidGet">
+            <summary>Sets the shim of PredictionResponse.get_tatripid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.tatripidSetString">
+            <summary>Sets the shim of PredictionResponse.set_tatripid(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.tmstmpGet">
+            <summary>Sets the shim of PredictionResponse.get_tmstmp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.tmstmpSetString">
+            <summary>Sets the shim of PredictionResponse.set_tmstmp(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.typGet">
+            <summary>Sets the shim of PredictionResponse.get_typ()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.typSetString">
+            <summary>Sets the shim of PredictionResponse.set_typ(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.vidGet">
+            <summary>Sets the shim of PredictionResponse.get_vid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.vidSetInt32">
+            <summary>Sets the shim of PredictionResponse.set_vid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.zoneGet">
+            <summary>Sets the shim of PredictionResponse.get_zone()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.zoneSetString">
+            <summary>Sets the shim of PredictionResponse.set_zone(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.desGet">
+            <summary>Sets the shim of PredictionResponse.get_des()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.desSetString">
+            <summary>Sets the shim of PredictionResponse.set_des(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.dlyGet">
+            <summary>Sets the shim of PredictionResponse.get_dly()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.dlySetBoolean">
+            <summary>Sets the shim of PredictionResponse.set_dly(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.dlySpecifiedGet">
+            <summary>Sets the shim of PredictionResponse.get_dlySpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.dlySpecifiedSetBoolean">
+            <summary>Sets the shim of PredictionResponse.set_dlySpecified(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.dstpGet">
+            <summary>Sets the shim of PredictionResponse.get_dstp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.dstpSetInt32">
+            <summary>Sets the shim of PredictionResponse.set_dstp(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.prdtmGet">
+            <summary>Sets the shim of PredictionResponse.get_prdtm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.prdtmSetString">
+            <summary>Sets the shim of PredictionResponse.set_prdtm(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.rtGet">
+            <summary>Sets the shim of PredictionResponse.get_rt()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.rtSetString">
+            <summary>Sets the shim of PredictionResponse.set_rt(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.rtdirGet">
+            <summary>Sets the shim of PredictionResponse.get_rtdir()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.rtdirSetString">
+            <summary>Sets the shim of PredictionResponse.set_rtdir(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.stpidGet">
+            <summary>Sets the shim of PredictionResponse.get_stpid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.stpidSetInt32">
+            <summary>Sets the shim of PredictionResponse.set_stpid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.stpnmGet">
+            <summary>Sets the shim of PredictionResponse.get_stpnm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.stpnmSetString">
+            <summary>Sets the shim of PredictionResponse.set_stpnm(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.tablockidGet">
+            <summary>Sets the shim of PredictionResponse.get_tablockid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.tablockidSetString">
+            <summary>Sets the shim of PredictionResponse.set_tablockid(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.tatripidGet">
+            <summary>Sets the shim of PredictionResponse.get_tatripid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.tatripidSetString">
+            <summary>Sets the shim of PredictionResponse.set_tatripid(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.tmstmpGet">
+            <summary>Sets the shim of PredictionResponse.get_tmstmp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.tmstmpSetString">
+            <summary>Sets the shim of PredictionResponse.set_tmstmp(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.typGet">
+            <summary>Sets the shim of PredictionResponse.get_typ()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.typSetString">
+            <summary>Sets the shim of PredictionResponse.set_typ(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.vidGet">
+            <summary>Sets the shim of PredictionResponse.get_vid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.vidSetInt32">
+            <summary>Sets the shim of PredictionResponse.set_vid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.zoneGet">
+            <summary>Sets the shim of PredictionResponse.get_zone()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimPredictionResponse.AllInstances.zoneSetString">
+            <summary>Sets the shim of PredictionResponse.set_zone(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimRouteResponse">
+            <summary>Shim type of IDTO.BusTime.Response.RouteResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimRouteResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimRouteResponse.#ctor(IDTO.BusTime.Response.RouteResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimRouteResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimRouteResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.Constructor">
+            <summary>Sets the shim of RouteResponse.RouteResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.IDGet">
+            <summary>Sets the shim of RouteResponse.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.IDSetString">
+            <summary>Sets the shim of RouteResponse.set_ID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.NameGet">
+            <summary>Sets the shim of RouteResponse.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.NameSetString">
+            <summary>Sets the shim of RouteResponse.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimRouteResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.AllInstances.IDGet">
+            <summary>Sets the shim of RouteResponse.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.AllInstances.IDSetString">
+            <summary>Sets the shim of RouteResponse.set_ID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.AllInstances.NameGet">
+            <summary>Sets the shim of RouteResponse.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimRouteResponse.AllInstances.NameSetString">
+            <summary>Sets the shim of RouteResponse.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimStopResponse">
+            <summary>Shim type of IDTO.BusTime.Response.StopResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimStopResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimStopResponse.#ctor(IDTO.BusTime.Response.StopResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimStopResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimStopResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.Constructor">
+            <summary>Sets the shim of StopResponse.StopResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.IDGet">
+            <summary>Sets the shim of StopResponse.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.IDSetInt32">
+            <summary>Sets the shim of StopResponse.set_ID(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.LatitudeGet">
+            <summary>Sets the shim of StopResponse.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.LatitudeSetDouble">
+            <summary>Sets the shim of StopResponse.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.LongitudeGet">
+            <summary>Sets the shim of StopResponse.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.LongitudeSetDouble">
+            <summary>Sets the shim of StopResponse.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.NameGet">
+            <summary>Sets the shim of StopResponse.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.NameSetString">
+            <summary>Sets the shim of StopResponse.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimStopResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.AllInstances.IDGet">
+            <summary>Sets the shim of StopResponse.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.AllInstances.IDSetInt32">
+            <summary>Sets the shim of StopResponse.set_ID(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.AllInstances.LatitudeGet">
+            <summary>Sets the shim of StopResponse.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.AllInstances.LatitudeSetDouble">
+            <summary>Sets the shim of StopResponse.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.AllInstances.LongitudeGet">
+            <summary>Sets the shim of StopResponse.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.AllInstances.LongitudeSetDouble">
+            <summary>Sets the shim of StopResponse.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.AllInstances.NameGet">
+            <summary>Sets the shim of StopResponse.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimStopResponse.AllInstances.NameSetString">
+            <summary>Sets the shim of StopResponse.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimVehicleResponse">
+            <summary>Shim type of IDTO.BusTime.Response.VehicleResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.#ctor(IDTO.BusTime.Response.VehicleResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.BlockIDGet">
+            <summary>Sets the shim of VehicleResponse.get_BlockID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.BlockIDSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_BlockID(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.Constructor">
+            <summary>Sets the shim of VehicleResponse.VehicleResponse()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.DestinationGet">
+            <summary>Sets the shim of VehicleResponse.get_Destination()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.DestinationSetString">
+            <summary>Sets the shim of VehicleResponse.set_Destination(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.HeadingGet">
+            <summary>Sets the shim of VehicleResponse.get_Heading()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.HeadingSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_Heading(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.IDGet">
+            <summary>Sets the shim of VehicleResponse.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.IDSetString">
+            <summary>Sets the shim of VehicleResponse.set_ID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.IsDelayedGet">
+            <summary>Sets the shim of VehicleResponse.get_IsDelayed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.IsDelayedSetBoolean">
+            <summary>Sets the shim of VehicleResponse.set_IsDelayed(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.LatitudeGet">
+            <summary>Sets the shim of VehicleResponse.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.LatitudeSetDouble">
+            <summary>Sets the shim of VehicleResponse.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.LongitudeGet">
+            <summary>Sets the shim of VehicleResponse.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.LongitudeSetDouble">
+            <summary>Sets the shim of VehicleResponse.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.PatternDistanceGet">
+            <summary>Sets the shim of VehicleResponse.get_PatternDistance()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.PatternDistanceSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_PatternDistance(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.PatternIDGet">
+            <summary>Sets the shim of VehicleResponse.get_PatternID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.PatternIDSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_PatternID(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.RouteIDGet">
+            <summary>Sets the shim of VehicleResponse.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.RouteIDSetString">
+            <summary>Sets the shim of VehicleResponse.set_RouteID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.ServerTimeStampGet">
+            <summary>Sets the shim of VehicleResponse.get_ServerTimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.ServerTimeStampSetString">
+            <summary>Sets the shim of VehicleResponse.set_ServerTimeStamp(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.SpeedGet">
+            <summary>Sets the shim of VehicleResponse.get_Speed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.SpeedSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_Speed(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.TimeStampGet">
+            <summary>Sets the shim of VehicleResponse.get_TimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.TimeStampSetString">
+            <summary>Sets the shim of VehicleResponse.set_TimeStamp(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.TripIDGet">
+            <summary>Sets the shim of VehicleResponse.get_TripID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.TripIDSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_TripID(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.ZoneGet">
+            <summary>Sets the shim of VehicleResponse.get_Zone()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.ZoneSetString">
+            <summary>Sets the shim of VehicleResponse.set_Zone(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.blkSpecifiedGet">
+            <summary>Sets the shim of VehicleResponse.get_blkSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.blkSpecifiedSetBoolean">
+            <summary>Sets the shim of VehicleResponse.set_blkSpecified(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.tablockidGet">
+            <summary>Sets the shim of VehicleResponse.get_tablockid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.tablockidSetString">
+            <summary>Sets the shim of VehicleResponse.set_tablockid(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.tatripidGet">
+            <summary>Sets the shim of VehicleResponse.get_tatripid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.tatripidSetString">
+            <summary>Sets the shim of VehicleResponse.set_tatripid(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.tripidSpecifiedGet">
+            <summary>Sets the shim of VehicleResponse.get_tripidSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.tripidSpecifiedSetBoolean">
+            <summary>Sets the shim of VehicleResponse.set_tripidSpecified(Boolean value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.BlockIDGet">
+            <summary>Sets the shim of VehicleResponse.get_BlockID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.BlockIDSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_BlockID(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.DestinationGet">
+            <summary>Sets the shim of VehicleResponse.get_Destination()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.DestinationSetString">
+            <summary>Sets the shim of VehicleResponse.set_Destination(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.HeadingGet">
+            <summary>Sets the shim of VehicleResponse.get_Heading()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.HeadingSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_Heading(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.IDGet">
+            <summary>Sets the shim of VehicleResponse.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.IDSetString">
+            <summary>Sets the shim of VehicleResponse.set_ID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.IsDelayedGet">
+            <summary>Sets the shim of VehicleResponse.get_IsDelayed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.IsDelayedSetBoolean">
+            <summary>Sets the shim of VehicleResponse.set_IsDelayed(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.LatitudeGet">
+            <summary>Sets the shim of VehicleResponse.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.LatitudeSetDouble">
+            <summary>Sets the shim of VehicleResponse.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.LongitudeGet">
+            <summary>Sets the shim of VehicleResponse.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.LongitudeSetDouble">
+            <summary>Sets the shim of VehicleResponse.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.PatternDistanceGet">
+            <summary>Sets the shim of VehicleResponse.get_PatternDistance()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.PatternDistanceSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_PatternDistance(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.PatternIDGet">
+            <summary>Sets the shim of VehicleResponse.get_PatternID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.PatternIDSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_PatternID(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.RouteIDGet">
+            <summary>Sets the shim of VehicleResponse.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.RouteIDSetString">
+            <summary>Sets the shim of VehicleResponse.set_RouteID(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.ServerTimeStampGet">
+            <summary>Sets the shim of VehicleResponse.get_ServerTimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.ServerTimeStampSetString">
+            <summary>Sets the shim of VehicleResponse.set_ServerTimeStamp(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.SpeedGet">
+            <summary>Sets the shim of VehicleResponse.get_Speed()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.SpeedSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_Speed(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.TimeStampGet">
+            <summary>Sets the shim of VehicleResponse.get_TimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.TimeStampSetString">
+            <summary>Sets the shim of VehicleResponse.set_TimeStamp(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.TripIDGet">
+            <summary>Sets the shim of VehicleResponse.get_TripID()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.TripIDSetInt32">
+            <summary>Sets the shim of VehicleResponse.set_TripID(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.ZoneGet">
+            <summary>Sets the shim of VehicleResponse.get_Zone()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.ZoneSetString">
+            <summary>Sets the shim of VehicleResponse.set_Zone(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.blkSpecifiedGet">
+            <summary>Sets the shim of VehicleResponse.get_blkSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.blkSpecifiedSetBoolean">
+            <summary>Sets the shim of VehicleResponse.set_blkSpecified(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.tablockidGet">
+            <summary>Sets the shim of VehicleResponse.get_tablockid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.tablockidSetString">
+            <summary>Sets the shim of VehicleResponse.set_tablockid(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.tatripidGet">
+            <summary>Sets the shim of VehicleResponse.get_tatripid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.tatripidSetString">
+            <summary>Sets the shim of VehicleResponse.set_tatripid(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.tripidSpecifiedGet">
+            <summary>Sets the shim of VehicleResponse.get_tripidSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.ShimVehicleResponse.AllInstances.tripidSpecifiedSetBoolean">
+            <summary>Sets the shim of VehicleResponse.set_tripidSpecified(Boolean value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.Shimaffectedservice">
+            <summary>Shim type of IDTO.BusTime.Response.affectedservice</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Shimaffectedservice.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Shimaffectedservice.#ctor(IDTO.BusTime.Response.affectedservice)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Shimaffectedservice.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Shimaffectedservice.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.Constructor">
+            <summary>Sets the shim of affectedservice.affectedservice()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.rtGet">
+            <summary>Sets the shim of affectedservice.get_rt()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.rtSetString">
+            <summary>Sets the shim of affectedservice.set_rt(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.rtdirGet">
+            <summary>Sets the shim of affectedservice.get_rtdir()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.rtdirSetString">
+            <summary>Sets the shim of affectedservice.set_rtdir(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.stpidGet">
+            <summary>Sets the shim of affectedservice.get_stpid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.stpidSetInt32">
+            <summary>Sets the shim of affectedservice.set_stpid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.stpidSpecifiedGet">
+            <summary>Sets the shim of affectedservice.get_stpidSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.stpidSpecifiedSetBoolean">
+            <summary>Sets the shim of affectedservice.set_stpidSpecified(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.stpnmGet">
+            <summary>Sets the shim of affectedservice.get_stpnm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.stpnmSetString">
+            <summary>Sets the shim of affectedservice.set_stpnm(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.rtGet">
+            <summary>Sets the shim of affectedservice.get_rt()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.rtSetString">
+            <summary>Sets the shim of affectedservice.set_rt(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.rtdirGet">
+            <summary>Sets the shim of affectedservice.get_rtdir()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.rtdirSetString">
+            <summary>Sets the shim of affectedservice.set_rtdir(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.stpidGet">
+            <summary>Sets the shim of affectedservice.get_stpid()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.stpidSetInt32">
+            <summary>Sets the shim of affectedservice.set_stpid(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.stpidSpecifiedGet">
+            <summary>Sets the shim of affectedservice.get_stpidSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.stpidSpecifiedSetBoolean">
+            <summary>Sets the shim of affectedservice.set_stpidSpecified(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.stpnmGet">
+            <summary>Sets the shim of affectedservice.get_stpnm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimaffectedservice.AllInstances.stpnmSetString">
+            <summary>Sets the shim of affectedservice.set_stpnm(String value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.Shimservicebulletin">
+            <summary>Shim type of IDTO.BusTime.Response.servicebulletin</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Shimservicebulletin.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Shimservicebulletin.#ctor(IDTO.BusTime.Response.servicebulletin)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Shimservicebulletin.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Shimservicebulletin.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.Constructor">
+            <summary>Sets the shim of servicebulletin.servicebulletin()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.brfGet">
+            <summary>Sets the shim of servicebulletin.get_brf()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.brfSetString">
+            <summary>Sets the shim of servicebulletin.set_brf(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.dtlGet">
+            <summary>Sets the shim of servicebulletin.get_dtl()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.dtlSetString">
+            <summary>Sets the shim of servicebulletin.set_dtl(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.nmGet">
+            <summary>Sets the shim of servicebulletin.get_nm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.nmSetString">
+            <summary>Sets the shim of servicebulletin.set_nm(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.prtyGet">
+            <summary>Sets the shim of servicebulletin.get_prty()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.prtySetString">
+            <summary>Sets the shim of servicebulletin.set_prty(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.sbjGet">
+            <summary>Sets the shim of servicebulletin.get_sbj()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.sbjSetString">
+            <summary>Sets the shim of servicebulletin.set_sbj(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.srvcGet">
+            <summary>Sets the shim of servicebulletin.get_srvc()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.srvcSetaffectedserviceArray">
+            <summary>Sets the shim of servicebulletin.set_srvc(affectedservice[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.brfGet">
+            <summary>Sets the shim of servicebulletin.get_brf()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.brfSetString">
+            <summary>Sets the shim of servicebulletin.set_brf(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.dtlGet">
+            <summary>Sets the shim of servicebulletin.get_dtl()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.dtlSetString">
+            <summary>Sets the shim of servicebulletin.set_dtl(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.nmGet">
+            <summary>Sets the shim of servicebulletin.get_nm()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.nmSetString">
+            <summary>Sets the shim of servicebulletin.set_nm(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.prtyGet">
+            <summary>Sets the shim of servicebulletin.get_prty()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.prtySetString">
+            <summary>Sets the shim of servicebulletin.set_prty(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.sbjGet">
+            <summary>Sets the shim of servicebulletin.get_sbj()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.sbjSetString">
+            <summary>Sets the shim of servicebulletin.set_sbj(String value)</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.srvcGet">
+            <summary>Sets the shim of servicebulletin.get_srvc()</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Shimservicebulletin.AllInstances.srvcSetaffectedserviceArray">
+            <summary>Sets the shim of servicebulletin.set_srvc(affectedservice[] value)</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetDirectionsError">
+            <summary>Stub type of IDTO.BusTime.Response.GetDirectionsError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetDirectionsError.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetDirectionsError.InitializeStub">
+            <summary>Initializes a new instance of type StubGetDirectionsError</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetDirectionsError.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetDirectionsError.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetDirectionsError.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetDirectionsResponse">
+            <summary>Stub type of IDTO.BusTime.Response.GetDirectionsResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetDirectionsResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetDirectionsResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubGetDirectionsResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetDirectionsResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetDirectionsResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetDirectionsResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetPredictionsError">
+            <summary>Stub type of IDTO.BusTime.Response.GetPredictionsError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetPredictionsError.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetPredictionsError.InitializeStub">
+            <summary>Initializes a new instance of type StubGetPredictionsError</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetPredictionsError.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetPredictionsError.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetPredictionsError.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetPredictionsResponse">
+            <summary>Stub type of IDTO.BusTime.Response.GetPredictionsResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetPredictionsResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetPredictionsResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubGetPredictionsResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetPredictionsResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetPredictionsResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetPredictionsResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetRoutesError">
+            <summary>Stub type of IDTO.BusTime.Response.GetRoutesError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetRoutesError.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetRoutesError.InitializeStub">
+            <summary>Initializes a new instance of type StubGetRoutesError</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetRoutesError.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetRoutesError.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetRoutesError.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetRoutesResponse">
+            <summary>Stub type of IDTO.BusTime.Response.GetRoutesResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetRoutesResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetRoutesResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubGetRoutesResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetRoutesResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetRoutesResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetRoutesResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsError">
+            <summary>Stub type of IDTO.BusTime.Response.GetServiceBulletinsError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsError.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsError.InitializeStub">
+            <summary>Initializes a new instance of type StubGetServiceBulletinsError</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsError.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsError.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsError.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsResponse">
+            <summary>Stub type of IDTO.BusTime.Response.GetServiceBulletinsResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubGetServiceBulletinsResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetServiceBulletinsResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetStopsError">
+            <summary>Stub type of IDTO.BusTime.Response.GetStopsError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetStopsError.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetStopsError.InitializeStub">
+            <summary>Initializes a new instance of type StubGetStopsError</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetStopsError.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetStopsError.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetStopsError.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetStopsResponse">
+            <summary>Stub type of IDTO.BusTime.Response.GetStopsResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetStopsResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetStopsResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubGetStopsResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetStopsResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetStopsResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetStopsResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetTimeError">
+            <summary>Stub type of IDTO.BusTime.Response.GetTimeError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetTimeError.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetTimeError.InitializeStub">
+            <summary>Initializes a new instance of type StubGetTimeError</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetTimeError.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetTimeError.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetTimeError.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetTimeResponse">
+            <summary>Stub type of IDTO.BusTime.Response.GetTimeResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetTimeResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetTimeResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubGetTimeResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetTimeResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetTimeResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetTimeResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetVehiclesError">
+            <summary>Stub type of IDTO.BusTime.Response.GetVehiclesError</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetVehiclesError.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetVehiclesError.InitializeStub">
+            <summary>Initializes a new instance of type StubGetVehiclesError</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetVehiclesError.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetVehiclesError.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetVehiclesError.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubGetVehiclesResponse">
+            <summary>Stub type of IDTO.BusTime.Response.GetVehiclesResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetVehiclesResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubGetVehiclesResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubGetVehiclesResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetVehiclesResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetVehiclesResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubGetVehiclesResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubPredictionResponse">
+            <summary>Stub type of IDTO.BusTime.Response.PredictionResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubPredictionResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubPredictionResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubPredictionResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubPredictionResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubPredictionResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubPredictionResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubRouteResponse">
+            <summary>Stub type of IDTO.BusTime.Response.RouteResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubRouteResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubRouteResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubRouteResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubRouteResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubRouteResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubRouteResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubStopResponse">
+            <summary>Stub type of IDTO.BusTime.Response.StopResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubStopResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubStopResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubStopResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubStopResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubStopResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubStopResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.StubVehicleResponse">
+            <summary>Stub type of IDTO.BusTime.Response.VehicleResponse</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubVehicleResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.StubVehicleResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubVehicleResponse</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubVehicleResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubVehicleResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.StubVehicleResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.Stubaffectedservice">
+            <summary>Stub type of IDTO.BusTime.Response.affectedservice</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Stubaffectedservice.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Stubaffectedservice.InitializeStub">
+            <summary>Initializes a new instance of type Stubaffectedservice</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Stubaffectedservice.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Stubaffectedservice.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Stubaffectedservice.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.BusTime.Response.Fakes.Stubservicebulletin">
+            <summary>Stub type of IDTO.BusTime.Response.servicebulletin</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Stubservicebulletin.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.BusTime.Response.Fakes.Stubservicebulletin.InitializeStub">
+            <summary>Initializes a new instance of type Stubservicebulletin</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Stubservicebulletin.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Stubservicebulletin.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.BusTime.Response.Fakes.Stubservicebulletin.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

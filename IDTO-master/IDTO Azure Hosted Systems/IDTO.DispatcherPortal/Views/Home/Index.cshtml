@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>IDTO Dispatcher Portal</h1>
+    <p class="lead">This site provides a mechanism for a dispatcher to agree to hold a bus past its scheduled
+     departure in order to allow late-running travelers time to make the connecting bus.</p>
+    
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>View Pending Requests</h2>
+        <p>
+            View Requests that have been made by travelers running late to hold buses.
+        </p>
+        <p><a class="btn btn-default" href="/TConnectedvehicle/pending">Current Requests &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>See Request History</h2>
+        <p>See the status of past requests.</p>
+        <p><a class="btn btn-default" href="/TConnectRequest">Request History &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Development</h2>
+        <p>For development purposes, we've allowed convenient access to database tables to view data.</p>
+        <p><a class="btn btn-default" href="/TConnectedVehicle">TConnectedVehicle Table &raquo;</a></p>
+    </div>
+</div>

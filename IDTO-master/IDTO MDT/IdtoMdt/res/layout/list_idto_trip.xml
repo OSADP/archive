@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:id="@+id/cardBackgroundLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="60dp"
+        android:layout_toLeftOf="@+id/list_idto_trip_decline_button"
+        android:background="@color/idto_midgray" >
+
+        <ImageView
+            android:id="@+id/idto_trip_view_status_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/status_none" />
+
+        <TextView
+            android:id="@+id/textTransferTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:textAppearance="@style/TextMedium"
+            android:textColor="@color/idto_light_text" />
+
+        <TextView
+            android:id="@+id/textTransferDash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/trip_separator_character"
+            android:textAppearance="@style/TextMedium"
+            android:textColor="@color/idto_light_text" />
+
+        <TextView
+            android:id="@+id/textTransferHeadsign"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextMedium"
+            android:textColor="@color/idto_light_text" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@id/list_idto_trip_decline_button"
+        android:background="@drawable/gradient_decline_button" />
+    
+ <ImageView
+     android:id="@+id/list_idto_trip_decline_button"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentEnd="true"
+     android:layout_alignParentStart="false"
+     android:layout_alignWithParentIfMissing="false"
+     android:layout_gravity="right"
+     android:layout_centerVertical="true"
+     android:contentDescription="@string/app_name"/>
+     <!-- android:background="@drawable/decline_button_gray" />-->
+
+</RelativeLayout>

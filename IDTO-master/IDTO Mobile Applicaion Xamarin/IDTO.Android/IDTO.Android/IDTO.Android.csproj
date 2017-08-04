@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DB555E2-3C85-4957-86CB-DA7757EC1A8A}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDTO.Android</RootNamespace>
+    <AssemblyName>IDTO.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <MandroidI18n />
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AndroidUseLatestPlatformSdk />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkSkip />
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <JavaOptions />
+    <MonoDroidExtraArgs />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+    <AndroidLinkSkip>
+    </AndroidLinkSkip>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidStoreUncompressedFileExtensions>
+    </AndroidStoreUncompressedFileExtensions>
+    <JavaOptions>
+    </JavaOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Microsoft.WindowsAzure.Mobile">
+      <HintPath>..\Components\azure-mobile-services-1.1.0\lib\android\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.Ext">
+      <HintPath>..\Components\azure-mobile-services-1.1.0\lib\android\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\azure-mobile-services-1.1.0\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Xamarin.Auth.Android">
+      <HintPath>..\Components\azure-mobile-services-1.1.0\lib\android\Xamarin.Auth.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.MonoDroid">
+      <HintPath>..\Components\restsharp-104.1.0\lib\android\RestSharp.MonoDroid.dll</HintPath>
+    </Reference>
+    <Reference Include="PushSharp.Client.MonoForAndroid">
+      <HintPath>..\_external\PushSharp.Client.MonoForAndroid.dll</HintPath>
+    </Reference>
+    <Reference Include="ByteSmith.WindowsAzure.Messaging.Android">
+      <HintPath>..\_external\ByteSmith.WindowsAzure.Messaging.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\Components\googleplayservices-16.0\lib\android\GooglePlayServicesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\googleplayservices-16.0\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\Components\googleplayservices-16.0\lib\android\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\Components\googleplayservices-16.0\lib\android\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\IDTO.Common.Models\CoordinateEntity.cs">
+      <Link>IDTO.Common.Models\CoordinateEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\EncodedPolylineBean.cs">
+      <Link>IDTO.Common.Models\EncodedPolylineBean.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\StepModel.cs">
+      <Link>IDTO.Common.Models\StepModel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TravelerLocation.cs">
+      <Link>IDTO.Common.Models\TravelerLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TravelerModel.cs">
+      <Link>IDTO.Common.Models\TravelerModel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TripModel.cs">
+      <Link>IDTO.Common.Models\TripModel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TripType.cs">
+      <Link>IDTO.Common.Models\TripType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\WeatherInfo.cs">
+      <Link>IDTO.Common.Models\WeatherInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\Constants.cs">
+      <Link>IDTO.Common\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\GooglePoints.cs">
+      <Link>IDTO.Common\GooglePoints.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\LocalLoginMSClient.cs">
+      <Link>IDTO.Common\LocalLoginMSClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\LoginManager.cs">
+      <Link>IDTO.Common\LoginManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Mobile.Managers\HomeDataManager.cs">
+      <Link>IDTO.Mobile.Managers\HomeDataManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Mobile.Managers\UserTripDataManager.cs">
+      <Link>IDTO.Mobile.Managers\UserTripDataManager.cs</Link>
+    </Compile>
+    <Compile Include="IDTO.Common\IDictionaryExtensions.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\IDTO.Common.Models\LoginResult.cs">
+      <Link>IDTO.Common.Models\LoginResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\ModeType.cs">
+      <Link>IDTO.Common.Models\ModeType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\ObjectState.cs">
+      <Link>IDTO.Common.Models\ObjectState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\ProviderType.cs">
+      <Link>IDTO.Common.Models\ProviderType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\Trip.cs">
+      <Link>IDTO.Common.Models\Trip.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TripSearch.cs">
+      <Link>IDTO.Common.Models\TripSearch.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TripSearchResult.cs">
+      <Link>IDTO.Common.Models\TripSearchResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TripSummary.cs">
+      <Link>IDTO.Common.Models\TripSummary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\AccountManager.cs">
+      <Link>IDTO.Common\AccountManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\ProgressHandler.cs">
+      <Link>IDTO.Common\ProgressHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\TripManager.cs">
+      <Link>IDTO.Common\TripManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\WeatherReport.cs">
+      <Link>IDTO.Common.Models\WeatherReport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\WeatherManager.cs">
+      <Link>IDTO.Common\WeatherManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\DateTimeExtensions.cs">
+      <Link>IDTO.Common\DateTimeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="src\Activities\Itinerary_Map\ItineraryMapActivity.cs" />
+    <Compile Include="src\Activities\Itinerary_Map\ItineraryMapIntent.cs" />
+    <Compile Include="src\Activities\Itinerary_Map\ItineraryMapPresenter.cs" />
+    <Compile Include="src\Activities\Itinerary_Map\ItineraryMapView.cs" />
+    <Compile Include="src\CRideApp.cs" />
+    <Compile Include="src\LocationPresenter.cs" />
+    <Compile Include="src\Location\LocationAlarmReceiver.cs" />
+    <Compile Include="src\Views\BarView.cs" />
+    <Compile Include="src\Views\TripAdapter.cs" />
+    <Compile Include="src\Activities\Account\AccountActivity.cs" />
+    <Compile Include="src\Activities\Account\AccountPresenter.cs" />
+    <Compile Include="src\Activities\Account\AccountView.cs" />
+    <Compile Include="src\Activities\Account\MobilitySettings.cs" />
+    <Compile Include="src\Activities\ActionBarHider.cs" />
+    <Compile Include="src\Activities\BaseActivity.cs" />
+    <Compile Include="src\Activities\BaseView.cs" />
+    <Compile Include="src\Activities\History\HistoryActivity.cs" />
+    <Compile Include="src\Activities\History\HistoryPresenter.cs" />
+    <Compile Include="src\Activities\History\HistoryView.cs" />
+    <Compile Include="src\Activities\Home\HomeActivity.cs" />
+    <Compile Include="src\Activities\Home\HomePresenter.cs" />
+    <Compile Include="src\Activities\Home\HomeView.cs" />
+    <Compile Include="src\Activities\Itinerary_Details\ItineraryAdapter.cs" />
+    <Compile Include="src\Activities\Itinerary_Details\ItineraryDetailsActivity.cs" />
+    <Compile Include="src\Activities\Itinerary_Details\ItineraryDetailsIntent.cs" />
+    <Compile Include="src\Activities\Itinerary_Details\ItineraryDetailsPresenter.cs" />
+    <Compile Include="src\Activities\Itinerary_Details\ItineraryDetailsView.cs" />
+    <Compile Include="src\Activities\Login\LoginActivity.cs" />
+    <Compile Include="src\Activities\Login\LoginPresenter.cs" />
+    <Compile Include="src\Activities\Login\LoginView.cs" />
+    <Compile Include="src\Activities\Plan\PlanActivity.cs" />
+    <Compile Include="src\Activities\Plan\PlanPresenter.cs" />
+    <Compile Include="src\Activities\Plan\PlanView.cs" />
+    <Compile Include="src\Activities\Registration\RegisterActivity.cs" />
+    <Compile Include="src\Activities\Registration\RegisterPresenter.cs" />
+    <Compile Include="src\Activities\Registration\RegisterView.cs" />
+    <Compile Include="src\Activities\Search\SearchActivity.cs" />
+    <Compile Include="src\Activities\Search\SearchIntent.cs" />
+    <Compile Include="src\Activities\Search\SearchPresenter.cs" />
+    <Compile Include="src\Activities\Search\SearchView.cs" />
+    <Compile Include="src\Activities\Search\TripSearchResultAdapter.cs" />
+    <Compile Include="src\Activities\Trip_Details\StepAdapter.cs" />
+    <Compile Include="src\Activities\Trip_Details\TripDetailsActivity.cs" />
+    <Compile Include="src\Activities\Trip_Details\TripDetailsPresenter.cs" />
+    <Compile Include="src\Activities\Trip_Details\TripDetailsView.cs" />
+    <Compile Include="src\AndroidLoginManager.cs" />
+    <Compile Include="src\Activities\Trip_Details\Upcoming\UpcomingActivity.cs" />
+    <Compile Include="src\Activities\Trip_Details\Upcoming\UpcomingPresenter.cs" />
+    <Compile Include="src\Activities\Trip_Details\Upcoming\UpcomingView.cs" />
+    <Compile Include="src\Activities\Trip_Details\Upcoming\UpcomingTripAdapter.cs" />
+    <Compile Include="src\Activities\Trip_Details\Upcoming\ITripSelector.cs" />
+    <Compile Include="src\Notifications\MyGCMBootReceiver.cs" />
+    <Compile Include="src\Notifications\MyGCMBroadcastReceiver.cs" />
+    <Compile Include="src\Location\LocationTracker.cs" />
+    <Compile Include="src\Location\LocationReporter.cs" />
+    <Compile Include="src\Location\LocationReporterManager.cs" />
+    <Compile Include="src\Views\CancelView.cs" />
+    <Compile Include="src\Views\DateTimePickerBox.cs" />
+    <Compile Include="src\Views\DateTimePicker.cs" />
+    <Compile Include="src\Activities\Splash\SplashActivity.cs" />
+    <Compile Include="src\Notifications\PushHandlerService.cs" />
+    <Compile Include="..\..\IDTO.Common.Models\RegistrationApplicant.cs">
+      <Link>IDTO.Common.Models\RegistrationApplicant.cs</Link>
+    </Compile>
+    <Compile Include="src\Views\DistanceSpinnerAdapter.cs" />
+    <Compile Include="..\..\IDTO.Common.Models\Distance.cs">
+      <Link>IDTO.Common.Models\Distance.cs</Link>
+    </Compile>
+    <Compile Include="src\Activities\Registration\Terms.cs" />
+    <Compile Include="src\Activities\Trip_Details\CancelTripDialog.cs" />
+    <Compile Include="src\Activities\Plan\TimePickerDialogIntervals.cs" />
+    <Compile Include="..\..\IDTO.Common\FavoritesDbManager.cs">
+      <Link>IDTO.Common\FavoritesDbManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\FavoriteLocation.cs">
+      <Link>IDTO.Common.Models\FavoriteLocation.cs</Link>
+    </Compile>
+    <Compile Include="src\FavoritesRepository.cs" />
+    <Compile Include="..\..\IDTO.Common\SqliteNet.cs">
+      <Link>IDTO.Common\SqliteNet.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Roboto-Thin.ttf" />
+    <AndroidAsset Include="Assets\Roboto-Regular.ttf" />
+    <AndroidAsset Include="Assets\Roboto-Light.ttf" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\search_results.axml" />
+    <AndroidResource Include="Resources\layout\search_results_item.axml" />
+    <AndroidResource Include="Resources\layout\account.axml" />
+    <AndroidResource Include="Resources\layout\login.axml" />
+    <AndroidResource Include="Resources\layout\plan.axml" />
+    <AndroidResource Include="Resources\layout\register.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\trip_details.axml" />
+    <AndroidResource Include="Resources\layout\leg_list_item.axml" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\background_image.png" />
+    <AndroidResource Include="Resources\drawable\bus_icon.png" />
+    <AndroidResource Include="Resources\drawable\bus_transfer.png" />
+    <AndroidResource Include="Resources\drawable\button_cancel_trip.png" />
+    <AndroidResource Include="Resources\drawable\button_save_trip.png" />
+    <AndroidResource Include="Resources\drawable\button_start.png" />
+    <AndroidResource Include="Resources\drawable\checkmark.png" />
+    <AndroidResource Include="Resources\drawable\walking_icon.png" />
+    <AndroidResource Include="Resources\drawable\cride_logo.png" />
+    <AndroidResource Include="Resources\drawable\cride_logo_large.png" />
+    <AndroidResource Include="Resources\layout\home_view.axml" />
+    <AndroidResource Include="Resources\drawable\_193locationarrow.png" />
+    <AndroidResource Include="Resources\layout\itinerary_details.axml" />
+    <AndroidResource Include="Resources\layout\trip_history.axml" />
+    <AndroidResource Include="Resources\layout\upcoming_trips.axml" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable\w01d.png" />
+    <AndroidResource Include="Resources\drawable\w01n.png" />
+    <AndroidResource Include="Resources\drawable\w02d.png" />
+    <AndroidResource Include="Resources\drawable\w02n.png" />
+    <AndroidResource Include="Resources\drawable\w03d.png" />
+    <AndroidResource Include="Resources\drawable\w03n.png" />
+    <AndroidResource Include="Resources\drawable\w04d.png" />
+    <AndroidResource Include="Resources\drawable\w04n.png" />
+    <AndroidResource Include="Resources\drawable\w09d.png" />
+    <AndroidResource Include="Resources\drawable\w09n.png" />
+    <AndroidResource Include="Resources\drawable\w10d.png" />
+    <AndroidResource Include="Resources\drawable\w10n.png" />
+    <AndroidResource Include="Resources\drawable\w11d.png" />
+    <AndroidResource Include="Resources\drawable\w11n.png" />
+    <AndroidResource Include="Resources\drawable\w13d.png" />
+    <AndroidResource Include="Resources\drawable\w13n.png" />
+    <AndroidResource Include="Resources\drawable\w50d.png" />
+    <AndroidResource Include="Resources\drawable\w50n.png" />
+    <AndroidResource Include="Resources\layout\date_time_picker.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\splash02.png" />
+    <AndroidResource Include="Resources\layout\splash.axml" />
+    <AndroidResource Include="Resources\layout\distance_item.axml" />
+    <AndroidResource Include="Resources\layout\terms.axml" />
+    <AndroidResource Include="Resources\layout\itinerary_map.axml" />
+    <AndroidResource Include="Resources\drawable\_28star.png" />
+    <AndroidResource Include="Resources\drawable\_259list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="azure-mobile-services">
+      <Version>1.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="restsharp">
+      <Version>104.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googleplayservices">
+      <Version>16.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\cursor_drawable.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\chevron_lt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\chevron_rt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rail_icon.png" />
+  </ItemGroup>
+</Project>

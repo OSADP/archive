@@ -1,0 +1,55 @@
+﻿@model IEnumerable<IDTO.Entity.Models.TConnectedVehicle>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>TConnectedVehicle Entries</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OriginallyScheduledDeparture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentAcceptedHoldMinutes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TConnectStopCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedBy)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OriginallyScheduledDeparture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentAcceptedHoldMinutes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TConnectStopCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedBy)
+        </td>
+        <td>
+           
+            @Html.ActionLink("View Request Details", "Details", "TConnectRequest",new { id=item.Id },null) 
+      
+        </td>
+    </tr>
+}
+
+</table>

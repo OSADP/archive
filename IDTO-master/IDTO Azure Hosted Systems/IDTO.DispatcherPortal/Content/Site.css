@@ -1,0 +1,133 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #333333;
+color: white;
+}
+#grad
+{
+background: -webkit-linear-gradient(right top, #333333 , #555555); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(bottom left, #333333, #555555); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(bottom left, #333333, #555555); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to bottom left, #333333 , #555555); /* Standard syntax */
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.RejectButton
+{
+width:45px;
+height:45px;
+background:url(../images/Decline_Button_Red_160.png);
+background-size:cover;
+background-repeat:no-repeat;
+ cursor: pointer;
+}
+.AcceptButton
+{
+width:45px;
+height:45px;
+background:url(../images/Decline_Button_Green_160.png);
+background-size:cover;
+background-repeat:no-repeat;
+ cursor: pointer;
+}
+
+.blue {
+    color: #33ccff;
+     background-color: #33ccff;
+     border-color:#33ccff;
+    height:3px;
+}
+.green {
+    color: #99cc33;
+     background-color: #99cc33;
+     border-color:#99cc33;
+    height:3px;
+}
+.idtotable {
+  border-collapse: separate;
+  border-spacing: 0em 1.8em;
+  width:100%
+
+}
+.dashHeader {
+  border-collapse: separate;
+  border-spacing: 4em 1em;
+  width:100%
+
+}
+table.idtotable td
+{
+    
+  line-height: 0;
+background-color:#666666;
+text-align:center;
+vertical-align:middle;
+font-size:20px;
+color:white;
+}
+
+#button {
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+}
+
+#toggleButton {
+
+  color: darkred;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+#toggleButton.down {
+
+  color: green;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}

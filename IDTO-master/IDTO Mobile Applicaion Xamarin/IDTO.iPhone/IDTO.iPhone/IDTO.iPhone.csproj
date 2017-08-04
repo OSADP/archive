@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{75D22B0C-E870-44C4-B333-355018370C18}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>IDTO.iPhone</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>IDTOiPhone</AssemblyName>
+    <ReleaseVersion>1.1.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>true</MtouchDebug>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer: Gregory Zink (SBB2KXGVSV)</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>E16AC88F-D36F-4EC7-9C9C-5F955858533F</CodesignProvision>
+    <DefineConstants>DEBUG;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Gregory Zink (SBB2KXGVSV)</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>E16AC88F-D36F-4EC7-9C9C-5F955858533F</CodesignProvision>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>09267E7E-FCFF-405C-840A-EF551B9FAE1D</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution: Battelle Memorial Institute (4NL344Y89Z)</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>0B72DC47-5AE4-4E15-8A94-D909F6603AF5</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.WindowsAzure.Mobile.Ext">
+      <HintPath>..\Components\azure-mobile-services-1.1.0\lib\ios\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile">
+      <HintPath>..\Components\azure-mobile-services-1.1.0\lib\ios\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\azure-mobile-services-1.1.0\lib\ios\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.iOS">
+      <HintPath>..\Components\azure-mobile-services-1.1.0\lib\ios\Xamarin.Auth.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.MonoTouch">
+      <HintPath>..\Components\restsharp-104.1.0\lib\ios\RestSharp.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsAzure.Messaging">
+      <HintPath>..\_external\WindowsAzure.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="BTProgressHUD">
+      <HintPath>..\_external\BTProgressHUD.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAnalytics.iOS">
+      <HintPath>..\Components\googleanalytics-3.0.7\lib\ios\GoogleAnalytics.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="IDTO.Common\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="IDTO.Common.Models\" />
+    <Folder Include="IDTO.Mobile.Managers\" />
+    <Folder Include="ViewClasses\" />
+    <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="..\..\IDTO.Common\LocalLoginMSClient.cs">
+      <Link>IDTO.Common\LocalLoginMSClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\LoginManager.cs">
+      <Link>IDTO.Common\LoginManager.cs</Link>
+    </Compile>
+    <Compile Include="iOSLoginManager.cs" />
+    <Compile Include="ViewControllers\AccountViewController.cs" />
+    <Compile Include="ViewControllers\AccountViewController.designer.cs">
+      <DependentUpon>AccountViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\HomeViewController.cs" />
+    <Compile Include="ViewControllers\HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\LoginViewController.cs" />
+    <Compile Include="ViewControllers\LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\PlanSearchViewController.cs" />
+    <Compile Include="ViewControllers\PlanSearchViewController.designer.cs">
+      <DependentUpon>PlanSearchViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\RegisterViewController.cs" />
+    <Compile Include="ViewControllers\RegisterViewController.designer.cs">
+      <DependentUpon>RegisterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\TripDetailsViewController.cs" />
+    <Compile Include="ViewControllers\TripDetailsViewController.designer.cs">
+      <DependentUpon>TripDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\LoginResult.cs">
+      <Link>IDTO.Common.Models\LoginResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\StepModel.cs">
+      <Link>IDTO.Common.Models\StepModel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\Trip.cs">
+      <Link>IDTO.Common.Models\Trip.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TripSearch.cs">
+      <Link>IDTO.Common.Models\TripSearch.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TripSearchResult.cs">
+      <Link>IDTO.Common.Models\TripSearchResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TripType.cs">
+      <Link>IDTO.Common.Models\TripType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\WeatherInfo.cs">
+      <Link>IDTO.Common.Models\WeatherInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\TripManager.cs">
+      <Link>IDTO.Common\TripManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Mobile.Managers\HomeDataManager.cs">
+      <Link>IDTO.Mobile.Managers\HomeDataManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Mobile.Managers\UserTripDataManager.cs">
+      <Link>IDTO.Mobile.Managers\UserTripDataManager.cs</Link>
+    </Compile>
+    <Compile Include="ViewClasses\CircleView.cs" />
+    <Compile Include="..\..\IDTO.Common.Models\ModeType.cs">
+      <Link>IDTO.Common.Models\ModeType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\ProviderType.cs">
+      <Link>IDTO.Common.Models\ProviderType.cs</Link>
+    </Compile>
+    <Compile Include="ViewControllers\SearchResultsTableViewController.cs" />
+    <Compile Include="ViewControllers\SearchResultsTableViewController.designer.cs">
+      <DependentUpon>SearchResultsTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClasses\LoadingOverlayView.cs" />
+    <Compile Include="ViewControllers\IDTOViewController.cs" />
+    <Compile Include="ViewClasses\ActionSheetDatePicker.cs" />
+    <Compile Include="..\..\IDTO.Common.Models\TripSummary.cs">
+      <Link>IDTO.Common.Models\TripSummary.cs</Link>
+    </Compile>
+    <Compile Include="Classes\TripDetailLegsTableSource.cs" />
+    <Compile Include="ViewClasses\TripDetailLegsTableCell.cs" />
+    <Compile Include="..\..\IDTO.Common\AccountManager.cs">
+      <Link>IDTO.Common\AccountManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\WeatherManager.cs">
+      <Link>IDTO.Common\WeatherManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\ObjectState.cs">
+      <Link>IDTO.Common.Models\ObjectState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\WeatherReport.cs">
+      <Link>IDTO.Common.Models\WeatherReport.cs</Link>
+    </Compile>
+    <Compile Include="Classes\MapDelegate.cs" />
+    <Compile Include="Classes\BasicMapAnnotation.cs" />
+    <Compile Include="..\..\IDTO.Common.Models\TravelerModel.cs">
+      <Link>IDTO.Common.Models\TravelerModel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\TripModel.cs">
+      <Link>IDTO.Common.Models\TripModel.cs</Link>
+    </Compile>
+    <Compile Include="Classes\SearchResultsTableSource.cs" />
+    <Compile Include="Classes\UpcomingTripsTableSource.cs" />
+    <Compile Include="..\..\IDTO.Common\DateTimeExtensions.cs">
+      <Link>IDTO.Common\DateTimeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="Classes\TripDetailStepsTableSource.cs" />
+    <Compile Include="..\..\IDTO.Common.Models\TravelerLocation.cs">
+      <Link>IDTO.Common.Models\TravelerLocation.cs</Link>
+    </Compile>
+    <Compile Include="ViewControllers\UpcomingTripsViewController.cs" />
+    <Compile Include="ViewControllers\UpcomingTripsViewController.designer.cs">
+      <DependentUpon>UpcomingTripsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClasses\TripTableCellHomeScreen.cs" />
+    <Compile Include="ViewClasses\TripTableCell.cs" />
+    <Compile Include="ViewControllers\PastTripsViewController.cs" />
+    <Compile Include="ViewControllers\PastTripsViewController.designer.cs">
+      <DependentUpon>PastTripsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\Constants.cs">
+      <Link>IDTO.Common\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\RegistrationApplicant.cs">
+      <Link>IDTO.Common.Models\RegistrationApplicant.cs</Link>
+    </Compile>
+    <Compile Include="ViewClasses\ActionSheetPicker.cs" />
+    <Compile Include="ViewClasses\ListPickerViewModel.cs" />
+    <Compile Include="ViewClasses\ListPickerChangedEventArgs.cs" />
+    <Compile Include="ViewControllers\TermsViewController.cs" />
+    <Compile Include="ViewControllers\TermsViewController.designer.cs">
+      <DependentUpon>TermsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\CoordinateEntity.cs">
+      <Link>IDTO.Common.Models\CoordinateEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\Distance.cs">
+      <Link>IDTO.Common.Models\Distance.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\EncodedPolylineBean.cs">
+      <Link>IDTO.Common.Models\EncodedPolylineBean.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\GooglePoints.cs">
+      <Link>IDTO.Common\GooglePoints.cs</Link>
+    </Compile>
+    <Compile Include="ViewControllers\TripDetailsMapViewController.cs" />
+    <Compile Include="ViewControllers\TripDetailsMapViewController.designer.cs">
+      <DependentUpon>TripDetailsMapViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClasses\MapViewDelegate.cs" />
+    <Compile Include="Classes\MKStartPointAnnotation.cs" />
+    <Compile Include="Classes\MKEndPointAnnotation.cs" />
+    <Compile Include="Classes\ScrollViewDelegate.cs" />
+    <Compile Include="ViewClasses\HorizontalScrollView.cs" />
+    <Compile Include="..\..\IDTO.Common\FavoritesDbManager.cs">
+      <Link>IDTO.Common\FavoritesDbManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common\SqliteNet.cs">
+      <Link>IDTO.Common\SqliteNet.cs</Link>
+    </Compile>
+    <Compile Include="..\..\IDTO.Common.Models\FavoriteLocation.cs">
+      <Link>IDTO.Common.Models\FavoriteLocation.cs</Link>
+    </Compile>
+    <Compile Include="ViewControllers\FavoritesViewController.cs" />
+    <Compile Include="ViewControllers\FavoritesViewController.designer.cs">
+      <DependentUpon>FavoritesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\FavoritesTableSource.cs" />
+    <Compile Include="ViewClasses\FavoritesTableCell.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\CRideIcon_57.png" />
+    <BundleResource Include="Resources\CRideIcon_114.png" />
+    <BundleResource Include="Resources\CRideIcon_120.png" />
+    <BundleResource Include="Resources\Circle_Orange.png" />
+    <BundleResource Include="Resources\background-568h%402x.png" />
+    <BundleResource Include="Resources\background.png" />
+    <BundleResource Include="Resources\background%402x.png" />
+    <BundleResource Include="Resources\C-Ride_Logo_Large.png" />
+    <BundleResource Include="Resources\C-Ride_Logo_Large%402x.png" />
+    <BundleResource Include="Resources\C-Ride_Logo.png" />
+    <BundleResource Include="Resources\C-Ride_Logo%402x.png" />
+    <BundleResource Include="Resources\193-location-arrow.png" />
+    <BundleResource Include="Resources\193-location-arrow%402x.png" />
+    <BundleResource Include="Resources\Walking_Icon.png" />
+    <BundleResource Include="Resources\Bus_Icon.png" />
+    <BundleResource Include="Resources\01d.png" />
+    <BundleResource Include="Resources\01n.png" />
+    <BundleResource Include="Resources\02d.png" />
+    <BundleResource Include="Resources\02n.png" />
+    <BundleResource Include="Resources\03d.png" />
+    <BundleResource Include="Resources\03n.png" />
+    <BundleResource Include="Resources\04d.png" />
+    <BundleResource Include="Resources\04n.png" />
+    <BundleResource Include="Resources\09d.png" />
+    <BundleResource Include="Resources\09n.png" />
+    <BundleResource Include="Resources\10d.png" />
+    <BundleResource Include="Resources\10n.png" />
+    <BundleResource Include="Resources\11d.png" />
+    <BundleResource Include="Resources\11n.png" />
+    <BundleResource Include="Resources\13d.png" />
+    <BundleResource Include="Resources\13n.png" />
+    <BundleResource Include="Resources\50d.png" />
+    <BundleResource Include="Resources\50n.png" />
+    <BundleResource Include="Settings.bundle\Root.plist" />
+    <BundleResource Include="Resources\103-map.png" />
+    <BundleResource Include="Resources\103-map%402x.png" />
+    <BundleResource Include="Resources\Walking_Icon_Small.png" />
+    <BundleResource Include="Resources\Bus_Icon_Small.png" />
+    <BundleResource Include="Resources\chevron_lt.png" />
+    <BundleResource Include="Resources\chevron_lt%402x.png" />
+    <BundleResource Include="Resources\chevron_rt.png" />
+    <BundleResource Include="Resources\chevron_rt%402x.png" />
+    <BundleResource Include="Resources\chevron%402x.png" />
+    <BundleResource Include="Resources\28-star.png" />
+    <BundleResource Include="Resources\28-star%402x.png" />
+    <BundleResource Include="Resources\259-list.png" />
+    <BundleResource Include="Resources\259-list%402x.png" />
+    <BundleResource Include="Resources\Rail_Icon_Small.png" />
+    <BundleResource Include="Resources\Rail_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="azure-mobile-services">
+      <Version>1.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="restsharp">
+      <Version>104.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googleanalytics">
+      <Version>3.0.7</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

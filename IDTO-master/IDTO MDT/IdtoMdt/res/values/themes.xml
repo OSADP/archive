@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme">
+        <item name="textSmallLight">@style/TextSmallLight</item>
+	    <item name="textMedium">@style/TextMedium</item>
+	    <item name="textMediumBold">@style/TextMediumBold</item>
+	    <item name="textLargeBold">@style/TextLargeBold</item>
+	    <item name="textExtraLargeLight">@style/TextExtraLargeLight</item>
+    </style>
+</resources>

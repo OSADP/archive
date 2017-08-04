@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
+    <ImageView
+        android:id="@+id/plan_view_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cride_logo_large"
+        android:scaleType="fitCenter" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/plan_view_logo">
+        <LinearLayout
+            android:id="@+id/plan_ll_start_and_end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <IDTO.Android.BarView
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plan a Trip"
+                    android:textColor="#fff"
+                    android:textSize="24dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <LinearLayout
+                        android:background="@android:drawable/edit_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:textColor="@color/idto_ltgray"
+                            android:text="Start: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical" />
+                        <EditText
+                            android:id="@+id/plan_et_start"
+                            android:layout_width="fill_parent"
+                            android:textSize="16dp"
+                            android:textCursorDrawable="@null"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:textColor="#000"
+                            android:ellipsize="end"
+                            android:minLines="1"
+                            android:maxLines="1">
+                            <requestFocus
+                                android:id="@+id/requestFocus1" />
+                        </EditText>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/frameLayout1">
+                        <ImageButton
+                            android:id="@+id/plan_ib_use_current_loation_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="left"
+                            android:background="#0000"
+                            android:src="@drawable/_193locationarrow"
+                            android:scaleType="fitCenter" />
+                        <ImageButton
+                            android:id="@+id/plan_ib_show_favorites_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center"
+                            android:background="#0000"
+                            android:src="@drawable/_259list"
+                            android:scaleType="fitCenter" />
+                        <ImageButton
+                            android:id="@+id/plan_ib_star_favorite_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="right"
+                            android:background="#0000"
+                            android:src="@drawable/_28star"
+                            android:scaleType="fitCenter" />
+                    </FrameLayout>
+                    <LinearLayout
+                        android:background="@android:drawable/edit_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:textColor="@color/idto_ltgray"
+                            android:text="End: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical" />
+                        <EditText
+                            android:id="@+id/plan_et_end"
+                            android:layout_width="fill_parent"
+                            android:textSize="16dp"
+                            android:textCursorDrawable="@null"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:minLines="1"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:textColor="#000" />
+                    </LinearLayout>
+                    <FrameLayout
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/frameLayout2">
+                        <ImageButton
+                            android:id="@+id/plan_ib_use_current_loation_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:background="#0000"
+                            android:src="@drawable/_193locationarrow"
+                            android:scaleType="fitCenter" />
+                        <ImageButton
+                            android:id="@+id/plan_ib_show_favorites_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center"
+                            android:background="#0000"
+                            android:src="@drawable/_259list"
+                            android:scaleType="fitCenter" />
+                        <ImageButton
+                            android:id="@+id/plan_ib_star_favorite_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="right"
+                            android:background="#0000"
+                            android:src="@drawable/_28star"
+                            android:scaleType="fitCenter" />
+                    </FrameLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout1">
+                        <LinearLayout
+                            android:id="@+id/plan_ll_date"
+                            android:background="@android:drawable/edit_text"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:textColor="@color/idto_ltgray"
+                                android:text="Date: "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/textView1" />
+                            <EditText
+                                android:id="@+id/plan_et_date"
+                                android:layout_width="fill_parent"
+                                android:textSize="16dp"
+                                android:textCursorDrawable="@null"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:minLines="1"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:background="@null"
+                                android:textColor="#000" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/plan_ll_time"
+                            android:background="@android:drawable/edit_text"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:textColor="@color/idto_ltgray"
+                                android:text="Time: "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/textView2" />
+                            <EditText
+                                android:id="@+id/plan_et_time"
+                                android:layout_width="fill_parent"
+                                android:textSize="16dp"
+                                android:textCursorDrawable="@null"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:minLines="1"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:background="@null"
+                                android:textColor="#000" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/plan_toggle_btn_layout"
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/idto_orange"
+                        android:orientation="horizontal"
+                        android:padding="2dp"
+                        android:layout_marginBottom="10dp">
+                        <Button
+                            android:id="@+id/plan_toggle_btn_departure"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/idto_orange"
+                            android:text="Departure"
+                            android:textColor="#fff"
+                            android:textSize="14dp" />
+                        <Button
+                            android:id="@+id/plan_toggle_btn_arrival"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#fff"
+                            android:text="Arrival"
+                            android:textColor="@color/idto_orange"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/idto_ltgray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Max Walk Distance: " />
+                        <Spinner
+                            android:id="@+id/plan_spinner_max_walk_distance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:prompt="@string/MaxWalkDistPrompt"
+                            android:spinnerMode="dialog" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/plan_btn_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/idto_orange"
+                        android:enabled="false"
+                        android:text="Search"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

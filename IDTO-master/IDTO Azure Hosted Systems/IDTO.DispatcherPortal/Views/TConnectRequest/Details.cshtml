@@ -1,0 +1,63 @@
+﻿@model IEnumerable<IDTO.Entity.Models.TConnectRequest>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>TConnectRequest entries for vehicle ID @Model.First().TConnectedVehicleId</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TConnect.InboundVehicle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TConnectedVehicle.TConnectStopCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TConnectStatus.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstimatedTimeArrival)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestedHoldMinutes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedBy)
+        </th>
+       
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TConnect.InboundVehicle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TConnectedVehicle.TConnectStopCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TConnectStatus.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EstimatedTimeArrival)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestedHoldMinutes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedBy)
+        </td>
+    
+    </tr>
+}
+
+</table>

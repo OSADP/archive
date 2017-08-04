@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">IDTO MDT</string>
+    <string name="title_gate_detail">Gate Detail</string>
+    <string name="title_gate_list">Gate List</string>
+    <string name="trip_separator_character">-</string>
+    <string name="menu_gate_string">Gates</string>
+    <string name="menu_connections_string">Connections</string>
+    <string name="clock_12hr_format">h:mm</string>
+    <string name="clock_am_pm_format">a</string>
+</resources>

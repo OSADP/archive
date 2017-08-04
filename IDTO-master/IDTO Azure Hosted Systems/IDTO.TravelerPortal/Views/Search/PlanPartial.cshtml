@@ -1,0 +1,68 @@
+﻿@model IDTO.TravelerPortal.Models.Plan
+
+
+<div>
+
+
+    @if (Model.itineraries != null)
+    {
+        <table style="width:100%">
+
+            @{
+
+            int count=1;
+
+            }
+
+
+            @foreach (var itinerary in Model.itineraries)
+            {
+                <tr style="background-color:white">
+                    <td>
+                        <table style="position: relative;" align="center">
+                            <tr>
+                                <td>
+                                    @if (count == 1)
+                                    {
+                                        <!--  <img width="26" height="26" src="../Content/images/Icon_PlanaTrip.png" style="position:absolute; top: -13px; left:-13px" /> -->
+                                    }
+                                    @{count++;}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table style="width: 100%; box-shadow: 3px 3px 4px #000000;">
+                            <tr>
+                                <td>@Html.Partial("~/Views/Search/ItineraryPartial.cshtml", itinerary)</td>
+                            </tr>
+                            <tr style="height: 5px; background-color: #F9AE40">
+                                <td ></td>
+                            </tr>
+                        </table>
+                             
+                    </td>
+                </tr>
+                <tr style="background-color:transparent; height:28px">
+                    <td colspan="2">
+                    </td>
+                </tr>
+            }
+
+
+        </table>
+
+    }
+    else
+    {
+        <table style="width:100%">
+            <tr style="background-color:white">
+                <td align="left" valign="top" style="font-size: 20px; color: black; padding-left:2%">
+                    No itineraries found
+                </td>
+            </tr>
+        </table>
+    }
+
+
+</div>

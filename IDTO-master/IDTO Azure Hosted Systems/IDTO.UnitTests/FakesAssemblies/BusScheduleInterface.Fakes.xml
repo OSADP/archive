@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BusScheduleInterface.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:IDTO.BusScheduleInterface.Fakes.StubIBusRoute">
+            <summary>Stub type of IDTO.BusScheduleInterface.IBusRoute</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusRoute.#ctor">
+            <summary>Initializes a new instance of type StubIBusRoute</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusRoute.IDGet">
+            <summary>Sets the stub of IBusRoute.get_ID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusRoute.NameGet">
+            <summary>Sets the stub of IBusRoute.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIBusRoute.bsi::IDTO#BusScheduleInterface#IBusRoute#ID">
+            <summary>Sets the stub of IBusRoute.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIBusRoute.bsi::IDTO#BusScheduleInterface#IBusRoute#Name">
+            <summary>Sets the stub of IBusRoute.get_Name()</summary>
+        </member>
+        <member name="T:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule">
+            <summary>Stub type of IDTO.BusScheduleInterface.IBusSchedule</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.#ctor">
+            <summary>Initializes a new instance of type StubIBusSchedule</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetNextVehicleIDAsyncStep">
+            <summary>Sets the stub of IBusSchedule.GetNextVehicleIDAsync(Step inboundStep)</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetPredictionsAsyncStringString">
+            <summary>Sets the stub of IBusSchedule.GetPredictionsAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetPredictionsForStopsAsyncStringArray">
+            <summary>Sets the stub of IBusSchedule.GetPredictionsForStopsAsync(String[] stopIDs)</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetPredictionsForVehiclesAsyncStringArray">
+            <summary>Sets the stub of IBusSchedule.GetPredictionsForVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetProviderId">
+            <summary>Sets the stub of IBusSchedule.GetProviderId()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetRouteDirectionsAsyncString">
+            <summary>Sets the stub of IBusSchedule.GetRouteDirectionsAsync(String route)</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetRoutesAsync">
+            <summary>Sets the stub of IBusSchedule.GetRoutesAsync()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetStopsAsyncStringString">
+            <summary>Sets the stub of IBusSchedule.GetStopsAsync(String route, String direction)</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetTime">
+            <summary>Sets the stub of IBusSchedule.GetTime()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.GetVehiclesAsyncString">
+            <summary>Sets the stub of IBusSchedule.GetVehiclesAsync(String route)</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetNextVehicleIDAsync(IDTO.Entity.Models.Step)">
+            <summary>Sets the stub of IBusSchedule.GetNextVehicleIDAsync(Step inboundStep)</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetPredictionsAsync(System.String,System.String)">
+            <summary>Sets the stub of IBusSchedule.GetPredictionsAsync(String stopID, String routeID)</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetPredictionsForStopsAsync(System.String[])">
+            <summary>Sets the stub of IBusSchedule.GetPredictionsForStopsAsync(String[] stopIDs)</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetPredictionsForVehiclesAsync(System.String[])">
+            <summary>Sets the stub of IBusSchedule.GetPredictionsForVehiclesAsync(String[] vehicleIDs)</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetProviderId">
+            <summary>Sets the stub of IBusSchedule.GetProviderId()</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetRouteDirectionsAsync(System.String)">
+            <summary>Sets the stub of IBusSchedule.GetRouteDirectionsAsync(String route)</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetRoutesAsync">
+            <summary>Sets the stub of IBusSchedule.GetRoutesAsync()</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetStopsAsync(System.String,System.String)">
+            <summary>Sets the stub of IBusSchedule.GetStopsAsync(String route, String direction)</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetTime">
+            <summary>Sets the stub of IBusSchedule.GetTime()</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIBusSchedule.bsi::IDTO#BusScheduleInterface#IBusSchedule#GetVehiclesAsync(System.String)">
+            <summary>Sets the stub of IBusSchedule.GetVehiclesAsync(String route)</summary>
+        </member>
+        <member name="T:IDTO.BusScheduleInterface.Fakes.StubIPrediction">
+            <summary>Stub type of IDTO.BusScheduleInterface.IPrediction</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIPrediction.#ctor">
+            <summary>Initializes a new instance of type StubIPrediction</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.DistanceToStopGet">
+            <summary>Sets the stub of IPrediction.get_DistanceToStop()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.FinalDestinationGet">
+            <summary>Sets the stub of IPrediction.get_FinalDestination()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.IsDelaySpecifiedGet">
+            <summary>Sets the stub of IPrediction.get_IsDelaySpecified()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.IsDelayedGet">
+            <summary>Sets the stub of IPrediction.get_IsDelayed()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.PredictedTimeOfArrivalOrDepartureGet">
+            <summary>Sets the stub of IPrediction.get_PredictedTimeOfArrivalOrDeparture()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.RouteDirectionGet">
+            <summary>Sets the stub of IPrediction.get_RouteDirection()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.RouteIDGet">
+            <summary>Sets the stub of IPrediction.get_RouteID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.StopIDGet">
+            <summary>Sets the stub of IPrediction.get_StopID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.StopNameGet">
+            <summary>Sets the stub of IPrediction.get_StopName()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.TABlockIDGet">
+            <summary>Sets the stub of IPrediction.get_TABlockID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.TATripIDGet">
+            <summary>Sets the stub of IPrediction.get_TATripID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.TimeStampGet">
+            <summary>Sets the stub of IPrediction.get_TimeStamp()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.TypeGet">
+            <summary>Sets the stub of IPrediction.get_Type()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.VehicleIDGet">
+            <summary>Sets the stub of IPrediction.get_VehicleID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIPrediction.ZoneGet">
+            <summary>Sets the stub of IPrediction.get_Zone()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#DistanceToStop">
+            <summary>Sets the stub of IPrediction.get_DistanceToStop()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#FinalDestination">
+            <summary>Sets the stub of IPrediction.get_FinalDestination()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#IsDelaySpecified">
+            <summary>Sets the stub of IPrediction.get_IsDelaySpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#IsDelayed">
+            <summary>Sets the stub of IPrediction.get_IsDelayed()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#PredictedTimeOfArrivalOrDeparture">
+            <summary>Sets the stub of IPrediction.get_PredictedTimeOfArrivalOrDeparture()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#RouteDirection">
+            <summary>Sets the stub of IPrediction.get_RouteDirection()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#RouteID">
+            <summary>Sets the stub of IPrediction.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#StopID">
+            <summary>Sets the stub of IPrediction.get_StopID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#StopName">
+            <summary>Sets the stub of IPrediction.get_StopName()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#TABlockID">
+            <summary>Sets the stub of IPrediction.get_TABlockID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#TATripID">
+            <summary>Sets the stub of IPrediction.get_TATripID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#TimeStamp">
+            <summary>Sets the stub of IPrediction.get_TimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#Type">
+            <summary>Sets the stub of IPrediction.get_Type()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#VehicleID">
+            <summary>Sets the stub of IPrediction.get_VehicleID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIPrediction.bsi::IDTO#BusScheduleInterface#IPrediction#Zone">
+            <summary>Sets the stub of IPrediction.get_Zone()</summary>
+        </member>
+        <member name="T:IDTO.BusScheduleInterface.Fakes.StubIStop">
+            <summary>Stub type of IDTO.BusScheduleInterface.IStop</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIStop.#ctor">
+            <summary>Initializes a new instance of type StubIStop</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIStop.DirectionGet">
+            <summary>Sets the stub of IStop.get_Direction()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIStop.IDGet">
+            <summary>Sets the stub of IStop.get_ID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIStop.LatitudeGet">
+            <summary>Sets the stub of IStop.get_Latitude()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIStop.LongitudeGet">
+            <summary>Sets the stub of IStop.get_Longitude()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIStop.NameGet">
+            <summary>Sets the stub of IStop.get_Name()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIStop.RouteIDGet">
+            <summary>Sets the stub of IStop.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIStop.bsi::IDTO#BusScheduleInterface#IStop#Direction">
+            <summary>Sets the stub of IStop.get_Direction()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIStop.bsi::IDTO#BusScheduleInterface#IStop#ID">
+            <summary>Sets the stub of IStop.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIStop.bsi::IDTO#BusScheduleInterface#IStop#Latitude">
+            <summary>Sets the stub of IStop.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIStop.bsi::IDTO#BusScheduleInterface#IStop#Longitude">
+            <summary>Sets the stub of IStop.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIStop.bsi::IDTO#BusScheduleInterface#IStop#Name">
+            <summary>Sets the stub of IStop.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIStop.bsi::IDTO#BusScheduleInterface#IStop#RouteID">
+            <summary>Sets the stub of IStop.get_RouteID()</summary>
+        </member>
+        <member name="T:IDTO.BusScheduleInterface.Fakes.StubIVehicle">
+            <summary>Stub type of IDTO.BusScheduleInterface.IVehicle</summary>
+        </member>
+        <member name="M:IDTO.BusScheduleInterface.Fakes.StubIVehicle.#ctor">
+            <summary>Initializes a new instance of type StubIVehicle</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.BlkSpecifiedGet">
+            <summary>Sets the stub of IVehicle.get_blkSpecified()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.BlockIDGet">
+            <summary>Sets the stub of IVehicle.get_BlockID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.DestinationGet">
+            <summary>Sets the stub of IVehicle.get_Destination()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.HeadingGet">
+            <summary>Sets the stub of IVehicle.get_Heading()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.IDGet">
+            <summary>Sets the stub of IVehicle.get_ID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.IsDelayedGet">
+            <summary>Sets the stub of IVehicle.get_IsDelayed()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.LatitudeGet">
+            <summary>Sets the stub of IVehicle.get_Latitude()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.LongitudeGet">
+            <summary>Sets the stub of IVehicle.get_Longitude()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.PatternDistanceGet">
+            <summary>Sets the stub of IVehicle.get_PatternDistance()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.PatternIDGet">
+            <summary>Sets the stub of IVehicle.get_PatternID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.RouteIDGet">
+            <summary>Sets the stub of IVehicle.get_RouteID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.ServerTimeStampGet">
+            <summary>Sets the stub of IVehicle.get_ServerTimeStamp()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.SpeedGet">
+            <summary>Sets the stub of IVehicle.get_Speed()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.TablockidGet">
+            <summary>Sets the stub of IVehicle.get_tablockid()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.TatripidGet">
+            <summary>Sets the stub of IVehicle.get_tatripid()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.TimeStampGet">
+            <summary>Sets the stub of IVehicle.get_TimeStamp()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.TripIDGet">
+            <summary>Sets the stub of IVehicle.get_TripID()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.TripidSpecifiedGet">
+            <summary>Sets the stub of IVehicle.get_tripidSpecified()</summary>
+        </member>
+        <member name="F:IDTO.BusScheduleInterface.Fakes.StubIVehicle.ZoneGet">
+            <summary>Sets the stub of IVehicle.get_Zone()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#BlockID">
+            <summary>Sets the stub of IVehicle.get_BlockID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#Destination">
+            <summary>Sets the stub of IVehicle.get_Destination()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#Heading">
+            <summary>Sets the stub of IVehicle.get_Heading()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#ID">
+            <summary>Sets the stub of IVehicle.get_ID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#IsDelayed">
+            <summary>Sets the stub of IVehicle.get_IsDelayed()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#Latitude">
+            <summary>Sets the stub of IVehicle.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#Longitude">
+            <summary>Sets the stub of IVehicle.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#PatternDistance">
+            <summary>Sets the stub of IVehicle.get_PatternDistance()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#PatternID">
+            <summary>Sets the stub of IVehicle.get_PatternID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#RouteID">
+            <summary>Sets the stub of IVehicle.get_RouteID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#ServerTimeStamp">
+            <summary>Sets the stub of IVehicle.get_ServerTimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#Speed">
+            <summary>Sets the stub of IVehicle.get_Speed()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#TimeStamp">
+            <summary>Sets the stub of IVehicle.get_TimeStamp()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#TripID">
+            <summary>Sets the stub of IVehicle.get_TripID()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#Zone">
+            <summary>Sets the stub of IVehicle.get_Zone()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#blkSpecified">
+            <summary>Sets the stub of IVehicle.get_blkSpecified()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#tablockid">
+            <summary>Sets the stub of IVehicle.get_tablockid()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#tatripid">
+            <summary>Sets the stub of IVehicle.get_tatripid()</summary>
+        </member>
+        <member name="P:IDTO.BusScheduleInterface.Fakes.StubIVehicle.bsi::IDTO#BusScheduleInterface#IVehicle#tripidSpecified">
+            <summary>Sets the stub of IVehicle.get_tripidSpecified()</summary>
+        </member>
+    </members>
+</doc>

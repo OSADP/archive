@@ -1,0 +1,154 @@
+﻿@model IDTO.TravelerPortal.Models.RegisterViewModel
+
+<div id="PartialLoginForm" style="padding-right:1.5em">
+    @using (Html.BeginForm("RegisterPartial", "Account", FormMethod.Post, new { id = "register" }))
+    { 
+        @Html.AntiForgeryToken()
+        <table id="PartialloginForm" align="center">
+            <tr>
+                <td>
+                    <table align="center" style="width:90%">
+                        <tr>
+                            <td align="left" valign="top" style="font-size:24px">
+                                Register
+                            </td>
+                        </tr>
+                        <tr style="height:10px"><td></td></tr>
+                        <tr>
+                            <td align="left">
+                                Already have an account? @Html.ActionLink("Login", "Login", "Account", new { returnUrl = Request.RawUrl.ToString() }, new { @style = "color:white ; text-decoration: underline" })
+                            </td>
+                        </tr>
+                        <tr style="height:10px"><td></td></tr>
+                        <tr>
+                            <td id="test" style="color:red" align="left">
+                                @Html.ValidationSummary(true)
+                            </td>
+                        </tr>
+                        <tr style="height:10px"><td></td></tr>
+                        <tr>
+                            <td align="left">
+                                @{
+                                    if (Model != null)
+                                    {
+                                        if (Model.FirstName == "")
+                                        {
+                                                        @Html.TextBoxFor(m => m.FirstName, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.FirstName).ToHtmlString()) })
+                                        }
+                                        else
+                                        {
+                                                        @Html.TextBoxFor(m => m.FirstName, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @Value = Model.FirstName })
+                                        }
+                                    }
+                                    else
+                                    {
+                                                        @Html.TextBoxFor(m => m.FirstName, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.FirstName).ToHtmlString()) })
+                                    }
+                                }
+                                @Html.ValidationMessageFor(m => m.FirstName)
+                            </td>
+                        </tr>
+                        <tr style="height:20px"><td></td></tr>
+                        <tr>
+                            <td align="left">
+                                @{
+                                    if (Model != null)
+                                    {
+                                        if (Model.LastName == "")
+                                        {
+                                                @Html.TextBoxFor(m => m.LastName, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.LastName).ToHtmlString()) })
+                                        }
+                                        else
+                                        {
+                                                @Html.TextBoxFor(m => m.LastName, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @Value = Model.LastName })
+                                        }
+                                    }
+                                    else
+                                    {
+                                                @Html.TextBoxFor(m => m.LastName, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.LastName).ToHtmlString()) })
+                                    }
+                                }
+                                @Html.ValidationMessageFor(m => m.LastName)
+                            </td>
+                        </tr>
+                        <tr style="height:20px"><td></td></tr>
+                        <tr>
+                            <td align="left">
+                                @{
+                                    if (Model != null)
+                                    {
+                                        if (Model.Email == "")
+                                        {
+                                                @Html.TextBoxFor(m => m.Email, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.Email).ToHtmlString()) })
+                                        }
+                                        else
+                                        {
+                                                @Html.TextBoxFor(m => m.Email, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @Value = Model.Email })
+                                        }
+                                    }
+                                    else
+                                    {
+                                                @Html.TextBoxFor(m => m.Email, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.Email).ToHtmlString()) })
+                                    }
+                                }
+                                @Html.ValidationMessageFor(m => m.Email)
+                            </td>
+                        </tr>
+                        <tr style="height:20px"><td></td></tr>
+                        <tr>
+                            <td align="left">
+                                @Html.PasswordFor(m => m.Password, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.Password).ToHtmlString()) })
+                                @Html.ValidationMessageFor(m => m.Password)
+                            </td>
+                        </tr>
+                        <tr style="height:20px"><td></td></tr>
+                        <tr>
+                            <td align="left">
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { @style = "background-color:#18283C; color:white", @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.ConfirmPassword).ToHtmlString()) })
+                                @Html.ValidationMessageFor(m => m.ConfirmPassword)
+                            </td>
+                        </tr>
+                        <tr style="height:20px"><td></td></tr>
+                        <tr>
+                            <td align="center">
+                                <input id="PartialSubmitRegister" type="submit" value="Create Account" class="btn btn-IDTOdefault" />
+                            </td>
+                        </tr>
+
+                        <tr style="height:20px"><td></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="height: 1px; background-color: white">
+                <td></td>
+            </tr>
+        </table>
+
+   <script>
+       $(function () {
+           $('#register').unbind('submit');
+
+           $('#register')
+               .attr('action', '/Account/RegisterPartial')
+               .bind('submit', function () {
+                   var form = this;
+                   if ($("#register").valid()) {
+                       $.post($(form).attr('action'), $(form).serialize(), function (data) {
+                           if (data.errors) {
+                               $('#test').empty().append(data.errors);
+                           } else {
+                               document.location = data.redirect;
+                           }
+                       });
+                   }
+
+                   return false;
+               });
+       });
+    </script>
+    }
+</div>   
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

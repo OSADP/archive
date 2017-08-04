@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">C Rides</string>
+  <string name="UpcomingTripsButtonString">Upcoming Trips</string>
+  <string name="TripHistoryButtonString">Trip History</string>
+  <string name="PlanTripButtonString">Plan Trip</string>
+  <string name="AccountButtonString">Account</string>
+  <string name="SubmitRegistrationButtonString">Register</string>
+  <string name="RegistrationButtonString">Register</string>
+  <string name="LoginButtonString">Login</string>
+  <string name="PasswordHint">Password</string>
+  <string name="VerifyPasswordHint">Verify Password</string>
+  <string name="EmailAddressHint">Email Address</string>
+  <string name="FirstNameHint">First Name</string>
+  <string name="LastNameHint">Last Name</string>
+  <string name="MaxWalkDistPrompt">Max Walk Distance</string>
+  <color name="orange">#fa2</color>
+  <color name="reddish">#f44</color>
+
+</resources>

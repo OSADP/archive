@@ -1,0 +1,91 @@
+@using IDTO.TravelerPortal.Common
+@using IDTO.TravelerPortal.Common.Models
+@model IDTO.TravelerPortal.Common.IHomeDataManager
+
+<div>
+    <table>
+        <tr>
+            <td valign="top" colspan="2" id="LocName" style="font-size:26px"></td>
+        </tr>
+        <tr>
+            <td id="WeatherImg"></td>
+            <td id="Temperature" style="font-size:36px"></td>
+        </tr>
+    </table>
+
+    <script>
+        @{
+            IHomeDataManager mHomeDataManager = new HomeDataManager();
+            WeatherInfo weatherInfo;
+            string temperatureString;
+            string imagePath;
+            double lat, lon;
+        }
+
+    if (navigator.geolocation) {
+        var etimeout = setTimeout(handleGeoLocError, 10000);
+
+        navigator.geolocation.getCurrentPosition(showPositionGeoLoc, handleGeoLocError, { timeout: 5000 });
+    }
+    else {
+        showPositionDefault();
+    }
+
+    function showPositionGeoLoc(position) {
+        clearTimeout(etimeout);
+        showWeatherData(position.coords.latitude, position.coords.longitude);
+    }
+
+    function showWeatherData(latitude, longitude) {
+        var temperature = 0;
+        var dfd = $.Deferred();
+        var url = '@Config.OpenWeatherMapDataUrl';
+        url += "weather?lat=";
+        url += latitude;
+        url += "&lon=";
+        url += longitude;
+        url += "&cnt=1";
+        $.ajax({
+            type: "POST",
+            dataType: "jsonp",
+            url: url + "&callback=?",
+            async: false,
+            success: function (data) {
+
+                temperature = data.main.temp;
+                dfd.resolve(temperature);
+
+                document.getElementById("LocName").innerHTML = data.name;
+                document.getElementById("WeatherImg").innerHTML = "<img height='40' src='../Content/images/" + data.weather[0].icon + ".png' />";
+                document.getElementById("Temperature").innerHTML = Math.round(((data.main.temp - 273.15) * 1.8000) + 32.00) + "°";
+            },
+            error: function (errorData) {
+                showPositionDefault();
+            }
+        });
+        return dfd.promise();
+    }
+
+    function handleGeoLocError(err) {
+        clearTimeout(etimeout);
+        showPositionDefault();
+    }
+
+    function showPositionDefault() {
+        @{
+                lat = 39.9833;
+                lon = -82.9833;
+               
+                weatherInfo = mHomeDataManager.GetWeather(lat, lon);
+                temperatureString = ((int)weatherInfo.TemperatureDegF).ToString() + "°";
+                imagePath = "../Content/images/" + weatherInfo.IconName;
+            }
+
+        document.getElementById("LocName").innerHTML = "@weatherInfo.LocationName";
+        document.getElementById("WeatherImg").innerHTML = "<img height='40' src=@imagePath />";
+        document.getElementById("Temperature").innerHTML = "@temperatureString";
+    }
+
+
+    </script>
+</div>

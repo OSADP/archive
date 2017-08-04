@@ -1,0 +1,10 @@
+--- IDTO.DataProcessorTests.csproj
++++ IDTO.DataProcessorTests.csproj
+@@ -69,6 +69,7 @@
+     <Fakes Include="Fakes\IDTO.DataProcessor.fakes" />
+     <Fakes Include="Fakes\IDTO.Entity.fakes" />
+     <Fakes Include="Fakes\BusTime.fakes" />
++    <None Include="app.config" />
+     <None Include="packages.config" />
+   </ItemGroup>
+   <ItemGroup>

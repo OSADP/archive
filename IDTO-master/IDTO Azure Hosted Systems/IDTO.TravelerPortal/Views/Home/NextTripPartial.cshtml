@@ -1,0 +1,68 @@
+@using System;
+@using IDTO.TravelerPortal.Common.ExtensionMethods;
+@using IDTO.TravelerPortal.Common;
+@model IDTO.TravelerPortal.Models.NextTripViewModel
+
+@if (Model != null)
+{
+ <div>
+    <table style="color: white">
+        <tr>
+            <td valign="top" colspan="2" style="font-size:24px">Next Trip</td><td width="10px"></td>
+        </tr>
+        <tr>
+            <td colspan="2" height="10px"></td><td></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-size: 16px; ">@ExtensionMethods.GetTodayTomorrowString(TimeZoneInfo.ConvertTimeFromUtc(Model.TripStartDate.Value, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time")))</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" height="5px"></td><td></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-weight: bold; font-size: 40px; color: #F9AE40">@TimeZoneInfo.ConvertTimeFromUtc(Model.TripStartDate.Value, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time")).ToShortTimeString()</td>
+            <td></td>
+               </tr>
+        <tr>
+            <td colspan="2" height="10px"></td><td></td>
+        </tr>
+        <tr>
+            <td colspan="2" style=" font-size: 18px; ">@Model.Destination</td>
+            <td></td>
+               </tr>
+        <tr>
+            <td colspan="3" height="10px" style="border-bottom: 1px solid white"></td>
+        </tr>
+        <tr>
+            <td colspan="2" height="10px"></td><td></td>
+        </tr>
+        <tr>
+            <td colspan="2" style=" font-size: 12px; ">@Model.FirstStopString</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" height="10px" style="border-bottom: 1px solid white"></td>
+        </tr>
+        <tr>
+            <td colspan="2" height="10px"></td><td></td>
+        </tr>
+        <tr>
+            <td width="70px" style=" font-size: 12px; ">Total Time: </td><td style=" font-size: 12px; ">@Model.TotalDurationMin min</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" height="10px" style="border-bottom: 1px solid white"></td>
+        </tr>
+    </table>
+
+</div>
+}
+else
+{
+    <div style="font-size:24px">
+        No Planned Trips
+    </div>
+}
+
+

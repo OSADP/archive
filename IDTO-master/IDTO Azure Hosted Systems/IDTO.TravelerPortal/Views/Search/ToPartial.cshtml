@@ -1,0 +1,69 @@
+﻿@model IDTO.TravelerPortal.Models.To
+
+<div>
+    <h4>To</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stopCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stopCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.arrival)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.arrival)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.departure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.departure)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stopIndex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stopIndex)
+        </dd>
+
+    </dl>
+
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

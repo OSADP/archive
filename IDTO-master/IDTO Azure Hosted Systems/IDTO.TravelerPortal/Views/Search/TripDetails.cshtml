@@ -1,0 +1,88 @@
+﻿@model IDTO.TravelerPortal.Models.Itinerary
+
+@{
+    ViewBag.Title = "TripDetailsView";
+}
+
+<h2 style="color:white">Trip Details</h2>
+
+<div style="color:white">
+    <h4>Itinerary</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.duration)
+        </dt>
+
+        @{
+            var duration = Model.duration / 60000;
+        }
+        <dd>
+            @duration min
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.startTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.startTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.endTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.walkTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.walkTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.transitTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.transitTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.waitingTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.waitingTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.walkDistance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.walkDistance)
+        </dd>
+
+    </dl>
+
+    @if (Model.legs != null)
+    {
+        foreach (var leg in Model.legs)
+        {
+            @Html.Partial("~/Views/Search/LegPartial.cshtml", leg)
+        }
+    }
+    else
+    {
+        <h3>No itineraries found</h3>
+    }
+</div>
+<p>
+    @Html.ActionLink("Back to Trips", "SearchResults")
+</p>

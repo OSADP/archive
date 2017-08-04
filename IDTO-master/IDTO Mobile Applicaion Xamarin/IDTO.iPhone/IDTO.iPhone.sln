@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDTO.iPhone", "IDTO.iPhone\IDTO.iPhone.csproj", "{75D22B0C-E870-44C4-B333-355018370C18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
+		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75D22B0C-E870-44C4-B333-355018370C18}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{75D22B0C-E870-44C4-B333-355018370C18}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{75D22B0C-E870-44C4-B333-355018370C18}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{75D22B0C-E870-44C4-B333-355018370C18}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{75D22B0C-E870-44C4-B333-355018370C18}.Ad-Hoc|iPhoneSimulator.Deploy.0 = Ad-Hoc|iPhoneSimulator
+		{75D22B0C-E870-44C4-B333-355018370C18}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{75D22B0C-E870-44C4-B333-355018370C18}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{75D22B0C-E870-44C4-B333-355018370C18}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{75D22B0C-E870-44C4-B333-355018370C18}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{75D22B0C-E870-44C4-B333-355018370C18}.AppStore|iPhoneSimulator.Deploy.0 = AppStore|iPhoneSimulator
+		{75D22B0C-E870-44C4-B333-355018370C18}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{75D22B0C-E870-44C4-B333-355018370C18}.Debug|iPhone.Build.0 = Debug|iPhone
+		{75D22B0C-E870-44C4-B333-355018370C18}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{75D22B0C-E870-44C4-B333-355018370C18}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{75D22B0C-E870-44C4-B333-355018370C18}.Release|iPhone.ActiveCfg = Release|iPhone
+		{75D22B0C-E870-44C4-B333-355018370C18}.Release|iPhone.Build.0 = Release|iPhone
+		{75D22B0C-E870-44C4-B333-355018370C18}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{75D22B0C-E870-44C4-B333-355018370C18}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IDTO.iPhone\IDTO.iPhone.csproj
+		version = 1.1.0
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

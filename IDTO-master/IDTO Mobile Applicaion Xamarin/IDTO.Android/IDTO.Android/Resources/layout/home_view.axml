@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
+    <ImageView
+        android:id="@+id/home_view_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cride_logo_large"
+        android:scaleType="fitCenter" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/home_view_logo">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_below="@+id/home_view_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout24">
+                <LinearLayout
+                    android:id="@+id/home_view_ll_no_upcoming_trips_container"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <IDTO.Android.BarView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/iDTO.Android.BarView5" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="No Trips Scheduled"
+                        android:textColor="#fff"
+                        android:textSize="24dp"
+                        android:id="@+id/textView3"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/home_view_ll_next_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <IDTO.Android.BarView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/iDTO.Android.BarView6" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayout13"
+                        android:layout_marginLeft="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Next Trip"
+                            android:textColor="#fff"
+                            android:textSize="24dp"
+                            android:id="@+id/textView4" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="#fff"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingTop="2dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:id="@+id/linearLayout14"
+                            android:layout_marginTop="5dp">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:id="@+id/linearLayout15">
+                                <TextView
+                                    android:id="@+id/home_view_tv_next_day"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Day"
+                                    android:textColor="#000"
+                                    android:textSize="12dp" />
+                                <TextView
+                                    android:id="@+id/home_view_tv_next_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Time"
+                                    android:textColor="@color/idto_orange"
+                                    android:textSize="24dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:id="@+id/linearLayout16">
+                                <TextView
+                                    android:id="@+id/home_view_tv_next_title"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Title"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#000"
+                                    android:textSize="16dp"
+                                    android:lines="1"
+                                    android:ellipsize="marquee"
+                                    android:marqueeRepeatLimit="2" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:id="@+id/home_view_v_next_trip_middle"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000" />
+                        <LinearLayout
+                            android:id="@+id/home_view_ll_next_trip_bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp">
+                            <TextView
+                                android:id="@+id/home_view_tv_next_duration"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Duration"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                android:textSize="14dp"
+                                android:lines="1"
+                                android:ellipsize="end" />
+                            <TextView
+                                android:id="@+id/home_view_tv_next_subtitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="Subtitle"
+                                android:textColor="#000"
+                                android:textSize="12dp"
+                                android:ellipsize="end"
+                                android:lines="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/home_view_upcomingTrips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <IDTO.Android.BarView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/iDTO.Android.BarView7" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayout17"
+                        android:layout_marginLeft="5dp">
+                        <TextView
+                            android:id="@+id/home_view_tv_upcoming_trips_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Upcoming Trips"
+                            android:textColor="#fff"
+                            android:textSize="24dp"
+                            android:layout_marginBottom="5dp" />
+                        <LinearLayout
+                            android:id="@+id/home_view_upcoming_item1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:id="@+id/linearLayout18">
+                                <TextView
+                                    android:id="@+id/home_view_tv_day_upcoming1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Day"
+                                    android:textColor="@color/idtoblack"
+                                    android:textSize="12dp" />
+                                <TextView
+                                    android:id="@+id/home_view_tv_time_upcoming1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Time"
+                                    android:textColor="@color/idto_orange"
+                                    android:textSize="24dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:id="@+id/linearLayout19">
+                                <TextView
+                                    android:id="@+id/home_view_tv_title_upcoming1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Title"
+                                    android:scrollHorizontally="true"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:textColor="@color/idtoblack"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"
+                            android:id="@+id/view3" />
+                        <LinearLayout
+                            android:id="@+id/home_view_upcoming_item2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:id="@+id/linearLayout20">
+                                <TextView
+                                    android:id="@+id/home_view_tv_day_upcoming2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Day"
+                                    android:textColor="@color/idtoblack"
+                                    android:textSize="12dp" />
+                                <TextView
+                                    android:id="@+id/home_view_tv_time_upcoming2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Time"
+                                    android:textColor="@color/idto_orange"
+                                    android:textSize="24dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:id="@+id/linearLayout21">
+                                <TextView
+                                    android:id="@+id/home_view_tv_title_upcoming2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Title"
+                                    android:scrollHorizontally="true"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:textColor="@color/idtoblack"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#000"
+                            android:id="@+id/view4" />
+                        <Button
+                            android:id="@+id/home_view_btn_scheduled_trips"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="More Trips"
+                            android:background="@color/idto_orange"
+                            android:layout_marginTop="2dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayout22">
+                    <IDTO.Android.BarView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/iDTO.Android.BarView8" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayout23"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp">
+                        <Button
+                            android:id="@+id/home_view_btn_plan"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#0000"
+                            android:gravity="left"
+                            android:text="Plan Trip"
+                            android:textColor="#fff"
+                            android:textSize="24dp"
+                            android:layout_marginBottom="10dp"
+                            android:textStyle="normal" />
+                        <Button
+                            android:id="@+id/home_view_btn_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#0000"
+                            android:gravity="left"
+                            android:text="Trip History"
+                            android:textColor="#fff"
+                            android:textSize="24dp"
+                            android:layout_marginBottom="10dp" />
+                        <Button
+                            android:id="@+id/home_view_btn_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#0000"
+                            android:gravity="left"
+                            android:text="Account"
+                            android:textColor="#fff"
+                            android:textSize="24dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/home_view_tv_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_view_logo"
+                android:layout_toLeftOf="@+id/home_view_iv_weather_conditions"
+                android:text="72F"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+            <ImageView
+                android:id="@+id/home_view_iv_weather_conditions"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_view_logo"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/w01d" />
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/home_view_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

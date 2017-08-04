@@ -1,0 +1,5 @@
+D:\Documents\Projects\IDTO_HG\Hosted-Systems\IDTO.DataProcessorTests\Fakes\BusScheduleInterface.fakes : warning : Cannot generate shim for IDTO.BusScheduleInterface.IBusRoute: type is an interface.
+D:\Documents\Projects\IDTO_HG\Hosted-Systems\IDTO.DataProcessorTests\Fakes\BusScheduleInterface.fakes : warning : Cannot generate shim for IDTO.BusScheduleInterface.IBusSchedule: type is an interface.
+D:\Documents\Projects\IDTO_HG\Hosted-Systems\IDTO.DataProcessorTests\Fakes\BusScheduleInterface.fakes : warning : Cannot generate shim for IDTO.BusScheduleInterface.IPrediction: type is an interface.
+D:\Documents\Projects\IDTO_HG\Hosted-Systems\IDTO.DataProcessorTests\Fakes\BusScheduleInterface.fakes : warning : Cannot generate shim for IDTO.BusScheduleInterface.IStop: type is an interface.
+D:\Documents\Projects\IDTO_HG\Hosted-Systems\IDTO.DataProcessorTests\Fakes\BusScheduleInterface.fakes : warning : Cannot generate shim for IDTO.BusScheduleInterface.IVehicle: type is an interface.

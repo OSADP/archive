@@ -1,0 +1,44 @@
+﻿@model IEnumerable<IDTO.TravelerPortal.Common.Models.Trip>
+
+@{
+    int count = 1;
+    foreach (var upcomingTrip in Model)
+    {
+        DateTime tripStart = TimeZoneInfo.ConvertTimeFromUtc(upcomingTrip.TripStartDate.Value, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
+        string todayTomorrowString = IDTO.TravelerPortal.Common.ExtensionMethods.ExtensionMethods.GetTodayTomorrowString(tripStart);
+        var startFirstNonWalk = upcomingTrip.GetFirstStepString();
+        <tr>
+            <td>
+                <table style="width:100%;" align="center" cellpadding="10" cellspacing="10">
+                    <tr>
+                        <td colspan="6" height="5px"></td>
+                    </tr>
+                    <tr>
+                        <td width="10px"></td>
+                        <td width="60px" align="left" style="font-size: 11px; color: #6E6E6E">@todayTomorrowString</td>
+                        <td rowspan="2" align="left" valign="top" style="font-size: 12px; color: #6E6E6E">@startFirstNonWalk</td>
+                        <td width="10px"></td>
+                        <td rowspan="2" align="right">@Html.ActionLink("Details", "UpcomingTripDetails", "Search", new { tripId = upcomingTrip.Id }, new { @class = "btn btn-IDTOsecondaryDetails" })</td>
+                        <td width="10px"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left" style="font-weight: bold; font-size: 12px; color: #6E6E6E">@tripStart.ToShortTimeString()</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" height="5px"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="border-bottom: 1px solid #6E6E6E"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        count++;
+        if (count > 2) { break; }
+    }
+}

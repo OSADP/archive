@@ -1,0 +1,188 @@
+﻿@using Microsoft.AspNet.Identity
+
+@model IDTO.TravelerPortal.Models.AccountViewModel
+
+<div style="margin-top: 152px; ">
+    <table width="660">
+        <tr>
+            <td>
+                <table width="316" align="center" style="box-shadow: 3px 3px 4px #000000;">
+                    <tr>
+                        <td>
+                            <table style="position: relative;" align="center">
+                                <tr>
+                                    <td>
+                                        <img width="40" height="40" src="../Content/images/Icon_Account.png" style="position:absolute; top: -20px; left:-20px" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td id="manageform" style="padding:10px 10px 10px 10px">
+                            @using (Html.BeginForm("Manage", "Account", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.HiddenFor(m => m.accountInfoModel.Email)
+
+                                <table align="center" cellpadding="5">
+                                    <tr>
+                                        <td colspan="2" align="left">
+                                            <h3>Account Settings</h3>
+                                        </td>
+                                    </tr>
+                                    <tr style="height:20px"><td colspan="2"></td></tr>
+                                    <!--<tr>
+                                        <td align="left">
+                                            @Html.DisplayNameFor(m => m.accountInfoModel.DefaultMobilityFlag).ToHtmlString():
+                                        </td>
+                                        <td align="left">
+                                            @Html.CheckBoxFor(m => m.accountInfoModel.DefaultMobilityFlag)
+                                        </td>
+                                    </tr>
+                                    <tr style="height:20px"><td colspan="2"></td></tr>
+                                    <tr>
+                                        <td align="left">
+                                            @Html.DisplayNameFor(m => m.accountInfoModel.DefaultBicycleFlag).ToHtmlString():
+                                        </td>
+                                        <td align="left">
+                                            @Html.CheckBoxFor(m => m.accountInfoModel.DefaultBicycleFlag)
+                                        </td>
+                                    </tr>-->
+                                    <tr>
+                                        <td align="left">
+                                            @Html.DisplayNameFor(m => m.accountInfoModel.PromoCode).ToHtmlString():
+                                        </td>
+                                        
+                                            @if (String.IsNullOrEmpty(Model.accountInfoModel.PromoCode))
+                                            {
+                                                <td align="left">
+                                                    @Html.TextBoxFor(m => m.accountInfoModel.PromoCode)
+                                                </td>
+                                            }
+                                            else
+                                            {
+                                                <td align="left">
+                                                    @Model.accountInfoModel.PromoCode
+                                                </td>
+                                            }
+                                        
+                                    </tr>
+                                    <tr style="height:30px"><td colspan="2"></td></tr>
+                                   
+                                    <tr>
+                                        <td colspan="2" align="center" style="width:100%">
+                                            @if (String.IsNullOrEmpty(Model.accountInfoModel.PromoCode))
+                                            {
+                                                <input type="submit" value="Update" class="btn btn-IDTOdefault" />
+                                            }
+                                        </td>
+                                    </tr>
+                                    <tr style="height:20px"><td colspan="2"></td></tr>
+                                    <tr>
+                                        <td colspan="2" align="center" style="width:100%">
+                                            @if (Model.accountInfoModel.PromoCodeUpdated)
+                                            {
+                                                if (Model.accountInfoModel.PromoCodeValid)
+                                                {
+                                                    <h4 style="color:forestgreen">Promo Code Updated</h4>
+                                                }
+                                                else
+                                                {
+                                                    <h4 style="color:darkred">Invalid Promo Code</h4>
+                                                }
+                                            }
+                                        </td>
+                                    </tr>
+                                    <tr style="height:0px"><td colspan="2"></td></tr>
+                                </table>
+                            }
+                        </td>
+                    </tr>
+                    <tr style="height: 5px; background-color: #F9AE40;">
+                        <td></td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td id="managepasswordform" style="padding:0px 10px 10px 10px">
+                            @using (Html.BeginForm("ManagePassword", "Account", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.HiddenFor(m => m.accountInfoModel.Email)
+                                @Html.HiddenFor(m => m.accountInfoModel.DefaultBicycleFlag)
+                                @Html.HiddenFor(m => m.accountInfoModel.DefaultMobilityFlag)
+
+
+                                <table align="center" cellpadding="5">
+                                    <tr>
+                                        <td align="left">
+                                            <h3>Change Password</h3>
+                                        </td>
+                                    </tr>
+                                    <tr style="height:20px"><td></td></tr>
+                                    <tr>
+                                        <td align="center">
+                                            @Html.PasswordFor(m => m.localPasswordModel.OldPassword, new { @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.localPasswordModel.OldPassword).ToHtmlString()) })
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="padding:0px 0px 0px 10px">
+                                            @Html.ValidationMessageFor(m => m.localPasswordModel.OldPassword)
+                                        </td>
+                                    </tr>
+                                    <tr style="height:20px"><td></td></tr>
+                                    <tr>
+                                        <td align="center">
+                                            @Html.PasswordFor(m => m.localPasswordModel.NewPassword, new { @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.localPasswordModel.NewPassword).ToHtmlString()) })
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="padding:0px 0px 0px 10px">
+                                            @Html.ValidationMessageFor(m => m.localPasswordModel.NewPassword)
+                                        </td>
+                                    </tr>
+                                    <tr style="height:20px"><td></td></tr>
+                                    <tr>
+                                        <td align="center">
+                                            @Html.PasswordFor(m => m.localPasswordModel.ConfirmPassword, new { @class = "form-IDTOcontrol", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.localPasswordModel.ConfirmPassword).ToHtmlString()) })
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="padding:0px 0px 0px 10px">
+                                            @Html.ValidationMessageFor(m => m.localPasswordModel.ConfirmPassword)
+                                        </td>
+                                    </tr>
+                                    <tr style="height:30px"><td></td></tr>
+                                    <tr>
+                                        <td align="center" style="width:100%">
+                                            <input type="submit" value="Change Password" class="btn btn-IDTOdefault" />
+                                        </td>
+                                    </tr>
+                                    <tr style="height:20px"><td></td></tr>
+                                    <tr>
+                                        <td colspan="2" align="left" style="color: black; padding:0px 0px 0px 10px">
+                                            @Html.ValidationMessage("localPasswordModel", new { @style = "color:black;" })
+                                        </td>
+                                    </tr>
+                                    <tr style="height:0px"><td></td></tr>
+                                </table>
+                            }
+                        </td>
+                    </tr>
+                    <tr style="height: 5px; background-color: #F9AE40">
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+
+
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

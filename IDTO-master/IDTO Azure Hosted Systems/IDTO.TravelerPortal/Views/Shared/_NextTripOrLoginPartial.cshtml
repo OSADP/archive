@@ -1,0 +1,39 @@
+﻿@using Microsoft.AspNet.Identity
+@using IDTO.TravelerPortal.Common
+@using IDTO.TravelerPortal.Common.Models
+@using IDTO.TravelerPortal.Models
+
+@if (!Request.IsAuthenticated)
+{
+    <table style="width:100%">
+        <tr>
+            <td valign="bottom">
+                Login page
+            </td>
+        </tr>
+    </table>
+}
+else
+{
+    <table style="width:100%">
+        <tr>
+            <td id="NextTrip" valign="bottom">
+                Next Trip
+            </td>
+        </tr>
+    </table>    
+    
+    <script>
+        document.getElementById("NextTrip").innerHTML = "test";
+        getNextTrip();
+
+
+        function getNextTrip() {
+            @{ HomeDataManager mHomeDataManager = new HomeDataManager();}
+            var nextTrip = yield @mHomeDataManager.GetNextTrip(User.Identity.GetUserName());
+        }
+
+        document.getElementById("NextTrip").innerHTML = nextTrip.GetFirstStepString();
+
+    </script>
+}

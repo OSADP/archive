@@ -1,0 +1,50 @@
+IDTO Database Setup
+
+--------------------------------------
+Development Database
+--------------------------------------
+Server Name: sfkee7y99k
+Full Path: sfkee7y99k.database.windows.net
+
+Admin Login: vital_admin@sfkee7y99k
+Password: Super$0813^Monkey
+
+Databases:
+IDTO_Test - Web Max 1GB
+
+----------------------------------------
+Create Logins and Database Users
+----------------------------------------
+Logins:
+
+IDTO_ServiceUser/12Bu$y0-4B3@ver13
+
+
+----------------------------------------
+Login and User creation scripts
+----------------------------------------
+--Create Login for the new SQL Azure database
+CREATE LOGIN IDTO_ServiceUser WITH PASSWORD = '12Bu$y0-4B3@ver13';
+GO
+
+--Create a User for the master and IDTO_Test
+CREATE USER [IDTO_ServiceUser] FOR LOGIN [IDTO_ServiceUser] WITH DEFAULT_SCHEMA=[dbo]
+GO
+
+-- Add the new IDTO_ServiceUser to the db_datawriter and db_datareader role
+EXEC sp_addrolemember 'db_datawriter', 'IDTO_ServiceUser'
+EXEC sp_addrolemember 'db_datareader', 'IDTO_ServiceUser'
+
+/* CREATE A NEW ROLE */
+CREATE ROLE db_executor
+
+/* GRANT EXECUTE TO THE ROLE */
+GRANT EXECUTE TO db_executor
+
+-- Add the new ServiceUser to the db_datawriter role
+EXEC sp_addrolemember 'db_executor', 'IDTO_ServiceUser'
+
+-- For changing passwords
+ALTER LOGIN Victoria WITH 
+     PASSWORD = 'V1cteAmanti55imE' 
+     OLD_PASSWORD = 'B3r1000d#2-36';

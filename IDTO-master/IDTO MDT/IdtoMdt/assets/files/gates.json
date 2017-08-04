@@ -1,0 +1,16 @@
+{
+  "Gates": [
+    {
+      "name": "Broad St Gate",
+      "code": "DCSCBRD1",
+      "latitude": "39.975148",
+      "longitude": "-82.894379"
+    },
+    {
+      "name": "James Rd Gate",
+      "code": "DCSCJMS1",
+      "latitude": "39.977592",
+      "longitude": "-82.913055"
+    }
+  ]
+}

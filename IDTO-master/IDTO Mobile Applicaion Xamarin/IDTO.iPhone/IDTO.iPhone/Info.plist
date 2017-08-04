@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>MainStoryboard</string>
+	<key>MinimumOSVersion</key>
+	<string>7.0</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>CRideIcon_57</string>
+		<string>CRideIcon_114</string>
+		<string>CRideIcon_120</string>
+	</array>
+	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>CFBundleDisplayName</key>
+	<string>C-Ride</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.battelle.cito.connectandride</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.0</string>
+</dict>
+</plist>

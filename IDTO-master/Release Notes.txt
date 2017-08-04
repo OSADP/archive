@@ -1,0 +1,54 @@
+LICENSE:
+
+    Copyright 2014 Productivity Apex Inc.
+        http:www.productivityapex.com/
+ 
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+ 
+        http:www.apache.org/licenses/LICENSE-2.0
+ 
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.	
+
+Projects Included:
+
+IDTO Azure Hosted Systems:
+
+IDTO.BasicAuthentication - Autehntication module used by IDTO.WebAPI
+IDTO.DataProcessor - Project containing the main Azure service to monitor trips and TConnects
+IDTO.DataProcessor.Azure - Azure depolyment project for the Data Processor
+IDTO.DispatcherPortal - Project containing the Dispatcher Portal used by the TConnect Provider's dispatchers to accpet and reject TConnect requests.
+IDTO.RouteAggregationLibrary
+IDTO.TravelerPortal - Project contatining the traveler portal web site
+IDTO.UnitTests - Unit Test project
+IDTO.WebAPI - Project containing the IDTO WebAPI used by the traveler portal and mobile applications to interact with the IDTO system.
+
+DataAccess:
+
+IDTO.Common - Common classes used by IDTO projects
+IDTO.Data - Project used to map IDTO.Entity models to the IDTO database structure
+IDTO.Entity - Common models used by IDTO projects
+IDTO.Service - Common trip monitoring service interface
+
+
+IDTO MDT:
+
+IdtoMdt - Contains the main IDTO MDT Azure application
+IdtoWsComms - Contains the web service communication module used by IdtoMdt
+Volley - Google's Volley project used for Restful communications
+
+
+IDTO Mobile Applicaion Xamarin:
+
+Assets - Graphics and other resources utilized by the mobile applications
+IDTO.Android - Main Xamarin Android application project
+IDTO.Common - Common functional classes used by both mobile applications projects
+IDTO.Common.Models - Common model classes used by both mobile application projects
+IDTO.iPhone - Main Xamarin iPhone application project
+IDTO.Mobile.Managers - Common display managers for both mobile applications
+

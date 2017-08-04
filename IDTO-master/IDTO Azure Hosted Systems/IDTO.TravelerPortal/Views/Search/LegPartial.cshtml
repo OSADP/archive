@@ -1,0 +1,156 @@
+﻿@model IDTO.TravelerPortal.Models.Leg
+
+<div>
+    <h4>Leg</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.startTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.startTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.endTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.distance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.distance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.route)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.route)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agencyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agencyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.routeColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.routeColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.routeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.routeType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.routeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.routeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.routeTextColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.routeTextColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tripBlockId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tripBlockId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.headsign)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.headsign)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agencyId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agencyId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tripId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tripId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.routeShortName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.routeShortName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.routeLongName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.routeLongName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.duration)
+        </dd>
+
+        <dd>
+            @Html.Partial("~/Views/Search/FromPartial.cshtml", Model.from);
+        </dd>
+
+        <dd>
+            @Html.Partial("~/Views/Search/ToPartial.cshtml", Model.to);
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

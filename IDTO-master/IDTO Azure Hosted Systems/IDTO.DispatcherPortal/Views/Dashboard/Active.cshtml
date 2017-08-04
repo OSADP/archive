@@ -1,0 +1,60 @@
+﻿@model IEnumerable<IDTO.DispatcherPortal.Models.DashboardViewModel>
+@{
+    Layout = null;
+
+}
+<script type="text/javascript" src="@Url.Content("/Scripts/IDTO.js")">    </script>
+
+
+<h3>Active T-Connections</h3>
+<hr class="green" />
+
+<table class="idtotable">
+
+    @{int rowNoActive = 0;}
+    @foreach (var item in Model)
+    {
+        <tr>
+            @Html.HiddenFor(modelItem => item.Id)
+            <td>
+                <img src="@Url.Action("Image", "Dashboard", new { id = ++rowNoActive })" alt="" />
+            </td>
+            <td>
+                <b>
+                    @if (item.Block != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.Block.BlockName)
+                    }
+
+                </b>
+            </td>
+
+            <td>
+                Hold
+                <b>
+                    @Html.DisplayFor(modelItem => item.RequestedHoldMinutes)
+                </b>Min
+            </td>
+
+            <td id="time_@item.Id">
+
+                <script type="text/javascript">
+                    var strDate = new String('@item.DepartureTime.ToString()');
+                    var options = { hour: "numeric", minute: "2-digit" };
+                    var local = new Date(strDate + ' UTC');
+                    var localtime = deMilitarize(local.getHours()) + ":" + padToTwo(local.getMinutes());
+                    document.getElementById("time_@item.Id").innerHTML = localtime;
+                </script>
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TConnectFromName)
+            </td>
+
+
+            <td></td>
+            <td></td>
+        </tr>
+    }
+
+</table>

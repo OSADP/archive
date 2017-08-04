@@ -1,0 +1,67 @@
+﻿@model IDTO.DispatcherPortal.Models.TConnRequestViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>TConnectRequest Entries</h2>
+@using (Html.BeginForm("Index", "TConnectRequest"))
+{
+ <p>Display arrivals over the last:  </p> 
+
+@Html.DropDownListFor(
+    x => x.SelectedItemId,
+            new SelectList(Model.HourListItems, "Value", "Text"), new { onchange = "this.form.submit();" })
+
+}
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(m => m.RequestRows.First().InboundVehicle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestRows.First().TConnectStopCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestRows.First().AcceptedWaitTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestRows.First().Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestRows.First().EstimatedTimeArrival)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestRows.First().RequestedHoldMinutes)
+            </th>
+
+
+        </tr>
+
+        @foreach (var item in Model.RequestRows)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InboundVehicle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TConnectStopCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AcceptedWaitTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstimatedTimeArrival)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequestedHoldMinutes)
+                </td>
+
+
+            </tr>
+        }
+
+    </table>

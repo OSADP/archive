@@ -1,0 +1,96 @@
+﻿@using System;
+@using IDTO.TravelerPortal.Common.ExtensionMethods;
+@model IDTO.TravelerPortal.Models.Itinerary
+
+@{
+    var startTime = TimeZoneInfo.ConvertTimeFromUtc(Model.startTime.ToDateTimeUTC().ToUniversalTime(), TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
+    var duration = ExtensionMethods.GetDuration_min(Model.duration);
+    var startFirstNonWalk = string.Empty;
+    var legs = Model.legs.OrderBy(l => l.startTime);
+    var startFrom = string.Empty;
+    var endAt = string.Empty;
+    
+    // Count how many back-to-back bus legs there are and that is how 
+    // many transfers there are.
+    int numTransfers = 0;
+    bool prevIsBus = false;
+    foreach(var leg in legs)
+    {
+        if(string.Compare("bus", leg.mode, true) == 0)
+        {
+            if(prevIsBus)
+            {
+                numTransfers++;  
+            }
+            else
+            {
+                prevIsBus = true;
+            }
+        }
+        else
+        {
+            prevIsBus = false;
+        }
+    }
+    var transfers = numTransfers;
+
+    if (legs.Count() > 0)
+    {
+        startFrom = legs.First().from.GetName();
+        endAt = legs.Last().to.GetName();
+        foreach (var leg in legs)
+        {
+            if (string.Compare("walk", leg.mode, true) != 0)
+            {
+                startFirstNonWalk = leg.from.GetName();
+                break;
+            }
+        }
+    }
+}
+
+@using (Html.BeginForm("SaveTrip", "Search", new { itineraryId = Model.id }))
+{
+    @*Accordion Header*@
+        <table style="width:100%;" align="center" cellpadding="10" cellspacing="10">
+            <tr>
+                <td colspan="7" height="5px"></td>
+            </tr>
+            <tr>
+                <td width="20px"></td>
+                <td align="left" style="font-size: 11px; color: #6E6E6E">@ExtensionMethods.GetTodayTomorrowString(TimeZoneInfo.ConvertTimeFromUtc(Model.startTime.ToDateTimeUTC().ToUniversalTime(), TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time")))</td>
+                <td align="left" style="font-size: 11px; color: #6E6E6E">Trip Time</td>
+                <td align="left" style="font-weight: bold; font-size: 16px; color: #6E6E6E">@duration min</td>
+                <td align="left" style="font-size: 16px; color: #6E6E6E">@startFirstNonWalk</td>
+                <td style="color: #6E6E6E" align="right">
+                    @Html.ActionLink("Details", "ItineraryDetails", "Search", new { itineraryId = Model.id }, new { @class = "btn btn-IDTOsecondaryDetails" })
+                </td>
+                <td width="10px"></td>
+            </tr>
+            <tr>
+                <td colspan="7" height="5px"></td>
+            </tr>
+            <tr>
+                <td height="1px"></td>
+                <td></td>
+                <td colspan="5" style="border-bottom: 1px solid #6E6E6E"></td>
+            </tr>
+            <tr>
+                <td colspan="7" height="5px"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="left" style="font-weight: bold; font-size: 20px; color: #F9AE40">@startTime.ToShortTimeString()</td>
+                <td align="left" style="font-size: 11px; color: #6E6E6E">Transfers</td>
+                <td align="left" style="font-weight:bold; font-size: 16px; color: #6E6E6E">@transfers</td>
+                <td align="left" style="font-size: 11px; color: #6E6E6E">@startFrom to @endAt</td>
+                <td align="right">
+                    <input type="submit" value="Save Trip" class="btn btn-IDTOsecondarySave" />
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="7" height="5px"></td>
+            </tr>
+        </table>
+}

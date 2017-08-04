@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="light_grey">#DEEBF4</color><!--222,235,244-->
+ <color name="idto_yellow">#FFBB33</color><!--255,187,51 -->
+ <color name="idto_red">#FF4444</color> <!--255,68,68-->
+ <color name="idto_blue">#33B5E5</color><!--51,181,229 -->
+ <color name="idto_green">#99CC00</color><!--153,204,0 -->
+ <color name="idto_dkred">#CC0000</color>
+ <color name="idto_dkyellow">#FF8800</color>
+ <color name="idto_dkgray">#272D32</color> <!--39,45,50 -->
+ <color name="idto_ltgray">#A9A9A9</color>
+ <color name="idto_midgray">#414A4F</color>
+ <color name="idto_light_text">#EFEFEF</color>
+ <color name="idto_purple">#AA66CC</color> <!-- 170,120,204 -->
+ <color name="idto_dkpurple">#9933CC</color>
+ <color name="idto_white">#FEFEFE</color>
+ </resources>

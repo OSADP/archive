@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm"}))
+    {
+    @Html.AntiForgeryToken()
+    <table style="color: black; width:100%">
+        <tr>
+            <td valign="bottom">
+                @Html.ActionLink("Account", "Manage", "Account", new { email = @User.Identity.GetUserName() }, new { @style = "color:black" })
+            </td>
+            <td style="padding: 0px 0px 0px 24px" valign="bottom">
+                <table>
+                    <tr>
+                        <td align="right">
+                            Hello @User.Identity.GetUserName()
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Not @User.Identity.GetUserName()?  <a style="color: black; text-decoration: underline" href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    }
+}
+else
+{
+    @* Replaced with the partial login in the layout view
+  @Html.ActionLink("Log in", "Login", "Account", null, new { @style = "color:black" })
+        *@
+}

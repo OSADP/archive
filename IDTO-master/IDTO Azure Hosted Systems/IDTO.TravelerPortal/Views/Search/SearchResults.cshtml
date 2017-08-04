@@ -1,0 +1,129 @@
+﻿@model IDTO.TravelerPortal.Views.Search.SearchResultsViewModel
+
+@{
+    ViewBag.Title = "Search Results";
+}
+
+<div style="margin-top: 152px">
+
+    <table width="660" style="box-shadow: 3px 3px 4px #000000;">
+        <tr style=" background-color: white;">
+            <td>
+                @using (Html.BeginForm("SearchUpdate", "Search"))
+                {
+                    string start = string.Empty;
+                    string end = string.Empty;
+                    if (!string.IsNullOrEmpty(@Model.TripCriteria.startLocation))
+                    {
+                        start = @Model.TripCriteria.startLocation;
+                    }
+                    else
+                    {
+                        start = string.Format("Lat: {0}, Lon: {1}", @Model.TripCriteria.startLatitude, @Model.TripCriteria.startLongitude);
+                    }
+
+                    if (!string.IsNullOrEmpty(@Model.TripCriteria.endLocation))
+                    {
+                        end = @Model.TripCriteria.endLocation;
+                    }
+                    else
+                    {
+                        end = string.Format("Lat: {0}, Lon: {1}", @Model.TripCriteria.endLatitude, @Model.TripCriteria.endLongitude);
+                    }
+
+
+                    <table align="center" style="width:100%; " cellpadding="5">
+                        <tr style="height:5px"><td colspan="2"></td></tr>
+                        <tr>
+                            <td valign="top" style="font-size: 24px; color: #5A3056; padding-left: 2%">
+                                Plan a Trip
+                            </td>
+                            <td>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            @Html.TextBoxFor(model => model.TripCriteria.startLocation, new { @class = "form-IDTOcontrol", @Value = start })
+                                            @Html.ValidationMessageFor(model => model.TripCriteria.startLocation)
+                                        </td>
+                                        <td width="10px"> </td>
+                                        <td colspan="2">
+                                            @Html.TextBoxFor(model => model.TripCriteria.endLocation, new { @class = "form-IDTOcontrol", @Value = end })
+                                            @Html.ValidationMessageFor(model => model.TripCriteria.endLocation)
+                                        </td>
+                                        <td width="10px"> </td>
+                                    </tr>
+                                    <tr style="height:10px"><td colspan="5"></td></tr>
+                                    <tr>
+                                        <td>
+                                            @Html.TextBoxFor(model => model.TripCriteria.time, new { @class = "form-IDTOcontrol", @Value = Model.TripCriteria.time.ToString("MM/dd/yyyy hh:mm tt").ToLower(), @id = "DateField" })
+                                            @Html.ValidationMessageFor(model => model.TripCriteria.time)
+                                        </td>
+                                        <td></td>
+                                        <td valign="bottom" align="right">
+                                            <input type="submit" value="Update" class="btn btn-IDTOsecondarySave" />
+                                        </td>
+                                        <td> </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height:10px"><td colspan="2"></td></tr>
+                    </table>
+                    <script>
+                        $(function () {
+                            $('#DateField').datetimepicker({
+                                timeFormat: "hh:mm tt"
+                            });
+                        });
+                    </script>
+                }
+            </td>
+        </tr>
+        <tr style="height: 5px; background-color: #F9AE40">
+            <td></td>
+        </tr>
+    </table>
+
+    <table width="660" >
+        <tr style="background-color: transparent;">
+            <td height="28px"></td>
+        </tr>
+    </table>
+
+    <table width="660" style="background-color: white; box-shadow: 3px 3px 4px #000000; ">
+        <tr style="border-bottom: 1px solid #6E6E6E; ">
+            <td align="left" valign="top" style="font-size: 24px; color: #5A3056; padding-left:2%">
+                @ViewBag.Title
+            </td>
+            <td align="right">
+                <div style="padding-right: 2em">@Html.ActionLink("Return to Trips", "Index", "TripDashboard", null, new { @style = "color:black; text-decoration:underline; font-size:10px" })</div>
+            </td>
+        </tr>
+    </table>
+    <table width="660">
+        <tr style="background-color: transparent;">
+            <td>
+                @if (Model.Plan != null)
+                {
+                    @Html.Partial("~/Views/Search/PlanPartial.cshtml", Model.Plan)
+                }
+                else
+                {
+                    <table style="background-color: white; width: 100%; box-shadow: 3px 3px 4px #000000;">
+                        <tr><td height="10px"></td></tr>
+                        <tr>
+                            <td align="left" valign="middle" style="font-size: 14px; color: black; padding-left:2%">
+                                No Results
+                            </td>
+                        </tr>
+                        <tr><td height="10px"></td></tr>
+                        <tr style="height: 5px; background-color: #F9AE40">
+                            <td ></td>
+                        </tr>
+                    </table>
+                }
+            </td>
+        </tr>
+    </table>
+
+</div>

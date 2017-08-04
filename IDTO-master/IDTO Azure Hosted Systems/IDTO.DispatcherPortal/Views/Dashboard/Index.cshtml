@@ -1,0 +1,69 @@
+﻿@model IEnumerable<IDTO.DispatcherPortal.Models.DashboardViewModel>
+@{
+    Layout = "~/Views/Shared/_LayoutDash.cshtml";
+}
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+
+@*<a id="button" title="Refresh now">Refresh Now</a>
+    <a id="toggleButton" title="Auto refresh every 5 seconds">Auto Refresh</a>*@
+
+<div id="NewTConnectPartialDiv">
+    @*@{ Html.RenderAction("NewTConnect"); }*@
+</div>
+
+<div id="ActivePartialDiv">
+    @*@{ Html.RenderAction("Active"); }*@
+</div>
+
+@section Scripts{
+<script type="text/javascript">
+
+    var autoRefresh = false;
+    var autoRefreshInterval = 1000 * 5;   //mili seconds (set to 5 seconds)
+
+    var refresh = function () {
+
+        //if (autoRefresh) {
+
+        $('#NewTConnectPartialDiv').load('@Url.Action("NewTConnect")');
+        $('#ActivePartialDiv').load('@Url.Action("Active")');
+        //}
+
+        setTimeout(refresh, autoRefreshInterval);
+
+    };
+
+    $(document).ready(function () {
+
+        @*$('a#button').click(function () {
+
+            $('#NewTConnectPartialDiv').load('@Url.Action("NewTConnect")');
+            $('#ActivePartialDiv').load('@Url.Action("Active")');
+        });
+
+        $('a#toggleButton').click(function () {
+
+            $('#NewTConnectPartialDiv').load('@Url.Action("NewTConnect")');
+            $('#ActivePartialDiv').load('@Url.Action("Active")');
+
+            $(this).toggleClass("down");
+
+            if ($(this).is('.down')) {
+
+                autoRefresh = true;
+
+            } else {
+
+                autoRefresh = false;
+            }
+
+        });*@
+
+        refresh();
+    });
+
+</script>
+}

@@ -1,0 +1,2912 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IDTO.Entity.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimBlock">
+            <summary>Shim type of IDTO.Entity.Models.Block</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimBlock.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimBlock.#ctor(IDTO.Entity.Models.Block)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimBlock.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimBlock.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimBlock.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AgencyGet">
+            <summary>Sets the shim of Block.get_Agency()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AgencySetString">
+            <summary>Sets the shim of Block.set_Agency(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.BlockNameGet">
+            <summary>Sets the shim of Block.get_BlockName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.BlockNameSetString">
+            <summary>Sets the shim of Block.set_BlockName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.Constructor">
+            <summary>Sets the shim of Block.Block()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.IdGet">
+            <summary>Sets the shim of Block.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.IdSetString">
+            <summary>Sets the shim of Block.set_Id(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.ServiceGroupIdGet">
+            <summary>Sets the shim of Block.get_ServiceGroupId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.ServiceGroupIdSetString">
+            <summary>Sets the shim of Block.set_ServiceGroupId(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimBlock.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AllInstances.AgencyGet">
+            <summary>Sets the shim of Block.get_Agency()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AllInstances.AgencySetString">
+            <summary>Sets the shim of Block.set_Agency(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AllInstances.BlockNameGet">
+            <summary>Sets the shim of Block.get_BlockName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AllInstances.BlockNameSetString">
+            <summary>Sets the shim of Block.set_BlockName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AllInstances.IdGet">
+            <summary>Sets the shim of Block.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AllInstances.IdSetString">
+            <summary>Sets the shim of Block.set_Id(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AllInstances.ServiceGroupIdGet">
+            <summary>Sets the shim of Block.get_ServiceGroupId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimBlock.AllInstances.ServiceGroupIdSetString">
+            <summary>Sets the shim of Block.set_ServiceGroupId(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimDispatcher">
+            <summary>Shim type of IDTO.Entity.Models.Dispatcher</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimDispatcher.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimDispatcher.#ctor(IDTO.Entity.Models.Dispatcher)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimDispatcher.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimDispatcher.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimDispatcher.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.Constructor">
+            <summary>Sets the shim of Dispatcher.Dispatcher()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.CreatedDateGet">
+            <summary>Sets the shim of Dispatcher.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.CreatedDateSetDateTime">
+            <summary>Sets the shim of Dispatcher.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.EmailGet">
+            <summary>Sets the shim of Dispatcher.get_Email()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.EmailSetString">
+            <summary>Sets the shim of Dispatcher.set_Email(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.IdGet">
+            <summary>Sets the shim of Dispatcher.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.IdSetInt32">
+            <summary>Sets the shim of Dispatcher.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.ModifiedByGet">
+            <summary>Sets the shim of Dispatcher.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.ModifiedBySetString">
+            <summary>Sets the shim of Dispatcher.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.ModifiedDateGet">
+            <summary>Sets the shim of Dispatcher.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.ModifiedDateSetDateTime">
+            <summary>Sets the shim of Dispatcher.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.ProviderIdGet">
+            <summary>Sets the shim of Dispatcher.get_ProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.ProviderIdSetInt32">
+            <summary>Sets the shim of Dispatcher.set_ProviderId(Int32 value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.CreatedDateGet">
+            <summary>Sets the shim of Dispatcher.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.CreatedDateSetDateTime">
+            <summary>Sets the shim of Dispatcher.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.EmailGet">
+            <summary>Sets the shim of Dispatcher.get_Email()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.EmailSetString">
+            <summary>Sets the shim of Dispatcher.set_Email(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.IdGet">
+            <summary>Sets the shim of Dispatcher.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Dispatcher.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.ModifiedByGet">
+            <summary>Sets the shim of Dispatcher.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.ModifiedBySetString">
+            <summary>Sets the shim of Dispatcher.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.ModifiedDateGet">
+            <summary>Sets the shim of Dispatcher.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.ModifiedDateSetDateTime">
+            <summary>Sets the shim of Dispatcher.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.ProviderIdGet">
+            <summary>Sets the shim of Dispatcher.get_ProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimDispatcher.AllInstances.ProviderIdSetInt32">
+            <summary>Sets the shim of Dispatcher.set_ProviderId(Int32 value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition">
+            <summary>Shim type of IDTO.Entity.Models.LastVehiclePosition</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.#ctor(IDTO.Entity.Models.LastVehiclePosition)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AccuracyGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Accuracy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AccuracySetInt32">
+            <summary>Sets the shim of LastVehiclePosition.set_Accuracy(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.Constructor">
+            <summary>Sets the shim of LastVehiclePosition.LastVehiclePosition()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.HeadingGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Heading()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.HeadingSetInt16">
+            <summary>Sets the shim of LastVehiclePosition.set_Heading(Int16 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.IdGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.IdSetInt32">
+            <summary>Sets the shim of LastVehiclePosition.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.LatitudeGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.LatitudeSetDouble">
+            <summary>Sets the shim of LastVehiclePosition.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.LongitudeGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.LongitudeSetDouble">
+            <summary>Sets the shim of LastVehiclePosition.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.PositionTimestampGet">
+            <summary>Sets the shim of LastVehiclePosition.get_PositionTimestamp()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.PositionTimestampSetDateTime">
+            <summary>Sets the shim of LastVehiclePosition.set_PositionTimestamp(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.SpeedGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Speed()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.SpeedSetDouble">
+            <summary>Sets the shim of LastVehiclePosition.set_Speed(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.VehicleNameGet">
+            <summary>Sets the shim of LastVehiclePosition.get_VehicleName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.VehicleNameSetString">
+            <summary>Sets the shim of LastVehiclePosition.set_VehicleName(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.AccuracyGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Accuracy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.AccuracySetInt32">
+            <summary>Sets the shim of LastVehiclePosition.set_Accuracy(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.HeadingGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Heading()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.HeadingSetInt16">
+            <summary>Sets the shim of LastVehiclePosition.set_Heading(Int16 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.IdGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.IdSetInt32">
+            <summary>Sets the shim of LastVehiclePosition.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.LatitudeGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.LatitudeSetDouble">
+            <summary>Sets the shim of LastVehiclePosition.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.LongitudeGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.LongitudeSetDouble">
+            <summary>Sets the shim of LastVehiclePosition.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.PositionTimestampGet">
+            <summary>Sets the shim of LastVehiclePosition.get_PositionTimestamp()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.PositionTimestampSetDateTime">
+            <summary>Sets the shim of LastVehiclePosition.set_PositionTimestamp(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.SpeedGet">
+            <summary>Sets the shim of LastVehiclePosition.get_Speed()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.SpeedSetDouble">
+            <summary>Sets the shim of LastVehiclePosition.set_Speed(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.VehicleNameGet">
+            <summary>Sets the shim of LastVehiclePosition.get_VehicleName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimLastVehiclePosition.AllInstances.VehicleNameSetString">
+            <summary>Sets the shim of LastVehiclePosition.set_VehicleName(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimMode">
+            <summary>Shim type of IDTO.Entity.Models.Mode</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimMode.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimMode.#ctor(IDTO.Entity.Models.Mode)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimMode.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimMode.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimMode.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.Constructor">
+            <summary>Sets the shim of Mode.Mode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.IdGet">
+            <summary>Sets the shim of Mode.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.IdSetInt32">
+            <summary>Sets the shim of Mode.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.NameGet">
+            <summary>Sets the shim of Mode.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.NameSetString">
+            <summary>Sets the shim of Mode.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimMode.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.AllInstances.IdGet">
+            <summary>Sets the shim of Mode.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Mode.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.AllInstances.NameGet">
+            <summary>Sets the shim of Mode.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimMode.AllInstances.NameSetString">
+            <summary>Sets the shim of Mode.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimPromoCode">
+            <summary>Shim type of IDTO.Entity.Models.PromoCode</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimPromoCode.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimPromoCode.#ctor(IDTO.Entity.Models.PromoCode)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimPromoCode.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimPromoCode.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimPromoCode.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.CodeGet">
+            <summary>Sets the shim of PromoCode.get_Code()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.CodeSetString">
+            <summary>Sets the shim of PromoCode.set_Code(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.Constructor">
+            <summary>Sets the shim of PromoCode.PromoCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.IdGet">
+            <summary>Sets the shim of PromoCode.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.IdSetInt32">
+            <summary>Sets the shim of PromoCode.set_Id(Int32 value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimPromoCode.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.AllInstances.CodeGet">
+            <summary>Sets the shim of PromoCode.get_Code()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.AllInstances.CodeSetString">
+            <summary>Sets the shim of PromoCode.set_Code(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.AllInstances.IdGet">
+            <summary>Sets the shim of PromoCode.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimPromoCode.AllInstances.IdSetInt32">
+            <summary>Sets the shim of PromoCode.set_Id(Int32 value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimProvider">
+            <summary>Shim type of IDTO.Entity.Models.Provider</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProvider.#ctor(IDTO.Entity.Models.Provider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProvider.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.Constructor">
+            <summary>Sets the shim of Provider.Provider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.IdGet">
+            <summary>Sets the shim of Provider.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.IdSetInt32">
+            <summary>Sets the shim of Provider.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.NameGet">
+            <summary>Sets the shim of Provider.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.NameSetString">
+            <summary>Sets the shim of Provider.set_Name(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.ProviderTypeGet">
+            <summary>Sets the shim of Provider.get_ProviderType()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.ProviderTypeIdGet">
+            <summary>Sets the shim of Provider.get_ProviderTypeId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.ProviderTypeIdSetInt32">
+            <summary>Sets the shim of Provider.set_ProviderTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.ProviderTypeSetProviderType">
+            <summary>Sets the shim of Provider.set_ProviderType(ProviderType value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.AllInstances.IdGet">
+            <summary>Sets the shim of Provider.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Provider.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.AllInstances.NameGet">
+            <summary>Sets the shim of Provider.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.AllInstances.NameSetString">
+            <summary>Sets the shim of Provider.set_Name(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.AllInstances.ProviderTypeGet">
+            <summary>Sets the shim of Provider.get_ProviderType()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.AllInstances.ProviderTypeIdGet">
+            <summary>Sets the shim of Provider.get_ProviderTypeId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.AllInstances.ProviderTypeIdSetInt32">
+            <summary>Sets the shim of Provider.set_ProviderTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProvider.AllInstances.ProviderTypeSetProviderType">
+            <summary>Sets the shim of Provider.set_ProviderType(ProviderType value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimProviderType">
+            <summary>Shim type of IDTO.Entity.Models.ProviderType</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProviderType.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProviderType.#ctor(IDTO.Entity.Models.ProviderType)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProviderType.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProviderType.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimProviderType.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.Constructor">
+            <summary>Sets the shim of ProviderType.ProviderType()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.IdGet">
+            <summary>Sets the shim of ProviderType.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.IdSetInt32">
+            <summary>Sets the shim of ProviderType.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.NameGet">
+            <summary>Sets the shim of ProviderType.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.NameSetString">
+            <summary>Sets the shim of ProviderType.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimProviderType.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.AllInstances.IdGet">
+            <summary>Sets the shim of ProviderType.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.AllInstances.IdSetInt32">
+            <summary>Sets the shim of ProviderType.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.AllInstances.NameGet">
+            <summary>Sets the shim of ProviderType.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimProviderType.AllInstances.NameSetString">
+            <summary>Sets the shim of ProviderType.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimStep">
+            <summary>Shim type of IDTO.Entity.Models.Step</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimStep.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimStep.#ctor(IDTO.Entity.Models.Step)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimStep.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimStep.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimStep.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.BlockGet">
+            <summary>Sets the shim of Step.get_Block()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.BlockIdentifierGet">
+            <summary>Sets the shim of Step.get_BlockIdentifier()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.BlockIdentifierSetString">
+            <summary>Sets the shim of Step.set_BlockIdentifier(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.BlockSetBlock">
+            <summary>Sets the shim of Step.set_Block(Block value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.Constructor">
+            <summary>Sets the shim of Step.Step()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.DistanceGet">
+            <summary>Sets the shim of Step.get_Distance()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.DistanceSetDecimal">
+            <summary>Sets the shim of Step.set_Distance(Decimal value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.EncodedMapStringGet">
+            <summary>Sets the shim of Step.get_EncodedMapString()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.EncodedMapStringSetString">
+            <summary>Sets the shim of Step.set_EncodedMapString(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.EndDateGet">
+            <summary>Sets the shim of Step.get_EndDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.EndDateSetDateTime">
+            <summary>Sets the shim of Step.set_EndDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.FromNameGet">
+            <summary>Sets the shim of Step.get_FromName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.FromNameSetString">
+            <summary>Sets the shim of Step.set_FromName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.FromProviderGet">
+            <summary>Sets the shim of Step.get_FromProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.FromProviderIdGet">
+            <summary>Sets the shim of Step.get_FromProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.FromProviderIdSetNullableOfInt32">
+            <summary>Sets the shim of Step.set_FromProviderId(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.FromProviderSetProvider">
+            <summary>Sets the shim of Step.set_FromProvider(Provider value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.FromStopCodeGet">
+            <summary>Sets the shim of Step.get_FromStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.FromStopCodeSetString">
+            <summary>Sets the shim of Step.set_FromStopCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.IdGet">
+            <summary>Sets the shim of Step.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.IdSetInt32">
+            <summary>Sets the shim of Step.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ModeGet">
+            <summary>Sets the shim of Step.get_Mode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ModeIdGet">
+            <summary>Sets the shim of Step.get_ModeId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ModeIdSetInt32">
+            <summary>Sets the shim of Step.set_ModeId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ModeSetMode">
+            <summary>Sets the shim of Step.set_Mode(Mode value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.RouteNumberGet">
+            <summary>Sets the shim of Step.get_RouteNumber()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.RouteNumberSetString">
+            <summary>Sets the shim of Step.set_RouteNumber(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.StartDateGet">
+            <summary>Sets the shim of Step.get_StartDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.StartDateSetDateTime">
+            <summary>Sets the shim of Step.set_StartDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.StepNumberGet">
+            <summary>Sets the shim of Step.get_StepNumber()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.StepNumberSetInt32">
+            <summary>Sets the shim of Step.set_StepNumber(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ToNameGet">
+            <summary>Sets the shim of Step.get_ToName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ToNameSetString">
+            <summary>Sets the shim of Step.set_ToName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ToProviderGet">
+            <summary>Sets the shim of Step.get_ToProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ToProviderIdGet">
+            <summary>Sets the shim of Step.get_ToProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ToProviderIdSetNullableOfInt32">
+            <summary>Sets the shim of Step.set_ToProviderId(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ToProviderSetProvider">
+            <summary>Sets the shim of Step.set_ToProvider(Provider value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ToStopCodeGet">
+            <summary>Sets the shim of Step.get_ToStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.ToStopCodeSetString">
+            <summary>Sets the shim of Step.set_ToStopCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.TripGet">
+            <summary>Sets the shim of Step.get_Trip()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.TripIdGet">
+            <summary>Sets the shim of Step.get_TripId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.TripIdSetInt32">
+            <summary>Sets the shim of Step.set_TripId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.TripSetTrip">
+            <summary>Sets the shim of Step.set_Trip(Trip value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimStep.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.BlockGet">
+            <summary>Sets the shim of Step.get_Block()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.BlockIdentifierGet">
+            <summary>Sets the shim of Step.get_BlockIdentifier()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.BlockIdentifierSetString">
+            <summary>Sets the shim of Step.set_BlockIdentifier(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.BlockSetBlock">
+            <summary>Sets the shim of Step.set_Block(Block value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.DistanceGet">
+            <summary>Sets the shim of Step.get_Distance()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.DistanceSetDecimal">
+            <summary>Sets the shim of Step.set_Distance(Decimal value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.EncodedMapStringGet">
+            <summary>Sets the shim of Step.get_EncodedMapString()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.EncodedMapStringSetString">
+            <summary>Sets the shim of Step.set_EncodedMapString(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.EndDateGet">
+            <summary>Sets the shim of Step.get_EndDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.EndDateSetDateTime">
+            <summary>Sets the shim of Step.set_EndDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.FromNameGet">
+            <summary>Sets the shim of Step.get_FromName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.FromNameSetString">
+            <summary>Sets the shim of Step.set_FromName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.FromProviderGet">
+            <summary>Sets the shim of Step.get_FromProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.FromProviderIdGet">
+            <summary>Sets the shim of Step.get_FromProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.FromProviderIdSetNullableOfInt32">
+            <summary>Sets the shim of Step.set_FromProviderId(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.FromProviderSetProvider">
+            <summary>Sets the shim of Step.set_FromProvider(Provider value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.FromStopCodeGet">
+            <summary>Sets the shim of Step.get_FromStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.FromStopCodeSetString">
+            <summary>Sets the shim of Step.set_FromStopCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.IdGet">
+            <summary>Sets the shim of Step.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Step.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ModeGet">
+            <summary>Sets the shim of Step.get_Mode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ModeIdGet">
+            <summary>Sets the shim of Step.get_ModeId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ModeIdSetInt32">
+            <summary>Sets the shim of Step.set_ModeId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ModeSetMode">
+            <summary>Sets the shim of Step.set_Mode(Mode value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.RouteNumberGet">
+            <summary>Sets the shim of Step.get_RouteNumber()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.RouteNumberSetString">
+            <summary>Sets the shim of Step.set_RouteNumber(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.StartDateGet">
+            <summary>Sets the shim of Step.get_StartDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.StartDateSetDateTime">
+            <summary>Sets the shim of Step.set_StartDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.StepNumberGet">
+            <summary>Sets the shim of Step.get_StepNumber()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.StepNumberSetInt32">
+            <summary>Sets the shim of Step.set_StepNumber(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ToNameGet">
+            <summary>Sets the shim of Step.get_ToName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ToNameSetString">
+            <summary>Sets the shim of Step.set_ToName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ToProviderGet">
+            <summary>Sets the shim of Step.get_ToProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ToProviderIdGet">
+            <summary>Sets the shim of Step.get_ToProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ToProviderIdSetNullableOfInt32">
+            <summary>Sets the shim of Step.set_ToProviderId(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ToProviderSetProvider">
+            <summary>Sets the shim of Step.set_ToProvider(Provider value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ToStopCodeGet">
+            <summary>Sets the shim of Step.get_ToStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.ToStopCodeSetString">
+            <summary>Sets the shim of Step.set_ToStopCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.TripGet">
+            <summary>Sets the shim of Step.get_Trip()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.TripIdGet">
+            <summary>Sets the shim of Step.get_TripId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.TripIdSetInt32">
+            <summary>Sets the shim of Step.set_TripId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimStep.AllInstances.TripSetTrip">
+            <summary>Sets the shim of Step.set_Trip(Trip value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnect">
+            <summary>Shim type of IDTO.Entity.Models.TConnect</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnect.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnect.#ctor(IDTO.Entity.Models.TConnect)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnect.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnect.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnect.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.Constructor">
+            <summary>Sets the shim of TConnect.TConnect()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.CreatedDateGet">
+            <summary>Sets the shim of TConnect.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.CreatedDateSetDateTime">
+            <summary>Sets the shim of TConnect.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.EndWindowGet">
+            <summary>Sets the shim of TConnect.get_EndWindow()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.EndWindowSetNullableOfDateTime">
+            <summary>Sets the shim of TConnect.set_EndWindow(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.IdGet">
+            <summary>Sets the shim of TConnect.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.IdSetInt32">
+            <summary>Sets the shim of TConnect.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.InboundStepGet">
+            <summary>Sets the shim of TConnect.get_InboundStep()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.InboundStepIdGet">
+            <summary>Sets the shim of TConnect.get_InboundStepId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.InboundStepIdSetInt32">
+            <summary>Sets the shim of TConnect.set_InboundStepId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.InboundStepSetStep">
+            <summary>Sets the shim of TConnect.set_InboundStep(Step value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.InboundVehicleGet">
+            <summary>Sets the shim of TConnect.get_InboundVehicle()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.InboundVehicleSetString">
+            <summary>Sets the shim of TConnect.set_InboundVehicle(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.ModifiedByGet">
+            <summary>Sets the shim of TConnect.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.ModifiedBySetString">
+            <summary>Sets the shim of TConnect.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.ModifiedDateGet">
+            <summary>Sets the shim of TConnect.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.ModifiedDateSetDateTime">
+            <summary>Sets the shim of TConnect.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.OutboundStepGet">
+            <summary>Sets the shim of TConnect.get_OutboundStep()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.OutboundStepIdGet">
+            <summary>Sets the shim of TConnect.get_OutboundStepId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.OutboundStepIdSetInt32">
+            <summary>Sets the shim of TConnect.set_OutboundStepId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.OutboundStepSetStep">
+            <summary>Sets the shim of TConnect.set_OutboundStep(Step value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.StartWindowGet">
+            <summary>Sets the shim of TConnect.get_StartWindow()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.StartWindowSetNullableOfDateTime">
+            <summary>Sets the shim of TConnect.set_StartWindow(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.SurveyDateGet">
+            <summary>Sets the shim of TConnect.get_SurveyDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.SurveyDateSetNullableOfDateTime">
+            <summary>Sets the shim of TConnect.set_SurveyDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.TConnectStatusGet">
+            <summary>Sets the shim of TConnect.get_TConnectStatus()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.TConnectStatusIdGet">
+            <summary>Sets the shim of TConnect.get_TConnectStatusId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.TConnectStatusIdSetInt32">
+            <summary>Sets the shim of TConnect.set_TConnectStatusId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.TConnectStatusSetTConnectStatus">
+            <summary>Sets the shim of TConnect.set_TConnectStatus(TConnectStatus value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.CreatedDateGet">
+            <summary>Sets the shim of TConnect.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.CreatedDateSetDateTime">
+            <summary>Sets the shim of TConnect.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.EndWindowGet">
+            <summary>Sets the shim of TConnect.get_EndWindow()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.EndWindowSetNullableOfDateTime">
+            <summary>Sets the shim of TConnect.set_EndWindow(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.IdGet">
+            <summary>Sets the shim of TConnect.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TConnect.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.InboundStepGet">
+            <summary>Sets the shim of TConnect.get_InboundStep()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.InboundStepIdGet">
+            <summary>Sets the shim of TConnect.get_InboundStepId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.InboundStepIdSetInt32">
+            <summary>Sets the shim of TConnect.set_InboundStepId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.InboundStepSetStep">
+            <summary>Sets the shim of TConnect.set_InboundStep(Step value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.InboundVehicleGet">
+            <summary>Sets the shim of TConnect.get_InboundVehicle()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.InboundVehicleSetString">
+            <summary>Sets the shim of TConnect.set_InboundVehicle(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.ModifiedByGet">
+            <summary>Sets the shim of TConnect.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.ModifiedBySetString">
+            <summary>Sets the shim of TConnect.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.ModifiedDateGet">
+            <summary>Sets the shim of TConnect.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.ModifiedDateSetDateTime">
+            <summary>Sets the shim of TConnect.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.OutboundStepGet">
+            <summary>Sets the shim of TConnect.get_OutboundStep()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.OutboundStepIdGet">
+            <summary>Sets the shim of TConnect.get_OutboundStepId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.OutboundStepIdSetInt32">
+            <summary>Sets the shim of TConnect.set_OutboundStepId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.OutboundStepSetStep">
+            <summary>Sets the shim of TConnect.set_OutboundStep(Step value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.StartWindowGet">
+            <summary>Sets the shim of TConnect.get_StartWindow()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.StartWindowSetNullableOfDateTime">
+            <summary>Sets the shim of TConnect.set_StartWindow(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.SurveyDateGet">
+            <summary>Sets the shim of TConnect.get_SurveyDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.SurveyDateSetNullableOfDateTime">
+            <summary>Sets the shim of TConnect.set_SurveyDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.TConnectStatusGet">
+            <summary>Sets the shim of TConnect.get_TConnectStatus()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.TConnectStatusIdGet">
+            <summary>Sets the shim of TConnect.get_TConnectStatusId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.TConnectStatusIdSetInt32">
+            <summary>Sets the shim of TConnect.set_TConnectStatusId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnect.AllInstances.TConnectStatusSetTConnectStatus">
+            <summary>Sets the shim of TConnect.set_TConnectStatus(TConnectStatus value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity">
+            <summary>Shim type of IDTO.Entity.Models.TConnectOpportunity</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.#ctor(IDTO.Entity.Models.TConnectOpportunity)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.CheckpointProviderGet">
+            <summary>Sets the shim of TConnectOpportunity.get_CheckpointProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.CheckpointProviderIdGet">
+            <summary>Sets the shim of TConnectOpportunity.get_CheckpointProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.CheckpointProviderIdSetInt32">
+            <summary>Sets the shim of TConnectOpportunity.set_CheckpointProviderId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.CheckpointProviderSetProvider">
+            <summary>Sets the shim of TConnectOpportunity.set_CheckpointProvider(Provider value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.CheckpointRouteGet">
+            <summary>Sets the shim of TConnectOpportunity.get_CheckpointRoute()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.CheckpointRouteSetString">
+            <summary>Sets the shim of TConnectOpportunity.set_CheckpointRoute(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.CheckpointStopCodeGet">
+            <summary>Sets the shim of TConnectOpportunity.get_CheckpointStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.CheckpointStopCodeSetString">
+            <summary>Sets the shim of TConnectOpportunity.set_CheckpointStopCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.Constructor">
+            <summary>Sets the shim of TConnectOpportunity.TConnectOpportunity()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.IdGet">
+            <summary>Sets the shim of TConnectOpportunity.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.IdSetInt32">
+            <summary>Sets the shim of TConnectOpportunity.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.ModifiedByGet">
+            <summary>Sets the shim of TConnectOpportunity.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.ModifiedBySetString">
+            <summary>Sets the shim of TConnectOpportunity.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.ModifiedDateGet">
+            <summary>Sets the shim of TConnectOpportunity.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.ModifiedDateSetDateTime">
+            <summary>Sets the shim of TConnectOpportunity.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.TConnectProviderGet">
+            <summary>Sets the shim of TConnectOpportunity.get_TConnectProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.TConnectProviderIdGet">
+            <summary>Sets the shim of TConnectOpportunity.get_TConnectProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.TConnectProviderIdSetInt32">
+            <summary>Sets the shim of TConnectOpportunity.set_TConnectProviderId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.TConnectProviderSetProvider">
+            <summary>Sets the shim of TConnectOpportunity.set_TConnectProvider(Provider value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.TConnectRouteGet">
+            <summary>Sets the shim of TConnectOpportunity.get_TConnectRoute()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.TConnectRouteSetString">
+            <summary>Sets the shim of TConnectOpportunity.set_TConnectRoute(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.TConnectStopCodeGet">
+            <summary>Sets the shim of TConnectOpportunity.get_TConnectStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.TConnectStopCodeSetString">
+            <summary>Sets the shim of TConnectOpportunity.set_TConnectStopCode(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.CheckpointProviderGet">
+            <summary>Sets the shim of TConnectOpportunity.get_CheckpointProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.CheckpointProviderIdGet">
+            <summary>Sets the shim of TConnectOpportunity.get_CheckpointProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.CheckpointProviderIdSetInt32">
+            <summary>Sets the shim of TConnectOpportunity.set_CheckpointProviderId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.CheckpointProviderSetProvider">
+            <summary>Sets the shim of TConnectOpportunity.set_CheckpointProvider(Provider value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.CheckpointRouteGet">
+            <summary>Sets the shim of TConnectOpportunity.get_CheckpointRoute()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.CheckpointRouteSetString">
+            <summary>Sets the shim of TConnectOpportunity.set_CheckpointRoute(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.CheckpointStopCodeGet">
+            <summary>Sets the shim of TConnectOpportunity.get_CheckpointStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.CheckpointStopCodeSetString">
+            <summary>Sets the shim of TConnectOpportunity.set_CheckpointStopCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.IdGet">
+            <summary>Sets the shim of TConnectOpportunity.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TConnectOpportunity.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.ModifiedByGet">
+            <summary>Sets the shim of TConnectOpportunity.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.ModifiedBySetString">
+            <summary>Sets the shim of TConnectOpportunity.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.ModifiedDateGet">
+            <summary>Sets the shim of TConnectOpportunity.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.ModifiedDateSetDateTime">
+            <summary>Sets the shim of TConnectOpportunity.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.TConnectProviderGet">
+            <summary>Sets the shim of TConnectOpportunity.get_TConnectProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.TConnectProviderIdGet">
+            <summary>Sets the shim of TConnectOpportunity.get_TConnectProviderId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.TConnectProviderIdSetInt32">
+            <summary>Sets the shim of TConnectOpportunity.set_TConnectProviderId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.TConnectProviderSetProvider">
+            <summary>Sets the shim of TConnectOpportunity.set_TConnectProvider(Provider value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.TConnectRouteGet">
+            <summary>Sets the shim of TConnectOpportunity.get_TConnectRoute()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.TConnectRouteSetString">
+            <summary>Sets the shim of TConnectOpportunity.set_TConnectRoute(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.TConnectStopCodeGet">
+            <summary>Sets the shim of TConnectOpportunity.get_TConnectStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectOpportunity.AllInstances.TConnectStopCodeSetString">
+            <summary>Sets the shim of TConnectOpportunity.set_TConnectStopCode(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnectRequest">
+            <summary>Shim type of IDTO.Entity.Models.TConnectRequest</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectRequest.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectRequest.#ctor(IDTO.Entity.Models.TConnectRequest)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectRequest.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectRequest.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectRequest.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.Constructor">
+            <summary>Sets the shim of TConnectRequest.TConnectRequest()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.EstimatedTimeArrivalGet">
+            <summary>Sets the shim of TConnectRequest.get_EstimatedTimeArrival()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.EstimatedTimeArrivalSetDateTime">
+            <summary>Sets the shim of TConnectRequest.set_EstimatedTimeArrival(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.IdGet">
+            <summary>Sets the shim of TConnectRequest.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.IdSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.ModifiedByGet">
+            <summary>Sets the shim of TConnectRequest.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.ModifiedBySetString">
+            <summary>Sets the shim of TConnectRequest.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.ModifiedDateGet">
+            <summary>Sets the shim of TConnectRequest.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.ModifiedDateSetDateTime">
+            <summary>Sets the shim of TConnectRequest.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.RequestedHoldMinutesGet">
+            <summary>Sets the shim of TConnectRequest.get_RequestedHoldMinutes()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.RequestedHoldMinutesSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_RequestedHoldMinutes(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnect()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectIdGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectIdSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_TConnectId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectSetTConnect">
+            <summary>Sets the shim of TConnectRequest.set_TConnect(TConnect value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectStatusGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectStatus()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectStatusIdGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectStatusId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectStatusIdSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_TConnectStatusId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectStatusSetTConnectStatus">
+            <summary>Sets the shim of TConnectRequest.set_TConnectStatus(TConnectStatus value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectedVehicleGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectedVehicle()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectedVehicleIdGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectedVehicleId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectedVehicleIdSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_TConnectedVehicleId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.TConnectedVehicleSetTConnectedVehicle">
+            <summary>Sets the shim of TConnectRequest.set_TConnectedVehicle(TConnectedVehicle value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.EstimatedTimeArrivalGet">
+            <summary>Sets the shim of TConnectRequest.get_EstimatedTimeArrival()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.EstimatedTimeArrivalSetDateTime">
+            <summary>Sets the shim of TConnectRequest.set_EstimatedTimeArrival(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.IdGet">
+            <summary>Sets the shim of TConnectRequest.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.ModifiedByGet">
+            <summary>Sets the shim of TConnectRequest.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.ModifiedBySetString">
+            <summary>Sets the shim of TConnectRequest.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.ModifiedDateGet">
+            <summary>Sets the shim of TConnectRequest.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.ModifiedDateSetDateTime">
+            <summary>Sets the shim of TConnectRequest.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.RequestedHoldMinutesGet">
+            <summary>Sets the shim of TConnectRequest.get_RequestedHoldMinutes()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.RequestedHoldMinutesSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_RequestedHoldMinutes(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnect()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectIdGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectIdSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_TConnectId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectSetTConnect">
+            <summary>Sets the shim of TConnectRequest.set_TConnect(TConnect value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectStatusGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectStatus()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectStatusIdGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectStatusId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectStatusIdSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_TConnectStatusId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectStatusSetTConnectStatus">
+            <summary>Sets the shim of TConnectRequest.set_TConnectStatus(TConnectStatus value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectedVehicleGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectedVehicle()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectedVehicleIdGet">
+            <summary>Sets the shim of TConnectRequest.get_TConnectedVehicleId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectedVehicleIdSetInt32">
+            <summary>Sets the shim of TConnectRequest.set_TConnectedVehicleId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectRequest.AllInstances.TConnectedVehicleSetTConnectedVehicle">
+            <summary>Sets the shim of TConnectRequest.set_TConnectedVehicle(TConnectedVehicle value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnectStatus">
+            <summary>Shim type of IDTO.Entity.Models.TConnectStatus</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectStatus.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectStatus.#ctor(IDTO.Entity.Models.TConnectStatus)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectStatus.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectStatus.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectStatus.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.Constructor">
+            <summary>Sets the shim of TConnectStatus.TConnectStatus()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.IdGet">
+            <summary>Sets the shim of TConnectStatus.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.IdSetInt32">
+            <summary>Sets the shim of TConnectStatus.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.NameGet">
+            <summary>Sets the shim of TConnectStatus.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.NameSetString">
+            <summary>Sets the shim of TConnectStatus.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnectStatus.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.AllInstances.IdGet">
+            <summary>Sets the shim of TConnectStatus.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TConnectStatus.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.AllInstances.NameGet">
+            <summary>Sets the shim of TConnectStatus.get_Name()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectStatus.AllInstances.NameSetString">
+            <summary>Sets the shim of TConnectStatus.set_Name(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle">
+            <summary>Shim type of IDTO.Entity.Models.TConnectedVehicle</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.#ctor(IDTO.Entity.Models.TConnectedVehicle)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.BlockGet">
+            <summary>Sets the shim of TConnectedVehicle.get_Block()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.BlockSetBlock">
+            <summary>Sets the shim of TConnectedVehicle.set_Block(Block value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.Constructor">
+            <summary>Sets the shim of TConnectedVehicle.TConnectedVehicle()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.CurrentAcceptedHoldMinutesGet">
+            <summary>Sets the shim of TConnectedVehicle.get_CurrentAcceptedHoldMinutes()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.CurrentAcceptedHoldMinutesSetInt32">
+            <summary>Sets the shim of TConnectedVehicle.set_CurrentAcceptedHoldMinutes(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.IdGet">
+            <summary>Sets the shim of TConnectedVehicle.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.IdSetInt32">
+            <summary>Sets the shim of TConnectedVehicle.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.ModifiedByGet">
+            <summary>Sets the shim of TConnectedVehicle.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.ModifiedBySetString">
+            <summary>Sets the shim of TConnectedVehicle.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.ModifiedDateGet">
+            <summary>Sets the shim of TConnectedVehicle.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.ModifiedDateSetDateTime">
+            <summary>Sets the shim of TConnectedVehicle.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.OriginallyScheduledDepartureGet">
+            <summary>Sets the shim of TConnectedVehicle.get_OriginallyScheduledDeparture()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.OriginallyScheduledDepartureSetDateTime">
+            <summary>Sets the shim of TConnectedVehicle.set_OriginallyScheduledDeparture(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectBlockIdentifierGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectBlockIdentifier()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectBlockIdentifierSetString">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectBlockIdentifier(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectFromNameGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectFromName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectFromNameSetString">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectFromName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectRequestsGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectRequests()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectRequestsSetListOfTConnectRequest">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectRequests(List`1&lt;TConnectRequest&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectRouteGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectRoute()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectRouteSetString">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectRoute(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectStopCodeGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.TConnectStopCodeSetString">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectStopCode(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.BlockGet">
+            <summary>Sets the shim of TConnectedVehicle.get_Block()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.BlockSetBlock">
+            <summary>Sets the shim of TConnectedVehicle.set_Block(Block value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.CurrentAcceptedHoldMinutesGet">
+            <summary>Sets the shim of TConnectedVehicle.get_CurrentAcceptedHoldMinutes()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.CurrentAcceptedHoldMinutesSetInt32">
+            <summary>Sets the shim of TConnectedVehicle.set_CurrentAcceptedHoldMinutes(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.IdGet">
+            <summary>Sets the shim of TConnectedVehicle.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TConnectedVehicle.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.ModifiedByGet">
+            <summary>Sets the shim of TConnectedVehicle.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.ModifiedBySetString">
+            <summary>Sets the shim of TConnectedVehicle.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.ModifiedDateGet">
+            <summary>Sets the shim of TConnectedVehicle.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.ModifiedDateSetDateTime">
+            <summary>Sets the shim of TConnectedVehicle.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.OriginallyScheduledDepartureGet">
+            <summary>Sets the shim of TConnectedVehicle.get_OriginallyScheduledDeparture()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.OriginallyScheduledDepartureSetDateTime">
+            <summary>Sets the shim of TConnectedVehicle.set_OriginallyScheduledDeparture(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectBlockIdentifierGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectBlockIdentifier()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectBlockIdentifierSetString">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectBlockIdentifier(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectFromNameGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectFromName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectFromNameSetString">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectFromName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectRequestsGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectRequests()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectRequestsSetListOfTConnectRequest">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectRequests(List`1&lt;TConnectRequest&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectRouteGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectRoute()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectRouteSetString">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectRoute(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectStopCodeGet">
+            <summary>Sets the shim of TConnectedVehicle.get_TConnectStopCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTConnectedVehicle.AllInstances.TConnectStopCodeSetString">
+            <summary>Sets the shim of TConnectedVehicle.set_TConnectStopCode(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTraveler">
+            <summary>Shim type of IDTO.Entity.Models.Traveler</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTraveler.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTraveler.#ctor(IDTO.Entity.Models.Traveler)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTraveler.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTraveler.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTraveler.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.Constructor">
+            <summary>Sets the shim of Traveler.Traveler()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.CreatedDateGet">
+            <summary>Sets the shim of Traveler.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.CreatedDateSetDateTime">
+            <summary>Sets the shim of Traveler.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DeactivatedDateGet">
+            <summary>Sets the shim of Traveler.get_DeactivatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DeactivatedDateSetNullableOfDateTime">
+            <summary>Sets the shim of Traveler.set_DeactivatedDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DefaultBicycleFlagGet">
+            <summary>Sets the shim of Traveler.get_DefaultBicycleFlag()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DefaultBicycleFlagSetBoolean">
+            <summary>Sets the shim of Traveler.set_DefaultBicycleFlag(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DefaultMobilityFlagGet">
+            <summary>Sets the shim of Traveler.get_DefaultMobilityFlag()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DefaultMobilityFlagSetBoolean">
+            <summary>Sets the shim of Traveler.set_DefaultMobilityFlag(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DefaultPriorityGet">
+            <summary>Sets the shim of Traveler.get_DefaultPriority()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DefaultPrioritySetString">
+            <summary>Sets the shim of Traveler.set_DefaultPriority(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DefaultTimezoneGet">
+            <summary>Sets the shim of Traveler.get_DefaultTimezone()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.DefaultTimezoneSetString">
+            <summary>Sets the shim of Traveler.set_DefaultTimezone(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.EmailGet">
+            <summary>Sets the shim of Traveler.get_Email()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.EmailSetString">
+            <summary>Sets the shim of Traveler.set_Email(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.FirstNameGet">
+            <summary>Sets the shim of Traveler.get_FirstName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.FirstNameSetString">
+            <summary>Sets the shim of Traveler.set_FirstName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.IdGet">
+            <summary>Sets the shim of Traveler.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.IdSetInt32">
+            <summary>Sets the shim of Traveler.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.InformedConsentDateGet">
+            <summary>Sets the shim of Traveler.get_InformedConsentDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.InformedConsentDateSetNullableOfDateTime">
+            <summary>Sets the shim of Traveler.set_InformedConsentDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.InformedConsentGet">
+            <summary>Sets the shim of Traveler.get_InformedConsent()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.InformedConsentSetBoolean">
+            <summary>Sets the shim of Traveler.set_InformedConsent(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.LastContactedDateGet">
+            <summary>Sets the shim of Traveler.get_LastContactedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.LastContactedDateSetNullableOfDateTime">
+            <summary>Sets the shim of Traveler.set_LastContactedDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.LastNameGet">
+            <summary>Sets the shim of Traveler.get_LastName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.LastNameSetString">
+            <summary>Sets the shim of Traveler.set_LastName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.LoginIdGet">
+            <summary>Sets the shim of Traveler.get_LoginId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.LoginIdSetString">
+            <summary>Sets the shim of Traveler.set_LoginId(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.MiddleNameGet">
+            <summary>Sets the shim of Traveler.get_MiddleName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.MiddleNameSetString">
+            <summary>Sets the shim of Traveler.set_MiddleName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.ModifiedByGet">
+            <summary>Sets the shim of Traveler.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.ModifiedBySetString">
+            <summary>Sets the shim of Traveler.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.ModifiedDateGet">
+            <summary>Sets the shim of Traveler.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.ModifiedDateSetDateTime">
+            <summary>Sets the shim of Traveler.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.PhoneNumberGet">
+            <summary>Sets the shim of Traveler.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.PhoneNumberSetString">
+            <summary>Sets the shim of Traveler.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.PromoCodeGet">
+            <summary>Sets the shim of Traveler.get_PromoCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.PromoCodeSetString">
+            <summary>Sets the shim of Traveler.set_PromoCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.TripsGet">
+            <summary>Sets the shim of Traveler.get_Trips()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.TripsSetICollectionOfTrip">
+            <summary>Sets the shim of Traveler.set_Trips(ICollection`1&lt;Trip&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.CreatedDateGet">
+            <summary>Sets the shim of Traveler.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.CreatedDateSetDateTime">
+            <summary>Sets the shim of Traveler.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DeactivatedDateGet">
+            <summary>Sets the shim of Traveler.get_DeactivatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DeactivatedDateSetNullableOfDateTime">
+            <summary>Sets the shim of Traveler.set_DeactivatedDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DefaultBicycleFlagGet">
+            <summary>Sets the shim of Traveler.get_DefaultBicycleFlag()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DefaultBicycleFlagSetBoolean">
+            <summary>Sets the shim of Traveler.set_DefaultBicycleFlag(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DefaultMobilityFlagGet">
+            <summary>Sets the shim of Traveler.get_DefaultMobilityFlag()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DefaultMobilityFlagSetBoolean">
+            <summary>Sets the shim of Traveler.set_DefaultMobilityFlag(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DefaultPriorityGet">
+            <summary>Sets the shim of Traveler.get_DefaultPriority()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DefaultPrioritySetString">
+            <summary>Sets the shim of Traveler.set_DefaultPriority(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DefaultTimezoneGet">
+            <summary>Sets the shim of Traveler.get_DefaultTimezone()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.DefaultTimezoneSetString">
+            <summary>Sets the shim of Traveler.set_DefaultTimezone(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.EmailGet">
+            <summary>Sets the shim of Traveler.get_Email()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.EmailSetString">
+            <summary>Sets the shim of Traveler.set_Email(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.FirstNameGet">
+            <summary>Sets the shim of Traveler.get_FirstName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.FirstNameSetString">
+            <summary>Sets the shim of Traveler.set_FirstName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.IdGet">
+            <summary>Sets the shim of Traveler.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Traveler.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.InformedConsentDateGet">
+            <summary>Sets the shim of Traveler.get_InformedConsentDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.InformedConsentDateSetNullableOfDateTime">
+            <summary>Sets the shim of Traveler.set_InformedConsentDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.InformedConsentGet">
+            <summary>Sets the shim of Traveler.get_InformedConsent()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.InformedConsentSetBoolean">
+            <summary>Sets the shim of Traveler.set_InformedConsent(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.LastContactedDateGet">
+            <summary>Sets the shim of Traveler.get_LastContactedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.LastContactedDateSetNullableOfDateTime">
+            <summary>Sets the shim of Traveler.set_LastContactedDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.LastNameGet">
+            <summary>Sets the shim of Traveler.get_LastName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.LastNameSetString">
+            <summary>Sets the shim of Traveler.set_LastName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.LoginIdGet">
+            <summary>Sets the shim of Traveler.get_LoginId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.LoginIdSetString">
+            <summary>Sets the shim of Traveler.set_LoginId(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.MiddleNameGet">
+            <summary>Sets the shim of Traveler.get_MiddleName()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.MiddleNameSetString">
+            <summary>Sets the shim of Traveler.set_MiddleName(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.ModifiedByGet">
+            <summary>Sets the shim of Traveler.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.ModifiedBySetString">
+            <summary>Sets the shim of Traveler.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.ModifiedDateGet">
+            <summary>Sets the shim of Traveler.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.ModifiedDateSetDateTime">
+            <summary>Sets the shim of Traveler.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.PhoneNumberGet">
+            <summary>Sets the shim of Traveler.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.PhoneNumberSetString">
+            <summary>Sets the shim of Traveler.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.PromoCodeGet">
+            <summary>Sets the shim of Traveler.get_PromoCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.PromoCodeSetString">
+            <summary>Sets the shim of Traveler.set_PromoCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.TripsGet">
+            <summary>Sets the shim of Traveler.get_Trips()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTraveler.AllInstances.TripsSetICollectionOfTrip">
+            <summary>Sets the shim of Traveler.set_Trips(ICollection`1&lt;Trip&gt; value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTravelerLocation">
+            <summary>Shim type of IDTO.Entity.Models.TravelerLocation</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTravelerLocation.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTravelerLocation.#ctor(IDTO.Entity.Models.TravelerLocation)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTravelerLocation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTravelerLocation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTravelerLocation.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.Constructor">
+            <summary>Sets the shim of TravelerLocation.TravelerLocation()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.IdGet">
+            <summary>Sets the shim of TravelerLocation.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.IdSetInt32">
+            <summary>Sets the shim of TravelerLocation.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.LatitudeGet">
+            <summary>Sets the shim of TravelerLocation.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.LatitudeSetDouble">
+            <summary>Sets the shim of TravelerLocation.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.LongitudeGet">
+            <summary>Sets the shim of TravelerLocation.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.LongitudeSetDouble">
+            <summary>Sets the shim of TravelerLocation.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.PositionTimestampGet">
+            <summary>Sets the shim of TravelerLocation.get_PositionTimestamp()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.PositionTimestampSetDateTime">
+            <summary>Sets the shim of TravelerLocation.set_PositionTimestamp(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.TravelerGet">
+            <summary>Sets the shim of TravelerLocation.get_Traveler()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.TravelerIdGet">
+            <summary>Sets the shim of TravelerLocation.get_TravelerId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.TravelerIdSetInt32">
+            <summary>Sets the shim of TravelerLocation.set_TravelerId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.TravelerSetTraveler">
+            <summary>Sets the shim of TravelerLocation.set_Traveler(Traveler value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.IdGet">
+            <summary>Sets the shim of TravelerLocation.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TravelerLocation.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.LatitudeGet">
+            <summary>Sets the shim of TravelerLocation.get_Latitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.LatitudeSetDouble">
+            <summary>Sets the shim of TravelerLocation.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.LongitudeGet">
+            <summary>Sets the shim of TravelerLocation.get_Longitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.LongitudeSetDouble">
+            <summary>Sets the shim of TravelerLocation.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.PositionTimestampGet">
+            <summary>Sets the shim of TravelerLocation.get_PositionTimestamp()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.PositionTimestampSetDateTime">
+            <summary>Sets the shim of TravelerLocation.set_PositionTimestamp(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.TravelerGet">
+            <summary>Sets the shim of TravelerLocation.get_Traveler()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.TravelerIdGet">
+            <summary>Sets the shim of TravelerLocation.get_TravelerId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.TravelerIdSetInt32">
+            <summary>Sets the shim of TravelerLocation.set_TravelerId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTravelerLocation.AllInstances.TravelerSetTraveler">
+            <summary>Sets the shim of TravelerLocation.set_Traveler(Traveler value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTrip">
+            <summary>Shim type of IDTO.Entity.Models.Trip</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTrip.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTrip.#ctor(IDTO.Entity.Models.Trip)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTrip.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTrip.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTrip.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.BicycleFlagGet">
+            <summary>Sets the shim of Trip.get_BicycleFlag()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.BicycleFlagSetBoolean">
+            <summary>Sets the shim of Trip.set_BicycleFlag(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.Constructor">
+            <summary>Sets the shim of Trip.Trip()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.CreatedDateGet">
+            <summary>Sets the shim of Trip.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.CreatedDateSetDateTime">
+            <summary>Sets the shim of Trip.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.DestinationGet">
+            <summary>Sets the shim of Trip.get_Destination()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.DestinationSetString">
+            <summary>Sets the shim of Trip.set_Destination(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.IdGet">
+            <summary>Sets the shim of Trip.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.IdSetInt32">
+            <summary>Sets the shim of Trip.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.MobilityFlagGet">
+            <summary>Sets the shim of Trip.get_MobilityFlag()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.MobilityFlagSetBoolean">
+            <summary>Sets the shim of Trip.set_MobilityFlag(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.ModifiedByGet">
+            <summary>Sets the shim of Trip.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.ModifiedBySetString">
+            <summary>Sets the shim of Trip.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.ModifiedDateGet">
+            <summary>Sets the shim of Trip.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.ModifiedDateSetDateTime">
+            <summary>Sets the shim of Trip.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.OriginationGet">
+            <summary>Sets the shim of Trip.get_Origination()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.OriginationSetString">
+            <summary>Sets the shim of Trip.set_Origination(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.PriorityCodeGet">
+            <summary>Sets the shim of Trip.get_PriorityCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.PriorityCodeSetString">
+            <summary>Sets the shim of Trip.set_PriorityCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TravelerGet">
+            <summary>Sets the shim of Trip.get_Traveler()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TravelerIdGet">
+            <summary>Sets the shim of Trip.get_TravelerId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TravelerIdSetInt32">
+            <summary>Sets the shim of Trip.set_TravelerId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TravelerSetTraveler">
+            <summary>Sets the shim of Trip.set_Traveler(Traveler value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TripEndDateGet">
+            <summary>Sets the shim of Trip.get_TripEndDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TripEndDateSetDateTime">
+            <summary>Sets the shim of Trip.set_TripEndDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TripStartDateGet">
+            <summary>Sets the shim of Trip.get_TripStartDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TripStartDateSetDateTime">
+            <summary>Sets the shim of Trip.set_TripStartDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TripStartNotificationSentGet">
+            <summary>Sets the shim of Trip.get_TripStartNotificationSent()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.TripStartNotificationSentSetBoolean">
+            <summary>Sets the shim of Trip.set_TripStartNotificationSent(Boolean value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.BicycleFlagGet">
+            <summary>Sets the shim of Trip.get_BicycleFlag()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.BicycleFlagSetBoolean">
+            <summary>Sets the shim of Trip.set_BicycleFlag(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.CreatedDateGet">
+            <summary>Sets the shim of Trip.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.CreatedDateSetDateTime">
+            <summary>Sets the shim of Trip.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.DestinationGet">
+            <summary>Sets the shim of Trip.get_Destination()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.DestinationSetString">
+            <summary>Sets the shim of Trip.set_Destination(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.IdGet">
+            <summary>Sets the shim of Trip.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Trip.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.MobilityFlagGet">
+            <summary>Sets the shim of Trip.get_MobilityFlag()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.MobilityFlagSetBoolean">
+            <summary>Sets the shim of Trip.set_MobilityFlag(Boolean value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.ModifiedByGet">
+            <summary>Sets the shim of Trip.get_ModifiedBy()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.ModifiedBySetString">
+            <summary>Sets the shim of Trip.set_ModifiedBy(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.ModifiedDateGet">
+            <summary>Sets the shim of Trip.get_ModifiedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.ModifiedDateSetDateTime">
+            <summary>Sets the shim of Trip.set_ModifiedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.OriginationGet">
+            <summary>Sets the shim of Trip.get_Origination()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.OriginationSetString">
+            <summary>Sets the shim of Trip.set_Origination(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.PriorityCodeGet">
+            <summary>Sets the shim of Trip.get_PriorityCode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.PriorityCodeSetString">
+            <summary>Sets the shim of Trip.set_PriorityCode(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TravelerGet">
+            <summary>Sets the shim of Trip.get_Traveler()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TravelerIdGet">
+            <summary>Sets the shim of Trip.get_TravelerId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TravelerIdSetInt32">
+            <summary>Sets the shim of Trip.set_TravelerId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TravelerSetTraveler">
+            <summary>Sets the shim of Trip.set_Traveler(Traveler value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TripEndDateGet">
+            <summary>Sets the shim of Trip.get_TripEndDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TripEndDateSetDateTime">
+            <summary>Sets the shim of Trip.set_TripEndDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TripStartDateGet">
+            <summary>Sets the shim of Trip.get_TripStartDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TripStartDateSetDateTime">
+            <summary>Sets the shim of Trip.set_TripStartDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TripStartNotificationSentGet">
+            <summary>Sets the shim of Trip.get_TripStartNotificationSent()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTrip.AllInstances.TripStartNotificationSentSetBoolean">
+            <summary>Sets the shim of Trip.set_TripStartNotificationSent(Boolean value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTripEvent">
+            <summary>Shim type of IDTO.Entity.Models.TripEvent</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTripEvent.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTripEvent.#ctor(IDTO.Entity.Models.TripEvent)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTripEvent.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTripEvent.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimTripEvent.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.Constructor">
+            <summary>Sets the shim of TripEvent.TripEvent()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.ConstructorInt32String">
+            <summary>Sets the shim of TripEvent.TripEvent(Int32 tripId, String message)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.EventDateGet">
+            <summary>Sets the shim of TripEvent.get_EventDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.EventDateSetDateTime">
+            <summary>Sets the shim of TripEvent.set_EventDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.IdGet">
+            <summary>Sets the shim of TripEvent.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.IdSetInt32">
+            <summary>Sets the shim of TripEvent.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.MessageGet">
+            <summary>Sets the shim of TripEvent.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.MessageSetString">
+            <summary>Sets the shim of TripEvent.set_Message(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.TripGet">
+            <summary>Sets the shim of TripEvent.get_Trip()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.TripIdGet">
+            <summary>Sets the shim of TripEvent.get_TripId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.TripIdSetInt32">
+            <summary>Sets the shim of TripEvent.set_TripId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.TripSetTrip">
+            <summary>Sets the shim of TripEvent.set_Trip(Trip value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.EventDateGet">
+            <summary>Sets the shim of TripEvent.get_EventDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.EventDateSetDateTime">
+            <summary>Sets the shim of TripEvent.set_EventDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.IdGet">
+            <summary>Sets the shim of TripEvent.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TripEvent.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.MessageGet">
+            <summary>Sets the shim of TripEvent.get_Message()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.MessageSetString">
+            <summary>Sets the shim of TripEvent.set_Message(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.TripGet">
+            <summary>Sets the shim of TripEvent.get_Trip()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.TripIdGet">
+            <summary>Sets the shim of TripEvent.get_TripId()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.TripIdSetInt32">
+            <summary>Sets the shim of TripEvent.set_TripId(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimTripEvent.AllInstances.TripSetTrip">
+            <summary>Sets the shim of TripEvent.set_Trip(Trip value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage">
+            <summary>Shim type of IDTO.Entity.Models.WebApiGetTripUsage</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.#ctor(IDTO.Entity.Models.WebApiGetTripUsage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.Bind(Repository.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.Constructor">
+            <summary>Sets the shim of WebApiGetTripUsage.WebApiGetTripUsage()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.CreatedDateGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.CreatedDateSetDateTime">
+            <summary>Sets the shim of WebApiGetTripUsage.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.ExecutionTimeSecondsGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_ExecutionTimeSeconds()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.ExecutionTimeSecondsSetInt32">
+            <summary>Sets the shim of WebApiGetTripUsage.set_ExecutionTimeSeconds(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.FromLatitudeGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_FromLatitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.FromLatitudeSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_FromLatitude(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.FromLongitudeGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_FromLongitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.FromLongitudeSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_FromLongitude(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.FromPlaceGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_FromPlace()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.FromPlaceSetString">
+            <summary>Sets the shim of WebApiGetTripUsage.set_FromPlace(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.IdGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.IdSetInt32">
+            <summary>Sets the shim of WebApiGetTripUsage.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.MaxWalkMetersGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_MaxWalkMeters()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.MaxWalkMetersSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_MaxWalkMeters(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.NumberOfResultsGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_NumberOfResults()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.NumberOfResultsSetInt32">
+            <summary>Sets the shim of WebApiGetTripUsage.set_NumberOfResults(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.PlatformGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_Platform()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.PlatformSetString">
+            <summary>Sets the shim of WebApiGetTripUsage.set_Platform(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.SearchDateGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_SearchDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.SearchDateSetDateTime">
+            <summary>Sets the shim of WebApiGetTripUsage.set_SearchDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.ToLatitudeGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_ToLatitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.ToLatitudeSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_ToLatitude(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.ToLongitudeGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_ToLongitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.ToLongitudeSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_ToLongitude(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.ToPlaceGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_ToPlace()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.ToPlaceSetString">
+            <summary>Sets the shim of WebApiGetTripUsage.set_ToPlace(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.CreatedDateGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_CreatedDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.CreatedDateSetDateTime">
+            <summary>Sets the shim of WebApiGetTripUsage.set_CreatedDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.ExecutionTimeSecondsGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_ExecutionTimeSeconds()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.ExecutionTimeSecondsSetInt32">
+            <summary>Sets the shim of WebApiGetTripUsage.set_ExecutionTimeSeconds(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.FromLatitudeGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_FromLatitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.FromLatitudeSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_FromLatitude(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.FromLongitudeGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_FromLongitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.FromLongitudeSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_FromLongitude(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.FromPlaceGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_FromPlace()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.FromPlaceSetString">
+            <summary>Sets the shim of WebApiGetTripUsage.set_FromPlace(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.IdGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_Id()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.IdSetInt32">
+            <summary>Sets the shim of WebApiGetTripUsage.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.MaxWalkMetersGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_MaxWalkMeters()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.MaxWalkMetersSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_MaxWalkMeters(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.NumberOfResultsGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_NumberOfResults()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.NumberOfResultsSetInt32">
+            <summary>Sets the shim of WebApiGetTripUsage.set_NumberOfResults(Int32 value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.PlatformGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_Platform()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.PlatformSetString">
+            <summary>Sets the shim of WebApiGetTripUsage.set_Platform(String value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.SearchDateGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_SearchDate()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.SearchDateSetDateTime">
+            <summary>Sets the shim of WebApiGetTripUsage.set_SearchDate(DateTime value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.ToLatitudeGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_ToLatitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.ToLatitudeSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_ToLatitude(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.ToLongitudeGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_ToLongitude()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.ToLongitudeSetSingle">
+            <summary>Sets the shim of WebApiGetTripUsage.set_ToLongitude(Single value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.ToPlaceGet">
+            <summary>Sets the shim of WebApiGetTripUsage.get_ToPlace()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.ShimWebApiGetTripUsage.AllInstances.ToPlaceSetString">
+            <summary>Sets the shim of WebApiGetTripUsage.set_ToPlace(String value)</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubBlock">
+            <summary>Stub type of IDTO.Entity.Models.Block</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubBlock.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubBlock.InitializeStub">
+            <summary>Initializes a new instance of type StubBlock</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubBlock.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubBlock.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubBlock.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubDispatcher">
+            <summary>Stub type of IDTO.Entity.Models.Dispatcher</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubDispatcher.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubDispatcher.InitializeStub">
+            <summary>Initializes a new instance of type StubDispatcher</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubDispatcher.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubDispatcher.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubDispatcher.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubLastVehiclePosition">
+            <summary>Stub type of IDTO.Entity.Models.LastVehiclePosition</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubLastVehiclePosition.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubLastVehiclePosition.InitializeStub">
+            <summary>Initializes a new instance of type StubLastVehiclePosition</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubLastVehiclePosition.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubLastVehiclePosition.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubLastVehiclePosition.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubMode">
+            <summary>Stub type of IDTO.Entity.Models.Mode</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubMode.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubMode.InitializeStub">
+            <summary>Initializes a new instance of type StubMode</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubMode.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubMode.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubMode.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubPromoCode">
+            <summary>Stub type of IDTO.Entity.Models.PromoCode</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubPromoCode.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubPromoCode.InitializeStub">
+            <summary>Initializes a new instance of type StubPromoCode</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubPromoCode.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubPromoCode.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubPromoCode.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubProvider">
+            <summary>Stub type of IDTO.Entity.Models.Provider</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubProvider.AttachBackingFieldToProviderType">
+            <summary>Attaches delegates to emulate StubProvider.ProviderType as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubProvider</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubProvider.ProviderTypeGet">
+            <summary>Sets the stub of Provider.get_ProviderType()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubProvider.ProviderTypeSetProviderType">
+            <summary>Sets the stub of Provider.set_ProviderType(ProviderType value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubProvider.ProviderType">
+            <summary>Sets the stub of Provider.get_ProviderType()</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubProviderType">
+            <summary>Stub type of IDTO.Entity.Models.ProviderType</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubProviderType.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubProviderType.InitializeStub">
+            <summary>Initializes a new instance of type StubProviderType</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubProviderType.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubProviderType.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubProviderType.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubStep">
+            <summary>Stub type of IDTO.Entity.Models.Step</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubStep.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubStep.AttachBackingFieldToBlock">
+            <summary>Attaches delegates to emulate StubStep.Block as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubStep.AttachBackingFieldToFromProvider">
+            <summary>Attaches delegates to emulate StubStep.FromProvider as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubStep.AttachBackingFieldToMode">
+            <summary>Attaches delegates to emulate StubStep.Mode as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubStep.AttachBackingFieldToToProvider">
+            <summary>Attaches delegates to emulate StubStep.ToProvider as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubStep.AttachBackingFieldToTrip">
+            <summary>Attaches delegates to emulate StubStep.Trip as a property with a backing field.</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.BlockGet">
+            <summary>Sets the stub of Step.get_Block()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.BlockSetBlock">
+            <summary>Sets the stub of Step.set_Block(Block value)</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.FromProviderGet">
+            <summary>Sets the stub of Step.get_FromProvider()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.FromProviderSetProvider">
+            <summary>Sets the stub of Step.set_FromProvider(Provider value)</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubStep.InitializeStub">
+            <summary>Initializes a new instance of type StubStep</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.ModeGet">
+            <summary>Sets the stub of Step.get_Mode()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.ModeSetMode">
+            <summary>Sets the stub of Step.set_Mode(Mode value)</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.ToProviderGet">
+            <summary>Sets the stub of Step.get_ToProvider()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.ToProviderSetProvider">
+            <summary>Sets the stub of Step.set_ToProvider(Provider value)</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.TripGet">
+            <summary>Sets the stub of Step.get_Trip()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubStep.TripSetTrip">
+            <summary>Sets the stub of Step.set_Trip(Trip value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubStep.Block">
+            <summary>Sets the stub of Step.get_Block()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubStep.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubStep.FromProvider">
+            <summary>Sets the stub of Step.get_FromProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubStep.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubStep.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubStep.Mode">
+            <summary>Sets the stub of Step.get_Mode()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubStep.ToProvider">
+            <summary>Sets the stub of Step.get_ToProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubStep.Trip">
+            <summary>Sets the stub of Step.get_Trip()</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubTConnect">
+            <summary>Stub type of IDTO.Entity.Models.TConnect</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnect.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnect.AttachBackingFieldToInboundStep">
+            <summary>Attaches delegates to emulate StubTConnect.InboundStep as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnect.AttachBackingFieldToOutboundStep">
+            <summary>Attaches delegates to emulate StubTConnect.OutboundStep as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnect.AttachBackingFieldToTConnectStatus">
+            <summary>Attaches delegates to emulate StubTConnect.TConnectStatus as a property with a backing field.</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnect.InboundStepGet">
+            <summary>Sets the stub of TConnect.get_InboundStep()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnect.InboundStepSetStep">
+            <summary>Sets the stub of TConnect.set_InboundStep(Step value)</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnect.InitializeStub">
+            <summary>Initializes a new instance of type StubTConnect</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnect.OutboundStepGet">
+            <summary>Sets the stub of TConnect.get_OutboundStep()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnect.OutboundStepSetStep">
+            <summary>Sets the stub of TConnect.set_OutboundStep(Step value)</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnect.TConnectStatusGet">
+            <summary>Sets the stub of TConnect.get_TConnectStatus()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnect.TConnectStatusSetTConnectStatus">
+            <summary>Sets the stub of TConnect.set_TConnectStatus(TConnectStatus value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnect.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnect.InboundStep">
+            <summary>Sets the stub of TConnect.get_InboundStep()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnect.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnect.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnect.OutboundStep">
+            <summary>Sets the stub of TConnect.get_OutboundStep()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnect.TConnectStatus">
+            <summary>Sets the stub of TConnect.get_TConnectStatus()</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubTConnectOpportunity">
+            <summary>Stub type of IDTO.Entity.Models.TConnectOpportunity</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.AttachBackingFieldToCheckpointProvider">
+            <summary>Attaches delegates to emulate StubTConnectOpportunity.CheckpointProvider as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.AttachBackingFieldToTConnectProvider">
+            <summary>Attaches delegates to emulate StubTConnectOpportunity.TConnectProvider as a property with a backing field.</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.CheckpointProviderGet">
+            <summary>Sets the stub of TConnectOpportunity.get_CheckpointProvider()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.CheckpointProviderSetProvider">
+            <summary>Sets the stub of TConnectOpportunity.set_CheckpointProvider(Provider value)</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.InitializeStub">
+            <summary>Initializes a new instance of type StubTConnectOpportunity</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.TConnectProviderGet">
+            <summary>Sets the stub of TConnectOpportunity.get_TConnectProvider()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.TConnectProviderSetProvider">
+            <summary>Sets the stub of TConnectOpportunity.set_TConnectProvider(Provider value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.CheckpointProvider">
+            <summary>Sets the stub of TConnectOpportunity.get_CheckpointProvider()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectOpportunity.TConnectProvider">
+            <summary>Sets the stub of TConnectOpportunity.get_TConnectProvider()</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubTConnectRequest">
+            <summary>Stub type of IDTO.Entity.Models.TConnectRequest</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectRequest.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectRequest.AttachBackingFieldToTConnectStatus">
+            <summary>Attaches delegates to emulate StubTConnectRequest.TConnectStatus as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectRequest.AttachBackingFieldToTConnectedVehicle">
+            <summary>Attaches delegates to emulate StubTConnectRequest.TConnectedVehicle as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectRequest.InitializeStub">
+            <summary>Initializes a new instance of type StubTConnectRequest</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectRequest.TConnectStatusGet">
+            <summary>Sets the stub of TConnectRequest.get_TConnectStatus()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectRequest.TConnectStatusSetTConnectStatus">
+            <summary>Sets the stub of TConnectRequest.set_TConnectStatus(TConnectStatus value)</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectRequest.TConnectedVehicleGet">
+            <summary>Sets the stub of TConnectRequest.get_TConnectedVehicle()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectRequest.TConnectedVehicleSetTConnectedVehicle">
+            <summary>Sets the stub of TConnectRequest.set_TConnectedVehicle(TConnectedVehicle value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectRequest.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectRequest.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectRequest.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectRequest.TConnectStatus">
+            <summary>Sets the stub of TConnectRequest.get_TConnectStatus()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectRequest.TConnectedVehicle">
+            <summary>Sets the stub of TConnectRequest.get_TConnectedVehicle()</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubTConnectStatus">
+            <summary>Stub type of IDTO.Entity.Models.TConnectStatus</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectStatus.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectStatus.InitializeStub">
+            <summary>Initializes a new instance of type StubTConnectStatus</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectStatus.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectStatus.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectStatus.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubTConnectedVehicle">
+            <summary>Stub type of IDTO.Entity.Models.TConnectedVehicle</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectedVehicle.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectedVehicle.AttachBackingFieldToBlock">
+            <summary>Attaches delegates to emulate StubTConnectedVehicle.Block as a property with a backing field.</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectedVehicle.BlockGet">
+            <summary>Sets the stub of TConnectedVehicle.get_Block()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTConnectedVehicle.BlockSetBlock">
+            <summary>Sets the stub of TConnectedVehicle.set_Block(Block value)</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTConnectedVehicle.InitializeStub">
+            <summary>Initializes a new instance of type StubTConnectedVehicle</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectedVehicle.Block">
+            <summary>Sets the stub of TConnectedVehicle.get_Block()</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectedVehicle.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectedVehicle.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTConnectedVehicle.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubTraveler">
+            <summary>Stub type of IDTO.Entity.Models.Traveler</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTraveler.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTraveler.AttachBackingFieldToTrips">
+            <summary>Attaches delegates to emulate StubTraveler.Trips as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTraveler.InitializeStub">
+            <summary>Initializes a new instance of type StubTraveler</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTraveler.TripsGet">
+            <summary>Sets the stub of Traveler.get_Trips()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTraveler.TripsSetICollectionOfTrip">
+            <summary>Sets the stub of Traveler.set_Trips(ICollection`1&lt;Trip&gt; value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTraveler.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTraveler.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTraveler.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTraveler.Trips">
+            <summary>Sets the stub of Traveler.get_Trips()</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubTravelerLocation">
+            <summary>Stub type of IDTO.Entity.Models.TravelerLocation</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTravelerLocation.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTravelerLocation.AttachBackingFieldToTraveler">
+            <summary>Attaches delegates to emulate StubTravelerLocation.Traveler as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTravelerLocation.InitializeStub">
+            <summary>Initializes a new instance of type StubTravelerLocation</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTravelerLocation.TravelerGet">
+            <summary>Sets the stub of TravelerLocation.get_Traveler()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTravelerLocation.TravelerSetTraveler">
+            <summary>Sets the stub of TravelerLocation.set_Traveler(Traveler value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTravelerLocation.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTravelerLocation.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTravelerLocation.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTravelerLocation.Traveler">
+            <summary>Sets the stub of TravelerLocation.get_Traveler()</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubTrip">
+            <summary>Stub type of IDTO.Entity.Models.Trip</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTrip.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTrip.AttachBackingFieldToTraveler">
+            <summary>Attaches delegates to emulate StubTrip.Traveler as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTrip.InitializeStub">
+            <summary>Initializes a new instance of type StubTrip</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTrip.TravelerGet">
+            <summary>Sets the stub of Trip.get_Traveler()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTrip.TravelerSetTraveler">
+            <summary>Sets the stub of Trip.set_Traveler(Traveler value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTrip.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTrip.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTrip.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTrip.Traveler">
+            <summary>Sets the stub of Trip.get_Traveler()</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubTripEvent">
+            <summary>Stub type of IDTO.Entity.Models.TripEvent</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTripEvent.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTripEvent.#ctor(System.Int32,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTripEvent.AttachBackingFieldToTrip">
+            <summary>Attaches delegates to emulate StubTripEvent.Trip as a property with a backing field.</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubTripEvent.InitializeStub">
+            <summary>Initializes a new instance of type StubTripEvent</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTripEvent.TripGet">
+            <summary>Sets the stub of TripEvent.get_Trip()</summary>
+        </member>
+        <member name="F:IDTO.Entity.Models.Fakes.StubTripEvent.TripSetTrip">
+            <summary>Sets the stub of TripEvent.set_Trip(Trip value)</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTripEvent.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTripEvent.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTripEvent.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubTripEvent.Trip">
+            <summary>Sets the stub of TripEvent.get_Trip()</summary>
+        </member>
+        <member name="T:IDTO.Entity.Models.Fakes.StubWebApiGetTripUsage">
+            <summary>Stub type of IDTO.Entity.Models.WebApiGetTripUsage</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubWebApiGetTripUsage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:IDTO.Entity.Models.Fakes.StubWebApiGetTripUsage.InitializeStub">
+            <summary>Initializes a new instance of type StubWebApiGetTripUsage</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubWebApiGetTripUsage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubWebApiGetTripUsage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:IDTO.Entity.Models.Fakes.StubWebApiGetTripUsage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

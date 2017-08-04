@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/date_time_picker_container"
+    android:background="#000"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/date_time_picker_hour_arrow_up"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0000"
+            android:src="@android:drawable/arrow_up_float" />
+        <TextView
+            android:id="@+id/date_time_picker_tv_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+        <ImageButton
+            android:id="@+id/date_time_picker_hour_arrow_down"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0000"
+            android:src="@android:drawable/arrow_down_float" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/date_time_picker_minute_arrow_up"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0000"
+            android:src="@android:drawable/arrow_up_float" />
+        <TextView
+            android:id="@+id/date_time_picker_tv_minute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+        <ImageButton
+            android:id="@+id/date_time_picker_minute_arrow_down"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0000"
+            android:src="@android:drawable/arrow_down_float" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/date_time_picker_ampm_arrow_up"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0000"
+            android:src="@android:drawable/arrow_up_float" />
+        <TextView
+            android:id="@+id/date_time_picker_tv_ampm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AM"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+        <ImageButton
+            android:id="@+id/date_time_picker_ampm_arrow_down"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0000"
+            android:src="@android:drawable/arrow_down_float" />
+    </LinearLayout>
+</LinearLayout>

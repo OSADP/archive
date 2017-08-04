@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="transparent">#00000000</color>
+  <color name="idtoblack">#010101</color>
+  <color name="idto_dkgray">#555555</color>
+  <color name="idto_ltgray">#AAAAAA</color>
+  <color name="idto_orange">#faaf40</color>
+  <color name="idto_red">#ff4444</color>
+  
+</resources>

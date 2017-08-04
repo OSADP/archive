@@ -1,0 +1,84 @@
+﻿@using System;
+@using IDTO.TravelerPortal.Common.ExtensionMethods;
+@using IDTO.TravelerPortal.Common;
+
+@model IDTO.TravelerPortal.Models.TripSaveResultViewModel
+
+@{
+    ViewBag.Title = "Saved Trip";
+}
+
+<div style="margin-top: 152px">
+    <table width="660" style="box-shadow: 3px 3px 4px #000000; ">
+        <tr>
+            <td>
+                <table style="position: relative;" align="center">
+                    <tr>
+                        <td>
+                            <img width="40" height="40" src="../Content/images/Icon_UpcomingTrips.png" style="position:absolute; top: -20px; left:-20px" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="width: 100%; background-color: white;">
+                    <tr>
+                        <td height="10px"></td>
+                    </tr>
+                    <tr >
+                        <td></td>
+                        <td align="left" colspan="3" style="font-size: 24px; color: #5A3056; ">
+                            @ViewBag.Title
+                        </td>
+                        <td align="right">
+                            <div style="padding-right: 2em">@Html.ActionLink("Return to Trips", "Index", "TripDashboard", null, new { @style = "color:black; text-decoration:underline; font-size:10px" })</div>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #6E6E6E">
+                        <td colspan="5" height="10px"></td>
+                    </tr>
+                    <tr>
+                        <td height="10px"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" height="5px"></td>
+                    </tr>
+                    <tr>
+                        <td width="20px"></td>
+                        <td align="left" style="font-size: 11px; color: #6E6E6E">@ExtensionMethods.GetTodayTomorrowString(Model.StartTime)</td>
+                        <td align="left" style="font-size: 11px; color: #6E6E6E">Trip Time</td>
+                        <td align="left" style="font-weight: bold; font-size: 16px; color: #6E6E6E">@Model.Duration min</td>
+                        <td align="left" style="font-size: 16px; color: #6E6E6E">@Model.StartFirstNonWalk</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" height="5px"></td>
+                    </tr>
+                    <tr>
+                        <td height="1px"></td>
+                        <td></td>
+                        <td colspan="3" style="border-bottom: 1px solid #6E6E6E"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" height="5px"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left" style="font-weight: bold; font-size: 20px; color: #F9AE40">@Model.StartTime.ToShortTimeString()</td>
+                        <td align="left" style="font-size: 11px; color: #6E6E6E">Transfers</td>
+                        <td align="left" style="font-weight:bold; font-size: 16px; color: #6E6E6E">@Model.Transfers</td>
+                        <td align="left" style="font-size: 11px; color: #6E6E6E">@Model.StartFrom to @Model.EndAt</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" height="5px"></td>
+                    </tr>
+
+                    <tr style="height: 5px; background-color: #F9AE40">
+                        <td colspan="5"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>

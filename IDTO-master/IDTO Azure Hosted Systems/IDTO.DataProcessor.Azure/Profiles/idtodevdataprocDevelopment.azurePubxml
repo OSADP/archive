@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AzureCredentials>{"ServiceManagementEndpoint":"https:\/\/management.core.windows.net\/","SubscriptionId":"095d0d2d-0530-4a5b-9908-b64f32cbdc0b"}</AzureCredentials>
+    <AzureDeleteDeploymentOnFailure>False</AzureDeleteDeploymentOnFailure>
+    <AzureDeploymentLabel>IDTO.DataProcessor.Azure</AzureDeploymentLabel>
+    <AzureDeploymentReplacementMethod>AutomaticUpgrade</AzureDeploymentReplacementMethod>
+    <AzureSlot>Production</AzureSlot>
+    <AzureEnableRemoteDesktop>False</AzureEnableRemoteDesktop>
+    <AzureEnableWebDeploy>False</AzureEnableWebDeploy>
+    <AzureFallbackToDeleteAndRecreateIfUpgradeFails>False</AzureFallbackToDeleteAndRecreateIfUpgradeFails>
+    <AzureHostedServiceLabel>idtodevdataproc</AzureHostedServiceLabel>
+    <AzureHostedServiceName>idtodevdataproc</AzureHostedServiceName>
+    <AzureEnableIntelliTrace>False</AzureEnableIntelliTrace>
+    <AzureEnableProfiling>False</AzureEnableProfiling>
+    <AzureServiceConfiguration>Cloud</AzureServiceConfiguration>
+    <AzureSolutionConfiguration>Release</AzureSolutionConfiguration>
+    <AzureStorageAccountLabel>idtodev</AzureStorageAccountLabel>
+    <AzureStorageAccountName>idtodev</AzureStorageAccountName>
+    <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
+    <EnableRemoteDebugger>False</EnableRemoteDebugger>
+    <RemoteDebuggerConnectorCertificateThumbprint>9AD41E7F295D3CA3553F4C70F8AF1A8C906D39DA</RemoteDebuggerConnectorCertificateThumbprint>
+  </PropertyGroup>
+</Project>

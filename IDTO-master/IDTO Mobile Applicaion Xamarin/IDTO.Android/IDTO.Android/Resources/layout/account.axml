@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@drawable/background_image"
+    android:padding="4dp">
+    <IDTO.Android.BarView
+        android:id="@+id/account_sidebar"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/account_main_content"
+        android:layout_alignBottom="@+id/account_main_content"
+        android:layout_alignParentLeft="true" />
+    <LinearLayout
+        android:id="@+id/account_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/account_sidebar"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="vertical"
+            android:padding="12dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Promo Code:"
+                android:textColor="#000"
+                android:textSize="14dp" />
+            <RelativeLayout
+                android:id="@+id/account_promocode_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="#000"
+                android:padding="1dp">
+                <EditText
+                    android:id="@+id/account_tv_promo_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="24dp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/account_btn_addPromoCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/idto_orange"
+                android:text="Set Promo Code"
+                android:textColor="#fff" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="vertical"
+            android:padding="12dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textColor="#000"
+                android:textSize="14dp" />
+            <RelativeLayout
+                android:id="@+id/account_user_name_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="#000"
+                android:padding="1dp">
+                <TextView
+                    android:id="@+id/account_tv_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="24dp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/account_btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/idto_orange"
+                android:text="Logout"
+                android:textColor="#fff" />
+            <TextView
+                android:id="@+id/account_tv_version"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="..."
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/account_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>
