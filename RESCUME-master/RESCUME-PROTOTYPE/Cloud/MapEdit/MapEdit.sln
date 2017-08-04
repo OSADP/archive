@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "MapEdit.Azure", "MapEdit.Azure\MapEdit.Azure.ccproj", "{3C04B379-D019-47C0-8F1A-34F9A04F5DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRole1", "WebRole1\WebRole1.csproj", "{BCE173DF-76E8-46EF-A74A-CEDA8ADC50FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapEdit.Data", "MapEdit.Data\MapEdit.Data.csproj", "{7F09EFD2-0DDA-49C3-955B-E39A047076D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapEdit.Gui.Wpf", "MapEdit.Gui.Wpf\MapEdit.Gui.Wpf.csproj", "{68943F25-9312-45E1-9C55-8DA699974F6E}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C04B379-D019-47C0-8F1A-34F9A04F5DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C04B379-D019-47C0-8F1A-34F9A04F5DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C04B379-D019-47C0-8F1A-34F9A04F5DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C04B379-D019-47C0-8F1A-34F9A04F5DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE173DF-76E8-46EF-A74A-CEDA8ADC50FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE173DF-76E8-46EF-A74A-CEDA8ADC50FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE173DF-76E8-46EF-A74A-CEDA8ADC50FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE173DF-76E8-46EF-A74A-CEDA8ADC50FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F09EFD2-0DDA-49C3-955B-E39A047076D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F09EFD2-0DDA-49C3-955B-E39A047076D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F09EFD2-0DDA-49C3-955B-E39A047076D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F09EFD2-0DDA-49C3-955B-E39A047076D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68943F25-9312-45E1-9C55-8DA699974F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68943F25-9312-45E1-9C55-8DA699974F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68943F25-9312-45E1-9C55-8DA699974F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68943F25-9312-45E1-9C55-8DA699974F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

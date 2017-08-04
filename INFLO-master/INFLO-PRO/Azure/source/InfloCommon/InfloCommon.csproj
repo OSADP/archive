@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA8AE942-0B3A-49BF-A52C-5DA012259CAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InfloCommon</RootNamespace>
+    <AssemblyName>InfloCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\external\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\external\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InfloDb\Configuration_ESS.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\Configuration_INFLOThresholds.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\Configuration_Roadway.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\Configuration_RoadwayESS.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\Configuration_RoadwayLinks.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\Configuration_RoadwayLinksDetectorStation.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\Configuration_RoadwayLinksESS.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\Configuration_RoadwayMileMarkers.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\Configuration_RoadwaySubLinks.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\Configuration_TSSDetectorStation.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\InfloDb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfloDb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\InfloDb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\InfloDb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfloDb.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\sysdiagram.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TMEOutput_QWARNMessage_CV.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TMEOutput_QWARN_QueueInfo.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TMEOutput_ShockWaveInformation.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TMEOutput_SPDHARMMessage_CV.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TMEOutput_SPDHARMMessage_Infrastructure.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TMEOutput_WRTM_Alerts.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TME_CVData_Input.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TME_CVData_Input_Processed.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TME_CVData_SubLink.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TME_ESSData_Input.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TME_ESSMobileData_Input.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TME_TSSData_Input.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfloDb\TME_TSSESS_Link.cs">
+      <DependentUpon>InfloDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BsmBundle.cs" />
+    <Compile Include="Models\BsmMessage.cs" />
+    <Compile Include="Models\TimMessage.cs" />
+    <Compile Include="Models\CustomAttributes.cs" />
+    <Compile Include="InfloDb\InfloDbContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="InfloDb\InfloDb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InfloDb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="InfloDb\InfloDb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>InfloDb.edmx</DependentUpon>
+      <LastGenOutput>InfloDb.Context.cs</LastGenOutput>
+    </None>
+    <None Include="InfloDb\InfloDb.edmx.diagram">
+      <DependentUpon>InfloDb.edmx</DependentUpon>
+    </None>
+    <None Include="InfloDb\InfloDb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>InfloDb.edmx</DependentUpon>
+      <LastGenOutput>InfloDb.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

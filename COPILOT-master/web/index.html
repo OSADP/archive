@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<style>
+    strong { font-family: 'Asap-Bold'; }
+    #tester{
+        color: whitesmoke;
+        font-family: Asap-Regular;
+        font-size: 16px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #full_body{
+        width: 1180px;
+        margin: 0 auto;
+        font-family: 'Asap-Regular';
+    }
+    #header{
+        width:100%;
+        margin: 0 auto;
+    }
+    #data_panel{
+        width:100%;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    #h_divider{
+        width: 100%;
+        height: 1px;
+        background: #C0C0C0;
+        background-clip:content-box;
+        margin-bottom: 16px;
+        margin-top: 25px;
+    }
+    #v_divider{
+        width: 1px;
+        height: 175px;
+        background: #C0C0C0;
+        background-clip:content-box;
+        margin-right: 25px;
+    }
+    #helpDiv{
+        padding-top: -90px;
+        padding-left: 10px;
+        display: table-cell;
+        width: 25%;
+        vertical-align: top;
+    }
+    #helpDiv p{
+        vertical-align: top;
+        text-align: left;
+        color:#486279;
+        font-size:16px;
+        display: inline-block;
+        width: 65%;
+    }
+    #bottomSpacer{
+        height: 200px;
+        width: 100%;
+    }
+    #stepsContainer{
+        width: 900px;
+        display: table-cell;
+        vertical-align: top;
+    }
+    #stepsLabel{
+        font-size: 22px;
+        font-family: 'Asap-Bold';
+        color: #486279;
+    }
+    .stepDiv{
+        background-repeat: no-repeat;
+        width: 49%;
+        height: 100%;
+        font-family: 'Asap-Regular';
+        color: #486279;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #step1Div{
+        background-image: url("resources/noblis/icons/1.png");
+    }
+    #step2Div{
+        background-image: url("resources/noblis/icons/2.png");
+    }
+    #step3Div{
+        background-image: url("resources/noblis/icons/3.png");
+    }
+    #step4Div{
+        background-image: url("resources/noblis/icons/4.png");
+    }
+    .imageBanner{
+        background-repeat: no-repeat;
+        background-image: url("resources/noblis/icons/GreenGradient_HeaderBar.png");
+    }
+    html,body {
+        margin:0;
+        padding:0;
+        height:100%;
+    }
+    #footer{
+        bottom: 0;
+        position: absolute;
+        padding-top:100px;
+        width: 100%;
+    }
+    #wrapper {
+        min-height:100%;
+        position:relative;
+    }
+    #purpleFooterBanner{
+        width:1180px;
+        margin: 20px auto;
+        margin-top:18px;
+        height:35px;
+        background-image: url("resources/noblis/icons/PurpleCVPbar.png");
+        display:table;
+    }
+
+
+</style>
+<link rel="stylesheet" type="text/css" href="resources/noblis/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="resources/noblis/css/cost_estimator.css">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CO-PILOT Home</title>
+        <meta name="description" content="">
+        <style id="antiClickjack">body{display:none !important;}</style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
+        <script type="text/javascript" src="resources/jquery-1.9.1/jquery-1.11.0.js"></script>
+        <script>
+            $(function () {
+                $("#header").load("header.html", function () {
+                    $('#loginInfo').hide();
+                    //$('#s_v_divider').hide();
+                    //$('#choose').prop('disabled', true);
+                    //$('#choose').css('background-color', '#DCDAD1');
+                    //$('#choose').css('color', '#DCDAD1');
+                });
+            });
+            $(function () {
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </head>
+    <body id="home">
+        <div id="wrapper">
+            <div id="header"></div>
+            <div id="full_body">
+                <div id="data_panel">
+                    <div id="top_div">
+                        <img src="resources/noblis/icons/HomeScreen_Banner.png" alt="High-Level Estimation of your Proposed Deployment Costs" style="width: 100%;">
+                        <div id="purpleFooterBanner">
+                            <img src="resources/noblis/icons/CVPlogo.png" alt="" style="height: 35px; display: table-cell;margin-right: -10px; padding-left:5px;">
+                            <div id="tester">&nbsp;Interested in learning more about the CV Pilots Deployment Project? Visit <a href="http://www.its.dot.gov/pilots/" style="color: white; text-decoration: none; display:inline-block">http://www.its.dot.gov/pilots/</a> for more information</div>
+                        </div>
+                        <div class="imageBanner">
+                            <img src="resources/noblis/icons/AboutOurTool.png" alt="About our Tool" style="padding-left: 15px">
+                        </div>
+                        <table width="95%" style="padding-left: 14px; padding-top:13px; display:inline-block;">
+                            <tr>
+                                <td style="color:#486279;font-size:16px;">The Cost Overview for Planning Ideas & Logical Organization Tool (CO-PILOT) is a high-level tool supporting stakeholders considering connected vehicle pilot deployments. These pilot deployments will combine connected vehicle and mobile device technologies innovations to <strong>Improve Traveler Mobility</strong> and <strong>System Productivity</strong> while <strong>Reducing Environmental Impacts</strong> and <strong>Enhancing Safety.</strong></td>
+                            </tr>
+                            <tr style="height: 10px;"></tr>
+                            <tr>
+                                <td style="color:#486279;font-size:16px;">The CO-PILOT allows stakeholders to <strong>Easily Estimate Costs of your Proposed Pilot Deployments.</strong> This initial tool allows cost estimation for 56 applications in the Vehicle to Infrastructure Safety, Vehicle to Vehicle Safety, Agency Data, Environment, Road Weather, Mobility, and Smart Roadside application groups.</td>
+                            </tr>
+                            <tr style="height: 10px;"></tr>
+                            <tr>
+                                <td style="font-size:18px;"><a href="cost_estimator.html">Start Using The Tool</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="h_divider"></div>
+                    <div id="bottom_div" style="display:table; padding-bottom: 14px; border-bottom: solid 1px lavender;">
+                        <div id="stepsContainer">
+                            <div id="stepsLabel"><span>HAVE YOUR ESTIMATED COST IN </span><span style="color:#4ab570;"> 4 EASY STEPS:</span></div>
+                            <div style="height:16px;"></div>
+                            <div style="width:100%; height:55px;">
+                                <div class="stepDiv" id="step1Div">
+                                    <div style="padding-left: 32px; padding-top: 9px; width:85%; font-size:16px;">Choose the Application you plan to incorporate in your pilot deployment and select building blocks.</div>
+                                </div>
+                                <div class="stepDiv" id="step2Div">
+                                    <div style="padding-left: 38px; padding-top: 17px; width:85%; font-size:16px;">Assign the Applications to building blocks.</div>
+
+                                </div>
+                            </div>
+                            <div style="height:16px;"></div>
+                            <div style="width:100%; height:55px;">
+                                <div class="stepDiv" id="step3Div"><div style="margin-left: 38px; margin-top: 17px; width:85%; font-size:16px;">Review/modify the average unit cost estimates.</div></div>
+                                <div class="stepDiv" id="step4Div"><div style="margin-left: 40px; margin-top: 17px; width:85%; font-size:16px;">Export your final estimated report.</div></div>
+                            </div>
+                        </div>
+                        <div id="v_divider"></div>
+                        <div id="helpDiv">
+                            <div style="color:#486279;font-size:22px;font-family: Asap-Bold;">HAVE QUESTIONS?</div>
+                            <p id="helpParagraph">Visit our <a href="help.html">Help</a> section for additional information or email us with technical support questions at <a href="mailto:co-pilot@noblis.org" style="white-space: nowrap"> co-pilot@noblis.org</a></p>
+                            <img src="resources/noblis/icons/phone.png" alt="" style="display: inline-block;padding-top: 15px; float: right;">
+                        </div>
+                    </div>
+                    <div style="padding-top:19px; color: #486279; font-size: 16px">
+                        <span style="font-family: Asap-Bold;">DISCLAIMER:&nbsp</span><span style="font-family: Asap-Regular;">CO-PILOT is intended for high-level, preliminary planning purposes to support Connected Vehicle Pilot Deployment cost estimation. Outputs are intended to support long-range budget planning and do not replace detailed cost proposals required for Concept Development (Phase 1), Design/Build/Test (Phase 2), or Maintain and Operate (Phase 3).</span>
+                    </div>
+                </div>
+                <div id="bottomSpacer"></div>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="resources/noblis/js/utils.js"></script>
+<script type="text/javascript">
+            $(document).ready(function () {
+                var URL = getBaseURIWithoutContextPath() + getAppName() + '/DataViewController';
+                var data = {
+                    action: 'submitIP'
+                };
+                //Log the unique date/ip address combo
+                $.post(URL, data);
+            });
+</script>

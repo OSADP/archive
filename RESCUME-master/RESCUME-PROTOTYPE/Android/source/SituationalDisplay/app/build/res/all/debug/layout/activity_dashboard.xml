@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashboardActivity"
+    tools:ignore="HardcodedText,NestedWeights" >
+    
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#999999" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.MapFragment"/>
+
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/dashboard_txtWarningFooter"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_amber"
+        android:textColor="#ffffff"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+    
+    <TextView 
+        android:id="@+id/dashboard_txtErrorFooter"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_red"
+        android:textColor="#ffffff"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</LinearLayout>
+<!-- From: file:/C:/Users/hohev/Documents/Transportation/INCZONE/trunk/development/Android/source/SituationalDisplay/app/src/main/res/layout/activity_dashboard.xml -->

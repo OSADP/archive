@@ -1,0 +1,15 @@
+Version 1.0 
+-------------------------------------
+Retrofit Safety Device (RSD) kits were developed and deployed on commercial vehicles as part of
+the USDOT Connected Vehicle Safety Pilot to gain insight into the unique aspects of deploying
+connected vehicle technology in a commercial vehicle environment.  These kits enable
+communication with other in-vehicle (commercial and passenger) and infrastructure Direct Short
+Range Communication (DSRC) devices via a Basic Safety Message (BSM) and multiple infrastructure-
+oriented messages, and various messages related to device security credential management.
+Implemented safety applications include Curve Speed Warnings (CSW), Emergency Electronic Brake
+Light (EEBL), and Forward Collision Warning (FCW).  Each of the RSD kits includes a DSRC radio
+and antenna(s), GPS receiver and antenna, embedded gyroscope, J1939 Controller Area Network (
+CAN) interface, human machine interface (HMI), and interface to a Data Acquisition System (DAS).
+
+
+

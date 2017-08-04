@@ -1,0 +1,312 @@
+inflodevdata
+inflodev-cloud-roles
+inflodev-cloud-vms
+inflodev-vm-sql
+inflodev-db-sql
+    SQL Server 2012 Enterprise on Windows Server 2012, Large VM (4 cores, 7GB RAM)
+
+inflotstdata
+inflotst-cloud-roles
+inflotst-cloud-vms
+inflotst-vm-sql
+inflotst-db-sql
+    SQL Server 2012 Enterprise on Windows Server 2012, Large VM (4 cores, 7GB RAM)
+
+infloprddata
+infloprd-cloud-roles
+infloprd-cloud-vms
+infloprd-vm-sql
+infloprd-db-sql
+    SQL Server 2012 Enterprise on Windows Server 2012, Large VM (4 cores, 7GB RAM)
+
+
+
+//=====================================================================================================================
+    
+For a list of all Azure cmdlets type 'help azure'.
+For a list of Windows Azure Pack cmdlets type 'Get-Command *wapack*'.
+For Node.js cmdlets type 'help node-dev'.
+For PHP cmdlets type 'help php-dev'.
+For Python cmdlets type 'help python-dev'.
+PS C:\> Add-AzureAccount
+VERBOSE: Account "luke.kucalaba@gmail.com" has been added.
+VERBOSE: Subscription "Visual Studio Premium with MSDN" is selected as the default subscription.
+VERBOSE: To view all the subscriptions, please use Get-AzureSubscription.
+VERBOSE: To switch to a different subscription, please use Select-AzureSubscription.
+
+
+PS C:\> $VM = Get-AzureVM -Name "inflodev-vm-sql"
+PS C:\> echo $VM
+
+ServiceName                             Name                                    Status
+-----------                             ----                                    ------
+inflo-cloud-tst                         inflovm-db-tst                          StoppedDeallocated
+inflodev-cloud                          inflodev-vm-sql                         StoppedDeallocated
+infloprd-cloud                          infloprd-vm-sql                         StoppedDeallocated
+inflotst-cloud                          inflotst-vm-sql                         StoppedDeallocated
+
+
+PS C:\> $VM = Get-AzureVM -ServiceName "inflodev-cloud" -Name "inflodev-vm-sql"
+VERBOSE: 1:45:44 PM - Completed Operation: Get Deployment
+PS C:\> echo $VM
+
+
+DeploymentName        : inflodev-vm-sql
+Name                  : inflodev-vm-sql
+Label                 :
+VM                    : Microsoft.WindowsAzure.Commands.ServiceManagement.Model.PersistentVM
+InstanceStatus        : StoppedDeallocated
+IpAddress             :
+InstanceStateDetails  :
+PowerState            : Stopped
+InstanceErrorCode     :
+InstanceFaultDomain   :
+InstanceName          : inflodev-vm-sql
+InstanceUpgradeDomain :
+InstanceSize          : Large
+AvailabilitySetName   :
+DNSName               : http://inflodev-cloud.cloudapp.net/
+ServiceName           : inflodev-cloud
+OperationDescription  : Get-AzureVM
+OperationId           : 73fa889b-9c0b-762c-977c-d836781f01b6
+OperationStatus       : Succeeded
+
+
+
+
+PS C:\> Set-AzureStaticVNetIP -VM $VM -IPAddress 172.16.7.100
+
+
+DeploymentName        : inflodev-vm-sql
+Name                  : inflodev-vm-sql
+Label                 :
+VM                    : Microsoft.WindowsAzure.Commands.ServiceManagement.Model.PersistentVM
+InstanceStatus        : StoppedDeallocated
+IpAddress             :
+InstanceStateDetails  :
+PowerState            : Stopped
+InstanceErrorCode     :
+InstanceFaultDomain   :
+InstanceName          : inflodev-vm-sql
+InstanceUpgradeDomain :
+InstanceSize          : Large
+AvailabilitySetName   :
+DNSName               : http://inflodev-cloud.cloudapp.net/
+ServiceName           : inflodev-cloud
+OperationDescription  : Get-AzureVM
+OperationId           : 73fa889b-9c0b-762c-977c-d836781f01b6
+OperationStatus       : Succeeded
+
+
+
+PS C:\> $VM = Get-AzureVM -ServiceName "inflodev-cloud" -Name "inflodev-vm-sql"
+VERBOSE: 1:47:39 PM - Completed Operation: Get Deployment
+PS C:\> echo $VM
+
+
+DeploymentName        : inflodev-vm-sql
+Name                  : inflodev-vm-sql
+Label                 :
+VM                    : Microsoft.WindowsAzure.Commands.ServiceManagement.Model.PersistentVM
+InstanceStatus        : StoppedDeallocated
+IpAddress             :
+InstanceStateDetails  :
+PowerState            : Stopped
+InstanceErrorCode     :
+InstanceFaultDomain   :
+InstanceName          : inflodev-vm-sql
+InstanceUpgradeDomain :
+InstanceSize          : Large
+AvailabilitySetName   :
+DNSName               : http://inflodev-cloud.cloudapp.net/
+ServiceName           : inflodev-cloud
+OperationDescription  : Get-AzureVM
+OperationId           : d8675ecd-6eb6-7577-b677-aad5c4779097
+OperationStatus       : Succeeded
+
+
+
+PS C:\> Set-AzureStaticVNetIP -VM $VM -IPAddress 172.16.7.100 | Update-AzureVM
+VERBOSE: 1:48:09 PM - Completed Operation: Get Deployment
+VERBOSE: 1:48:09 PM - Begin Operation: Update-AzureVM
+VERBOSE: 1:48:41 PM - Completed Operation: Update-AzureVM
+
+OperationDescription                    OperationId                             OperationStatus
+--------------------                    -----------                             ---------------
+Update-AzureVM                          a03bc124-49e0-73ea-bf44-da2986ea081f    Succeeded
+
+
+PS C:\> $VMStaticIPCheck = Get-AzureStaticVNetIP -VM $VM
+PS C:\> echo $VMStaticIPCheck
+
+IPAddress
+---------
+172.16.7.100
+
+
+
+
+
+
+
+
+
+$VM = Get-AzureVM -ServiceName "inflodev-cloud" -Name "inflodev-vm-sql"
+echo $VM
+Set-AzureStaticVNetIP -VM $VM -IPAddress 172.16.7.100 | Update-AzureVM
+$VMStaticIPCheck = Get-AzureStaticVNetIP -VM $VM
+echo $VMStaticIPCheck
+
+
+
+
+$VM = Get-AzureVM -ServiceName "inflotst-cloud" -Name "inflotst-vm-sql"
+echo $VM
+Set-AzureStaticVNetIP -VM $VM -IPAddress 172.16.7.101 | Update-AzureVM
+$VMStaticIPCheck = Get-AzureStaticVNetIP -VM $VM
+echo $VMStaticIPCheck
+
+
+
+
+$VM = Get-AzureVM -ServiceName "infloprd-cloud" -Name "infloprd-vm-sql"
+echo $VM
+Set-AzureStaticVNetIP -VM $VM -IPAddress 172.16.7.102 | Update-AzureVM
+$VMStaticIPCheck = Get-AzureStaticVNetIP -VM $VM
+echo $VMStaticIPCheck
+
+
+
+
+
+
+
+
+//=====================================================================================================================
+
+
+
+
+
+
+PS C:\> $VM = Get-AzureVM -ServiceName "inflotst-cloud-vms" -Name "inflotst-vm-sql"
+Get-AzureVM : Your Windows Azure credential in the Windows PowerShell session has expired. Please use Add-AzureAccount
+to login again.
+At line:1 char:7
++ $VM = Get-AzureVM -ServiceName "inflotst-cloud-vms" -Name "inflotst-vm-sql"
++       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Get-AzureVM], AadAuthenticationCantRenewException
+    + FullyQualifiedErrorId : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.GetAzureVMCommand
+
+PS C:\> Add-AzureAccount
+VERBOSE: Account "luke.kucalaba@gmail.com" has been added.
+VERBOSE: Subscription "Visual Studio Premium with MSDN" is selected as the default subscription.
+VERBOSE: To view all the subscriptions, please use Get-AzureSubscription.
+VERBOSE: To switch to a different subscription, please use Select-AzureSubscription.
+PS C:\> $VM = Get-AzureVM -ServiceName "inflotst-cloud-vms" -Name "inflotst-vm-sql"
+VERBOSE: 10:02:17 PM - Completed Operation: Get Deployment
+PS C:\> echo $VM
+
+
+DeploymentName        : inflotst-vm-sql
+Name                  : inflotst-vm-sql
+Label                 :
+VM                    : Microsoft.WindowsAzure.Commands.ServiceManagement.Model.PersistentVM
+InstanceStatus        : StoppedDeallocated
+IpAddress             :
+InstanceStateDetails  :
+PowerState            : Stopped
+InstanceErrorCode     :
+InstanceFaultDomain   :
+InstanceName          : inflotst-vm-sql
+InstanceUpgradeDomain :
+InstanceSize          : Large
+AvailabilitySetName   :
+DNSName               : http://inflotst-cloud-vms.cloudapp.net/
+ServiceName           : inflotst-cloud-vms
+OperationDescription  : Get-AzureVM
+OperationId           : fbf4b948-bfaf-7cbd-b2f4-ab514dca6d27
+OperationStatus       : Succeeded
+
+
+PS C:\> Set-AzureStaticVNetIP -VM $VM -IPAddress 172.16.7.101 | Update-AzureVM
+VERBOSE: 10:03:45 PM - Completed Operation: Get Deployment
+VERBOSE: 10:03:45 PM - Begin Operation: Update-AzureVM
+VERBOSE: 10:04:17 PM - Completed Operation: Update-AzureVM
+
+OperationDescription                    OperationId                             OperationStatus
+--------------------                    -----------                             ---------------
+Update-AzureVM                          7715172c-6594-7549-92d3-a7f11c5275fd    Succeeded
+
+
+PS C:\> $VMStaticIPCheck = Get-AzureStaticVNetIP -VM $VM
+PS C:\> echo $VMStaticIPCheck
+
+IPAddress
+---------
+172.16.7.101
+
+
+
+//=====================================================================================================================
+
+
+
+For a list of all Azure cmdlets type 'help azure'.
+For a list of Windows Azure Pack cmdlets type 'Get-Command *wapack*'.
+For Node.js cmdlets type 'help node-dev'.
+For PHP cmdlets type 'help php-dev'.
+For Python cmdlets type 'help python-dev'.
+PS C:\> Add-AzureAccount
+VERBOSE: Account "luke.kucalaba@gmail.com" has been added.
+VERBOSE: Subscription "Visual Studio Premium with MSDN" is selected as the default subscription.
+VERBOSE: To view all the subscriptions, please use Get-AzureSubscription.
+VERBOSE: To switch to a different subscription, please use Select-AzureSubscription.
+PS C:\> $VM = Get-AzureVM -ServiceName "inflodev-cloud-vms" -Name "inflodev-vm-sql"
+VERBOSE: 7:23:24 AM - Completed Operation: Get Deployment
+PS C:\> echo $VM
+
+
+DeploymentName        : inflodev-vm-sql
+Name                  : inflodev-vm-sql
+Label                 :
+VM                    : Microsoft.WindowsAzure.Commands.ServiceManagement.Model.PersistentVM
+InstanceStatus        : StoppedDeallocated
+IpAddress             :
+InstanceStateDetails  :
+PowerState            : Stopped
+InstanceErrorCode     :
+InstanceFaultDomain   :
+InstanceName          : inflodev-vm-sql
+InstanceUpgradeDomain :
+InstanceSize          : Large
+AvailabilitySetName   :
+DNSName               : http://inflodev-cloud-vms.cloudapp.net/
+ServiceName           : inflodev-cloud-vms
+OperationDescription  : Get-AzureVM
+OperationId           : c0ba1dd6-a4e5-8cdd-a86d-e46969a515e4
+OperationStatus       : Succeeded
+
+
+
+PS C:\> Set-AzureStaticVNetIP -VM $VM -IPAddress 172.16.7.100 | Update-AzureVM
+VERBOSE: 7:24:01 AM - Completed Operation: Get Deployment
+VERBOSE: 7:24:01 AM - Begin Operation: Update-AzureVM
+VERBOSE: 7:24:35 AM - Completed Operation: Update-AzureVM
+
+OperationDescription                    OperationId                             OperationStatus
+--------------------                    -----------                             ---------------
+Update-AzureVM                          a1bd9469-4605-8144-8379-32735d7a2818    Succeeded
+
+
+PS C:\> $VMStaticIPCheck = Get-AzureStaticVNetIP -VM $VM
+PS C:\> echo $VMStaticIPCheck
+
+IPAddress
+---------
+172.16.7.100
+
+
+//=====================================================================================================================
+
+

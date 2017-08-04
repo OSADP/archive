@@ -1,0 +1,33 @@
+# GPS Spoofing
+GpsEnableSpoof = false
+GpsSpoofFile = /var/bin/spoofs/~.txt
+
+# Application
+AppMode = responder
+AppVehicleId = 0x0
+
+# UI
+UiEnableConsoleMessages = false
+UiDiaMaxRate = 2
+UiNmeaMaxRate = 0.5
+
+# DSRC/WAVE
+DsrcBsmMaxRate = 10
+DsrcEvaMaxRate = 5
+DsrcTimMaxRate = 2
+DsrcAcmMaxRate = 2
+
+# Oncoming
+OncomingStaleEvaTimeout = 15.0
+OncomingLegibilityDistance = 55
+OncomingEmergencyDecelRate = 3.048
+OncomingAggressiveDecelRate = 3.048
+
+# Responder
+ResponderPreloadedTimFile = /var/bin/tims/~.txt
+ResponderStaleAcmTimeout = 3.0
+ResponderMaxThreatMessageRate = 0.0
+
+# Path Matching
+HeadingAcceptance = 0.85
+DefaultLaneWidth = 3.0

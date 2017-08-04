@@ -1,0 +1,2 @@
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache

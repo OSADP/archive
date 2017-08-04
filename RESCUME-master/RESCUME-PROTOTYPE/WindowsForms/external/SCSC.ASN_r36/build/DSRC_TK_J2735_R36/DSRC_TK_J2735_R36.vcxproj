@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Acceleration.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AccelerationConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AccelerationSet4Way.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AccelSteerYawRateConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AlaCarte.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AllInclusive.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AmbientAirPressure.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AmbientAirTemperature.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AntennaOffsetSet.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AntiLockBrakeStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Approach.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ApproachNumber.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ApproachObject.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\asn_application.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\asn_codecs.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\asn_codecs_prim.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\asn_internal.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\asn_SEQUENCE_OF.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\asn_SET_OF.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\asn_system.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AuxiliaryBrakeStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AxleLocation.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\AxleWeight.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BarrierAttributes.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BarrierLane.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BasicSafetyMessage.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BasicSafetyMessageVerbose.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ber_decoder.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ber_tlv_length.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ber_tlv_tag.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BIT_STRING.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BLOB1_util.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BOOLEAN.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BrakeAppliedPressure.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BrakeAppliedStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BrakeBoostApplied.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BrakeSystemStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BSMblob.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BumperHeightFront.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BumperHeightRear.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\BumperHeights.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\CargoWeight.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Circle.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\CodeWord.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\CoefficientOfFriction.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ColorState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\CommonSafetyRequest.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ConfidenceSet.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ConnectsTo.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\constraints.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\constr_CHOICE.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\constr_SEQUENCE.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\constr_SET_OF.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\constr_TYPE.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Count.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\CrosswalkLane.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\CrosswalkLaneAttributes.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DataParameters.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DDate.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DDateTime.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DDay.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\der_encoder.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DescriptiveName.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DFullTime.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DHour.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DirectionOfUse.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DMinute.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DMonth.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DMonthDay.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DOffset.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DriveAxleLiftAirPressure.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DriveAxleLocation.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DriveAxleLubePressure.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DriveAxleTemperature.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DrivenLineOffset.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DrivingWheelAngle.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DSecond.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DSignalSeconds.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DSRCmsgID.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DSRC_ASN_Utils.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DTime.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DYear.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\DYearMonth.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Elevation.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ElevationConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\EmergencyDetails.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\EmergencyVehicleAlert.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\EssMobileFriction.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\EssPrecipRate.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\EssPrecipSituation.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\EssPrecipYesNo.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\EssSolarRadiation.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\EventFlags.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ExitService.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Extent.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ExteriorLights.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\FullPositionVector.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\FurtherInfoID.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\GenericSignage.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\GPSstatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Heading.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\HeadingConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\HeadingSlice.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\IA5String.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\IncidentResponseEquipment.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\INTEGER.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Intersection.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\IntersectionCollision.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\IntersectionID.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\IntersectionState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\IntersectionStatusObject.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ITIScodes.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ITIScodesAndText.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ITIStext.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\J1939data-org.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\J1939data.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\LaneCount.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\LaneManeuverCode.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\LaneNumber.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\LaneSet.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\LaneWidth.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Latitude.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\LayerID.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\LayerType.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\LightbarInUse.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Location-quality.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Location-tech.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Longitude.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\MapData.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\MinuteOfTheYear.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\MinutesDuration.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\MovementState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\MsgCount.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\MsgCRC.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\MultiVehicleResponse.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\MUTCDCode.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\NativeEnumerated.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\NativeInteger.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\NMEA-Corrections.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\NMEA-MsgType.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\NMEA-Payload.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\NMEA-Revision.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\NodeList.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\NTCIPVehicleclass.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ObjectCount.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ObstacleDirection.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ObstacleDistance.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\OCTET_STRING.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Offsets.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistory.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-01.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-02.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-03.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-04.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-05.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-06.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-07.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-08.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-09.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathHistoryPointType-10.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PathPrediction.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Payload.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PayloadData.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PedestrianDetect.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PedestrianSignalState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\per_decoder.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\per_encoder.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\per_opentype.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\per_support.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Position3D.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PositionalAccuracy.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PositionConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PositionConfidenceSet.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PreemptState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Priority.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\PriorityState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ProbeDataManagement.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ProbeSegmentNumber.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ProbeVehicleData.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RainSensor.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RegionList.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RegionOffsets.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RegionPointSet.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RequestedItem.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ResponderGroupAffected.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ResponseType.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RoadSideAlert.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RoadSignID.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RTCM-Corrections.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RTCM-ID.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RTCM-Payload.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RTCM-Revision.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RTCMHeader.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RTCMmsg.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\RTCMPackage.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Sample.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ShapePointSet.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SignalControlZone.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SignalLightState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SignalReqScheme.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SignalRequest.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SignalRequestMsg.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SignalState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SignalStatusMessage.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SignPrority.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SirenInUse.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Snapshot.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SnapshotDistance.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SnapshotTime.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SPAT.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SpecialLane.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SpecialLaneAttributes.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SpecialSignalState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\Speed.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SpeedandHeadingandThrottleConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SpeedConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SpeedLimit.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\StabilityControlStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\StateConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\stdafx.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SteeringAxleLubePressure.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SteeringAxleTemperature.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SteeringWheelAngle.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SteeringWheelAngleConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SteeringWheelAngleRateOfChange.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\SunSensor.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TemporaryID.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TermDistance.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TermTime.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ThrottleConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ThrottlePosition.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TimeConfidence.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TimeMark.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TireLeakageRate.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TireLocation.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TirePressure.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TirePressureThresholdDetection.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TireTemp.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TractionControlState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TrailerWeight.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TransitPreEmptionRequest.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TransitStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TransmissionAndSpeed.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TransmissionState.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TravelerInformation.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TravelerInfoType.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\TxTime.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\UniqueMSGID.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\URL-Base.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\URL-Link.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\URL-Short.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\ValidRegion.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleComputedLane.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleGroupAffected.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleHeight.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleIdent.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleLaneAttributes.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleLength.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleMass.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleReferenceLane.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleRequestStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleSafetyExtension.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleSize.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleStatusDeviceTypeTag.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleStatusRequest.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleType.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VehicleWidth.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VerticalAcceleration.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VerticalAccelerationThreshold.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\VINstring.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\WheelEndElectFault.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\WheelSensorStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\WiperRate.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\WiperStatus.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\WiperStatusFront.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\WiperStatusRear.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\WorkZone.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\xer_decoder.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\xer_encoder.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\xer_support.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\YawRate.h" />
+    <ClInclude Include="..\..\include\DSRC_TK_J2735_R36\YawRateConfidence.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Acceleration.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AccelerationConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AccelerationSet4Way.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AccelSteerYawRateConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AlaCarte.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AllInclusive.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AmbientAirPressure.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AmbientAirTemperature.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AntennaOffsetSet.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AntiLockBrakeStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Approach.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ApproachNumber.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ApproachObject.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\asn_codecs_prim.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\asn_SEQUENCE_OF.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\asn_SET_OF.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AuxiliaryBrakeStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AxleLocation.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\AxleWeight.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BarrierAttributes.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BarrierLane.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BasicSafetyMessage.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BasicSafetyMessageVerbose.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ber_tlv_length.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ber_tlv_tag.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BLOB1_util.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BrakeAppliedPressure.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BrakeAppliedStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BrakeBoostApplied.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BrakeSystemStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BSMblob.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BumperHeightFront.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BumperHeightRear.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\BumperHeights.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\CargoWeight.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Circle.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\CodeWord.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\CoefficientOfFriction.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ColorState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\CommonSafetyRequest.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ConfidenceSet.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ConnectsTo.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\constraints.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\constr_TYPE.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Count.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\CrosswalkLane.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\CrosswalkLaneAttributes.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DataParameters.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DDate.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DDateTime.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DDay.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\der_encoder.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DescriptiveName.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DFullTime.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DHour.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DirectionOfUse.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DMinute.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DMonth.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DMonthDay.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DOffset.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DriveAxleLiftAirPressure.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DriveAxleLocation.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DriveAxleLubePressure.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DriveAxleTemperature.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DrivenLineOffset.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DrivingWheelAngle.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DSecond.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DSignalSeconds.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DSRCmsgID.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DTime.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DYear.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\DYearMonth.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Elevation.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ElevationConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\EmergencyDetails.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\EmergencyVehicleAlert.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\EssMobileFriction.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\EssPrecipRate.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\EssPrecipSituation.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\EssPrecipYesNo.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\EssSolarRadiation.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\EventFlags.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ExitService.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Extent.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ExteriorLights.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\FullPositionVector.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\FurtherInfoID.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\GenericSignage.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\GPSstatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Heading.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\HeadingConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\HeadingSlice.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\IA5String.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\IncidentResponseEquipment.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Intersection.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\IntersectionCollision.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\IntersectionID.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\IntersectionState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\IntersectionStatusObject.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ITIScodes.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ITIScodesAndText.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ITIStext.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\J1939data.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\LaneCount.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\LaneManeuverCode.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\LaneNumber.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\LaneSet.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\LaneWidth.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Latitude.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\LayerID.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\LayerType.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\LightbarInUse.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Location-quality.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Location-tech.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Longitude.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\MapData.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\MinuteOfTheYear.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\MinutesDuration.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\MovementState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\MsgCount.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\MsgCRC.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\MultiVehicleResponse.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\MUTCDCode.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\NativeInteger.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\NMEA-Corrections.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\NMEA-MsgType.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\NMEA-Payload.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\NMEA-Revision.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\NodeList.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\NTCIPVehicleclass.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ObjectCount.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ObstacleDirection.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ObstacleDistance.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Offsets.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistory.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-01.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-02.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-03.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-04.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-05.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-06.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-07.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-08.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-09.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathHistoryPointType-10.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PathPrediction.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Payload.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PayloadData.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PedestrianDetect.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PedestrianSignalState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\per_decoder.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\per_encoder.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\per_support.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Position3D.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PositionalAccuracy.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PositionConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PositionConfidenceSet.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PreemptState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Priority.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\PriorityState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ProbeDataManagement.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ProbeSegmentNumber.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ProbeVehicleData.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RainSensor.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RegionList.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RegionOffsets.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RegionPointSet.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RequestedItem.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ResponderGroupAffected.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ResponseType.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RoadSideAlert.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RoadSignID.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RTCM-Corrections.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RTCM-ID.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RTCM-Payload.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RTCM-Revision.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RTCMHeader.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RTCMmsg.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\RTCMPackage.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Sample.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ShapePointSet.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SignalControlZone.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SignalLightState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SignalReqScheme.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SignalRequest.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SignalRequestMsg.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SignalState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SignalStatusMessage.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SignPrority.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SirenInUse.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Snapshot.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SnapshotDistance.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SnapshotTime.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SPAT.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SpecialLane.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SpecialLaneAttributes.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SpecialSignalState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\Speed.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SpeedandHeadingandThrottleConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SpeedConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SpeedLimit.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\StabilityControlStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\StateConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SteeringAxleLubePressure.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SteeringAxleTemperature.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SteeringWheelAngle.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SteeringWheelAngleConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SteeringWheelAngleRateOfChange.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\SunSensor.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TemporaryID.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TermDistance.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TermTime.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ThrottleConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ThrottlePosition.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TimeConfidence.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TimeMark.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TireLeakageRate.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TireLocation.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TirePressure.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TirePressureThresholdDetection.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TireTemp.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TractionControlState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TrailerWeight.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TransitPreEmptionRequest.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TransitStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TransmissionAndSpeed.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TransmissionState.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TravelerInformation.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TravelerInfoType.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\TxTime.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\UniqueMSGID.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\URL-Base.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\URL-Link.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\URL-Short.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\ValidRegion.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleComputedLane.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleGroupAffected.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleHeight.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleIdent.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleLaneAttributes.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleLength.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleMass.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleReferenceLane.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleRequestStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleSafetyExtension.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleSize.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleStatusDeviceTypeTag.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleStatusRequest.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleType.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VehicleWidth.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VerticalAcceleration.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VerticalAccelerationThreshold.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\VINstring.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\WheelEndElectFault.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\WheelSensorStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\WiperRate.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\WiperStatus.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\WiperStatusFront.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\WiperStatusRear.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\WorkZone.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\xer_encoder.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\xer_support.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\YawRate.cpp" />
+    <ClCompile Include="..\..\source\DSRC_TK_J2735_R36\YawRateConfidence.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{56B0C896-0DD4-450B-8131-8BC3633AD84C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DSRC_TK_J2735_R36</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\obj</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;WINVER=0x0500;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include\DSRC_TK_J2735_R36;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+set "PostbuildParentDir=..\..\bin"
+set "PostbuildTargetDir=x86-msvc120-Zi-0d-EHsc-GR-MDd"
+
+if not exist "$(SolutionDir)%PostbuildParentDir%" mkdir "$(SolutionDir)%PostbuildParentDir%"
+if not exist "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%" mkdir "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%"
+
+rem Copy the target file to the target folder.
+if exist "$(TargetPath)" xcopy "$(TargetPath)" "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%" /C /D /F /Y /I
+</Command>
+    </PostBuildEvent>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;WINVER=0x0500;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include\DSRC_TK_J2735_R36;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+set "PostbuildParentDir=..\..\bin"
+set "PostbuildTargetDir=x64-msvc120-Zi-0d-EHsc-GR-MDd"
+
+if not exist "$(SolutionDir)%PostbuildParentDir%" mkdir "$(SolutionDir)%PostbuildParentDir%"
+if not exist "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%" mkdir "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%"
+
+rem Copy the target file to the target folder.
+if exist "$(TargetPath)" xcopy "$(TargetPath)" "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%" /C /D /F /Y /I
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;WINVER=0x0500;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include\DSRC_TK_J2735_R36;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+set "PostbuildParentDir=..\..\bin"
+set "PostbuildTargetDir=x86-msvc120-Zi-02-EHsc-GR-MD"
+
+if not exist "$(SolutionDir)%PostbuildParentDir%" mkdir "$(SolutionDir)%PostbuildParentDir%"
+if not exist "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%" mkdir "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%"
+
+rem Copy the target file to the target folder.
+if exist "$(TargetPath)" xcopy "$(TargetPath)" "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%" /C /D /F /Y /I</Command>
+    </PostBuildEvent>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;WINVER=0x0500;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include\DSRC_TK_J2735_R36;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+set "PostbuildParentDir=..\..\bin"
+set "PostbuildTargetDir=x64-msvc120-Zi-02-EHsc-GR-MD"
+
+if not exist "$(SolutionDir)%PostbuildParentDir%" mkdir "$(SolutionDir)%PostbuildParentDir%"
+if not exist "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%" mkdir "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%"
+
+rem Copy the target file to the target folder.
+if exist "$(TargetPath)" xcopy "$(TargetPath)" "$(SolutionDir)%PostbuildParentDir%\%PostbuildTargetDir%" /C /D /F /Y /I</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

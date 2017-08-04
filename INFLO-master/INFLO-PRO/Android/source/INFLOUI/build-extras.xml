@@ -1,0 +1,11 @@
+<project>
+
+	<target name="library-copy">
+		<copy file="../../external/JAR/volley-android-sdk-4.4.2_r1.jar" tofile="libs/volley-android-sdk-4.4.2_r1.jar"/>
+		<copy file="../../external/JAR/android-support-v4.jar" tofile="libs/android-support-v4.jar"/>
+		<copy file="../../external/JAR/gson-2.2.4.jar" tofile="libs/gson-2.2.4.jar"/>
+		<copy file="../../external/JAR/joda-time-2.3.jar" tofile="libs/joda-time-2.3.jar"/>
+	</target>
+
+</project>
+

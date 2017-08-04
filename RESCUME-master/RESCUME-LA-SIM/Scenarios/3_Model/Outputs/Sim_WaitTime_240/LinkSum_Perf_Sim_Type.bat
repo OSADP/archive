@@ -1,0 +1,1 @@
+CALL v6 bin64thread LinkSum.exe -c LinkSum_Perf_Sim_Type.ctl

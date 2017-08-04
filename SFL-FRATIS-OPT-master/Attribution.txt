@@ -1,0 +1,26 @@
+Key contributors to the development of the South Florida Freight Advanced Traveler Information System, and development of the documentation include:
+
+From Cambridge Systematics, Inc.
+	Mark A. Jensen (Project Manager)
+	Roger Schiller (Deputy Project Manager)
+	Michael Williamson (Project Manager, South Florida FRATIS)
+	Erin Kersh (Deputy Project Manager, South Florida FRATIS)
+From Productivity Apex, Inc.
+	Sam Fayez (Director, Transportation and Supply Chain Solution)
+	Fabio Zavagnini (Transportation and Business Analyst)
+	Ahmed El-Nashar (Operations Research Expert)
+	Joseph Tapia (Lead Software Developer)
+	Alex Hijab (Software Developer)
+	Chris Strube (Software Developer)
+	Daniel Leonard (Transportation and Business Analyst)
+
+
+The developers also wish to acknowledge several contributors to this study:
+
+
+From the U.S. Department of Transportation: Randy Butler (Transportation Specialist, Freight Technology and Operations Office of Freight Management and Operations) and Coral A. Torres Cruz (Transportation Specialist)
+From Florida East Coast Railway (FEC) Highway Services: Bertha Ortha, Angela Little (FECR Information Services), Marissa Palacios (Dispatcher), William Garcia (Dispatcher)
+From TomTom Telematics: Dante Passaro (International Sales Development Manager)
+
+
+Addtional thanks to: HERE MAPS

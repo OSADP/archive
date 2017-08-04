@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QWarnAlertsActivity"
+    tools:ignore="HardcodedText" >
+
+    <!-- DETAIL VIEW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:orientation="horizontal" 
+        android:baselineAligned="false">
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+            
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="Distance To Queue"
+	    		android:textStyle="italic" />
+	        
+	        <TextView 
+	            android:id="@+id/qw_alerts_txtDistToBOQ"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="48sp"
+	            android:textColor="#ffffff"
+	            android:text="-"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="Miles"
+	            android:textStyle="italic" />
+	        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:paddingLeft="6dp"
+            android:orientation="vertical">
+            
+	        <TextView 
+	            android:id="@+id/qw_alerts_txtTimeReceived"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	        
+	        <LinearLayout 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:orientation="horizontal"
+	            android:paddingTop="8dp" >
+	            
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Queue Length: "
+		            android:textStyle="italic" />
+		        
+		        <TextView 
+		            android:id="@+id/qw_alerts_txtLength"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#ffffff" />
+		        
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:orientation="horizontal">
+	            
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Time to End of Queue: "
+		            android:textStyle="italic" />
+		        
+		        <TextView 
+		            android:id="@+id/qw_alerts_txtTimeToFOQ"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#ffffff" />
+		        
+	        </LinearLayout>
+	        
+	        <TextView 
+	            android:id="@+id/qw_alerts_txtRecommendedAction"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="8dp"
+	            android:textColor="#ffffff" />
+	        
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    <!-- ALERT LIST -->
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#999999"/>
+    
+	<ListView
+	    android:id="@+id/qw_alerts_listAlerts"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.8" />
+	    
+
+</LinearLayout>

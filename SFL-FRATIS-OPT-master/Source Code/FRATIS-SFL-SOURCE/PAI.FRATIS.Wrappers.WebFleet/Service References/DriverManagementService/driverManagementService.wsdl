@@ -1,0 +1,1675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://connect.webfleet.tomtomwork.com/services" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" name="driverManagementService" targetDisplayNamespace="http://connect.webfleet.tomtomwork.com/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:ns1="http://connect.webfleet.tomtomwork.com/transfer" xmlns:tns="http://connect.webfleet.tomtomwork.com/transfer/objects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://connect.webfleet.tomtomwork.com/transfer/addresses" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://connect.webfleet.tomtomwork.com/parameters/objects" xmlns:ns3="http://connect.webfleet.tomtomwork.com/transfer/positions" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetDisplayNamespace="http://connect.webfleet.tomtomwork.com/transfer/objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import xmlns="http://www.w3.org/2001/XMLSchema" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/transfer" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/parameters/objects" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/transfer/positions" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/transfer/addresses" />
+      <xs:complexType name="Driver">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="driverNo" type="xs:string" />
+              <xs:element minOccurs="0" name="name" type="xs:string" />
+              <xs:element minOccurs="0" name="name2" type="xs:string" />
+              <xs:element minOccurs="0" name="name3" type="xs:string" />
+              <xs:element minOccurs="0" name="code" type="xs:string" />
+              <xs:element minOccurs="0" name="country" type="xs:string" />
+              <xs:element minOccurs="0" name="zip" type="xs:string" />
+              <xs:element minOccurs="0" name="city" type="xs:string" />
+              <xs:element minOccurs="0" name="street" type="xs:string" />
+              <xs:element minOccurs="0" name="telMobile" type="xs:string" />
+              <xs:element minOccurs="0" name="telPrivate" type="xs:string" />
+              <xs:element minOccurs="0" name="email" type="xs:string" />
+              <xs:element minOccurs="0" name="description" type="xs:string" />
+              <xs:element minOccurs="0" name="company" type="xs:string" />
+              <xs:element minOccurs="0" name="pin" type="xs:string" />
+              <xs:element minOccurs="0" name="dtCardId" type="xs:string" />
+              <xs:element minOccurs="0" name="dtCardCountry" type="xs:string" />
+              <xs:element minOccurs="0" name="newDriverNo" type="xs:string" />
+              <xs:element minOccurs="0" name="rllButtonId" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="addressNo" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverGroupDriverRelation">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element name="driverGroup" type="tns:DriverGroup" />
+              <xs:element name="driver" type="tns:DriverIdentityAndDisplayName" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverGroup">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="driverGroupDisplayName" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverIdentityAndDisplayName">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence />
+            <xs:attribute name="driverNo" type="xs:string" />
+            <xs:attribute name="driverDisplayName" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverGroupDriverRelationship">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="driverNo" type="xs:string" />
+              <xs:element minOccurs="0" name="groupDisplayName" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="BasicObject">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ObjectIdentity">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="objectDisplayName" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ObjectIdentity">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence />
+            <xs:attribute name="objectNo" type="xs:string" />
+            <xs:attribute name="objectUid" type="xs:string" />
+            <xs:attribute name="externalId" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverIdentity">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence />
+            <xs:attribute name="driverNo" type="xs:string" />
+            <xs:attribute name="driverUid" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="MobileObject">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:BasicObject">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="mobileObjectType" type="tns:MobileObjectType" />
+              <xs:element minOccurs="0" name="licensePlate" type="xs:string" />
+              <xs:element minOccurs="0" name="type" type="xs:string" />
+              <xs:element minOccurs="0" name="width" type="xs:string" />
+              <xs:element minOccurs="0" name="length" type="xs:string" />
+              <xs:element minOccurs="0" name="height" type="xs:string" />
+              <xs:element minOccurs="0" name="maxweight" type="xs:string" />
+              <xs:element minOccurs="0" name="netweight" type="xs:string" />
+              <xs:element minOccurs="0" name="netload" type="xs:string" />
+              <xs:element minOccurs="0" name="power" type="xs:string" />
+              <xs:element minOccurs="0" name="numAxes" type="xs:string" />
+              <xs:element minOccurs="0" name="identNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="registrationDate" type="xs:string" />
+              <xs:element minOccurs="0" name="averageVehicleFuelUsage" type="xs:int" />
+              <xs:element minOccurs="0" name="averageEPFuelUsage" type="xs:int" />
+              <xs:element minOccurs="0" name="averageFleetFuelUsage" type="xs:int" />
+              <xs:element minOccurs="0" name="vehicleFuelType" type="ns2:FuelType" />
+              <xs:element minOccurs="0" name="epFuelType" type="ns2:FuelType" />
+              <xs:element minOccurs="0" name="fleetFuelType" type="ns2:FuelType" />
+              <xs:element minOccurs="0" name="engineSize" type="xs:int" />
+              <xs:element minOccurs="0" name="epBTStreetAddress" type="xs:string" />
+              <xs:element minOccurs="0" name="vehicleColor" type="ns2:VehicleColour" />
+              <xs:element minOccurs="0" name="speedLimit" type="xs:float" />
+              <xs:element minOccurs="0" name="description" type="xs:string" />
+              <xs:element minOccurs="0" name="vehicleRpmLimit" type="xs:int" />
+              <xs:element minOccurs="0" name="fleetRpmLimit" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ObjectGroupIdentity">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence />
+            <xs:attribute name="name" type="xs:string" use="required" />
+            <xs:attribute name="objectCount" type="xs:int" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ObjectGroupObjectRelation">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element name="objectGroup" type="tns:ObjectGroupIdentity" />
+              <xs:element name="object" type="tns:BasicObject" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ObjectReport">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:BasicObject">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="objectClassName" type="xs:string" />
+              <xs:element minOccurs="0" name="objectType" type="xs:string" />
+              <xs:element minOccurs="0" name="description" type="xs:string" />
+              <xs:element minOccurs="0" name="lastMsgId" type="xs:long" />
+              <xs:element minOccurs="0" name="lastMsgTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="deleted" type="xs:boolean" />
+              <xs:element minOccurs="0" name="position" nillable="true" type="ns3:GeoPosition" />
+              <xs:element minOccurs="0" name="positionText" type="xs:string" />
+              <xs:element minOccurs="0" name="positionTextShort" type="xs:string" />
+              <xs:element minOccurs="0" name="speed" type="xs:int" />
+              <xs:element minOccurs="0" name="course" type="xs:int" />
+              <xs:element minOccurs="0" name="direction" type="ns3:IntercardinalDirections" />
+              <xs:element minOccurs="0" name="quality" type="xs:string" />
+              <xs:element minOccurs="0" name="satellite" type="xs:string" />
+              <xs:element minOccurs="0" name="status" type="xs:string" />
+              <xs:element minOccurs="0" name="navDestination" type="ns3:NavDestination" />
+              <xs:element minOccurs="0" name="driverCurrentWorkState" nillable="true" type="ns2:WorkState" />
+              <xs:element minOccurs="0" name="coDriverCurrentWorkState" nillable="true" type="ns2:WorkState" />
+              <xs:element minOccurs="0" name="driver" nillable="true" type="tns:DriverIdentity" />
+              <xs:element minOccurs="0" name="coDriver" nillable="true" type="tns:DriverIdentity" />
+              <xs:element minOccurs="0" name="rllBTStreetAddress" type="xs:string" />
+              <xs:element minOccurs="0" name="ignitionState" type="xs:int" />
+              <xs:element minOccurs="0" name="odometer" type="xs:int" />
+              <xs:element minOccurs="0" name="distanceToDestination" type="xs:int" />
+              <xs:element minOccurs="0" name="tripMode" type="xs:int" />
+              <xs:element minOccurs="0" name="standstillState" type="xs:int" />
+              <xs:element minOccurs="0" name="ignitionTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="pndConnected" type="xs:int" />
+              <xs:element minOccurs="0" name="orderNo" type="xs:string" />
+              <xs:element minOccurs="0" name="driverDisplayName" type="xs:string" />
+              <xs:element minOccurs="0" name="driverTelMobile" type="xs:string" />
+              <xs:element minOccurs="0" name="coDriverDisplayName" type="xs:string" />
+              <xs:element minOccurs="0" name="coDriverTelMobile" type="xs:string" />
+              <xs:element minOccurs="0" name="posTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="fuelLevel" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="PersonDisplayName">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="name1" type="xs:string" />
+              <xs:element minOccurs="0" name="name2" type="xs:string" />
+              <xs:element minOccurs="0" name="name3" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="PersonReport">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:BasicObject">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="personDisplayName" nillable="true" type="tns:PersonDisplayName" />
+              <xs:element minOccurs="0" name="location" nillable="true" type="ns4:BasicLocation" />
+              <xs:element minOccurs="0" name="phoneNumbers" nillable="true" type="ns4:PhoneContact" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="BasicDriver">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="driverDisplayName" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="driverNo" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ContractDevice">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ObjectIdentity">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="contract" type="ns1:Contract" />
+              <xs:element minOccurs="0" name="activationKey" type="xs:string" />
+              <xs:element minOccurs="0" name="sim" type="ns1:Sim" />
+              <xs:element minOccurs="0" name="obu" type="ns1:Obu" />
+              <xs:element minOccurs="0" name="pnd" type="ns1:Pnd" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="objectDetails">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ObjectIdentity">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="vehicleType" nillable="true" type="ns2:VehicleType" />
+              <xs:element minOccurs="0" name="vehicleColor" nillable="true" type="ns2:VehicleColour" />
+              <xs:element minOccurs="0" name="identNumber" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="registrationDate" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="denotation" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="licensePlateNumber" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="speedLimit" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="fuelConsumption" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="fuelType" nillable="true" type="ns2:FuelType" />
+              <xs:element minOccurs="0" name="netWeight" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="maxWeight" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="netLoad" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="numAxles" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="length" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="width" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="height" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="power" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="engineSize" type="xs:int" />
+              <xs:element minOccurs="0" name="rpmLimit" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="WakeupTimersTO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ObjectIdentity">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="time1" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="time2" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="time3" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="time4" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="time5" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="mon" nillable="true" type="xs:boolean" />
+              <xs:element minOccurs="0" name="tue" nillable="true" type="xs:boolean" />
+              <xs:element minOccurs="0" name="wed" nillable="true" type="xs:boolean" />
+              <xs:element minOccurs="0" name="thu" nillable="true" type="xs:boolean" />
+              <xs:element minOccurs="0" name="fri" nillable="true" type="xs:boolean" />
+              <xs:element minOccurs="0" name="sat" nillable="true" type="xs:boolean" />
+              <xs:element minOccurs="0" name="sun" nillable="true" type="xs:boolean" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:simpleType name="MobileObjectType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="TRAILER" />
+          <xs:enumeration value="VEHICLE" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:schema>
+    <xs:schema xmlns:ns2="http://connect.webfleet.tomtomwork.com/transfer" xmlns:ns0="http://connect.webfleet.tomtomwork.com/parameters" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://connect.webfleet.tomtomwork.com/services" xmlns:ns1="http://connect.webfleet.tomtomwork.com/parameters/objects" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetDisplayNamespace="http://connect.webfleet.tomtomwork.com/services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/parameters" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/parameters/objects" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/transfer" />
+      <xs:complexType name="timeZone" abstract="true">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ID" type="xs:string" />
+          <xs:element name="rawOffset" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="insertDriver" type="tns:insertDriver" />
+      <xs:complexType name="insertDriver">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="driverToInsert" type="ns1:InsertDriverParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="insertDriverResponse" type="tns:insertDriverResponse" />
+      <xs:complexType name="insertDriverResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="showDriverGroupDrivers" type="tns:showDriverGroupDrivers" />
+      <xs:complexType name="showDriverGroupDrivers">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="driverGroup" type="ns1:DriverGroupParameter" />
+          <xs:element minOccurs="0" name="driver" type="ns1:DriverIdentityParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="showDriverGroupDriversResponse" type="tns:showDriverGroupDriversResponse" />
+      <xs:complexType name="showDriverGroupDriversResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceQueryOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="detachDriverFromVehicle" type="tns:detachDriverFromVehicle" />
+      <xs:complexType name="detachDriverFromVehicle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="detachDriverParameter" type="ns0:DriverVehicleAssignmentParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="detachDriverFromVehicleResponse" type="tns:detachDriverFromVehicleResponse" />
+      <xs:complexType name="detachDriverFromVehicleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="showDriverGroups" type="tns:showDriverGroups" />
+      <xs:complexType name="showDriverGroups">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="driverGroupFilter" type="ns1:DriverGroupFilterParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="showDriverGroupsResponse" type="tns:showDriverGroupsResponse" />
+      <xs:complexType name="showDriverGroupsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceQueryOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="attachDriverToGroup" type="tns:attachDriverToGroup" />
+      <xs:complexType name="attachDriverToGroup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="attachDriverParameter" type="ns1:DriverToGroupParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="attachDriverToGroupResponse" type="tns:attachDriverToGroupResponse" />
+      <xs:complexType name="attachDriverToGroupResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="updateDriver" type="tns:updateDriver" />
+      <xs:complexType name="updateDriver">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="driverToUpdate" type="ns1:UpdateDriverParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="updateDriverResponse" type="tns:updateDriverResponse" />
+      <xs:complexType name="updateDriverResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="updateDriverGroup" type="tns:updateDriverGroup" />
+      <xs:complexType name="updateDriverGroup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="driverGroupToUpdate" type="ns1:UpdateDriverGroupParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="updateDriverGroupResponse" type="tns:updateDriverGroupResponse" />
+      <xs:complexType name="updateDriverGroupResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="showDriverAssignmentReport" type="tns:showDriverAssignmentReport" />
+      <xs:complexType name="showDriverAssignmentReport">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="driverAssignmentReport" type="ns1:DriverAssignmentReportParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="showDriverAssignmentReportResponse" type="tns:showDriverAssignmentReportResponse" />
+      <xs:complexType name="showDriverAssignmentReportResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceQueryOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="deleteDriver" type="tns:deleteDriver" />
+      <xs:complexType name="deleteDriver">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="driverToDelete" type="ns1:DeleteDriverParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="deleteDriverResponse" type="tns:deleteDriverResponse" />
+      <xs:complexType name="deleteDriverResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="attachDriverToVehicle" type="tns:attachDriverToVehicle" />
+      <xs:complexType name="attachDriverToVehicle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="attachDriverParameter" type="ns0:DriverVehicleAssignmentParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="attachDriverToVehicleResponse" type="tns:attachDriverToVehicleResponse" />
+      <xs:complexType name="attachDriverToVehicleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="insertDriverGroup" type="tns:insertDriverGroup" />
+      <xs:complexType name="insertDriverGroup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="driverGroup" type="ns1:DriverGroupParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="insertDriverGroupResponse" type="tns:insertDriverGroupResponse" />
+      <xs:complexType name="insertDriverGroupResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="detachDriverFromGroup" type="tns:detachDriverFromGroup" />
+      <xs:complexType name="detachDriverFromGroup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="detachDriverParameter" type="ns1:DriverToGroupParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="detachDriverFromGroupResponse" type="tns:detachDriverFromGroupResponse" />
+      <xs:complexType name="detachDriverFromGroupResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="deleteDriverGroup" type="tns:deleteDriverGroup" />
+      <xs:complexType name="deleteDriverGroup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aParm" type="ns0:AuthenticationParameters" />
+          <xs:element minOccurs="0" name="gParm" type="ns0:GeneralParameters" />
+          <xs:element minOccurs="0" name="driverGroup" type="ns1:DriverGroupParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="deleteDriverGroupResponse" type="tns:deleteDriverGroupResponse" />
+      <xs:complexType name="deleteDriverGroupResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="ns2:GenericServiceWriteOpResult" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://connect.webfleet.tomtomwork.com/parameters/objects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://connect.webfleet.tomtomwork.com/transfer/objects" xmlns:ns1="http://connect.webfleet.tomtomwork.com/parameters" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetDisplayNamespace="http://connect.webfleet.tomtomwork.com/parameters/objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import xmlns="http://www.w3.org/2001/XMLSchema" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/parameters" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/transfer/objects" />
+      <xs:complexType name="InsertDriverParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="driverNo" type="xs:string" use="required" />
+            <xs:attribute name="name" type="xs:string" use="required" />
+            <xs:attribute name="name2" type="xs:string" />
+            <xs:attribute name="name3" type="xs:string" />
+            <xs:attribute name="company" type="xs:string" />
+            <xs:attribute name="code" type="xs:string" use="required" />
+            <xs:attribute name="description" type="xs:string" />
+            <xs:attribute name="country" type="xs:string" />
+            <xs:attribute name="zip" type="xs:string" />
+            <xs:attribute name="city" type="xs:string" />
+            <xs:attribute name="street" type="xs:string" />
+            <xs:attribute name="telMobile" type="xs:string" />
+            <xs:attribute name="telPrivate" type="xs:string" />
+            <xs:attribute name="pin" type="xs:string" use="required" />
+            <xs:attribute name="email" type="xs:string" />
+            <xs:attribute name="dtCardId" type="xs:string" />
+            <xs:attribute name="dtCardCountry" type="xs:string" />
+            <xs:attribute name="rllButtonId" type="xs:string" />
+            <xs:attribute name="addressNo" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverGroupParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="driverGroupDisplayName" type="xs:string" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverIdentityParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="driverNo" type="xs:string" />
+            <xs:attribute name="driverUid" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverGroupFilterParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="groupDisplayName" type="xs:string" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverToGroupParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="driverGroupDisplayName" type="xs:string" use="required" />
+            <xs:attribute name="driverNo" type="xs:string" />
+            <xs:attribute name="driverUid" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="UpdateDriverParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="driverNoOld" type="xs:string" use="required" />
+            <xs:attribute name="driverNo" type="xs:string" />
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="name2" type="xs:string" />
+            <xs:attribute name="name3" type="xs:string" />
+            <xs:attribute name="company" type="xs:string" />
+            <xs:attribute name="code" type="xs:string" />
+            <xs:attribute name="description" type="xs:string" />
+            <xs:attribute name="country" type="xs:string" />
+            <xs:attribute name="zip" type="xs:string" />
+            <xs:attribute name="city" type="xs:string" />
+            <xs:attribute name="street" type="xs:string" />
+            <xs:attribute name="telMobile" type="xs:string" />
+            <xs:attribute name="telPrivate" type="xs:string" />
+            <xs:attribute name="pin" type="xs:string" />
+            <xs:attribute name="email" type="xs:string" />
+            <xs:attribute name="dtCardId" type="xs:string" />
+            <xs:attribute name="dtCardCountry" type="xs:string" />
+            <xs:attribute name="rllButtonId" type="xs:string" />
+            <xs:attribute name="addressNo" type="xs:string" />
+            <xs:attribute name="driverUid" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="UpdateDriverGroupParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="groupDisplayName" type="xs:string" use="required" />
+            <xs:attribute name="groupDisplayNameOld" type="xs:string" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverAssignmentReportParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence>
+              <xs:element name="dateRange" nillable="true" type="ns1:DateRange" />
+            </xs:sequence>
+            <xs:attribute name="driverNo" type="xs:string" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DeleteDriverParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="driverNo" type="xs:string" />
+            <xs:attribute name="driverUid" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverFilterParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:FilterParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="driver" nillable="true" type="tns:DriverIdentityParameter" />
+              <xs:element minOccurs="0" name="ungroupedOnly" nillable="true" type="xs:boolean" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ObjectFilterParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:FilterParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="objectGroupDisplayName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="object" nillable="true" type="tns:ObjectIdentityParameter" />
+              <xs:element minOccurs="0" name="ungroupedOnly" nillable="true" type="xs:boolean" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ObjectIdentityParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="objectNo" type="xs:string" />
+            <xs:attribute name="objectUid" type="xs:string" />
+            <xs:attribute name="externalId" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DetailedVehicleParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns2:ObjectIdentity">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="vehicleType" nillable="true" type="tns:VehicleType" />
+              <xs:element minOccurs="0" name="vehicleColor" nillable="true" type="tns:VehicleColour" />
+              <xs:element minOccurs="0" name="identNumber" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="registrationDate" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="denotation" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="licensePlateNumber" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="speedLimit" nillable="true" type="ns1:ManagedFloatParameter" />
+              <xs:element minOccurs="0" name="fuelConsumption" nillable="true" type="ns1:ManagedFloatParameter" />
+              <xs:element minOccurs="0" name="fuelType" nillable="true" type="tns:FuelType" />
+              <xs:element minOccurs="0" name="netWeight" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="maxWeight" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="netLoad" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="numAxles" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="length" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="width" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="height" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="power" nillable="true" type="xs:float" />
+              <xs:element minOccurs="0" name="resetFuelAverage" nillable="true" type="xs:boolean" />
+              <xs:element minOccurs="0" name="engineSize" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="odometer" nillable="true" type="xs:long" />
+              <xs:element minOccurs="0" name="rpmLimit" nillable="true" type="ns1:ManagedIntegerParameter" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverAndDriverGroupFilterParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="driver" nillable="true" type="tns:DriverIdentityParameter" />
+              <xs:element minOccurs="0" name="driverGroupDisplayName" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ObjectAndObjectGroupFilterParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="objectGroupDisplayName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="object" nillable="true" type="tns:ObjectIdentityParameter" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="UpdateObjectGroupParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="newObjectGroupDisplayName" type="xs:string" use="required" />
+            <xs:attribute name="oldObjectGroupDisplayName" type="xs:string" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="InsertObjectGroupParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="objectGroupDisplayName" type="xs:string" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DeleteObjectGroupParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="objectGroupDisplayName" type="xs:string" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ObjectToGroupParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="objectNo" type="xs:string" />
+            <xs:attribute name="objectUid" type="xs:string" />
+            <xs:attribute name="objectGroupDisplayName" type="xs:string" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="SwitchOutputParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" default="" name="objectNo" type="xs:string" />
+              <xs:element name="status" type="xs:int" />
+            </xs:sequence>
+            <xs:attribute name="objectUid" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="NearestVehicleParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:ParameterBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="addrNo" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="latitude" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="longitude" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="priority" nillable="true" type="tns:NearestVehiclePriority" />
+              <xs:element minOccurs="0" name="maxDistance" nillable="true" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:simpleType name="DriverRole">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="DRIVER" />
+          <xs:enumeration value="CO_DRIVER" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="FuelType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="UNKNOWN" />
+          <xs:enumeration value="DIESEL" />
+          <xs:enumeration value="GASOLINE" />
+          <xs:enumeration value="LPG" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="VehicleColour">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="WHITE" />
+          <xs:enumeration value="GREY" />
+          <xs:enumeration value="BLACK" />
+          <xs:enumeration value="IVORY" />
+          <xs:enumeration value="RED" />
+          <xs:enumeration value="ORANGE" />
+          <xs:enumeration value="YELLOW" />
+          <xs:enumeration value="GREEN" />
+          <xs:enumeration value="BLUE" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="WorkState">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="UNKNOWN" />
+          <xs:enumeration value="FREETIME" />
+          <xs:enumeration value="PAUSE" />
+          <xs:enumeration value="STANDBY" />
+          <xs:enumeration value="WORKING" />
+          <xs:enumeration value="DRIVING" />
+          <xs:enumeration value="OTHER_WORK" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="VehicleType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="HEAVYWEIGHT_TRUCK_TRAILER" />
+          <xs:enumeration value="TANKER_TRUCK" />
+          <xs:enumeration value="HEAVY_TRUCK" />
+          <xs:enumeration value="MEDIUM_TRUCK" />
+          <xs:enumeration value="DUMP_TRUCK" />
+          <xs:enumeration value="PALLET_TRUCK" />
+          <xs:enumeration value="CONCRETE_LORRY" />
+          <xs:enumeration value="DEPOSIT_TIPPER" />
+          <xs:enumeration value="GARBAGE_TRUCK" />
+          <xs:enumeration value="LOADER" />
+          <xs:enumeration value="EXCAVATOR" />
+          <xs:enumeration value="WRECKER" />
+          <xs:enumeration value="TRUCK_WRECKER" />
+          <xs:enumeration value="MULTICAR" />
+          <xs:enumeration value="STREET_SWEEPER" />
+          <xs:enumeration value="TRACTOR" />
+          <xs:enumeration value="HEAVYWEIGHT_TRUCK" />
+          <xs:enumeration value="TRUCK_WITH_TRAILER" />
+          <xs:enumeration value="TRAILER" />
+          <xs:enumeration value="TRUCK_TRAILER" />
+          <xs:enumeration value="CRANE" />
+          <xs:enumeration value="BUS" />
+          <xs:enumeration value="FIRETRUCK" />
+          <xs:enumeration value="AMBULANCE" />
+          <xs:enumeration value="POLICE" />
+          <xs:enumeration value="CADDY" />
+          <xs:enumeration value="VAN" />
+          <xs:enumeration value="MULTIVAN" />
+          <xs:enumeration value="CAR_STATION_WAGON" />
+          <xs:enumeration value="PICKUP" />
+          <xs:enumeration value="SUV" />
+          <xs:enumeration value="TAXI" />
+          <xs:enumeration value="CAR" />
+          <xs:enumeration value="APE" />
+          <xs:enumeration value="VESPA" />
+          <xs:enumeration value="BIKE" />
+          <xs:enumeration value="CONTAINERSHIP" />
+          <xs:enumeration value="LINK" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="OrderAutomation">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="ACCEPT" />
+          <xs:enumeration value="START" />
+          <xs:enumeration value="NAVIGATING_TO" />
+          <xs:enumeration value="SKIPPING_ROUTE_SUMMARY" />
+          <xs:enumeration value="DELETE" />
+          <xs:enumeration value="NEXT" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="objectState">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="AVAILABLE" />
+          <xs:enumeration value="HAS_ORDER" />
+          <xs:enumeration value="OFFLINE" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="NearestVehiclePriority">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="OBJECT_STATE" />
+          <xs:enumeration value="LINEAR_DISTANCE" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://connect.webfleet.tomtomwork.com/transfer/positions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://connect.webfleet.tomtomwork.com/transfer/addresses" xmlns:ns1="http://connect.webfleet.tomtomwork.com/transfer" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetDisplayNamespace="http://connect.webfleet.tomtomwork.com/transfer/positions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import xmlns="http://www.w3.org/2001/XMLSchema" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/transfer" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/transfer/addresses" />
+      <xs:complexType name="GeoPosition">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:BasicGeoPosition">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="latitudeHumanReadable" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="longitudeHumanReadable" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="BasicGeoPosition">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="latitude" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="longitude" nillable="true" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="NavDestination">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="navTargetLatitude" type="xs:int" />
+              <xs:element minOccurs="0" name="navTargetLongitude" type="xs:int" />
+              <xs:element minOccurs="0" name="navEtaTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="navDestination" type="xs:string" />
+              <xs:element minOccurs="0" name="distanceToDestination" type="xs:long" />
+              <xs:element minOccurs="0" name="isFromOrder" type="xs:boolean" />
+              <xs:element minOccurs="0" name="navTargetStreetAddress" type="ns2:StreetAddressIdentity" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:simpleType name="IntercardinalDirections">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="NORTH" />
+          <xs:enumeration value="NORTHEAST" />
+          <xs:enumeration value="EAST" />
+          <xs:enumeration value="SOUTHEAST" />
+          <xs:enumeration value="SOUTH" />
+          <xs:enumeration value="SOUTHWEST" />
+          <xs:enumeration value="WEST" />
+          <xs:enumeration value="NORTHWEST" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://connect.webfleet.tomtomwork.com/transfer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://connect.webfleet.tomtomwork.com/parameters/objects" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetDisplayNamespace="http://connect.webfleet.tomtomwork.com/transfer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import xmlns="http://www.w3.org/2001/XMLSchema" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/parameters/objects" />
+      <xs:complexType name="TransferObjectBase">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="GenericServiceWriteOpResult">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ServiceWriteOpResult">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="failed" nillable="true" type="tns:TransferObjectBase" />
+              <xs:element minOccurs="0" name="succeeded" nillable="true" type="tns:TransferObjectBase" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ServiceWriteOpResult">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ServiceOpResult">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ServiceOpResult" abstract="true">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence>
+              <xs:element default="-1" name="statusCode" type="xs:int" />
+              <xs:element minOccurs="0" name="statusMessage" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="errors" nillable="true">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="errorInfo" type="tns:ErrorInfo" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ErrorInfo">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence>
+              <xs:element default="" name="msg" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="objectDisplayName" type="xs:string" />
+            <xs:attribute name="fieldDisplayName" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="GenericServiceQueryOpResult">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ServiceQueryOpResult">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="results" nillable="true">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="resultItem" type="tns:TransferObjectBase" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ServiceQueryOpResult">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ServiceOpResult">
+            <xs:sequence>
+              <xs:element default="0" name="resultSize" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverVehicleAssignment">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="driverNo" type="xs:string" />
+              <xs:element minOccurs="0" name="objectNo" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverAssignment">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="objectNo" type="xs:string" />
+              <xs:element minOccurs="0" name="objectDisplayName" type="xs:string" />
+              <xs:element minOccurs="0" name="from" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="to" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="signOnRole" nillable="true" type="ns1:DriverRole" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="Contract">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="contractNo" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="beginDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="tariffDisplayName" type="xs:string" />
+              <xs:element minOccurs="0" name="referenceNo" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="Sim">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="iccid" type="xs:string" />
+              <xs:element minOccurs="0" name="roamingEnabled" type="xs:boolean" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="Obu">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:DeviceIdentity">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="osVersion" type="xs:string" />
+              <xs:element minOccurs="0" name="appVersion" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DeviceIdentity">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="type" type="xs:string" />
+              <xs:element minOccurs="0" name="serialNo" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="Pnd">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:DeviceIdentity">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ncVersion" type="xs:string" />
+              <xs:element minOccurs="0" name="appVersion" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="SwitchOutputTO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="objectNo" type="xs:string" />
+              <xs:element minOccurs="0" name="objectUid" type="xs:string" />
+              <xs:element minOccurs="0" name="status" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="NearestVehicleTO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="objectNo" type="xs:string" />
+              <xs:element minOccurs="0" name="objectUid" type="xs:string" />
+              <xs:element minOccurs="0" name="objectState" nillable="true" type="ns1:objectState" />
+              <xs:element minOccurs="0" name="latitude" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="longitude" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="linearDistance" nillable="true" type="xs:long" />
+              <xs:element minOccurs="0" name="routeDistance" nillable="true" type="xs:long" />
+              <xs:element minOccurs="0" name="routeTime" nillable="true" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="KeyValuePair">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:TransferObjectBase">
+            <xs:sequence />
+            <xs:attribute name="key" type="xs:string" />
+            <xs:attribute name="value" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://connect.webfleet.tomtomwork.com/parameters" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetDisplayNamespace="http://connect.webfleet.tomtomwork.com/parameters" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import xmlns="http://www.w3.org/2001/XMLSchema" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+      <xs:complexType name="AuthenticationParameters">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ParameterBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" default="" name="accountDisplayName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="sessionToken" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="UserName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="password" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="apiKey" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ParameterBase" abstract="true">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="GeneralParameters">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ParameterBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" default="UK" name="locale" type="tns:KnownLocales" />
+              <xs:element minOccurs="0" default="Europe_London" name="timeZone" type="tns:KnownTimeZones" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DriverVehicleAssignmentParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ParameterBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="driverNo" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="objectNo" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="objectUid" type="xs:string" />
+            <xs:attribute name="driverUid" type="xs:string" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DateRange">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ParameterBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="from" nillable="true" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="to" nillable="true" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="year" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="month" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="day" nillable="true" type="xs:int" />
+            </xs:sequence>
+            <xs:attribute name="rangePattern" type="tns:DateRangePattern" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="FilterParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ParameterBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" default="" name="filterCriterion" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ResultQuantifierParameter" abstract="true">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ParameterBase">
+            <xs:sequence>
+              <xs:element default="false" name="retrieveIdOnly" type="xs:boolean" />
+              <xs:element default="true" name="retrieveShallowestValues" type="xs:boolean" />
+              <xs:element default="false" name="retrieveMostCompleteValues" type="xs:boolean" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ManagedEventLevelParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="value" type="tns:EventLevel" />
+            <xs:attribute name="setNull" type="xs:boolean" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ManagedFloatParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="value" type="xs:float" />
+            <xs:attribute name="setNull" type="xs:boolean" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ManagedIntegerParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:ParameterBase">
+            <xs:sequence />
+            <xs:attribute name="value" type="xs:int" />
+            <xs:attribute name="setNull" type="xs:boolean" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:simpleType name="KnownLocales">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="UK" />
+          <xs:enumeration value="DE" />
+          <xs:enumeration value="FR" />
+          <xs:enumeration value="ES" />
+          <xs:enumeration value="DK" />
+          <xs:enumeration value="IT" />
+          <xs:enumeration value="NO" />
+          <xs:enumeration value="RU" />
+          <xs:enumeration value="PL" />
+          <xs:enumeration value="US" />
+          <xs:enumeration value="UAE" />
+          <xs:enumeration value="NL" />
+          <xs:enumeration value="ZA" />
+          <xs:enumeration value="NA" />
+          <xs:enumeration value="MZ" />
+          <xs:enumeration value="ZM" />
+          <xs:enumeration value="ZW" />
+          <xs:enumeration value="TZ" />
+          <xs:enumeration value="KE" />
+          <xs:enumeration value="AU" />
+          <xs:enumeration value="NZ" />
+          <xs:enumeration value="IN" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="KnownTimeZones">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Etc_UTC" />
+          <xs:enumeration value="Europe_Amsterdam" />
+          <xs:enumeration value="Europe_Andorra" />
+          <xs:enumeration value="Europe_Belgrade" />
+          <xs:enumeration value="Europe_Berlin" />
+          <xs:enumeration value="Europe_Bratislava" />
+          <xs:enumeration value="Europe_Brussels" />
+          <xs:enumeration value="Europe_Budapest" />
+          <xs:enumeration value="Europe_Copenhagen" />
+          <xs:enumeration value="Europe_Gibraltar" />
+          <xs:enumeration value="Europe_Ljubljana" />
+          <xs:enumeration value="Europe_Luxembourg" />
+          <xs:enumeration value="Europe_Madrid" />
+          <xs:enumeration value="Europe_Malta" />
+          <xs:enumeration value="Europe_Monaco" />
+          <xs:enumeration value="Europe_Oslo" />
+          <xs:enumeration value="Europe_Paris" />
+          <xs:enumeration value="Europe_Prague" />
+          <xs:enumeration value="Europe_Rome" />
+          <xs:enumeration value="Europe_San_Marino" />
+          <xs:enumeration value="Europe_Sarajevo" />
+          <xs:enumeration value="Europe_Skopje" />
+          <xs:enumeration value="Europe_Stockholm" />
+          <xs:enumeration value="Europe_Tirane" />
+          <xs:enumeration value="Europe_Vaduz" />
+          <xs:enumeration value="Europe_Vatican" />
+          <xs:enumeration value="Europe_Vienna" />
+          <xs:enumeration value="Europe_Warsaw" />
+          <xs:enumeration value="Europe_Zagreb" />
+          <xs:enumeration value="Europe_Zurich" />
+          <xs:enumeration value="Europe_Belfast" />
+          <xs:enumeration value="Europe_Dublin" />
+          <xs:enumeration value="Europe_Lisbon" />
+          <xs:enumeration value="Europe_London" />
+          <xs:enumeration value="Europe_Athens" />
+          <xs:enumeration value="Europe_Bucharest" />
+          <xs:enumeration value="Europe_Helsinki" />
+          <xs:enumeration value="Europe_Istanbul" />
+          <xs:enumeration value="Europe_Kiev" />
+          <xs:enumeration value="Europe_Minsk" />
+          <xs:enumeration value="Europe_Nicosia" />
+          <xs:enumeration value="Europe_Riga" />
+          <xs:enumeration value="Europe_Sofia" />
+          <xs:enumeration value="Europe_Tallinn" />
+          <xs:enumeration value="Europe_Vilnius" />
+          <xs:enumeration value="Europe_Moscow" />
+          <xs:enumeration value="Atlantic_Reykjavik" />
+          <xs:enumeration value="America_Halifax" />
+          <xs:enumeration value="America_Winnipeg" />
+          <xs:enumeration value="America_Toronto" />
+          <xs:enumeration value="America_Edmonton" />
+          <xs:enumeration value="America_St_Johns" />
+          <xs:enumeration value="America_Vancouver" />
+          <xs:enumeration value="America_Regina" />
+          <xs:enumeration value="America_Whitehorse" />
+          <xs:enumeration value="America_Puerto_Rico" />
+          <xs:enumeration value="America_Chicago" />
+          <xs:enumeration value="America_New_York" />
+          <xs:enumeration value="America_Denver" />
+          <xs:enumeration value="America_Los_Angeles" />
+          <xs:enumeration value="America_Anchorage" />
+          <xs:enumeration value="America_Adak" />
+          <xs:enumeration value="Pacific_Honolulu" />
+          <xs:enumeration value="Asia_Tokyo" />
+          <xs:enumeration value="Asia_Dubai" />
+          <xs:enumeration value="Asia_Hong_Kong" />
+          <xs:enumeration value="Asia_Shanghai" />
+          <xs:enumeration value="Asia_Taipei" />
+          <xs:enumeration value="Asia_Seoul" />
+          <xs:enumeration value="Asia_Jerusalem" />
+          <xs:enumeration value="Africa_Johannesburg" />
+          <xs:enumeration value="Africa_Windhoek" />
+          <xs:enumeration value="Africa_Maputo" />
+          <xs:enumeration value="Africa_Lusaka" />
+          <xs:enumeration value="Africa_Harare" />
+          <xs:enumeration value="Africa_Dar_es_Salaam" />
+          <xs:enumeration value="Africa_Nairobi" />
+          <xs:enumeration value="Australia_ACT" />
+          <xs:enumeration value="Australia_Adelaide" />
+          <xs:enumeration value="Australia_Brisbane" />
+          <xs:enumeration value="Australia_Broken_Hill" />
+          <xs:enumeration value="Australia_Canberra" />
+          <xs:enumeration value="Australia_Currie" />
+          <xs:enumeration value="Australia_Darwin" />
+          <xs:enumeration value="Australia_Eucla" />
+          <xs:enumeration value="Australia_Hobart" />
+          <xs:enumeration value="Australia_LHI" />
+          <xs:enumeration value="Australia_Lindeman" />
+          <xs:enumeration value="Australia_Lord_Howe" />
+          <xs:enumeration value="Australia_Melbourne" />
+          <xs:enumeration value="Australia_NSW" />
+          <xs:enumeration value="Australia_North" />
+          <xs:enumeration value="Australia_Perth" />
+          <xs:enumeration value="Australia_Queensland" />
+          <xs:enumeration value="Australia_South" />
+          <xs:enumeration value="Australia_Sydney" />
+          <xs:enumeration value="Australia_Tasmania" />
+          <xs:enumeration value="Australia_Victoria" />
+          <xs:enumeration value="Australia_West" />
+          <xs:enumeration value="Australia_Yancowinna" />
+          <xs:enumeration value="Pacific_Auckland" />
+          <xs:enumeration value="IST" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="DateRangePattern">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="UD" />
+          <xs:enumeration value="D0" />
+          <xs:enumeration value="Dm1" />
+          <xs:enumeration value="Dm2" />
+          <xs:enumeration value="Dm3" />
+          <xs:enumeration value="Dm4" />
+          <xs:enumeration value="Dm5" />
+          <xs:enumeration value="Dm6" />
+          <xs:enumeration value="W0" />
+          <xs:enumeration value="Wm1" />
+          <xs:enumeration value="Wm2" />
+          <xs:enumeration value="Wm3" />
+          <xs:enumeration value="WF0" />
+          <xs:enumeration value="WFm1" />
+          <xs:enumeration value="WFm2" />
+          <xs:enumeration value="WFm3" />
+          <xs:enumeration value="M0" />
+          <xs:enumeration value="Mm1" />
+          <xs:enumeration value="Mm2" />
+          <xs:enumeration value="Mm3" />
+          <xs:enumeration value="Mm4" />
+          <xs:enumeration value="Mm5" />
+          <xs:enumeration value="Mm6" />
+          <xs:enumeration value="Mm7" />
+          <xs:enumeration value="Mm8" />
+          <xs:enumeration value="Mm9" />
+          <xs:enumeration value="Y0" />
+          <xs:enumeration value="Ym1" />
+          <xs:enumeration value="Ym2" />
+          <xs:enumeration value="Ym3" />
+          <xs:enumeration value="Ym4" />
+          <xs:enumeration value="Ym5" />
+          <xs:enumeration value="Ym6" />
+          <xs:enumeration value="Ym7" />
+          <xs:enumeration value="Ym8" />
+          <xs:enumeration value="Ym9" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="EventLevel">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="I" />
+          <xs:enumeration value="W" />
+          <xs:enumeration value="A_1" />
+          <xs:enumeration value="A_2" />
+          <xs:enumeration value="A_3" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:schema>
+    <xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://connect.webfleet.tomtomwork.com/transfer/addresses" xmlns:ns1="http://connect.webfleet.tomtomwork.com/transfer" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetDisplayNamespace="http://connect.webfleet.tomtomwork.com/transfer/addresses" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import xmlns="http://www.w3.org/2001/XMLSchema" namespace="http://www.w3.org/2001/XMLSchema-instance" />
+      <xs:import namespace="http://connect.webfleet.tomtomwork.com/transfer" />
+      <xs:complexType name="StreetAddressIdentity">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence />
+            <xs:attribute name="addressNo" type="xs:string" use="required" />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="BasicLocation">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="street" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="postcode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="PhoneContact">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:TransferObjectBase">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="phoneBusiness" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="phoneMobile" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="phonePersonal" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="updateDriverResponse">
+    <wsdl:part name="parameters" element="tns:updateDriverResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertDriver">
+    <wsdl:part name="parameters" element="tns:insertDriver" />
+  </wsdl:message>
+  <wsdl:message name="showDriverAssignmentReport">
+    <wsdl:part name="parameters" element="tns:showDriverAssignmentReport" />
+  </wsdl:message>
+  <wsdl:message name="showDriverGroups">
+    <wsdl:part name="parameters" element="tns:showDriverGroups" />
+  </wsdl:message>
+  <wsdl:message name="deleteDriverGroup">
+    <wsdl:part name="parameters" element="tns:deleteDriverGroup" />
+  </wsdl:message>
+  <wsdl:message name="showDriverAssignmentReportResponse">
+    <wsdl:part name="parameters" element="tns:showDriverAssignmentReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="showDriverGroupsResponse">
+    <wsdl:part name="parameters" element="tns:showDriverGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertDriverResponse">
+    <wsdl:part name="parameters" element="tns:insertDriverResponse" />
+  </wsdl:message>
+  <wsdl:message name="attachDriverToGroup">
+    <wsdl:part name="parameters" element="tns:attachDriverToGroup" />
+  </wsdl:message>
+  <wsdl:message name="updateDriver">
+    <wsdl:part name="parameters" element="tns:updateDriver" />
+  </wsdl:message>
+  <wsdl:message name="detachDriverFromVehicleResponse">
+    <wsdl:part name="parameters" element="tns:detachDriverFromVehicleResponse" />
+  </wsdl:message>
+  <wsdl:message name="detachDriverFromGroup">
+    <wsdl:part name="parameters" element="tns:detachDriverFromGroup" />
+  </wsdl:message>
+  <wsdl:message name="insertDriverGroupResponse">
+    <wsdl:part name="parameters" element="tns:insertDriverGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="attachDriverToVehicle">
+    <wsdl:part name="parameters" element="tns:attachDriverToVehicle" />
+  </wsdl:message>
+  <wsdl:message name="attachDriverToVehicleResponse">
+    <wsdl:part name="parameters" element="tns:attachDriverToVehicleResponse" />
+  </wsdl:message>
+  <wsdl:message name="showDriverGroupDriversResponse">
+    <wsdl:part name="parameters" element="tns:showDriverGroupDriversResponse" />
+  </wsdl:message>
+  <wsdl:message name="detachDriverFromGroupResponse">
+    <wsdl:part name="parameters" element="tns:detachDriverFromGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="attachDriverToGroupResponse">
+    <wsdl:part name="parameters" element="tns:attachDriverToGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertDriverGroup">
+    <wsdl:part name="parameters" element="tns:insertDriverGroup" />
+  </wsdl:message>
+  <wsdl:message name="deleteDriver">
+    <wsdl:part name="parameters" element="tns:deleteDriver" />
+  </wsdl:message>
+  <wsdl:message name="showDriverGroupDrivers">
+    <wsdl:part name="parameters" element="tns:showDriverGroupDrivers" />
+  </wsdl:message>
+  <wsdl:message name="detachDriverFromVehicle">
+    <wsdl:part name="parameters" element="tns:detachDriverFromVehicle" />
+  </wsdl:message>
+  <wsdl:message name="deleteDriverResponse">
+    <wsdl:part name="parameters" element="tns:deleteDriverResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateDriverGroupResponse">
+    <wsdl:part name="parameters" element="tns:updateDriverGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateDriverGroup">
+    <wsdl:part name="parameters" element="tns:updateDriverGroup" />
+  </wsdl:message>
+  <wsdl:message name="deleteDriverGroupResponse">
+    <wsdl:part name="parameters" element="tns:deleteDriverGroupResponse" />
+  </wsdl:message>
+  <wsdl:portType name="driverManagement">
+    <wsdl:operation name="insertDriver">
+      <wsdl:input name="insertDriver" message="tns:insertDriver" />
+      <wsdl:output name="insertDriverResponse" message="tns:insertDriverResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="showDriverGroupDrivers">
+      <wsdl:input name="showDriverGroupDrivers" message="tns:showDriverGroupDrivers" />
+      <wsdl:output name="showDriverGroupDriversResponse" message="tns:showDriverGroupDriversResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="detachDriverFromVehicle">
+      <wsdl:input name="detachDriverFromVehicle" message="tns:detachDriverFromVehicle" />
+      <wsdl:output name="detachDriverFromVehicleResponse" message="tns:detachDriverFromVehicleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="showDriverGroups">
+      <wsdl:input name="showDriverGroups" message="tns:showDriverGroups" />
+      <wsdl:output name="showDriverGroupsResponse" message="tns:showDriverGroupsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="attachDriverToGroup">
+      <wsdl:input name="attachDriverToGroup" message="tns:attachDriverToGroup" />
+      <wsdl:output name="attachDriverToGroupResponse" message="tns:attachDriverToGroupResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDriver">
+      <wsdl:input name="updateDriver" message="tns:updateDriver" />
+      <wsdl:output name="updateDriverResponse" message="tns:updateDriverResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDriverGroup">
+      <wsdl:input name="updateDriverGroup" message="tns:updateDriverGroup" />
+      <wsdl:output name="updateDriverGroupResponse" message="tns:updateDriverGroupResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="showDriverAssignmentReport">
+      <wsdl:input name="showDriverAssignmentReport" message="tns:showDriverAssignmentReport" />
+      <wsdl:output name="showDriverAssignmentReportResponse" message="tns:showDriverAssignmentReportResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteDriver">
+      <wsdl:input name="deleteDriver" message="tns:deleteDriver" />
+      <wsdl:output name="deleteDriverResponse" message="tns:deleteDriverResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="attachDriverToVehicle">
+      <wsdl:input name="attachDriverToVehicle" message="tns:attachDriverToVehicle" />
+      <wsdl:output name="attachDriverToVehicleResponse" message="tns:attachDriverToVehicleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="insertDriverGroup">
+      <wsdl:input name="insertDriverGroup" message="tns:insertDriverGroup" />
+      <wsdl:output name="insertDriverGroupResponse" message="tns:insertDriverGroupResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="detachDriverFromGroup">
+      <wsdl:input name="detachDriverFromGroup" message="tns:detachDriverFromGroup" />
+      <wsdl:output name="detachDriverFromGroupResponse" message="tns:detachDriverFromGroupResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteDriverGroup">
+      <wsdl:input name="deleteDriverGroup" message="tns:deleteDriverGroup" />
+      <wsdl:output name="deleteDriverGroupResponse" message="tns:deleteDriverGroupResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="driverManagementServiceSoapBinding" type="tns:driverManagement">
+    <soap12:binding transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" />
+    <wsdl:operation name="insertDriver">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="insertDriver">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="insertDriverResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showDriverGroupDrivers">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="showDriverGroupDrivers">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="showDriverGroupDriversResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detachDriverFromVehicle">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="detachDriverFromVehicle">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="detachDriverFromVehicleResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="attachDriverToGroup">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="attachDriverToGroup">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="attachDriverToGroupResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showDriverGroups">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="showDriverGroups">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="showDriverGroupsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDriver">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="updateDriver">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateDriverResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDriverGroup">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="updateDriverGroup">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateDriverGroupResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showDriverAssignmentReport">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="showDriverAssignmentReport">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="showDriverAssignmentReportResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="attachDriverToVehicle">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="attachDriverToVehicle">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="attachDriverToVehicleResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDriver">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="deleteDriver">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteDriverResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertDriverGroup">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="insertDriverGroup">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="insertDriverGroupResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detachDriverFromGroup">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="detachDriverFromGroup">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="detachDriverFromGroupResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDriverGroup">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="deleteDriverGroup">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteDriverGroupResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="driverManagementService">
+    <wsdl:port name="driverManagementPort" binding="tns:driverManagementServiceSoapBinding">
+      <soap12:address location="https://soap.business.tomtom.com/v1.13/driverManagementService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

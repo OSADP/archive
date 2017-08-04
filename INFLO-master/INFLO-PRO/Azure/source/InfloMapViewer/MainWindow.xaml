@@ -1,0 +1,342 @@
+﻿<Window x:Class="InfloMapViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:map="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        xmlns:local="clr-namespace:InfloMapViewer"
+        Title="InfloMapViewer"
+        Width="800"
+        Height="600"
+        Closed="Window_Closed" KeyDown="Window_KeyDown">
+
+    <Window.Resources>
+        <BitmapImage x:Key="CarIcon64" UriSource="/InfloMapViewer;component/Resources/cv-icon-64x32.png" />
+        <BitmapImage x:Key="CarIconOutline64" UriSource="/InfloMapViewer;component/Resources/cv-icon-64x32-outline.png" />
+        
+        <BitmapImage x:Key="CarIcon32" UriSource="/InfloMapViewer;component/Resources/cv-icon-32x16.png" />
+        <BitmapImage x:Key="CarIconOutline32" UriSource="/InfloMapViewer;component/Resources/cv-icon-32x16-outline.png" />
+
+        <BitmapImage x:Key="CarIcon24" UriSource="/InfloMapViewer;component/Resources/cv-icon-24x12.png" />
+        <BitmapImage x:Key="CarIconOutline24" UriSource="/InfloMapViewer;component/Resources/cv-icon-24x12-outline.png" />
+
+        <BitmapImage x:Key="CarIcon16" UriSource="/InfloMapViewer;component/Resources/cv-icon-16x8.png" />
+        <BitmapImage x:Key="CarIconOutline16" UriSource="/InfloMapViewer;component/Resources/cv-icon-16x8-outline.png" />
+
+        <BitmapImage x:Key="CarIcon8" UriSource="/InfloMapViewer;component/Resources/cv-icon-8x4.png" />
+        <BitmapImage x:Key="CarIconOutline8" UriSource="/InfloMapViewer;component/Resources/cv-icon-8x4-outline.png" />
+
+        <!--
+        <ControlTemplate x:Key="CarPushpinTemplate" TargetType="map:Pushpin">
+            <Grid
+                x:Name="ContentGrid"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                <StackPanel>
+                    <Grid Margin="0" Width="16" Height="32">
+                        <Rectangle
+                            Fill="{TemplateBinding Background}"
+                            Stroke="#FF000000"
+                            Width="16"
+                            Height="32">
+                            <Rectangle.OpacityMask>
+                                <ImageBrush ImageSource="{StaticResource CarIcon32}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+
+                        <Image                         
+                            Source="{StaticResource CarIcon32}"
+                            Width="16" 
+                            Height="32" 
+                            Opacity="0.25">
+                        </Image>
+
+                        <Image                         
+                            Source="{StaticResource CarIconOutline32}"
+                            Width="16" 
+                            Height="32" 
+                            Opacity="1.0">
+                        </Image>
+                    </Grid>
+                    
+                    <ContentPresenter
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Content="{TemplateBinding Content}"
+                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                        Margin="0"
+                        TextBlock.FontFamily="Segoe UI"
+                        TextBlock.FontWeight="Bold"
+                        TextBlock.Foreground="#FFB8000B"/>
+                </StackPanel>
+            </Grid>
+        </ControlTemplate>
+        -->
+        
+        <ControlTemplate x:Key="CarPushpinTemplate64" TargetType="map:Pushpin">
+            <Grid
+                x:Name="ContentGrid"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                <StackPanel>
+                    <Grid Margin="0" Width="64" Height="64"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        
+                        <Rectangle
+                            Fill="{TemplateBinding Background}"
+                            Stroke="#FF000000"
+                            Width="32"
+                            Height="64">
+                            <Rectangle.OpacityMask>
+                                <ImageBrush ImageSource="{StaticResource CarIcon64}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+
+                        <Image                         
+                            Source="{StaticResource CarIcon64}"
+                            Width="32" 
+                            Height="64" 
+                            Opacity="0.25">
+                        </Image>
+
+                        <Image                         
+                            Source="{StaticResource CarIconOutline64}"
+                            Width="32" 
+                            Height="64" 
+                            Opacity="1.0">
+                        </Image>
+                    </Grid>
+                    
+                    <ContentPresenter
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Content="{TemplateBinding Content}"
+                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                        Margin="0"
+                        TextBlock.FontFamily="Segoe UI"
+                        TextBlock.FontWeight="Bold"
+                        TextBlock.Foreground="#FFB8000B"/>
+                </StackPanel>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="CarPushpinTemplate32" TargetType="map:Pushpin">
+            <Grid
+                x:Name="ContentGrid"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                <StackPanel>
+                    <Grid Margin="0" Width="64" Height="64"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        
+                        <Rectangle
+                            Fill="{TemplateBinding Background}"
+                            Stroke="#FF000000"
+                            Width="16"
+                            Height="32">
+                            <Rectangle.OpacityMask>
+                                <ImageBrush ImageSource="{StaticResource CarIcon32}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+
+                        <Image                         
+                            Source="{StaticResource CarIcon32}"
+                            Width="16" 
+                            Height="32" 
+                            Opacity="0.25">
+                        </Image>
+
+                        <Image                         
+                            Source="{StaticResource CarIconOutline32}"
+                            Width="16" 
+                            Height="32" 
+                            Opacity="1.0">
+                        </Image>
+                    </Grid>
+
+                    <ContentPresenter
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Content="{TemplateBinding Content}"
+                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                        Margin="0"
+                        TextBlock.FontFamily="Segoe UI"
+                        TextBlock.FontWeight="Bold"
+                        TextBlock.Foreground="#FFB8000B"/>
+                </StackPanel>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="CarPushpinTemplate24" TargetType="map:Pushpin">
+            <Grid
+                x:Name="ContentGrid"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                <StackPanel>
+                    <Grid Margin="0" Width="64" Height="64"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        
+                        <Rectangle
+                            Fill="{TemplateBinding Background}"
+                            Stroke="#FF000000"
+                            Width="12"
+                            Height="24">
+                            <Rectangle.OpacityMask>
+                                <ImageBrush ImageSource="{StaticResource CarIcon32}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+
+                        <Image                         
+                            Source="{StaticResource CarIcon32}"
+                            Width="12" 
+                            Height="24" 
+                            Opacity="0.25">
+                        </Image>
+
+                        <Image                         
+                            Source="{StaticResource CarIconOutline32}"
+                            Width="12" 
+                            Height="24" 
+                            Opacity="1.0">
+                        </Image>
+                    </Grid>
+
+                    <ContentPresenter
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Content="{TemplateBinding Content}"
+                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                        Margin="0"
+                        TextBlock.FontFamily="Segoe UI"
+                        TextBlock.FontWeight="Bold"
+                        TextBlock.Foreground="#FFB8000B"/>
+                </StackPanel>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="CarPushpinTemplate16" TargetType="map:Pushpin">
+            <Grid
+                x:Name="ContentGrid"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                <StackPanel>
+                    <Grid Margin="0" Width="64" Height="64"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        
+                        <Rectangle
+                            Fill="{TemplateBinding Background}"
+                            Stroke="#FF000000"
+                            Width="8"
+                            Height="16">
+                            <Rectangle.OpacityMask>
+                                <ImageBrush ImageSource="{StaticResource CarIcon16}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+
+                        <Image                         
+                            Source="{StaticResource CarIcon16}"
+                            Width="8" 
+                            Height="16" 
+                            Opacity="0.25">
+                        </Image>
+
+                        <Image                         
+                            Source="{StaticResource CarIconOutline16}"
+                            Width="8" 
+                            Height="16" 
+                            Opacity="1.0">
+                        </Image>
+                    </Grid>
+
+                    <ContentPresenter
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Content="{TemplateBinding Content}"
+                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                        Margin="0"
+                        TextBlock.FontFamily="Segoe UI"
+                        TextBlock.FontWeight="Bold"
+                        TextBlock.Foreground="#FFB8000B"/>
+                </StackPanel>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="CarPushpinTemplate8" TargetType="map:Pushpin">
+            <Grid
+                x:Name="ContentGrid"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                <StackPanel>
+                    <Grid Margin="0" Width="64" Height="64"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        
+                        <Rectangle
+                            Fill="{TemplateBinding Background}"
+                            Stroke="#FF000000"
+                            Width="4"
+                            Height="8">
+                            <Rectangle.OpacityMask>
+                                <ImageBrush ImageSource="{StaticResource CarIcon8}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+
+                        <Image                         
+                            Source="{StaticResource CarIcon8}"
+                            Width="4" 
+                            Height="8" 
+                            Opacity="0.25">
+                        </Image>
+
+                        <Image                         
+                            Source="{StaticResource CarIconOutline8}"
+                            Width="4" 
+                            Height="8" 
+                            Opacity="1.0">
+                        </Image>
+                    </Grid>
+
+                    <ContentPresenter
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Content="{TemplateBinding Content}"
+                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                        Margin="0"
+                        TextBlock.FontFamily="Segoe UI"
+                        TextBlock.FontWeight="Bold"
+                        TextBlock.Foreground="#FFB8000B"/>
+                </StackPanel>
+            </Grid>
+        </ControlTemplate>
+
+        <!--
+        <DataTemplate x:Key="CarDataTemplate">
+            <map:Pushpin
+                map:MapLayer.Position="{Binding Location}"
+                Tag="{Binding}"
+                Template="{StaticResource CarPushpinTemplate}">
+            </map:Pushpin>
+        </DataTemplate>
+        -->
+    </Window.Resources>
+    
+    <Grid>
+        <map:Map 
+            CredentialsProvider="Ah01qbNC2_hGDTywclKvH_b4d0fIyq2sJaoTsZtPZHOUynitPABg3RhbW4YBeDfA" 
+            Center="39.987048,-83.019198"
+            ZoomLevel="16"
+            AnimationLevel="Full"
+            Name="BingMap"
+            Mode="AerialWithLabels" 
+            ScaleVisibility="Visible"
+            ViewChangeOnFrame="BingMap_ViewChangeOnFrame"/>
+    </Grid>
+</Window>

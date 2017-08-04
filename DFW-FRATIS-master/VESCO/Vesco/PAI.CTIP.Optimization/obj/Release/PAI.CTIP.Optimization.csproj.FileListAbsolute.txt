@@ -1,0 +1,7 @@
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.CTIP.Optimization\bin\Release\PAI.CTIP.Optimization.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.CTIP.Optimization\bin\Release\PAI.CTIP.Optimization.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.CTIP.Optimization\bin\Release\PAI.Core.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.CTIP.Optimization\bin\Release\PAI.Core.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.CTIP.Optimization\obj\Release\PAI.CTIP.Optimization.csprojResolveAssemblyReference.cache
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.CTIP.Optimization\obj\Release\PAI.CTIP.Optimization.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.CTIP.Optimization\obj\Release\PAI.CTIP.Optimization.pdb

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AzureCredentials>{"ServiceManagementEndpoint":"https:\/\/management.core.windows.net\/","SubscriptionId":"77f75fc7-72e4-4a14-93d0-379073e80c15"}</AzureCredentials>
+    <AzureDeleteDeploymentOnFailure>True</AzureDeleteDeploymentOnFailure>
+    <AzureDeploymentLabel>InfloCloudService</AzureDeploymentLabel>
+    <AzureDeploymentReplacementMethod>BlastUpgrade</AzureDeploymentReplacementMethod>
+    <AzureSlot>Production</AzureSlot>
+    <AzureEnableRemoteDesktop>True</AzureEnableRemoteDesktop>
+    <AzureEnableWebDeploy>False</AzureEnableWebDeploy>
+    <AzureFallbackToDeleteAndRecreateIfUpgradeFails>True</AzureFallbackToDeleteAndRecreateIfUpgradeFails>
+    <AzureHostedServiceLabel>inflotst-cloud-roles</AzureHostedServiceLabel>
+    <AzureHostedServiceName>inflotst-cloud-roles</AzureHostedServiceName>
+    <AzureEnableIntelliTrace>False</AzureEnableIntelliTrace>
+    <AzureEnableProfiling>False</AzureEnableProfiling>
+    <AzureServiceConfiguration>Cloud-Seattle-tst</AzureServiceConfiguration>
+    <AzureSolutionConfiguration>Release</AzureSolutionConfiguration>
+    <AzureStorageAccountLabel>inflotstdata</AzureStorageAccountLabel>
+    <AzureStorageAccountName>inflotstdata</AzureStorageAccountName>
+    <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
+    <EnableRemoteDebugger>True</EnableRemoteDebugger>
+    <RemoteDebuggerConnectorCertificateThumbprint>D566BF0EC45DB23BB82A8179B64D459E31E619D6</RemoteDebuggerConnectorCertificateThumbprint>
+  </PropertyGroup>
+</Project>

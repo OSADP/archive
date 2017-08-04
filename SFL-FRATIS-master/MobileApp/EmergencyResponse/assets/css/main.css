@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+.ui-widget{font-size:14px!important;} 
+
+html, body, #map-canvas 
+{
+    font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	z-index: 0;
+}
+
+
+
+#toolbarbg
+{
+	background-color: #FEF0F5;
+	width: 100%;
+	height: 70px;
+	position:absolute;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 10;
+	opacity:0.75;
+	filter:alpha(opacity=75);
+}
+
+.tooltip
+{
+	background-color: #FFFFFF;
+	border-style:solid;
+	border-width:1px;
+	border-color: #000000;
+	padding: 5px;
+	z-index: 1000;
+}
+
+#toolbar 
+{
+	border-bottom:2px solid;
+	border-color: #000;
+	width: 100%;
+	height: 70px;
+	position:absolute;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 11;
+}
+
+.ui-icon-map-osm{ width:24px; height:20px; background-image: url(../images/map_osm.jpg) !important; }
+.ui-icon-map-satellite{ width:24px; height:20px; background-image: url(../images/map_satelite.jpg) !important; }
+.ui-icon-map-road{ width:24px; height:20px; background-image: url(../images/map_road.jpg) !important; }
+
+.ui-textfield {
+	font-size: 16px !important;
+    color: inherit;
+    background: none;
+    text-align: inherit;
+    outline: none;
+    cursor: text;
+}
+
+#menuContainer
+{
+	width:150px; 
+	position:fixed; 
+	z-index:100;
+}
+
+#map_filter_holder
+{
+	position:fixed; 
+	top:100px; 
+	left: -4px; 
+	width:150px; 
+	background-color:#FFFFFF;
+}
+
+.menu_icon
+{
+	position:absolute; 
+	top:2px; 
+	left:2px;	
+}
+
+#errorDialog
+{
+	border-width: 3px;
+	padding:10px;
+	text-align:center;
+	vertical-align:middle;
+	position:fixed;
+	width:50%; 
+	top:45%; 
+	left:25%;	
+	z-index: 200;
+}
+
+input[type=checkbox], input[type=radio]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  margin:5px;
+}
+
+.big-checkbox
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2) !important; /* IE */
+  -moz-transform: scale(2) !important; /* FF */
+  -webkit-transform: scale(2) !important; /* Safari and Chrome */
+  -o-transform: scale(2) !important; /* Opera */
+  margin:5px;
+}
+
+.label
+{
+	padding: 5px;	
+}
+
+.parent-container
+{
+	margin: 5px;
+}
+
+.reportTextBox
+{
+	padding: 5px;
+	width: 100%;
+}
+
+.menuButton
+{
+	padding: 5px !important;
+}
+
+.submitButton
+{
+	padding: 15px !important;
+	background: #BFFF95 !important;
+	color: #000000 !important;
+}
+
+.finishButton
+{
+	padding: 15px !important;
+	background: #71B5FF !important; 
+	color: #000000 !important;
+}
+
+#map_type
+{
+	position:fixed; 
+	right: 5px; 
+	bottom:20px;
+}

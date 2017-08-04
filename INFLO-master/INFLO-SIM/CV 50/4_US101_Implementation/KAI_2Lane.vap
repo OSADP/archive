@@ -1,0 +1,158 @@
+PROGRAM twolane;
+VAP_Frequency 3;
+
+/* The following subroutine creates  */
+
+SUBROUTINE Time1;
+
+	SET_SG_DIRECT(1, GREEN);
+	SET_SG_DIRECT(2, GREEN)
+.
+
+
+/* The following subroutine creates short signal timing */
+
+SUBROUTINE TimeShort;
+
+if starttime = clock THEN
+	STest := Clock*10 + ShortTest;
+	RSTest := Clock*10 + ShortTest + 15;
+	RRSTest := Clock*10 + ShortTest + ShortTest + 15
+End;
+
+	SET_SG_DIRECT(1, RED);
+	SET_SG_DIRECT(2, RED);
+
+CycA:	WAIT_At CycA UNTIL clock*10 >= STest;
+
+	SET_SG_DIRECT(1, Green);
+	SET_SG_DIRECT(2, RED);
+
+CycB:	WAIT_At CycB UNTIL clock*10 >= RSTest;
+
+	SET_SG_DIRECT(1, RED);
+	SET_SG_DIRECT(2, RED);
+
+
+CycC:	WAIT_At CycC UNTIL clock*10 >= RRSTest;
+
+	SET_SG_DIRECT(1, RED);
+	SET_SG_DIRECT(2, GREEN);
+
+CycD:	WAIT_At CycD UNTIL clock*10 >= RRSTest + 14
+
+/* Cyc: GOSUB TimeShort */
+
+
+.
+
+
+/* The following subroutine creates the pattern for a long signal timing */
+
+SUBROUTINE TimeLong;
+
+/* Change the +15 to +10 timing. Then, the cycle was changed from 3.7 to 3 seconds */
+
+if starttime = clock THEN
+	LTest := Clock*10 + LongTest;
+	RLTest := Clock*10 + LongTest + 10;
+	RRLTest := Clock*10 + LongTest + LongTest + 10
+End;
+
+	
+	SET_SG_DIRECT(1, RED);
+	SET_SG_DIRECT(2, RED);
+
+Cyc1:	WAIT_At Cyc1 UNTIL clock*10 >= LTest;
+
+	SET_SG_DIRECT(1, Green);
+	SET_SG_DIRECT(2, RED);
+
+Cyc2:	WAIT_At Cyc2 UNTIL clock*10 >= RLTest;
+
+	SET_SG_DIRECT(1, RED);
+	SET_SG_DIRECT(2, RED);
+
+
+Cyc3:	WAIT_At Cyc3 UNTIL clock*10 >= RRLTest;
+
+	SET_SG_DIRECT(1, RED);
+	SET_SG_DIRECT(2, GREEN);
+
+Cyc4:	WAIT_At Cyc4 UNTIL clock*10 >= RRLTest + 14
+
+/*Cyc1: GOSUB TimeLong */
+
+
+.
+
+
+/* The following subroutine determines which timing length to use */
+
+SUBROUTINE Pattern;
+
+
+
+if clock > 5400 then
+	if clock <= 9000 THEN
+		Short := 1;
+		Long := 0
+	end;
+end;
+
+if clock > 9000 then
+	if clock <= 19800 THEN
+		Short := 0;
+		Long := 1
+	end;
+End
+
+.
+
+
+/* Main program */
+
+
+noTimer := noTimer + 1;
+Short := 0;
+Long := 0;
+
+
+if noTimer = 1 THEN
+	Start (clock)
+end;
+
+/* Timing of the Ramp Metering Cycle in Second When the LongTest is set up at 2 second. The simulation will run 3.7 second per cycle*/
+/* Timing of the Ramp Metering Cycle in Second When the ShortTest is set up at 1 second. The simulation will run 3 second per cycle*/
+
+ShortTest := 2;
+LongTest := 1;	
+StartTime := clock;
+
+
+IF clock <= 5400 THEN
+	GOSUB Time1;
+	goto prog_end
+End;
+
+IF clock > 19800 THEN
+	GOSUB Time1;
+	goto prog_end
+End; 
+
+IF clock > 5400 THEN
+	if Clock <= 19800 Then 	
+		GOSUB Pattern;
+End;
+
+IF short = 1 THEN
+	GOSUB TimeShort
+End;
+
+IF Long = 1 THEN
+	GOSUB TimeLong
+end;
+
+
+END
+prog_end: .

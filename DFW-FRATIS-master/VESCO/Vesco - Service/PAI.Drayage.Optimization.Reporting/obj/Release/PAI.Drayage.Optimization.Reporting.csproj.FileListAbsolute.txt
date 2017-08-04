@@ -1,0 +1,18 @@
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.Drayage.Optimization.Reporting.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.Drayage.Optimization.Reporting.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.CTIP.Optimization.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.Core.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.CTIP.Optimization.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.Core.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Drayage.Optimization.Reporting\obj\Release\PAI.Drayage.Optimization.Reporting.csprojResolveAssemblyReference.cache
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Drayage.Optimization.Reporting\obj\Release\PAI.Drayage.Optimization.Reporting.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Drayage.Optimization.Reporting\obj\Release\PAI.Drayage.Optimization.Reporting.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.Drayage.Optimization.Reporting.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.Drayage.Optimization.Reporting.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.CTIP.Optimization.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.Core.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.CTIP.Optimization.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Drayage.Optimization.Reporting\bin\Release\PAI.Core.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Drayage.Optimization.Reporting\obj\Release\PAI.Drayage.Optimization.Reporting.csprojResolveAssemblyReference.cache
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Drayage.Optimization.Reporting\obj\Release\PAI.Drayage.Optimization.Reporting.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Drayage.Optimization.Reporting\obj\Release\PAI.Drayage.Optimization.Reporting.pdb

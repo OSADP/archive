@@ -1,0 +1,2 @@
+This upload includes the sample network file, including layout file and uses VISSIM 6.00, 64-bit version to run. A user manual is provided for managing the simulations using manager.py python script and all the prerequisites.
+ 

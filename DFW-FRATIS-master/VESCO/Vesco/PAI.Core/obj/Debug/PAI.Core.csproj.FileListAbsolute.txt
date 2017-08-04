@@ -1,0 +1,5 @@
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\bin\Debug\PAI.Core.dll
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\bin\Debug\PAI.Core.pdb
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\obj\Debug\PAI.Core.csprojResolveAssemblyReference.cache
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\obj\Debug\PAI.Core.dll
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\obj\Debug\PAI.Core.pdb

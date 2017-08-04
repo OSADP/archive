@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="setting_file_name">org.battelle.inczone.situationaldisplay.settings</string>
+    
+    <string name="setting_obuMacAddress_name">OBU Device</string>
+    <string name="setting_obuMacAddress_details"></string>
+    <string name="setting_obuMacAddress_key">setting_obuMacAddress_key</string>
+    
+    <string name="setting_enableObdII_name">Enable OBD-II</string>
+    <string name="setting_enableObdII_details">Enable use of OBD-II Device</string>
+    <string name="setting_enableObdII_key">setting_enableObdII_key</string>
+    
+    <string name="setting_obdIIMacAddress_name">OBD-II Device</string>
+    <string name="setting_obdIIMacAddress_details"></string>
+    <string name="setting_obdIIMacAddress_key">setting_obdIIMacAddress_key</string>
+    
+    
+    
+    <string name="setting_ntripEnabled_name">NTRIP Enabled</string>
+    <string name="setting_ntripEnabled_details"></string>
+    <string name="setting_ntripEnabled_key">setting_ntripEnabled_key</string>
+    
+    <string name="setting_ntripEndpoint_name">NTRIP Endpoint</string>
+    <string name="setting_ntripEndpoint_details"></string>
+    <string name="setting_ntripEndpoint_key">setting_ntripEndpoint_key</string>
+    
+    <string name="setting_ntripEndpointPort_name">NTRIP Endpoint Port</string>
+    <string name="setting_ntripEndpointPort_details"></string>
+    <string name="setting_ntripEndpointPort_key">setting_ntripEndpointPort_key</string>
+    
+    <string name="setting_ntripMountPoint_name">NTRIP Mount Point</string>
+    <string name="setting_ntripMountPoint_details"></string>
+    <string name="setting_ntripMountPoint_key">setting_ntripMountPoint_key</string>
+    
+    <string name="setting_ntripUserName_name">NTRIP User Name</string>
+    <string name="setting_ntripUserName_details"></string>
+    <string name="setting_ntripUserName_key">setting_ntripUserName_key</string>
+    
+    <string name="setting_ntripPassword_name">NTRIP Password</string>
+    <string name="setting_ntripPassword_details"></string>
+    <string name="setting_ntripPassword_key">setting_ntripPassword_key</string>
+    
+    
+    
+    <string name="setting_tmeBsmWebUrl_name">BSM WebAPI</string>
+    <string name="setting_tmeBsmWebUrl_details"></string>
+    <string name="setting_tmeBsmWebUrl_key">setting_tmeBsmWebUrl_key</string>
+    <string-array name="setting_tmeBsmWebUrl_displayValues">
+		<item>Development API</item>
+		<item>Test API</item>
+		<item>Production API</item>
+		<item>Post Test Server</item>
+	</string-array>
+    <string-array name="setting_tmeBsmWebUrl_values">
+		<item>http://inflodev-cloud-roles.cloudapp.net/api/bsm</item>
+		<item>http://inflotst-cloud-roles.cloudapp.net/api/bsm</item>
+		<item>http://infloprod-cloud-roles.cloudapp.net/api/bsm</item>
+		<item>http://posttestserver.com/post.php?dir=shadow</item>
+	</string-array>
+    
+    <string name="setting_ringLostConnection_name">Lost Connection Sound</string>
+    <string name="setting_ringLostConnection_details"></string>
+    <string name="setting_ringLostConnection_key">setting_ringLostConnection_key</string>
+    
+    <string name="setting_enableTTS_name">Enabled Text-To-Speech</string>
+    <string name="setting_enableTTS_details">Enables Text-To-Speech for certain alerts</string>
+    <string name="setting_enableTTS_key">setting_enableTTS_key</string>
+    
+</resources>

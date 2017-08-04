@@ -1,0 +1,934 @@
+------ Build started: Project: DSRC_TK_J2735_R36, Configuration: Release x64 ------
+Build started 2/20/2014 5:30:18 PM.
+InitializeBuildStatus:
+  Creating "x64\Release\DSRC_TK_J2735_R36.unsuccessfulbuild" because "AlwaysCreate" was specified.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+ClCompile:
+  Acceleration.cpp
+  AccelerationConfidence.cpp
+  AccelerationSet4Way.cpp
+  AccelSteerYawRateConfidence.cpp
+  AlaCarte.cpp
+  AllInclusive.cpp
+  AmbientAirPressure.cpp
+  AmbientAirTemperature.cpp
+  AntennaOffsetSet.cpp
+  AntiLockBrakeStatus.cpp
+  Approach.cpp
+  ApproachNumber.cpp
+  ApproachObject.cpp
+  asn_codecs_prim.cpp
+..\..\source\DSRC_TK_J2735_R36\asn_codecs_prim.cpp(52): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\asn_codecs_prim.cpp(85): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\asn_codecs_prim.cpp(91): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\asn_codecs_prim.cpp(141): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\asn_codecs_prim.cpp(271): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\asn_codecs_prim.cpp(301): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\asn_codecs_prim.cpp(317): warning C4127: conditional expression is constant
+  asn_SEQUENCE_OF.cpp
+  asn_SET_OF.cpp
+  AuxiliaryBrakeStatus.cpp
+  AxleLocation.cpp
+  AxleWeight.cpp
+  BarrierAttributes.cpp
+  Generating Code...
+  Compiling...
+  BarrierLane.cpp
+  BasicSafetyMessage.cpp
+  BasicSafetyMessageVerbose.cpp
+  ber_decoder.cpp
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(112): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(112): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(151): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(151): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(152): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(152): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(158): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(158): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(159): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(159): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(163): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(179): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(179): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(180): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(180): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(206): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(206): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(221): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(221): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(228): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(228): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(239): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(239): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(240): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(240): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(259): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(259): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(261): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(267): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(267): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(279): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(279): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(288): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(288): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(291): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(310): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_decoder.cpp(310): warning C4127: conditional expression is constant
+  ber_tlv_length.cpp
+  ber_tlv_tag.cpp
+..\..\source\DSRC_TK_J2735_R36\ber_tlv_tag.cpp(145): warning C4244: '=' : conversion from 'ber_tlv_tag_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\ber_tlv_tag.cpp(148): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+  BIT_STRING.cpp
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(121): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(136): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(138): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(146): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(148): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(158): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(161): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(163): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(165): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(197): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BIT_STRING.cpp(211): warning C4127: conditional expression is constant
+  BLOB1_util.cpp
+..\..\source\DSRC_TK_J2735_R36\BLOB1_util.cpp(85): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BLOB1_util.cpp(188): warning C4244: '=' : conversion from 'int' to 'unsigned char', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\BLOB1_util.cpp(566): warning C4189: 'result' : local variable is initialized but not referenced
+  BOOLEAN.cpp
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(160): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(175): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(181): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(220): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(223): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(226): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(230): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(232): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(279): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(288): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(307): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\BOOLEAN.cpp(311): warning C4127: conditional expression is constant
+  BrakeAppliedPressure.cpp
+  BrakeAppliedStatus.cpp
+  BrakeBoostApplied.cpp
+  BrakeSystemStatus.cpp
+  BSMblob.cpp
+  BumperHeightFront.cpp
+  BumperHeightRear.cpp
+  BumperHeights.cpp
+  CargoWeight.cpp
+  Circle.cpp
+  CodeWord.cpp
+  Generating Code...
+c:\users\kucalabal\repository\inflo\trunk\development\azure\external\scsc.asn_r36\source\dsrc_tk_j2735_r36\ber_decoder.cpp(308): warning C4701: potentially uninitialized local variable 'tlv_len' used
+  Compiling...
+  CoefficientOfFriction.cpp
+  ColorState.cpp
+  CommonSafetyRequest.cpp
+  ConfidenceSet.cpp
+  ConnectsTo.cpp
+  constraints.cpp
+  constr_CHOICE.cpp
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(157): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(190): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(195): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(208): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(210): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(225): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(226): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(232): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(246): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(248): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(251): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(252): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(254): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(297): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(298): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(300): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(302): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(305): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(306): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(308): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(321): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(332): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(344): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(346): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(355): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(357): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(362): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(369): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(375): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(381): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(395): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(411): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(413): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(425): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(428): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(455): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(599): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(647): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(651): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(664): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(672): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(673): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(678): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(685): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(700): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(706): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(720): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(722): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(725): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(741): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(748): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(778): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(798): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(811): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(819): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(825): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(829): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(836): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(837): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(843): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(848): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(850): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(852): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(868): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(875): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(886): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(892): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(896): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(899): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(900): warning C4244: '=' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(901): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(904): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(947): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(963): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(980): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(982): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(991): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(997): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(1004): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(1011): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(1013): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(1016): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(1018): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(1051): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(1138): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_CHOICE.cpp(1139): warning C4244: '=' : conversion from 'int' to 'char', possible loss of data
+  constr_SEQUENCE.cpp
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(168): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(198): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(200): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(253): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(254): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(266): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(268): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(274): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(276): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(321): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(329): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(365): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(387): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(402): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(404): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(407): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(453): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(454): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(460): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(463): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(482): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(484): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(494): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(496): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(501): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(515): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(522): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(524): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(527): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(530): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(533): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(563): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(584): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(587): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(617): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(619): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(662): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(709): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(711): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(713): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(725): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(726): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(731): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(738): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(747): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(749): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(752): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(779): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(781): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(784): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(790): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(814): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(821): warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(857): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(877): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(889): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(898): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(906): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(912): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(913): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(920): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(924): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(926): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(928): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(960): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(974): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1072): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1076): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1084): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1093): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1097): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1138): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1172): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1177): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1180): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1181): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1234): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1262): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1336): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1384): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1412): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1431): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1436): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1442): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1447): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE.cpp(1449): warning C4127: conditional expression is constant
+  constr_SEQUENCE_OF.cpp
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(83): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(128): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(132): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(142): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(143): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(152): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(153): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(157): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(164): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(166): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(168): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(180): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(204): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(207): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(214): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(224): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(229): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(233): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SEQUENCE_OF.cpp(237): warning C4127: conditional expression is constant
+  constr_SET_OF.cpp
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(124): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(154): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(159): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(183): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(184): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(192): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(194): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(200): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(202): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(223): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(246): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(253): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(254): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(260): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(263): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(266): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(275): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(277): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(282): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(285): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(289): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(292): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(390): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(482): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(522): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(563): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(565): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(567): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(568): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(581): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(582): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(587): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(594): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(605): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(607): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(612): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(638): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(698): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(702): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(721): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(722): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(726): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(738): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(742): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(749): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(761): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(782): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(804): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(812): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(907): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(914): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(927): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(936): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\constr_SET_OF.cpp(949): warning C4127: conditional expression is constant
+  constr_TYPE.cpp
+  Count.cpp
+  CrosswalkLane.cpp
+  CrosswalkLaneAttributes.cpp
+  DataParameters.cpp
+  DDate.cpp
+  DDateTime.cpp
+  DDay.cpp
+  der_encoder.cpp
+  DescriptiveName.cpp
+  Generating Code...
+  Compiling...
+  DFullTime.cpp
+  DHour.cpp
+  DirectionOfUse.cpp
+  DMinute.cpp
+  DMonth.cpp
+  DMonthDay.cpp
+  DOffset.cpp
+  DriveAxleLiftAirPressure.cpp
+  DriveAxleLocation.cpp
+  DriveAxleLubePressure.cpp
+  DriveAxleTemperature.cpp
+  DrivenLineOffset.cpp
+  DrivingWheelAngle.cpp
+  DSecond.cpp
+  DSignalSeconds.cpp
+  DSRCmsgID.cpp
+  DSRC_ASN_Utils.cpp
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(109): warning C4189: 'a' : local variable is initialized but not referenced
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(110): warning C4189: 'b' : local variable is initialized but not referenced
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(112): warning C4189: 'd' : local variable is initialized but not referenced
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(111): warning C4189: 'c' : local variable is initialized but not referenced
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(287): warning C4244: '=' : conversion from 'unsigned int' to 'unsigned char', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(1181): warning C4245: 'return' : conversion from 'int' to 'size_t', signed/unsigned mismatch
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(1184): warning C4245: 'return' : conversion from 'int' to 'size_t', signed/unsigned mismatch
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(1211): warning C4245: '=' : conversion from 'int' to 'size_t', signed/unsigned mismatch
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(1225): warning C4245: '=' : conversion from 'int' to 'size_t', signed/unsigned mismatch
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(1234): warning C4245: '=' : conversion from 'int' to 'size_t', signed/unsigned mismatch
+..\..\source\DSRC_TK_J2735_R36\DSRC_ASN_Utils.cpp(1241): warning C4245: '=' : conversion from 'int' to 'size_t', signed/unsigned mismatch
+  DTime.cpp
+  DYear.cpp
+  DYearMonth.cpp
+  Generating Code...
+c:\users\kucalabal\repository\inflo\trunk\development\azure\external\scsc.asn_r36\source\dsrc_tk_j2735_r36\dsrc_asn_utils.cpp(96): warning C4701: potentially uninitialized local variable 'i' used
+c:\users\kucalabal\repository\inflo\trunk\development\azure\external\scsc.asn_r36\source\dsrc_tk_j2735_r36\dsrc_asn_utils.cpp(1183): warning C4702: unreachable code
+c:\users\kucalabal\repository\inflo\trunk\development\azure\external\scsc.asn_r36\source\dsrc_tk_j2735_r36\dsrc_asn_utils.cpp(1238): warning C4702: unreachable code
+c:\users\kucalabal\repository\inflo\trunk\development\azure\external\scsc.asn_r36\source\dsrc_tk_j2735_r36\dsrc_asn_utils.cpp(1239): warning C4702: unreachable code
+  Compiling...
+  Elevation.cpp
+  ElevationConfidence.cpp
+  EmergencyDetails.cpp
+  EmergencyVehicleAlert.cpp
+  EssMobileFriction.cpp
+  EssPrecipRate.cpp
+  EssPrecipSituation.cpp
+  EssPrecipYesNo.cpp
+  EssSolarRadiation.cpp
+  EventFlags.cpp
+  ExitService.cpp
+  Extent.cpp
+  ExteriorLights.cpp
+  FullPositionVector.cpp
+  FurtherInfoID.cpp
+  GenericSignage.cpp
+  GPSstatus.cpp
+  Heading.cpp
+  HeadingConfidence.cpp
+  HeadingSlice.cpp
+  Generating Code...
+  Compiling...
+  IA5String.cpp
+  IncidentResponseEquipment.cpp
+  INTEGER.cpp
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(109): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(478): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(507): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(578): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(581): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(583): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(599): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(609): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(621): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(628): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(629): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(644): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(646): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(650): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(658): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(673): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(676): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(679): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(680): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(681): warning C4244: '+=' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(692): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(694): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(711): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(723): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(742): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(763): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(766): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(781): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(785): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(787): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(793): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(799): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(800): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(801): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(805): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\INTEGER.cpp(975): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+  Intersection.cpp
+  IntersectionCollision.cpp
+  IntersectionID.cpp
+  IntersectionState.cpp
+  IntersectionStatusObject.cpp
+  ITIScodes.cpp
+  ITIScodesAndText.cpp
+  ITIStext.cpp
+  J1939data.cpp
+  LaneCount.cpp
+  LaneManeuverCode.cpp
+  LaneNumber.cpp
+  LaneSet.cpp
+  LaneWidth.cpp
+  Latitude.cpp
+  LayerID.cpp
+  LayerType.cpp
+  Generating Code...
+  Compiling...
+  LightbarInUse.cpp
+  Location-quality.cpp
+  Location-tech.cpp
+  Longitude.cpp
+  MapData.cpp
+  MinuteOfTheYear.cpp
+  MinutesDuration.cpp
+  MovementState.cpp
+  MsgCount.cpp
+  MsgCRC.cpp
+  MultiVehicleResponse.cpp
+  MUTCDCode.cpp
+  NativeEnumerated.cpp
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(83): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(92): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(93): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(97): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(115): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(116): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(120): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(129): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(135): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(138): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(141): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(145): warning C4244: '=' : conversion from 'SSIZE_T' to 'long', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(146): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(149): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(183): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(184): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(188): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(195): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(204): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(206): warning C4244: '=' : conversion from '__int64' to 'long', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(218): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(221): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(226): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(227): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(231): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(240): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeEnumerated.cpp(242): warning C4127: conditional expression is constant
+  NativeInteger.cpp
+..\..\source\DSRC_TK_J2735_R36\NativeInteger.cpp(135): warning C4244: '=' : conversion from 'ber_tlv_len_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\NativeInteger.cpp(211): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeInteger.cpp(254): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeInteger.cpp(261): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeInteger.cpp(263): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeInteger.cpp(282): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeInteger.cpp(312): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\NativeInteger.cpp(322): warning C4127: conditional expression is constant
+  NMEA-Corrections.cpp
+  NMEA-MsgType.cpp
+  NMEA-Payload.cpp
+  NMEA-Revision.cpp
+  NodeList.cpp
+  NTCIPVehicleclass.cpp
+  Generating Code...
+  Compiling...
+  ObjectCount.cpp
+  ObstacleDirection.cpp
+  ObstacleDistance.cpp
+  OCTET_STRING.cpp
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(234): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(259): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(265): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(268): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(268): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(269): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(273): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(302): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(323): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(324): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(335): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(336): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(350): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(350): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(352): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(408): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(416): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(423): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(431): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(443): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(443): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(445): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(455): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(459): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(480): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(480): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(483): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(483): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(485): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(493): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(496): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(508): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(514): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(516): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(516): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(519): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(520): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(528): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(530): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(530): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(531): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(534): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(544): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(566): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(619): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(630): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(635): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(640): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(644): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(646): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(663): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(676): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(684): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(689): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(692): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(700): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(703): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(707): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(709): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(778): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(790): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(796): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(819): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(836): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(844): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(847): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(899): warning C4244: '=' : conversion from 'unsigned int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(913): warning C4244: '=' : conversion from 'unsigned int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(920): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(976): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(979): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1019): warning C4244: 'return' : conversion from '__int64' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1026): warning C4244: 'return' : conversion from '__int64' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1053): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1060): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1075): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1085): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1088): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1092): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1131): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1136): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1144): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1154): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1162): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1294): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1295): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1296): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1297): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1305): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1318): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1319): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1320): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1321): warning C4244: '=' : conversion from 'int' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1366): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1433): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1469): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1482): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1498): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1512): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1519): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1526): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1539): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1556): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1563): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1566): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1568): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1569): warning C4244: '+=' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1604): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1621): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1675): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1684): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1696): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1705): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1706): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1713): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1714): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1720): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1730): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1732): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1738): warning C4244: '-=' : conversion from 'SSIZE_T' to 'unsigned int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1742): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1770): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\OCTET_STRING.cpp(1864): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+  Offsets.cpp
+  PathHistory.cpp
+  PathHistoryPointType-01.cpp
+  PathHistoryPointType-02.cpp
+  PathHistoryPointType-03.cpp
+  PathHistoryPointType-04.cpp
+  PathHistoryPointType-05.cpp
+  PathHistoryPointType-06.cpp
+  PathHistoryPointType-07.cpp
+  PathHistoryPointType-08.cpp
+  PathHistoryPointType-09.cpp
+  PathHistoryPointType-10.cpp
+  PathPrediction.cpp
+  Payload.cpp
+  PayloadData.cpp
+  PedestrianDetect.cpp
+  Generating Code...
+c:\users\kucalabal\repository\inflo\trunk\development\azure\external\scsc.asn_r36\source\dsrc_tk_j2735_r36\octet_string.cpp(832): warning C4706: assignment within conditional expression
+  Compiling...
+  PedestrianSignalState.cpp
+  per_decoder.cpp
+..\..\source\DSRC_TK_J2735_R36\per_decoder.cpp(75): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_decoder.cpp(99): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_decoder.cpp(105): warning C4127: conditional expression is constant
+  per_encoder.cpp
+..\..\source\DSRC_TK_J2735_R36\per_encoder.cpp(156): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_encoder.cpp(175): warning C4127: conditional expression is constant
+  per_opentype.cpp
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(72): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(106): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(114): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(120): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(122): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(141): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(149): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(152): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(196): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(213): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(218): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(222): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(223): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(228): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(229): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(235): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(236): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(237): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(244): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(249): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(252): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(259): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\per_opentype.cpp(164): warning C4505: 'uper_open_type_get_complex' : unreferenced local function has been removed
+  per_support.cpp
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(82): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(87): warning C4244: '-=' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(158): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(166): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(167): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(168): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(180): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(182): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(183): warning C4244: '=' : conversion from 'int32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(261): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(322): warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(350): warning C4267: '=' : conversion from 'size_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(353): warning C4267: '=' : conversion from 'size_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(354): warning C4244: '=' : conversion from 'uint32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(357): warning C4267: '=' : conversion from 'size_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(358): warning C4244: '=' : conversion from 'uint32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(359): warning C4244: '=' : conversion from 'uint32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(363): warning C4244: '=' : conversion from 'uint32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(364): warning C4244: '=' : conversion from 'uint32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(365): warning C4244: '=' : conversion from 'uint32_t' to 'uint8_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(419): warning C4267: 'argument' : conversion from 'size_t' to 'uint32_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(422): warning C4267: 'argument' : conversion from 'size_t' to 'uint32_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(428): warning C4267: 'argument' : conversion from 'size_t' to 'uint32_t', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\per_support.cpp(444): warning C4267: 'argument' : conversion from 'size_t' to 'uint32_t', possible loss of data
+  Position3D.cpp
+  PositionalAccuracy.cpp
+  PositionConfidence.cpp
+  PositionConfidenceSet.cpp
+  PreemptState.cpp
+  Priority.cpp
+  PriorityState.cpp
+  ProbeDataManagement.cpp
+  ProbeSegmentNumber.cpp
+  ProbeVehicleData.cpp
+  RainSensor.cpp
+  RegionList.cpp
+  RegionOffsets.cpp
+  RegionPointSet.cpp
+  RequestedItem.cpp
+  Generating Code...
+  Compiling...
+  ResponderGroupAffected.cpp
+  ResponseType.cpp
+  RoadSideAlert.cpp
+  RoadSignID.cpp
+  RTCM-Corrections.cpp
+  RTCM-ID.cpp
+  RTCM-Payload.cpp
+  RTCM-Revision.cpp
+  RTCMHeader.cpp
+  RTCMmsg.cpp
+  RTCMPackage.cpp
+  Sample.cpp
+  ShapePointSet.cpp
+  SignalControlZone.cpp
+  SignalLightState.cpp
+  SignalReqScheme.cpp
+  SignalRequest.cpp
+  SignalRequestMsg.cpp
+  SignalState.cpp
+  SignalStatusMessage.cpp
+  Generating Code...
+  Compiling...
+  SignPrority.cpp
+  SirenInUse.cpp
+  Snapshot.cpp
+  SnapshotDistance.cpp
+  SnapshotTime.cpp
+  SPAT.cpp
+  SpecialLane.cpp
+  SpecialLaneAttributes.cpp
+  SpecialSignalState.cpp
+  Speed.cpp
+  SpeedandHeadingandThrottleConfidence.cpp
+  SpeedConfidence.cpp
+  SpeedLimit.cpp
+  StabilityControlStatus.cpp
+  StateConfidence.cpp
+  SteeringAxleLubePressure.cpp
+  SteeringAxleTemperature.cpp
+  SteeringWheelAngle.cpp
+  SteeringWheelAngleConfidence.cpp
+  SteeringWheelAngleRateOfChange.cpp
+  Generating Code...
+  Compiling...
+  SunSensor.cpp
+  TemporaryID.cpp
+  TermDistance.cpp
+  TermTime.cpp
+  ThrottleConfidence.cpp
+  ThrottlePosition.cpp
+  TimeConfidence.cpp
+  TimeMark.cpp
+  TireLeakageRate.cpp
+  TireLocation.cpp
+  TirePressure.cpp
+  TirePressureThresholdDetection.cpp
+  TireTemp.cpp
+  TractionControlState.cpp
+  TrailerWeight.cpp
+  TransitPreEmptionRequest.cpp
+  TransitStatus.cpp
+  TransmissionAndSpeed.cpp
+  TransmissionState.cpp
+  TravelerInformation.cpp
+  Generating Code...
+  Compiling...
+  TravelerInfoType.cpp
+  TxTime.cpp
+  UniqueMSGID.cpp
+  URL-Base.cpp
+  URL-Link.cpp
+  URL-Short.cpp
+  ValidRegion.cpp
+  VehicleComputedLane.cpp
+  VehicleGroupAffected.cpp
+  VehicleHeight.cpp
+  VehicleIdent.cpp
+  VehicleLaneAttributes.cpp
+  VehicleLength.cpp
+  VehicleMass.cpp
+  VehicleReferenceLane.cpp
+  VehicleRequestStatus.cpp
+  VehicleSafetyExtension.cpp
+  VehicleSize.cpp
+  VehicleStatus.cpp
+  VehicleStatusDeviceTypeTag.cpp
+  Generating Code...
+  Compiling...
+  VehicleStatusRequest.cpp
+  VehicleType.cpp
+  VehicleWidth.cpp
+  VerticalAcceleration.cpp
+  VerticalAccelerationThreshold.cpp
+  VINstring.cpp
+  WheelEndElectFault.cpp
+  WheelSensorStatus.cpp
+  WiperRate.cpp
+  WiperStatus.cpp
+  WiperStatusFront.cpp
+  WiperStatusRear.cpp
+  WorkZone.cpp
+  xer_decoder.cpp
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(250): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(262): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(264): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(268): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(279): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(281): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(290): warning C4244: 'argument' : conversion from 'SSIZE_T' to 'int', possible loss of data
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(302): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(303): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(305): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(308): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(313): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(315): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(324): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(329): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_decoder.cpp(342): warning C4127: conditional expression is constant
+  xer_encoder.cpp
+..\..\source\DSRC_TK_J2735_R36\xer_encoder.cpp(54): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_encoder.cpp(59): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_encoder.cpp(63): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_encoder.cpp(65): warning C4127: conditional expression is constant
+  xer_support.cpp
+..\..\source\DSRC_TK_J2735_R36\xer_support.cpp(132): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_support.cpp(144): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_support.cpp(150): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_support.cpp(157): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_support.cpp(174): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_support.cpp(194): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_support.cpp(232): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_support.cpp(248): warning C4127: conditional expression is constant
+..\..\source\DSRC_TK_J2735_R36\xer_support.cpp(251): warning C4127: conditional expression is constant
+  YawRate.cpp
+  YawRateConfidence.cpp
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+Lib:
+  DSRC_TK_J2735_R36.vcxproj -> C:\Users\kucalabal\Repository\INFLO\trunk\development\Azure\external\SCSC.ASN_r36\build\DSRC_TK_J2735_R36\x64\Release\DSRC_TK_J2735_R36.lib
+PostBuildEvent:
+  C:\Users\kucalabal\Repository\INFLO\trunk\development\Azure\external\SCSC.ASN_r36\build\DSRC_TK_J2735_R36\x64\Release\DSRC_TK_J2735_R36.lib -> C:\Users\kucalabal\Repository\INFLO\trunk\development\Azure\external\SCSC.ASN_r36\bin\x64-msvc110-Zi-02-EHsc-GR-MD\DSRC_TK_J2735_R36.lib
+  1 File(s) copied
+FinalizeBuildStatus:
+  Deleting file "x64\Release\DSRC_TK_J2735_R36.unsuccessfulbuild".
+  Touching "x64\Release\DSRC_TK_J2735_R36.lastbuildstate".
+
+Build succeeded.
+
+Time Elapsed 00:05:31.46

@@ -1,0 +1,11 @@
+/* latin */
+
+@font-face {
+    font-family: 'Asap-Regular'; /*a name to be used later*/
+    src: url('../../../resources/Font/Asap-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Asap-Bold'; /*a name to be used later*/
+    src: url('../../../resources/Font/Asap-Bold.ttf'); /*URL to font*/
+}

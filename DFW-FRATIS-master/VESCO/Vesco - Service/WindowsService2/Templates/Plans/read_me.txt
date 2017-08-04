@@ -1,0 +1,1 @@
+﻿This folder contains all the generated plans, including the plans that get FTP'd to trinium.  This directroy is just used as reference and generated plans are safe to delete.

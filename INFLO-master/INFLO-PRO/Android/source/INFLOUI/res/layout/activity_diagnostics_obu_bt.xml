@@ -1,0 +1,351 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:text="OBU BT"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/diag_txtObuBtState"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="right|center_vertical"
+            android:layout_row="0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+    
+    <LinearLayout
+        android:id="@+id/diag_layoutObuInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	        
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingBottom="5dp" >
+	        
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_gravity="center_horizontal"
+		        android:gravity="center_horizontal"
+		        android:paddingBottom="5dp" >
+		        
+		        <TextView
+		            android:paddingRight="16dp"
+		            android:id="@+id/diag_txtRsuRssi"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:text="RSU RSSI: 0"
+		            android:textAllCaps="true"
+		            android:textSize="16sp"
+		            android:textColor="#ffffff" />
+		        
+		        <TextView
+		            android:id="@+id/diag_txtRsuInRange"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:text="RSU In-Range"
+		            android:textAllCaps="true"
+		            android:textSize="16sp"
+		            android:textColor="#333333" />
+		        
+		        
+		    </LinearLayout>
+	        
+	        <TextView
+	            android:id="@+id/diag_txtReceivingBsms"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:text="Receiving Remote BSM's"
+	            android:textAllCaps="true"
+	            android:textSize="16sp"
+	            android:textColor="#333333" />
+	        
+	        <TextView
+	            android:id="@+id/diag_txtRelayingTims"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:text="Relaying TIM's"
+	            android:textAllCaps="true"
+	            android:textSize="16sp"
+	            android:textColor="#333333" />
+	        
+	        <TextView
+	            android:id="@+id/diag_txtQueued"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:text="Queued"
+	            android:textAllCaps="true"
+	            android:textSize="16sp"
+	            android:textColor="#333333" />
+	    </LinearLayout>
+	    
+	    <GridLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="20dp" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="right|top"
+	            android:layout_row="0"
+	            android:text="Battery: "
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:visibility="gone" />
+	
+	        <TextView
+	            android:id="@+id/diag_txtObuBatteryPerc"
+	            android:textColor="#ffffff"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="1"
+	            android:layout_gravity="left|top"
+	            android:layout_row="0"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:visibility="gone" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="right|top"
+	            android:layout_row="1"
+	            android:text="GPS Status: "
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/diag_txtObuGpsStatus"
+	            android:textColor="#ffffff"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="1"
+	            android:layout_gravity="left|top"
+	            android:layout_row="1"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="right|top"
+	            android:layout_row="5"
+	            android:text="Roadway: "
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/diag_txtRoadway"
+	            android:textColor="#ffffff"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="1"
+	            android:layout_gravity="left|top"
+	            android:layout_row="5"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="right|top"
+	            android:layout_row="6"
+	            android:text="Remote Vehicles: "
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/diag_txtRemoteVehicles"
+	            android:textColor="#ffffff"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="1"
+	            android:layout_gravity="left|top"
+	            android:layout_row="6"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="right|top"
+	            android:layout_row="7"
+	            android:text="Closest RV: "
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/diag_txtRvDist"
+	            android:textColor="#ffffff"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="1"
+	            android:layout_gravity="left|top"
+	            android:layout_row="7"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="0"
+	            android:layout_gravity="right|top"
+	            android:layout_row="8"
+	            android:text="RSSI: "
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/diag_txtRssi"
+	            android:textColor="#ffffff"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_column="1"
+	            android:layout_gravity="left|top"
+	            android:layout_row="8"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	    </GridLayout>
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:text="BSM Messages"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:paddingLeft="20dp" 
+	        android:baselineAligned="false">
+	
+	        <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Received: "
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+		        
+		        <TextView
+		            android:id="@+id/diag_txtBsmReceivedCount"
+	            	android:textColor="#ffffff"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="-"
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        </LinearLayout>
+	        
+			<LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Posted: "
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+		        
+		        <TextView
+		            android:id="@+id/diag_txtBsmPostedCount"
+	            	android:textColor="#ffffff"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="-"
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:text="TIM Request Messages"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:paddingLeft="20dp" 
+	        android:baselineAligned="false">
+	
+	        <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Requests: "
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+		        
+		        <TextView
+		            android:id="@+id/diag_txtTimRequestCount"
+	            	android:textColor="#ffffff"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="-"
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        </LinearLayout>
+	        
+			<LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Responses: "
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+		        
+		        <TextView
+		            android:id="@+id/diag_txtTimResponseCount"
+	            	android:textColor="#ffffff"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="-"
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	        
+    </LinearLayout>
+
+</LinearLayout>

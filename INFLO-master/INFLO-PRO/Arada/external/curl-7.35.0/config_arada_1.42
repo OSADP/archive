@@ -1,0 +1,14 @@
+#!/bin/sh
+
+cd curl-7.35.0
+
+export TOOLDIR=/opt/build/toolchain/PB44/buildroot/build_mips/staging_dir/usr/bin
+export CPPFLAGS="-I /opt/build/toolchain/PB44/buildroot/build_mips/staging_dir/usr/include"
+export AR=$TOOLDIR/mips-linux-uclibc-ar
+export AS=$TOOLDIR/mips-linux-uclibc-as
+export LD=$TOOLDIR/mips-linux-uclibc-ld
+export RANLIB=$TOOLDIR/mips-linux-uclibc-ranlib
+export CC=$TOOLDIR/mips-linux-uclibc-gcc
+export NM=$TOOLDIR/mips-linux-uclibc-nm
+
+./configure --target=mips-linux-uclibc --host=i686-pc-linux-gnu --build=mips-linux-uclibc --prefix=$PWD/../arada_1.42

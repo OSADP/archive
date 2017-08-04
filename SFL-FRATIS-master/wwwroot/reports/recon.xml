@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<report	title="RECON Report" uploadscript="recon.php">
+	<page xml:id="home">
+		<textinput xml:id="reconTeam" text="RECON Team" />
+		<textinput xml:id="reportId" text="RECON Report #" />
+		
+		<radio xml:id="reportType" text="Report Type">
+			<option text="Area" value="area" />
+			<option text="Point" value="point" /> 
+		</radio>
+		
+		<textinput xml:id="targetName" text="Target Name" />
+		
+		<button text="Place On Map" dbid="map" action="map" />
+		
+		<dateinput xml:id="dateTime" text="Date/Time" />
+		
+		<menu text="Enter Damage">
+			<link text="Debris" location="debris" />
+			<link text="Flooding" location="flooding" />
+			<link text="Structure Damage" location="structure" />
+			<link text="Infrastructure" location="infrastructure" />
+			<link text="Transportation" location="transportation" />
+			<link text="Emergency Services" location="emergency" />
+			<link text="Casualties" location="casualties" />
+		</menu>
+		
+		<button text="Submit Report" action="submit" />
+	</page>
+	
+	<page xml:id="debris" dbid="DamageType">
+		<button text="Take Photo" dbid="debris" action="photo" />
+		
+		<checkbox xml:id="shingles" dbid="DamageSubType" text="Shingles" gpsposition="" />
+			<textinput xml:id="shingles_comment" parent="shingles" dbid="DamageComment" text="Comment" />
+		
+		<checkbox xml:id="building_debris" dbid="DamageSubType" text="Building Debris" gpsposition="" />
+			<textinput xml:id="building_debris_comment" parent="building_debris" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="street_business_signs" dbid="DamageSubType" text="Street/Business Signs" gpsposition="" />
+			<textinput xml:id="street_business_signs_comment" parent="street_business_signs" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="trees_dn_less_ft" dbid="DamageSubType" text="Trees Down &lt;1 foot" gpsposition="" />
+			<checkbox text="All Directions" xml:id="tdnlftad" parent="trees_dn_less_ft" dbid="DamageModifier" dbvalue="all_direction" />
+			<checkbox text="One Direction" xml:id="tdnlftod" parent="trees_dn_less_ft" dbid="DamageModifier" dbvalue="one_direction" />
+			<textinput xml:id="trees_dn_less_ft_comment" parent="trees_dn_less_ft" dbid="DamageComment" text="Comment" />
+		
+		<checkbox xml:id="trees_dn_more_ft" dbid="DamageSubType" text="Trees Down &gt;1 foot" gpsposition="" />
+			<checkbox text="All Directions" xml:id="tdnmftad" parent="trees_dn_more_ft" dbid="DamageModifier" dbvalue="all_direction" />
+			<checkbox text="One Direction" xml:id="tdnmftod" parent="trees_dn_more_ft" dbid="DamageModifier" dbvalue="one_direction" />
+			<textinput xml:id="trees_dn_more_ft_comment" parent="trees_dn_more_ft" dbid="DamageComment" text="Comment" />
+		
+		<checkbox xml:id="utility_poles" dbid="DamageSubType" text="Utility Poles Down" gpsposition="" />
+			<checkbox text="Steel" xml:id="upsteel" parent="utility_poles" dbid="DamageModifier" dbvalue="steel" />
+			<checkbox text="Concrete" xml:id="upconcrete" parent="utility_poles" dbid="DamageModifier" dbvalue="concrete" />
+			<checkbox text="Wood" xml:id="upwood" parent="utility_poles" dbid="DamageModifier" dbvalue="wood" />
+			<textinput xml:id="utility_poles_comment" parent="utility_poles" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="vehicular_debris" dbid="DamageSubType" text="Vehicular Debris" gpsposition="" />
+			<checkbox text="Overturned" xml:id="vdoverturned" parent="vehicular_debris" dbid="DamageModifier" dbvalue="overturned" />
+			<checkbox text="Aground (Boats Only)" xml:id="vdaground" parent="vehicular_debris" dbid="DamageModifier" dbvalue="aground" />
+			<textinput xml:id="vehicular_debris_comment" parent="vehicular_debris" dbid="DamageComment" text="Comment" />
+		
+		<button text="Back To Report" action="finish" />
+	</page>
+	
+	<page xml:id="flooding" dbid="DamageType">
+		<button text="Take Photo" dbid="flooding" action="photo" />
+		
+		<checkbox xml:id="street_flooding" dbid="DamageSubType" text="Street Flooding" gpsposition="" />
+			<checkbox text="&lt; 1 foot" xml:id="sfl1f" parent="street_flooding" dbid="DamageModifier" dbvalue="less_foot" />
+			<checkbox text="1-3 feet" xml:id="sf13f" parent="street_flooding" dbid="DamageModifier" dbvalue="1to3_foot" />
+			<checkbox text="&gt; 3 feet" xml:id="sfm3f" parent="street_flooding" dbid="DamageModifier" dbvalue="more3_foot" />
+			<textinput xml:id="street_flooding_comment" parent="street_flooding" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="localized_flooding" dbid="DamageSubType" text="Localized Flooding" gpsposition="" />
+			<checkbox text="&lt; 1 foot" xml:id="lfl1f" parent="localized_flooding" dbid="DamageModifier" dbvalue="less_foot" />
+			<checkbox text="1-3 feet" xml:id="lf13f" parent="localized_flooding" dbid="DamageModifier" dbvalue="1to3_foot" />
+			<checkbox text="&gt; 3 feet" xml:id="lfm3f" parent="localized_flooding" dbid="DamageModifier" dbvalue="more3_foot" />
+			<textinput xml:id="localized_flooding_comment" parent="localized_flooding" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="widespread_flooding" dbid="DamageSubType" text="Widespread Flooding" gpsposition="" />
+			<checkbox text="&lt; 1 foot" xml:id="wfl1f" parent="widespread_flooding" dbid="DamageModifier" dbvalue="less_foot" />
+			<checkbox text="1-3 feet" xml:id="wf13f" parent="widespread_flooding" dbid="DamageModifier" dbvalue="1to3_foot" />
+			<textinput xml:id="widespread_flooding_comment" parent="widespread_flooding" dbid="DamageComment" text="Comment" />
+			
+		<button text="Back To Report" action="finish" />
+	</page>
+	
+	<page xml:id="structure" dbid="DamageType">
+		<button text="Take Photo" dbid="structure" action="photo" />
+		
+		<label text="Wind Damages" />
+	
+		<checkbox xml:id="wind_none" dbid="DamageSubType" text="None &#9;(Nothing Visible)" gpsposition="" />
+			<textinput xml:id="wind_none_comment" parent="wind_none" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="wind_light" dbid="DamageSubType" text="Light &#9;(Shingles/Siding/Windows)" gpsposition="" />
+			<textinput xml:id="wind_light_comment" parent="wind_light" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="wind_moderate" dbid="DamageSubType" text="Moderate &#9;(Wall/Roof Damage)" gpsposition="" />
+			<textinput xml:id="wind_moderate_comment" parent="wind_moderate" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="wind_heavy" dbid="DamageSubType" text="Heavy &#9;(Walls Missing/Partial Collapse)" gpsposition="" />
+			<textinput xml:id="wind_heavy_comment" parent="wind_heavy" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="wind_catastrophic" dbid="DamageSubType" text="Heavy &#9;(Total Destruction)" gpsposition="" />
+			<textinput xml:id="wind_catastrophic_comment" parent="wind_catastrophic" dbid="DamageComment" text="Comment" />
+			
+		<label text="Coastal Surge Zones Only" />
+		
+		<checkbox xml:id="coastal_light" dbid="DamageSubType" text="1st Floor Only" gpsposition="" />
+			<textinput xml:id="coastal_light_comment" parent="coastal_light" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="coastal_moderate" dbid="DamageSubType" text="2nd Floor Damaged" gpsposition="" />
+			<textinput xml:id="coastal_moderate_comment" parent="coastal_moderate" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="coastal_heavy" dbid="DamageSubType" text="Building Destroyed/Missing" gpsposition="" />
+			<textinput xml:id="coastal_heavy_comment" parent="coastal_heavy" dbid="DamageComment" text="Comment" />
+			
+		<button text="Back To Report" action="finish" />
+	</page>
+	
+	
+	<page xml:id="infrastructure" dbid="DamageType">
+		<button text="Take Photo" dbid="infrastructure" action="photo" />
+		
+		<checkbox xml:id="electric_power" dbid="DamageSubType" text="Electric Power" gpsposition="" />
+			<checkbox text="Operational" xml:id="epon" parent="electric_power" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Out" xml:id="epoff" parent="electric_power" dbid="DamageModifier" dbvalue="out" />
+			<textinput xml:id="electric_power_comment" parent="electric_power" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="water_supply" dbid="DamageSubType" text="Water Supply" gpsposition="" />
+			<checkbox text="Operational" xml:id="wson" parent="water_supply" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Out" xml:id="wsoff" parent="water_supply" dbid="DamageModifier" dbvalue="out" />
+			<textinput xml:id="water_supply_comment" parent="water_supply" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="sewer_system" dbid="DamageSubType" text="Sewer System" gpsposition="" />
+			<checkbox text="Operational" xml:id="sson" parent="sewer_system" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Out" xml:id="ssoff" parent="sewer_system" dbid="DamageModifier" dbvalue="out" />
+			<textinput xml:id="sewer_system_comment" parent="sewer_system" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="telephone_system" dbid="DamageSubType" text="Telephone System" gpsposition="" />
+			<checkbox text="Operational" xml:id="tson" parent="telephone_system" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Out" xml:id="tsoff" parent="telephone_system" dbid="DamageModifier" dbvalue="out" />
+			<textinput xml:id="telephone_system_comment" parent="telephone_system" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="radio_television" dbid="DamageSubType" text="Radio/Television Stations" gpsposition="" />
+			<checkbox text="Operational" xml:id="rton" parent="radio_television" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Out" xml:id="rtoff" parent="radio_television" dbid="DamageModifier" dbvalue="out" />
+			<textinput xml:id="radio_television_comment" parent="radio_television" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="food_grocery" dbid="DamageSubType" text="Food/Grocery Stores Open" gpsposition="" />
+			<checkbox text="Some" xml:id="fgsome" parent="food_grocery" dbid="DamageModifier" dbvalue="some" />
+			<checkbox text="Most" xml:id="fgmost" parent="food_grocery" dbid="DamageModifier" dbvalue="most" />
+			<checkbox text="All" xml:id="fgall" parent="food_grocery" dbid="DamageModifier" dbvalue="all" />
+			<textinput xml:id="food_grocery_comment" parent="food_grocery" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="gas_stations" dbid="DamageSubType" text="Gas Stations Open" gpsposition="" />
+			<checkbox text="Some" xml:id="gssome" parent="gas_stations" dbid="DamageModifier" dbvalue="some" />
+			<checkbox text="Most" xml:id="gsmost" parent="gas_stations" dbid="DamageModifier" dbvalue="most" />
+			<checkbox text="All" xml:id="gsall" parent="gas_stations" dbid="DamageModifier" dbvalue="all" />
+			<textinput xml:id="gas_stations_comment" parent="gas_stations" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="hardware_stores" dbid="DamageSubType" text="Hardware Stores Open" gpsposition="" />
+			<checkbox text="Some" xml:id="hssome" parent="hardware_stores" dbid="DamageModifier" dbvalue="some" />
+			<checkbox text="Most" xml:id="hsmost" parent="hardware_stores" dbid="DamageModifier" dbvalue="most" />
+			<checkbox text="All" xml:id="hsall" parent="hardware_stores" dbid="DamageModifier" dbvalue="all" />
+			<textinput xml:id="hardware_stores_comment" parent="hardware_stores" dbid="DamageComment" text="Comment" />
+			
+		<button text="Back To Report" action="finish" />
+	</page>
+	
+
+	<page xml:id="transportation" dbid="DamageType">
+		<button text="Take Photo" dbid="transportation" action="photo" />
+		
+		<checkbox xml:id="major_roads_blocked" dbid="DamageSubType" text="Major Roads Blocked" gpsposition="" />
+			<textinput xml:id="major_roads_blocked_route" parent="major_roads_blocked" dbid="DamageRoute" text="Route Name" />
+			<textinput xml:id="major_roads_blocked_comment" parent="major_roads_blocked" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="local_roads_blocked" dbid="DamageSubType" text="Local Roads Blocked" gpsposition="" />
+			<textinput xml:id="local_roads_blocked_route" parent="local_roads_blocked" text="Route Name" />
+			<textinput xml:id="local_roads_blocked_comment" parent="local_roads_blocked" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="bridges" dbid="DamageSubType" text="Bridges" gpsposition="" />
+			<checkbox text="Blocked" xml:id="bblocked" parent="bridges" dbid="DamageModifier" dbvalue="blocked" />
+			<checkbox text="Destroyed" xml:id="bdestroyed" parent="bridges" dbid="DamageModifier" dbvalue="destroyed" />
+			<textinput xml:id="bridges_route" parent="bridges" dbid="DamageRoute" text="Route Name" />
+			<textinput xml:id="bridges_comment" parent="bridges" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="runways_blocked" dbid="DamageSubType" text="Runways Blocked" gpsposition="" />
+			<textinput xml:id="runways_blocked_route" parent="runways_blocked" text="Route Name" />
+			<textinput xml:id="runways_blocked_comment" parent="runways_blocked" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="rail_line_blocked" dbid="DamageSubType" text="Rail Line Blocked" gpsposition="" />
+			<textinput xml:id="rail_line_blocked_route" parent="rail_line_blocked" dbid="DamageRoute" text="Route Name" />
+			<textinput xml:id="rail_line_blocked_comment" parent="rail_line_blocked" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="canal_blocked" dbid="DamageSubType" text="Canal Blocked" gpsposition="" />
+			<textinput xml:id="canal_blocked_route" parent="canal_blocked" dbid="DamageRoute" text="Route Name" />
+			<textinput xml:id="canal_blocked_comment" parent="canal_blocked" dbid="DamageComment" text="Comment" />
+			
+		<button text="Back To Report" action="finish" />
+	</page>
+	
+	<page xml:id="emergency" dbid="DamageType">
+		<button text="Take Photo" dbid="emergency" action="photo" />
+		
+		<checkbox xml:id="eoc" dbid="DamageSubType" text="EOC" gpsposition="" />
+			<checkbox text="Operational" xml:id="eocon" parent="eoc" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Damaged" xml:id="eocoff" parent="eoc" dbid="DamageModifier" dbvalue="damaged" />
+			<textinput xml:id="eoc_comment" parent="eoc" dbid="DamageComment" text="Comment" />
+	
+		<checkbox xml:id="police" dbid="DamageSubType" text="Police" gpsposition="" />
+			<checkbox text="Operational" xml:id="polon" parent="police" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Damaged" xml:id="poloff" parent="police" dbid="DamageModifier" dbvalue="damaged" />
+			<textinput xml:id="police_comment" parent="police" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="fire" dbid="DamageSubType" text="Fire" gpsposition="" />
+			<checkbox text="Operational" xml:id="firon" parent="fire" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Damaged" xml:id="firoff" parent="fire" dbid="DamageModifier" dbvalue="damaged" />
+			<textinput xml:id="fire_comment" parent="fire" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="ems" dbid="DamageSubType" text="EMS" gpsposition="" />
+			<checkbox text="Operational" xml:id="emson" parent="ems" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Damaged" xml:id="emsoff" parent="ems" dbid="DamageModifier" dbvalue="damaged" />
+			<textinput xml:id="ems_comment" parent="ems" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="hospitals" dbid="DamageSubType" text="Hospitals" gpsposition="" />
+			<checkbox text="Operational" xml:id="hoson" parent="hospitals" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Damaged" xml:id="hosoff" parent="hospitals" dbid="DamageModifier" dbvalue="damaged" />
+			<textinput xml:id="hospitals_comment" parent="hospitals" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="shelters" dbid="DamageSubType" text="Shelters" gpsposition="" />
+			<checkbox text="Operational" xml:id="sheon" parent="shelters" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Damaged" xml:id="sheoff" parent="shelters" dbid="DamageModifier" dbvalue="damaged" />
+			<textinput xml:id="shelters_comment" parent="shelters" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="dot_facilities" dbid="DamageSubType" text="DOT Facilities" gpsposition="" />
+			<checkbox text="Operational" xml:id="doton" parent="dot_facilities" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Damaged" xml:id="dotoff" parent="dot_facilities" dbid="DamageModifier" dbvalue="damaged" />
+			<textinput xml:id="dot_facilities_comment" parent="dot_facilities" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="red_cross" dbid="DamageSubType" text="Red Cross ERVs" gpsposition="" />
+			<checkbox text="Operational" xml:id="redon" parent="red_cross" dbid="DamageModifier" dbvalue="operational" />
+			<checkbox text="Damaged" xml:id="redoff" parent="red_cross" dbid="DamageModifier" dbvalue="damaged" />
+			<textinput xml:id="red_cross_comment" parent="red_cross" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="hazmat_incident" dbid="DamageSubType" text="HAZMAT Incident" gpsposition="" />
+			<textinput xml:id="hazmat_incident_specify" parent="hazmat_incident" dbid="DamageModifier" text="Specify" />
+			<textinput xml:id="hazmat_incident_comment" parent="hazmat_incident" dbid="DamageComment" text="Comment" />
+			
+		<button text="Back To Report" action="finish" />
+	</page>
+	
+	<page xml:id="casualties" dbid="DamageType">
+		<button text="Take Photo" dbid="casualties" action="photo" />
+		
+		<checkbox xml:id="dead" dbid="DamageSubType" text="Dead" gpsposition="" />
+			<textinput xml:id="dead_number" parent="dead" dbid="DamageModifier" text="Number" />
+			<textinput xml:id="dead_comment" parent="dead" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="missing" dbid="DamageSubType" text="Missing" gpsposition="" />
+			<textinput xml:id="missing_number" parent="missing" dbid="DamageModifier" text="Number" />
+			<textinput xml:id="missing_comment" parent="missing" dbid="DamageComment" text="Comment" />
+			
+		<checkbox xml:id="injured" dbid="DamageSubType" text="Injured" gpsposition="" />
+			<textinput xml:id="injured_number" parent="injured" dbid="DamageModifier" text="Number" />
+			<textinput xml:id="injured_comment" parent="injured" dbid="DamageComment" text="Comment" />
+			
+		<button text="Back To Report" action="finish" />
+	</page>
+</report>
+

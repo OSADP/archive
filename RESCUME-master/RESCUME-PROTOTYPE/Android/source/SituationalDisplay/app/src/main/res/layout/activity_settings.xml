@@ -1,0 +1,29 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <PreferenceCategory android:title="Devices">
+        <org.battelle.inczone.situationaldisplay.settings.BluetoothDeviceList
+		    android:key="@string/setting_obuMacAddress_key"
+		    android:title="@string/setting_obuMacAddress_name"
+		    android:summary="@string/setting_obuMacAddress_details" />
+	    
+    </PreferenceCategory>
+
+   	<PreferenceCategory android:title="Alert Sounds">
+   	    <!-- RingtonePreference 
+   	        android:key="@string/setting_ringLostConnection_key"
+   	        android:title="@string/setting_ringLostConnection_name"
+   	        android:summary="@string/setting_ringLostConnection_details"
+   	        android:ringtoneType="notification"/-->
+   	    
+   	    <CheckBoxPreference
+   	        android:key="@string/setting_enableTTS_key"
+   	        android:title="@string/setting_enableTTS_name"
+   	        android:summary="@string/setting_enableTTS_details"
+   	        android:defaultValue="true" />
+   	    
+   	</PreferenceCategory>
+   	
+</PreferenceScreen>

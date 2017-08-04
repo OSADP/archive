@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Olentangy River Road.kml</name>
+	<StyleMap id="inline">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline22</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline2">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline5">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline6">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline16</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline8">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline9">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline10">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline14</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline12">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline14">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline15">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline16">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline17">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline18">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline19">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline20">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline22">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Olentangy River Road</name>
+		<open>1</open>
+		<Placemark>
+			<name>0</name>
+			<LookAt>
+				<longitude>-83.02475997586987</longitude>
+				<latitude>39.98927561477267</latitude>
+				<altitude>0</altitude>
+				<heading>-0.003216226570580497</heading>
+				<tilt>36.76761960457993</tilt>
+				<range>750.6208898008275</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02596302410129,39.99084593522478,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Olentangy River Road-0</name>
+			<styleUrl>#inline0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.02595354869584,39.99085961002979,223.2035059414238 -83.02577607097672,39.98919034420536,223.0135816007428 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>1</name>
+			<LookAt>
+				<longitude>-83.02475997586987</longitude>
+				<latitude>39.98927561477267</latitude>
+				<altitude>0</altitude>
+				<heading>-0.003216226570580497</heading>
+				<tilt>36.76761960457993</tilt>
+				<range>750.6208898008275</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02579091909541,39.98917200690978,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Olentangy River Road-1</name>
+			<styleUrl>#inline4</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.02577607097672,39.98919034420536,223.0135816007428 -83.02554889282118,39.98786022519297,223.5402293945564 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>2</name>
+			<LookAt>
+				<longitude>-83.02477147918366</longitude>
+				<latitude>39.98933614579219</latitude>
+				<altitude>0</altitude>
+				<heading>-0.003223328764372232</heading>
+				<tilt>36.76663886266006</tilt>
+				<range>745.7827527790918</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.0255542373968,39.98786223035393,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Olentangy River Road-2</name>
+			<styleUrl>#inline7</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.02555406059081,39.98787488512247,223.5286489618332 -83.02511578015965,39.98705972562183,223.7136537750309 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>3</name>
+			<LookAt>
+				<longitude>-83.0229492573071</longitude>
+				<latitude>39.98591705953491</latitude>
+				<altitude>0</altitude>
+				<heading>-0.002322146981477187</heading>
+				<tilt>31.44182108245662</tilt>
+				<range>559.8961172047876</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02512112795476,39.98708698480422,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Olentangy River Road-3</name>
+			<styleUrl>#inline21</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.0251111037007,39.98707268448415,223.6770502407872 -83.02448255783648,39.98655524389007,223.4684662471731 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>4</name>
+			<LookAt>
+				<longitude>-83.0229492573071</longitude>
+				<latitude>39.98591705953491</latitude>
+				<altitude>0</altitude>
+				<heading>-0.002322146981477187</heading>
+				<tilt>31.44182108245662</tilt>
+				<range>559.8961172047876</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02447923422669,39.98656112158717,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Olentangy River Road-4</name>
+			<styleUrl>#inline13</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.02447633337893,39.98656128487583,223.4366667227023 -83.02374159461455,39.98612028606112,223.1003709472425 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>5</name>
+			<LookAt>
+				<longitude>-83.0229492573071</longitude>
+				<latitude>39.98591705953491</latitude>
+				<altitude>0</altitude>
+				<heading>-0.002322146981477187</heading>
+				<tilt>31.44182108245662</tilt>
+				<range>559.8961172047876</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02372527266364,39.98613057529904,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Olentangy River Road-5</name>
+			<styleUrl>#inline11</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.02372965556047,39.98612500658796,223.1381839540527 -83.02313773974396,39.98562348682134,223.1227084868225 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>6</name>
+			<LookAt>
+				<longitude>-83.0229492573071</longitude>
+				<latitude>39.98591705953491</latitude>
+				<altitude>0</altitude>
+				<heading>-0.002322146981477187</heading>
+				<tilt>31.44182108245662</tilt>
+				<range>559.8961172047876</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02312655708359,39.98561580347379,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Olentangy River Road-6</name>
+			<styleUrl>#inline1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.02311880298043,39.98560914662551,223.1001559350587 -83.02273350593981,39.98498916088216,222.6745483938838 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>7</name>
+			<LookAt>
+				<longitude>-83.0229492573071</longitude>
+				<latitude>39.98591705953491</latitude>
+				<altitude>0</altitude>
+				<heading>-0.002322146981477187</heading>
+				<tilt>31.44182108245662</tilt>
+				<range>559.8961172047876</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02272861054175,39.98498236317108,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Olentangy River Road-7</name>
+			<styleUrl>#inline</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.02273139564478,39.98497595538182,222.6721173343112 -83.02257838115354,39.98410074081573,221.8484626105489 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>8</name>
+			<LookAt>
+				<longitude>-83.0229492573071</longitude>
+				<latitude>39.98591705953491</latitude>
+				<altitude>0</altitude>
+				<heading>-0.002322146981477187</heading>
+				<tilt>31.44182108245662</tilt>
+				<range>559.8961172047876</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02259223211757,39.9841006151802,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

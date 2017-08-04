@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0028FE9C-9A4D-447B-AFA6-2CA50F61854D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAI.Drayage.Optimization</RootNamespace>
+    <AssemblyName>PAI.Drayage.Optimization</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>False</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>False</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsInferRequires>False</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestRequires>True</CodeContractsSuggestRequires>
+    <CodeContractsSuggestEnsures>False</CodeContractsSuggestEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsDisjunctiveRequires>False</CodeContractsDisjunctiveRequires>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PAI.Drayage.Domain">
+      <HintPath>..\..\FRATIS\PAI.FRATIS.Optimization.Adapter\Lib\PAI.Drayage.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\SolutionEventArgs.cs" />
+    <Compile Include="Function\TotalTimeLessIdleFewestDriversObjectiveFunction.cs" />
+    <Compile Include="Geography\DistanceService.cs" />
+    <Compile Include="Geography\IGeoCodingService.cs" />
+    <Compile Include="Geography\ITravelTimeEstimator.cs" />
+    <Compile Include="Geography\TravelTimeEstimator.cs" />
+    <Compile Include="Function\DistanceObjectiveFunction.cs" />
+    <Compile Include="Model\Equipment\EquipmentConfiguration.cs" />
+    <Compile Include="Model\Equipment\Depot.cs" />
+    <Compile Include="Model\Equipment\DepotEquipmentAvailability.cs" />
+    <Compile Include="Model\LocationQueueDelay.cs" />
+    <Compile Include="Model\Metrics\IHaveRouteStatistics.cs" />
+    <Compile Include="Model\Planning\Plan.cs" />
+    <Compile Include="Model\Planning\PlanConfig.cs" />
+    <Compile Include="Model\Planning\PlanDriver.cs" />
+    <Compile Include="Model\Planning\PlanDriverJob.cs" />
+    <Compile Include="Model\Orders\Action.cs" />
+    <Compile Include="Model\Equipment\Chassis.cs" />
+    <Compile Include="Model\Equipment\Container.cs" />
+    <Compile Include="Model\Orders\Driver.cs" />
+    <Compile Include="Model\ModelBase.cs" />
+    <Compile Include="Model\Equipment\EquipmentOwner.cs" />
+    <Compile Include="Model\Orders\Job.cs" />
+    <Compile Include="Model\Location.cs" />
+    <Compile Include="Model\Orders\RouteStop.cs" />
+    <Compile Include="Model\Orders\StopAction.cs" />
+    <Compile Include="Model\Orders\StopActions.cs" />
+    <Compile Include="Model\Metrics\TripLength.cs" />
+    <Compile Include="Model\Equipment\TruckConfiguration.cs" />
+    <Compile Include="Model\Equipment\TruckState.cs" />
+    <Compile Include="Model\Node\IRouteSegment.cs" />
+    <Compile Include="Model\ProbabilityItem.cs" />
+    <Compile Include="Function\IRouteExitFunction.cs" />
+    <Compile Include="Common\ProgressEventArgs.cs" />
+    <Compile Include="Model\Metrics\RouteSegmentStatistics.cs" />
+    <Compile Include="Geography\CachedDistanceService.cs" />
+    <Compile Include="Services\DefaultNodeConnectionFactory.cs" />
+    <Compile Include="Services\IDrayageOptimizer.cs" />
+    <Compile Include="Services\INodeConnectionFactory.cs" />
+    <Compile Include="Services\INodeService.cs" />
+    <Compile Include="Services\IPheromoneMatrix.cs" />
+    <Compile Include="Services\IProbabilityMatrix.cs" />
+    <Compile Include="Services\IRouteService.cs" />
+    <Compile Include="Services\IRouteStatisticsService.cs" />
+    <Compile Include="Services\IRouteStopDelayService.cs" />
+    <Compile Include="Services\IRouteStopService.cs" />
+    <Compile Include="Services\JobNodeService.cs" />
+    <Compile Include="Services\NodeService.cs" />
+    <Compile Include="Function\RouteExitFunction.cs" />
+    <Compile Include="Function\IObjectiveFunction.cs" />
+    <Compile Include="Model\Node\NodeTiming.cs" />
+    <Compile Include="Model\Metrics\RouteStatistics.cs" />
+    <Compile Include="Model\Node\Solution.cs" />
+    <Compile Include="Function\TotalTimeObjectiveFunction.cs" />
+    <Compile Include="Model\OptimizerConfiguration.cs" />
+    <Compile Include="Common\OptimizationException.cs" />
+    <Compile Include="Services\ProbabilityMatrix.cs" />
+    <Compile Include="Services\RouteStatisticsService.cs" />
+    <Compile Include="Services\RouteStopDelayService.cs" />
+    <Compile Include="Services\RouteStatisticsComparer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\IRandomNumberGenerator.cs" />
+    <Compile Include="Geography\IDistanceService.cs" />
+    <Compile Include="Services\DrayageOptimizer.cs" />
+    <Compile Include="Model\Node\INode.cs" />
+    <Compile Include="Model\Node\DriverNode.cs" />
+    <Compile Include="Model\Node\NodeBase.cs" />
+    <Compile Include="Model\Node\NodeConnection.cs" />
+    <Compile Include="Model\Node\JobNode.cs" />
+    <Compile Include="Model\Node\NodeRouteSolution.cs" />
+    <Compile Include="Services\RouteService.cs" />
+    <Compile Include="Services\PheromoneMatrix.cs" />
+    <Compile Include="Services\RouteStopService.cs" />
+    <Compile Include="Common\RandomNumberGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RandomizedSolutionDetails.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Configuration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PAI.Infrastructure\PAI.Infrastructure.csproj">
+      <Project>{4cb641ff-be25-456e-8bf2-4c7195c6cef4}</Project>
+      <Name>PAI.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

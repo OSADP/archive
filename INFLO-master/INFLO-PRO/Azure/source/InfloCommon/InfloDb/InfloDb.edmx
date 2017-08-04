@@ -1,0 +1,1653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="Configuration_ESS" EntityType="Model.Store.Configuration_ESS" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_ESS">
+            <DefiningQuery>SELECT 
+      [Configuration_ESS].[ESSId] AS [ESSId], 
+      [Configuration_ESS].[ESSType] AS [ESSType], 
+      [Configuration_ESS].[ESSOperationType] AS [ESSOperationType], 
+      [Configuration_ESS].[ESSMobilityType] AS [ESSMobilityType], 
+      [Configuration_ESS].[BeginMM] AS [BeginMM], 
+      [Configuration_ESS].[EndMM] AS [EndMM]
+      FROM [dbo].[Configuration_ESS] AS [Configuration_ESS]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Configuration_INFLOThresholds" EntityType="Model.Store.Configuration_INFLOThresholds" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_INFLOThresholds">
+            <DefiningQuery>SELECT 
+      [Configuration_INFLOThresholds].[CVDataPollingFrequency] AS [CVDataPollingFrequency], 
+      [Configuration_INFLOThresholds].[TSSDataPollingFrequency] AS [TSSDataPollingFrequency], 
+      [Configuration_INFLOThresholds].[CVDataLoadingFrequency] AS [CVDataLoadingFrequency], 
+      [Configuration_INFLOThresholds].[TSSDataLoadingFrequency] AS [TSSDataLoadingFrequency], 
+      [Configuration_INFLOThresholds].[ESSDataPollingFrequency] AS [ESSDataPollingFrequency], 
+      [Configuration_INFLOThresholds].[MobileESSDataPollingFrequency] AS [MobileESSDataPollingFrequency], 
+      [Configuration_INFLOThresholds].[QueuedSpeedThreshold] AS [QueuedSpeedThreshold], 
+      [Configuration_INFLOThresholds].[CongestedSpeedThreshold] AS [CongestedSpeedThreshold], 
+      [Configuration_INFLOThresholds].[MinimumDisplaySpeed] AS [MinimumDisplaySpeed], 
+      [Configuration_INFLOThresholds].[TroupeRange] AS [TroupeRange], 
+      [Configuration_INFLOThresholds].[ThreeGantrySpeed] AS [ThreeGantrySpeed], 
+      [Configuration_INFLOThresholds].[RecurringCongestionMMLocation] AS [RecurringCongestionMMLocation], 
+      [Configuration_INFLOThresholds].[SublinkLength] AS [SublinkLength], 
+      [Configuration_INFLOThresholds].[SublinkPercentQueuedCV] AS [SublinkPercentQueuedCV], 
+      [Configuration_INFLOThresholds].[MaximumDisplaySpeed] AS [MaximumDisplaySpeed], 
+      [Configuration_INFLOThresholds].[COFLowerThreshold] AS [COFLowerThreshold], 
+      [Configuration_INFLOThresholds].[COFUpperThreshold] AS [COFUpperThreshold], 
+      [Configuration_INFLOThresholds].[RoadSurfaceStatusDryCOF] AS [RoadSurfaceStatusDryCOF], 
+      [Configuration_INFLOThresholds].[RoadSurfaceStatusSnowCOF] AS [RoadSurfaceStatusSnowCOF], 
+      [Configuration_INFLOThresholds].[RoadSurfaceStatusWetCOF] AS [RoadSurfaceStatusWetCOF], 
+      [Configuration_INFLOThresholds].[RoadSurfaceStatusIceCOF] AS [RoadSurfaceStatusIceCOF], 
+      [Configuration_INFLOThresholds].[WRTMMaxRecommendedSpeed] AS [WRTMMaxRecommendedSpeed], 
+      [Configuration_INFLOThresholds].[WRTMMaxRecommendedSpeedLevel1] AS [WRTMMaxRecommendedSpeedLevel1], 
+      [Configuration_INFLOThresholds].[WRTMMaxRecommendedSpeedLevel2] AS [WRTMMaxRecommendedSpeedLevel2], 
+      [Configuration_INFLOThresholds].[WRTMMaxRecommendedSpeedLevel3] AS [WRTMMaxRecommendedSpeedLevel3], 
+      [Configuration_INFLOThresholds].[WRTMMaxRecommendedSpeedLevel4] AS [WRTMMaxRecommendedSpeedLevel4], 
+      [Configuration_INFLOThresholds].[WRTMMinRecommendedSpeed] AS [WRTMMinRecommendedSpeed], 
+      [Configuration_INFLOThresholds].[VisibilityThreshold] AS [VisibilityThreshold], 
+      [Configuration_INFLOThresholds].[VisibilityStatusClear] AS [VisibilityStatusClear], 
+      [Configuration_INFLOThresholds].[VisibilityStatusFogNotPatchy] AS [VisibilityStatusFogNotPatchy], 
+      [Configuration_INFLOThresholds].[VisibilityStatusPatchyFog] AS [VisibilityStatusPatchyFog], 
+      [Configuration_INFLOThresholds].[VisibilityStatusBlowingSnow] AS [VisibilityStatusBlowingSnow], 
+      [Configuration_INFLOThresholds].[VisibilityStatusSmoke] AS [VisibilityStatusSmoke], 
+      [Configuration_INFLOThresholds].[VisibilityStatusSeaSpray] AS [VisibilityStatusSeaSpray], 
+      [Configuration_INFLOThresholds].[VisibilityStatusVehicleSpray] AS [VisibilityStatusVehicleSpray], 
+      [Configuration_INFLOThresholds].[VisibilityStatusBlowingDust] AS [VisibilityStatusBlowingDust], 
+      [Configuration_INFLOThresholds].[VisibilityStatusBlowingSand] AS [VisibilityStatusBlowingSand], 
+      [Configuration_INFLOThresholds].[VisibilityStatusSunGlare] AS [VisibilityStatusSunGlare], 
+      [Configuration_INFLOThresholds].[VisibilityStatusSwarmsOfInsects] AS [VisibilityStatusSwarmsOfInsects], 
+      [Configuration_INFLOThresholds].[OccupancyThreshold] AS [OccupancyThreshold], 
+      [Configuration_INFLOThresholds].[VolumeThreshold] AS [VolumeThreshold]
+      FROM [dbo].[Configuration_INFLOThresholds] AS [Configuration_INFLOThresholds]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Configuration_Roadway" EntityType="Model.Store.Configuration_Roadway" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_Roadway">
+            <DefiningQuery>SELECT 
+      [Configuration_Roadway].[RoadwayId] AS [RoadwayId], 
+      [Configuration_Roadway].[Name] AS [Name], 
+      [Configuration_Roadway].[Direction] AS [Direction], 
+      [Configuration_Roadway].[Grade] AS [Grade], 
+      [Configuration_Roadway].[BeginMM] AS [BeginMM], 
+      [Configuration_Roadway].[EndMM] AS [EndMM], 
+      [Configuration_Roadway].[MMIncreasingDirection] AS [MMIncreasingDirection], 
+      [Configuration_Roadway].[LowerHeading] AS [LowerHeading], 
+      [Configuration_Roadway].[UpperHeading] AS [UpperHeading], 
+      [Configuration_Roadway].[RecurringCongestionMMLocation] AS [RecurringCongestionMMLocation]
+      FROM [dbo].[Configuration_Roadway] AS [Configuration_Roadway]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Configuration_RoadwayESS" EntityType="Model.Store.Configuration_RoadwayESS" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_RoadwayESS">
+            <DefiningQuery>SELECT 
+      [Configuration_RoadwayESS].[RoadwayId] AS [RoadwayId], 
+      [Configuration_RoadwayESS].[ESSId] AS [ESSId]
+      FROM [dbo].[Configuration_RoadwayESS] AS [Configuration_RoadwayESS]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Configuration_RoadwayLinks" EntityType="Model.Store.Configuration_RoadwayLinks" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_RoadwayLinks">
+            <DefiningQuery>SELECT 
+      [Configuration_RoadwayLinks].[RoadwayId] AS [RoadwayId], 
+      [Configuration_RoadwayLinks].[LinkId] AS [LinkId], 
+      [Configuration_RoadwayLinks].[BeginMM] AS [BeginMM], 
+      [Configuration_RoadwayLinks].[EndMM] AS [EndMM], 
+      [Configuration_RoadwayLinks].[StartCrossStreetName] AS [StartCrossStreetName], 
+      [Configuration_RoadwayLinks].[EndCrossStreetName] AS [EndCrossStreetName], 
+      [Configuration_RoadwayLinks].[UpstreamLinkId] AS [UpstreamLinkId], 
+      [Configuration_RoadwayLinks].[DownstreamLinkId] AS [DownstreamLinkId], 
+      [Configuration_RoadwayLinks].[NumberLanes] AS [NumberLanes], 
+      [Configuration_RoadwayLinks].[SpeedLimit] AS [SpeedLimit], 
+      [Configuration_RoadwayLinks].[Direction] AS [Direction], 
+      [Configuration_RoadwayLinks].[NumberDetectorStations] AS [NumberDetectorStations], 
+      [Configuration_RoadwayLinks].[DetectorStations] AS [DetectorStations], 
+      [Configuration_RoadwayLinks].[ESS] AS [ESS], 
+      [Configuration_RoadwayLinks].[VSLSignId] AS [VSLSignId], 
+      [Configuration_RoadwayLinks].[DMSId] AS [DMSId], 
+      [Configuration_RoadwayLinks].[RSEId] AS [RSEId]
+      FROM [dbo].[Configuration_RoadwayLinks] AS [Configuration_RoadwayLinks]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Configuration_RoadwayLinksDetectorStation" EntityType="Model.Store.Configuration_RoadwayLinksDetectorStation" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_RoadwayLinksDetectorStation">
+            <DefiningQuery>SELECT 
+      [Configuration_RoadwayLinksDetectorStation].[LinkId] AS [LinkId], 
+      [Configuration_RoadwayLinksDetectorStation].[DSId] AS [DSId]
+      FROM [dbo].[Configuration_RoadwayLinksDetectorStation] AS [Configuration_RoadwayLinksDetectorStation]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Configuration_RoadwayLinksESS" EntityType="Model.Store.Configuration_RoadwayLinksESS" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_RoadwayLinksESS">
+            <DefiningQuery>SELECT 
+      [Configuration_RoadwayLinksESS].[LinkId] AS [LinkId], 
+      [Configuration_RoadwayLinksESS].[ESSId] AS [ESSId]
+      FROM [dbo].[Configuration_RoadwayLinksESS] AS [Configuration_RoadwayLinksESS]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Configuration_RoadwayMileMarkers" EntityType="Model.Store.Configuration_RoadwayMileMarkers" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_RoadwayMileMarkers">
+            <DefiningQuery>SELECT 
+      [Configuration_RoadwayMileMarkers].[RoadwayId] AS [RoadwayId], 
+      [Configuration_RoadwayMileMarkers].[MMNumber] AS [MMNumber], 
+      [Configuration_RoadwayMileMarkers].[Latitude1] AS [Latitude1], 
+      [Configuration_RoadwayMileMarkers].[Longitude1] AS [Longitude1], 
+      [Configuration_RoadwayMileMarkers].[Latitude2] AS [Latitude2], 
+      [Configuration_RoadwayMileMarkers].[Longitude2] AS [Longitude2]
+      FROM [dbo].[Configuration_RoadwayMileMarkers] AS [Configuration_RoadwayMileMarkers]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Configuration_RoadwaySubLinks" EntityType="Model.Store.Configuration_RoadwaySubLinks" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_RoadwaySubLinks">
+            <DefiningQuery>SELECT 
+      [Configuration_RoadwaySubLinks].[RoadwayId] AS [RoadwayId], 
+      [Configuration_RoadwaySubLinks].[SubLinkId] AS [SubLinkId], 
+      [Configuration_RoadwaySubLinks].[BeginMM] AS [BeginMM], 
+      [Configuration_RoadwaySubLinks].[EndMM] AS [EndMM], 
+      [Configuration_RoadwaySubLinks].[SpeedLimit] AS [SpeedLimit], 
+      [Configuration_RoadwaySubLinks].[NumberLanes] AS [NumberLanes], 
+      [Configuration_RoadwaySubLinks].[DownstreamSubLinkId] AS [DownstreamSubLinkId], 
+      [Configuration_RoadwaySubLinks].[UpstreamSubLinkId] AS [UpstreamSubLinkId], 
+      [Configuration_RoadwaySubLinks].[Direction] AS [Direction], 
+      [Configuration_RoadwaySubLinks].[VSLSignID] AS [VSLSignID], 
+      [Configuration_RoadwaySubLinks].[DMSID] AS [DMSID], 
+      [Configuration_RoadwaySubLinks].[RSEID] AS [RSEID]
+      FROM [dbo].[Configuration_RoadwaySubLinks] AS [Configuration_RoadwaySubLinks]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Configuration_TSSDetectorStation" EntityType="Model.Store.Configuration_TSSDetectorStation" store:Type="Tables" store:Schema="dbo" store:Name="Configuration_TSSDetectorStation">
+            <DefiningQuery>SELECT 
+      [Configuration_TSSDetectorStation].[LinkId] AS [LinkId], 
+      [Configuration_TSSDetectorStation].[DSId] AS [DSId], 
+      [Configuration_TSSDetectorStation].[DSName] AS [DSName], 
+      [Configuration_TSSDetectorStation].[MMLocation] AS [MMLocation], 
+      [Configuration_TSSDetectorStation].[NumberLanes] AS [NumberLanes], 
+      [Configuration_TSSDetectorStation].[NumberDetectionZones] AS [NumberDetectionZones], 
+      [Configuration_TSSDetectorStation].[DetectionZones] AS [DetectionZones], 
+      [Configuration_TSSDetectorStation].[Latitude] AS [Latitude], 
+      [Configuration_TSSDetectorStation].[Longitude] AS [Longitude]
+      FROM [dbo].[Configuration_TSSDetectorStation] AS [Configuration_TSSDetectorStation]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="sysdiagrams" EntityType="Model.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TME_CVData_Input" EntityType="Model.Store.TME_CVData_Input" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TME_CVData_Input_Processed" EntityType="Model.Store.TME_CVData_Input_Processed" store:Type="Tables" store:Schema="dbo" store:Name="TME_CVData_Input_Processed">
+            <DefiningQuery>SELECT 
+      [TME_CVData_Input_Processed].[NomadicDeviceID] AS [NomadicDeviceID], 
+      [TME_CVData_Input_Processed].[DateGenerated] AS [DateGenerated], 
+      [TME_CVData_Input_Processed].[DateProcessed] AS [DateProcessed], 
+      [TME_CVData_Input_Processed].[Speed] AS [Speed], 
+      [TME_CVData_Input_Processed].[Heading] AS [Heading], 
+      [TME_CVData_Input_Processed].[MMLocation] AS [MMLocation], 
+      [TME_CVData_Input_Processed].[CVQueuedState] AS [CVQueuedState], 
+      [TME_CVData_Input_Processed].[RoadwayID] AS [RoadwayID], 
+      [TME_CVData_Input_Processed].[CoefficientOfFriction] AS [CoefficientOfFriction], 
+      [TME_CVData_Input_Processed].[Temperature] AS [Temperature], 
+      [TME_CVData_Input_Processed].[SubLinkId] AS [SubLinkId]
+      FROM [dbo].[TME_CVData_Input_Processed] AS [TME_CVData_Input_Processed]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TME_CVData_SubLink" EntityType="Model.Store.TME_CVData_SubLink" store:Type="Tables" store:Schema="dbo" store:Name="TME_CVData_SubLink">
+            <DefiningQuery>SELECT 
+      [TME_CVData_SubLink].[RoadwayId] AS [RoadwayId], 
+      [TME_CVData_SubLink].[SubLinkId] AS [SubLinkId], 
+      [TME_CVData_SubLink].[DateProcessed] AS [DateProcessed], 
+      [TME_CVData_SubLink].[IntervalLength] AS [IntervalLength], 
+      [TME_CVData_SubLink].[TSSAvgSpeed] AS [TSSAvgSpeed], 
+      [TME_CVData_SubLink].[WRTMSpeed] AS [WRTMSpeed], 
+      [TME_CVData_SubLink].[CVAvgSpeed] AS [CVAvgSpeed], 
+      [TME_CVData_SubLink].[NumberCVs] AS [NumberCVs], 
+      [TME_CVData_SubLink].[NumberQueuedCVs] AS [NumberQueuedCVs], 
+      [TME_CVData_SubLink].[PercentQueuedCVs] AS [PercentQueuedCVs], 
+      [TME_CVData_SubLink].[CVQueuedState] AS [CVQueuedState], 
+      [TME_CVData_SubLink].[CVCongestedState] AS [CVCongestedState], 
+      [TME_CVData_SubLink].[RecommendedTargetSpeed] AS [RecommendedTargetSpeed], 
+      [TME_CVData_SubLink].[RecommendedTargetSpeedSource] AS [RecommendedTargetSpeedSource]
+      FROM [dbo].[TME_CVData_SubLink] AS [TME_CVData_SubLink]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TME_ESSData_Input" EntityType="Model.Store.TME_ESSData_Input" store:Type="Tables" store:Schema="dbo" store:Name="TME_ESSData_Input">
+            <DefiningQuery>SELECT 
+      [TME_ESSData_Input].[ESSId] AS [ESSId], 
+      [TME_ESSData_Input].[ESSVisibilityDistance] AS [ESSVisibilityDistance], 
+      [TME_ESSData_Input].[ESSVisibilityStatus] AS [ESSVisibilityStatus], 
+      [TME_ESSData_Input].[ESSCoefficientOfFriction] AS [ESSCoefficientOfFriction], 
+      [TME_ESSData_Input].[ESSSurfaceStatus] AS [ESSSurfaceStatus], 
+      [TME_ESSData_Input].[DateReceived] AS [DateReceived]
+      FROM [dbo].[TME_ESSData_Input] AS [TME_ESSData_Input]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TME_ESSMobileData_Input" EntityType="Model.Store.TME_ESSMobileData_Input" store:Type="Tables" store:Schema="dbo" store:Name="TME_ESSMobileData_Input">
+            <DefiningQuery>SELECT 
+      [TME_ESSMobileData_Input].[MobileESSId] AS [MobileESSId], 
+      [TME_ESSMobileData_Input].[Latitude] AS [Latitude], 
+      [TME_ESSMobileData_Input].[Longitude] AS [Longitude], 
+      [TME_ESSMobileData_Input].[Bearing] AS [Bearing], 
+      [TME_ESSMobileData_Input].[Friction] AS [Friction], 
+      [TME_ESSMobileData_Input].[ObservationPavement] AS [ObservationPavement]
+      FROM [dbo].[TME_ESSMobileData_Input] AS [TME_ESSMobileData_Input]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TME_TSSData_Input" EntityType="Model.Store.TME_TSSData_Input" store:Type="Tables" store:Schema="dbo" store:Name="TME_TSSData_Input">
+            <DefiningQuery>SELECT 
+      [TME_TSSData_Input].[DZId] AS [DZId], 
+      [TME_TSSData_Input].[DSId] AS [DSId], 
+      [TME_TSSData_Input].[DateReceived] AS [DateReceived], 
+      [TME_TSSData_Input].[StartInterval] AS [StartInterval], 
+      [TME_TSSData_Input].[EndInterval] AS [EndInterval], 
+      [TME_TSSData_Input].[IntervalLength] AS [IntervalLength], 
+      [TME_TSSData_Input].[BeginTime] AS [BeginTime], 
+      [TME_TSSData_Input].[EndTime] AS [EndTime], 
+      [TME_TSSData_Input].[Volume] AS [Volume], 
+      [TME_TSSData_Input].[Occupancy] AS [Occupancy], 
+      [TME_TSSData_Input].[AvgSpeed] AS [AvgSpeed], 
+      [TME_TSSData_Input].[Queued] AS [Queued], 
+      [TME_TSSData_Input].[Congested] AS [Congested], 
+      [TME_TSSData_Input].[DZStatus] AS [DZStatus], 
+      [TME_TSSData_Input].[DataType] AS [DataType], 
+      [TME_TSSData_Input].[RoadwayId] AS [RoadwayId]
+      FROM [dbo].[TME_TSSData_Input] AS [TME_TSSData_Input]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TME_TSSESS_Link" EntityType="Model.Store.TME_TSSESS_Link" store:Type="Tables" store:Schema="dbo" store:Name="TME_TSSESS_Link">
+            <DefiningQuery>SELECT 
+      [TME_TSSESS_Link].[RoadwayId] AS [RoadwayId], 
+      [TME_TSSESS_Link].[LinkId] AS [LinkId], 
+      [TME_TSSESS_Link].[DateProcessed] AS [DateProcessed], 
+      [TME_TSSESS_Link].[IntervalLength] AS [IntervalLength], 
+      [TME_TSSESS_Link].[TSSSpeed] AS [TSSSpeed], 
+      [TME_TSSESS_Link].[ESSSpeed] AS [ESSSpeed], 
+      [TME_TSSESS_Link].[TSSVolume] AS [TSSVolume], 
+      [TME_TSSESS_Link].[TSSOccupancy] AS [TSSOccupancy], 
+      [TME_TSSESS_Link].[Congested] AS [Congested], 
+      [TME_TSSESS_Link].[Queued] AS [Queued], 
+      [TME_TSSESS_Link].[RecommendedSpeed] AS [RecommendedSpeed], 
+      [TME_TSSESS_Link].[RecommendedSpeedSource] AS [RecommendedSpeedSource], 
+      [TME_TSSESS_Link].[CurrentDMSMessage] AS [CurrentDMSMessage], 
+      [TME_TSSESS_Link].[CurrentVSLSignSpeed] AS [CurrentVSLSignSpeed]
+      FROM [dbo].[TME_TSSESS_Link] AS [TME_TSSESS_Link]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TMEOutput_QWARN_QueueInfo" EntityType="Model.Store.TMEOutput_QWARN_QueueInfo" store:Type="Tables" store:Schema="dbo" store:Name="TMEOutput_QWARN_QueueInfo">
+            <DefiningQuery>SELECT 
+      [TMEOutput_QWARN_QueueInfo].[DateGenerated] AS [DateGenerated], 
+      [TMEOutput_QWARN_QueueInfo].[BOQ_MMLocation] AS [BOQ_MMLocation], 
+      [TMEOutput_QWARN_QueueInfo].[BOQ_LinkId] AS [BOQ_LinkId], 
+      [TMEOutput_QWARN_QueueInfo].[FOQ_MMLocation] AS [FOQ_MMLocation], 
+      [TMEOutput_QWARN_QueueInfo].[FOQ_LinkId] AS [FOQ_LinkId], 
+      [TMEOutput_QWARN_QueueInfo].[RateOfQueueGrowth] AS [RateOfQueueGrowth], 
+      [TMEOutput_QWARN_QueueInfo].[SPeed_In_Queue] AS [SPeed_In_Queue]
+      FROM [dbo].[TMEOutput_QWARN_QueueInfo] AS [TMEOutput_QWARN_QueueInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TMEOutput_QWARNMessage_CV" EntityType="Model.Store.TMEOutput_QWARNMessage_CV" store:Type="Tables" store:Schema="dbo" store:Name="TMEOutput_QWARNMessage_CV">
+            <DefiningQuery>SELECT 
+      [TMEOutput_QWARNMessage_CV].[DateGenerated] AS [DateGenerated], 
+      [TMEOutput_QWARNMessage_CV].[RoadwayID] AS [RoadwayID], 
+      [TMEOutput_QWARNMessage_CV].[BOQMMLocation] AS [BOQMMLocation], 
+      [TMEOutput_QWARNMessage_CV].[FOQMMLocation] AS [FOQMMLocation], 
+      [TMEOutput_QWARNMessage_CV].[SpeedInQueue] AS [SpeedInQueue], 
+      [TMEOutput_QWARNMessage_CV].[RateOfQueueGrowth] AS [RateOfQueueGrowth], 
+      [TMEOutput_QWARNMessage_CV].[ValidityDuration] AS [ValidityDuration]
+      FROM [dbo].[TMEOutput_QWARNMessage_CV] AS [TMEOutput_QWARNMessage_CV]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TMEOutput_ShockWaveInformation" EntityType="Model.Store.TMEOutput_ShockWaveInformation" store:Type="Tables" store:Schema="dbo" store:Name="TMEOutput_ShockWaveInformation">
+            <DefiningQuery>SELECT 
+      [TMEOutput_ShockWaveInformation].[Timestamp] AS [Timestamp], 
+      [TMEOutput_ShockWaveInformation].[RoadwayIdentifier] AS [RoadwayIdentifier], 
+      [TMEOutput_ShockWaveInformation].[MileMarkerLocation] AS [MileMarkerLocation], 
+      [TMEOutput_ShockWaveInformation].[SchockwaveSpeed] AS [SchockwaveSpeed], 
+      [TMEOutput_ShockWaveInformation].[SchockwaveDirection] AS [SchockwaveDirection]
+      FROM [dbo].[TMEOutput_ShockWaveInformation] AS [TMEOutput_ShockWaveInformation]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TMEOutput_SPDHARMMessage_CV" EntityType="Model.Store.TMEOutput_SPDHARMMessage_CV" store:Type="Tables" store:Schema="dbo" store:Name="TMEOutput_SPDHARMMessage_CV">
+            <DefiningQuery>SELECT 
+      [TMEOutput_SPDHARMMessage_CV].[DateGenerated] AS [DateGenerated], 
+      [TMEOutput_SPDHARMMessage_CV].[RoadwayId] AS [RoadwayId], 
+      [TMEOutput_SPDHARMMessage_CV].[RecommendedSpeed] AS [RecommendedSpeed], 
+      [TMEOutput_SPDHARMMessage_CV].[BeginMM] AS [BeginMM], 
+      [TMEOutput_SPDHARMMessage_CV].[EndMM] AS [EndMM], 
+      [TMEOutput_SPDHARMMessage_CV].[Justification] AS [Justification], 
+      [TMEOutput_SPDHARMMessage_CV].[ValidityDuration] AS [ValidityDuration]
+      FROM [dbo].[TMEOutput_SPDHARMMessage_CV] AS [TMEOutput_SPDHARMMessage_CV]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TMEOutput_SPDHARMMessage_Infrastructure" EntityType="Model.Store.TMEOutput_SPDHARMMessage_Infrastructure" store:Type="Tables" store:Schema="dbo" store:Name="TMEOutput_SPDHARMMessage_Infrastructure">
+            <DefiningQuery>SELECT 
+      [TMEOutput_SPDHARMMessage_Infrastructure].[DateGenerated] AS [DateGenerated], 
+      [TMEOutput_SPDHARMMessage_Infrastructure].[RecommendedSpeed] AS [RecommendedSpeed], 
+      [TMEOutput_SPDHARMMessage_Infrastructure].[VSLId] AS [VSLId], 
+      [TMEOutput_SPDHARMMessage_Infrastructure].[Justification] AS [Justification], 
+      [TMEOutput_SPDHARMMessage_Infrastructure].[LinkId] AS [LinkId]
+      FROM [dbo].[TMEOutput_SPDHARMMessage_Infrastructure] AS [TMEOutput_SPDHARMMessage_Infrastructure]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TMEOutput_WRTM_Alerts" EntityType="Model.Store.TMEOutput_WRTM_Alerts" store:Type="Tables" store:Schema="dbo" store:Name="TMEOutput_WRTM_Alerts">
+            <DefiningQuery>SELECT 
+      [TMEOutput_WRTM_Alerts].[DateGenerated] AS [DateGenerated], 
+      [TMEOutput_WRTM_Alerts].[WeatherAlert] AS [WeatherAlert], 
+      [TMEOutput_WRTM_Alerts].[Justification] AS [Justification], 
+      [TMEOutput_WRTM_Alerts].[RoadwayId] AS [RoadwayId], 
+      [TMEOutput_WRTM_Alerts].[BeginMM] AS [BeginMM], 
+      [TMEOutput_WRTM_Alerts].[EndMM] AS [EndMM], 
+      [TMEOutput_WRTM_Alerts].[BeginTime] AS [BeginTime], 
+      [TMEOutput_WRTM_Alerts].[EndTime] AS [EndTime]
+      FROM [dbo].[TMEOutput_WRTM_Alerts] AS [TMEOutput_WRTM_Alerts]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_ESS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_ESS">
+          <Key>
+            <PropertyRef Name="ESSId" />
+          </Key>
+          <Property Name="ESSId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="ESSType" Type="nvarchar" MaxLength="50" />
+          <Property Name="ESSOperationType" Type="nvarchar" MaxLength="50" />
+          <Property Name="ESSMobilityType" Type="nvarchar" MaxLength="25" />
+          <Property Name="BeginMM" Type="float" />
+          <Property Name="EndMM" Type="float" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_INFLOThresholds' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_INFLOThresholds">
+          <Key>
+            <PropertyRef Name="CVDataPollingFrequency" />
+            <PropertyRef Name="TSSDataPollingFrequency" />
+            <PropertyRef Name="ESSDataPollingFrequency" />
+            <PropertyRef Name="MobileESSDataPollingFrequency" />
+            <PropertyRef Name="QueuedSpeedThreshold" />
+            <PropertyRef Name="CongestedSpeedThreshold" />
+          </Key>
+          <Property Name="CVDataPollingFrequency" Type="smallint" Nullable="false" />
+          <Property Name="TSSDataPollingFrequency" Type="smallint" Nullable="false" />
+          <Property Name="CVDataLoadingFrequency" Type="smallint" />
+          <Property Name="TSSDataLoadingFrequency" Type="smallint" />
+          <Property Name="ESSDataPollingFrequency" Type="smallint" Nullable="false" />
+          <Property Name="MobileESSDataPollingFrequency" Type="smallint" Nullable="false" />
+          <Property Name="QueuedSpeedThreshold" Type="smallint" Nullable="false" />
+          <Property Name="CongestedSpeedThreshold" Type="smallint" Nullable="false" />
+          <Property Name="MinimumDisplaySpeed" Type="smallint" />
+          <Property Name="TroupeRange" Type="smallint" />
+          <Property Name="ThreeGantrySpeed" Type="smallint" />
+          <Property Name="RecurringCongestionMMLocation" Type="smallint" />
+          <Property Name="SublinkLength" Type="float" />
+          <Property Name="SublinkPercentQueuedCV" Type="smallint" />
+          <Property Name="MaximumDisplaySpeed" Type="smallint" />
+          <Property Name="COFLowerThreshold" Type="float" />
+          <Property Name="COFUpperThreshold" Type="float" />
+          <Property Name="RoadSurfaceStatusDryCOF" Type="float" />
+          <Property Name="RoadSurfaceStatusSnowCOF" Type="float" />
+          <Property Name="RoadSurfaceStatusWetCOF" Type="float" />
+          <Property Name="RoadSurfaceStatusIceCOF" Type="float" />
+          <Property Name="WRTMMaxRecommendedSpeed" Type="float" />
+          <Property Name="WRTMMaxRecommendedSpeedLevel1" Type="float" />
+          <Property Name="WRTMMaxRecommendedSpeedLevel2" Type="float" />
+          <Property Name="WRTMMaxRecommendedSpeedLevel3" Type="float" />
+          <Property Name="WRTMMaxRecommendedSpeedLevel4" Type="float" />
+          <Property Name="WRTMMinRecommendedSpeed" Type="float" />
+          <Property Name="VisibilityThreshold" Type="float" />
+          <Property Name="VisibilityStatusClear" Type="float" />
+          <Property Name="VisibilityStatusFogNotPatchy" Type="float" />
+          <Property Name="VisibilityStatusPatchyFog" Type="float" />
+          <Property Name="VisibilityStatusBlowingSnow" Type="float" />
+          <Property Name="VisibilityStatusSmoke" Type="float" />
+          <Property Name="VisibilityStatusSeaSpray" Type="float" />
+          <Property Name="VisibilityStatusVehicleSpray" Type="float" />
+          <Property Name="VisibilityStatusBlowingDust" Type="float" />
+          <Property Name="VisibilityStatusBlowingSand" Type="float" />
+          <Property Name="VisibilityStatusSunGlare" Type="float" />
+          <Property Name="VisibilityStatusSwarmsOfInsects" Type="float" />
+          <Property Name="OccupancyThreshold" Type="smallint" />
+          <Property Name="VolumeThreshold" Type="smallint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_Roadway' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_Roadway">
+          <Key>
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Direction" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="EndMM" />
+            <PropertyRef Name="MMIncreasingDirection" />
+          </Key>
+          <Property Name="RoadwayId" Type="nvarchar" MaxLength="25" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="Direction" Type="nvarchar" Nullable="false" MaxLength="15" />
+          <Property Name="Grade" Type="float" />
+          <Property Name="BeginMM" Type="float" Nullable="false" />
+          <Property Name="EndMM" Type="float" Nullable="false" />
+          <Property Name="MMIncreasingDirection" Type="nvarchar" Nullable="false" MaxLength="15" />
+          <Property Name="LowerHeading" Type="float" />
+          <Property Name="UpperHeading" Type="float" />
+          <Property Name="RecurringCongestionMMLocation" Type="float" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_RoadwayESS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_RoadwayESS">
+          <Key>
+            <PropertyRef Name="RoadwayId" />
+            <PropertyRef Name="ESSId" />
+          </Key>
+          <Property Name="RoadwayId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="ESSId" Type="nvarchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_RoadwayLinks' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_RoadwayLinks">
+          <Key>
+            <PropertyRef Name="LinkId" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="EndMM" />
+          </Key>
+          <Property Name="RoadwayId" Type="nvarchar" MaxLength="25" />
+          <Property Name="LinkId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="BeginMM" Type="float" Nullable="false" />
+          <Property Name="EndMM" Type="float" Nullable="false" />
+          <Property Name="StartCrossStreetName" Type="nvarchar" MaxLength="50" />
+          <Property Name="EndCrossStreetName" Type="nvarchar" MaxLength="50" />
+          <Property Name="UpstreamLinkId" Type="nvarchar" MaxLength="25" />
+          <Property Name="DownstreamLinkId" Type="nvarchar" MaxLength="25" />
+          <Property Name="NumberLanes" Type="smallint" />
+          <Property Name="SpeedLimit" Type="smallint" />
+          <Property Name="Direction" Type="nvarchar" MaxLength="15" />
+          <Property Name="NumberDetectorStations" Type="smallint" />
+          <Property Name="DetectorStations" Type="nvarchar" MaxLength="50" />
+          <Property Name="ESS" Type="nvarchar" MaxLength="25" />
+          <Property Name="VSLSignId" Type="nvarchar" MaxLength="25" />
+          <Property Name="DMSId" Type="nvarchar" MaxLength="25" />
+          <Property Name="RSEId" Type="nvarchar" MaxLength="25" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_RoadwayLinksDetectorStation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_RoadwayLinksDetectorStation">
+          <Key>
+            <PropertyRef Name="LinkId" />
+            <PropertyRef Name="DSId" />
+          </Key>
+          <Property Name="LinkId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="DSId" Type="nvarchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_RoadwayLinksESS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_RoadwayLinksESS">
+          <Key>
+            <PropertyRef Name="LinkId" />
+            <PropertyRef Name="ESSId" />
+          </Key>
+          <Property Name="LinkId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="ESSId" Type="nvarchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_RoadwayMileMarkers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_RoadwayMileMarkers">
+          <Key>
+            <PropertyRef Name="RoadwayId" />
+            <PropertyRef Name="MMNumber" />
+            <PropertyRef Name="Latitude1" />
+            <PropertyRef Name="Longitude1" />
+            <PropertyRef Name="Latitude2" />
+            <PropertyRef Name="Longitude2" />
+          </Key>
+          <Property Name="RoadwayId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="MMNumber" Type="float" Nullable="false" />
+          <Property Name="Latitude1" Type="float" Nullable="false" />
+          <Property Name="Longitude1" Type="float" Nullable="false" />
+          <Property Name="Latitude2" Type="float" Nullable="false" />
+          <Property Name="Longitude2" Type="float" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_RoadwaySubLinks' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_RoadwaySubLinks">
+          <Key>
+            <PropertyRef Name="SubLinkId" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="EndMM" />
+          </Key>
+          <Property Name="RoadwayId" Type="nvarchar" MaxLength="25" />
+          <Property Name="SubLinkId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="BeginMM" Type="float" Nullable="false" />
+          <Property Name="EndMM" Type="float" Nullable="false" />
+          <Property Name="SpeedLimit" Type="smallint" />
+          <Property Name="NumberLanes" Type="smallint" />
+          <Property Name="DownstreamSubLinkId" Type="nvarchar" MaxLength="25" />
+          <Property Name="UpstreamSubLinkId" Type="nvarchar" MaxLength="25" />
+          <Property Name="Direction" Type="nvarchar" MaxLength="15" />
+          <Property Name="VSLSignID" Type="nvarchar" MaxLength="25" />
+          <Property Name="DMSID" Type="nvarchar" MaxLength="25" />
+          <Property Name="RSEID" Type="nvarchar" MaxLength="25" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.Configuration_TSSDetectorStation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Configuration_TSSDetectorStation">
+          <Key>
+            <PropertyRef Name="DSId" />
+            <PropertyRef Name="MMLocation" />
+            <PropertyRef Name="NumberDetectionZones" />
+          </Key>
+          <Property Name="LinkId" Type="nvarchar" MaxLength="25" />
+          <Property Name="DSId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="DSName" Type="nvarchar" MaxLength="50" />
+          <Property Name="MMLocation" Type="float" Nullable="false" />
+          <Property Name="NumberLanes" Type="smallint" />
+          <Property Name="NumberDetectionZones" Type="smallint" Nullable="false" />
+          <Property Name="DetectionZones" Type="nvarchar" MaxLength="100" />
+          <Property Name="Latitude" Type="float" />
+          <Property Name="Longitude" Type="float" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TME_CVData_Input">
+          <Key>
+            <PropertyRef Name="CVMessageIdentifier" />
+          </Key>
+          <Property Name="CVMessageIdentifier" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NomadicDeviceID" Type="nvarchar" MaxLength="25" />
+          <Property Name="DateGenerated" Type="datetime2" Precision="0" />
+          <Property Name="Speed" Type="float" />
+          <Property Name="Heading" Type="smallint" />
+          <Property Name="Latitude" Type="float" />
+          <Property Name="Longitude" Type="float" />
+          <Property Name="MMLocation" Type="float" Nullable="false" />
+          <Property Name="CVQueuedState" Type="bit" />
+          <Property Name="CoefficientOfFriction" Type="float" />
+          <Property Name="Temperature" Type="smallint" />
+          <Property Name="RoadwayId" Type="nvarchar" MaxLength="25" />
+          <Property Name="LateralAcceleration" Type="float" />
+          <Property Name="LongitudinalAcceleration" Type="float" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TME_CVData_Input_Processed' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TME_CVData_Input_Processed">
+          <Key>
+            <PropertyRef Name="MMLocation" />
+          </Key>
+          <Property Name="NomadicDeviceID" Type="nvarchar" MaxLength="25" />
+          <Property Name="DateGenerated" Type="nvarchar" MaxLength="25" />
+          <Property Name="DateProcessed" Type="nvarchar" MaxLength="25" />
+          <Property Name="Speed" Type="float" />
+          <Property Name="Heading" Type="smallint" />
+          <Property Name="MMLocation" Type="float" Nullable="false" />
+          <Property Name="CVQueuedState" Type="bit" />
+          <Property Name="RoadwayID" Type="nvarchar" MaxLength="25" />
+          <Property Name="CoefficientOfFriction" Type="float" />
+          <Property Name="Temperature" Type="smallint" />
+          <Property Name="SubLinkId" Type="nvarchar" MaxLength="25" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TME_CVData_SubLink' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TME_CVData_SubLink">
+          <Key>
+            <PropertyRef Name="SubLinkId" />
+            <PropertyRef Name="DateProcessed" />
+            <PropertyRef Name="CVAvgSpeed" />
+            <PropertyRef Name="NumberCVs" />
+            <PropertyRef Name="NumberQueuedCVs" />
+          </Key>
+          <Property Name="RoadwayId" Type="nvarchar" MaxLength="25" />
+          <Property Name="SubLinkId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="DateProcessed" Type="datetime2" Nullable="false" Precision="0" />
+          <Property Name="IntervalLength" Type="smallint" />
+          <Property Name="TSSAvgSpeed" Type="float" />
+          <Property Name="WRTMSpeed" Type="float" />
+          <Property Name="CVAvgSpeed" Type="float" Nullable="false" />
+          <Property Name="NumberCVs" Type="smallint" Nullable="false" />
+          <Property Name="NumberQueuedCVs" Type="smallint" Nullable="false" />
+          <Property Name="PercentQueuedCVs" Type="smallint" />
+          <Property Name="CVQueuedState" Type="bit" />
+          <Property Name="CVCongestedState" Type="bit" />
+          <Property Name="RecommendedTargetSpeed" Type="smallint" />
+          <Property Name="RecommendedTargetSpeedSource" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TME_ESSData_Input' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TME_ESSData_Input">
+          <Key>
+            <PropertyRef Name="ESSId" />
+            <PropertyRef Name="DateReceived" />
+          </Key>
+          <Property Name="ESSId" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="ESSVisibilityDistance" Type="float" />
+          <Property Name="ESSVisibilityStatus" Type="nvarchar" MaxLength="255" />
+          <Property Name="ESSCoefficientOfFriction" Type="float" />
+          <Property Name="ESSSurfaceStatus" Type="nvarchar" MaxLength="255" />
+          <Property Name="DateReceived" Type="datetime2" Nullable="false" Precision="0" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TME_ESSMobileData_Input' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TME_ESSMobileData_Input">
+          <Key>
+            <PropertyRef Name="MobileESSId" />
+            <PropertyRef Name="Longitude" />
+          </Key>
+          <Property Name="MobileESSId" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="Latitude" Type="float" />
+          <Property Name="Longitude" Type="float" Nullable="false" />
+          <Property Name="Bearing" Type="float" />
+          <Property Name="Friction" Type="float" />
+          <Property Name="ObservationPavement" Type="nvarchar" MaxLength="25" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TME_TSSData_Input' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TME_TSSData_Input">
+          <Key>
+            <PropertyRef Name="DZId" />
+            <PropertyRef Name="Volume" />
+            <PropertyRef Name="Occupancy" />
+            <PropertyRef Name="AvgSpeed" />
+          </Key>
+          <Property Name="DZId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="DSId" Type="nvarchar" MaxLength="50" />
+          <Property Name="DateReceived" Type="datetime2" Precision="0" />
+          <Property Name="StartInterval" Type="smallint" />
+          <Property Name="EndInterval" Type="smallint" />
+          <Property Name="IntervalLength" Type="smallint" />
+          <Property Name="BeginTime" Type="datetime2" Precision="0" />
+          <Property Name="EndTime" Type="datetime2" Precision="0" />
+          <Property Name="Volume" Type="smallint" Nullable="false" />
+          <Property Name="Occupancy" Type="real" Nullable="false" />
+          <Property Name="AvgSpeed" Type="smallint" Nullable="false" />
+          <Property Name="Queued" Type="bit" />
+          <Property Name="Congested" Type="bit" />
+          <Property Name="DZStatus" Type="nvarchar" MaxLength="25" />
+          <Property Name="DataType" Type="nvarchar" MaxLength="25" />
+          <Property Name="RoadwayId" Type="nvarchar" MaxLength="25" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TME_TSSESS_Link' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TME_TSSESS_Link">
+          <Key>
+            <PropertyRef Name="LinkId" />
+            <PropertyRef Name="DateProcessed" />
+            <PropertyRef Name="TSSSpeed" />
+            <PropertyRef Name="TSSVolume" />
+          </Key>
+          <Property Name="RoadwayId" Type="nvarchar" MaxLength="25" />
+          <Property Name="LinkId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="DateProcessed" Type="datetime2" Nullable="false" Precision="0" />
+          <Property Name="IntervalLength" Type="smallint" />
+          <Property Name="TSSSpeed" Type="float" Nullable="false" />
+          <Property Name="ESSSpeed" Type="float" />
+          <Property Name="TSSVolume" Type="smallint" Nullable="false" />
+          <Property Name="TSSOccupancy" Type="float" />
+          <Property Name="Congested" Type="bit" />
+          <Property Name="Queued" Type="bit" />
+          <Property Name="RecommendedSpeed" Type="smallint" />
+          <Property Name="RecommendedSpeedSource" Type="nvarchar" MaxLength="50" />
+          <Property Name="CurrentDMSMessage" Type="nvarchar" MaxLength="255" />
+          <Property Name="CurrentVSLSignSpeed" Type="smallint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TMEOutput_QWARN_QueueInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TMEOutput_QWARN_QueueInfo">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="BOQ_MMLocation" />
+            <PropertyRef Name="BOQ_LinkId" />
+            <PropertyRef Name="FOQ_MMLocation" />
+            <PropertyRef Name="FOQ_LinkId" />
+            <PropertyRef Name="RateOfQueueGrowth" />
+            <PropertyRef Name="SPeed_In_Queue" />
+          </Key>
+          <Property Name="DateGenerated" Type="datetime2" Nullable="false" Precision="0" />
+          <Property Name="BOQ_MMLocation" Type="smallint" Nullable="false" />
+          <Property Name="BOQ_LinkId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="FOQ_MMLocation" Type="float" Nullable="false" />
+          <Property Name="FOQ_LinkId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="RateOfQueueGrowth" Type="float" Nullable="false" />
+          <Property Name="SPeed_In_Queue" Type="smallint" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TMEOutput_QWARNMessage_CV' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TMEOutput_QWARNMessage_CV">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="BOQMMLocation" />
+            <PropertyRef Name="FOQMMLocation" />
+          </Key>
+          <Property Name="DateGenerated" Type="datetime2" Nullable="false" Precision="0" />
+          <Property Name="RoadwayID" Type="nvarchar" MaxLength="25" />
+          <Property Name="BOQMMLocation" Type="float" Nullable="false" />
+          <Property Name="FOQMMLocation" Type="float" Nullable="false" />
+          <Property Name="SpeedInQueue" Type="smallint" />
+          <Property Name="RateOfQueueGrowth" Type="float" />
+          <Property Name="ValidityDuration" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TMEOutput_ShockWaveInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TMEOutput_ShockWaveInformation">
+          <Key>
+            <PropertyRef Name="Timestamp" />
+            <PropertyRef Name="RoadwayIdentifier" />
+            <PropertyRef Name="MileMarkerLocation" />
+            <PropertyRef Name="SchockwaveSpeed" />
+          </Key>
+          <Property Name="Timestamp" Type="datetime2" Nullable="false" Precision="0" />
+          <Property Name="RoadwayIdentifier" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="MileMarkerLocation" Type="float" Nullable="false" />
+          <Property Name="SchockwaveSpeed" Type="smallint" Nullable="false" />
+          <Property Name="SchockwaveDirection" Type="nvarchar" MaxLength="15" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TMEOutput_SPDHARMMessage_CV' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TMEOutput_SPDHARMMessage_CV">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="RecommendedSpeed" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="Justification" />
+          </Key>
+          <Property Name="DateGenerated" Type="datetime2" Nullable="false" Precision="0" />
+          <Property Name="RoadwayId" Type="nvarchar" MaxLength="255" />
+          <Property Name="RecommendedSpeed" Type="smallint" Nullable="false" />
+          <Property Name="BeginMM" Type="float" Nullable="false" />
+          <Property Name="EndMM" Type="float" />
+          <Property Name="Justification" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="ValidityDuration" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TMEOutput_SPDHARMMessage_Infrastructure' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TMEOutput_SPDHARMMessage_Infrastructure">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="RecommendedSpeed" />
+            <PropertyRef Name="VSLId" />
+            <PropertyRef Name="Justification" />
+          </Key>
+          <Property Name="DateGenerated" Type="datetime2" Nullable="false" Precision="0" />
+          <Property Name="RecommendedSpeed" Type="smallint" Nullable="false" />
+          <Property Name="VSLId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="Justification" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="LinkId" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'infloseattletst-db-sql.dbo.TMEOutput_WRTM_Alerts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TMEOutput_WRTM_Alerts">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="WeatherAlert" />
+            <PropertyRef Name="Justification" />
+            <PropertyRef Name="RoadwayId" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="EndMM" />
+          </Key>
+          <Property Name="DateGenerated" Type="datetime2" Nullable="false" Precision="0" />
+          <Property Name="WeatherAlert" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Justification" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="RoadwayId" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="BeginMM" Type="float" Nullable="false" />
+          <Property Name="EndMM" Type="float" Nullable="false" />
+          <Property Name="BeginTime" Type="datetime2" Precision="0" />
+          <Property Name="EndTime" Type="datetime2" Precision="0" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6013: The table/view 'infloseattletst-db-sql.dbo.Configuration_TSSDetectionZone' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Configuration_TSSDetectionZone">
+        <Property Name="DSId" Type="nvarchar" MaxLength="25" />
+        <Property Name="DZId" Type="nvarchar" MaxLength="25" />
+        <Property Name="DZType" Type="nvarchar" MaxLength="25" />
+        <Property Name="LaneNumber" Type="smallint" />
+        <Property Name="LaneType" Type="nvarchar" MaxLength="25" />
+        <Property Name="LaneDescription" Type="nvarchar" MaxLength="25" />
+        <Property Name="DataType" Type="nvarchar" MaxLength="25" />
+        <Property Name="DZStatus" Type="nvarchar" MaxLength="15" />
+        <Property Name="Direction" Type="nvarchar" MaxLength="15" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'infloseattletst-db-sql.dbo.TMEOutput_QWARNMessage_Infrastructure' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="TMEOutput_QWARNMessage_Infrastructure">
+        <Property Name="DateGenerated" Type="datetime2" Precision="0" />
+        <Property Name="QWARNMessage" Type="nvarchar" MaxLength="255" />
+        <Property Name="DMSId" Type="nvarchar" MaxLength="25" />
+      </EntityType>-->
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Entities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Configuration_ESS" EntityType="Model.Configuration_ESS" />
+          <EntitySet Name="Configuration_INFLOThresholds" EntityType="Model.Configuration_INFLOThresholds" />
+          <EntitySet Name="Configuration_Roadway" EntityType="Model.Configuration_Roadway" />
+          <EntitySet Name="Configuration_RoadwayESS" EntityType="Model.Configuration_RoadwayESS" />
+          <EntitySet Name="Configuration_RoadwayLinks" EntityType="Model.Configuration_RoadwayLinks" />
+          <EntitySet Name="Configuration_RoadwayLinksDetectorStation" EntityType="Model.Configuration_RoadwayLinksDetectorStation" />
+          <EntitySet Name="Configuration_RoadwayLinksESS" EntityType="Model.Configuration_RoadwayLinksESS" />
+          <EntitySet Name="Configuration_RoadwayMileMarkers" EntityType="Model.Configuration_RoadwayMileMarkers" />
+          <EntitySet Name="Configuration_RoadwaySubLinks" EntityType="Model.Configuration_RoadwaySubLinks" />
+          <EntitySet Name="Configuration_TSSDetectorStation" EntityType="Model.Configuration_TSSDetectorStation" />
+          <EntitySet Name="TME_CVData_Input" EntityType="Model.TME_CVData_Input" />
+          <EntitySet Name="TME_CVData_Input_Processed" EntityType="Model.TME_CVData_Input_Processed" />
+          <EntitySet Name="TME_CVData_SubLink" EntityType="Model.TME_CVData_SubLink" />
+          <EntitySet Name="TME_ESSData_Input" EntityType="Model.TME_ESSData_Input" />
+          <EntitySet Name="TME_ESSMobileData_Input" EntityType="Model.TME_ESSMobileData_Input" />
+          <EntitySet Name="TME_TSSData_Input" EntityType="Model.TME_TSSData_Input" />
+          <EntitySet Name="TME_TSSESS_Link" EntityType="Model.TME_TSSESS_Link" />
+          <EntitySet Name="TMEOutput_QWARN_QueueInfo" EntityType="Model.TMEOutput_QWARN_QueueInfo" />
+          <EntitySet Name="TMEOutput_QWARNMessage_CV" EntityType="Model.TMEOutput_QWARNMessage_CV" />
+          <EntitySet Name="TMEOutput_ShockWaveInformation" EntityType="Model.TMEOutput_ShockWaveInformation" />
+          <EntitySet Name="TMEOutput_SPDHARMMessage_CV" EntityType="Model.TMEOutput_SPDHARMMessage_CV" />
+          <EntitySet Name="TMEOutput_SPDHARMMessage_Infrastructure" EntityType="Model.TMEOutput_SPDHARMMessage_Infrastructure" />
+          <EntitySet Name="TMEOutput_WRTM_Alerts" EntityType="Model.TMEOutput_WRTM_Alerts" />
+          <EntitySet Name="sysdiagrams" EntityType="Model.sysdiagram" />
+        </EntityContainer>
+        <EntityType Name="Configuration_ESS">
+          <Key>
+            <PropertyRef Name="ESSId" />
+          </Key>
+          <Property Type="String" Name="ESSId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ESSType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ESSOperationType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ESSMobilityType" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="BeginMM" />
+          <Property Type="Double" Name="EndMM" />
+        </EntityType>
+        <EntityType Name="Configuration_INFLOThresholds">
+          <Key>
+            <PropertyRef Name="CVDataPollingFrequency" />
+            <PropertyRef Name="TSSDataPollingFrequency" />
+            <PropertyRef Name="ESSDataPollingFrequency" />
+            <PropertyRef Name="MobileESSDataPollingFrequency" />
+            <PropertyRef Name="QueuedSpeedThreshold" />
+            <PropertyRef Name="CongestedSpeedThreshold" />
+          </Key>
+          <Property Type="Int16" Name="CVDataPollingFrequency" Nullable="false" />
+          <Property Type="Int16" Name="TSSDataPollingFrequency" Nullable="false" />
+          <Property Type="Int16" Name="CVDataLoadingFrequency" />
+          <Property Type="Int16" Name="TSSDataLoadingFrequency" />
+          <Property Type="Int16" Name="ESSDataPollingFrequency" Nullable="false" />
+          <Property Type="Int16" Name="MobileESSDataPollingFrequency" Nullable="false" />
+          <Property Type="Int16" Name="QueuedSpeedThreshold" Nullable="false" />
+          <Property Type="Int16" Name="CongestedSpeedThreshold" Nullable="false" />
+          <Property Type="Int16" Name="MinimumDisplaySpeed" />
+          <Property Type="Int16" Name="TroupeRange" />
+          <Property Type="Int16" Name="ThreeGantrySpeed" />
+          <Property Type="Int16" Name="RecurringCongestionMMLocation" />
+          <Property Type="Double" Name="SublinkLength" />
+          <Property Type="Int16" Name="SublinkPercentQueuedCV" />
+          <Property Type="Int16" Name="MaximumDisplaySpeed" />
+          <Property Type="Double" Name="COFLowerThreshold" />
+          <Property Type="Double" Name="COFUpperThreshold" />
+          <Property Type="Double" Name="RoadSurfaceStatusDryCOF" />
+          <Property Type="Double" Name="RoadSurfaceStatusSnowCOF" />
+          <Property Type="Double" Name="RoadSurfaceStatusWetCOF" />
+          <Property Type="Double" Name="RoadSurfaceStatusIceCOF" />
+          <Property Type="Double" Name="WRTMMaxRecommendedSpeed" />
+          <Property Type="Double" Name="WRTMMaxRecommendedSpeedLevel1" />
+          <Property Type="Double" Name="WRTMMaxRecommendedSpeedLevel2" />
+          <Property Type="Double" Name="WRTMMaxRecommendedSpeedLevel3" />
+          <Property Type="Double" Name="WRTMMaxRecommendedSpeedLevel4" />
+          <Property Type="Double" Name="WRTMMinRecommendedSpeed" />
+          <Property Type="Double" Name="VisibilityThreshold" />
+          <Property Type="Double" Name="VisibilityStatusClear" />
+          <Property Type="Double" Name="VisibilityStatusFogNotPatchy" />
+          <Property Type="Double" Name="VisibilityStatusPatchyFog" />
+          <Property Type="Double" Name="VisibilityStatusBlowingSnow" />
+          <Property Type="Double" Name="VisibilityStatusSmoke" />
+          <Property Type="Double" Name="VisibilityStatusSeaSpray" />
+          <Property Type="Double" Name="VisibilityStatusVehicleSpray" />
+          <Property Type="Double" Name="VisibilityStatusBlowingDust" />
+          <Property Type="Double" Name="VisibilityStatusBlowingSand" />
+          <Property Type="Double" Name="VisibilityStatusSunGlare" />
+          <Property Type="Double" Name="VisibilityStatusSwarmsOfInsects" />
+          <Property Type="Int16" Name="OccupancyThreshold" />
+          <Property Type="Int16" Name="VolumeThreshold" />
+        </EntityType>
+        <EntityType Name="Configuration_Roadway">
+          <Key>
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Direction" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="EndMM" />
+            <PropertyRef Name="MMIncreasingDirection" />
+          </Key>
+          <Property Type="String" Name="RoadwayId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Direction" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="Grade" />
+          <Property Type="Double" Name="BeginMM" Nullable="false" />
+          <Property Type="Double" Name="EndMM" Nullable="false" />
+          <Property Type="String" Name="MMIncreasingDirection" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="LowerHeading" />
+          <Property Type="Double" Name="UpperHeading" />
+          <Property Type="Double" Name="RecurringCongestionMMLocation" />
+        </EntityType>
+        <EntityType Name="Configuration_RoadwayESS">
+          <Key>
+            <PropertyRef Name="RoadwayId" />
+            <PropertyRef Name="ESSId" />
+          </Key>
+          <Property Type="String" Name="RoadwayId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ESSId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Configuration_RoadwayLinks">
+          <Key>
+            <PropertyRef Name="LinkId" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="EndMM" />
+          </Key>
+          <Property Type="String" Name="RoadwayId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LinkId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="BeginMM" Nullable="false" />
+          <Property Type="Double" Name="EndMM" Nullable="false" />
+          <Property Type="String" Name="StartCrossStreetName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EndCrossStreetName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UpstreamLinkId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DownstreamLinkId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="NumberLanes" />
+          <Property Type="Int16" Name="SpeedLimit" />
+          <Property Type="Int16" Name="NumberDetectorStations" />
+          <Property Type="String" Name="DetectorStations" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ESS" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VSLSignId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DMSId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RSEId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Direction" MaxLength="15" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Configuration_RoadwayLinksDetectorStation">
+          <Key>
+            <PropertyRef Name="LinkId" />
+            <PropertyRef Name="DSId" />
+          </Key>
+          <Property Type="String" Name="LinkId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DSId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Configuration_RoadwayLinksESS">
+          <Key>
+            <PropertyRef Name="LinkId" />
+            <PropertyRef Name="ESSId" />
+          </Key>
+          <Property Type="String" Name="LinkId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ESSId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Configuration_RoadwayMileMarkers">
+          <Key>
+            <PropertyRef Name="RoadwayId" />
+            <PropertyRef Name="MMNumber" />
+            <PropertyRef Name="Latitude1" />
+            <PropertyRef Name="Longitude1" />
+            <PropertyRef Name="Latitude2" />
+            <PropertyRef Name="Longitude2" />
+          </Key>
+          <Property Type="String" Name="RoadwayId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="MMNumber" Nullable="false" />
+          <Property Type="Double" Name="Latitude1" Nullable="false" />
+          <Property Type="Double" Name="Longitude1" Nullable="false" />
+          <Property Type="Double" Name="Latitude2" Nullable="false" />
+          <Property Type="Double" Name="Longitude2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Configuration_RoadwaySubLinks">
+          <Key>
+            <PropertyRef Name="SubLinkId" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="EndMM" />
+          </Key>
+          <Property Type="String" Name="RoadwayId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SubLinkId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="BeginMM" Nullable="false" />
+          <Property Type="Double" Name="EndMM" Nullable="false" />
+          <Property Type="Int16" Name="SpeedLimit" />
+          <Property Type="Int16" Name="NumberLanes" />
+          <Property Type="String" Name="DownstreamSubLinkId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UpstreamSubLinkId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VSLSignID" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DMSID" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RSEID" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Direction" MaxLength="15" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Configuration_TSSDetectorStation">
+          <Key>
+            <PropertyRef Name="DSId" />
+            <PropertyRef Name="MMLocation" />
+            <PropertyRef Name="NumberDetectionZones" />
+          </Key>
+          <Property Type="String" Name="LinkId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DSId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DSName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="MMLocation" Nullable="false" />
+          <Property Type="Int16" Name="NumberLanes" />
+          <Property Type="Int16" Name="NumberDetectionZones" Nullable="false" />
+          <Property Type="String" Name="DetectionZones" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="Latitude" />
+          <Property Type="Double" Name="Longitude" />
+        </EntityType>
+        <EntityType Name="TME_CVData_Input">
+          <Key>
+            <PropertyRef Name="CVMessageIdentifier" />
+          </Key>
+          <Property Type="Int64" Name="CVMessageIdentifier" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NomadicDeviceID" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DateGenerated" Precision="0" />
+          <Property Type="Double" Name="Speed" />
+          <Property Type="Int16" Name="Heading" />
+          <Property Type="Double" Name="Latitude" />
+          <Property Type="Double" Name="Longitude" />
+          <Property Type="Double" Name="MMLocation" Nullable="false" />
+          <Property Type="Boolean" Name="CVQueuedState" />
+          <Property Type="Double" Name="CoefficientOfFriction" />
+          <Property Type="Int16" Name="Temperature" />
+          <Property Type="String" Name="RoadwayId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="LateralAcceleration" />
+          <Property Type="Double" Name="LongitudinalAcceleration" />
+        </EntityType>
+        <EntityType Name="TME_CVData_Input_Processed">
+          <Key>
+            <PropertyRef Name="MMLocation" />
+          </Key>
+          <Property Type="String" Name="NomadicDeviceID" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DateGenerated" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DateProcessed" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="Speed" />
+          <Property Type="Int16" Name="Heading" />
+          <Property Type="Double" Name="MMLocation" Nullable="false" />
+          <Property Type="Boolean" Name="CVQueuedState" />
+          <Property Type="String" Name="RoadwayID" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="CoefficientOfFriction" />
+          <Property Type="Int16" Name="Temperature" />
+          <Property Type="String" Name="SubLinkId" MaxLength="25" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TME_CVData_SubLink">
+          <Key>
+            <PropertyRef Name="SubLinkId" />
+            <PropertyRef Name="DateProcessed" />
+            <PropertyRef Name="CVAvgSpeed" />
+            <PropertyRef Name="NumberCVs" />
+            <PropertyRef Name="NumberQueuedCVs" />
+          </Key>
+          <Property Type="String" Name="RoadwayId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SubLinkId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DateProcessed" Nullable="false" Precision="0" />
+          <Property Type="Int16" Name="IntervalLength" />
+          <Property Type="Double" Name="TSSAvgSpeed" />
+          <Property Type="Double" Name="WRTMSpeed" />
+          <Property Type="Double" Name="CVAvgSpeed" Nullable="false" />
+          <Property Type="Int16" Name="NumberCVs" Nullable="false" />
+          <Property Type="Int16" Name="NumberQueuedCVs" Nullable="false" />
+          <Property Type="Int16" Name="PercentQueuedCVs" />
+          <Property Type="Boolean" Name="CVQueuedState" />
+          <Property Type="Boolean" Name="CVCongestedState" />
+          <Property Type="Int16" Name="RecommendedTargetSpeed" />
+          <Property Type="String" Name="RecommendedTargetSpeedSource" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TME_ESSData_Input">
+          <Key>
+            <PropertyRef Name="ESSId" />
+            <PropertyRef Name="DateReceived" />
+          </Key>
+          <Property Type="String" Name="ESSId" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="ESSVisibilityDistance" />
+          <Property Type="String" Name="ESSVisibilityStatus" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="ESSCoefficientOfFriction" />
+          <Property Type="String" Name="ESSSurfaceStatus" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DateReceived" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="TME_ESSMobileData_Input">
+          <Key>
+            <PropertyRef Name="MobileESSId" />
+            <PropertyRef Name="Longitude" />
+          </Key>
+          <Property Type="String" Name="MobileESSId" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="Latitude" />
+          <Property Type="Double" Name="Longitude" Nullable="false" />
+          <Property Type="Double" Name="Bearing" />
+          <Property Type="Double" Name="Friction" />
+          <Property Type="String" Name="ObservationPavement" MaxLength="25" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TME_TSSData_Input">
+          <Key>
+            <PropertyRef Name="DZId" />
+            <PropertyRef Name="Volume" />
+            <PropertyRef Name="Occupancy" />
+            <PropertyRef Name="AvgSpeed" />
+          </Key>
+          <Property Type="String" Name="DZId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DSId" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DateReceived" Precision="0" />
+          <Property Type="Int16" Name="StartInterval" />
+          <Property Type="Int16" Name="EndInterval" />
+          <Property Type="Int16" Name="IntervalLength" />
+          <Property Type="DateTime" Name="BeginTime" Precision="0" />
+          <Property Type="DateTime" Name="EndTime" Precision="0" />
+          <Property Type="Int16" Name="Volume" Nullable="false" />
+          <Property Type="Single" Name="Occupancy" Nullable="false" />
+          <Property Type="Int16" Name="AvgSpeed" Nullable="false" />
+          <Property Type="Boolean" Name="Queued" />
+          <Property Type="Boolean" Name="Congested" />
+          <Property Type="String" Name="DZStatus" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DataType" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RoadwayId" MaxLength="25" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TME_TSSESS_Link">
+          <Key>
+            <PropertyRef Name="LinkId" />
+            <PropertyRef Name="DateProcessed" />
+            <PropertyRef Name="TSSSpeed" />
+            <PropertyRef Name="TSSVolume" />
+          </Key>
+          <Property Type="String" Name="RoadwayId" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LinkId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DateProcessed" Nullable="false" Precision="0" />
+          <Property Type="Int16" Name="IntervalLength" />
+          <Property Type="Double" Name="TSSSpeed" Nullable="false" />
+          <Property Type="Double" Name="ESSSpeed" />
+          <Property Type="Int16" Name="TSSVolume" Nullable="false" />
+          <Property Type="Double" Name="TSSOccupancy" />
+          <Property Type="Boolean" Name="Congested" />
+          <Property Type="Boolean" Name="Queued" />
+          <Property Type="Int16" Name="RecommendedSpeed" />
+          <Property Type="String" Name="RecommendedSpeedSource" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CurrentDMSMessage" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="CurrentVSLSignSpeed" />
+        </EntityType>
+        <EntityType Name="TMEOutput_QWARN_QueueInfo">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="BOQ_MMLocation" />
+            <PropertyRef Name="BOQ_LinkId" />
+            <PropertyRef Name="FOQ_MMLocation" />
+            <PropertyRef Name="FOQ_LinkId" />
+            <PropertyRef Name="RateOfQueueGrowth" />
+            <PropertyRef Name="SPeed_In_Queue" />
+          </Key>
+          <Property Type="DateTime" Name="DateGenerated" Nullable="false" Precision="0" />
+          <Property Type="Int16" Name="BOQ_MMLocation" Nullable="false" />
+          <Property Type="String" Name="BOQ_LinkId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="FOQ_MMLocation" Nullable="false" />
+          <Property Type="String" Name="FOQ_LinkId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="RateOfQueueGrowth" Nullable="false" />
+          <Property Type="Int16" Name="SPeed_In_Queue" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TMEOutput_QWARNMessage_CV">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="BOQMMLocation" />
+            <PropertyRef Name="FOQMMLocation" />
+          </Key>
+          <Property Type="DateTime" Name="DateGenerated" Nullable="false" Precision="0" />
+          <Property Type="String" Name="RoadwayID" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="BOQMMLocation" Nullable="false" />
+          <Property Type="Double" Name="FOQMMLocation" Nullable="false" />
+          <Property Type="Int16" Name="SpeedInQueue" />
+          <Property Type="Double" Name="RateOfQueueGrowth" />
+          <Property Type="Int32" Name="ValidityDuration" />
+        </EntityType>
+        <EntityType Name="TMEOutput_ShockWaveInformation">
+          <Key>
+            <PropertyRef Name="Timestamp" />
+            <PropertyRef Name="RoadwayIdentifier" />
+            <PropertyRef Name="MileMarkerLocation" />
+            <PropertyRef Name="SchockwaveSpeed" />
+          </Key>
+          <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="0" />
+          <Property Type="String" Name="RoadwayIdentifier" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="MileMarkerLocation" Nullable="false" />
+          <Property Type="Int16" Name="SchockwaveSpeed" Nullable="false" />
+          <Property Type="String" Name="SchockwaveDirection" MaxLength="15" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TMEOutput_SPDHARMMessage_CV">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="RecommendedSpeed" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="Justification" />
+          </Key>
+          <Property Type="DateTime" Name="DateGenerated" Nullable="false" Precision="0" />
+          <Property Type="String" Name="RoadwayId" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="RecommendedSpeed" Nullable="false" />
+          <Property Type="Double" Name="BeginMM" Nullable="false" />
+          <Property Type="Double" Name="EndMM" />
+          <Property Type="String" Name="Justification" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ValidityDuration" />
+        </EntityType>
+        <EntityType Name="TMEOutput_SPDHARMMessage_Infrastructure">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="RecommendedSpeed" />
+            <PropertyRef Name="VSLId" />
+            <PropertyRef Name="Justification" />
+          </Key>
+          <Property Type="DateTime" Name="DateGenerated" Nullable="false" Precision="0" />
+          <Property Type="Int16" Name="RecommendedSpeed" Nullable="false" />
+          <Property Type="String" Name="VSLId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Justification" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LinkId" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TMEOutput_WRTM_Alerts">
+          <Key>
+            <PropertyRef Name="DateGenerated" />
+            <PropertyRef Name="WeatherAlert" />
+            <PropertyRef Name="Justification" />
+            <PropertyRef Name="RoadwayId" />
+            <PropertyRef Name="BeginMM" />
+            <PropertyRef Name="EndMM" />
+          </Key>
+          <Property Type="DateTime" Name="DateGenerated" Nullable="false" Precision="0" />
+          <Property Type="String" Name="WeatherAlert" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Justification" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RoadwayId" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="BeginMM" Nullable="false" />
+          <Property Type="Double" Name="EndMM" Nullable="false" />
+          <Property Type="DateTime" Name="BeginTime" Precision="0" />
+          <Property Type="DateTime" Name="EndTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="principal_id" Nullable="false" />
+          <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="version" />
+          <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Configuration_ESS">
+            <EntityTypeMapping TypeName="Model.Configuration_ESS">
+              <MappingFragment StoreEntitySet="Configuration_ESS">
+                <ScalarProperty Name="EndMM" ColumnName="EndMM" />
+                <ScalarProperty Name="BeginMM" ColumnName="BeginMM" />
+                <ScalarProperty Name="ESSMobilityType" ColumnName="ESSMobilityType" />
+                <ScalarProperty Name="ESSOperationType" ColumnName="ESSOperationType" />
+                <ScalarProperty Name="ESSType" ColumnName="ESSType" />
+                <ScalarProperty Name="ESSId" ColumnName="ESSId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuration_INFLOThresholds">
+            <EntityTypeMapping TypeName="Model.Configuration_INFLOThresholds">
+              <MappingFragment StoreEntitySet="Configuration_INFLOThresholds">
+                <ScalarProperty Name="VolumeThreshold" ColumnName="VolumeThreshold" />
+                <ScalarProperty Name="OccupancyThreshold" ColumnName="OccupancyThreshold" />
+                <ScalarProperty Name="VisibilityStatusSwarmsOfInsects" ColumnName="VisibilityStatusSwarmsOfInsects" />
+                <ScalarProperty Name="VisibilityStatusSunGlare" ColumnName="VisibilityStatusSunGlare" />
+                <ScalarProperty Name="VisibilityStatusBlowingSand" ColumnName="VisibilityStatusBlowingSand" />
+                <ScalarProperty Name="VisibilityStatusBlowingDust" ColumnName="VisibilityStatusBlowingDust" />
+                <ScalarProperty Name="VisibilityStatusVehicleSpray" ColumnName="VisibilityStatusVehicleSpray" />
+                <ScalarProperty Name="VisibilityStatusSeaSpray" ColumnName="VisibilityStatusSeaSpray" />
+                <ScalarProperty Name="VisibilityStatusSmoke" ColumnName="VisibilityStatusSmoke" />
+                <ScalarProperty Name="VisibilityStatusBlowingSnow" ColumnName="VisibilityStatusBlowingSnow" />
+                <ScalarProperty Name="VisibilityStatusPatchyFog" ColumnName="VisibilityStatusPatchyFog" />
+                <ScalarProperty Name="VisibilityStatusFogNotPatchy" ColumnName="VisibilityStatusFogNotPatchy" />
+                <ScalarProperty Name="VisibilityStatusClear" ColumnName="VisibilityStatusClear" />
+                <ScalarProperty Name="VisibilityThreshold" ColumnName="VisibilityThreshold" />
+                <ScalarProperty Name="WRTMMinRecommendedSpeed" ColumnName="WRTMMinRecommendedSpeed" />
+                <ScalarProperty Name="WRTMMaxRecommendedSpeedLevel4" ColumnName="WRTMMaxRecommendedSpeedLevel4" />
+                <ScalarProperty Name="WRTMMaxRecommendedSpeedLevel3" ColumnName="WRTMMaxRecommendedSpeedLevel3" />
+                <ScalarProperty Name="WRTMMaxRecommendedSpeedLevel2" ColumnName="WRTMMaxRecommendedSpeedLevel2" />
+                <ScalarProperty Name="WRTMMaxRecommendedSpeedLevel1" ColumnName="WRTMMaxRecommendedSpeedLevel1" />
+                <ScalarProperty Name="WRTMMaxRecommendedSpeed" ColumnName="WRTMMaxRecommendedSpeed" />
+                <ScalarProperty Name="RoadSurfaceStatusIceCOF" ColumnName="RoadSurfaceStatusIceCOF" />
+                <ScalarProperty Name="RoadSurfaceStatusWetCOF" ColumnName="RoadSurfaceStatusWetCOF" />
+                <ScalarProperty Name="RoadSurfaceStatusSnowCOF" ColumnName="RoadSurfaceStatusSnowCOF" />
+                <ScalarProperty Name="RoadSurfaceStatusDryCOF" ColumnName="RoadSurfaceStatusDryCOF" />
+                <ScalarProperty Name="COFUpperThreshold" ColumnName="COFUpperThreshold" />
+                <ScalarProperty Name="COFLowerThreshold" ColumnName="COFLowerThreshold" />
+                <ScalarProperty Name="MaximumDisplaySpeed" ColumnName="MaximumDisplaySpeed" />
+                <ScalarProperty Name="SublinkPercentQueuedCV" ColumnName="SublinkPercentQueuedCV" />
+                <ScalarProperty Name="SublinkLength" ColumnName="SublinkLength" />
+                <ScalarProperty Name="RecurringCongestionMMLocation" ColumnName="RecurringCongestionMMLocation" />
+                <ScalarProperty Name="ThreeGantrySpeed" ColumnName="ThreeGantrySpeed" />
+                <ScalarProperty Name="TroupeRange" ColumnName="TroupeRange" />
+                <ScalarProperty Name="MinimumDisplaySpeed" ColumnName="MinimumDisplaySpeed" />
+                <ScalarProperty Name="CongestedSpeedThreshold" ColumnName="CongestedSpeedThreshold" />
+                <ScalarProperty Name="QueuedSpeedThreshold" ColumnName="QueuedSpeedThreshold" />
+                <ScalarProperty Name="MobileESSDataPollingFrequency" ColumnName="MobileESSDataPollingFrequency" />
+                <ScalarProperty Name="ESSDataPollingFrequency" ColumnName="ESSDataPollingFrequency" />
+                <ScalarProperty Name="TSSDataLoadingFrequency" ColumnName="TSSDataLoadingFrequency" />
+                <ScalarProperty Name="CVDataLoadingFrequency" ColumnName="CVDataLoadingFrequency" />
+                <ScalarProperty Name="TSSDataPollingFrequency" ColumnName="TSSDataPollingFrequency" />
+                <ScalarProperty Name="CVDataPollingFrequency" ColumnName="CVDataPollingFrequency" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuration_Roadway">
+            <EntityTypeMapping TypeName="Model.Configuration_Roadway">
+              <MappingFragment StoreEntitySet="Configuration_Roadway">
+                <ScalarProperty Name="RecurringCongestionMMLocation" ColumnName="RecurringCongestionMMLocation" />
+                <ScalarProperty Name="UpperHeading" ColumnName="UpperHeading" />
+                <ScalarProperty Name="LowerHeading" ColumnName="LowerHeading" />
+                <ScalarProperty Name="MMIncreasingDirection" ColumnName="MMIncreasingDirection" />
+                <ScalarProperty Name="EndMM" ColumnName="EndMM" />
+                <ScalarProperty Name="BeginMM" ColumnName="BeginMM" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="Direction" ColumnName="Direction" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuration_RoadwayESS">
+            <EntityTypeMapping TypeName="Model.Configuration_RoadwayESS">
+              <MappingFragment StoreEntitySet="Configuration_RoadwayESS">
+                <ScalarProperty Name="ESSId" ColumnName="ESSId" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuration_RoadwayLinks">
+            <EntityTypeMapping TypeName="Model.Configuration_RoadwayLinks">
+              <MappingFragment StoreEntitySet="Configuration_RoadwayLinks">
+                <ScalarProperty Name="Direction" ColumnName="Direction" />
+                <ScalarProperty Name="RSEId" ColumnName="RSEId" />
+                <ScalarProperty Name="DMSId" ColumnName="DMSId" />
+                <ScalarProperty Name="VSLSignId" ColumnName="VSLSignId" />
+                <ScalarProperty Name="ESS" ColumnName="ESS" />
+                <ScalarProperty Name="DetectorStations" ColumnName="DetectorStations" />
+                <ScalarProperty Name="NumberDetectorStations" ColumnName="NumberDetectorStations" />
+                <ScalarProperty Name="SpeedLimit" ColumnName="SpeedLimit" />
+                <ScalarProperty Name="NumberLanes" ColumnName="NumberLanes" />
+                <ScalarProperty Name="DownstreamLinkId" ColumnName="DownstreamLinkId" />
+                <ScalarProperty Name="UpstreamLinkId" ColumnName="UpstreamLinkId" />
+                <ScalarProperty Name="EndCrossStreetName" ColumnName="EndCrossStreetName" />
+                <ScalarProperty Name="StartCrossStreetName" ColumnName="StartCrossStreetName" />
+                <ScalarProperty Name="EndMM" ColumnName="EndMM" />
+                <ScalarProperty Name="BeginMM" ColumnName="BeginMM" />
+                <ScalarProperty Name="LinkId" ColumnName="LinkId" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuration_RoadwayLinksDetectorStation">
+            <EntityTypeMapping TypeName="Model.Configuration_RoadwayLinksDetectorStation">
+              <MappingFragment StoreEntitySet="Configuration_RoadwayLinksDetectorStation">
+                <ScalarProperty Name="DSId" ColumnName="DSId" />
+                <ScalarProperty Name="LinkId" ColumnName="LinkId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuration_RoadwayLinksESS">
+            <EntityTypeMapping TypeName="Model.Configuration_RoadwayLinksESS">
+              <MappingFragment StoreEntitySet="Configuration_RoadwayLinksESS">
+                <ScalarProperty Name="ESSId" ColumnName="ESSId" />
+                <ScalarProperty Name="LinkId" ColumnName="LinkId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuration_RoadwayMileMarkers">
+            <EntityTypeMapping TypeName="Model.Configuration_RoadwayMileMarkers">
+              <MappingFragment StoreEntitySet="Configuration_RoadwayMileMarkers">
+                <ScalarProperty Name="Longitude2" ColumnName="Longitude2" />
+                <ScalarProperty Name="Latitude2" ColumnName="Latitude2" />
+                <ScalarProperty Name="Longitude1" ColumnName="Longitude1" />
+                <ScalarProperty Name="Latitude1" ColumnName="Latitude1" />
+                <ScalarProperty Name="MMNumber" ColumnName="MMNumber" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuration_RoadwaySubLinks">
+            <EntityTypeMapping TypeName="Model.Configuration_RoadwaySubLinks">
+              <MappingFragment StoreEntitySet="Configuration_RoadwaySubLinks">
+                <ScalarProperty Name="Direction" ColumnName="Direction" />
+                <ScalarProperty Name="RSEID" ColumnName="RSEID" />
+                <ScalarProperty Name="DMSID" ColumnName="DMSID" />
+                <ScalarProperty Name="VSLSignID" ColumnName="VSLSignID" />
+                <ScalarProperty Name="UpstreamSubLinkId" ColumnName="UpstreamSubLinkId" />
+                <ScalarProperty Name="DownstreamSubLinkId" ColumnName="DownstreamSubLinkId" />
+                <ScalarProperty Name="NumberLanes" ColumnName="NumberLanes" />
+                <ScalarProperty Name="SpeedLimit" ColumnName="SpeedLimit" />
+                <ScalarProperty Name="EndMM" ColumnName="EndMM" />
+                <ScalarProperty Name="BeginMM" ColumnName="BeginMM" />
+                <ScalarProperty Name="SubLinkId" ColumnName="SubLinkId" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuration_TSSDetectorStation">
+            <EntityTypeMapping TypeName="Model.Configuration_TSSDetectorStation">
+              <MappingFragment StoreEntitySet="Configuration_TSSDetectorStation">
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="DetectionZones" ColumnName="DetectionZones" />
+                <ScalarProperty Name="NumberDetectionZones" ColumnName="NumberDetectionZones" />
+                <ScalarProperty Name="NumberLanes" ColumnName="NumberLanes" />
+                <ScalarProperty Name="MMLocation" ColumnName="MMLocation" />
+                <ScalarProperty Name="DSName" ColumnName="DSName" />
+                <ScalarProperty Name="DSId" ColumnName="DSId" />
+                <ScalarProperty Name="LinkId" ColumnName="LinkId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TME_CVData_Input">
+            <EntityTypeMapping TypeName="Model.TME_CVData_Input">
+              <MappingFragment StoreEntitySet="TME_CVData_Input">
+                <ScalarProperty Name="LongitudinalAcceleration" ColumnName="LongitudinalAcceleration" />
+                <ScalarProperty Name="LateralAcceleration" ColumnName="LateralAcceleration" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+                <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+                <ScalarProperty Name="CoefficientOfFriction" ColumnName="CoefficientOfFriction" />
+                <ScalarProperty Name="CVQueuedState" ColumnName="CVQueuedState" />
+                <ScalarProperty Name="MMLocation" ColumnName="MMLocation" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Heading" ColumnName="Heading" />
+                <ScalarProperty Name="Speed" ColumnName="Speed" />
+                <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+                <ScalarProperty Name="NomadicDeviceID" ColumnName="NomadicDeviceID" />
+                <ScalarProperty Name="CVMessageIdentifier" ColumnName="CVMessageIdentifier" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TME_CVData_Input_Processed">
+            <EntityTypeMapping TypeName="Model.TME_CVData_Input_Processed">
+              <MappingFragment StoreEntitySet="TME_CVData_Input_Processed">
+                <ScalarProperty Name="SubLinkId" ColumnName="SubLinkId" />
+                <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+                <ScalarProperty Name="CoefficientOfFriction" ColumnName="CoefficientOfFriction" />
+                <ScalarProperty Name="RoadwayID" ColumnName="RoadwayID" />
+                <ScalarProperty Name="CVQueuedState" ColumnName="CVQueuedState" />
+                <ScalarProperty Name="MMLocation" ColumnName="MMLocation" />
+                <ScalarProperty Name="Heading" ColumnName="Heading" />
+                <ScalarProperty Name="Speed" ColumnName="Speed" />
+                <ScalarProperty Name="DateProcessed" ColumnName="DateProcessed" />
+                <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+                <ScalarProperty Name="NomadicDeviceID" ColumnName="NomadicDeviceID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TME_CVData_SubLink">
+            <EntityTypeMapping TypeName="Model.TME_CVData_SubLink">
+              <MappingFragment StoreEntitySet="TME_CVData_SubLink">
+                <ScalarProperty Name="RecommendedTargetSpeedSource" ColumnName="RecommendedTargetSpeedSource" />
+                <ScalarProperty Name="RecommendedTargetSpeed" ColumnName="RecommendedTargetSpeed" />
+                <ScalarProperty Name="CVCongestedState" ColumnName="CVCongestedState" />
+                <ScalarProperty Name="CVQueuedState" ColumnName="CVQueuedState" />
+                <ScalarProperty Name="PercentQueuedCVs" ColumnName="PercentQueuedCVs" />
+                <ScalarProperty Name="NumberQueuedCVs" ColumnName="NumberQueuedCVs" />
+                <ScalarProperty Name="NumberCVs" ColumnName="NumberCVs" />
+                <ScalarProperty Name="CVAvgSpeed" ColumnName="CVAvgSpeed" />
+                <ScalarProperty Name="WRTMSpeed" ColumnName="WRTMSpeed" />
+                <ScalarProperty Name="TSSAvgSpeed" ColumnName="TSSAvgSpeed" />
+                <ScalarProperty Name="IntervalLength" ColumnName="IntervalLength" />
+                <ScalarProperty Name="DateProcessed" ColumnName="DateProcessed" />
+                <ScalarProperty Name="SubLinkId" ColumnName="SubLinkId" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TME_ESSData_Input">
+            <EntityTypeMapping TypeName="Model.TME_ESSData_Input">
+              <MappingFragment StoreEntitySet="TME_ESSData_Input">
+                <ScalarProperty Name="DateReceived" ColumnName="DateReceived" />
+                <ScalarProperty Name="ESSSurfaceStatus" ColumnName="ESSSurfaceStatus" />
+                <ScalarProperty Name="ESSCoefficientOfFriction" ColumnName="ESSCoefficientOfFriction" />
+                <ScalarProperty Name="ESSVisibilityStatus" ColumnName="ESSVisibilityStatus" />
+                <ScalarProperty Name="ESSVisibilityDistance" ColumnName="ESSVisibilityDistance" />
+                <ScalarProperty Name="ESSId" ColumnName="ESSId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TME_ESSMobileData_Input">
+            <EntityTypeMapping TypeName="Model.TME_ESSMobileData_Input">
+              <MappingFragment StoreEntitySet="TME_ESSMobileData_Input">
+                <ScalarProperty Name="ObservationPavement" ColumnName="ObservationPavement" />
+                <ScalarProperty Name="Friction" ColumnName="Friction" />
+                <ScalarProperty Name="Bearing" ColumnName="Bearing" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="MobileESSId" ColumnName="MobileESSId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TME_TSSData_Input">
+            <EntityTypeMapping TypeName="Model.TME_TSSData_Input">
+              <MappingFragment StoreEntitySet="TME_TSSData_Input">
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+                <ScalarProperty Name="DataType" ColumnName="DataType" />
+                <ScalarProperty Name="DZStatus" ColumnName="DZStatus" />
+                <ScalarProperty Name="Congested" ColumnName="Congested" />
+                <ScalarProperty Name="Queued" ColumnName="Queued" />
+                <ScalarProperty Name="AvgSpeed" ColumnName="AvgSpeed" />
+                <ScalarProperty Name="Occupancy" ColumnName="Occupancy" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="BeginTime" ColumnName="BeginTime" />
+                <ScalarProperty Name="IntervalLength" ColumnName="IntervalLength" />
+                <ScalarProperty Name="EndInterval" ColumnName="EndInterval" />
+                <ScalarProperty Name="StartInterval" ColumnName="StartInterval" />
+                <ScalarProperty Name="DateReceived" ColumnName="DateReceived" />
+                <ScalarProperty Name="DSId" ColumnName="DSId" />
+                <ScalarProperty Name="DZId" ColumnName="DZId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TME_TSSESS_Link">
+            <EntityTypeMapping TypeName="Model.TME_TSSESS_Link">
+              <MappingFragment StoreEntitySet="TME_TSSESS_Link">
+                <ScalarProperty Name="CurrentVSLSignSpeed" ColumnName="CurrentVSLSignSpeed" />
+                <ScalarProperty Name="CurrentDMSMessage" ColumnName="CurrentDMSMessage" />
+                <ScalarProperty Name="RecommendedSpeedSource" ColumnName="RecommendedSpeedSource" />
+                <ScalarProperty Name="RecommendedSpeed" ColumnName="RecommendedSpeed" />
+                <ScalarProperty Name="Queued" ColumnName="Queued" />
+                <ScalarProperty Name="Congested" ColumnName="Congested" />
+                <ScalarProperty Name="TSSOccupancy" ColumnName="TSSOccupancy" />
+                <ScalarProperty Name="TSSVolume" ColumnName="TSSVolume" />
+                <ScalarProperty Name="ESSSpeed" ColumnName="ESSSpeed" />
+                <ScalarProperty Name="TSSSpeed" ColumnName="TSSSpeed" />
+                <ScalarProperty Name="IntervalLength" ColumnName="IntervalLength" />
+                <ScalarProperty Name="DateProcessed" ColumnName="DateProcessed" />
+                <ScalarProperty Name="LinkId" ColumnName="LinkId" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMEOutput_QWARN_QueueInfo">
+            <EntityTypeMapping TypeName="Model.TMEOutput_QWARN_QueueInfo">
+              <MappingFragment StoreEntitySet="TMEOutput_QWARN_QueueInfo">
+                <ScalarProperty Name="SPeed_In_Queue" ColumnName="SPeed_In_Queue" />
+                <ScalarProperty Name="RateOfQueueGrowth" ColumnName="RateOfQueueGrowth" />
+                <ScalarProperty Name="FOQ_LinkId" ColumnName="FOQ_LinkId" />
+                <ScalarProperty Name="FOQ_MMLocation" ColumnName="FOQ_MMLocation" />
+                <ScalarProperty Name="BOQ_LinkId" ColumnName="BOQ_LinkId" />
+                <ScalarProperty Name="BOQ_MMLocation" ColumnName="BOQ_MMLocation" />
+                <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMEOutput_QWARNMessage_CV">
+            <EntityTypeMapping TypeName="Model.TMEOutput_QWARNMessage_CV">
+              <MappingFragment StoreEntitySet="TMEOutput_QWARNMessage_CV">
+                <ScalarProperty Name="ValidityDuration" ColumnName="ValidityDuration" />
+                <ScalarProperty Name="RateOfQueueGrowth" ColumnName="RateOfQueueGrowth" />
+                <ScalarProperty Name="SpeedInQueue" ColumnName="SpeedInQueue" />
+                <ScalarProperty Name="FOQMMLocation" ColumnName="FOQMMLocation" />
+                <ScalarProperty Name="BOQMMLocation" ColumnName="BOQMMLocation" />
+                <ScalarProperty Name="RoadwayID" ColumnName="RoadwayID" />
+                <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMEOutput_ShockWaveInformation">
+            <EntityTypeMapping TypeName="Model.TMEOutput_ShockWaveInformation">
+              <MappingFragment StoreEntitySet="TMEOutput_ShockWaveInformation">
+                <ScalarProperty Name="SchockwaveDirection" ColumnName="SchockwaveDirection" />
+                <ScalarProperty Name="SchockwaveSpeed" ColumnName="SchockwaveSpeed" />
+                <ScalarProperty Name="MileMarkerLocation" ColumnName="MileMarkerLocation" />
+                <ScalarProperty Name="RoadwayIdentifier" ColumnName="RoadwayIdentifier" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMEOutput_SPDHARMMessage_CV">
+            <EntityTypeMapping TypeName="Model.TMEOutput_SPDHARMMessage_CV">
+              <MappingFragment StoreEntitySet="TMEOutput_SPDHARMMessage_CV">
+                <ScalarProperty Name="ValidityDuration" ColumnName="ValidityDuration" />
+                <ScalarProperty Name="Justification" ColumnName="Justification" />
+                <ScalarProperty Name="EndMM" ColumnName="EndMM" />
+                <ScalarProperty Name="BeginMM" ColumnName="BeginMM" />
+                <ScalarProperty Name="RecommendedSpeed" ColumnName="RecommendedSpeed" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+                <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMEOutput_SPDHARMMessage_Infrastructure">
+            <EntityTypeMapping TypeName="Model.TMEOutput_SPDHARMMessage_Infrastructure">
+              <MappingFragment StoreEntitySet="TMEOutput_SPDHARMMessage_Infrastructure">
+                <ScalarProperty Name="LinkId" ColumnName="LinkId" />
+                <ScalarProperty Name="Justification" ColumnName="Justification" />
+                <ScalarProperty Name="VSLId" ColumnName="VSLId" />
+                <ScalarProperty Name="RecommendedSpeed" ColumnName="RecommendedSpeed" />
+                <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMEOutput_WRTM_Alerts">
+            <EntityTypeMapping TypeName="Model.TMEOutput_WRTM_Alerts">
+              <MappingFragment StoreEntitySet="TMEOutput_WRTM_Alerts">
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="BeginTime" ColumnName="BeginTime" />
+                <ScalarProperty Name="EndMM" ColumnName="EndMM" />
+                <ScalarProperty Name="BeginMM" ColumnName="BeginMM" />
+                <ScalarProperty Name="RoadwayId" ColumnName="RoadwayId" />
+                <ScalarProperty Name="Justification" ColumnName="Justification" />
+                <ScalarProperty Name="WeatherAlert" ColumnName="WeatherAlert" />
+                <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Model.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

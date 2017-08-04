@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B650026A-B4DA-4431-B711-60AE7D268326}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAI.FRATIS.Wrappers.WebFleet</RootNamespace>
+    <AssemblyName>PAI.FRATIS.Wrappers.WebFleet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\DirectionEnum.cs" />
+    <Compile Include="Model\InformationalStatusType.cs" />
+    <Compile Include="Model\MessageStatus.cs" />
+    <Compile Include="Model\SelectionTimeSpan.cs" />
+    <Compile Include="Model\WebFleetStandStillReport.cs" />
+    <Compile Include="OrderNumberDetails.cs" />
+    <Compile Include="ReportingServiceHelper.cs" />
+    <Compile Include="OrdersServiceHelper.cs" />
+    <Compile Include="Service References\AddressService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DriverManagementService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MessagesService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OrdersService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ReportingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TripReportingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WebFleetTripReportingServices.cs" />
+    <Compile Include="Model\WebFleetColors.cs" />
+    <Compile Include="Model\WebFleetOrderState.cs" />
+    <Compile Include="Model\WebFleetAddress.cs" />
+    <Compile Include="Model\WebFleetOrder.cs" />
+    <Compile Include="Model\WebFleetOrderType.cs" />
+    <Compile Include="WebFleetOrderServices.cs" />
+    <Compile Include="Model\WebFleetDistance.cs" />
+    <Compile Include="Model\WebFleetRouteEstimate.cs" />
+    <Compile Include="WebFleetAddressService.cs" />
+    <Compile Include="Model\WebFleetDriverWorkInfo.cs" />
+    <Compile Include="Model\WebFleetDestinationEstimate.cs" />
+    <Compile Include="Model\WebFleetDriver.cs" />
+    <Compile Include="Model\WebFleetMessage.cs" />
+    <Compile Include="Model\WebFleetObject.cs" />
+    <Compile Include="Model\WebFleetObjectType.cs" />
+    <Compile Include="Model\WebFleetPosition.cs" />
+    <Compile Include="Model\WebFleetPositionEntry.cs" />
+    <Compile Include="Model\WebFleetPositionMovement.cs" />
+    <Compile Include="WebFleetObjectServices.cs" />
+    <Compile Include="Mapping\WebFleetMappingService.cs" />
+    <Compile Include="WebFleetMessagesServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebFleetDriverService.cs" />
+    <Compile Include="Settings\WebFleetSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\AddressService\addressService.wsdl" />
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.attachAddressToGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.calcRouteSimpleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.deleteAddressGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.deleteAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.detachAddressFromGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.GenericServiceQueryOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.GenericServiceWriteOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.geocodeAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.geocodeLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.insertAddressGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.insertAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.showAddressGroupAddressReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.showAddressGroupReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.showAddressReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressService\PAI.FRATIS.Wrappers.WebFleet.AddressService.updateAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\driverManagementService.wsdl" />
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.attachDriverToGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.attachDriverToVehicleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.deleteDriverGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.deleteDriverResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.detachDriverFromGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.detachDriverFromVehicleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.GenericServiceQueryOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.GenericServiceWriteOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.insertDriverGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.insertDriverResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.showDriverAssignmentReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.showDriverGroupDriversResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.showDriverGroupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.updateDriverGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DriverManagementService\PAI.FRATIS.Wrappers.WebFleet.DriverManagementService.updateDriverResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\messagesService.wsdl" />
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.ackQueueMessagesExternResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.clearTextMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.createQueueExternResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.deleteQueueExternResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.GenericServiceQueryOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.GenericServiceWriteOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.listQueuesExternResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.popQueueMessagesExternResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.sendTextMessageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.showMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessagesService\PAI.FRATIS.Wrappers.WebFleet.MessagesService.showQueueExternResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\ordersService.wsdl" />
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.assignOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.cancelOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.clearOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.deleteOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.GenericServiceQueryOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.GenericServiceWriteOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.insertDestinationOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.reassignOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.sendDestinationOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.sendOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.showOrderMessageReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.showOrderReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.showOrderWaypointsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.updateDestinationOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OrdersService\PAI.FRATIS.Wrappers.WebFleet.OrdersService.updateOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\objectsAndPeopleReportingService.wsdl" />
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.attachObjectToGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.deleteObjectGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.detachObjectFromGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.GenericServiceQueryOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.GenericServiceWriteOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.getObjectFeaturesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.insertObjectGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showContractsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showDriverReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showNearestVehiclesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showObjectGroupObjectReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showObjectGroupReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showObjectReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showPersonReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showTrailerReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showVehicleReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.showWakeupTimersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.switchOutputResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.updateObjectGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.updateVehicleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportingService\PAI.FRATIS.Wrappers.WebFleet.ReportingService.updateWakeupTimersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.GenericServiceQueryOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.GenericServiceWriteOpResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.getKPIsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showAccelerationEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showIdleExceptionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showIOReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showLogbookHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showLogbookReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showLogbookResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showObjectAccelerationEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showObjectSpeedingEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showOptiDriveIndicatorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showSpeedingEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showStandStillReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showStoplistReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showTracksResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showTripReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showTripSummaryReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.showWorkingTimesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.updateLogbookModeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\PAI.FRATIS.Wrappers.WebFleet.TripReportingService.updateLogbookResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TripReportingService\tripAndTimeReportingService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AddressService\" />
+    <WCFMetadataStorage Include="Service References\DriverManagementService\" />
+    <WCFMetadataStorage Include="Service References\MessagesService\" />
+    <WCFMetadataStorage Include="Service References\OrdersService\" />
+    <WCFMetadataStorage Include="Service References\ReportingService\" />
+    <WCFMetadataStorage Include="Service References\TripReportingService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DriverManagementService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DriverManagementService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DriverManagementService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessagesService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessagesService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessagesService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AddressService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AddressService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AddressService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OrdersService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OrdersService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OrdersService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReportingService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReportingService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReportingService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TripReportingService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TripReportingService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TripReportingService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PAI.FRATIS.ExternalServices\PAI.FRATIS.ExternalServices.csproj">
+      <Project>{24e3fdaf-ee54-467a-8549-48e5d1a59129}</Project>
+      <Name>PAI.FRATIS.ExternalServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Services\PAI.FRATIS.SFL.Services.csproj">
+      <Project>{6471633b-c3c7-4238-baa8-3f26540329f1}</Project>
+      <Name>PAI.FRATIS.SFL.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

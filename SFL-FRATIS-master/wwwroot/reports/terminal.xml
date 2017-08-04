@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<report	title="Terminal Report" uploadscript="terminal.php">
+	<page xml:id="home">
+		<textinput xml:id="businessName" text="Business Name" business_id="" noedit="true" />
+		
+		<radio xml:id="businessStatus" text="We're:">
+			<option text="Open" value="open" />
+			<option text="Closed" value="closed" />
+		</radio>
+		
+		<radio xml:id="businessHours" text="Our Hours:"> 
+			<option text="Regular" value="regular" />
+			<option text="Limited" value="limited" /> 
+			<option text="Extended" value="extended" />
+		</radio>
+		
+		<textinput xml:id="businessHoursComment" parent="businessHours" text="Specific Hours" />
+		
+		<textarea xml:id="businessComment" text="Status Update" />
+				
+		<radio xml:id="containers" dbid="containers" text="Containers:"> 
+			<option text="Incoming/Outgoing" value="regular" />
+			<option text="Incoming Only" value="incoming" /> 
+			<option text="Outgoing Only" value="outgoing" /> 
+			<option text="Not Available" value="unavailable" />
+		</radio>
+		
+		<radio xml:id="bulk" dbid="bulk" text="Bulk Cargo:"> 
+			<option text="Incoming/Outgoing" value="regular" />
+			<option text="Incoming Only" value="incoming" /> 
+			<option text="Outgoing Only" value="outgoing" /> 
+			<option text="Not Available" value="unavailable" />
+		</radio>
+		
+		<radio xml:id="crane" dbid="crane" text="Cranes:"> 
+			<option text="Operational" value="regular" />
+			<option text="Not Available" value="unavailable" />
+		</radio>
+		
+		<radio xml:id="berths" dbid="berths" text="Berths:"> 
+			<option text="Operational" value="regular" />
+			<option text="Not Available" value="unavailable" />
+		</radio>
+		
+		<radio xml:id="rail" dbid="rail" text="Railways:"> 
+			<option text="Operational" value="regular" />
+			<option text="Not Available" value="unavailable" />
+		</radio>
+		
+		<radio xml:id="refrigeration" dbid="refrigeration" text="Refrigeration:"> 
+			<option text="Operational" value="regular" />
+			<option text="Not Available" value="unavailable" />
+		</radio>
+		
+		<radio xml:id="scales" dbid="scales" text="Scales:"> 
+			<option text="Operational" value="regular" />
+			<option text="Not Available" value="unavailable" />
+		</radio>
+		
+		<button text="Update Status" action="submit" />
+	</page>
+	
+	
+</report>
+

@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<style>
+    #blockDropdown, #s2id_blockDropdown{
+        width: 50%;
+        margin-left: 10px;
+    }
+    #radioQuestion{
+        margin-left: 10px;
+        display: inline-block;
+        color: #486279;
+    }
+    #radioYesDiv{
+        padding-left: 30px;
+        display: inline-block;
+        color: #486279;
+    }
+    #radioNoDiv{
+        padding-left: 30px;
+        display: inline-block;
+        color: #486279;
+    }
+    .page2table{
+        width: 100%;
+        vertical-align: top;
+        border-spacing: 0px;
+        margin-top: 7px;
+    }
+    #tableDiv{
+        overflow-y: auto;
+        min-height: 350px;
+        max-height: 900px;
+    }
+    .selectedRow > td{
+        border-width: 2px;
+        border-color: #46637b;
+        border-style: solid;
+    }
+    .dataTable{
+        border-collapse: collapse;
+        border-style: solid;
+        border-color: #D7D9D8;
+        border-width: 1px;
+    }
+
+    #innerTitleText{
+        padding-top: 10px;
+        padding-left: 2%;
+    }
+
+    #full_body{
+        width: 1180px;
+        margin: 0 auto;
+        font-family: 'Asap-Regular';
+    }
+    .rowHover tr:hover {
+        cursor: pointer;
+    }
+    #duplicateButton{
+        float: right;
+        vertical-align: top;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 7px;
+    }
+    .imageBanner{
+        background-repeat: no-repeat;
+        background-image: url("resources/noblis/icons/GreenGradient_HeaderBar.png");
+    }
+    .pageButtonNext {
+        background-image: url("resources/noblis/icons/NextStep.png");
+        background-repeat: no-repeat;
+        height:28px;
+        width:110px;
+    }
+    .pageButtonNext:hover {
+        background-image: url("resources/noblis/icons/NextStep_Rollover.png");
+        background-repeat: no-repeat;
+        height:28px;
+        width:110px;
+        cursor: pointer;
+    }
+    .removeRowButton{
+        display:inline-block;
+        background:url(resources/noblis/icons/Remove_Button.png) no-repeat;
+        cursor:pointer;
+        height: 25px;
+        width: 27px;
+        float: right
+    }
+    .removeRowButton:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .addOtherButton{
+        display:inline-block;
+        background:url(resources/noblis/icons/Add_Button.png) no-repeat;
+        cursor:pointer;
+        height: 25px;
+        width: 27px;
+        float: right
+    }
+
+    .addOtherButton:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .page3Button{
+        cursor:pointer;
+        float:right;
+        margin-top: 3.5px;
+        margin-right: 5px;
+        background:linear-gradient(#6E88A1,#486279);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#6E88A1, endColorstr=#486279); /* IE6-9 */
+        color: white;
+        font-size:13px;
+        font-weight: bold;
+        width: 75px;
+        height: 19px;
+        text-align: center;
+        border-radius: 5px;
+        position:relative;
+    }
+    .page3Button:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .page3AddButton{
+        cursor:pointer;
+        width: 97px;
+        height: 19px;
+        text-align: center;
+        font-weight: bold;
+        float:right;
+        margin-top: 4px;
+        margin-right: 10px;
+        background:linear-gradient(#6E88A1,#486279);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#6E88A1, endColorstr=#486279); /* IE6-9 */
+        color: white;
+        font-size:13px;
+        border-radius: 5px;
+        display:table;
+    }
+    .page3AddButton:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .pageButtonOk {
+        background-image: url("resources/noblis/icons/Ok.png");
+        background-repeat: no-repeat;
+        height:28px;
+        width:85px;
+    }
+    .pageButtonOk:hover {
+        background-image: url("resources/noblis/icons/Ok_Rollover.png");
+        background-repeat: no-repeat;
+        height:28px;
+        width:85px;
+        cursor: pointer;
+    }
+    .pageButtonPrev {
+        background-image: url("resources/noblis/icons/PrevStep.png");
+        background-repeat: no-repeat;
+        height:28px;
+        width:128px;
+    }
+    .pageButtonPrev:hover {
+        background-image: url("resources/noblis/icons/PrevStep_Rollover.png");
+        background-repeat: no-repeat;
+        height:28px;
+        width:128px;
+        cursor: pointer;
+    }
+    #wrapper {
+        min-height:100%;
+        position:relative;
+    }
+    #costestimator{
+        height:100%;
+        width:100%;
+    }
+    .compBox{
+        width: 400px;
+        margin-left: 5px;
+    }
+    .placeholder { color: #aaa; }
+    .allPage2Checks{
+        margin-bottom: -5px;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+    }
+    .page2CheckLabels{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .plusButton{
+        background:url(resources/noblis/icons/Add_Button.png) no-repeat;
+        cursor:pointer;
+        height: 25px;
+        width: 27px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .minusButton{
+        background:url(resources/noblis/icons/Remove_Button.png) no-repeat;
+        cursor:pointer;
+        height: 25px;
+        width: 27px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .plusButton:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .minusButton:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="resources/jquery-plugins/select2/select2.noblis.css">
+<link rel="stylesheet" type="text/css" href="resources/noblis/css/cost_estimator.css">
+<link rel="stylesheet" type="text/css" href="resources/noblis/css/fonts.css">
+<html lang="en">
+    <head>
+        <title>CO-PILOT Tool</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style id="antiClickjack">body{display:none !important;}</style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
+        <script type="text/javascript" src="resources/jquery-1.9.1/jquery-1.11.0.js"></script>
+        <script>
+            $(function () {
+                $("#header").load("header.html");
+            });
+            $(function () {
+                $("#footer").load("footer.html");
+            });</script>
+    </head>
+    <body id="costestimator">
+        <div id="wrapper">
+            <div id="header"></div>
+            <div id="full_body">
+                <div id="page1_panel" style="padding-top: 16px">
+                    <div class="imageBanner">
+                        <img src="resources/noblis/icons/Step1_ChooseApps.png" alt="Step 1 - Choose Applications" style="padding-left: 15px;">
+                        <button id="checkAllButton" class="pageButton" style="float: right; visibility: hidden">CHECK ALL</button>
+                        <div style="height: 10px;"></div>
+                    </div>
+                    <div class="sectionHead" style="width: 1178px; display: table;"><div class="sectionHeadText" style="display: table-cell;vertical-align: middle;"><div>APPLICATION</div></div></div>
+                    <table class="dataTable" id="body_table" width="100%">
+                        <col width="8px">
+                        <col width="0px">
+                        <col width="1140px">
+                        <col width="32px">
+                    </table>
+                    <div style="width: 100%;height: 16px"></div>
+                    <div class="imageBanner">
+                        <img src="resources/noblis/icons/Step2_SelectBuildBlocks.png" alt="Step 2 - Select Building Blocks" style="padding-left: 15px;">
+                        <div style="width: 100%;height: 10px"></div>
+                    </div>
+                    <table class="dataTable" id="bottom_table" width="100%">
+                        <col width="40%">
+                        <col width="9%">
+                        <col width="1%">
+                        <col width="40%">
+                        <col width="9%">
+                        <tr>
+                            <td class="sectionHead sectionHeadText" style="border-right: 1px solid white;">BUILDING BLOCK</td>
+                            <td class="sectionHead quantitySectionHeadText">QUANTITY</td>
+                            <td></td>
+                            <td class="sectionHead sectionHeadText" style="border-right: 1px solid white;">BUILDING BLOCK</td>
+                            <td class="sectionHead quantitySectionHeadText">QUANTITY</td>
+                        </tr>
+                    </table>
+                    <div width="100%" style="height: 25px"></div>
+                    <div id="nextToPage2" title="Please note: you CANNOT advance until you’ve selected both Applications and Building Blocks" class="pageButtonNext" style="float: right"></div>
+                </div>
+                <div style="width:100%;height:16px;"></div>
+                <div id="page2_panel">
+                    <div class="imageBanner">
+                        <img src="resources/noblis/icons/Step3_AssignApps_v2.png" alt="Step 3 - Assign Applications to Building Blocks" style="padding-left: 15px">
+                        <div style="width:100%;height:10px;"></div>
+                    </div>
+                    <div class="sectionHead" style="width: 1178px; display:table;">
+                        <div class="sectionHeadText" style="display: table-cell;vertical-align: middle;"><div>CHECKS</div></div>
+                    </div>
+                    <div id="checkDiv" class="borderedContainter">
+                        <div style="width:100%;height:10px;"></div>
+                        <div class="page2CheckLabels" id="allBlocksLabel">Do all blocks have at least one assigned application?</div><img class="allPage2Checks" id="allBlocksNo" alt="No" src="resources/noblis/icons/symbol_delete.png"><img class="allPage2Checks" id="allBlocksYes" alt="Yes" src="resources/noblis/icons/symbol_check.png">
+                        <div></div>
+                        <div class="page2CheckLabels" id="allSubsetsLabel">Do all block subsets have at least one assigned application?</div><img class="allPage2Checks" id="allSubsetsNo" alt="No" src="resources/noblis/icons/symbol_delete.png"><img class="allPage2Checks" id="allSubsetsYes" alt="Yes" src="resources/noblis/icons/symbol_check.png">
+                        <div></div>
+                        <div class="page2CheckLabels" id="allQuantsLabel">Do all subset quantity totals match the quantities given in Step 2?</div><img class="allPage2Checks" id="allQuantsNo" alt="No" src="resources/noblis/icons/symbol_delete.png"><img class="allPage2Checks" id="allQuantsYes" alt="Yes" src="resources/noblis/icons/symbol_check.png">
+                    </div>
+                    <div style="width:100%;height:10px;"></div>
+                    <div class="sectionHead" style="width: 1178px; display:table;">
+                        <div class="sectionHeadText" style="display: table-cell;vertical-align: middle;"><div>BUILDING BLOCK</div></div>
+                    </div>
+                    <div id="ddDiv" class="borderedContainter">
+                        <div style="width:100%;height:10px;"></div>
+                        <div id="ddWrapper">
+                            <div id="blockDropdown"></div>
+                        </div>
+                        <div style="width:100%;height:10px;"></div>
+                        <div id="dividerLine"></div>
+                        <div style="width:100%;height:8px;"></div>
+                        <div id="radioDiv" style="padding-bottom:7px;">
+                            <div id="radioQuestion">Will all instances of this Building Block contain the same Applications?</div>
+                            <div id="radioYesDiv">Yes</div>
+                            <div id="radioNoDiv">No</div>
+                        </div>
+                    </div>
+                    <div style="width:100%;height:10px;"></div>
+                    <div class="sectionHead" style="border-left:#D7D9D8 1px solid; border-top: #D7D9D8 1px solid; position:relative; border-right:#D7D9D8 1px solid;width: 1178px; display:table;">
+                        <div class="sectionHeadText" style="display: table-cell;vertical-align: middle;"><div>APPLICATION ASSIGNMENT</div><div class="page3AddButton" id="duplicateButton"><div style="display:table-cell; vertical-align: middle;">ADD SUBSET</div></div></div>
+                    </div>
+                    <div id="tableDiv" class="borderedContainter" style="min-height:200px; padding-bottom: 5px;">
+                        <table class="rowHover" id="singlesTableDiv" width="100%">
+                            <colgroup>
+                                <col width="0%">
+                                <col width="45%">
+                                <col width="10%">
+                                <col width="45%">
+                                <col width="0%">
+                            </colgroup>
+                            <tbody></tbody>
+                        </table>
+                        <table class="rowHover" id="duplicatesTableDiv" width="100%">
+                            <colgroup>
+                                <col width="5%">
+                                <col width="40%">
+                                <col width="10%">
+                                <col width="40%">
+                                <col width="5%">
+                            </colgroup>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div width="100%" style="height: 25px"></div>
+                    <div id="backToPage1" class="pageButtonPrev" style="float: left" onclick="goBackToPage1();"></div>
+                    <div id="nextToPage3" title="Please note: you CANNOT advance until you’ve assigned an app to every building block (and entered quantities if 'NO' is selected)" class="pageButtonNext" style="float: right"></div>
+                </div>
+                <div id="page3_panel">
+                    <div id="data_panel">
+                        <div id="reviewAndEdit" class="imageBanner">
+                            <img src="resources/noblis/icons/Step4_ReviewEdit.png" alt="Step 4 - Review and Edit" style="padding-left: 15px">
+                        </div>
+                    </div>
+                    <div style="width:100%;height:10px;"></div>
+                    <div class="sectionHead" style="width: 1178px; display:table;">
+                        <div class="sectionHeadText" style="display: table-cell;vertical-align: middle;">
+                            <div style="display:inline-block; vertical-align: top;">
+                                <div style="display: table-cell; width: 1090px;">COMPONENT BY BUILDING BLOCK</div>
+                                <div class='modifyCosts' onclick="quantCostEditable();">Modify Costs</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionHead" style="background: #F6F6F6;width: 1178px; display:table; border-bottom: none;">
+                        <div class="sectionHeadText" style="display: table-cell;vertical-align: middle; font-size: 14px;">
+                            <div style="display:inline-block; vertical-align: top;">
+                                <div style="display: table-cell; width:842px;">BUILDING BLOCK</div>
+                                <div style="display: table-cell; text-indent: 10px; border-left: 1px solid white; width: 163px;">QUANTITY</div>
+                                <div style="display: table-cell; text-indent: 10px; border-left: 1px solid white;">DEFAULT UNIT COST</div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="dataTable" id="page3Table" width="100%">
+                        <col width="80%">
+                        <col width="10%">
+                        <col width="10%">
+                    </table>
+                    <div width="100%" style="height: 25px"></div>
+                    <div id="backToPage2" class="pageButtonPrev" style="float: left" onclick="goBackToPage2();"></div>
+                    <div id="nextToPage4" class="pageButtonOk" style="float: right" onClick=doCostEstimation();></div>
+                </div>
+            </div>
+            <div id="page4_panel">
+                <div id="histogram"></div>
+                <div id="piechart"></div>
+            </div>
+            <div width="100%" style="height: 200px;"></div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="resources/jquery-1.9.1/jquery-1.11.0.min.js">
+</script>
+<script type="text/javascript" src="resources/jquery-plugins/jquery.blockUI.min.js">
+</script>
+<script type="text/javascript" src="resources/noblis/js/utils.js">
+</script>
+<script type="text/javascript" src="resources/jquery-plugins/select2/select2.min.js">
+</script>
+<script type="text/javascript" src="resources/Highcharts-4.0.4/js/highcharts.js">
+</script>
+<script type="text/javascript" src="resources/Highcharts-4.0.4/js/modules/exporting.js">
+</script>
+<script type="text/javascript" src="resources/jquery-plugins/jquery-placeholder/jquery.placeholder.js">
+</script>
+<script lang="javascript" src="resources/js-xls/dist/xls.js">
+</script>
+<script type="text/javascript" src="resources/jquery-plugins/jquery.form.js">
+</script>
+<script type="text/javascript" src="resources/seedrandom/seedrandom.min.js">
+</script>
+<script type="text/javascript">
+    //GLOBAL VARIABLES//
+    var PAGE1_OBJ;
+    var PAGE2_OBJ;
+    var PAGE3_OBJ;
+    var PAGE1_BLOCKS = [];
+    var SELECTED;
+    var SELECTEDROWID;
+    var SINGLESELECTROWS = {};
+    var DUPESELECTOBJ = {};
+    var SINGLESELECTS = [];
+    var DUPESELECTS = [];
+    var AVAILBLOCKS = {};
+    var UNIQUEROWID;
+    var TABLEOBJ = {};
+    var SUBSETOBJ = {};
+    var SELECT2DEFINED;
+    var page2disabled = true;
+    var page3disabled = true;
+    var COSTJSON;
+
+    var URL = getBaseURIWithoutContextPath() + getAppName() + '/DataViewController';
+
+    $(document).ready(function () {
+        //************************************************//
+        //********Method Overrides for IE8 Support********//
+        if (!Object.keys) {
+            Object.keys = function (obj) {
+                var keys = [];
+                for (var i in obj) {
+                    if (obj.hasOwnProperty(i)) {
+                        keys.push(i);
+                    }
+                }
+                return keys;
+            };
+        }
+        //******End Method Overrides for IE8 Support******//
+        //************************************************//
+        //Get Data for tables
+        SELECT2DEFINED = false;
+        loadPage1Data();
+        $(".nextToPage2").off();
+        $('#nextToPage2').css('opacity', '0.5');
+        $(".nextToPage3").off();
+        $('#nextToPage3').css('opacity', '0.5');
+    });
+
+//************************************************************************//
+//****************************Page 1 Functions****************************//
+//************************************************************************//
+
+    function validatePage1() {
+        var isCheck = false;
+        var isNum = false;
+        $('.check').each(function () {
+            if ($(this).is(":checked")) {
+                isCheck = true;
+            }
+        });
+        $('.blockNumBox').each(function () {
+            if ($(this).val() > 0) {
+                isNum = true;
+            }
+        });
+        if (isNum && isCheck) {
+            $('#nextToPage2').css('opacity', '1');
+            $("#nextToPage2").off();
+            $("#nextToPage2").click(function () {
+                goToPage2();
+            });
+        } else {
+            $('#nextToPage2').css('opacity', '0.5');
+            $("#nextToPage2").off();
+        }
+    }
+
+    function loadPage1Data() {
+        // <editor-fold defaultstate="collapsed" desc="getPage1Data">
+        $.blockUI({
+            css: {
+                border: 'none',
+                padding: '15px',
+                backgroundColor: '#000',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                opacity: .5,
+                color: '#fff'
+            }
+        });
+        $('#page2_panel').hide();
+        $('#page3_panel').hide();
+        $('#page4_panel').hide();
+        var data = {
+            action: 'getPage1Tables'
+        };
+        //Get Data for tables
+        $.post(URL, data)
+                .done(function (response) {
+                    layoutBodyTable(response);
+                    layoutBottomTable(response);
+                    $('.check').change(function () {
+                        checkBlockBoxes(response.app_to_bb, this);
+                        validatePage1();
+                    });
+                    $('.blockNumBox').keyup(function () {
+                        validatePage1();
+                    });
+                    $('.blockNumBox').change(function () {
+                        validatePage1();
+                    });
+                    $.unblockUI();
+                });
+    }
+
+    function checkBlockBoxes(app_to_bb) {
+        //When a box is checked
+        //Disable all number boxes on page one
+        $('.blockNumBox').each(function () {
+            $(this).prop('disabled', true);
+        });
+        //Get all checkboxes on page one
+        $('#page1_panel').find(':checked').each(function () {
+            var appName = this.value;
+            for (var i in app_to_bb[appName]) {
+                var blockName = app_to_bb[appName][i];
+                var blockNameNoSpace = blockName.toString().split(' ').join('_');
+                var blockNumBoxID = 'blockNumBox_' + blockNameNoSpace;
+                //Enable the number boxes associated with each checkbox
+                $('#' + blockNumBoxID).prop('disabled', false);
+            }
+        });
+        $('.blockNumBox').each(function () {
+            if ($(this).prop('disabled')) {
+                $(this).val("");
+            }
+        });
+    }
+
+    function layoutBodyTable(response) {
+        var table = $("#body_table");
+        var colorCount;
+        var data = response["apps"];
+        for (var category in data) {
+            table.append('<tr class="headRow"><td></td><td colspan="3">' + category + '</td></tr>');
+            colorCount = 0;
+            for (var rowNum in data[category]) {
+                var app_name = data[category][rowNum]["app_name"];
+                var app_id = data[category][rowNum]["app_id"];
+                var appNameNoSpace = app_name.toString().replace('/ /g', '_');
+                var color;
+                if (colorCount % 2 === 0) {
+                    color = "lightRow";
+                } else {
+                    color = "darkRow";
+                }
+                table.append('<tr class="' + color + '" id="page1row_' + appNameNoSpace + '" app="' + appNameNoSpace + '"><td colSpan = "2"></td><td>' + app_name + '</td><td><input type="checkbox" value="' + app_name + '" class="check" id="check' + app_id + '"/></td></tr>');
+                colorCount++;
+                $('#check' + app_id).off();
+            }
+        }
+        $('.lightRow').click(function (event) {
+            if (event.target.type !== 'checkbox') {
+                toggleCheck(this);
+            }
+        });
+        $('.darkRow').click(function (event) {
+            if (event.target.type !== 'checkbox') {
+                toggleCheck(this);
+            }
+        });
+    }
+
+    function toggleCheck(row) {
+        var $checkbox = $(row).find('[type=checkbox]');
+        if ($checkbox.prop('checked') === false) {
+            $checkbox.prop('checked', true).change();
+        } else {
+            $checkbox.prop('checked', false).change();
+        }
+    }
+
+    function layoutBottomTable(response) {
+        var table = document.getElementById("bottom_table");
+        var data = response["blocks"];
+        var blockCount = response["blockCount"];
+        var rowCount = 1;
+        for (var i = 1; i <= blockCount; i += 2) {
+            var block_name1 = data[i];
+            var block_name2 = data[i + 1];
+            var row = table.insertRow(rowCount);
+            var cellColor;
+            if (rowCount % 2 === 0) {
+                cellColor = "darkRow";
+            } else {
+                cellColor = "lightRow";
+            }
+            var cell1 = row.insertCell(0);
+            cell1.innerHTML = "<div style='margin-left: 2px;'>" + block_name1 + "</div>";
+            var block1NoSpaces = block_name1.toString().split(" ").join("_");
+            var blockID1 = "blockNumBox_" + block1NoSpaces;
+            PAGE1_BLOCKS.push(blockID1);
+            cell1.className = cellColor;
+            var cell2 = row.insertCell(1);
+            cell2.style.textAlign = 'center';
+            cell2.style.borderLeft = 'lightgray solid 1px';
+            cell2.style.borderRight = 'lightgray solid 1px';
+            cell2.innerHTML = "<input class='blockNumBox' id='" + blockID1 + "' type='text' min='0' inputVal='" + block_name1 + "' style='width: 70%;' disabled='true'>";
+            cell2.className = cellColor;
+            row.insertCell(2);
+            if (block_name2 !== null && block_name2 !== undefined) {
+                var block2NoSpaces = block_name2.toString().split(" ").join("_");
+                var blockID2 = "blockNumBox_" + block2NoSpaces;
+                PAGE1_BLOCKS.push(blockID2);
+                var cell4 = row.insertCell(3);
+                cell4.innerHTML = "<div style='margin-left: 2px;'>" + block_name2 + "</div>";
+                cell4.className = cellColor;
+                cell4.style.borderLeft = '1px solid lightgray';
+                var cell5 = row.insertCell(4);
+                cell5.style.textAlign = 'center';
+                cell5.style.borderLeft = 'lightgray solid 1px';
+                cell5.innerHTML = "<input class='blockNumBox'  id='blockNumBox_" + block2NoSpaces + "' type='text' min='0' inputVal='" + block_name2 + "' style='width: 70%;' disabled='true'>";
+                cell5.className = cellColor;
+            } else {
+                var cell4 = row.insertCell(3);
+                cell4.className = cellColor;
+                cell4.style.borderLeft = '1px solid lightgray';
+                var cell5 = row.insertCell(4);
+                cell5.style.borderLeft = 'lightgray solid 1px';
+                cell5.className = cellColor;
+            }
+            rowCount++;
+        }
+        $(".blockNumBox").off();
+        $(".blockNumBox").on('input', function (e) { // numeric now handles positive and negative numbers
+            var v = $.trim(this.value);
+            $(this).val(v);
+            var returnVal = false;
+            if (v === '') { // allow negative numbers
+                $(this).attr('data-numeric-old-value', v);
+                returnVal = true;
+            } else if ($.isNumeric(this.value)) {
+                $(this).attr('data-numeric-old-value', v);
+                returnVal = true;
+            } else {
+                $(this).val($(this).attr('data-numeric-old-value'));
+                returnVal = false;
+            }
+            return returnVal;
+        });
+    }
+
+    function goToPage2() {
+        $('.selectedRow').removeClass('selectedRow');
+        var appObj = new Object;
+        $('input:checked').map(function () {
+            appObj[this.value] = this.id;
+        });
+        //var inputBoxes = $("input:text");
+        var blockObj = new Object;
+        for (var i in PAGE1_BLOCKS) {
+            var inputID = PAGE1_BLOCKS[i];
+            var inputValue = $("#" + inputID).val();
+            var inputTitle = $("#" + inputID).attr("inputVal");
+            if (inputValue) {
+                blockObj[inputTitle] = inputValue;
+            }
+        }
+        var passObj = new Object;
+        passObj["appObj"] = appObj;
+        passObj["blockObj"] = blockObj;
+        PAGE1_OBJ = passObj;
+        $('#page1_panel').hide();
+        $('#page3_panel').hide();
+        loadPage2();
+    }
+
+//************************************************************************//
+//****************************Page 2 Functions****************************//
+//************************************************************************//
+    function loadPage2() {
+        AVAILBLOCKS = {};
+        $.blockUI({
+            css: {
+                border: 'none',
+                padding: '15px',
+                backgroundColor: '#000',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                opacity: .5,
+                color: '#fff'
+            }
+        });
+        $("#singlesTableDiv tr").remove();
+        $("#duplicatesTableDiv tr").remove();
+        $('#page2_panel').show();
+        var opts = PAGE1_OBJ;
+        //Parse block arguments
+        var dd = [];
+        var keys = Object.keys(opts['blockObj']);
+        for (var i = 0; i < keys.length; i++) {
+            var key = keys[i];
+            var quantity = opts['blockObj'][key];
+            var blockName = String(key).split(' ').join('_');
+            AVAILBLOCKS[blockName] = quantity;
+            var temp = {};
+            temp['text'] = key + ' (' + quantity + ' total)';
+            temp['id'] = key;
+            dd.push(temp);
+        }
+        //KILL IT WITH FIRE
+        $('#blockDropdown').select2('destroy');
+        $('#blockDropdown').remove();
+        //REBUILD IT
+        var $ddDiv = $('<div id="blockDropdown"></div>');
+        $('#ddWrapper').append($ddDiv);
+        $('#blockDropdown').select2({
+            //placeholder: "Define Blocks",
+            initSelection: function (element, callback) {
+                var data = dd[0];
+                callback(data);
+            },
+            data: dd,
+            background: '#FFFFFF',
+            width: $('#blockDropdown').width()
+        });
+        $('#blockDropdown').off();
+        $('#blockDropdown').on("change", function () {
+            SELECTEDROWID = "";
+            $(".hideAll").hide();
+            if (SELECTED) {
+                blockName = SELECTED.split(' ').join('_');
+                $('#radioYes_' + blockName).hide();
+                $('#radioNo_' + blockName).hide();
+            }
+            SELECTED = $(this).val();
+            console.log(SELECTED);
+            blockName = SELECTED.split(' ').join('_');
+            if ($('input:radio[name=radio_' + blockName + ']:checked').val() === "Yes") {
+                $('#duplicateButton').hide();
+                $(".hideAll").hide();
+                $('.single_' + blockName).show();
+            } else if ($('input:radio[name=radio_' + blockName + ']:checked').val() === "No") {
+                $('#duplicateButton').show();
+                $(".hideAll").hide();
+                $('.dupe_' + blockName).show();
+            }
+            $('#radioYes_' + blockName).show();
+            $('#radioNo_' + blockName).show();
+        });
+        //IF Page2 has not been used yet
+        //Parse app arguments
+        var apps = [];
+        keys = Object.keys(opts['appObj']);
+        for (var i = 0; i < keys.length; i++) {
+            var key = keys[i];
+            var temp = {};
+            temp['text'] = opts['appObj'][key];
+            temp['id'] = key;
+            apps.push(temp);
+        }
+
+        var data = {
+            action: 'getPage2Table'
+        };
+        $.post(URL, data)
+                .done(function (response) {
+                    buildTableObj(apps, response);
+                    UNIQUEROWID = 0;
+                    $('#duplicateButton').hide();
+                    loadSingleTables();
+                    loadDuplicateTables();
+                    console.log("finish loading tables");
+                    $('#blockDropdown').val(dd[0].id);
+                    $('#blockDropdown').change();
+                    console.log("FIRE THE CHANGE EVENT");
+                });
+        $.unblockUI();
+    }
+
+    function buildTableObj(apps, response) {
+        var tableObj = {};
+        for (var block in response) {
+            //If the table object doesnt have this block yet, add it
+            if (tableObj.hasOwnProperty(block) === false) {
+                tableObj[block] = {};
+            }
+            for (var i in apps) { //Go through all of the apps that were checked in Step 1
+                var checkedApp = apps[i]["id"];
+                if (response[block].hasOwnProperty(checkedApp)) { //If the app was checked and belongs with this block
+                    var categoryStr = response[block][checkedApp]; //get the name of the category to add it to
+                    if (tableObj[block].hasOwnProperty(categoryStr) === false) {  //If the category doesnt exist in the block yet, add it
+                        tableObj[block][categoryStr] = {};
+                    }
+                    tableObj[block][categoryStr][checkedApp] = "";
+                }
+            }
+        }
+        TABLEOBJ = tableObj;
+    }
+
+    function addRadioButtons(blockName) {
+        if ($('#radioYes_' + blockName).length <= 0) {
+            var $radioYes = $('<input style="display:inline-block;" class=radioButton name="radio_' + blockName + '" id="radioYes_' + blockName + '" value="Yes" type="radio" checked>');
+            $('#radioYesDiv').append($radioYes);
+            $radioYes.change(function () {
+                //console.log("Changing to simple form");
+                $(".hideAll").hide();
+                $('#duplicateButton').hide();
+                $('.single_' + blockName).show();
+                validatePage2Selections();
+            });
+            $radioYes.hide();
+        }
+        if ($('#radioNo_' + blockName).length <= 0) {
+            var $radioNo = $('<input style="display:inline-block;" class=radioButton name="radio_' + blockName + '" id="radioNo_' + blockName + '" value="No" type="radio">');
+            $('#radioNoDiv').append($radioNo);
+            $radioNo.change(function () {
+                //console.log("Changing to duplicate form");
+                $(".hideAll").hide();
+                $('#duplicateButton').show();
+                $('.dupe_' + blockName).show();
+                validatePage2Selections();
+            });
+            $radioNo.hide();
+        }
+    }
+
+    function addRow() {
+        if (SELECTEDROWID !== "") {
+            var blockName = "SELECTED-" + SELECTED.split(' ').join('_');
+            var tr = $('#' + SELECTEDROWID);
+            $("#" + blockName + " tbody").append(tr);
+            validatePage2Selections();
+        }
+    }
+
+    function removeRow() {
+        if (SELECTEDROWID !== "") {
+            var blockName = SELECTED.split(' ').join('_');
+            var tr = $('#' + SELECTEDROWID);
+            var category = $('#' + SELECTEDROWID).attr('category');
+            tr.insertAfter('#' + category.split(' ').join('_') + "_" + blockName);
+            validatePage2Selections();
+        }
+    }
+
+    function validatePage2Selections() {
+        var isValid = true;
+        $('.page2CheckLabels').hide();
+        $('.allPage2Checks').hide();
+
+        $("#allBlocksLabel").css("color", "#00FF00");
+        for (var i = 0; i < SINGLESELECTS.length; i++) {
+            var selecID = SINGLESELECTS[i];
+            var blockName = (String(selecID).split('-')[1]);
+            if ($('input:radio[name=radio_' + blockName + ']:checked').val() === "Yes") {
+                $("#allBlocksLabel").show();
+                console.log("Showing Blocks Yes");
+                $("#allBlocksYes").show();
+                if ($('#' + selecID + ' tr').not(':first').length <= 0) {
+                    $("#allBlocksLabel").css("color", "red");
+                    console.log("Hiding Blocks Yes");
+                    $("#allBlocksYes").hide();
+                    $("#allBlocksNo").show();
+                    isValid = false;
+                    break;
+                }
+            }
+        }
+        var blockCounts = {};
+        var allSubsets = true;
+        var showSubsets = false;
+        $("#allSubsetsLabel").css("color", "#00FF00");
+        for (var i = 0; i < DUPESELECTS.length; i++) {
+            var selecID = DUPESELECTS[i];
+            var blockName = String(selecID).split('-')[1];
+            if ($('input:radio[name=radio_' + blockName + ']:checked').val() === "No") {
+                showSubsets = true;
+                var subsetNum = $('#' + selecID).attr('subset');
+                var subsetQuant = parseInt($('#dupeQuantBox_' + blockName + subsetNum).val(), 10);
+                if (!blockCounts.hasOwnProperty(blockName)) {
+                    blockCounts[blockName] = 0;
+                }
+                blockCounts[blockName] += subsetQuant;
+                if ($('#' + selecID + ' tr').not(':first').length <= 0) {
+                    allSubsets = false;
+                    isValid = false;
+                }
+            }
+        }
+        if (showSubsets) {
+            $("#allSubsetsLabel").show();
+            if (allSubsets) {
+                $("#allSubsetsLabel").css("color", "#00FF00");
+                $("#allSubsetsYes").show();
+                $("#allSubsetsNo").hide();
+            } else {
+                $("#allSubsetsLabel").css("color", "red");
+                $("#allSubsetsYes").hide();
+                $("#allSubsetsNo").show();
+            }
+        }
+
+        //Check to make sure input quantites match first page quantities
+        var allQuants = true;
+        var showQuants = false;
+        for (var i = 0; i < DUPESELECTS.length; i++) {
+            var selecID = DUPESELECTS[i];
+            var blockName = String(selecID).split('-')[1];
+            var blockNameSpaces = blockName.split("_").join(" ");
+            if ($('input:radio[name=radio_' + blockName + ']:checked').val() === "No") {
+                showQuants = true;
+                if (blockCounts[blockName] !== parseInt(PAGE1_OBJ['blockObj'][blockNameSpaces], 10)) {
+                    allQuants = false;
+                    isValid = false;
+                }
+            }
+        }
+        if (showQuants) {
+            $("#allQuantsLabel").show();
+            if (allQuants) {
+                $("#allQuantsLabel").css("color", "#00FF00");
+                $("#allQuantsYes").show();
+                $("#allQuantsNo").hide();
+            } else {
+                $("#allQuantsLabel").css("color", "red");
+                $("#allQuantsYes").hide();
+                $("#allQuantsNo").show();
+            }
+        }
+        if (isValid) {
+            $('#nextToPage3').css('opacity', '1');
+            if (page3disabled) {
+                $(document.getElementById('nextToPage3')).on('click.page3', function () {
+                    goToPage3();
+                });
+                page3disabled = false;
+            }
+        } else {
+            $(document.getElementById('nextToPage3')).off('click.page3');
+            $('#nextToPage3').css('opacity', '0.5');
+            page3disabled = true;
+        }
+    }
+
+    function loadSingleTables() {
+        //Get the table on the page we will be adding to
+        //console.log("loadSingleTables");
+        SINGLESELECTS = [];
+        var $parentTable = $("#singlesTableDiv  > tbody:last");
+        for (var block in TABLEOBJ) {
+            var blockName = block.split(' ').join('_');
+            if (AVAILBLOCKS.hasOwnProperty(blockName)) {
+                //Create the available apps table
+                var availID = "AVAILABLE-" + blockName;
+                var selecID = "SELECTED-" + blockName;
+                var $availTable;
+                var $selecTable;
+                addRadioButtons(blockName);
+                $availTable = $("<table id=" + availID + "><col width='100%'></table>").addClass("page2table borderedContainter availTable");
+                //Create the selected apps table
+                SINGLESELECTS.push(selecID);
+                $selecTable = $("<table id=" + selecID + "><col width='100%'></table>").addClass("page2table borderedContainter selectTable");
+                $availTable.append("<tr class='tableHeader'><td style='padding-left: 8px;'>Available Applications</td></tr>");
+                $selecTable.append("<tr class='tableHeader'><td style='padding-left: 8px;'>Selected Applications</td></tr>");
+                for (var category in TABLEOBJ[block]) {
+                    var rowID = category.split(' ').join('_') + "_" + blockName;
+                    $availTable.append("<tr class=headRow id='" + rowID + "'><td style='padding-left: 8px; border-bottom: #D7D9D8 1px solid;'>" + category + "</td></tr>");
+                    var colorCount = 0;
+                    for (var app in TABLEOBJ[block][category]) {
+                        var appNoSpaces = app.split(' ').join('_');
+                        rowID = category.split(' ').join('_') + "_" + blockName + "_" + app.split(' ').join('_');
+                        rowID = rowID.replace('(', '').replace(')', '');
+                        var $row = $("<tr category='" + category + "' app='" + appNoSpaces + "' id='" + rowID + "'><td style='padding-left: 8px;'>" + app + "</td></tr>");
+                        if (colorCount % 2 === 0) {
+                            $row.addClass("lightRow");
+                        } else {
+                            $row.addClass("darkRow");
+                        }
+                        $row.attr('category', category);
+                        $availTable.append($row);
+                        colorCount++;
+                    }
+                }
+                $availTable.off();
+                $availTable.on("click", "tr", function () {
+                    if ($(this).attr('category')) {
+                        $('.selectedRow').removeClass('selectedRow');
+                        $(this).addClass("selectedRow");
+                        SELECTEDROWID = $(this).attr("id");
+                    }
+                });
+                $selecTable.off();
+                $selecTable.on("click", "tr", function () {
+                    if ($(this).attr('category')) {
+                        $('.selectedRow').removeClass('selectedRow');
+                        $(this).addClass("selectedRow");
+                        SELECTEDROWID = $(this).attr("id");
+                    }
+                });
+                $row = $("<tr class='hideAll singleTableRow single_" + blockName + "' id='single_" + blockName + "'></tr>");
+                $row.append($('<td></td>'));
+                $row.append($("<td style='vertical-align: top;'></td>").append($availTable));
+                $row.append($("<td style='vertical-align: middle;'><div id='plusMinusDiv' class='ui-helper-center'><div class='plusButton' onclick='addRow();' style='margin-bottom:10px;'></div><div class='minusButton' onclick='removeRow();'></div></div></td>"));
+                $row.append($("<td style='vertical-align: top;'></td>").append($selecTable));
+                $row.append($('<td></td>'));
+                $parentTable.append($row);
+                $row.hide();
+            }
+        }
+
+        for (var selecID in SINGLESELECTROWS) {
+            var length = SINGLESELECTROWS[selecID].length;
+            for (var i = 0; i < length; i++) {
+                rowID = SINGLESELECTROWS[selecID][i];
+                var tr = $('#' + rowID);
+                $("#" + selecID + " tbody").append(tr);
+            }
+        }
+        validatePage2Selections();
+    }
+
+    function loadDuplicateTables() {
+        $("#duplicateButton").off();
+        $("#duplicateButton").click(function () {
+            var block = SELECTED;
+            var blockName = block.split(' ').join('_');
+            buildDupeTable(block, blockName, false);
+            validatePage2Selections();
+        });
+        //Get the table on the page we will be adding to
+        DUPESELECTS = [];
+        for (var block in TABLEOBJ) {
+            var blockName = block.split(' ').join('_');
+            SUBSETOBJ[blockName] = 0;
+            if (AVAILBLOCKS.hasOwnProperty(blockName)) {
+                buildDupeTable(block, blockName, true);
+                buildDupeTable(block, blockName, true);
+            }
+        }
+        //ADD CODE TO FIX DUPE PAGE POPULATION HERE
+        for (var selecID in DUPESELECTOBJ) {
+            //console.log(selecID);
+            var selecArr = selecID.split('-');
+            var blockNoSpaces = selecArr[1];
+            var block = selecArr[1].split('_').join(' ');
+            var dupeNum = selecArr[2];
+            var subset = dupeNum[dupeNum.length - 1];
+            if (subset > 2) {
+                buildDupeTable(block, blockNoSpaces, false);
+                $('.hideAll').hide();
+            }
+            var length = DUPESELECTOBJ[selecID]['appList'].length;
+            for (var i = 0; i < length; i++) {
+                var rowID = DUPESELECTOBJ[selecID]['appList'][i];
+                var quant = DUPESELECTOBJ[selecID]['quant'];
+                var quantBoxID = "dupeQuantBox_" + blockNoSpaces + subset;
+                $('#' + quantBoxID).val(quant);
+                var tr = $('#' + rowID);
+                $("#" + selecID + " tbody").append(tr);
+            }
+        }
+        validatePage2Selections();
+    }
+
+    function buildDupeTable(block, blockName, hide) {
+        SUBSETOBJ[blockName]++;
+        var subsetNum = SUBSETOBJ[blockName];
+        var $parentTable = $("#duplicatesTableDiv");
+        //Add Title Row
+        var $rowOne = $('<tr subset=' + subsetNum + ' class="hideAll darkRow dupe_' + blockName + ' subset' + subsetNum + '"><td colspan="5" style=" padding-left: 8px; ">' + block + ' Subset ' + subsetNum + '<div subset="subset' + subsetNum + '" + dupename="dupe_' + blockName + '"class="page3Button" onclick="deleteDupeRow(this);"><div style="height: 19px; position:absolute; top: -18%;left: 12px;">REMOVE</div></div></td></tr>');
+        $parentTable.append($rowOne);
+        var $rowTwo = $('<tr subset=' + subsetNum + ' app="' + app + '" id=dupeQuantRow' + blockName + ' class="hideAll lightRow dupe_' + blockName + ' subset' + subsetNum + '"><td colspan="5" style="padding-left: 8px;">' + block + ' Quantity: <input id="dupeQuantBox_' + blockName + subsetNum + '" class="dupeQuant" type="text" value=""></td></tr>');
+        $parentTable.append($rowTwo);
+        if (hide) {
+            $rowOne.hide();
+            $rowTwo.hide();
+        }
+        //Add Body Row
+        var availID = "AVAILABLE-" + blockName + "-DUPE" + subsetNum;
+        var $availTable = $("<table subset=" + subsetNum + " id=" + availID + "><col width='100%'></table>").addClass("page2table borderedContainter availTable");
+        //Create the selected apps table
+        var selecID = "SELECTED-" + blockName + "-DUPE" + subsetNum;
+        DUPESELECTS.push(selecID);
+        var $selecTable = $("<table subset=" + subsetNum + " id=" + selecID + "><col width='100%'></table>").addClass("page2table borderedContainter selectTable");
+        $availTable.append("<tr subset=" + subsetNum + " class='tableHeader'><td style='padding-left: 8px;'>Available Applications</td></tr>");
+        $selecTable.append("<tr subset=" + subsetNum + " class='tableHeader'><td style='padding-left: 8px;'>Selected Applications</td></tr>");
+        for (var category in TABLEOBJ[block]) {
+            var rowID = category.split(' ').join('_') + "_" + blockName + "-DUPE" + subsetNum;
+            $availTable.append("<tr subset=" + subsetNum + " class=headRow id='" + rowID + "'><td style='padding-left: 8px; border-bottom: #D7D9D8 1px solid;'>" + category + "</td></tr>");
+            var colorCount = 0;
+            for (var app in TABLEOBJ[block][category]) {
+                var appNoSpaces = app.split(' ').join('_');
+                UNIQUEROWID++;
+                rowID = "dupeRow" + UNIQUEROWID + "-DUPE" + subsetNum;
+                var $row = $("<tr app=" + appNoSpaces + " subset=" + subsetNum + " id='" + rowID + "'><td style='padding-left: 8px;'>" + app + "</td></tr>");
+                if (colorCount % 2 === 0) {
+                    $row.addClass("lightRow");
+                } else {
+                    $row.addClass("darkRow");
+                }
+                $row.attr('category', category);
+                $availTable.append($row);
+                colorCount++;
+            }
+        }
+        $availTable.off();
+        $availTable.on("click", "tr", function () {
+            if ($(this).attr('category')) {
+                $('.selectedRow').removeClass('selectedRow');
+                $(this).addClass("selectedRow");
+                SELECTEDROWID = $(this).attr("id");
+            }
+        });
+        $selecTable.off();
+        $selecTable.on("click", "tr", function () {
+            if ($(this).attr('category')) {
+                $('.selectedRow').removeClass('selectedRow');
+                $(this).addClass("selectedRow");
+                SELECTEDROWID = $(this).attr("id");
+            }
+        });
+        $(".dupeQuant").off();
+        $('.dupeQuant').keyup(function () {
+            validatePage2Selections();
+        });
+        $(".dupeQuant").on('input', function (e) { // numeric now handles positive and negative numbers
+            var v = $.trim(this.value);
+            $(this).val(v);
+            var returnVal = false;
+            if (v === '') {
+                $(this).attr('data-numeric-old-value', v);
+                returnVal = true;
+            }
+            if (v === '0') {
+                $(this).val($(this).attr('data-numeric-old-value'));
+                returnVal = false;
+            } else if ($.isNumeric(this.value)) {
+                $(this).attr('data-numeric-old-value', v);
+                returnVal = true;
+            } else {
+                $(this).val($(this).attr('data-numeric-old-value'));
+                returnVal = false;
+            }
+            return returnVal;
+        });
+        $row = $("<tr subset=" + subsetNum + " class='hideAll dupe_" + blockName + " subset" + subsetNum + "'></tr>");
+        $row.append($('<td></td>'));
+        $row.append($("<td style='vertical-align: top;'></td>").append($availTable));
+        $row.append($("<td style='vertical-align: middle;'><div id='plusMinusDiv' class='ui-helper-center'><div class='plusButton' onclick='addDupeRow();' style='margin-bottom:10px;'></div><br><div class='minusButton' onclick='removeDupeRow();'></div></div></td>"));
+        $row.append($("<td style='vertical-align: top;'></td>").append($selecTable));
+        $row.append($('<td></td>'));
+        $parentTable.append($row);
+        if (hide) {
+            $row.hide();
+        }
+    }
+
+    function deleteDupeRow(el) {
+        var dupeClass = $(el).attr('dupename');
+        var subsetClass = $(el).attr('subset');
+        var blockName = dupeClass.substring(5);
+        var subsetNum = parseInt(subsetClass.substring(6), 10);
+        var selecID = "SELECTED-" + blockName + "-DUPE" + subsetNum;
+        var index = $.inArray(selecID, DUPESELECTS);
+        DUPESELECTS.splice(index, 1);
+        $("." + dupeClass + "." + subsetClass).remove();
+        validatePage2Selections();
+    }
+
+    function addDupeRow() {
+        if (SELECTEDROWID !== "") {
+            var dupeNum = SELECTEDROWID.split('-')[1];
+            var blockName = "SELECTED-" + SELECTED.split(' ').join('_') + '-' + dupeNum;
+            var tr = $('#' + SELECTEDROWID);
+            $("#" + blockName + " tbody").append(tr);
+            validatePage2Selections();
+        }
+    }
+
+    function removeDupeRow() {
+        if (SELECTEDROWID !== "") {
+            var dupeNum = SELECTEDROWID.split('-')[1];
+            var blockName = SELECTED.split(' ').join('_');
+            var tr = $('#' + SELECTEDROWID);
+            var category = $('#' + SELECTEDROWID).attr('category');
+            tr.insertAfter('#' + category.split(' ').join('_') + "_" + blockName + '-' + dupeNum);
+            validatePage2Selections();
+        }
+    }
+
+    function goBackToPage1() {
+        $('.radioButton').hide();
+        $('#page2_panel').hide();
+        $('#page1_panel').show();
+        var $singlesTableDiv = $('#singlesTableDiv');
+        $singlesTableDiv.find(".selectTable").each(function () {
+            var selectID = this.id;
+            SINGLESELECTROWS[selectID] = [];
+            $('#' + selectID).find("tr").each(function () {
+                var app = this.id;
+                if (typeof app !== 'undefined') {
+                    SINGLESELECTROWS[selectID].push(app);
+                }
+            });
+        });
+        var $dupesTableDiv = $('#duplicatesTableDiv');
+        $dupesTableDiv.find(".selectTable").each(function () {
+            var selectID = this.id;
+            DUPESELECTOBJ[selectID] = {};
+            DUPESELECTOBJ[selectID]['appList'] = [];
+            $('#' + selectID).find("tr").each(function () {
+                var rowid = this.id;
+                var selecArr = selectID.split('-');
+                var blockNoSpaces = selecArr[1];
+                var dupeNum = selecArr[2];
+                var subset = dupeNum[dupeNum.length - 1];
+                var quantBoxID = "dupeQuantBox_" + blockNoSpaces + subset;
+                var quant = $('#' + quantBoxID).val();
+                var app = $('#' + rowid).attr('app');
+                if (typeof app !== 'undefined') {
+                    DUPESELECTOBJ[selectID]['appList'].push(rowid);
+                    DUPESELECTOBJ[selectID]['quant'] = quant;
+                }
+            });
+        });
+    }
+
+    function goToPage3() {
+        //TODO: Add alert if not all blocks are defined
+        var passObj = {};
+        passObj["singlesObj"] = {};
+        passObj["dupesObj"] = {};
+        //BUILD SINGLES PART OF OBJECT
+        for (var i = 0; i < SINGLESELECTS.length; i++) {
+            var selecID = SINGLESELECTS[i];
+            var blockName = (String(selecID).split('-')[1]);
+            if ($('input:radio[name=radio_' + blockName + ']:checked').val() === "Yes") {
+                passObj['singlesObj'][blockName] = {};
+                $('#' + selecID + ' tr').not(':first').each(function () {
+                    var category = "";
+                    $(this).each(function () {
+                        $.each(this.attributes, function () {
+                            if (this.specified) {
+                                category = this.value;
+                            }
+                        });
+                    });
+                    var $tds = $(this).find('td');
+                    if ($tds.length !== 0) {
+                        var $currText = $tds.eq(0).text();
+                        passObj['singlesObj'][blockName][$currText] = category;
+                    }
+                });
+            }
+        }
+        //BUILD DUPLICATE PART OF OBJECT
+        var blockCounts = {};
+        for (var i = 0; i < DUPESELECTS.length; i++) {
+            var selecID = DUPESELECTS[i];
+            var blockName = String(selecID).split('-')[1];
+            if ($('input:radio[name=radio_' + blockName + ']:checked').val() === "No") {
+                var subsetNum = $('#' + selecID).attr('subset');
+                var subsetQuant = parseInt($('#dupeQuantBox_' + blockName + subsetNum).val(), 10);
+                if (!blockCounts.hasOwnProperty(blockName)) {
+                    blockCounts[blockName] = 0;
+                }
+                blockCounts[blockName] += subsetQuant;
+                if (!passObj['dupesObj'].hasOwnProperty(blockName)) {
+                    passObj['dupesObj'][blockName] = {};
+                }
+                passObj['dupesObj'][blockName][subsetNum] = {};
+                passObj['dupesObj'][blockName][subsetNum]['quant'] = subsetQuant;
+                $('#' + selecID + ' tr').not(':first').each(function () {
+                    //Get the category for the row
+                    var category = "";
+                    $(this).each(function () {
+                        $.each(this.attributes, function () {
+                            if (this.specified) {
+                                category = this.value;
+                            }
+                        });
+                    });
+                    var $tds = $(this).find('td');
+                    if ($tds.length !== 0) {
+                        var appName = $tds.eq(0).text();
+                        passObj['dupesObj'][blockName][subsetNum][appName] = category;
+                    }
+                });
+            }
+        }
+        PAGE2_OBJ = passObj;
+        $('#page2_panel').hide();
+        loadPage3();
+    }
+
+//************************************************************************//
+//****************************Page 3 Functions****************************//
+//************************************************************************//
+
+    function goBackToPage2() {
+        $('.selectedRow').removeClass('selectedRow');
+        $("#page3Table tr").remove();
+        $('#page3_panel').hide();
+        $('#page2_panel').show();
+    }
+
+    function loadPage3() {
+        $.blockUI({
+            css: {
+                border: 'none',
+                padding: '15px',
+                backgroundColor: '#000',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                opacity: .5,
+                color: '#fff'
+            }
+        });
+        $('#page3_panel').show();
+        var data = {
+            action: 'getPage3Table'
+        };
+        $.post(URL, data)
+                .done(function (response) {
+                    buildPage3(response);
+                    $.unblockUI();
+                });
+    }
+
+    function buildPage3(responseObj) {
+        var transitTrainingHours = 0;
+        var lightTrainingHours = 0;
+        var truckTrainingHours = 0;
+        var pubSafeTrainingHours = 0;
+        var $table = $("#page3Table");
+        var colorCount = 0;
+        var singlesObj = PAGE2_OBJ['singlesObj'];
+        var dupesObj = PAGE2_OBJ['dupesObj'];
+        var usedSoftwareComps = [];
+        //Go through and create header rows
+        for (var block in responseObj) {
+            var blockName = block.split(' ').join('_');
+            if (singlesObj.hasOwnProperty(blockName)) {
+                var blockCount = AVAILBLOCKS[blockName];
+                $table.append("<tr id='page3Row_" + blockName + "' class='headRow'><td><div style='margin-left:5px;'>" + block + ": " + blockCount + "</div></td><td></td><td></td></tr>");
+            }
+            if (dupesObj.hasOwnProperty(blockName)) {
+                for (var subsetNum in dupesObj[blockName]) {
+                    blockCount = dupesObj[blockName][subsetNum]['quant'];
+                    $table.append("<tr id='page3Row_" + blockName + "Subset" + subsetNum + "' class='headRow'><td><div style='margin-left:5px;'>" + block + " - Subset " + subsetNum + ": " + blockCount + "</div></td><td></td><td></td></tr>");
+                }
+            }
+        }
+        $table.append("<tr id='page3Row_Software_Development' class='headRow'><td><div style='margin-left:5px;'>Software Development</div></td><td></td><td></td></tr>");
+        $table.append("<tr id='page3Row_Other' class='headRow'><td><div style='display:inline-block;margin-right:5px;margin-left:5px;'>Other</div></td><td></td><td><div id='addOtherButton' class='addOtherButton'></div></td></tr>");
+        //******************************************//
+        //** Check for software development costs **//
+        //******************************************//
+        var blockHasApp;
+        for (var block in responseObj) {
+            var usedComps = [];
+            var blockName = block.split(' ').join('_');
+            for (var app in responseObj[block]) {
+                blockHasApp = false;
+                if (singlesObj.hasOwnProperty(blockName)) {
+                    if (singlesObj[blockName].hasOwnProperty(app)) {
+                        blockHasApp = true;
+                    }
+                }
+                else if (dupesObj.hasOwnProperty(blockName)) {
+                    for (var dupeNum in dupesObj[blockName]) {
+                        if (dupesObj[blockName][dupeNum].hasOwnProperty(app)) {
+                            blockHasApp = true;
+                        }
+                    }
+                }
+                if (blockHasApp) {
+                    var appronym = app.split('(')[1].replace(')', '');
+                    var compName = "Software Development & Testing: " + appronym;
+                    if (responseObj["Software Development"].hasOwnProperty(app)) {
+                        if (responseObj["Software Development"][app].hasOwnProperty(compName)) {
+                            if ($.inArray(compName, usedSoftwareComps) === -1) {  //If the component is not already in this block
+                                usedSoftwareComps.push(compName);
+                                var quantity = responseObj["Software Development"][app][compName]['quantity'];
+                                var cost = responseObj["Software Development"][app][compName]['cost'];
+                                var total = parseFloat(quantity).toFixed();
+                                addPage3Row(total, cost, colorCount, compName, app, "Software_Development");
+                                colorCount++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //******************************//
+        //** Handle SinglesObj Blocks **//
+        //******************************//
+        for (var blockName in singlesObj) {
+            var usedComps = [];
+            var block = blockName.split('_').join(' ');
+            var blockCount = AVAILBLOCKS[blockName];
+            for (var app in singlesObj[blockName]) {
+                //console.log(responseObj[block][app]);
+                for (var comp in responseObj[block][app]) {
+                    //**************************//
+                    //** Handle Special Cases **//
+                    //**************************//
+                    //For all training hours, the first app requires full time, each additional app requires half time
+                    if (comp === "Driver Training Hours: Transit Vehicles") {
+                        transitTrainingHours = incrementSpecialCase(transitTrainingHours, comp, usedComps, responseObj, block, app);
+                    } else if (comp === "Driver Training Hours: Light Vehicles") {
+                        lightTrainingHours = incrementSpecialCase(lightTrainingHours, comp, usedComps, responseObj, block, app);
+                    } else if (comp === "Driver Training Hours: Trucks") {
+                        truckTrainingHours = incrementSpecialCase(truckTrainingHours, comp, usedComps, responseObj, block, app);
+                        //If this block is already using Optical Detection Systems, dont bother using inductive loop detectors
+                    } else if (comp === "Driver Training Hours: Public Safety Vehicles") {
+                        pubSafeTrainingHours = incrementSpecialCase(pubSafeTrainingHours, comp, usedComps, responseObj, block, app);
+                        //If this block is already using Optical Detection Systems, dont bother using inductive loop detectors
+                    } else {
+                        if (comp === "Optical Detection System") {
+                            usedComps.push("Inductive Loop Detectors");
+                            $('.page3NormalRow').each(function () {
+                                var curRow = $(this);
+                                if (curRow.attr("block") === block && curRow.attr("comp") === "Inductive Loop Detectors") {
+                                    curRow.remove();
+                                }
+                            });
+                        }
+                        //Handle everything thats NOT a special case
+                        if ($.inArray(comp, usedComps) === -1) {  //If the component is not already in this block
+                            usedComps.push(comp);
+                            var quantity = responseObj[block][app][comp]['quantity'];
+                            var cost = responseObj[block][app][comp]['cost'];
+                            var total = parseFloat(quantity * blockCount).toFixed();
+                            addPage3Row(total, cost, colorCount, comp, app, blockName);
+                            colorCount++;
+                        }
+                    }
+                }
+            }
+            //********************************************************************//
+            //**Add Transit Vehicle, Light Vehicle, and Truck Training Hour Rows**//
+            //********************************************************************//
+            var appName = "Eco-Traffic Signal Timing - DSRC (ETST)";
+            var compName = "Driver Training Hours: Transit Vehicles";
+            var blockName = "Drivers for Transit Vehicles";
+            colorCount = addTrainingRow(responseObj, usedComps, compName, transitTrainingHours, blockCount, blockName, appName, colorCount);
+
+            compName = "Driver Training Hours: Light Vehicles";
+            blockName = "Drivers for Light Vehicles";
+            colorCount = addTrainingRow(responseObj, usedComps, compName, lightTrainingHours, blockCount, blockName, appName, colorCount);
+
+            compName = "Driver Training Hours: Trucks";
+            blockName = "Drivers for Trucks";
+            colorCount = addTrainingRow(responseObj, usedComps, compName, truckTrainingHours, blockCount, blockName, appName, colorCount);
+        }
+
+        //****************************//
+        //** Handle DupesObj Blocks **//
+        //****************************//
+        for (var blockName in dupesObj) {
+            for (var subsetNum in dupesObj[blockName]) {
+                blockCount = dupesObj[blockName][subsetNum]['quant'];
+                var usedComps = [];
+                var block = blockName.split('_').join(' ');
+                var subset = 'Subset' + subsetNum;
+                for (var app in dupesObj[blockName][subsetNum]) {
+                    for (var comp in responseObj[block][app]) {
+                        if (comp === "Driver Training Hours: Transit Vehicles") {
+                            transitTrainingHours = incrementSpecialCase(transitTrainingHours, comp, usedComps, responseObj, block, app);
+                        } else if (comp === "Driver Training Hours: Light Vehicles") {
+                            lightTrainingHours = incrementSpecialCase(lightTrainingHours, comp, usedComps, responseObj, block, app);
+                        } else if (comp === "Driver Training Hours: Trucks") {
+                            truckTrainingHours = truckTrainingHours(truckTrainingHours, comp, usedComps, responseObj, block, app);
+                            //If this block is already using Optical Detection Systems, dont bother using loop speed detectors
+                        } else {
+                            if (comp === "Optical Detection System") {
+                                usedComps.push("Inductive Loop Detectors");
+                                $('.page3NormalRow').each(function () {
+                                    var curRow = $(this);
+                                    if (curRow.hasOwnProperty("subset") && curRow.attr("subset") === subset) {
+                                        if (curRow.attr("block") === block && curRow.attr("comp") === "Inductive Loop Detectors") {
+                                            curRow.remove();
+                                        }
+                                    }
+                                });
+                            }
+                            if ($.inArray(comp, usedComps) === -1) {  //If the component is not already in this block
+                                usedComps.push(comp);
+                                var quantity = responseObj[block][app][comp]['quantity'];
+                                var cost = responseObj[block][app][comp]['cost'];
+                                var total = parseFloat(quantity * blockCount).toFixed();
+                                addPage3Row(total, cost, colorCount, comp, app, blockName, subset);
+                                colorCount++;
+                            }
+                        }
+                    }
+                }
+                //********************************************************************//
+                //**Add Transit Vehicle, Light Vehicle, and Truck Training Hour Rows**//
+                //********************************************************************//
+                //THIS IS REALLY HACKY
+                //The costs are the same for all apps so I just chose one at random to make it work
+                var appName = "Eco-Traffic Signal Timing - DSRC (ETST)";
+
+                var compName = "Driver Training Hours: Transit Vehicles";
+                var trainingBlock = "Drivers for Transit Vehicles";
+                colorCount = addTrainingRow(responseObj, usedComps, compName, transitTrainingHours, blockCount, trainingBlock, appName, colorCount, subset);
+
+                compName = "Driver Training Hours: Light Vehicles";
+                trainingBlock = "Drivers for Light Vehicles";
+                colorCount = addTrainingRow(responseObj, usedComps, compName, lightTrainingHours, blockCount, trainingBlock, appName, colorCount, subset);
+
+                compName = "Driver Training Hours: Trucks";
+                trainingBlock = "Drivers for Trucks";
+                colorCount = addTrainingRow(responseObj, usedComps, compName, truckTrainingHours, blockCount, trainingBlock, appName, colorCount, subset);
+            }
+        }
+        //Allow users to add more components to an other category
+        $('#addOtherButton').click(function () {
+            var $row = $("<tr></tr>");
+            $row.append($("<td><input class='compBox' type='text' placeholder='Component Name'></td>"));
+            $row.append($("<td style='border-left: solid 1px #D7D9D8;'><input class='quantBox' type='text' placeholder='Total'></td>"));
+            $row.append($("<td style='border-left: solid 1px #D7D9D8;'><input class='costBox' type='text' placeholder='Cost' style='width:120px;'><div onclick='deleteOtherRow(this);' class='removeRowButton'></div></td>"));
+            $row.insertAfter("#page3Row_Other");
+            if (colorCount % 2 === 0) {
+                $row.addClass("lightRow");
+            } else {
+                $row.addClass("darkRow");
+            }
+            $row.addClass("page3OtherRow");
+            //$('input, textarea').placeholder();
+            colorCount++;
+            filterCostBox();
+            filterQuantBox();
+        });
+        $('.compBox').off();
+        $('.compBox').keyup(function () {
+            var compVal = $(this).val();
+            if (typeof compVal === undefined || compVal === "") {
+                $(this).closest('tr').attr('inputName', 'Other');
+            } else {
+                $(this).closest('tr').attr('inputName', compVal);
+            }
+
+        });
+        filterCostBox();
+        filterQuantBox();
+    }
+
+    function filterCostBox() {
+        $(".costBox").off();
+        $(".costBox").on('input', function (e) { // numeric now handles positive and negative numbers
+            //When the user changes a cost, make it a fixed cost
+            $(this).closest('tr').attr('fixedcost', true);
+            var v = $.trim(this.value);
+            $(this).val(v);
+            var returnVal = false;
+            if (v === '' || v === '$' || v === '.') { // allow negative numbers
+                $(this).attr('data-numeric-old-value', v);
+                returnVal = true;
+            } else if ($.isNumeric(this.value.replace('$', '').replace(/,/g, ''))) {
+                $(this).attr('data-numeric-old-value', v);
+                returnVal = true;
+            } else {
+                $(this).val($(this).attr('data-numeric-old-value'));
+                returnVal = false;
+            }
+            return returnVal;
+        });
+    }
+
+    function filterQuantBox() {
+        $(".quantBox").off();
+        $(".quantBox").on('input', function (e) { // numeric now handles positive and negative numbers
+            var v = $.trim(this.value);
+            $(this).val(v);
+            var returnVal = false;
+            if (v === '') {
+                $(this).attr('data-numeric-old-value', v);
+                returnVal = true;
+            } else if ($.isNumeric(this.value)) {
+                $(this).attr('data-numeric-old-value', v);
+                returnVal = true;
+            } else {
+                $(this).val($(this).attr('data-numeric-old-value'));
+                returnVal = false;
+            }
+            return returnVal;
+        });
+    }
+
+    function deleteOtherRow(el) {
+        $(el).parents('.page3OtherRow').remove();
+    }
+
+    function incrementSpecialCase(incrementer, comp, usedComps, responseObj, block, app) {
+        if ($.inArray(comp, usedComps) === -1) {
+            usedComps.push(comp);
+            incrementer += parseInt(responseObj[block][app][comp]["quantity"], 10);
+        } else {
+            incrementer += (parseInt(responseObj[block][app][comp]["quantity"], 10) / 2);
+        }
+        return incrementer;
+    }
+
+    function addTrainingRow(responseObj, usedComps, compName, trainingHours, blockCount, blockName, appName, colorCount, subset) {
+        if ($.inArray(compName, usedComps) !== -1) {
+            var total = parseFloat(trainingHours * blockCount).toFixed();
+            //console.log(responseObj);
+            //console.log(blockName);
+            //console.log(appName);
+            //console.log(compName);
+            var cost = responseObj[blockName][appName][compName]["cost"];
+            if (subset) {
+                addPage3Row(total, cost, colorCount, compName, appName, blockName.split(' ').join('_'), subset);
+            } else {
+                addPage3Row(total, cost, colorCount, compName, appName, blockName.split(' ').join('_'));
+            }
+            colorCount++;
+        }
+        return colorCount;
+    }
+
+    function addPage3Row(total, cost, colorCount, comp, app, block, subset) {
+        var $row = $("<tr></tr>");
+        $row.append($("<td><div style='margin-left:5px;'>" + comp + "</div></td>"));
+        $row.append($("<td style='border-left: solid 1px #D7D9D8;'><input class='quantBox' type='text' readonly value='" + total + "'></td>"));
+        $row.append($("<td style='border-left: solid 1px #D7D9D8;'><input class='costBox' type='text' readonly value='" + formatMoney(parseFloat(cost)) + "'></td>"));
+        if (subset) {
+            $row.insertAfter("#page3Row_" + block + subset);
+        } else {
+            $row.insertAfter("#page3Row_" + block);
+        }
+        if (colorCount % 2 === 0) {
+            $row.addClass("lightRow");
+        } else {
+            $row.addClass("darkRow");
+        }
+        $row.addClass("page3NormalRow");
+        $row.attr('app', app);
+        var blockSpaces = block.split('_').join(' ');
+        $row.attr('block', blockSpaces);
+        $row.attr('comp', comp);
+        $row.attr('subset', subset);
+        $row.attr('fixedcost', false);
+    }
+
+    function doCostEstimation() {
+        $.blockUI({
+            css: {
+                border: 'none',
+                padding: '15px',
+                backgroundColor: '#000',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                opacity: .5,
+                color: '#fff'
+            }
+        });
+        var costObj = {};
+        $('#page3Table tr.page3NormalRow').each(function () {
+            addNormalToCostObj(costObj, $(this));
+        });
+        $('#page3Table tbody tr.page3OtherRow').each(function () {
+            addOtherToCostObj(costObj, $(this));
+        });
+        //Run the simulation, returns array of total costs (costArray) and breakdown of costs (compObj)
+        var data = {
+            action: 'doRunSimulation',
+            costobj: JSON.stringify(costObj)
+        };
+        $.post(URL, data)
+                .done(function (response) {
+                    var costArray = response['costArray'];
+                    var compObj = response['compObj'];
+                    //Pass the compObj back to the backend to build the excel spreadsheet
+                    buildSpreadsheet(URL, compObj, costArray);
+                    //Use the returned JSON object to build graphs
+                    setTimeout(function () {
+                        buildHistogram(costArray);
+                    }, 2000);
+                    setTimeout(function () {
+                        buildPiechart(compObj);
+                        $.unblockUI();
+                    }, 7000);
+                });
+    }
+
+    function addNormalToCostObj(costObj, row) {
+        var quantity = row.find('.quantBox').val();
+        var costStr = row.find('.costBox').val();
+        var cost = costStr.replace(',', '').replace('$', '');
+        var block = row.attr('block');
+        var app = row.attr('app');
+        var comp = row.attr('comp');
+        var subset = row.attr('subset');
+        var fixedCost = row.attr('fixedcost');
+        var combo = (block + "," + app + "," + comp + "," + subset);
+        costObj[combo] = {};
+        costObj[combo]["quantity"] = quantity;
+        costObj[combo]["cost"] = cost;
+        costObj[combo]["fixedcost"] = fixedCost;
+        return costObj;
+    }
+
+    function addOtherToCostObj(costObj, row) {
+        var quantity = row.find('.quantBox').val();
+        if (typeof quantity === undefined || quantity === "") {
+            quantity = '0';
+        }
+        var costStr = row.find('.costBox').val();
+        if (typeof costStr === undefined || costStr === "") {
+            costStr = '0';
+        }
+        var cost = costStr.replace(/,/g, '').replace('$', '');
+        var comp = row.find('.compBox').val();
+        if (typeof comp === undefined || comp === "") {
+            comp = 'Other';
+        }
+        var subset = row.attr('subset');
+        var fixedCost = true;
+        var combo = ("Other,Other," + comp + "," + subset);
+        costObj[combo] = {};
+        costObj[combo]["quantity"] = quantity;
+        costObj[combo]["cost"] = cost;
+        costObj[combo]["fixedcost"] = fixedCost;
+        return costObj;
+    }
+
+    function buildSpreadsheet(url, compObj) {
+        compObj["page1Obj"] = PAGE1_OBJ;
+        compObj["page2Obj"] = PAGE2_OBJ;
+        var data = {
+            action: 'doExcelSheet',
+            compobj: JSON.stringify(compObj)
+        };
+        $.download(url, data, "POST");
+    }
+
+    function buildHistogram(results) {
+        //Get some baseline stats from result array
+        var avg = getAverageFromNumArr(results, 0);
+        var std_dev = getStandardDeviation(results, 0);
+        var numDigitsInt = getNumDigitsBeforeDecimal(std_dev) - 2;
+        //Using baseline stats, create bins with normal distribution
+        var data = [];
+        var categories = [];
+        var halfStep = std_dev / 2;
+        var barSteps = [roundAccuracy(avg - (halfStep * 5), numDigitsInt), roundAccuracy(avg - (halfStep * 3), numDigitsInt), roundAccuracy(avg - halfStep, numDigitsInt), roundAccuracy(avg + halfStep, numDigitsInt), roundAccuracy(avg + (halfStep * 3), numDigitsInt), roundAccuracy(avg + (halfStep * 5), numDigitsInt)];
+        categories[0] = "<$" + numberWithCommas(barSteps[0]);
+        data[0] = 0;
+        categories[1] = "$>" + numberWithCommas(barSteps[0]) + "-" + numberWithCommas(barSteps[1]);
+        data[1] = 0;
+        categories[2] = "$" + numberWithCommas(barSteps[1]) + "-<" + numberWithCommas(barSteps[2]);
+        data[2] = 0;
+        categories[3] = "$" + numberWithCommas(barSteps[2]) + "-<" + numberWithCommas(barSteps[3]);
+        data[3] = 0;
+        categories[4] = "$" + numberWithCommas(barSteps[3]) + "-<" + numberWithCommas(barSteps[4]);
+        data[4] = 0;
+        categories[5] = "$" + numberWithCommas(barSteps[4]) + "-<" + numberWithCommas(barSteps[5]);
+        data[5] = 0;
+        categories[6] = ">$" + numberWithCommas(barSteps[5]);
+        data[6] = 0;
+        //Populate bins with data from result array
+        var count = 0;
+        for (var i in results) {
+            var curNum = results[i];
+            if (curNum < barSteps[0]) {
+                data[0]++;
+            } else if (curNum < barSteps[1]) {
+                data[1]++;
+            } else if (curNum < barSteps[2]) {
+                data[2]++;
+            } else if (curNum < barSteps[3]) {
+                data[3]++;
+            } else if (curNum < barSteps[4]) {
+                data[4]++;
+            } else if (curNum < barSteps[5]) {
+                data[5]++;
+            } else {
+                data[6]++;
+            }
+            count++;
+        }
+        //Divide by count to get probabilities
+        for (i = 0; i < data.length; i++) {
+            data[i] = data[i] / count;
+        }
+
+        //Use highcharts to create histogram
+        var chart = $('#histogram').highcharts({
+            title: {
+                text: 'Total Cost Probability Distribution'
+            },
+            chart: {
+                type: 'column'
+            },
+            plotOptions: {
+                column: {
+                    shadow: false,
+                    borderWidth: .5,
+                    borderColor: '#666',
+                    pointPadding: 0,
+                    groupPadding: 0.1,
+                    color: '#476984'
+                }
+            },
+            xAxis: {
+                categories: categories,
+                labels: {
+                    rotation: -60,
+                    y: 40,
+                    style: {
+                        fontSize: '8px',
+                        fontWeight: 'normal',
+                        color: '#333'
+                    }
+                }
+            },
+            yAxis: {
+                title: {text: 'Probability'}
+            },
+            labels: {
+                items: [{
+                        html: "<b>DISCLAIMER: CO-PILOT is intended for high-level, preliminary planning purposes to support</b><br><b> Connected Vehicle Pilot Deployment cost estimation ONLY, not detailed cost proposal preparation.</b>",
+                        style: {
+                            width: '500px',
+                            left: '20px',
+                            top: '-17px',
+                            fontSize: '7px'
+                        }
+                    }]
+            },
+            series: [{
+                    data: data
+                }],
+            navigation: {
+                buttonOptions: {
+                    enabled: false
+                }
+            },
+            credits: {enabled: false},
+            legend: {enabled: false}
+        });
+        chart = $('#histogram').highcharts();
+
+        chart.exportChart({
+            type: 'image/png',
+            filename: 'TotalCostHistogram'
+        });
+        /*
+         var svg = chart.getSVG({
+         chart: {
+         width: 1200,
+         height: 800
+         }
+         });
+         console.log(svg);
+         var params = {
+         action: 'exportSVG',
+         svg: svg,
+         filename: "TotalCostHistogram"
+         };
+         $.download(URL, params, 'post');
+         */
+
+    }
+
+    function buildPiechart(compObj) {
+        delete compObj["page1Obj"];
+        delete compObj["page2Obj"];
+        Highcharts.getOptions().plotOptions.pie.colors = ['#274154', '#476984', '#7d9fb9', '#d5deeb', '#4ab570', '#94cba6', '#c9e6d2', '#4e4f4f', '#868786', '#c3c3c3', '#faa73e', '#ffd158', '#fbe2a7', '#675574'];
+        var pieObj = {};
+        var totalCost = 0;
+        for (var comp in compObj) {
+            var block = compObj[comp]["block"];
+            if (pieObj.hasOwnProperty(block)) {
+                pieObj[block] += compObj[comp]["costSum"];
+            } else {
+                pieObj[block] = compObj[comp]["costSum"];
+            }
+            totalCost += compObj[comp]["costSum"];
+        }
+        var data = [];
+        var i = 0;
+        for (var block in pieObj) {
+            data[i] = [block, ((pieObj[block] / totalCost) * 100)];
+            i++;
+        }
+        data.sort(function (a, b) {
+            return b[1] - a[1];
+        });
+        $('#piechart').highcharts({
+            title: {
+                text: 'Cost Distribution by Block'
+            },
+            chart: {
+                type: 'pie'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f}%',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            labels: {
+                items: [{
+                        html: "<b>DISCLAIMER: CO-PILOT is intended for high-level, preliminary planning purposes to support Connected Vehicle Pilot Deployment cost estimation ONLY, not detailed cost proposal preparation.</b>",
+                        style: {
+                            width: '520px',
+                            left: '25px',
+                            top: '-18px',
+                            fontSize: '8px'
+                        }
+                    }]
+            },
+            series: [{
+                    data: data
+                }],
+            navigation: {
+                buttonOptions: {
+                    enabled: false
+                }
+            },
+            credits: {enabled: false},
+            legend: {enabled: false},
+            exporting: {
+                filename: 'CostDistributionPie'
+            }
+        });
+        var pie = $('#piechart').highcharts();
+        pie.exportChart();
+    }
+
+    function quantCostEditable() {
+        $(".costBox").prop('readonly', false);
+        $(".quantBox").prop('readonly', false);
+        $(".costBox").css('border', 'solid 1px #486279');
+        $(".quantBox").css('border', 'solid 1px #486279');
+    }
+
+//************************************************************************//
+//****************************Excel Upload Functions**********************//
+//************************************************************************//
+
+    function uploadExcel() {
+        $.blockUI();
+        var randText = makeid();
+        var curAction = $('#costbreakdownuploadform').attr('action');
+        var newAction = curAction + '&rand=' + randText;
+        $('#costbreakdownuploadform').attr('action', newAction);
+        var tfiles = $('#costbreakdownuploadform');
+        var files = [tfiles];
+        // upload the files
+        var UPLOADSDEF = $.Deferred();
+        var fullpath = $('#choose').val();
+        console.log(fullpath);
+        var fileName = fullpath.split(/(\\|\/)/g).pop();
+        if (!fileName || !(endsWith(fileName, "xls") || endsWith(fileName, "xlsx"))) {
+            alert("The file you are trying to upload doesn't exist or isn't an excel file");
+            $.unblockUI();
+            return;
+        }
+        uploadFiles(files, UPLOADSDEF, newAction);
+        var data = {
+            action: 'loadSpreadsheet',
+            costfile: fileName,
+            rand: randText
+        };
+        var objRS;
+        $.when(UPLOADSDEF).done(function () {
+            $.post(URL, data)
+                    .done(function (response) {
+                        objRS = response;
+                        buildPage1FromExcel(response);
+                        setTimeout(function () {
+                            buildPage2FromExcel(objRS);
+                            $.blockUI();
+                        }, 500);
+                        setTimeout(function () {
+                            $(".hideAll").hide();
+                            goToPage3();
+                        }, 2500);
+                    });
+        });
+
+    }
+
+    function makeid() {
+        Math.seedrandom();
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for (var i = 0; i < 25; i++)
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+    }
+
+    function uploadFiles(files, uploads, action) {
+        //console.log('in upload files!!!');
+        // set the submit action....
+        console.log("In uploadFiles");
+        var f = files[0];
+        var file = $(f);
+        file.ajaxSubmit({url: action, type: 'post', success: function (rt, st, x, f) {
+                uploads.resolve();
+                return uploads.promise();
+            }});
+    }
+
+    function buildPage1FromExcel(objRS) {
+        if (objRS.hasOwnProperty('appArr')) {
+            var appArr = objRS['appArr'];
+            for (var i in appArr) {
+                var app = appArr[i];
+                $(":checkbox[value='" + app + "']").prop("checked", "true").change();
+            }
+        }
+        if (objRS.hasOwnProperty('blockObj')) {
+            var blockObj = objRS['blockObj'];
+            for (var block in blockObj) {
+                var quant = blockObj[block];
+                var blockNoSpaces = block.split(' ').join('_');
+                var blockID = 'blockNumBox_' + blockNoSpaces;
+                $('#' + blockID).val(quant);
+            }
+        }
+        validatePage1();
+        goToPage2();
+    }
+
+    function buildPage2FromExcel(objRS) {
+        $("#page3Table tr").remove();
+        if (objRS.hasOwnProperty('singlesObj')) {
+            var singlesObj = objRS['singlesObj'];
+            for (var block in singlesObj) {
+                var blockNoSpaces = block.split(' ').join('_');
+                var appArr = singlesObj[block]['apps'];
+                for (var i in appArr) {
+                    var app = appArr[i];
+                    var appNoSpaces = app.split(' ').join('_');
+                    var $row = $("#AVAILABLE-" + blockNoSpaces + " tr[app='" + appNoSpaces + "']");
+                    console.log($row.attr('app'));
+                    var blockName = "SELECTED-" + blockNoSpaces;
+                    $("#" + blockName + " tbody").append($row);
+                    validatePage2Selections();
+                }
+            }
+        }
+        if (objRS.hasOwnProperty('dupesObj')) {
+            var dupesObj = objRS['dupesObj'];
+            for (var block in dupesObj) {
+                var blockNoSpaces = block.split(' ').join('_');
+                var radioID = 'radioNo_' + blockNoSpaces;
+                $('#' + radioID).prop('checked', true);
+                var blockObj = objRS['dupesObj'][block];
+                for (var subset in blockObj) {
+                    if (subset > 2) {
+                        buildDupeTable(block, blockNoSpaces, false);
+                    }
+                    var quant = blockObj[subset]['quant'];
+                    $('#dupeQuantBox_' + blockNoSpaces + subset).val(quant);
+                    var appArr = blockObj[subset]['apps'];
+                    for (var i in appArr) {
+                        var app = appArr[i];
+                        var appNoSpaces = app.split(' ').join('_');
+                        var availID = "AVAILABLE-" + blockNoSpaces + "-DUPE" + subset;
+                        var selecID = "SELECTED-" + blockNoSpaces + "-DUPE" + subset;
+                        //console.log("#" + availID + " tr[app='" + appNoSpaces + "']");
+                        var $row = $("#" + availID + " tr[app='" + appNoSpaces + "']");
+                        $("#" + selecID + " tbody").append($row);
+                    }
+                }
+            }
+            validatePage2Selections();
+        }
+    }
+</script>

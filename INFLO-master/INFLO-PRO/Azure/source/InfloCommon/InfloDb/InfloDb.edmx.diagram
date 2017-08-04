@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b198e9b389ce45e8b38c5389b99cbdfd" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="Model.Configuration_ESS" Width="1.5" PointX="6" PointY="1" />
+        <EntityTypeShape EntityType="Model.Configuration_INFLOThresholds" Width="1.5" PointX="9" PointY="2.5" />
+        <EntityTypeShape EntityType="Model.Configuration_Roadway" Width="1.5" PointX="12" PointY="4" />
+        <EntityTypeShape EntityType="Model.Configuration_RoadwayESS" Width="1.5" PointX="15" PointY="5.5" />
+        <EntityTypeShape EntityType="Model.Configuration_RoadwayLinks" Width="1.5" PointX="18" PointY="7" />
+        <EntityTypeShape EntityType="Model.Configuration_RoadwayLinksDetectorStation" Width="1.5" PointX="0.5" PointY="8.5" />
+        <EntityTypeShape EntityType="Model.Configuration_RoadwayLinksESS" Width="1.5" PointX="3" PointY="10" />
+        <EntityTypeShape EntityType="Model.Configuration_RoadwayMileMarkers" Width="1.5" PointX="6" PointY="11.5" />
+        <EntityTypeShape EntityType="Model.Configuration_RoadwaySubLinks" Width="1.5" PointX="9" PointY="13" />
+        <EntityTypeShape EntityType="Model.Configuration_TSSDetectorStation" Width="1.5" PointX="12" PointY="14.5" />
+        <EntityTypeShape EntityType="Model.TME_CVData_Input" Width="1.5" PointX="15" PointY="16" />
+        <EntityTypeShape EntityType="Model.TME_CVData_Input_Processed" Width="1.5" PointX="18" PointY="17.5" />
+        <EntityTypeShape EntityType="Model.TME_CVData_SubLink" Width="1.5" PointX="0.5" PointY="19" />
+        <EntityTypeShape EntityType="Model.TME_ESSData_Input" Width="1.5" PointX="3" PointY="20.5" />
+        <EntityTypeShape EntityType="Model.TME_ESSMobileData_Input" Width="1.5" PointX="6" PointY="22" />
+        <EntityTypeShape EntityType="Model.TME_TSSData_Input" Width="1.5" PointX="9" PointY="23.5" />
+        <EntityTypeShape EntityType="Model.TME_TSSESS_Link" Width="1.5" PointX="12" PointY="25" />
+        <EntityTypeShape EntityType="Model.TMEOutput_QWARN_QueueInfo" Width="1.5" PointX="15" PointY="26.5" />
+        <EntityTypeShape EntityType="Model.TMEOutput_QWARNMessage_CV" Width="1.5" PointX="18" PointY="28" />
+        <EntityTypeShape EntityType="Model.TMEOutput_ShockWaveInformation" Width="1.5" PointX="0.5" PointY="29.5" />
+        <EntityTypeShape EntityType="Model.TMEOutput_SPDHARMMessage_CV" Width="1.5" PointX="3" PointY="31" />
+        <EntityTypeShape EntityType="Model.TMEOutput_SPDHARMMessage_Infrastructure" Width="1.5" PointX="6" PointY="32.5" />
+        <EntityTypeShape EntityType="Model.TMEOutput_WRTM_Alerts" Width="1.5" PointX="9" PointY="34" />
+        <EntityTypeShape EntityType="Model.sysdiagram" Width="1.5" PointX="3.9352488964494543" PointY="28.807142509523381" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

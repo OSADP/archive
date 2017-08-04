@@ -1,0 +1,17 @@
+﻿<Window x:Class="MapEdit.SaveCloudMapSet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Save Cloud Map Set" Height="300" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Closed="Window_Closed">
+<StackPanel>
+		<Label x:Name="warningTxtBox" Content="Save MapSet to Cloud" HorizontalAlignment="Center"  Margin="0,0,0,10"  VerticalAlignment="Top" FontSize="14" IsEnabled="False" />
+		<StackPanel Orientation="Horizontal">
+		<Label Content="Map Set Name:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" />
+		<TextBox x:Name="mapSetNameTxtBox" HorizontalAlignment="Left" Height="23" Margin="0,0,0,10" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
+	</StackPanel>
+		<StackPanel >
+			<Label Content="Map Set Description:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" />
+			<TextBox x:Name="mapSetDescTxtBox" HorizontalAlignment="Center" Height="90" Margin="0,0,0,10" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" />
+		</StackPanel>
+		<Button x:Name="saveMapSetToCloudOK" Content="OK" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="75" Click="saveMapSetToCloudOK_Click" Grid.ColumnSpan="2" Grid.Column="1"/>
+</StackPanel>
+</Window>

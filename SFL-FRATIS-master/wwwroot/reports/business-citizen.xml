@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<report	title="Business Report" uploadscript="business.php">
+	<page xml:id="home">
+		<textinput xml:id="businessCName" text="Business Name" business_id="" noedit="true" />
+		
+		<radio xml:id="businessStatus" text="This business is:">
+			<option text="Open" value="open" />
+			<option text="Closed" value="closed" />
+		</radio>
+		
+		<textinput xml:id="businessComment" parent="businessComment" text="Comment" />
+
+		<button text="Update Status" action="submit" />
+		
+		<button text="Cancel" action="cancel" />
+	</page>
+
+</report>
+

@@ -1,0 +1,19 @@
+
+- EVAC Impact Assessment Control Files and Input Files
+
+- What's New
+2015/04: The first release
+
+- System Requirements (third-party platforms / modules / etc with version numbers / dates)
+TRANSIMS v6 software is needed to use these files.
+
+- Features and changes (new features, defects corrected, caveats etc)
+It includes control files for all seven scenarios of the EVAC Impact Assessment Project
+
+- Installation guide (how to obtain and install)
+The package is distributed through the USDOT's JPO Open Source Application Development Portal (OSADP)
+TRANSIMS software can be downloaded from SourceForge
+
+- Other Resources and Links
+http://itsforge.net/ 
+http://sourceforge.net/projects/transims/?source=directory

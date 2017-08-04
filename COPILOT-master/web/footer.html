@@ -1,0 +1,36 @@
+<style>
+    #footerBanners{
+        height: 20px;
+        width: 100%;
+    }
+    #blueFooterBanner{
+        background: #46637b;
+        height:14px;
+        width:100%;
+    }
+    #greenFooterBanner{
+        background: #4ab570;
+        height:8px;
+        width:100%;
+    }
+</style>
+<head>
+    <style id="antiClickjack">body{display:none !important;}</style>
+    <script type="text/javascript">
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+    </script>
+</head>
+<body>
+    <div id="foot">
+        <div id="footerBanners">
+            <div style="height:16px"></div>
+            <div id="greenFooterBanner"></div>
+            <div id="blueFooterBanner"></div>
+        </div>
+    </div>
+</body>

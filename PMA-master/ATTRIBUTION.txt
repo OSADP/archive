@@ -1,0 +1,13 @@
+Key contributors to the development of the Preformance Measures Prototype software 1.0 include:
+Jim Larkin, Meenakshy Vasudevan, Marcus Alzona, Rick Glassco and Karl Wunderlich of Noblis.
+
+The developers also wish to acknowledge several contributors to this study:
+
+Preformance Measures Prototype Task Lead: Ben McKeever  (Federal Highway Administration (FHWA)
+Office of R&D), for his support and comments.
+
+Preformance Measures Prototype Key Content Review Team: 
+Gene McHale (FHWA Office of R&D), James Pol (RITA/ITS JPO), and Bob Rupert (FHWA Office of Operations), for their review and comments.
+
+
+Thanks to the ITS Joint Program Office for their support of the effort.

@@ -1,0 +1,72 @@
+PROGRAM RAMPMETER;
+
+VAP_Frequency 3;
+
+SUBROUTINE Ramp_Meter;
+
+Call2:= presence(2) or occupancy(2);
+Call4:= presence(4) or occupancy(4);
+
+start(SimTimer);
+
+IF (SimTimer < 5400) or (SimTimer >= 19800) then
+  set_sg(1,Green);
+END;
+
+/* Timing of the Ramp Metering Cycle in Second. When ClearanceTimer1 is set up as 4 second. The simulation will run 4.3 second per cycle*/
+/* Timing of the Ramp Metering Cycle in Second. When ClearanceTimer1 is set up as 3 or 3.3 second. The simulation will run 3.7 second per cycle*/
+/* Timing of the Ramp Metering Cycle in Second. When ClearanceTimer1 is set up as 2.3 second. The simulation will run 3 second per cycle*/
+
+IF (SimTimer >= 5400) AND (SimTimer < 9000) THEN
+  IF ((Call2) and (ClearanceTimer1 >= 7.3)) THEN
+    set_sg(1,Green);
+    stop(ClearanceTimer1);
+    reset(ClearanceTimer1);
+  ELSE
+    start(ClearanceTimer1);
+  END;
+  IF (call4) THEN 
+    set_sg(1,Red);
+  END;
+END;
+
+IF (SimTimer >= 9000) AND (SimTimer < 12600) THEN
+  IF ((Call2) and (ClearanceTimer1 >= 4.8)) THEN
+    set_sg(1,Green);
+    stop(ClearanceTimer1);
+    reset(ClearanceTimer1);
+  ELSE
+    start(ClearanceTimer1);
+  END;
+  IF (call4) THEN 
+    set_sg(1,Red);
+  END;
+END;
+
+IF (SimTimer >= 12600) AND (SimTimer < 16200) THEN
+  IF ((Call2) and (ClearanceTimer2 >= 5.5)) THEN
+    set_sg(1,Green);
+    stop(ClearanceTimer2);
+    reset(ClearanceTimer2);
+  ELSE
+    start(ClearanceTimer2);
+  END;
+  IF (call4) THEN 
+    set_sg(1,Red);
+  END;
+END;
+
+IF (SimTimer >= 16200) AND (SimTimer < 19800) THEN
+  IF ((Call2) and (ClearanceTimer3 >= 7.1)) THEN
+    set_sg(1,Green);
+    stop(ClearanceTimer3);
+    reset(ClearanceTimer3);
+  ELSE
+    start(ClearanceTimer3);
+  END;
+  IF (call4) THEN 
+    set_sg(1,Red);
+  END;
+END.
+
+GOSUB Ramp_Meter.

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="MapEdit.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="WebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="KiTestUser" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEBo/xRxKQpCMRa6Htazz8CEwDQYJKoZIhvcNAQEBBQAEggEAQ2unHY9VaQcppKMa8UgL3IcrLTRNUHV/67Aga9IFnXfXhnHXrCL0OcbL00KnZ9tjWwBSSrvt6seCIruJ5r9mwaGWvrevx/FswRdcloft0oMKdHuiItLiHpG//6We1MMBGOEISRlbqZ4C0v84T2oSXPUqjjVUxT3MgLvcIm7ZFyyLhuNBfINsfB3NH6iB4LSJqWWvz/yIvC7lMp8iEEtN0VEVGcUojhmPuSQqd1KkA/+arhb0c/xRsa4/gy7pne/oNCHas/Fsa9apYSr8arq3KPOmoUsMsOP6sjZYcYR6hnHQKC2lwsedrvEseb5WQtbm+HNX3pEul/J+QvgNeyj23zAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECDpwSLqH6xS/gBDdSINvdXHdnHnZBVqrNJ8T" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-04-09T23:59:59.0000000-04:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="4456149B480FAAC67DFBED8511AD2EF76D98F6DF" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

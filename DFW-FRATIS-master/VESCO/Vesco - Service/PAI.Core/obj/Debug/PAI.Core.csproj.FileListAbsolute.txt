@@ -1,0 +1,10 @@
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\bin\Debug\PAI.Core.dll
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\bin\Debug\PAI.Core.pdb
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\obj\Debug\PAI.Core.csprojResolveAssemblyReference.cache
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\obj\Debug\PAI.Core.dll
+D:\Work\PAI\trunk\CTIP-Console\PAI.Core\obj\Debug\PAI.Core.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\bin\Debug\PAI.Core.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\bin\Debug\PAI.Core.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\obj\Debug\PAI.Core.csprojResolveAssemblyReference.cache
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\obj\Debug\PAI.Core.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\obj\Debug\PAI.Core.pdb

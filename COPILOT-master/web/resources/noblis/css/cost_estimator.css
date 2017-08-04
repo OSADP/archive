@@ -1,0 +1,126 @@
+/*
+    Document   : cost_estimator
+    Created on : Sep 12, 2014, 1:25:04 PM
+    Author     : M29660
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.borderedContainter{
+    border: #D7D9D8 1px solid;
+}
+#dividerLine{
+    background:#D7D9D8;
+    width:1160px;
+    height:1px;
+    margin-left: 10px;
+}
+.ui-helper-center {
+    text-align: center;
+}
+.pageButton {
+    width: 128px;
+    height: 28px;
+    background: linear-gradient(#688299,#4F6980);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#688299, endColorstr=#4F6980); /* IE6-9 */
+    moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border: 1px solid #486279;
+    padding: 5px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+.pageButton:hover {opacity: 0.6; }
+.sectionHead{
+    height: 25px;
+    background: linear-gradient(#F6F6F6,#D7D9D8);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#F6F6F6, endColorstr=#D7D9D8); /* IE6-9 */
+    border: 1px #D7D9D8 solid;
+}
+.sectionHeadText{
+    padding-left: 6px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #486279;
+}
+.quantitySectionHeadText{
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #486279;
+}
+.check{
+    width: 32px;
+}
+.tableHeader{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #486279;
+    border: 1px #D7D9D8 solid;
+    background-color: #E9E9E9;
+    line-height: 27px;
+}
+.headRow{
+    font-size: 14px;
+    font-weight: bolder;
+    color: #486279;
+    border: 1px #D7D9D8 solid;
+    background-color: #DCE6F0;
+    line-height: 24px;
+}
+.lightRow{
+    background-color: #FFFFFF;
+    font-size: 14px;
+    padding-left: 4px;
+    font-weight: normal;
+    color: #486279;
+    line-height: 27px;
+}
+.darkRow{
+    background-color: #F2F5FA;
+    font-size: 14px;
+    padding-left: 4px;
+    font-weight: normal;
+    color: #486279;
+    line-height: 27px;
+}
+.costBox{
+    border: none;
+    background: none;
+    margin-left:10px;
+    color: #486279;
+}
+.quantBox{
+    border: none;
+    background: none;
+    margin-left:10px;
+    color: #486279;
+}
+.modifyCosts{
+    display: table-cell; font-size: 12px; text-decoration: underline;
+}
+.modifyCosts:hover{
+    cursor: default;
+    display: table-cell; font-size: 12px; text-decoration: underline; color: lightblue;
+}
+html,body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#footer{
+    bottom: 0;
+    position: absolute;
+    padding-top:100px;
+    width: 100%;
+}
+body#home #navBarHome,
+body#costestimator #navBarCost,
+body#help #navBarHelp{
+    font-weight: bolder;
+}
+

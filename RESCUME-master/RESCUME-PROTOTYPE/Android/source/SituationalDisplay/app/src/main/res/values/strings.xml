@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Situational Display</string>
+    <string name="activity_settings">Settings</string>
+    <string name="activity_dashboard">Dashboard</string>
+    <string name="activity_diagnostics">Diagnostics</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,38 @@
+$SIGNAL_GROUPS
+VAP                  VISSIM
+$
+l1			1
+l2                      2 
+
+$STAGES
+$
+Stage_1                 l1    
+Red			l2	
+Stage_2                 l2    
+Red			l1
+
+$STARTPHASE
+$
+STAGE_1
+
+$INTERSTAGE1
+length [s]		:.5
+from stage		:1
+to stage		:2
+----------------------------
+signal group	tBegin	tEnd
+$
+l1		-127	0	
+l2		.5	127
+
+$INTERSTAGE2
+length [s]		:.5
+from stage		:2
+to stage		:1
+----------------------------
+signal group	tBegin	tEnd
+$
+l1		.5	127	
+l2		-127	0
+
+$END

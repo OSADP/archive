@@ -1,0 +1,14 @@
+Key contributors to the development of the testing plan, VISSIM network, VISSIM COM and post-processing tool include: 
+Richard Dowling, Brandon Nevers, Alex Skabardonis, Anxi Jia and Jorge Barrios of Kittelson & Associates, Inc.
+
+The developers also wish to acknowledge several contributors to this study:
+
+Mohammed Yousuf, Cory Krause, and  Govind Vadakpat of FHWA
+Meenakshy Vasudevan of Noblis
+
+The following people have contributed to easygui, a Python library used as part of the post-processing. Thank you for your work!
+
+Alex Zawadzki - Project Management, Design, Testing
+Horst JENS - Design, Documentation, Testing
+Robert Lugg - Development (Active)
+Stephen Ferg - (retired) Created and developed easygui through 0.96

@@ -1,0 +1,36 @@
+#JavaScript Classes
+
+####Point.js
+https://github.com/moagrius/Point - Mike "moagrius" - 
+
+####jQuery v1.10.2
+(c) 2005, 2013 jQuery Foundation, Inc. - jquery.org/license
+
+####jQuery UI - v1.10.4
+2014-04-27 - http://jqueryui.com
+
+####Touch Scroll
+chrismbarr - https://github.com/chrismbarr/TouchScroll
+
+####jquery.nicescroll
+copyright 2011-12-13 InuYaksa*2013 - https://github.com/inuyaksa/jquery.nicescroll
+
+####MarkerClustererPlus for Google Maps V3
+2.0.8 [February 9, 2012]
+Gary Little - https://code.google.com/p/google-maps-utility-library-v3/
+
+####Transify v1.0
+COPYRIGHT JOREN RAPINI 2010
+jorenrapini@gmail.com
+
+#PHP Classes
+
+####access.class.php,v 0.93
+Copyright (c) 2007 Nick Papanotas (http://www.webdigity.com)
+Nick Papanotas <nikolas@webdigity.com>
+
+#Java Classes
+Apache httpcore/httpclient/httpmime
+http://hc.apache.org/httpcomponents-client-4.3.x/project-info.html
+Apache Software Foundation
+

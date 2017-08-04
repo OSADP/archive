@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="volley-android-sdk-4.4.2_r1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/volley-android-sdk-4.4.2_r1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

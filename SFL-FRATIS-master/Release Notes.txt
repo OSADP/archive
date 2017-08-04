@@ -1,0 +1,45 @@
+## Installation
+
+####Server Component
+because the system was programmed to work with php/MySQL it should run on any server which supports it. The demonstration server runs on Microsoft Windows Server 2012 R2 inside an IIS page with a PHP extension and a standalone installation of MySQL. We have also tested inside WAMP (a bundled software based on Apache/php/MySQL) for development purposes.
+
+#####Installation
+1. Install/Configure an Apache/MySQL web server environment
+2. Upload/Copy contents of wwwroot directory to the appropropriate home directory on server
+3. Create a MySQL username and database to use for project.
+4. Grant user at least CREATE, DROP, ALTER, DELETE, INSERT, SELECT, UPDATE privileges
+5. Edit config.php and configure database settings at the top to reflect actions in step 3:
+	$dbhost = "localhost"; //Database Server
+	$username = ""; //Username
+	$password = ""; //Password
+	$database = ""; //FRATIS Database
+6. For complete integration you will need to modify the RemoteServer attribute in Mobile Application source code and copy the compiled App to wwwroot\App folder
+
+####Mobile Application
+The mobile application requires the latest version of Google Play Services. Please install/update the Google Play Store which should automatically update Google Play Services to latest version. Please note that Google Play Store and Services are not available on Kindle OS or some other types of customized android devices.
+
+#####Installation
+1. Install Eclipse / Android SDK
+2. Download Android SDK packages for target Android version (for example 4.2 or 4.4)
+3. Download SDK package for Google Play Services for that version
+4. Point Eclipse to the Mobile App folder in the repository
+5. If you wish to use your own Server version edit MyApplication.java and change the following line to point to the home directory where you installed the Server Component (for example your.server.com/fratis):
+    public String RemoteHost 	= "140.142.198.59"; //Change to your location
+6. Build the Android project and copy EmergencyResponse.apk to the App directory where you uploaded the Server Component
+
+To install the compiled App you must allow installation from unknown sources. More info view the last section on this page:
+http://developer.android.com/distribute/tools/open-distribution.html
+
+You may install the app on your Android device by navigating to the URL of the server you installed the Server Component and clicking the Green Android icon at the top of the page.
+
+
+## Features
+*XML Reports for RECON teams, Businesses and Civillians
+*GPS Position tracking for placing reports on map
+*Automatic Report Updates
+*Report display and grouping
+*Business Status Updates (including operational status and available goods)
+*Business Supply Search
+*Freight terminal / port status
+*Civillian reports for business status
+*Marker Clustering of similar reports based on distance

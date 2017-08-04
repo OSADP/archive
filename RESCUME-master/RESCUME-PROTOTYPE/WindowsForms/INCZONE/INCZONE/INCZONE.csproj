@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC13FE81-3708-4271-BBB2-C6FCAFEB31A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>INCZONE</RootNamespace>
+    <AssemblyName>INCZONE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <PublishUrl>C:\Projects\RESCUME\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationRevision>67</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A361D1E28BB5E375555D4E8C27111EE01C8CAD86</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>INCZONE_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.0\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\32feet.NET.3.5.0.0\lib\net\InTheHand.Net.Personal.dll</HintPath>
+    </Reference>
+    <Reference Include="Json">
+      <HintPath>..\packages\JSON.1.0.1\lib\net40\Json.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\JsonValue.0.6.0\lib\40\Microsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Formatting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\HttpClient.0.6.0\lib\40\Microsoft.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Server.Common, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\JsonValue.0.6.0\lib\40\Microsoft.Server.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Phidget21.NET">
+      <HintPath>..\packages\phidget21-windevel\Phidget21.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\HttpClient.0.6.0\lib\40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Alarm.cs" />
+    <Compile Include="Common\ActuatorType.cs" />
+    <Compile Include="Common\AlarmThreadObj.cs" />
+    <Compile Include="Common\Beeper.cs" />
+    <Compile Include="Common\CapWINLocation.cs" />
+    <Compile Include="Common\IncidentZone.cs" />
+    <Compile Include="Common\JsonDIA.cs" />
+    <Compile Include="Common\Lane.cs" />
+    <Compile Include="Common\Led.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MapLink.cs" />
+    <Compile Include="Common\MessageCONF.cs" />
+    <Compile Include="Common\MessageRTCM.cs" />
+    <Compile Include="Common\JsonTHREAT.cs" />
+    <Compile Include="Common\AlarmConfig.cs" />
+    <Compile Include="Common\AlarmLevelTypes.cs" />
+    <Compile Include="Common\AudibleVisualConfig.cs" />
+    <Compile Include="Common\CapWINConfig.cs" />
+    <Compile Include="Common\CapWINIncidentListType1.cs" />
+    <Compile Include="Common\CheckComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ComboBoxItem.cs" />
+    <Compile Include="Common\CommonAnchor.cs" />
+    <Compile Include="Common\ComPort.cs" />
+    <Compile Include="Common\Content.cs" />
+    <Compile Include="Common\DataFrame.cs" />
+    <Compile Include="Common\DGPSConfig.cs" />
+    <Compile Include="Common\DSRCConfig.cs" />
+    <Compile Include="Common\MessageEVA.cs" />
+    <Compile Include="Common\JsonGPGGA.cs" />
+    <Compile Include="Common\MapNode.cs" />
+    <Compile Include="Common\MapSet.cs" />
+    <Compile Include="Common\RsaMessage.cs" />
+    <Compile Include="Common\RsaTypeEvent.cs" />
+    <Compile Include="Common\Segment.cs" />
+    <Compile Include="Common\SourceTable.cs" />
+    <Compile Include="Common\ConnectionType.cs" />
+    <Compile Include="Common\LogLevelTypes.cs" />
+    <Compile Include="Common\LogEventTypes.cs" />
+    <Compile Include="Common\MessageTIM.cs" />
+    <Compile Include="Common\TIMMessage.cs" />
+    <Compile Include="Common\TypeId.cs" />
+    <Compile Include="Common\VisualAlarm.cs" />
+    <Compile Include="Common\VitalConfig.cs" />
+    <Compile Include="Coordinate.cs" />
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="Exceptions\TIMException.cs" />
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AlertsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AlertsForm.Designer.cs">
+      <DependentUpon>AlertsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigurationIncompleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigurationIncompleteForm.Designer.cs">
+      <DependentUpon>ConfigurationIncompleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuration\AlarmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\AlarmForm.Designer.cs">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuration\ErrorEventBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\ErrorEventBox.Designer.cs">
+      <DependentUpon>ErrorEventBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuration\loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\loading.Designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuration\MapDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\MapDataForm.Designer.cs">
+      <DependentUpon>MapDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ArrayOfmapSet.cs" />
+    <Compile Include="Forms\Log\EventInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Log\EventInfoForm.Designer.cs">
+      <DependentUpon>EventInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Log\LogOutputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Log\LogOutputForm.Designer.cs">
+      <DependentUpon>LogOutputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\AlarmManager.cs" />
+    <Compile Include="Managers\CapWINManager.cs" />
+    <Compile Include="Managers\ServiceConnectionState.cs" />
+    <Compile Include="Common\SystemConstants.cs" />
+    <Compile Include="Common\UIConstants.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Exceptions\IncZoneException.cs" />
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\BluetoothForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\BluetoothForm.Designer.cs">
+      <DependentUpon>BluetoothForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuration\CapWINForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\CapWINForm.Designer.cs">
+      <DependentUpon>CapWINForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuration\DGPSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\DGPSForm.Designer.cs">
+      <DependentUpon>DGPSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuration\DSRCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\DSRCForm.Designer.cs">
+      <DependentUpon>DSRCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuration\GeneralForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuration\GeneralForm.Designer.cs">
+      <DependentUpon>GeneralForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Status\ConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Status\ConnectionForm.Designer.cs">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Log\EventLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Log\EventLogForm.Designer.cs">
+      <DependentUpon>EventLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Managers\LogEventsManager.cs" />
+    <Compile Include="Managers\MapRepositoryManager.cs" />
+    <Compile Include="Managers\MessageManager.cs" />
+    <Compile Include="Managers\NTripManager.cs" />
+    <Compile Include="Model\AlarmConfiguration.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AlarmLevel.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AudibleVisualAlarm.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BluetoothConfig.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CapWINConfiguration.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DGPSConfiguration.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DSRCConfiguration.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EventLog.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EventType.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IncZone.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncZone.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IncZone.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IncZone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncZone.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="IncZoneMDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncZoneMDIParent.Designer.cs">
+      <DependentUpon>IncZoneMDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LogLevel.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MapLink.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MapNode.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MapSet.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VehicleAlarm.cs">
+      <DependentUpon>IncZone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NMEA\GPGGA.cs" />
+    <Compile Include="NMEA\GPSHandler.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CodeFirstRepository.cs" />
+    <Compile Include="Repositories\CommonRepository.cs" />
+    <Compile Include="Repositories\IUnitOfWork.cs" />
+    <Compile Include="Repositories\UnitOfWork.cs" />
+    <Compile Include="RTCM\RTCM.cs" />
+    <Compile Include="VITAL\ChevyCaprice.cs" />
+    <Compile Include="VITAL\ChevyCruze.cs" />
+    <Compile Include="VITAL\Serial.cs" />
+    <Compile Include="VITAL\VITAL.cs" />
+    <Compile Include="VITAL\vitalVehicleInterface.cs" />
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AlertsForm.resx">
+      <DependentUpon>AlertsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigurationIncompleteForm.resx">
+      <DependentUpon>ConfigurationIncompleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuration\AlarmForm.resx">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuration\BluetoothForm.resx">
+      <DependentUpon>BluetoothForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuration\CapWINForm.resx">
+      <DependentUpon>CapWINForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuration\DGPSForm.resx">
+      <DependentUpon>DGPSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuration\DSRCForm.resx">
+      <DependentUpon>DSRCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuration\GeneralForm.resx">
+      <DependentUpon>GeneralForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuration\loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuration\MapDataForm.resx">
+      <DependentUpon>MapDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Log\EventInfoForm.resx">
+      <DependentUpon>EventInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Log\EventLogForm.resx">
+      <DependentUpon>EventLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Log\LogOutputForm.resx">
+      <DependentUpon>LogOutputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Status\ConnectionForm.resx">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncZoneMDIParent.resx">
+      <DependentUpon>IncZoneMDIParent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Model\IncZone.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>IncZone.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Model\IncZone Initial Setup Data.sqlce" />
+    <None Include="Model\IncZone.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IncZone.Context.cs</LastGenOutput>
+      <DependentUpon>IncZone.edmx</DependentUpon>
+    </None>
+    <None Include="Model\IncZone.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IncZone.cs</LastGenOutput>
+      <DependentUpon>IncZone.edmx</DependentUpon>
+    </None>
+    <None Include="Model\IncZoneedmx.diagram">
+      <DependentUpon>IncZone.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bkue.png" />
+    <Content Include="Images\green.png" />
+    <Content Include="Images\orange.png" />
+    <Content Include="Images\red.png" />
+    <Content Include="Images\volume_test.png" />
+    <Content Include="Images\yellow.png" />
+    <Content Include="IncZone.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="log-IncZoneAppender.txt" />
+    <Content Include="Model\IncZone.edmx.sql" />
+    <None Include="Resources\red.png" />
+    <Content Include="sqlceca40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlcecompact40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceer40EN.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceme40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceqp40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlcese40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DsrcAsnToolkit\DsrcAsnToolkit.vcxproj">
+      <Project>{f102c37d-5d88-419b-bc34-d330a1106582}</Project>
+      <Name>DsrcAsnToolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

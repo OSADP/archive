@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>I-5 NB.kml</name>
+	<StyleMap id="inline">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline2">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline4">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline5">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline7">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline9">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline10">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>I-5 NB</name>
+		<open>1</open>
+		<Placemark>
+			<name>0</name>
+			<LookAt>
+				<longitude>-83.01878415405318</longitude>
+				<latitude>39.98701639477474</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0009190600596739457</heading>
+				<tilt>40.19024882489069</tilt>
+				<range>1092.267220060744</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02554550442615,39.98780585581897,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>I-5 NB-0</name>
+			<styleUrl>#inline6</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.02553696698645,39.98786575759036,223.54474304441 -83.0219849266215,39.98774897268407,221.8991367944717 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>1</name>
+			<LookAt>
+				<longitude>-83.01878415405318</longitude>
+				<latitude>39.98701639477474</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0009190600596739457</heading>
+				<tilt>40.19024882489069</tilt>
+				<range>1092.267220060744</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.02200005377213,39.98771310923446,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>I-5 NB-1</name>
+			<styleUrl>#inline</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.02201002389836,39.98776125212932,221.8440310709337 -83.01882314307902,39.98763197461693,225.9945754848938 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>2</name>
+			<LookAt>
+				<longitude>-83.01878415405318</longitude>
+				<latitude>39.98701639477474</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0009190600596739457</heading>
+				<tilt>40.19024882489069</tilt>
+				<range>1092.267220060744</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.01883420473857,39.98760862904833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>I-5 NB-2</name>
+			<styleUrl>#inline3</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.01882311377992,39.98762028633769,226.0229985915527 -83.01573068421665,39.98750911550004,226.9552392648998 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>3</name>
+			<LookAt>
+				<longitude>-83.01878415405318</longitude>
+				<latitude>39.98701639477474</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0009190600596739457</heading>
+				<tilt>40.19024882489069</tilt>
+				<range>1092.267220060744</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.01572159029092,39.98749831477879,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>I-5 NB-3</name>
+			<styleUrl>#inline8</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-83.01571774452336,39.98751980541334,226.9587267534569 -83.01307922494226,39.98740013091565,227.8178097819446 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>4</name>
+			<LookAt>
+				<longitude>-83.01878415405318</longitude>
+				<latitude>39.98701639477474</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0009190600596739457</heading>
+				<tilt>40.19024882489069</tilt>
+				<range>1092.267220060744</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-83.0130696634826,39.9873664361172,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<report	title="Citizen Report" uploadscript="citizen.php">
+	<page xml:id="home">
+		<button text="Place On Map" dbid="map" action="map" />
+		<menu text="Citizen Report">
+			<link text="Road/Transportation" location="road" icon="citizen/transportation.png" />
+			<link text="Damage/Flooding" location="damage" icon="citizen/damage.png" />
+			<link text="Service Outages" location="service" icon="citizen/services.png" />
+		</menu>  
+		
+		<button text="Submit Report" action="submit" />   
+	</page>
+	
+	<page xml:id="road" dbid="ReportType"> 
+		<button text="Take Photo" dbid="road" action="photo" />
+		<checkbox xml:id="road_closed" dbid="ReportSubType" text="Road Closed/Blocked" icon="citizen/road_closed.png" gpsposition="" />
+		<checkbox xml:id="road_damaged" dbid="ReportSubType" text="Road Damaged" icon="citizen/road_damaged.png" gpsposition="" />
+		<checkbox xml:id="road_debris" dbid="ReportSubType" text="Debris on Road" icon="citizen/road_debris.png" gpsposition="" />
+		<checkbox xml:id="road_bridge" dbid="ReportSubType" text="Bridge/Overpass Damaged" icon="citizen/bridge_damage.png" gpsposition="" />
+		
+		<textinput xml:id="road_comment" dbid="ReportComment" text="Comment" /> 
+		<button text="Accept" action="finish" />  
+	</page>
+	
+	<page xml:id="damage" dbid="ReportType">
+		<button text="Take Photo" dbid="damage" action="photo" />
+		<checkbox xml:id="damage_buildings" dbid="ReportSubType" text="Buildings Damaged" icon="citizen/house_damage.png" gpsposition="" />
+		<checkbox xml:id="damage_tree" dbid="ReportSubType" text="Tree(s) Down" icon="citizen/tree_down.png" gpsposition="" />
+		<checkbox xml:id="damage_infrastructure" dbid="ReportSubType" text="Powerlines/Infrastructure damaged" icon="citizen/power.png" gpsposition="" />
+		<checkbox xml:id="damage_flooding" dbid="ReportSubType" text="Flooding/Water Damage" icon="citizen/flooding.png" gpsposition="" />
+		
+		<textinput xml:id="damage_comment" dbid="ReportComment" text="Comment" />
+		<button text="Accept" action="finish" /> 
+	</page>
+	
+	<page xml:id="service" dbid="ReportType">
+		<button text="Take Photo" dbid="service" action="photo" />
+		<checkbox xml:id="service_power" dbid="ReportSubType" text="No Power" icon="citizen/power.png" gpsposition="" />
+		<checkbox xml:id="service_water" dbid="ReportSubType" text="No Water" icon="citizen/water.png" gpsposition="" />
+		<checkbox xml:id="service_phone" dbid="ReportSubType" text="No Phone" icon="citizen/phone.png" gpsposition="" />
+		<checkbox xml:id="service_gas" dbid="ReportSubType" text="No Gas" icon="citizen/gas.png" gpsposition="" />
+		<checkbox xml:id="service_tv" dbid="ReportSubType" text="No Television" icon="citizen/services.png" gpsposition="" />
+		<checkbox xml:id="service_internet" dbid="ReportSubType" text="No Internet" icon="citizen/internet.png" gpsposition="" />
+		<checkbox xml:id="service_radio" dbid="ReportSubType" text="No Radio" icon="citizen/radio.png" gpsposition="" />
+		
+		<textinput xml:id="service_comment" dbid="ReportComment" text="Comment" />
+		<button text="Accept" action="finish" />
+	</page>
+	
+</report>
+

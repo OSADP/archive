@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<report	title="Point of Distribution Report" uploadscript="depot.php">
+	<page xml:id="home">
+		<textinput xml:id="businessName" text="Business Name" business_id="" noedit="true" />
+		
+		<radio xml:id="businessStatus" text="We're:">
+			<option text="Open" value="open" />
+			<option text="Closed" value="closed" />
+		</radio>
+		
+		<radio xml:id="businessHours" text="Our Hours:"> 
+			<option text="Regular" value="regular" />
+			<option text="Limited" value="limited" /> 
+			<option text="Extended" value="extended" />
+		</radio>
+		
+		<textinput xml:id="businessHoursComment" parent="businessHours" text="Specific Hours" />
+		
+		<textarea xml:id="businessComment" text="Status Update" />
+				
+		<special>
+
+		</special>
+		
+		<button text="Update Status" action="submit" />
+	</page>
+	
+	
+</report>
+

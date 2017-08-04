@@ -1,0 +1,82 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Devices">
+        <org.battelle.inczone.inczoneui.settings.BluetoothDeviceList
+		    android:key="@string/setting_obuMacAddress_key"
+		    android:title="@string/setting_obuMacAddress_name"
+		    android:summary="@string/setting_obuMacAddress_details" />
+        
+        <CheckBoxPreference
+   	        android:key="@string/setting_enableObdII_key"
+   	        android:title="@string/setting_enableObdII_name"
+   	        android:summary="@string/setting_enableObdII_details"
+   	        android:defaultValue="false" />
+        
+        <org.battelle.inczone.inczoneui.settings.BluetoothDeviceList
+		    android:key="@string/setting_obdIIMacAddress_key"
+		    android:title="@string/setting_obdIIMacAddress_name"
+		    android:summary="@string/setting_obdIIMacAddress_details"
+		    android:dependency = "@string/setting_enableObdII_key" />
+	    
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="NTRIP">
+        <CheckBoxPreference
+   	        android:key="@string/setting_ntripEnabled_key"
+   	        android:title="@string/setting_ntripEnabled_name"
+   	        android:summary="@string/setting_ntripEnabled_details"
+   	        android:defaultValue="true" />
+        
+        <PreferenceScreen
+            android:title="NTRIP Settings">
+            
+            <EditTextPreference
+	   	        android:key="@string/setting_ntripEndpoint_key"
+	   	        android:title="@string/setting_ntripEndpoint_name"
+	   	        android:summary="@string/setting_ntripEndpoint_details"
+	   	        android:defaultValue="156.63.133.118" />
+            
+            <EditTextPreference
+	   	        android:key="@string/setting_ntripEndpointPort_key"
+	   	        android:title="@string/setting_ntripEndpointPort_name"
+	   	        android:summary="@string/setting_ntripEndpointPort_details"
+	   	        android:defaultValue="2101" />
+            
+            <EditTextPreference
+	   	        android:key="@string/setting_ntripMountPoint_key"
+	   	        android:title="@string/setting_ntripMountPoint_name"
+	   	        android:summary="@string/setting_ntripMountPoint_details"
+	   	        android:defaultValue="ODOT_RTCM23" />
+            
+            <EditTextPreference
+	   	        android:key="@string/setting_ntripUserName_key"
+	   	        android:title="@string/setting_ntripUserName_name"
+	   	        android:summary="@string/setting_ntripUserName_details"
+	   	        android:defaultValue="battelle2" />
+            
+            <EditTextPreference
+	   	        android:key="@string/setting_ntripPassword_key"
+	   	        android:title="@string/setting_ntripPassword_name"
+	   	        android:summary="@string/setting_ntripPassword_details"
+	   	        android:defaultValue="rtkPass" />
+            
+        </PreferenceScreen>
+	    
+    </PreferenceCategory>
+    
+   	<PreferenceCategory android:title="Alert Sounds">
+   	    <!-- RingtonePreference 
+   	        android:key="@string/setting_ringLostConnection_key"
+   	        android:title="@string/setting_ringLostConnection_name"
+   	        android:summary="@string/setting_ringLostConnection_details"
+   	        android:ringtoneType="notification"/-->
+   	    
+   	    <CheckBoxPreference
+   	        android:key="@string/setting_enableTTS_key"
+   	        android:title="@string/setting_enableTTS_name"
+   	        android:summary="@string/setting_enableTTS_details"
+   	        android:defaultValue="true" />
+   	    
+   	</PreferenceCategory>
+   	
+</PreferenceScreen>

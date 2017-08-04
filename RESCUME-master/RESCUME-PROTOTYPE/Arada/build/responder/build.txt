@@ -1,0 +1,19 @@
+*********************************************************************
+PROJECT: R.E.S.C.U.M.E. (INC-ZONE)
+
+     BUILD VERSION: 0.2.0
+        BUILD DATE: 20140619
+REPOSITORY VERSION: 3329:3330
+
+
+COPYRIGHT (c) 2014 Battelle Memorial Institute. All rights reserved.
+
+Unauthorized use or duplication may violate state, federal and/or
+international laws including the Copyright Laws of the United States
+and of other international jurisdictions.
+
+Battelle Memorial Institute
+505 King Avenue
+Columbus, Ohio  43201
+
+*********************************************************************

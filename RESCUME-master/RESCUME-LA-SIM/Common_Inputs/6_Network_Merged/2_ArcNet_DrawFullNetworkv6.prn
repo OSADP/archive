@@ -1,0 +1,158 @@
+
+	********************************************
+	|                                          |
+	|          ArcNet - Version 6.0.6          |
+	|  Copyright 2014 by TRANSIMS Open-Source  |
+	|         Wed Apr 08 11:09:16 2015         |
+	|                                          |
+	********************************************
+
+	Control File = 2_ArcNet_DrawFullNetworkv6.ctl
+	Report File  = 2_ArcNet_DrawFullNetworkv6.prn (Create)
+
+	ArcNet Default Control Keys
+
+
+	Warning: Control Key "TRANSIT_TIME_PERIODS" was Not Used
+	Page Length = 65
+	Default File Format = TAB_DELIMITED
+	Time of Day Format = DAY_TIME
+	Model Start Time = 0:00
+	Model End Time = 24:00
+	Model Time Increment = 15.00 minutes
+	Units of Measure = METRIC
+	Drive Side of Road = RIGHT_SIDE
+	Random Number Seed = 1428505756
+	Max Warning Messages = 100000
+	Max Warning Exit Flag = TRUE
+	Max Problem Count = 0
+	Number of Threads = 1
+
+	Input System Network Files:
+	Node File = ASCIIFiles\Node.csv
+	Node Format = COMMA_DELIMITED
+	Shape File = ASCIIFiles\Shape.csv
+	Shape Format = COMMA_DELIMITED
+	Link File = ASCIIFiles\Link.csv
+	Link Format = COMMA_DELIMITED
+	Pocket File = ASCIIFiles\Pocket.csv
+	Pocket Format = COMMA_DELIMITED
+	Connection File = ASCIIFiles\Connection.csv
+	Connection Format = COMMA_DELIMITED
+	Location File = ASCIIFiles\Location_EvacFuel.csv
+	Location Format = COMMA_DELIMITED
+
+	Notes And Name Fields = TRUE
+
+	Data Service Controls:
+
+	Input Coordinate System = UTM,15N,METERS
+	Output Coordinate System = UTM,15N,METERS
+	Output XYM Shapes = FALSE
+	Output XYZ Shapes = FALSE
+
+	ArcNet Output Files:
+	New Arc Node File = ShapeFiles\Node.shp
+	New Arc Node Format = DBASE
+	New Arc Link File = ShapeFiles\Link.shp
+	New Arc Link Format = DBASE
+	New Arc Centerline File = ShapeFiles\Centerline.shp
+	New Arc Centerline Format = DBASE
+	New Arc Location File = ShapeFiles\Location_Fuel.shp
+	New Arc Location Format = DBASE	ArcNet Default Control Keys
+	Wed Apr 08 11:09:16 2015  ArcNet  page 2
+
+	New Arc Connection File = ShapeFiles\Connection.shp
+	New Arc Connection Format = DBASE
+
+	ArcNet Control Keys:
+	Select Time = 0:00
+
+	Draw Service Controls:
+	Draw Network Lanes = TRUE
+	Lane Width = 3.66 meters
+	Center Oneway Links = FALSE
+	Location Side Offset = 10.67 meters
+
+	Draw Oneway Arrows = TRUE
+	Oneway Arrow Length = 7.62 meters
+	Oneway Arrow Side Offset = 0.46 meters
+
+	Curved Connection Flag = TRUE
+
+
+	Number of Node File Records = 7285
+
+	Number of Shape File Records = 12180
+	Number of Link Shape Records = 3350
+	Warning: Duplicate Anode-Bnode Key = 5796-5882
+	Warning: Duplicate Anode-Bnode Key = 1929-5879
+	Warning: Duplicate Anode-Bnode Key = 6805-6784
+	Warning: Duplicate Anode-Bnode Key = 6784-6805
+
+	Number of Link File Records = 9260
+	Number of Directional Links = 13148
+	Warning: Link 666 Pocket Length 210.0 is Too Long
+	Warning: Link 54773 Pocket Length 104.0 is Too Long
+
+	Number of Pocket File Records = 2369
+
+	Number of Connection File Records = 19193
+	Warning: Location Link 60023 was Not Found in the Link file
+	Warning: Location Link 60023 was Not Found in the Link file
+	Warning: Location Link 60023 was Not Found in the Link file
+	Warning: Location Link 60023 was Not Found in the Link file
+	Warning: Location Link 60023 was Not Found in the Link file
+	Warning: Location Link 60023 was Not Found in the Link file
+	Warning: Location Link 60023 was Not Found in the Link file
+	Warning: Location Link 60023 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60022 was Not Found in the Link file
+	Warning: Location Link 60033 was Not Found in the Link file
+	Warning: Location Link 60033 was Not Found in the Link file	ArcNet Default Control Keys
+	Wed Apr 08 11:09:19 2015  ArcNet  page 3
+
+	Warning: Location Link 60033 was Not Found in the Link file
+	Warning: Location Link 60033 was Not Found in the Link file
+	Warning: Location Link 60033 was Not Found in the Link file
+	Warning: Location Link 60033 was Not Found in the Link file
+	Warning: Location Link 60033 was Not Found in the Link file
+	Warning: Location Link 60033 was Not Found in the Link file
+	Warning: Location Link 60033 was Not Found in the Link file
+	Warning: Location Link 60033 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+	Warning: Location Link 60032 was Not Found in the Link file
+
+	Number of Location File Records = 8211
+
+	Wed Apr 08 11:09:21 2015 -- Process Complete with 59 Warnings (0:00:05)

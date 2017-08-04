@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<style>
+    #full_body{
+        width: 1180px;
+        margin: 0 auto;
+        font-family: 'Asap-Regular';
+    }
+    .divParagraph{
+        margin-bottom: 15px;
+        color:#486279;
+    }
+    .indentParagraph{
+        margin-left: 15px;
+    }
+    .imgCaption{
+        text-align: center;
+        font-weight: bold;
+    }
+    .imgCenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .colorSpan{
+        color:#4ab570;
+    }
+    .italicizedText{
+        font-style: italic;
+    }
+    .boldText{
+        font-weight: bold;
+    }
+    .helpHeader{
+        font-size: 18px;
+        font-weight: bolder;
+        color:#486279;
+        margin-bottom: 15px;
+    }
+    #SectionOne{
+        margin-bottom: 10px;
+    }
+    #SectionTwo{
+        margin-bottom: 10px;
+    }
+    #SectionThree{
+        margin-bottom: 10px;
+    }
+    .toTop{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #wrapper {
+        min-height:100%;
+        position:relative;
+    }
+</style>
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="resources/noblis/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="resources/noblis/css/cost_estimator.css">
+<html lang="en">
+    <head>
+        <title>CO-PILOT Help</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="resources/jquery-1.9.1/jquery-1.11.0.js"></script>
+        <script>
+            $(function () {
+                $("#header").load("header.html", function () {
+                    $('#loginInfo').hide();
+                    //$('#s_v_divider').hide();
+                    //$('#choose').prop('disabled', true);
+                    //$('#choose').css('background-color', '#DCDAD1');
+                    //$('#choose').css('color', '#DCDAD1');
+                });
+            });
+            $(function () {
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </head>
+    <body id="help">
+        <div id="wrapper">
+            <div id="header"></div>
+            <div id="full_body" style="padding-top:20px">
+                <div class="helpHeader"><h4>CO-PILOT REFERENCE MATERIALS!</h4></div>
+                <div style="margin-top:10px">
+                    <a href="resources/noblis/csv/CO-PILOT_FAQs_3_16_2015.docx" download="CO-PILOT_FAQs_3_16_2015.docx">CO-PILOT Frequently Asked Questions</a>
+                </div>
+                <div style="margin-top:10px">
+                    <a href="http://itsa.adobeconnect.com/p589yvepv2o/">CO-PILOT Cost Estimator Webinar Recording – January 7, 2015</a>
+                </div>
+                <div style="margin-top:10px">
+                    <a href="http://www.its.dot.gov/pilots/pdf/CO-PILOT_v6.pdf">CO-PILOT Cost Estimator Webinar Slide Deck</a>
+                </div>
+                <div style="margin-top:10px">
+                    <div>
+                        <a href="resources/noblis/csv/CV_Components_Detail_12_11_2014.xlsx"" download="CV_Components_Detail_12_11_2014.xlsx">Connected Vehicle Cost Components detail</a>
+                    </div>
+                    <div style="margin-top:10px">
+                        <a href="resources/noblis/csv/CO-PILOT_UsersGuide_1_15.pptx" download="CO-PILOT_UsersGuide.pptx">CO-PILOT Background, Assumptions, and User Instructions</a>
+                    </div>
+                    <div style="margin-top:20px">
+                        <div id="SectionOne">
+                            <div class="divParagraph">
+                                CO-PILOT allows stakeholders to estimate the costs of proposed pilot deployments at a high level, both to refine deployment plans and to reduce the risk that the requested Federal cost share will exceed the pilot deployment grant ceiling.
+                            </div>
+                            <div class="divParagraph">
+                                CO-PILOT breaks down the various connected vehicle applications into Building Blocks and components or elements.
+                            </div>
+                            <div class="divParagraph">
+                                <div class="divParagraph indentParagraph"><span class="colorSpan">Building Blocks </span> are locations / entities that require components for an application, e.g., Signalized Intersections, Transit Vehicles, Multimodal Travelers, etc.</div>
+                                <div class="divParagraph indentParagraph"><span class="colorSpan">Cost Components </span> are individual elements at a Building Block, e.g., for Signalized Intersections the Cost Components may include detection systems, Roadside Equipment (RSEs), etc.</div>
+                            </div>
+                            <div class="divParagraph">
+                                Click on the "Start Using the Tool" link on the Home page, or click the "COST ESTIMATION" link in the blue navigation bar, to proceed to Step 1.
+                            </div>
+                        </div>
+                        <div class="helpHeader"><h4>COST ESTIMATION WALKTHROUGH:</h4></div>
+                        <div id="SectionTwo">
+                            <div class="divParagraph">In <span class="colorSpan">Step 1</span>, <span class="italicizedText"> Select Application</span>, choose the application(s) you are planning to deploy.</div>
+                            <div class="divParagraph">In <span class="colorSpan">Step 2</span>, <span class="italicizedText"> Specify quantities for each Building Block</span>, enter the quantities for the Signalized Intersections, Transit Vehicles, Multimodal Travelers, etc. Note that only Building Blocks that are associated with the applications you have selected in Step 1 can be utilized in Step 2. For instance, if you select only an application that is associated with Unsignalized Intersections, you will not be able to enter a quantity for Signalized Intersections.</div>
+                            <div class="italicizedText divParagraph">*Note that you cannot advance to Step 3 until you have selected both applications and Building Blocks, as explained in the Tool Tip on the Next Step button.*</div>
+                            <div class="divParagraph">In <span class="colorSpan">Step 3</span>, <span class="italicizedText"> Assign Applications to Building Blocks</span>, each Building Block must be selected using the drop-down list. For the selected Building Block, answer the question asking whether all instances of the Building Block contain the same Applications, or not.</div>
+                            <div class="divParagraph">If the answer to "Will all instances of the Building Block contain the same Application?" is <span class="boldText">Yes</span>, then proceed to the Application Assignments section for all instances of that Building Block (Figure 1). The list of Available Applications on the left for that Building Block is filtered to include only the applications selected in Step 1, and further filtered to include only applications that use the selected Building Block. Highlight applications from the Available Applications list on the left and use the "+" to move the application to the Selected Applications list on the right.</div>
+                            <div class="imageDiv divParagraph"><img class="imgCenter" alt="Image showing assigning applications to building blocks" src="resources/noblis/icons/Figure1_Help_cropped.png"></div>
+                            <div class="divParagraph imgCaption" style="margin-top:-20px;">Figure 1: Step 3 – Assign Applications, for all Building Block Instances with same Applications</div>
+                            <div class="divParagraph">Select <span class="boldText">No</span> in response to the question "Will all instances of the Building Block contain the same Applications?" if subsets of a Building Block have the same applications, rather than all instances of the Building Block (Figure 2). Then proceed to select Applications for each Building Block subset. Initially two subsets are presented, and you can add more subsets if needed using the "Add Subset" button. Subsets can be removed using the "Remove" button.</div>
+                            <div class="imageDiv divParagraph"><img class="imgCenter" alt="Image showing assigning applications to building block subsets" src="resources/noblis/icons/Figure2_Help_cropped.png"></div>
+                            <div class="divParagraph imgCaption">Figure 2: Step 3 – Assign Applications, for Subsets of a Building Block with same Applications</div>
+                            <div class="divParagraph">After completing these Application selections for a particular Building Block, use the Building Block drop down list in Step 3 to similarly select the next Building Block and assign Applications to it. The Checks section at the top of Step 3 tracks whether you have assigned applications to all Building Blocks or not, and will turn green to indicate that all blocks have at least one assigned application (Figure 3). The Checks section is more extensive when you are using Building Block subsets that do not all have the same applications, and tracks the subset quantity totals to ensure they match the quantities in Step 2.</div>
+                            <div class="imageDiv divParagraph"><img class="imgCenter" alt="Image showing all checks being met" src="resources/noblis/icons/Figure3_Help_cropped.png"></div>
+                            <div class="divParagraph imgCaption" style="margin-top:-30px;">Figure 3: Step 3 – Checks Section Criteria Fulfilled</div>
+                            <div class="divParagraph">When all Building Blocks have applications assigned to them, and the Checks section questions turn green to indicate the criteria are fulfilled, click on the Next Step button to proceed to Step 4.</div>
+                            <div class="italicizedText divParagraph">*Note that you cannot advance to Step 4 until you've assigned applications to all Building Blocks.*</div>
+                            <div class="divParagraph">In <span class="colorSpan">Step 4</span>, the component quantity requirements have been consolidated across applications at each Building Block or each Building Block subset, and are presented to you (Figure 3). CO-PILOT assumes that if multiple applications at a Building Block each require one of a particular component, only one of these components is needed to cover all applications there, with some exceptions. You have the opportunity to Review and Edit in Step 4, if necessary. You can change the Quantities or Default Unit Costs by clicking on the "Modify Costs" link in the upper right corner. The quantity and default unit cost values will then become editable.</div>
+                            <div class="italicizedText divParagraph">*Note that if you change the Unit Cost, the CO-PILOT cost estimation module will assume that cost is fixed rather than simulated by selecting costs randomly from a distribution.*</div>
+                            <div class="divParagraph">You can add other cost components by clicking on the "+" button at the bottom right, opposite from “Other"; you will then be able to enter a text string identifying the new component, along with a quantity and cost. Any component added with this feature will also have a fixed cost. Multiple additional components can be added, if desired. Any component added with this feature can be removed with the “-“ button that will appear after a new component is added. Click OK when modifications are completed, to run the CO-PILOT cost estimation simulation.</div>
+                            <div class="imageDiv divParagraph"><img class="imgCenter" alt="Image showing step 4 review and edit page" src="resources/noblis/icons/Figure4_Help_cropped.png"></div>
+                            <div class="divParagraph imgCaption">Figure 4: Review and Edit</div>
+                            <div class="divParagraph">An existing CO-PILOT output spreadsheet can be uploaded into CO-PILOT, to expedite data entry for future runs.  See “Have an existing CO-PILOT output spreadsheet?” at the upper right corner of the Cost Estimation pages. Click “Browse” to select the spreadsheet saved on your computer, then click Upload.  Data in the spreadsheet is used to populate inputs in Steps 1 – 3, which can then be modified if desired.</div>
+                            <div class="divParagraph"><div class="toTop"><a href="#" class="toTop">Back to Top</a></div></div>
+                        </div>
+                        <div class="helpHeader"><h4>PRIVACY POLICY:</h4></div>
+                        <div id="SectionThree">
+                            <div class="divParagraph">Noblis, Inc. ("Noblis") is committed to protecting your privacy. Please read this Privacy Policy for more details about how we use information you submit to the CO-PILOT website ("CO-PILOT"). This Privacy Policy constitutes the entire agreement between you and Noblis relating to the CO-PILOT website. By your use of CO-PILOT, you consent to be governed by this Privacy Policy.</div>
+                            <div class="colorSpan divParagraph">1. Personally Identifiable Information</div>
+                            <div class="divParagraph">You can visit the CO-PILOT website without disclosing any information about yourself. Registration or login is not required to use CO-PILOT.</div>
+                            <div class="colorSpan divParagraph">2. Connected Vehicle Pilot Deployment Information</div>
+                            <div class="divParagraph">We do not collect or store information on the Connected Vehicle Pilot Deployment scenarios or costs that you input to CO-PILOT.</div>
+                            <div class="colorSpan divParagraph">3. Aggregated Information</div>
+                            <div class="divParagraph">To evaluate CO-PILOT and ensure that we are providing a tool of interest to you, we may collect and store statistical information regarding how you use CO-PILOT, the Internet Protocol address, the name of your Internet Service Provider, operating system, the website that referred you to CO-PILOT, and the time, date, and frequency that you view CO-PILOT. We may share this aggregated, statistical information with our third-parties.</div>
+                            <div class="colorSpan divParagraph">4. Disclosure for Lawful Purposes</div>
+                            <div class="divParagraph">Noblis reserves the right to access and disclose Aggregated Information to comply with applicable laws and lawful government requests, to operate its systems properly, or to protect itself or others.</div>
+                            <div class="colorSpan divParagraph">5. Notification of Changes</div>
+                            <div class="divParagraph">Noblis reserves the right to modify this Privacy Policy at any time. Please review this Policy from time to time to ensure your familiarity with its terms. If you have any questions about this Privacy Policy, please contact <a href="" >co-pilot@noblis.org</a>.</div>
+                            <div class="divParagraph"><div class="toTop"><a href="#">Back to Top</a></div></div>
+                        </div>
+                        <!--div>
+                            <a href="resources/noblis/csv/CV_Components_Detail_10_19_2014.xlsx" download="CV_Components_Detail_10_19_2014.xlsx">Connected Vehicle Cost Components detail</a>
+                        </div>
+                        <div style="margin-top:10px">
+                            <a href="resources/noblis/csv/CO-PILOT_UsersGuide_10_14.pptx" download="CO-PILOT_UsersGuide_10_14.pptx">CO-PILOT Background, Assumptions, and User Instructions</a>
+                        </div-->
+                        <div style="height:100px;width:100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="resources/noblis/js/utils.js">
+</script>

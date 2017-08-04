@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<report	title="Business Report" uploadscript="business.php"> 
+	<page xml:id="home">
+		<textinput xml:id="businessName" text="Business Name" business_id="" noedit="true" />
+		
+		<radio xml:id="businessStatus" text="We're:">
+			<option text="Open" value="open" /> 
+			<option text="Closed" value="closed" />
+		</radio>
+		
+		<radio xml:id="businessHours" text="Our Hours:"> 
+			<option text="Regular" value="regular" /> 
+			<option text="Limited" value="limited" /> 
+			<option text="Extended" value="extended" />
+		</radio>
+		
+		<textinput xml:id="businessHoursComment" parent="businessHours" text="Hours Info" />
+		
+		<textarea xml:id="businessComment" text="Status Update" />
+				
+		<menu text="Available Supplies">
+			<link text="Gas" location="gas" />
+			<link text="Food" location="food" />
+			<link text="Water" location="water" />
+			<link text="Pharmacy" location="pharmacy" />
+			<link text="Hardware" location="hardware" />
+			<link text="Clothes" location="clothes" />
+			<link text="Bedding-Shelter" location="bedding" />
+			<link text="Supplies" location="supplies" />
+		</menu>
+		
+		<button text="Update Status" action="submit" />
+	</page>
+	
+	<page xml:id="terminal" dbid="SupplyType">
+		<checkbox xml:id="terminal_container_available" dbid="SupplySubType" text="Available Containers" />
+		<checkbox xml:id="terminal_container_receiving" dbid="SupplySubType" text="Receiving Containers" />
+	</page>
+	
+	<page xml:id="gas" dbid="SupplyType">
+		<checkbox xml:id="gas_regular" dbid="SupplySubType" text="Regular" />
+		<checkbox xml:id="gas_plus" dbid="SupplySubType" text="Plus" />
+		<checkbox xml:id="gas_premium" dbid="SupplySubType" text="Premium" />
+		<checkbox xml:id="gas_diesel" dbid="SupplySubType" text="Diesel" />
+		<checkbox xml:id="gas_propane" dbid="SupplySubType" text="Propane" />
+
+		<textinput xml:id="gas_comment" dbid="SupplyComment" text="Comment" />
+		
+		<button text="Go Back" action="finish" />
+	</page>
+	
+	<page xml:id="food" dbid="SupplyType">
+		<checkbox xml:id="food_fresh" dbid="SupplySubType" text="Fresh" />
+		<checkbox xml:id="food_canned" dbid="SupplySubType" text="Canned" />
+		<checkbox xml:id="food_dry_packaged" dbid="SupplySubType" text="Dry Packaged / Bulk" />
+		<checkbox xml:id="food_frozen" dbid="SupplySubType" text="Frozen" />
+		<checkbox xml:id="food_baby" dbid="SupplySubType" text="Baby Food" />
+		
+		<textinput xml:id="food_comment" dbid="SupplyComment" text="Comment" />
+		
+		<button text="Go Back" action="finish" />
+	</page>
+	
+	<page xml:id="water" dbid="SupplyType">
+		<checkbox xml:id="water_drinking" dbid="SupplySubType" text="Drinking (Bottled)" />
+		<checkbox xml:id="water_drinking_bulk" dbid="SupplySubType" text="Drinking (Large Containers)" />
+		<checkbox xml:id="water_running" dbid="SupplySubType" text="Running Water (Faucet)" />
+		<checkbox xml:id="water_not_drinking" dbid="SupplySubType" text="Other (Not For Drinking)" />
+		
+		<textinput xml:id="water_comment" dbid="SupplyComment" text="Comment" />
+		
+		<button text="Go Back" action="finish" />
+	</page>
+	
+	<page xml:id="pharmacy" dbid="SupplyType">
+		<checkbox xml:id="pharmacy_first_aid" dbid="SupplySubType" text="First Aid" />
+		<checkbox xml:id="pharmacy_prescriptions" dbid="SupplySubType" text="Prescriptions" />
+		<checkbox xml:id="pharmacy_allergy" dbid="SupplySubType" text="Allergy" />
+		<checkbox xml:id="pharmacy_cold_flu" dbid="SupplySubType" text="Cold/Flu" />
+		<checkbox xml:id="pharmacy_other" dbid="SupplySubType" text="Other" />
+		
+		<textinput xml:id="pharmacy_comment" dbid="SupplyComment" text="Comment" />
+		
+		<button text="Go Back" action="finish" />
+	</page>
+	
+	<page xml:id="hardware" dbid="SupplyType">
+		<checkbox xml:id="hardware_lumber" dbid="SupplySubType" text="Lumber" />
+		<checkbox xml:id="hardware_plywood" dbid="SupplySubType" text="Plywood" />
+		<checkbox xml:id="hardware_tools" dbid="SupplySubType" text="Tools" />
+		<checkbox xml:id="hardware_fasteners" dbid="SupplySubType" text="Fasteners (Nails, Bolts, Screws)" />
+		<checkbox xml:id="hardware_tarps" dbid="SupplySubType" text="Tarps/Plastic" />
+		<checkbox xml:id="hardware_sand" dbid="SupplySubType" text="Sand Bags" />
+		<checkbox xml:id="hardware_rope" dbid="SupplySubType" text="Rope/Chain/Cable" />
+		<checkbox xml:id="hardware_adhesives" dbid="SupplySubType" text="Adhesives/Seals/Tapes" />
+		<checkbox xml:id="hardware_generator" dbid="SupplySubType" text="Generators" />
+		<checkbox xml:id="hardware_dryers" dbid="SupplySubType" text="Pumps/Blower-Dryers" />
+		<checkbox xml:id="hardware_heaters" dbid="SupplySubType" text="Heaters" />
+		
+		<textinput xml:id="hardware_comment" dbid="SupplyComment" text="Comment" />
+		
+		<button text="Go Back" action="finish" />
+	</page>
+	
+	<page xml:id="clothes" dbid="SupplyType">
+		<checkbox xml:id="clothes_warm" dbid="SupplySubType" text="Warm Clothes" />
+		<checkbox xml:id="clothes_rain" dbid="SupplySubType" text="Rain Clothes" />
+		<checkbox xml:id="clothes_baby" dbid="SupplySubType" text="Baby Clothes" />
+		<checkbox xml:id="clothes_shoes" dbid="SupplySubType" text="Shoes" />
+		<checkbox xml:id="clothes_accessories" dbid="SupplySubType" text="Accessories" />
+		
+		<textinput xml:id="clothes_comment" dbid="SupplyComment" text="Comment" />
+		
+		<button text="Go Back" action="finish" />
+	</page>
+	
+	<page xml:id="bedding" dbid="SupplyType">
+		<checkbox xml:id="bedding_blankets" dbid="SupplySubType" text="Blankets" />
+		<checkbox xml:id="bedding_sheets" dbid="SupplySubType" text="Sheets" />
+		<checkbox xml:id="bedding_pillows" dbid="SupplySubType" text="Pillows" />
+		<checkbox xml:id="bedding_matress" dbid="SupplySubType" text="Mattress" />
+		<checkbox xml:id="bedding_tent" dbid="SupplySubType" text="Tents" />
+		<checkbox xml:id="bedding_sleeping_bag" dbid="SupplySubType" text="Sleeping Bags" />
+		<checkbox xml:id="bedding_stove" dbid="SupplySubType" text="Camping Stoves" />
+		<checkbox xml:id="bedding_mats" dbid="SupplySubType" text="Sleeping Mats" />
+		<checkbox xml:id="bedding_other" dbid="SupplySubType" text="Other" />
+		
+		<textinput xml:id="bedding_comment" dbid="SupplyComment" text="Comment" />
+		
+		<button text="Go Back" action="finish" />
+	</page>
+	
+	<page xml:id="supplies" dbid="SupplyType">
+		<checkbox xml:id="supplies_batteries" dbid="SupplySubType" text="Batteries" />
+		<checkbox xml:id="supplies_flashlight" dbid="SupplySubType" text="Flashlights" />
+		<checkbox xml:id="supplies_candle" dbid="SupplySubType" text="Candles" />
+		<checkbox xml:id="supplies_matches" dbid="SupplySubType" text="Matches/Lighters" />
+		<checkbox xml:id="supplies_containers" dbid="SupplySubType" text="Containers" />
+		<checkbox xml:id="supplies_garbage_bags" dbid="SupplySubType" text="Garbage Bags" />
+		<checkbox xml:id="supplies_tp_pt" dbid="SupplySubType" text="Toilet Paper/ Paper Towels" />
+		<checkbox xml:id="supplies_feminine" dbid="SupplySubType" text="Feminine" />
+		<checkbox xml:id="supplies_pens" dbid="SupplySubType" text="Pens/Pencils/Paper" />
+		<checkbox xml:id="supplies_cleaning" dbid="SupplySubType" text="Cleaning Supplies" />
+		
+		<textinput xml:id="supplies_comment" dbid="SupplyComment" text="Comment" />
+		
+		<button text="Go Back" action="finish" />
+	</page>
+	
+
+	
+</report>
+

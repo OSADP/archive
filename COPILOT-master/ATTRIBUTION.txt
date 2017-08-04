@@ -1,0 +1,10 @@
+Key contributors to the development of the CO-PILOT software, development of the CO-PILOT test data set,
+and development of the documentation include:
+
+Karl Wunderlich, Matthew Feltz, Kelly Turner, and Denise Masi of Noblis. 
+
+The developers also wish to acknowledge the members of the Noblis Transportation Research group who provided 
+invaluable assistance and details on the technologies and requirements for each of the applications. In addition, 
+the developers would like to acknowledge our USDOT FHWA sponsor, Kate Hartman- Program Manager of CV Pilots, for her support.
+
+Thanks to the ITS Joint Program Office for their support of the effort. 

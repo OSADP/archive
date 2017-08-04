@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{991CBC1A-27E1-4D27-9236-8EAEA31B08C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAI.FRATIS.SFL.Data</RootNamespace>
+    <AssemblyName>PAI.FRATIS.SFL.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\externals\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataContext.cs" />
+    <Compile Include="DbIncluder.cs" />
+    <Compile Include="EfRepository.cs" />
+    <Compile Include="IDbContext.cs" />
+    <Compile Include="IIncluder.cs" />
+    <Compile Include="Mappings\CameraMap.cs" />
+    <Compile Include="Mappings\ChassisMap.cs" />
+    <Compile Include="Mappings\ChassisOwner.cs" />
+    <Compile Include="Mappings\ContainerMap.cs" />
+    <Compile Include="Mappings\ContainerOwnerMap.cs" />
+    <Compile Include="Mappings\LocationOptionsMap.cs" />
+    <Compile Include="Mappings\LogEntryMap.cs" />
+    <Compile Include="Mappings\SubscriberMap.cs" />
+    <Compile Include="Mappings\DriverMap.cs" />
+    <Compile Include="Mappings\ExternalSyncMap.cs" />
+    <Compile Include="Mappings\JobAcceptanceMap.cs" />
+    <Compile Include="Mappings\JobGroupMap.cs" />
+    <Compile Include="Mappings\JobMap.cs" />
+    <Compile Include="Mappings\LocationDistanceMap.cs" />
+    <Compile Include="Mappings\LocationGroupMap.cs" />
+    <Compile Include="Mappings\LocationHoursMap.cs" />
+    <Compile Include="Mappings\LocationMap.cs" />
+    <Compile Include="Mappings\LocationQueueDelayMap.cs" />
+    <Compile Include="Mappings\PlanConfigMap.cs" />
+    <Compile Include="Mappings\PlanDriverJobMap.cs" />
+    <Compile Include="Mappings\PlanDriverMap.cs" />
+    <Compile Include="Mappings\PlanMap.cs" />
+    <Compile Include="Mappings\QueueDeviceSegmentMap.cs" />
+    <Compile Include="Mappings\RouteMetricMap.cs" />
+    <Compile Include="Mappings\RouteStop.cs" />
+    <Compile Include="Mappings\SettingMap.cs" />
+    <Compile Include="Mappings\StateMap.cs" />
+    <Compile Include="Mappings\SyncLogEntryMap.cs" />
+    <Compile Include="Mappings\TrafficHotSpotMap.cs" />
+    <Compile Include="Mappings\TrafficRouteMap.cs" />
+    <Compile Include="Mappings\UserMap.cs" />
+    <Compile Include="Mappings\VehicleMap.cs" />
+    <Compile Include="Mappings\WeatherCityMap.cs" />
+    <Compile Include="Migrations\201406272059454_Initial.cs" />
+    <Compile Include="Migrations\201406272059454_Initial.Designer.cs">
+      <DependentUpon>201406272059454_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408041726323_Add_Location_IgnoreLocationChanges.cs" />
+    <Compile Include="Migrations\201408041726323_Add_Location_IgnoreLocationChanges.Designer.cs">
+      <DependentUpon>201408041726323_Add_Location_IgnoreLocationChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408071637157_Add_Location_Toggle.cs" />
+    <Compile Include="Migrations\201408071637157_Add_Location_Toggle.Designer.cs">
+      <DependentUpon>201408071637157_Add_Location_Toggle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408090050174_Add_IsFailedGeocode.cs" />
+    <Compile Include="Migrations\201408090050174_Add_IsFailedGeocode.Designer.cs">
+      <DependentUpon>201408090050174_Add_IsFailedGeocode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408091713532_Add_JobIsValid_to_Nullable.cs" />
+    <Compile Include="Migrations\201408091713532_Add_JobIsValid_to_Nullable.Designer.cs">
+      <DependentUpon>201408091713532_Add_JobIsValid_to_Nullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408110224297_Add_Driver_LegacyId.cs" />
+    <Compile Include="Migrations\201408110224297_Add_Driver_LegacyId.Designer.cs">
+      <DependentUpon>201408110224297_Add_Driver_LegacyId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408211842393_Add_Logging_and_JobOptions.cs" />
+    <Compile Include="Migrations\201408211842393_Add_Logging_and_JobOptions.Designer.cs">
+      <DependentUpon>201408211842393_Add_Logging_and_JobOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201409081432343_Driver_IsDeleted_Archivable.cs" />
+    <Compile Include="Migrations\201409081432343_Driver_IsDeleted_Archivable.Designer.cs">
+      <DependentUpon>201409081432343_Driver_IsDeleted_Archivable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201409152145177_Add_Location_Flags.cs" />
+    <Compile Include="Migrations\201409152145177_Add_Location_Flags.Designer.cs">
+      <DependentUpon>201409152145177_Add_Location_Flags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201410031656563_Driver_Port_Association.cs" />
+    <Compile Include="Migrations\201410031656563_Driver_Port_Association.Designer.cs">
+      <DependentUpon>201410031656563_Driver_Port_Association.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PAI.Common\PAI.FRATIS.SFL.Common.csproj">
+      <Project>{5B819D25-47CF-44EC-B374-CEB524729183}</Project>
+      <Name>PAI.FRATIS.SFL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Domain\PAI.FRATIS.SFL.Domain.csproj">
+      <Project>{8FFB0E4C-2904-47E7-91E7-FA8BDCD87C23}</Project>
+      <Name>PAI.FRATIS.SFL.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Infrastructure\PAI.FRATIS.SFL.Infrastructure.csproj">
+      <Project>{89E8DC64-651F-43A6-A7DD-DEC23EA73268}</Project>
+      <Name>PAI.FRATIS.SFL.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201406272059454_Initial.resx">
+      <DependentUpon>201406272059454_Initial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408041726323_Add_Location_IgnoreLocationChanges.resx">
+      <DependentUpon>201408041726323_Add_Location_IgnoreLocationChanges.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408071637157_Add_Location_Toggle.resx">
+      <DependentUpon>201408071637157_Add_Location_Toggle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408090050174_Add_IsFailedGeocode.resx">
+      <DependentUpon>201408090050174_Add_IsFailedGeocode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408091713532_Add_JobIsValid_to_Nullable.resx">
+      <DependentUpon>201408091713532_Add_JobIsValid_to_Nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408110224297_Add_Driver_LegacyId.resx">
+      <DependentUpon>201408110224297_Add_Driver_LegacyId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408211842393_Add_Logging_and_JobOptions.resx">
+      <DependentUpon>201408211842393_Add_Logging_and_JobOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201409081432343_Driver_IsDeleted_Archivable.resx">
+      <DependentUpon>201409081432343_Driver_IsDeleted_Archivable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201409152145177_Add_Location_Flags.resx">
+      <DependentUpon>201409152145177_Add_Location_Flags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410031656563_Driver_Port_Association.resx">
+      <DependentUpon>201410031656563_Driver_Port_Association.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

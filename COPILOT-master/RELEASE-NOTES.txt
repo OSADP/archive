@@ -1,0 +1,15 @@
+CO-PILOT Version 1.0
+------------------------------------
+This version is the initial release. Any bugs found will be addressed in future releases. 
+
+
+
+Installation/Removal Instructions
+------------------------------------
+N/A 
+
+
+
+
+
+

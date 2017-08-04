@@ -1,0 +1,2 @@
+RoadwayID,LinkNo,BeginMM,EndMM,NoLanes,Direction,NoDetectionStations,DetectionStationNo
+300,1,0.0,0.522,2,Southbound,0,0

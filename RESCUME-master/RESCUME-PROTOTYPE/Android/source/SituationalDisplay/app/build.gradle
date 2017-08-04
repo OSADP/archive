@@ -1,0 +1,26 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:+'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'joda-time:joda-time:2.3'
+    compile 'com.google.android.gms:play-services:4.4.52'
+    compile files('libs/volley-android-sdk-4.4.2_r1.jar')
+}

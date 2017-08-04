@@ -1,0 +1,16 @@
+RoadwayID,LinkNo,BeginMM,EndMM,NoLanes,Direction,NoDetectionStations,DetectionStationNo,StartCrossStreet
+1000,100,15742,15792,4,Northbound,1,1,MLK Jr Way-NB
+1000,101,15792,15845,4,Northbound,1,2,Boeing Access-NB
+1000,102,15845,15892,4,Northbound,1,3,S Norfolk St
+1000,103,15892,15957,4,Northbound,1,4,S Benefit St
+1000,104,15957,15996,4,Northbound,1,5,S Thistle St
+1000,105,15996,16064,4,Northbound,1,6,S Holden St
+1000,106,16064,16120,4,Northbound,1,7,S Holly St
+1000,107,16120,16147,4,Northbound,1,8,Swift Ave-NB
+1000,108,16147,16186,4,Northbound,1,9,Michigan St-NB
+1000,109,16186,16237,4,Northbound,1,10,S Pearl St
+1000,110,16237,16272,4,Northbound,1,11,S Oregon St
+1000,111,16272,16302,3,Northbound,1,12,Columbian Way-SB
+1000,112,16302,16319,3,Northbound,1,13,S Spokane St
+1000,113,16319,16466,3,Northbound,1,14,Columbian Way-NB
+1000,114,16466,16513,4,Northbound,1,15,4th/Dearborn-NB

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Windows7APICodePack</id>
+    <version>1.0.0.0</version>
+    <title>Windows 7 API Code Pack</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://code.msdn.microsoft.com/WindowsAPICodePack/Project/License.aspx</licenseUrl>
+    <projectUrl>http://code.msdn.microsoft.com/WindowsAPICodePack/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Windows API Code Pack for Microsoft. NET Framework provides a source code library that can be used to access some features of Windows 7 and Windows Vista from managed code. These Windows features are not available to developers today in the .NET Framework.</description>
+    <summary>Windows API Code Pack for Microsoft. NET Framework provides a source code library that can be used to access some features of Windows 7 and Windows Vista from managed code. These Windows features are not available to developers today in the .NET Framework.</summary>
+    <tags>Windows7</tags>
+  </metadata>
+</package>

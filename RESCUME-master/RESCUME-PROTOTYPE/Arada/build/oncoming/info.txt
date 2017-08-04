@@ -1,0 +1,7 @@
+TIMS:
+DonScott-Uni-Right2(1).txt - DonScott 45 MPH.  Lanes 1.5 meters too far north.  Incident Past normal incident zone.
+DonScott-Uni-Right2(2).txt - DonSCott 45 MPH.  Lanes centered on map.
+
+
+
+DonScott-CollisionLane1.txt - Run with TIM 'DonScott-Uni-Right2(1).txt' and EVA 'DonScott-EvaLane1.txt'

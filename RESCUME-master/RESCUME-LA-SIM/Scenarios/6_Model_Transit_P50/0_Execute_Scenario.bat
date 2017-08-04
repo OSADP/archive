@@ -1,0 +1,3 @@
+CALL 2_Router_TRN.bat
+CALL 5_PlanPrep_SelectGroup.bat
+CALL 7_FileFormat_ExtractTRNWaitTime.bat

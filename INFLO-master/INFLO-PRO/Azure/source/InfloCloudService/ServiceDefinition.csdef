@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="InfloCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WorkerRole name="BsmWorkerRole" vmsize="Small">
+    <Imports>
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="StorageAccountConnectionString" />
+      <Setting name="InfloDatabaseConnectionString" />
+      <Setting name="Stats_LogStatisticalData" />
+      <Setting name="Stats_MinimalLoggedElapsedTime" />
+    </ConfigurationSettings>
+  </WorkerRole>
+  <!--WorkerRole name="ArchiverWorkerRole" vmsize="ExtraSmall">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="StorageAccountConnectionString" />
+    </ConfigurationSettings>
+  </WorkerRole>
+  <WorkerRole name="DmsWorkerRole" vmsize="ExtraSmall">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="StorageAccountConnectionString" />
+    </ConfigurationSettings>
+  </WorkerRole>
+  <WorkerRole name="TmeSurrogateWorkerRole" vmsize="ExtraSmall">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="StorageAccountConnectionString" />
+      <Setting name="InfloDatabaseConnectionString" />
+    </ConfigurationSettings>
+  </WorkerRole-->
+  <WebRole name="InfloWebRole" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="StandardHttp" endpointName="StandardHttp" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="StandardHttp" protocol="http" port="80" />
+    </Endpoints>
+    <Imports>
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="StorageAccountConnectionString" />
+      <Setting name="InfloDatabaseConnectionString" />
+      <Setting name="AlertSearchDistance" />
+      <Setting name="QWarnAlertDistance" />
+    </ConfigurationSettings>
+  </WebRole>
+</ServiceDefinition>

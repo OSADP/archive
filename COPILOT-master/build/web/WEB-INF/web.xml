@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>DataViewController</servlet-name>
+        <servlet-class>org.noblis.DataViewController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DataViewController</servlet-name>
+        <url-pattern>/DataViewController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

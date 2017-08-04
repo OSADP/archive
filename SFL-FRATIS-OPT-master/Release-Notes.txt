@@ -1,0 +1,63 @@
+LICENSE:
+
+    Copyright 2015 Productivity Apex Inc.
+        http:www.productivityapex.com/
+ 
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+ 
+        http:www.apache.org/licenses/LICENSE-2.0
+ 
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.	
+
+Projects Included In Solution:
+
+Core	
+	PAI.FRATIS.SFL.Common	- Common interfaces used throughout solution
+	Defines common elements that are composed of objects defined in either the System or System.Runtime.Serializaiton namespaces and a common IEntity interface which underpins a common means for identifying similar objects.
+
+	PAI.FRATIS.SFL.Data	- Data Access Tier: Entity Framework implementation
+	Defines three namespaces, PAI.FRATIS.SFL.Data, PAI.FRATIS.SFL.Data.Mappings, and PAI.FRATIS.SFL.Data.Migrations.  PAI.FRATIS.SFL.Data comprises the EntityFramework implementation of the domain objects used by the Drayage Route Optimizer, the Mappings namespace defines any unique mappings necessary from the persistence repository objects to the domain objects.  The Migrations namespace is used to create or modify seed data and contains method hooks for implementing run once data conversion methods.
+
+	PAI.FRATIS.Domain	- Business / Domain Objects
+	Comprises several subnamespaces: Congifuration, Equipment, Geography, Geography.NokiaMaps, Geography.NokiaMapos.TrafficItems, Information, Logging, Messaging, Orders, Planning, Times, and Users.
+	The Configuration namespace contains configuration and preference objects; the Equipment namespace defines typically amortizable physical goods represented in the optimizer; Geography defines objects that represent either a physical location and situational effects that are geographically bound, such as traffic and weather; the NokiaMaps and NokiaMaps.TrafficItems namespaces further define traffic and location specific objects that are specific to users that are integrating with a Nokia Data Provider.  Information defines those objects necessary for real time positioning; Logging provides facilities for outputting debugging and information messages to the file system or screen; Messaging provides an Alert object which can route a message or event from a user to another; Orders defines the objects that are necessary to instantiate an order to process through the optimization algorithm, such as drivers, jobs, jobs status updates, and which actions are available to undertake during a stop; Planning segregates t	hose elements uses to set up and generate an optimization plan for a number of drivers with some number of jobs; Times supplies an access point for fine tuning actions by the day of the week; and Users defines the objects necessary for user management.  
+
+	PAI.FRATIS.SFL.Infrastructure	- Project Infrastructure, Ninject Inversion of Control (IoC)
+	Infrastructure segregates the Infrastructure; Infrastructure.Data; Infrastructure.Engine; and Infrastructure.Threading objects that are used to implement the Dependency Injection pattern and support multi-threaded generation of the optimal route. 
+	
+Services	
+	PAI.FRATIS.SFL.Services	Services for Domain Objects, Persistence
+	Provides an access point for application access of persistence repositories during execution of the optimization algorithm.
+	
+External Services	
+	PAI.FRATIS.Wrappers.WebFleet	- TomTom WEBFLEET external service implementation
+	An example implementation of the TomTom Mapping 
+
+	PAI.FRATIS.ExternalServices	
+	Provides API access to query and get a response from external services such as the Yahoo Weather Service and the Nokia Maps service.
+	
+Optimization Algorithm	
+	PAI.Drayage.Optimization	- Optimization Algorithm
+	The optimization algorithm, wherein jobs and drivers are matched on user provided selection criteria.  Typically this is minimizes either time or distance traveled while servicing as many jobs as possible.
+
+	PAI.FRATIS.SFL.Optimization.Adapter	- Intermediary between domain objects and algorithm
+	Access point for further configuration and adjustment of the optimization algorithm or supporting object after initialization and during run-time.
+
+	PAI.Drayage.Optimization.Reporting	- Reporting and statistical service for optimization algorithm solutions
+	A collection of objects and methods that will examine generated routes and schedules to extract meaningful data over the generated route solutions.
+	
+Tests	
+	PAI.FRATIS.SFL.DataServices.Tests	Integration tests for testing database interaction with the PAI.FRATIS.SFL.Services project.
+	PAI.FRATIS.SFL.Integration.Tests	Integration tests for data source connections
+	PAI.FRATIS.SFL.Tests	Unit tests to ensure the correct behavior of the component objects of the project whole.
+
+==========================================================================================================================
+
+The Drayage Optimizer will produce a solution set that represents the best determined sequence of stops, minimizing the total time for execution based upon Locations, Divers, Jobs, Routes, and Traffic Delays provided to the algorithm. Traffic delays can be provided by any third party external system that estimates travel times considering traffic within two locations.  
+The solution is built leveraging v4.5 of the .NET Framework.  The optimization class library has a small footprint, and should run successfully on any computer capable of supporting .NET v4.5.  

@@ -1,0 +1,138 @@
+DetectorStationNo,DetectionZoneNo,LaneNo,LaneDescription,MMLocation,Direction,LaneType,DZType
+005es17460,005es17460:_MS___1,1,,17460,Southbound,Through,Standard
+005es17460,005es17460:_MS___2,2,,17460,Southbound,Through,Standard
+005es17460,005es17460:_MS___3,3,,17460,Southbound,Through,Standard
+005es17460,005es17460:_MS__S1,1,,17460,Southbound,Through,Speed Loop
+005es17460,005es17460:_MS__S2,2,,17460,Southbound,Through,Speed Loop
+005es17460,005es17460:_MS__S3,3,,17460,Southbound,Through,Speed Loop
+005es17416,005es17416:_MS___1,1,,17416,Southbound,Through,Standard
+005es17416,005es17416:_MS___2,2,,17416,Southbound,Through,Standard
+005es17416,005es17416:_MS___3,3,,17416,Southbound,Through,Standard
+005es17416,005es17416:_MS___4,4,,17416,Southbound,Through,Standard
+005es17375,005es17375:MMS___1,1,,17375,Southbound,Through,Standard
+005es17375,005es17375:MMS___2,2,,17375,Southbound,Through,Standard
+005es17375,005es17375:MMS___3,3,,17375,Southbound,Through,Standard
+005es17375,005es17375:MMS___4,4,,17375,Southbound,Through,Standard
+005es17375,005es17375:DMS___1,1,,17375,Southbound,Through,Standard
+005es17375,005es17375:_MS__S2,2,,17375,Southbound,Through,Speed Loop
+005es17375,005es17375:_MS__S3,3,,17375,Southbound,Through,Speed Loop
+005es17375,005es17375:_MS__S4,4,,17375,Southbound,Through,Speed Loop
+005es17328,005es17328:_MS___1,1,,17328,Southbound,Through,Standard
+005es17328,005es17328:_MS___2,2,,17328,Southbound,Through,Standard
+005es17328,005es17328:_MS___3,3,,17328,Southbound,Through,Standard
+005es17328,005es17328:_MS___4,4,,17328,Southbound,Through,Standard
+005es17328,005es17328:_MS__S1,1,,17328,Southbound,Through,Speed Loop
+005es17328,005es17328:_MS__S2,2,,17328,Southbound,Through,Speed Loop
+005es17328,005es17328:_MS__S3,3,,17328,Southbound,Through,Speed Loop
+005es17328,005es17328:_MS__S4,4,,17328,Southbound,Through,Speed Loop
+005es17288,005es17288:MMS___1,1,,17288,Southbound,Through,Standard
+005es17288,005es17288:MMS___2,2,,17288,Southbound,Through,Standard
+005es17288,005es17288:MMS___3,3,,17288,Southbound,Through,Standard
+005es17288,005es17288:MMS___4,4,,17288,Southbound,Through,Standard
+005es17288,005es17288:_MS__S1,1,,17288,Southbound,Through,Speed Loop
+005es17288,005es17288:_MS__S2,2,,17288,Southbound,Through,Speed Loop
+005es17288,005es17288:_MS__S3,3,,17288,Southbound,Through,Speed Loop
+005es17288,005es17288:_MS__S4,4,,17288,Southbound,Through,Speed Loop
+005es17264,005es17264:MMS___1,1,,17264,Southbound,Through,Standard
+005es17264,005es17264:MMS___2,2,,17264,Southbound,Through,Standard
+005es17264,005es17264:MMS___3,3,,17264,Southbound,Through,Standard
+005es17264,005es17264:_MS___4,4,,17264,Southbound,Through,Standard
+005es17215,005es17215:_MS___1,1,,17215,Southbound,Through,Standard
+005es17215,005es17215:_MS___2,2,,17215,Southbound,Through,Standard
+005es17215,005es17215:_MS___3,3,,17215,Southbound,Through,Standard
+005es17215,005es17215:_MS___4,4,,17215,Southbound,Through,Standard
+005es17162,005es17162:_MS___1,1,,17162,Southbound,Through,Standard
+005es17162,005es17162:_MS___2,2,,17162,Southbound,Through,Standard
+005es17162,005es17162:_MS___3,3,,17162,Southbound,Through,Standard
+005es17162,005es17162:_MS__S1,1,,17162,Southbound,Through,Speed Loop
+005es17162,005es17162:_MS__S2,2,,17162,Southbound,Through,Speed Loop
+005es17162,005es17162:_MS__S3,3,,17162,Southbound,Through,Speed Loop
+005es17131,005es17131:MMS___1,1,,17131,Southbound,Through,Standard
+005es17131,005es17131:MMS___2,2,,17131,Southbound,Through,Standard
+005es17131,005es17131:MMS___3,3,,17131,Southbound,Through,Standard
+005es17075,005es17075:_MS___1,1,,17075,Southbound,Through,Standard
+005es17075,005es17075:_MS___2,2,,17075,Southbound,Through,Standard
+005es17075,005es17075:_MS___3,3,,17075,Southbound,Through,Standard
+005es17075,005es17075:_MS__S1,1,,17075,Southbound,Through,Speed Loop
+005es17075,005es17075:_MS__S2,2,,17075,Southbound,Through,Speed Loop
+005es17075,005es17075:_MS__S3,3,,17075,Southbound,Through,Speed Loop
+005es17025,005es17025:_MS___1,1,,17025,Southbound,Through,Standard
+005es17025,005es17025:_MS___2,2,,17025,Southbound,Through,Standard
+005es17025,005es17025:_MS___3,3,,17025,Southbound,Through,Standard
+005es17025,005es17025:_MS___4,4,,17025,Southbound,Through,Standard
+005es17025,005es17025:_MS__S1,1,,17025,Southbound,Through,Speed Loop
+005es17025,005es17025:_MS__S2,2,,17025,Southbound,Through,Speed Loop
+005es17025,005es17025:_MS__S3,3,,17025,Southbound,Through,Speed Loop
+005es17025,005es17025:_MS__S4,4,,17025,Southbound,Through,Speed Loop
+005es16990,005es16990:MMS___1,1,,16990,Southbound,Through,Standard
+005es16990,005es16990:MMS___2,2,,16990,Southbound,Through,Standard
+005es16990,005es16990:MMS___3,3,,16990,Southbound,Through,Standard
+005es16990,005es16990:MMS___4,4,,16990,Southbound,Through,Standard
+005es16990,005es16990:_MS__S1,1,,16990,Southbound,Through,Speed Loop
+005es16990,005es16990:_MS__S2,2,,16990,Southbound,Through,Speed Loop
+005es16990,005es16990:_MS__S3,3,,16990,Southbound,Through,Speed Loop
+005es16990,005es16990:_MS__S4,4,,16990,Southbound,Through,Speed Loop
+005es16942,005es16942:MMS___1,1,,16942,Southbound,Through,Standard
+005es16942,005es16942:MMS___2,2,,16942,Southbound,Through,Standard
+005es16942,005es16942:MMS___3,3,,16942,Southbound,Through,Standard
+005es16942,005es16942:MMS___4,4,,16942,Southbound,Through,Standard
+005es16942,005es16942:_MS__S1,1,,16942,Southbound,Through,Speed Loop
+005es16942,005es16942:_MS__S2,2,,16942,Southbound,Through,Speed Loop
+005es16942,005es16942:_MS__S3,3,,16942,Southbound,Through,Speed Loop
+005es16942,005es16942:_MS__S4,4,,16942,Southbound,Through,Speed Loop
+005es16919,005es16919:MMS___1,1,,16919,Southbound,Through,Standard
+005es16919,005es16919:MMS___2,2,,16919,Southbound,Through,Standard
+005es16919,005es16919:MMS___3,3,,16919,Southbound,Through,Standard
+005es16919,005es16919:MMS___4,4,,16919,Southbound,Through,Standard
+005es16885,005es16885:_MS___1,1,,16885,Southbound,Through,Standard
+005es16885,005es16885:_MS___2,2,,16885,Southbound,Through,Standard
+005es16885,005es16885:_MS___3,3,,16885,Southbound,Through,Standard
+005es16885,005es16885:_MS___4,4,,16885,Southbound,Through,Standard
+005es16831,005es16831:_MS___1,1,,16831,Southbound,Through,Standard
+005es16831,005es16831:_MS___2,2,,16831,Southbound,Through,Standard
+005es16831,005es16831:_MS___3,3,,16831,Southbound,Through,Standard
+005es16831,005es16831:_MS___4,4,,16831,Southbound,Through,Standard
+005es16831,005es16831:_MS__S1,1,,16831,Southbound,Through,Speed Loop
+005es16831,005es16831:_MS__S2,2,,16831,Southbound,Through,Speed Loop
+005es16831,005es16831:_MS__S3,3,,16831,Southbound,Through,Speed Loop
+005es16831,005es16831:_MS__S4,4,,16831,Southbound,Through,Speed Loop
+005es16802,005es16802:_MS___1,1,,16802,Southbound,Through,Standard
+005es16802,005es16802:_MS___2,2,,16802,Southbound,Through,Standard
+005es16802,005es16802:_MS___3,3,,16802,Southbound,Through,Standard
+005es16802,005es16802:_MS___4,4,,16802,Southbound,Through,Standard
+005es16802,005es16802:_MS__S1,1,,16802,Southbound,Through,Speed Loop
+005es16802,005es16802:_MS__S2,2,,16802,Southbound,Through,Speed Loop
+005es16802,005es16802:_MS__S3,3,,16802,Southbound,Through,Speed Loop
+005es16802,005es16802:_MS__S4,4,,16802,Southbound,Through,Speed Loop
+005es16756,005es16756:MMS___1,1,,16756,Southbound,Through,Standard
+005es16756,005es16756:MMS___2,2,,16756,Southbound,Through,Standard
+005es16756,005es16756:MMS___3,3,,16756,Southbound,Through,Standard
+005es16756,005es16756:MMS___4,4,,16756,Southbound,Through,Standard
+005es16756,005es16756:MMS___5,5,,16756,Southbound,Through,Standard
+005es16732,005es16732:_MS___1,1,,16732,Southbound,Through,Standard
+005es16732,005es16732:_MS___2,2,,16732,Southbound,Through,Standard
+005es16732,005es16732:_MS___3,3,,16732,Southbound,Through,Standard
+005es16732,005es16732:_MS___4,4,,16732,Southbound,Through,Standard
+005es16732,005es16732:_MS___5,5,,16732,Southbound,Through,Standard
+005es16661,005es16661:MMS___1,1,,16661,Southbound,Through,Standard
+005es16661,005es16661:MMS___2,2,,16661,Southbound,Through,Standard
+005es16661,005es16661:MMS___3,3,,16661,Southbound,Through,Standard
+005es16661,005es16661:MMS___4,4,,16661,Southbound,Through,Standard
+005es16640,005es16640:_MS___1,1,,16640,Southbound,Through,Standard
+005es16640,005es16640:_MS___2,2,,16640,Southbound,Through,Standard
+005es16640,005es16640:_MS___3,3,,16640,Southbound,Through,Standard
+005es16640,005es16640:_MS___4,4,,16640,Southbound,Through,Standard
+005es16583,005es16583:_MS___1,1,,16583,Southbound,Through,Standard
+005es16583,005es16583:_MS___2,2,,16583,Southbound,Through,Standard
+005es16583,005es16583:_MS___3,3,,16583,Southbound,Through,Standard
+005es16583,005es16583:_MS___4,4,,16583,Southbound,Through,Standard
+005es16551,005es16551:_MS___1,1,,16551,Southbound,Through,Standard
+005es16551,005es16551:_MS___2,2,,16551,Southbound,Through,Standard
+005es16513,005es16513:_MS___1,1,,16513,Southbound,Through,Standard
+005es16513,005es16513:_MS___2,2,,16513,Southbound,Through,Standard
+005es16513,005es16513:_MS__S1,1,,16513,Southbound,Through,Speed Loop
+005es16513,005es16513:_MS__S2,2,,16513,Southbound,Through,Speed Loop
+005es16466,005es16466:_MS___1,1,,16466,Southbound,Through,Standard
+005es16466,005es16466:_MS___2,2,,16466,Southbound,Through,Standard
+005es16466,005es16466:_MS__S1,1,,16466,Southbound,Through,Speed Loop
+005es16466,005es16466:_MS__S2,2,,16466,Southbound,Through,Speed Loop

@@ -1,0 +1,37 @@
+- Release note identifier
+  INFLO SPHARM Scenario Evaluation Package
+  06/11/2015
+
+- What's New
+  VISSIM input files of different scenarios
+  VISSIM COM (connecting VISSIM and INFLO SPHARM Prototype)
+  Outputs of different scenarios
+
+- System Requirements
+  Recommended Configuration:
+  Intel Core i7-3720QM CPU @2.60GHz 2.60 GHz
+  16 GM RAM
+  64-bit Operating System
+
+
+- Outstanding issues
+  The vehicle output files of VISSIM cannot exceed 2 GB due to the limit of Microsoft ACCESS
+ 
+
+- Installation guide
+  Required packages include:
+  VISSIM 5.40
+  Microsoft EXCEL
+  Microsoft ACCESS
+
+  VISSIM COM (SPHM_COM.xlsx) need be put into the scenario folder (for example, "1_US101_Implementation")
+
+
+- Troubleshooting
+  If the VISSIM COM cannot run properly, make sure the following libraries checked under the References of VBA project.
+  1. Visual Basic for Applications
+  2. Microsoft Excel 14.0 Object Library
+  3. OLE Automation
+  4. Microsoft Office 14.0 Object Library
+  5. VISSIM_COMServer 5.40 Type Library
+  6. Microsoft ActiveX Data Object 6.1 Library 

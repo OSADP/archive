@@ -1,0 +1,9 @@
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Core\bin\Release\PAI.Core.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Core\bin\Release\PAI.Core.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Core\obj\Release\PAI.Core.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\PAI\PAI.Core\obj\Release\PAI.Core.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\bin\Release\PAI.Core.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\bin\Release\PAI.Core.pdb
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\obj\Release\PAI.Core.csprojResolveAssemblyReference.cache
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\obj\Release\PAI.Core.dll
+C:\Users\blackch\Documents\Visual Studio 2012\Projects\Vesco - Service\PAI.Core\obj\Release\PAI.Core.pdb

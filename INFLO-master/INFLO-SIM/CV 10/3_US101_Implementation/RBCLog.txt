@@ -1,0 +1,71 @@
+-----------------------------------------------------------------
+### (Thursday, 14 August 2014 -- 12:10:45) ###
+-----------------------------------------------------------------
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:51) ###
+-----------------------------------------------------------------
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Ralston Direct.rbc) --> File Saved
+### (Tuesday, 29 April 2014 -- 18:13:19) ###
+-----------------------------------------------------------------
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter SB Hillsdale Loop.rbc) --> File Saved
+### (Tuesday, 29 April 2014 -- 18:12:41) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Hi-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:51) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Ralston Direct.rbc) --> File Saved
+-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:19) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter SB Hillsdale Loop.rbc) --> File Saved
+### (Tuesday, 29 April 2014 -- 18:12:41) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Hi-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:51) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Ralston Direct.rbc) --> File Saved
+-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:19) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter SB Hillsdale Loop.rbc) --> File Saved
+### (Tuesday, 29 April 2014 -- 18:12:41) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Hi-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:51) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Ralston Direct.rbc) --> File Saved
+-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:19) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter SB Hillsdale Loop.rbc) --> File Saved
+### (Tuesday, 29 April 2014 -- 18:12:41) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Hi-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:51) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Ralston Direct.rbc) --> File Saved
+-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:19) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter SB Hillsdale Loop.rbc) --> File Saved
+### (Tuesday, 29 April 2014 -- 18:12:41) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Hi-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:51) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Ralston Direct.rbc) --> File Saved
+-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:19) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter SB Hillsdale Loop.rbc) --> File Saved
+### (Tuesday, 29 April 2014 -- 18:12:41) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Hi-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:51) ###
+[SUCCESS] : RBCGUI::LoadSettings() --> Settings Loaded
+[SUCCESS] : RBCGUI::SaveFile(C:\Users\ajia\Desktop\13514 SpeedHarm\20140403_Final Calibration\Meter NB Ralston Direct.rbc) --> File Saved
+-----------------------------------------------------------------
+### (Tuesday, 29 April 2014 -- 18:13:19) ###

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+cd curl-7.35.0
+
+export TOOLDIR=/opt/buildroot-2011.08-rc1/output/host/usr/bin
+export CPPFLAGS="-I /opt/buildroot-2011.08-rc1/output/host/usr/include"
+export AR=$TOOLDIR/mips-unknown-linux-uclibc-ar
+export AS=$TOOLDIR/mips-unknown-linux-uclibc-as
+export LD=$TOOLDIR/mips-unknown-linux-uclibc-ld
+export RANLIB=$TOOLDIR/mips-unknown-linux-uclibc-ranlib
+export CC=$TOOLDIR/mips-linux-uclibc-gcc
+export NM=$TOOLDIR/mips-unknown-linux-uclibc-nm
+
+./configure --target=mips-linux-uclibc --host=i686-pc-linux-gnu --build=mips-linux-uclibc --prefix=$PWD/../arada_2.0

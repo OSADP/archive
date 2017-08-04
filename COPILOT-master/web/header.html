@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<style>
+    #navigationBar{
+        height: 35px;
+        width: 1180px;
+        margin: 0 auto;
+        font-size: 16px;
+        background: linear-gradient(#486279,#6E88A1,#486279); /* Standard syntax */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#486279, endColorstr=#6E88A1); /* IE6-9 */
+    }
+    .navBarPadding{
+        width: 3%;
+        float: left;
+        height: 30px;
+    }
+    .navBarParent{
+        float: left;
+        color: white;
+        font-weight: normal;
+        font-family: 'Asap-Regular';
+        cursor: pointer;
+        height: 20px;
+        padding-top: 10px;
+    }
+    .navBarParent:hover{
+        font-weight: bolder;
+    }
+    #navBarHome{
+        padding-left: 15px;
+        width: 45px;
+    }
+    #navBarCost{
+        width: 150px;
+    }
+    #navBarHelp{
+        width: 40px;
+    }
+    #headerUpperBanner{
+        width:100%;
+        height: 73px;
+    }
+    #headerUpperBannerBlue{
+        background: #46637b;
+        height:27px;
+        width:100%;
+    }
+    #headerUpperBannerGreen{
+        background: #4ab570;
+        height:6px;
+        width:100%;
+    }
+    #headerImageSignIn{
+        width:1180px;
+        margin: 0 auto;
+        display: table;
+        margin-bottom: -20px;
+    }
+    #headerLogo{
+        display: inline_block;
+    }
+    #s_v_divider{
+        width: 1px;
+        height: 110px;
+        background: lavender;
+        background-clip:content-box;
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+    .loginInput{
+        width: 160px;
+        height: 20px;
+        display: inline-block;
+    }
+    #loginInfo{
+        vertical-align: top;
+        margin-left:10px;
+        display:inline-block;
+        font-family: 'Asap-Bold';
+        width: 220px;
+    }
+    #uploadButton{
+        vertical-align: middle;
+        cursor:pointer;
+        display:table-cell;
+        width: 85px;
+        height: 25px;
+        background-image: url("resources/noblis/icons/Upload.png");
+        z-index: 10;
+    }
+    #uploadButton:hover{
+        background-image: url("resources/noblis/icons/Upload_Rollover.png");
+    }
+    #choose {
+        top:122px;
+        right:128px;
+        width: 100%;
+        cursor: pointer;
+        border: 2px solid lavender;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="resources/noblis/css/fonts.css">
+<head>
+    <style id="antiClickjack">body{display:none !important;}</style>
+    <script type="text/javascript">
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+
+        function menuBarClick(t) {
+            var id = $(t).attr('href');
+            document.location.href = id;
+        }
+        $(document).ready(function () {
+            var fURL = getBaseURIWithoutContextPath() + getAppName() + '/FileUpload?action=upload';
+            $('#costbreakdownuploadform').attr('action', fURL);
+            $('#headerLogo').css('cursor', 'pointer');
+            $('#headerLogo').on("click", function () {
+                document.location.href = "index.html";
+            });
+            $('#choose').change(function () {
+                var fullpath = $('#choose').val();
+                var fileName = fullpath.split(/(\\|\/)/g).pop();
+                $('#fakeFileBox').val(fileName);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="headerimage">
+        <div id="headerUpperBanner">
+            <div id="headerUpperBannerBlue"></div>
+            <div id="headerUpperBannerGreen"></div>
+        </div>
+        <div id="headerImageSignIn">
+            <img id="headerLogo" src="resources/noblis/icons/CoPilot_Logo.png" alt="CO-PILOT (links to home page)">
+            <div style="float: right;">
+                <!-- need to make this align with bottom of logo and login div -->
+                <div id="s_v_divider">
+                    <div id="s_vertLine"></div>
+                </div>
+                <div id="loginInfo">
+                    <div style="color: #486279; font-size: 16px; float: right">Have an existing CO-PILOT</div>
+                    <div style="color: #486279; font-size: 16px; float: right">output spreadsheet?</div>
+                    <div>
+                        <div>
+                            <form enctype="multipart/form-data" method="POST" class="fileForm" id="costbreakdownuploadform">
+                                <input id="choose" name="files" type="file">
+                            </form>
+                            <div id="images"><!-- previews --></div>
+                        </div>
+                        <br>
+                        <div style="font-family: Asap-Regular; float:right; font-size: 14px; display: table">
+                            <div style="display:table-cell; vertical-align:middle;"><span><a href="help.html" style="color: graytext; text-decoration: none;">What is this?</a></span></div>
+                            <div style="display:table-cell;  vertical-align:middle;"><span style="color: lightgray; margin: 5px;"> | </span></div>
+                            <div id="uploadButton" class="uploadButton" onclick="uploadExcel();" style="float: right;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navigationBar">
+            <div class="navBarParent" id="navBarHome" href="index.html" onclick="menuBarClick(this);">HOME</div>
+            <div class="navBarPadding"></div>
+            <div class="navBarParent" id="navBarCost" href="cost_estimator.html" onclick="menuBarClick(this);">COST ESTIMATION</div>
+            <div class="navBarPadding"></div>
+            <div class="navBarParent" id="navBarHelp" href="help.html" onclick="menuBarClick(this);">HELP</div>
+        </div>
+</body>

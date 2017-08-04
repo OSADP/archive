@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:text="DSRC Radio"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/diag_txtDsrcBluetoothState"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="right|center_vertical"
+            android:layout_row="0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	        
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingBottom="5dp"
+	        android:visibility="gone" >
+	        
+	        <TextView
+	            android:id="@+id/diag_txtReceivingBsms"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:text="Receiving Remote BSM's"
+	            android:textAllCaps="true"
+	            android:textSize="16sp"
+	            android:textColor="#333333" />
+	        
+	    </LinearLayout>
+	    
+	    <include layout="@layout/activity_diagnostics_obu_gps"
+	        android:paddingTop="10dp" />
+	    
+	    <include 
+	        layout="@layout/activity_diagnostics_obu_app"
+	        android:paddingTop="10dp"/>
+	    
+	    <include 
+	        layout="@layout/activity_diagnostics_obu_oncoming_data"
+	        android:paddingTop="10dp"/>
+	    
+	        
+    </LinearLayout>
+
+</LinearLayout>

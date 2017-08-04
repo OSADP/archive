@@ -1,0 +1,25 @@
+Vesco RELEASE-NOTES
+
+- Vesco, 9-30-15, Version 1.0
+
+- What's New: N/A
+
+- System Requirements: Java Runtime Environment 1.6 or higher, Microsoft 
+Excel 
+
+- Features and changes: See Read Me
+
+- Outstanding issues (unresolved defects, workarounds, installation issues 
+etc)
+
+- Installation guide: N/A
+
+- Known Issues: N/A
+
+- Troubleshooting: most common cause for runtime error would be problem with 
+the input file (lacks 30 columns, no data within the columns).
+
+- FAQ: N/A
+
+- Other Resources and Links: N/A
+

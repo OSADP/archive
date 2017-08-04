@@ -1,0 +1,2 @@
+RoadwayID,LinkNo,BeginMM,EndMM,NoLanes,Direction,NoDetectionStations,DetectionStationNo
+200,1,0.0,0.653,2,Westbound,0,0

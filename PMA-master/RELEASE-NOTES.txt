@@ -1,0 +1,5 @@
+Initial release version 1.0 
+-------------------------------------
+The DMA performance measurement application estimates mode-independent, trip-based system productivity and traveler mobility performance measures.  The application was developed by making use of trip-based system performance measure algorithms developed as part of the USDOT’s Integrated Corridor Management (ICM) Program [1] and adapting them for use with observed data to measure impact in mobility and productivity.  The algorithms developed under ICM, estimate key measures of corridor performance (delay, travel time reliability, and throughput) from time-variant traffic simulation outputs.
+
+

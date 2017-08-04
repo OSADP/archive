@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string name="config_version">0.1.0b</string>
+	
+	<string name="config_btConnectionRetryDelay">2000</string>
+	
+	<string name="config_vehicleUpdateRate">1000</string>
+	
+	<string name="config_obuBluetoothUUID">6ba50000-7c6a-11e3-9b95-0002a5d5c51b</string>
+	<string name="config_obdIIBlueoothUUID">00001101-0000-1000-8000-00805F9B34FB</string>
+	
+	<string-array name="config_additionalBtMacs">
+	    <item>*CLASSIC OBU* (00:10:60:57:16:12);00:10:60:57:16:12</item>
+	    <item>*CLASSIC OBU* (00:10:60:57:12:F7);00:10:60:57:12:F7</item>
+	    <item>*CLASSIC OBU* (00:10:60:57:15:74);00:10:60:57:15:74</item>
+	    <item>*CLASSIC OBU* (00:15:83:15:A3:10);00:15:83:15:A3:10</item>
+	</string-array>
+    
+</resources>

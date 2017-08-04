@@ -1,0 +1,59 @@
+RoadwayID,LinkNo,BeginMM,EndMM,NoLanes,Direction,NoDetectionStations,DetectionStationNo,StartCrossStreet
+1000,1,156.52,157.42,4,Northbound,1,1,S 129th St
+1000,2,157.42,157.92,4,Northbound,1,2,MLK Jr Way-NB
+1000,3,157.92,158.21,4,Northbound,1,3,Boeing Access-NB
+1000,4,158.21,158.45,4,Northbound,1,4,S Victor St
+1000,5,158.45,158.92,4,Northbound,1,5,S Norfolk St
+1000,6,158.92,159.2,4,Northbound,1,6,S Benefit St
+1000,7,159.2,159.57,4,Northbound,1,7,Henderson St
+1000,8,159.57,159.96,4,Northbound,1,8,S Thistle St
+1000,9,159.96,160.4,4,Northbound,1,9,S Holden St
+1000,10,160.4,160.64,4,Northbound,1,10,S Myrtle St
+1000,11,160.64,160.97,4,Northbound,1,11,S Holly St
+1000,12,160.97,161.2,4,Northbound,1,12,S Graham St
+1000,13,161.2,161.47,4,Northbound,1,13,Swift Ave-NB
+1000,14,161.47,161.86,4,Northbound,1,14,Michigan St-NB
+1000,15,161.86,162.37,4,Northbound,1,15,S Pearl St
+1000,16,162.37,162.72,4,Northbound,1,16,S Oregon St
+1000,17,162.72,163.02,3,Northbound,1,17,Columbian Way-SB
+1000,18,163.02,163.19,3,Northbound,1,18,S Spokane St
+1000,19,163.19,163.77,3,Northbound,1,19,Columbian Way-NB
+1000,20,163.77,163.95,4,Northbound,1,20,S Walker St
+1000,21,163.95,164.26,4,Northbound,1,21,S Holgate St
+1000,22,164.26,164.66,4,Northbound,1,22,S Atlantic St
+1000,23,164.66,164.66,2,Northbound,1,23,4th/Dearborn-NB
+1000,24,164.66,165.13,2,Northbound,1,24,4th/Dearborn-NB
+1000,25,165.13,165.51,4,Northbound,1,25,Yesler Way
+1000,26,165.51,165.83,2,Northbound,1,26,Marion St
+1000,27,165.83,166.4,4,Northbound,1,27,University St-NB
+1000,28,166.4,167.04,5,Northbound,1,28,Olive Way-NB
+1000,29,167.04,167.32,4,Northbound,1,29,Mercer St-NB
+1000,30,167.32,167.56,4,Northbound,1,30,E Galer St
+1000,31,167.56,168.02,4,Northbound,1,31,Boylston Ave-SB
+1000,32,168.02,168.31,3,Northbound,1,32,E Roanoke St
+1000,33,168.31,168.85,4,Northbound,1,33,E Hamlin St
+1000,34,168.85,169.2,4,Northbound,1,34,Ship Canal Br
+1000,35,169.2,169.44,4,Northbound,1,35,NE 42nd St  NB
+1000,36,169.44,169.77,4,Northbound,1,36,NE 45th St-NB
+1000,37,169.77,170.25,4,Northbound,1,37,NE 50th St-NB
+1000,38,170.25,170.76,4,Northbound,1,38,NE 63rd St
+1000,39,170.76,171.31,3,Northbound,1,39,NE 70th St-NB
+1000,40,171.31,171.63,3,Northbound,1,40,NE 85th St-SB
+1000,41,171.63,172.15,3,Northbound,1,41,NE 80th St-NB
+1000,42,172.15,172.64,4,Northbound,1,42,N 97th St
+1000,43,172.64,172.89,4,Northbound,1,43,N 107th St-SB
+1000,44,172.89,173.28,4,Northbound,1,44,Northgate-NB
+1000,45,173.28,173.75,5,Northbound,1,45,NE 120th St
+1000,46,173.75,174.16,4,Northbound,1,46,NE 130th St-SB
+1000,47,174.16,174.58,4,Northbound,1,47,NE 137th St
+1000,48,174.58,175.08,4,Northbound,1,48,NE 145th St-NB
+1000,49,175.08,175.51,4,Northbound,1,49,NE 155th St
+1000,50,175.51,176.27,4,Northbound,1,50,N Metro Base-SB
+1000,51,176.27,176.74,3,Northbound,1,51,NE 175th St-NB
+1000,52,176.74,177.22,4,Northbound,1,52,NE 185th St
+1000,53,177.22,177.74,4,Northbound,1,53,NE 195th St
+1000,54,177.74,178.26,3,Northbound,1,54,NE 205th St-SB
+1000,55,178.26,178.75,3,Northbound,1,55,SR 104-NB
+1000,56,178.75,179.27,3,Northbound,1,56,228th St SW
+1000,57,179.27,179.76,3,Northbound,1,57,220th St SW-NB
+1000,58,179.76,180,4,Northbound,1,58,213th St SW

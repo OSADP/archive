@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{183D9739-71FB-4402-BDEC-A49A62FE6061}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAI.FRATIS.SFL.DataServices.Tests</RootNamespace>
+    <AssemblyName>PAI.FRATIS.SFL.DataServices.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=3.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\AutoMapper.3.0.0\lib\portable-windows8+net40+wp71+sl4\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=3.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\AutoMapper.3.0.0\lib\portable-windows8+net40+wp71+sl4\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\externals\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\Newtonsoft.Json.6.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\Ninject\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Conventions, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\Ninject\Ninject.Extensions.Conventions.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Factory, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\Ninject\Ninject.Extensions.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\Ninject\Ninject.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.NamedScope, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\Ninject\Ninject.Extensions.NamedScope.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.MockingKernel">
+      <HintPath>..\externals\Ninject.MockingKernel.3.0.0.5\lib\net45-full\Ninject.MockingKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.MockingKernel.Moq">
+      <HintPath>..\externals\Ninject.MockingKernel.Moq.3.0.0.5\lib\net45-full\Ninject.MockingKernel.Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\externals\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PAI.FRATIS.Wrappers.WebFleet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\WebFleetWrapper\PAI.FRATIS.Wrappers.WebFleet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Installations.cs" />
+    <Compile Include="DataServicesTests.cs" />
+    <Compile Include="IntegrationTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CTIP\PAI.Drayage.EnhancedOptimization\PAI.Drayage.EnhancedOptimization.csproj">
+      <Project>{b450217a-1223-4b80-ae86-423a8bad2d84}</Project>
+      <Name>PAI.Drayage.EnhancedOptimization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CTIP\PAI.Drayage.Optimization.Reporting\PAI.Drayage.Optimization.Reporting.csproj">
+      <Project>{0ef7ffea-7a90-47f3-8e34-a167ab0a464d}</Project>
+      <Name>PAI.Drayage.Optimization.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CTIP\PAI.Drayage.Optimization\PAI.Drayage.Optimization.csproj">
+      <Project>{0028fe9c-9a4d-447b-afa6-2ca50f61854d}</Project>
+      <Name>PAI.Drayage.Optimization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CTIP\PAI.Infrastructure\PAI.Infrastructure.csproj">
+      <Project>{4CB641FF-BE25-456E-8BF2-4C7195C6CEF4}</Project>
+      <Name>PAI.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.Common\PAI.FRATIS.SFL.Common.csproj">
+      <Project>{5B819D25-47CF-44EC-B374-CEB524729183}</Project>
+      <Name>PAI.FRATIS.SFL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Data\PAI.FRATIS.SFL.Data.csproj">
+      <Project>{991CBC1A-27E1-4D27-9236-8EAEA31B08C1}</Project>
+      <Name>PAI.FRATIS.SFL.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Domain\PAI.FRATIS.SFL.Domain.csproj">
+      <Project>{8FFB0E4C-2904-47E7-91E7-FA8BDCD87C23}</Project>
+      <Name>PAI.FRATIS.SFL.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Infrastructure\PAI.FRATIS.SFL.Infrastructure.csproj">
+      <Project>{89E8DC64-651F-43A6-A7DD-DEC23EA73268}</Project>
+      <Name>PAI.FRATIS.SFL.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Optimization.Adapter\PAI.FRATIS.SFL.Optimization.Adapter.csproj">
+      <Project>{9A4F9E80-FA09-41F6-B1A4-CE202F41E171}</Project>
+      <Name>PAI.FRATIS.SFL.Optimization.Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Services\PAI.FRATIS.SFL.Services.csproj">
+      <Project>{6471633B-C3C7-4238-BAA8-3F26540329F1}</Project>
+      <Name>PAI.FRATIS.SFL.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Tests\PAI.FRATIS.SFL.Tests.csproj">
+      <Project>{7f62ba50-17ca-4831-b73f-72aff77ac047}</Project>
+      <Name>PAI.FRATIS.SFL.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Web.Framework\PAI.FRATIS.SFL.Web.Framework.csproj">
+      <Project>{EAF0F19F-14C6-4233-B9A6-09B65B5EB4C8}</Project>
+      <Name>PAI.FRATIS.SFL.Web.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

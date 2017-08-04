@@ -1,0 +1,840 @@
+﻿<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+<!-- EF Runtime content -->
+<edmx:Runtime>
+<!-- SSDL content -->
+<edmx:StorageModels>
+<Schema Namespace="IncZoneModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="IncZoneModelStoreContainer">
+    <EntitySet Name="AlarmConfigurations" EntityType="IncZoneModel.Store.AlarmConfigurations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlarmLevels" EntityType="IncZoneModel.Store.AlarmLevels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AudibleVisualAlarms" EntityType="IncZoneModel.Store.AudibleVisualAlarms" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CapWINConfigurations" EntityType="IncZoneModel.Store.CapWINConfigurations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DGPSConfigurations" EntityType="IncZoneModel.Store.DGPSConfigurations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DSRCConfigurations" EntityType="IncZoneModel.Store.DSRCConfigurations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EventLogs" EntityType="IncZoneModel.Store.EventLogs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EventTypes" EntityType="IncZoneModel.Store.EventTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LogLevels" EntityType="IncZoneModel.Store.LogLevels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MapLinks" EntityType="IncZoneModel.Store.MapLinks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MapNodes" EntityType="IncZoneModel.Store.MapNodes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MapSets" EntityType="IncZoneModel.Store.MapSets" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VehicleAlarms" EntityType="IncZoneModel.Store.VehicleAlarms" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BluetoothConfigs" EntityType="IncZoneModel.Store.BluetoothConfigs" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AlarmConfigurationAudibleVisualAlarm" Association="IncZoneModel.Store.FK_AlarmConfigurationAudibleVisualAlarm">
+      <End Role="AlarmConfiguration" EntitySet="AlarmConfigurations" />
+      <End Role="AudibleVisualAlarm" EntitySet="AudibleVisualAlarms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AlarmLevelAudibleVisualAlarm" Association="IncZoneModel.Store.FK_AlarmLevelAudibleVisualAlarm">
+      <End Role="AlarmLevel" EntitySet="AlarmLevels" />
+      <End Role="AudibleVisualAlarm" EntitySet="AudibleVisualAlarms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventTypeEventLog" Association="IncZoneModel.Store.FK_EventTypeEventLog">
+      <End Role="EventType" EntitySet="EventTypes" />
+      <End Role="EventLog" EntitySet="EventLogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogLevelEventLog" Association="IncZoneModel.Store.FK_LogLevelEventLog">
+      <End Role="LogLevel" EntitySet="LogLevels" />
+      <End Role="EventLog" EntitySet="EventLogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MapLink_MapNode_endId" Association="IncZoneModel.Store.FK_MapLink_MapNode_endId">
+      <End Role="MapNode" EntitySet="MapNodes" />
+      <End Role="MapLink" EntitySet="MapLinks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MapLink_MapNode_startId" Association="IncZoneModel.Store.FK_MapLink_MapNode_startId">
+      <End Role="MapNode" EntitySet="MapNodes" />
+      <End Role="MapLink" EntitySet="MapLinks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MapNode_MapSet" Association="IncZoneModel.Store.FK_MapNode_MapSet">
+      <End Role="MapSet" EntitySet="MapSets" />
+      <End Role="MapNode" EntitySet="MapNodes" />
+    </AssociationSet>
+    <AssociationSet Name="AlarmConfigurationVehicleAlarm" Association="IncZoneModel.Store.AlarmConfigurationVehicleAlarm">
+      <End Role="AlarmConfiguration" EntitySet="AlarmConfigurations" />
+      <End Role="VehicleAlarm" EntitySet="VehicleAlarms" />
+    </AssociationSet>
+    <AssociationSet Name="AlarmLevelVehicleAlarm" Association="IncZoneModel.Store.AlarmLevelVehicleAlarm">
+      <End Role="AlarmLevel" EntitySet="AlarmLevels" />
+      <End Role="VehicleAlarm" EntitySet="VehicleAlarms" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AlarmConfigurations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlarmLevels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Level" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AudibleVisualAlarms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Duration" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Frequency" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="AlarmLevel_Id" Type="int" Nullable="false" />
+    <Property Name="AlarmConfiguration_Id" Type="int" Nullable="false" />
+    <Property Name="Persistance" Type="int" Nullable="false" />
+    <Property Name="RadioActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CapWINConfigurations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="HostURL" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ComPort" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="BaudRate" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="DistanceToIncident" Type="int" Nullable="false" />
+    <Property Name="LaneData" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DGPSConfigurations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="HostIP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="HostPort" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="RefreshRate" Type="int" Nullable="false" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="LocationRefreshRate" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DSRCConfigurations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ACM" Type="int" Nullable="false" />
+    <Property Name="BSM" Type="int" Nullable="false" />
+    <Property Name="EVA" Type="int" Nullable="false" />
+    <Property Name="TIM" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventLogs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventMessage" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="EventDate" Type="datetime" Nullable="false" />
+    <Property Name="EventType_Id" Type="int" Nullable="false" />
+    <Property Name="LogLevel_Id" Type="int" Nullable="false" />
+    <Property Name="EventInfo" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="LogLevels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="MapLinks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="startId" Type="int" Nullable="false" />
+    <Property Name="endId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MapNodes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="lat" Type="float" Nullable="false" />
+    <Property Name="long" Type="float" Nullable="false" />
+    <Property Name="elevation" Type="float" Nullable="false" />
+    <Property Name="laneWidth" Type="int" Nullable="false" />
+    <Property Name="directionality" Type="int" Nullable="false" />
+    <Property Name="xOffset" Type="int" Nullable="false" />
+    <Property Name="yOffset" Type="int" Nullable="false" />
+    <Property Name="zOffset" Type="int" Nullable="false" />
+    <Property Name="positionalAccuracyP1" Type="int" Nullable="false" />
+    <Property Name="positionalAccuracyP2" Type="int" Nullable="false" />
+    <Property Name="positionalAccuracyP3" Type="int" Nullable="false" />
+    <Property Name="laneOrder" Type="int" Nullable="false" />
+    <Property Name="postedSpeed" Type="int" Nullable="false" />
+    <Property Name="mapSetId" Type="int" Nullable="false" />
+    <Property Name="distance" Type="float" Nullable="false" />
+    <Property Name="GuId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="mapSetGuId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MapSets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="GuId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleAlarms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Persistance" Type="int" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+    <Property Name="AlarmConfiguration_Id" Type="int" Nullable="false" />
+    <Property Name="AlarmLevel_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BluetoothConfigs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Arada" Type="varbinary" Nullable="false" />
+    <Property Name="Vital" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AlarmConfigurationAudibleVisualAlarm">
+    <End Role="AlarmConfiguration" Type="IncZoneModel.Store.AlarmConfigurations" Multiplicity="1" />
+    <End Role="AudibleVisualAlarm" Type="IncZoneModel.Store.AudibleVisualAlarms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AlarmConfiguration">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AudibleVisualAlarm">
+        <PropertyRef Name="AlarmConfiguration_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AlarmLevelAudibleVisualAlarm">
+    <End Role="AlarmLevel" Type="IncZoneModel.Store.AlarmLevels" Multiplicity="1" />
+    <End Role="AudibleVisualAlarm" Type="IncZoneModel.Store.AudibleVisualAlarms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AlarmLevel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AudibleVisualAlarm">
+        <PropertyRef Name="AlarmLevel_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventTypeEventLog">
+    <End Role="EventType" Type="IncZoneModel.Store.EventTypes" Multiplicity="1" />
+    <End Role="EventLog" Type="IncZoneModel.Store.EventLogs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventLog">
+        <PropertyRef Name="EventType_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogLevelEventLog">
+    <End Role="LogLevel" Type="IncZoneModel.Store.LogLevels" Multiplicity="1" />
+    <End Role="EventLog" Type="IncZoneModel.Store.EventLogs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LogLevel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventLog">
+        <PropertyRef Name="LogLevel_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MapLink_MapNode_endId">
+    <End Role="MapNode" Type="IncZoneModel.Store.MapNodes" Multiplicity="1" />
+    <End Role="MapLink" Type="IncZoneModel.Store.MapLinks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MapNode">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MapLink">
+        <PropertyRef Name="endId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MapLink_MapNode_startId">
+    <End Role="MapNode" Type="IncZoneModel.Store.MapNodes" Multiplicity="1" />
+    <End Role="MapLink" Type="IncZoneModel.Store.MapLinks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MapNode">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MapLink">
+        <PropertyRef Name="startId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MapNode_MapSet">
+    <End Role="MapSet" Type="IncZoneModel.Store.MapSets" Multiplicity="1" />
+    <End Role="MapNode" Type="IncZoneModel.Store.MapNodes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MapSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MapNode">
+        <PropertyRef Name="mapSetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AlarmConfigurationVehicleAlarm">
+    <End Role="AlarmConfiguration" Type="IncZoneModel.Store.AlarmConfigurations" Multiplicity="1" />
+    <End Role="VehicleAlarm" Type="IncZoneModel.Store.VehicleAlarms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AlarmConfiguration">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VehicleAlarm">
+        <PropertyRef Name="AlarmConfiguration_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AlarmLevelVehicleAlarm">
+    <End Role="AlarmLevel" Type="IncZoneModel.Store.AlarmLevels" Multiplicity="1" />
+    <End Role="VehicleAlarm" Type="IncZoneModel.Store.VehicleAlarms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AlarmLevel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VehicleAlarm">
+        <PropertyRef Name="AlarmLevel_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+<!-- CSDL content -->
+<edmx:ConceptualModels>
+<Schema Namespace="IncZoneModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="IncZoneEntities" p1:LazyLoadingEnabled="true" >
+          <EntitySet Name="AlarmConfigurations" EntityType="IncZoneModel.AlarmConfiguration" />
+          <EntitySet Name="AlarmLevels" EntityType="IncZoneModel.AlarmLevel" />
+          <EntitySet Name="AudibleVisualAlarms" EntityType="IncZoneModel.AudibleVisualAlarm" />
+          <EntitySet Name="CapWINConfigurations" EntityType="IncZoneModel.CapWINConfiguration" />
+          <EntitySet Name="DGPSConfigurations" EntityType="IncZoneModel.DGPSConfiguration" />
+          <EntitySet Name="DSRCConfigurations" EntityType="IncZoneModel.DSRCConfiguration" />
+          <EntitySet Name="EventLogs" EntityType="IncZoneModel.EventLog" />
+          <EntitySet Name="EventTypes" EntityType="IncZoneModel.EventType" />
+          <EntitySet Name="LogLevels" EntityType="IncZoneModel.LogLevel" />
+          <EntitySet Name="MapLinks" EntityType="IncZoneModel.MapLink" />
+          <EntitySet Name="MapNodes" EntityType="IncZoneModel.MapNode" />
+          <EntitySet Name="MapSets" EntityType="IncZoneModel.MapSet" />
+          <AssociationSet Name="FK_AlarmConfigurationAudibleVisualAlarm" Association="IncZoneModel.FK_AlarmConfigurationAudibleVisualAlarm">
+            <End Role="AlarmConfiguration" EntitySet="AlarmConfigurations" />
+            <End Role="AudibleVisualAlarm" EntitySet="AudibleVisualAlarms" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AlarmLevelAudibleVisualAlarm" Association="IncZoneModel.FK_AlarmLevelAudibleVisualAlarm">
+            <End Role="AlarmLevel" EntitySet="AlarmLevels" />
+            <End Role="AudibleVisualAlarm" EntitySet="AudibleVisualAlarms" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventTypeEventLog" Association="IncZoneModel.FK_EventTypeEventLog">
+            <End Role="EventType" EntitySet="EventTypes" />
+            <End Role="EventLog" EntitySet="EventLogs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LogLevelEventLog" Association="IncZoneModel.FK_LogLevelEventLog">
+            <End Role="LogLevel" EntitySet="LogLevels" />
+            <End Role="EventLog" EntitySet="EventLogs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MapLink_MapNode_endId" Association="IncZoneModel.FK_MapLink_MapNode_endId">
+            <End Role="MapNode" EntitySet="MapNodes" />
+            <End Role="MapLink" EntitySet="MapLinks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MapLink_MapNode_startId" Association="IncZoneModel.FK_MapLink_MapNode_startId">
+            <End Role="MapNode" EntitySet="MapNodes" />
+            <End Role="MapLink" EntitySet="MapLinks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MapNode_MapSet" Association="IncZoneModel.FK_MapNode_MapSet">
+            <End Role="MapSet" EntitySet="MapSets" />
+            <End Role="MapNode" EntitySet="MapNodes" />
+          </AssociationSet>
+          <EntitySet Name="VehicleAlarms" EntityType="IncZoneModel.VehicleAlarm" />
+          <AssociationSet Name="AlarmConfigurationVehicleAlarm" Association="IncZoneModel.AlarmConfigurationVehicleAlarm">
+            <End Role="AlarmConfiguration" EntitySet="AlarmConfigurations" />
+            <End Role="VehicleAlarm" EntitySet="VehicleAlarms" />
+          </AssociationSet>
+          <AssociationSet Name="AlarmLevelVehicleAlarm" Association="IncZoneModel.AlarmLevelVehicleAlarm">
+            <End Role="AlarmLevel" EntitySet="AlarmLevels" />
+            <End Role="VehicleAlarm" EntitySet="VehicleAlarms" />
+          </AssociationSet>
+          <EntitySet Name="BluetoothConfigs" EntityType="IncZoneModel.BluetoothConfig" />
+        </EntityContainer>
+        <EntityType Name="AlarmConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="AudibleVisualAlarms" Relationship="IncZoneModel.FK_AlarmConfigurationAudibleVisualAlarm" FromRole="AlarmConfiguration" ToRole="AudibleVisualAlarm" />
+          <NavigationProperty Name="VehicleAlarms" Relationship="IncZoneModel.AlarmConfigurationVehicleAlarm" FromRole="AlarmConfiguration" ToRole="VehicleAlarm" />
+        </EntityType>
+        <EntityType Name="AlarmLevel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Level" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AudibleVisualAlarms" Relationship="IncZoneModel.FK_AlarmLevelAudibleVisualAlarm" FromRole="AlarmLevel" ToRole="AudibleVisualAlarm" />
+          <NavigationProperty Name="VehicleAlarms" Relationship="IncZoneModel.AlarmLevelVehicleAlarm" FromRole="AlarmLevel" ToRole="VehicleAlarm" />
+        </EntityType>
+        <EntityType Name="AudibleVisualAlarm">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Duration" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="Frequency" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="AlarmLevel_Id" Type="Int32" Nullable="false" />
+          <Property Name="AlarmConfiguration_Id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AlarmConfiguration" Relationship="IncZoneModel.FK_AlarmConfigurationAudibleVisualAlarm" FromRole="AudibleVisualAlarm" ToRole="AlarmConfiguration" />
+          <NavigationProperty Name="AlarmLevel" Relationship="IncZoneModel.FK_AlarmLevelAudibleVisualAlarm" FromRole="AudibleVisualAlarm" ToRole="AlarmLevel" />
+          <Property Name="Persistance" Type="Int32" Nullable="false" />
+          <Property Name="RadioActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CapWINConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HostURL" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ComPort" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="BaudRate" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DistanceToIncident" Type="Int32" Nullable="false" />
+          <Property Name="LaneData" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DGPSConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HostIP" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HostPort" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="RefreshRate" Type="Int32" Nullable="false" />
+          <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+          <Property Name="LocationRefreshRate" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DSRCConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ACM" Type="Int32" Nullable="false" />
+          <Property Name="BSM" Type="Int32" Nullable="false" />
+          <Property Name="EVA" Type="Int32" Nullable="false" />
+          <Property Name="TIM" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EventLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EventMessage" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="EventDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EventType_Id" Type="Int32" Nullable="false" />
+          <Property Name="LogLevel_Id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="EventType" Relationship="IncZoneModel.FK_EventTypeEventLog" FromRole="EventLog" ToRole="EventType" />
+          <NavigationProperty Name="LogLevel" Relationship="IncZoneModel.FK_LogLevelEventLog" FromRole="EventLog" ToRole="LogLevel" />
+          <Property Name="EventInfo" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EventType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EventLogs" Relationship="IncZoneModel.FK_EventTypeEventLog" FromRole="EventType" ToRole="EventLog" />
+        </EntityType>
+        <EntityType Name="LogLevel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EventLogs" Relationship="IncZoneModel.FK_LogLevelEventLog" FromRole="LogLevel" ToRole="EventLog" />
+        </EntityType>
+        <EntityType Name="MapLink">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="startId" Type="Int32" Nullable="false" />
+          <Property Name="endId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="MapNode" Relationship="IncZoneModel.FK_MapLink_MapNode_endId" FromRole="MapLink" ToRole="MapNode" />
+          <NavigationProperty Name="MapNode1" Relationship="IncZoneModel.FK_MapLink_MapNode_startId" FromRole="MapLink" ToRole="MapNode" />
+        </EntityType>
+        <EntityType Name="MapNode">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="lat" Type="Double" Nullable="false" />
+          <Property Name="long" Type="Double" Nullable="false" />
+          <Property Name="elevation" Type="Double" Nullable="false" />
+          <Property Name="laneWidth" Type="Int32" Nullable="false" />
+          <Property Name="directionality" Type="Int32" Nullable="false" />
+          <Property Name="xOffset" Type="Int32" Nullable="false" />
+          <Property Name="yOffset" Type="Int32" Nullable="false" />
+          <Property Name="zOffset" Type="Int32" Nullable="false" />
+          <Property Name="positionalAccuracyP1" Type="Int32" Nullable="false" />
+          <Property Name="positionalAccuracyP2" Type="Int32" Nullable="false" />
+          <Property Name="positionalAccuracyP3" Type="Int32" Nullable="false" />
+          <Property Name="laneOrder" Type="Int32" Nullable="false" />
+          <Property Name="postedSpeed" Type="Int32" Nullable="false" />
+          <Property Name="mapSetId" Type="Int32" Nullable="false" />
+          <Property Name="distance" Type="Double" Nullable="false" />
+          <NavigationProperty Name="MapLinks" Relationship="IncZoneModel.FK_MapLink_MapNode_endId" FromRole="MapNode" ToRole="MapLink" />
+          <NavigationProperty Name="MapLinks1" Relationship="IncZoneModel.FK_MapLink_MapNode_startId" FromRole="MapNode" ToRole="MapLink" />
+          <NavigationProperty Name="MapSet" Relationship="IncZoneModel.FK_MapNode_MapSet" FromRole="MapNode" ToRole="MapSet" />
+          <Property Name="GuId" Type="Guid" Nullable="false" />
+          <Property Name="mapSetGuId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MapSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="description" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MapNodes" Relationship="IncZoneModel.FK_MapNode_MapSet" FromRole="MapSet" ToRole="MapNode" />
+          <Property Name="GuId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_AlarmConfigurationAudibleVisualAlarm">
+          <End Type="IncZoneModel.AlarmConfiguration" Role="AlarmConfiguration" Multiplicity="1" />
+          <End Type="IncZoneModel.AudibleVisualAlarm" Role="AudibleVisualAlarm" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AlarmConfiguration">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AudibleVisualAlarm">
+              <PropertyRef Name="AlarmConfiguration_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AlarmLevelAudibleVisualAlarm">
+          <End Type="IncZoneModel.AlarmLevel" Role="AlarmLevel" Multiplicity="1" />
+          <End Type="IncZoneModel.AudibleVisualAlarm" Role="AudibleVisualAlarm" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AlarmLevel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AudibleVisualAlarm">
+              <PropertyRef Name="AlarmLevel_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventTypeEventLog">
+          <End Type="IncZoneModel.EventType" Role="EventType" Multiplicity="1" />
+          <End Type="IncZoneModel.EventLog" Role="EventLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EventLog">
+              <PropertyRef Name="EventType_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LogLevelEventLog">
+          <End Type="IncZoneModel.LogLevel" Role="LogLevel" Multiplicity="1" />
+          <End Type="IncZoneModel.EventLog" Role="EventLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LogLevel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EventLog">
+              <PropertyRef Name="LogLevel_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MapLink_MapNode_endId">
+          <End Type="IncZoneModel.MapNode" Role="MapNode" Multiplicity="1" />
+          <End Type="IncZoneModel.MapLink" Role="MapLink" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MapNode">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MapLink">
+              <PropertyRef Name="endId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MapLink_MapNode_startId">
+          <End Type="IncZoneModel.MapNode" Role="MapNode" Multiplicity="1" />
+          <End Type="IncZoneModel.MapLink" Role="MapLink" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MapNode">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MapLink">
+              <PropertyRef Name="startId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MapNode_MapSet">
+          <End Type="IncZoneModel.MapSet" Role="MapSet" Multiplicity="1" />
+          <End Type="IncZoneModel.MapNode" Role="MapNode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MapSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MapNode">
+              <PropertyRef Name="mapSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VehicleAlarm">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Persistance" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AlarmConfiguration" Relationship="IncZoneModel.AlarmConfigurationVehicleAlarm" FromRole="VehicleAlarm" ToRole="AlarmConfiguration" />
+          <NavigationProperty Name="AlarmLevel" Relationship="IncZoneModel.AlarmLevelVehicleAlarm" FromRole="VehicleAlarm" ToRole="AlarmLevel" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <Association Name="AlarmConfigurationVehicleAlarm">
+          <End Type="IncZoneModel.AlarmConfiguration" Role="AlarmConfiguration" Multiplicity="1" />
+          <End Type="IncZoneModel.VehicleAlarm" Role="VehicleAlarm" Multiplicity="*" />
+        </Association>
+        <Association Name="AlarmLevelVehicleAlarm">
+          <End Type="IncZoneModel.AlarmLevel" Role="AlarmLevel" Multiplicity="1" />
+          <End Type="IncZoneModel.VehicleAlarm" Role="VehicleAlarm" Multiplicity="*" />
+        </Association>
+        <EntityType Name="BluetoothConfig">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Arada" Type="Binary" Nullable="false" />
+          <Property Name="Vital" Type="String" Nullable="false" />
+        </EntityType>
+  </Schema>
+</edmx:ConceptualModels>
+<!-- C-S mapping content -->
+<edmx:Mappings>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IncZoneModelStoreContainer" CdmEntityContainer="IncZoneEntities">
+    <EntitySetMapping Name="AlarmConfigurations">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.AlarmConfiguration)">
+        <MappingFragment StoreEntitySet="AlarmConfigurations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlarmLevels">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.AlarmLevel)">
+        <MappingFragment StoreEntitySet="AlarmLevels">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AudibleVisualAlarms">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.AudibleVisualAlarm)">
+        <MappingFragment StoreEntitySet="AudibleVisualAlarms">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="AlarmLevel_Id" ColumnName="AlarmLevel_Id" />
+          <ScalarProperty Name="AlarmConfiguration_Id" ColumnName="AlarmConfiguration_Id" />
+          <ScalarProperty Name="Persistance" ColumnName="Persistance" />
+          <ScalarProperty Name="RadioActive" ColumnName="RadioActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CapWINConfigurations">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.CapWINConfiguration)">
+        <MappingFragment StoreEntitySet="CapWINConfigurations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="HostURL" ColumnName="HostURL" />
+          <ScalarProperty Name="ComPort" ColumnName="ComPort" />
+          <ScalarProperty Name="BaudRate" ColumnName="BaudRate" />
+          <ScalarProperty Name="DistanceToIncident" ColumnName="DistanceToIncident" />
+          <ScalarProperty Name="LaneData" ColumnName="LaneData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DGPSConfigurations">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.DGPSConfiguration)">
+        <MappingFragment StoreEntitySet="DGPSConfigurations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="HostIP" ColumnName="HostIP" />
+          <ScalarProperty Name="HostPort" ColumnName="HostPort" />
+          <ScalarProperty Name="RefreshRate" ColumnName="RefreshRate" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="LocationRefreshRate" ColumnName="LocationRefreshRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSRCConfigurations">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.DSRCConfiguration)">
+        <MappingFragment StoreEntitySet="DSRCConfigurations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ACM" ColumnName="ACM" />
+          <ScalarProperty Name="BSM" ColumnName="BSM" />
+          <ScalarProperty Name="EVA" ColumnName="EVA" />
+          <ScalarProperty Name="TIM" ColumnName="TIM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventLogs">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.EventLog)">
+        <MappingFragment StoreEntitySet="EventLogs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EventMessage" ColumnName="EventMessage" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="EventType_Id" ColumnName="EventType_Id" />
+          <ScalarProperty Name="LogLevel_Id" ColumnName="LogLevel_Id" />
+          <ScalarProperty Name="EventInfo" ColumnName="EventInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.EventType)">
+        <MappingFragment StoreEntitySet="EventTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogLevels">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.LogLevel)">
+        <MappingFragment StoreEntitySet="LogLevels">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapLinks">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.MapLink)">
+        <MappingFragment StoreEntitySet="MapLinks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="startId" ColumnName="startId" />
+          <ScalarProperty Name="endId" ColumnName="endId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapNodes">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.MapNode)">
+        <MappingFragment StoreEntitySet="MapNodes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="long" ColumnName="long" />
+          <ScalarProperty Name="elevation" ColumnName="elevation" />
+          <ScalarProperty Name="laneWidth" ColumnName="laneWidth" />
+          <ScalarProperty Name="directionality" ColumnName="directionality" />
+          <ScalarProperty Name="xOffset" ColumnName="xOffset" />
+          <ScalarProperty Name="yOffset" ColumnName="yOffset" />
+          <ScalarProperty Name="zOffset" ColumnName="zOffset" />
+          <ScalarProperty Name="positionalAccuracyP1" ColumnName="positionalAccuracyP1" />
+          <ScalarProperty Name="positionalAccuracyP2" ColumnName="positionalAccuracyP2" />
+          <ScalarProperty Name="positionalAccuracyP3" ColumnName="positionalAccuracyP3" />
+          <ScalarProperty Name="laneOrder" ColumnName="laneOrder" />
+          <ScalarProperty Name="postedSpeed" ColumnName="postedSpeed" />
+          <ScalarProperty Name="mapSetId" ColumnName="mapSetId" />
+          <ScalarProperty Name="distance" ColumnName="distance" />
+          <ScalarProperty Name="GuId" ColumnName="GuId" />
+          <ScalarProperty Name="mapSetGuId" ColumnName="mapSetGuId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapSets">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.MapSet)">
+        <MappingFragment StoreEntitySet="MapSets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="GuId" ColumnName="GuId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleAlarms">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.VehicleAlarm)">
+        <MappingFragment StoreEntitySet="VehicleAlarms">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Persistance" ColumnName="Persistance" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BluetoothConfigs">
+      <EntityTypeMapping TypeName="IsTypeOf(IncZoneModel.BluetoothConfig)">
+        <MappingFragment StoreEntitySet="BluetoothConfigs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Arada" ColumnName="Arada" />
+          <ScalarProperty Name="Vital" ColumnName="Vital" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AlarmConfigurationVehicleAlarm" TypeName="IncZoneModel.AlarmConfigurationVehicleAlarm" StoreEntitySet="VehicleAlarms">
+      <EndProperty Name="AlarmConfiguration">
+        <ScalarProperty Name="Id" ColumnName="AlarmConfiguration_Id" />
+      </EndProperty>
+      <EndProperty Name="VehicleAlarm">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="AlarmLevelVehicleAlarm" TypeName="IncZoneModel.AlarmLevelVehicleAlarm" StoreEntitySet="VehicleAlarms">
+      <EndProperty Name="AlarmLevel">
+        <ScalarProperty Name="Id" ColumnName="AlarmLevel_Id" />
+      </EndProperty>
+      <EndProperty Name="VehicleAlarm">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+</edmx:Runtime>
+<!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+<edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+<Connection><DesignerInfoPropertySet><DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" /></DesignerInfoPropertySet></Connection>
+<edmx:Options><DesignerInfoPropertySet><DesignerProperty Name="ValidateOnBuild" Value="True" /><DesignerProperty Name="EnablePluralization" Value="True" /><DesignerProperty Name="IncludeForeignKeysInModel" Value="True" /><DesignerProperty Name="UseLegacyProvider" Value="False" /><DesignerProperty Name="CodeGenerationStrategy" Value="None" /></DesignerInfoPropertySet></edmx:Options>
+<edmx:Diagrams >
+      <Diagram DiagramId="7cde924ac04d4837887fa918c4c6a929" Name="Diagram1" >
+        <EntityTypeShape EntityType="IncZoneModel.AlarmConfiguration" Width="1.5" PointX="5.75" PointY="6.875" />
+        <EntityTypeShape EntityType="IncZoneModel.AlarmLevel" Width="1.5" PointX="8.75" PointY="10.125" />
+        <EntityTypeShape EntityType="IncZoneModel.AudibleVisualAlarm" Width="1.875" PointX="8" PointY="6.5" />
+        <EntityTypeShape EntityType="IncZoneModel.CapWINConfiguration" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="IncZoneModel.DGPSConfiguration" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="IncZoneModel.DSRCConfiguration" Width="1.5" PointX="5.75" PointY="10.75" />
+        <EntityTypeShape EntityType="IncZoneModel.EventLog" Width="1.5" PointX="3" PointY="9.875" />
+        <EntityTypeShape EntityType="IncZoneModel.EventType" Width="1.5" PointX="0.75" PointY="7.25" />
+        <EntityTypeShape EntityType="IncZoneModel.LogLevel" Width="1.5" PointX="0.75" PointY="10.25" />
+        <EntityTypeShape EntityType="IncZoneModel.MapLink" Width="1.5" PointX="5.25" PointY="2.125" />
+        <EntityTypeShape EntityType="IncZoneModel.MapNode" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="IncZoneModel.MapSet" Width="1.5" PointX="0.75" PointY="2.25" />
+        <AssociationConnector Association="IncZoneModel.FK_AlarmConfigurationAudibleVisualAlarm" />
+        <AssociationConnector Association="IncZoneModel.FK_AlarmLevelAudibleVisualAlarm" />
+        <AssociationConnector Association="IncZoneModel.FK_EventTypeEventLog" />
+        <AssociationConnector Association="IncZoneModel.FK_LogLevelEventLog" />
+        <AssociationConnector Association="IncZoneModel.FK_MapLink_MapNode_endId" />
+        <AssociationConnector Association="IncZoneModel.FK_MapLink_MapNode_startId" />
+        <AssociationConnector Association="IncZoneModel.FK_MapNode_MapSet" />
+        <EntityTypeShape EntityType="IncZoneModel.VehicleAlarm" Width="1.5" PointX="10.25" PointY="7.75" />
+        <AssociationConnector Association="IncZoneModel.AlarmConfigurationVehicleAlarm" />
+        <AssociationConnector Association="IncZoneModel.AlarmLevelVehicleAlarm" />
+        <EntityTypeShape EntityType="IncZoneModel.BluetoothConfig" Width="1.5" PointX="12.875" PointY="6.375" />
+      </Diagram>
+    </edmx:Diagrams>
+</edmx:Designer></edmx:Edmx>

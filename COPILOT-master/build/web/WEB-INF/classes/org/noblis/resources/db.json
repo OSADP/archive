@@ -1,0 +1,8 @@
+{
+    "driver": "jdbc",
+    "dbms": "postgresql",
+    "host": "anaire.nicc.noblis.org",
+    "db": "cvp_cet",
+    "user": "cvp_cet_user",
+    "pass": "vojSifCotEk9"
+}

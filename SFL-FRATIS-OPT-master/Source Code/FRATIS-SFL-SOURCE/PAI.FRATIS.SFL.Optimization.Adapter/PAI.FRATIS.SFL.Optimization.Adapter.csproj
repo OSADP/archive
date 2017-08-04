@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A4F9E80-FA09-41F6-B1A4-CE202F41E171}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAI.FRATIS.SFL.Optimization.Adapter</RootNamespace>
+    <AssemblyName>PAI.FRATIS.SFL.Optimization.Adapter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\externals\AutoMapper.3.0.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PAI.FRATIS.SFL.Web.Framework\bin\Debug\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Omu.ValueInjecter, Version=2.3.3.0, Culture=neutral, PublicKeyToken=c7694541b0ac80e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\externals\valueinjecter.2.3.3\lib\net35\Omu.ValueInjecter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mapping\DeepCloneInjection.cs" />
+    <Compile Include="Mapping\DomainToModelValueInjection.cs" />
+    <Compile Include="Mapping\MapDomainToOptimizationModelService.cs" />
+    <Compile Include="Mapping\SmartConvention\SmartConventionInfo.cs" />
+    <Compile Include="Mapping\SmartConvention\SmartConventionInjection.cs" />
+    <Compile Include="Mapping\SmartConvention\SmartMatchInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IDateTimeHelper.cs" />
+    <Compile Include="Services\IExternalDistanceCalculator.cs" />
+    <Compile Include="Services\IPlanGenerator.cs" />
+    <Compile Include="Services\IPlanGeneratorInitializer.cs" />
+    <Compile Include="Services\PlanAnalyzerService.cs" />
+    <Compile Include="Services\PlanDescriptor.cs" />
+    <Compile Include="Services\SuperDistanceService.cs" />
+    <Compile Include="Services\IValidationService.cs" />
+    <Compile Include="Services\PlanGenerationResult.cs" />
+    <Compile Include="Services\PlanGenerator.cs" />
+    <Compile Include="Services\SuperDistanceServiceInitializer.cs" />
+    <Compile Include="Services\ValidationResult.cs" />
+    <Compile Include="Services\ValidationService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CTIP\PAI.Drayage.EnhancedOptimization\PAI.Drayage.EnhancedOptimization.csproj">
+      <Project>{b450217a-1223-4b80-ae86-423a8bad2d84}</Project>
+      <Name>PAI.Drayage.EnhancedOptimization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CTIP\PAI.Drayage.Optimization.Reporting\PAI.Drayage.Optimization.Reporting.csproj">
+      <Project>{0ef7ffea-7a90-47f3-8e34-a167ab0a464d}</Project>
+      <Name>PAI.Drayage.Optimization.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CTIP\PAI.Drayage.Optimization\PAI.Drayage.Optimization.csproj">
+      <Project>{0028fe9c-9a4d-447b-afa6-2ca50f61854d}</Project>
+      <Name>PAI.Drayage.Optimization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CTIP\PAI.Infrastructure\PAI.Infrastructure.csproj">
+      <Project>{4cb641ff-be25-456e-8bf2-4c7195c6cef4}</Project>
+      <Name>PAI.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.Common\PAI.FRATIS.SFL.Common.csproj">
+      <Project>{5B819D25-47CF-44EC-B374-CEB524729183}</Project>
+      <Name>PAI.FRATIS.SFL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Domain\PAI.FRATIS.SFL.Domain.csproj">
+      <Project>{8ffb0e4c-2904-47e7-91e7-fa8bdcd87c23}</Project>
+      <Name>PAI.FRATIS.SFL.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PAI.FRATIS.SFL.Services\PAI.FRATIS.SFL.Services.csproj">
+      <Project>{6471633b-c3c7-4238-baa8-3f26540329f1}</Project>
+      <Name>PAI.FRATIS.SFL.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,13 @@
+
+BsmPostUrl					= http://inflotst-cloud-roles.cloudapp.net/api/bsm
+
+
+
+#DEMO 1, 2, 3
+TimGetUrl					= http://inflotst-cloud-roles.cloudapp.net/api/tim?roadwayid=600&mm=5.4
+
+#DEMO 4
+#TimGetUrl					= http://inflotst-cloud-roles.cloudapp.net/api/tim?roadwayid=600&mm=4.1
+
+#DEMO 5
+#TimGetUrl					= http://inflotst-cloud-roles.cloudapp.net/api/tim?roadwayid=600&mm=5.0

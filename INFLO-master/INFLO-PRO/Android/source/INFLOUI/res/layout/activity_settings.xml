@@ -1,0 +1,65 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Devices">
+        <org.battelle.inflo.infloui.settings.BluetoothDeviceList
+		    android:key="@string/setting_obuMacAddress_key"
+		    android:title="@string/setting_obuMacAddress_name"
+		    android:summary="@string/setting_obuMacAddress_details" />
+        
+        <CheckBoxPreference
+   	        android:key="@string/setting_enableObdII_key"
+   	        android:title="@string/setting_enableObdII_name"
+   	        android:summary="@string/setting_enableObdII_details"
+   	        android:defaultValue="false" />
+        
+        <org.battelle.inflo.infloui.settings.BluetoothDeviceList
+		    android:key="@string/setting_obdIIMacAddress_key"
+		    android:title="@string/setting_obdIIMacAddress_name"
+		    android:summary="@string/setting_obdIIMacAddress_details"
+		    android:dependency = "@string/setting_enableObdII_key" />
+	    
+    </PreferenceCategory>
+    <PreferenceCategory android:title="TME Web API's">
+        <ListPreference
+            android:key="@string/setting_tmeBsmWebUrl_key"
+            android:title="@string/setting_tmeBsmWebUrl_name"
+            android:summary="@string/setting_tmeBsmWebUrl_details"
+            android:entries="@array/setting_tmeBsmWebUrl_displayValues"
+            android:entryValues="@array/setting_tmeBsmWebUrl_values" />
+
+        <ListPreference
+            android:key="@string/setting_tmeTimWebUrl_key"
+            android:title="@string/setting_tmeTimWebUrl_name"
+            android:summary="@string/setting_tmeTimWebUrl_details"
+            android:entries="@array/setting_tmeTimWebUrl_displayValues"
+            android:entryValues="@array/setting_tmeTimWebUrl_values" />
+        
+    </PreferenceCategory>
+    
+   	<PreferenceCategory android:title="Alert Sounds">
+   	    <!-- RingtonePreference 
+   	        android:key="@string/setting_ringLostConnection_key"
+   	        android:title="@string/setting_ringLostConnection_name"
+   	        android:summary="@string/setting_ringLostConnection_details"
+   	        android:ringtoneType="notification"/-->
+   	    
+   	    <CheckBoxPreference
+   	        android:key="@string/setting_enableTTS_key"
+   	        android:title="@string/setting_enableTTS_name"
+   	        android:summary="@string/setting_enableTTS_details"
+   	        android:defaultValue="true" />
+   	    
+   	</PreferenceCategory>
+   	
+   	
+   	<PreferenceCategory android:title="Developement Options">
+   	    <EditTextPreference
+   	        android:key="@string/setting_alertTimeout_key"
+   	        android:title="@string/setting_alertTimeout_name"
+   	        android:summary="@string/setting_alertTimeout_details"
+   	        android:defaultValue="10">
+   	        
+   	    </EditTextPreference>
+   	    
+  	</PreferenceCategory>
+</PreferenceScreen>

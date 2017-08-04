@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FFB0E4C-2904-47E7-91E7-FA8BDCD87C23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAI.FRATIS.SFL.Domain</RootNamespace>
+    <AssemblyName>PAI.FRATIS.SFL.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\Setting.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="EntitySubscriberBase.cs" />
+    <Compile Include="Equipment\Chassis.cs" />
+    <Compile Include="Equipment\ChassisOwner.cs" />
+    <Compile Include="Equipment\Container.cs" />
+    <Compile Include="Equipment\ContainerChassisLink.cs" />
+    <Compile Include="Equipment\ContainerOwner.cs" />
+    <Compile Include="Equipment\Depot.cs" />
+    <Compile Include="Equipment\DepotEquipmentAvailability.cs" />
+    <Compile Include="Equipment\Vehicle.cs" />
+    <Compile Include="Equipment\WebFleetLocation.cs" />
+    <Compile Include="Geography\HourDistanceInfo.cs" />
+    <Compile Include="Geography\Location.cs" />
+    <Compile Include="Geography\LocationDistance.cs" />
+    <Compile Include="Geography\LocationGroup.cs" />
+    <Compile Include="Geography\LocationHours.cs" />
+    <Compile Include="Geography\LocationHoursDayOfWeek.cs" />
+    <Compile Include="Geography\LocationOptions.cs" />
+    <Compile Include="Geography\LocationQueueDelay.cs" />
+    <Compile Include="Geography\LocationType.cs" />
+    <Compile Include="Geography\NokiaMaps\RouteSummary.cs" />
+    <Compile Include="Geography\NokiaMaps\TrafficItem.cs" />
+    <Compile Include="Geography\NokiaMaps\TrafficItems.cs" />
+    <Compile Include="Geography\NokiaMaps\TrafficItems\Criticality.cs" />
+    <Compile Include="Geography\NokiaMaps\TrafficItems\GeoLoc.cs" />
+    <Compile Include="Geography\NokiaMaps\TrafficItems\Incident.cs" />
+    <Compile Include="Geography\NokiaMaps\TrafficItems\Location.cs" />
+    <Compile Include="Geography\NokiaMaps\TrafficItems\Origin.cs" />
+    <Compile Include="Geography\NokiaMaps\TrafficItems\TrafficItemDescription.cs" />
+    <Compile Include="Geography\NokiaMaps\TrafficItems\TrafficItemDetail.cs" />
+    <Compile Include="Geography\State.cs" />
+    <Compile Include="Geography\TrafficHotSpot.cs" />
+    <Compile Include="Geography\TrafficRoute.cs" />
+    <Compile Include="Geography\WeatherCity.cs" />
+    <Compile Include="IArchivedEntity.cs" />
+    <Compile Include="IDatedEntity.cs" />
+    <Compile Include="IInstallableEntity.cs" />
+    <Compile Include="Information\Camera.cs" />
+    <Compile Include="Information\PositionInfo.cs" />
+    <Compile Include="Information\QueueDeviceSegment.cs" />
+    <Compile Include="ISortableEntity.cs" />
+    <Compile Include="Logging\ExternalSync.cs" />
+    <Compile Include="Logging\LogEntry.cs" />
+    <Compile Include="Logging\LogLevel.cs" />
+    <Compile Include="Logging\SyncLogEntry.cs" />
+    <Compile Include="Orders\Driver.cs" />
+    <Compile Include="Orders\Job.cs" />
+    <Compile Include="Orders\JobAcceptance.cs" />
+    <Compile Include="Orders\JobAcceptanceNotification.cs" />
+    <Compile Include="Orders\JobDataCollection.cs" />
+    <Compile Include="Orders\JobGroup.cs" />
+    <Compile Include="Orders\JobOptionOrderType.cs" />
+    <Compile Include="Orders\JobOptions.cs" />
+    <Compile Include="Orders\JobStatus.cs" />
+    <Compile Include="Orders\JobTemplateType.cs" />
+    <Compile Include="Orders\RouteStop.cs" />
+    <Compile Include="Orders\StopAction.cs" />
+    <Compile Include="Planning\Plan.cs" />
+    <Compile Include="Planning\PlanConfig.cs" />
+    <Compile Include="Planning\PlanDriver.cs" />
+    <Compile Include="Planning\PlanDriverJob.cs" />
+    <Compile Include="Planning\RouteMetric.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subscribers\Subscriber.cs" />
+    <Compile Include="TerminalJobType.cs" />
+    <Compile Include="Times\DaysOfWeek.cs" />
+    <Compile Include="Users\PasswordFormat.cs" />
+    <Compile Include="Users\User.cs" />
+    <Compile Include="Users\UserContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PAI.Common\PAI.FRATIS.SFL.Common.csproj">
+      <Project>{5B819D25-47CF-44EC-B374-CEB524729183}</Project>
+      <Name>PAI.FRATIS.SFL.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

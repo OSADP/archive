@@ -1,0 +1,64 @@
+<?php
+// Add the correct Content-Type for the cache manifest
+header('Content-Type: text/cache-manifest');
+ 
+// Write the first line
+echo "CACHE MANIFEST\n";
+ 
+// Initialize the $hashes string
+//$hashes = "";
+$GLOBALS['last_update'] = 0;
+
+function create_manifest($folder) {
+	
+	$dir = new RecursiveDirectoryIterator($folder);
+
+	// Iterate through all the files/folders in the current directory
+	foreach (new RecursiveIteratorIterator($dir) as $file) {
+		$info = pathinfo($file);
+		
+		$ext = pathinfo($file, PATHINFO_EXTENSION);
+ 
+		// If the object is a file
+		// and it's not called manifest.php (this file),
+		// and it's not a dotfile, add it to the list
+		if ($file -> IsFile() && $file != ".\manifest.php" && substr($file -> getFilename(), 0, 1) != ".") 
+		{
+			
+			if($ext != "txt" && $ext != "log" && $ext != "apk" && $ext != "db")
+			{
+				echo str_replace(' ', '%20', $file) . "    #" . date ("F d Y H:i:s.", filemtime($file)) . "\n";
+				if(filemtime($file) > $GLOBALS['last_update'])
+				{
+					// Replace spaces with %20 or it will break
+					$GLOBALS['last_update'] = filemtime($file);
+				}
+			}
+		}
+	}
+}
+ 
+create_manifest("css/");
+create_manifest("images/");
+create_manifest("js/");
+
+
+echo "# Last Update: " . date ("F d Y H:i:s.", $GLOBALS['last_update']) . "\n";
+// Write the $hashes string
+//echo "# Hash: " . md5($hashes) . "\n";
+?>
+NETWORK:
+http://maps.googleapis.com/
+https://maps.googleapis.com/
+http://khm1.googleapis.com/
+http://www.google-analytics.com/
+http://gg.google.com/
+http://csi.gstatic.com/
+http://fonts.googleapis.com
+http://themes.googleusercontent.com
+http://themes.googleusercontent.com/static/fonts/roboto/v10/
+http://maps.gstatic.com/
+http://mt0.googleapis.com/
+http://mt1.googleapis.com/
+http://mt2.googleapis.com/
+*

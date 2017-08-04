@@ -1,0 +1,2 @@
+RoadwayID,LinkNo,BeginMM,EndMM,NoLanes,Direction,NoDetectionStations,DetectionStationNo
+800,1,0,0.8,2,Eastbound,0,0

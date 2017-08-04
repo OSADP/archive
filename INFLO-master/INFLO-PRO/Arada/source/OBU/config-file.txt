@@ -1,0 +1,36 @@
+# GPS Spoofing
+
+EnableGpsSpoofing           = false
+
+#Application
+AppVehicleId = {@vehicleid}
+
+# Other
+RsuCellNetTransitionRSSI    = 15
+RsuNum                      = 11
+RsuMacAddr		    					                = 00:26:AD:01:F2:3E
+RsuMacAddr		    					                = 00:26:AD:01:F2:3F
+RsuMacAddr		    					                = 00:26:AD:01:F2:3C
+RsuMacAddr		    					                = 00:26:AD:01:F2:3D
+RsuMacAddr									= 00:26:AD:01:F2:3A
+RsuMacAddr		    					                = 00:26:AD:01:F2:3B
+RsuMacAddr 									= 00:26:AD:01:F2:38
+RsuMacAddr 									= 00:26:AD:01:F2:39
+RsuMacAddr									= 00:26:AD:01:F1:C8
+RsuMacAddr									= 00:26:AD:01:F1:C7
+RsuMacAddr									= 00:26:AD:01:F1:C6
+
+# Q-Warn
+QueuedSpeedThreshold_m_s    = 5.0
+QueuedDistanceThreshold_m   = 75.0
+QueuedResetTime_s           = 3.0
+
+# Map Data
+MapDir                      = /var/bin/maps
+MaximumRoadDist_m           = 40.0
+DirSimilarityTolerance      = 0.5
+
+# Settings
+HeadingLockSpeed			= 1.5
+EnableAndroidConsole		= false
+

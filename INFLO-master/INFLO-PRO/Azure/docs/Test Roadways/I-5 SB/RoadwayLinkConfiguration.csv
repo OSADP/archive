@@ -1,0 +1,26 @@
+RoadwayID,LinkNo,BeginMM,EndMM,NoLanes,Direction,NoDetectionStations,DetectionStationNo,StartCrossStreet
+6,500,17460,17416,3,Southbound,1,1,NE 145th St  SB
+6,501,17416,17375,4,Southbound,1,2,NE 137th St
+6,502,17375,17328,4,Southbound,1,3,NE 130th St-SB
+6,503,17328,17288,4,Southbound,1,4,NE 120th St
+6,504,17288,17264,4,Southbound,1,5,N 110th St-SB
+6,505,17264,17215,4,Southbound,1,6,N 107th St-SB
+6,506,17215,17162,4,Southbound,1,7,N 97th St
+6,507,17162,17131,3,Southbound,1,8,N 88th St
+6,508,17131,17075,3,Southbound,1,9,NE 85th St-SB
+6,509,17075,17025,3,Southbound,1,10,Lake City Wy  SB
+6,510,17025,16990,4,Southbound,1,11,NE 63rd St
+6,511,16990,16942,4,Southbound,1,12,Ravenna Blvd-SB
+6,512,16942,16919,4,Southbound,1,13,NE 50th St-SB
+6,513,16919,16885,4,Southbound,1,14,NE 45th St-SB
+6,514,16885,16831,4,Southbound,1,15,Ship Canal Br
+6,515,16831,16802,4,Southbound,1,16,E Hamlin St
+6,516,16802,16756,4,Southbound,1,17,E Roanoke St
+6,517,16756,16732,5,Southbound,1,18,Boylston Ave-SB
+6,518,16732,16661,5,Southbound,1,19,E Galer St
+6,519,16661,16640,4,Southbound,1,20,Mercer St-SB
+6,520,16640,16583,4,Southbound,1,21,Olive Way-NB
+6,521,16583,16551,4,Southbound,1,22,University St-NB
+6,522,16551,16513,2,Southbound,1,23,Marion St
+6,523,16513,16466,2,Southbound,1,24,Yesler Way
+6,524,16466,XXX,2,Southbound,1,25,4th/Dearborn-NB

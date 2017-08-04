@@ -1,0 +1,37 @@
+C:\Windows\system32>cd c:\temp
+
+c:\Temp>mkdir inflo-cert
+
+c:\Temp>cd inflo-cert
+
+c:\Temp\inflo-cert>makecert /?
+Usage: MakeCert [ basic|extended options] [outputCertificateFile]
+Basic Options
+ -sk  <keyName>      Subject's key container name; To be created if not present
+ -pe                 Mark generated private key as exportable
+ -ss  <store>        Subject's certificate store name that stores the output
+                     certificate
+ -sr  <location>     Subject's certificate store location.
+                        <CurrentUser|LocalMachine>.  Default to 'CurrentUser'
+ -#   <number>       Serial Number from 1 to 2^31-1.  Default to be unique
+ -$   <authority>    The signing authority of the certificate
+                        <individual|commercial>
+ -n   <X509name>     Certificate subject X500 name (eg: CN=Fred Dews)
+ -?                  Return a list of basic options
+ -!                  Return a list of extended options
+
+c:\Temp\inflo-cert>makecert -sky exchange -r -n "CN=InfloRootCertificate" -pe -a sha1 -len 2048 -ss My "InfloRootCertificate.cer"
+Succeeded
+
+c:\Temp\inflo-cert>makecert -n "CN=InfloClientCertificate" -pe -sky exchange -m 96 -ss My -in "InfloRootCertificate" -is my -a sha1
+Succeeded
+
+
+Kuc@l@b@
+H@ssan
+Br@nch
+Gibb$
+$chmid
+$heaf
+Timch0
+Veronic@

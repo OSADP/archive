@@ -1,0 +1,1722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="ASN_r36">
+      <UniqueIdentifier>{4cb12017-64d1-4a7d-8de0-4e27d649643e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BSM_05.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Acceleration.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AccelerationConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AccelerationSet4Way.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AccelSteerYawRateConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AlaCarte.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AllInclusive.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AmbientAirPressure.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AmbientAirTemperature.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AntennaOffsetSet.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AntiLockBrakeStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Approach.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ApproachNumber.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ApproachObject.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\asn_codecs_prim.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\asn_SEQUENCE_OF.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\asn_SET_OF.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AuxiliaryBrakeStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AxleLocation.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\AxleWeight.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BarrierAttributes.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BarrierLane.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BasicSafetyMessage.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BasicSafetyMessageVerbose.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ber_decoder.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ber_tlv_length.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ber_tlv_tag.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BIT_STRING.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BLOB1_util.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BOOLEAN.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BrakeAppliedPressure.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BrakeAppliedStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BrakeBoostApplied.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BrakeSystemStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BSMblob.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BumperHeightFront.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BumperHeightRear.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\BumperHeights.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\CargoWeight.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Circle.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\CodeWord.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\CoefficientOfFriction.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ColorState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\CommonSafetyRequest.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ConfidenceSet.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ConnectsTo.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\constr_CHOICE.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\constr_SEQUENCE.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\constr_SEQUENCE_OF.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\constr_SET_OF.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\constr_TYPE.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\constraints.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Count.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\CrosswalkLane.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\CrosswalkLaneAttributes.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DataParameters.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DDate.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DDateTime.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DDay.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\der_encoder.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DescriptiveName.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DFullTime.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DHour.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DirectionOfUse.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DMinute.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DMonth.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DMonthDay.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DOffset.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DriveAxleLiftAirPressure.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DriveAxleLocation.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DriveAxleLubePressure.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DriveAxleTemperature.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DrivenLineOffset.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DrivingWheelAngle.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DSecond.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DSignalSeconds.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DSRC_ASN_Utils.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DSRCmsgID.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DTime.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DYear.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\DYearMonth.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Elevation.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ElevationConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\EmergencyDetails.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\EmergencyVehicleAlert.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\EssMobileFriction.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\EssPrecipRate.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\EssPrecipSituation.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\EssPrecipYesNo.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\EssSolarRadiation.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\EventFlags.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ExitService.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Extent.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ExteriorLights.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\FullPositionVector.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\FurtherInfoID.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\GenericSignage.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\GPSstatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Heading.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\HeadingConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\HeadingSlice.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\IA5String.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\IncidentResponseEquipment.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\INTEGER.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Intersection.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\IntersectionCollision.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\IntersectionID.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\IntersectionState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\IntersectionStatusObject.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ITIScodes.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ITIScodesAndText.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ITIStext.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\J1939data.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\LaneCount.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\LaneManeuverCode.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\LaneNumber.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\LaneSet.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\LaneWidth.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Latitude.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\LayerID.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\LayerType.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\LightbarInUse.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Location-quality.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Location-tech.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Longitude.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\MapData.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\MinuteOfTheYear.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\MinutesDuration.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\MovementState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\MsgCount.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\MsgCRC.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\MultiVehicleResponse.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\MUTCDCode.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\NativeEnumerated.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\NativeInteger.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\NMEA-Corrections.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\NMEA-MsgType.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\NMEA-Payload.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\NMEA-Revision.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\NodeList.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\NTCIPVehicleclass.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ObjectCount.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ObstacleDirection.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ObstacleDistance.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\OCTET_STRING.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Offsets.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistory.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-01.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-02.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-03.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-04.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-05.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-06.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-07.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-08.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-09.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-10.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PathPrediction.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Payload.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PayloadData.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PedestrianDetect.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PedestrianSignalState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\per_decoder.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\per_encoder.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\per_opentype.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\per_support.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Position3D.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PositionalAccuracy.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PositionConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PositionConfidenceSet.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PreemptState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Priority.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\PriorityState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ProbeDataManagement.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ProbeSegmentNumber.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ProbeVehicleData.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RainSensor.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RegionList.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RegionOffsets.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RegionPointSet.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RequestedItem.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ResponderGroupAffected.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ResponseType.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RoadSideAlert.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RoadSignID.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RTCM-Corrections.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RTCM-ID.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RTCM-Payload.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RTCM-Revision.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RTCMHeader.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RTCMmsg.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\RTCMPackage.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Sample.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ShapePointSet.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SignalControlZone.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SignalLightState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SignalReqScheme.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SignalRequest.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SignalRequestMsg.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SignalState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SignalStatusMessage.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SignPrority.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SirenInUse.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Snapshot.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SnapshotDistance.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SnapshotTime.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SPAT.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SpecialLane.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SpecialLaneAttributes.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SpecialSignalState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\Speed.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SpeedandHeadingandThrottleConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SpeedConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SpeedLimit.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\StabilityControlStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\StateConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SteeringAxleLubePressure.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SteeringAxleTemperature.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SteeringWheelAngle.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SteeringWheelAngleConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SteeringWheelAngleRateOfChange.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\SunSensor.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TemporaryID.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TermDistance.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TermTime.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ThrottleConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ThrottlePosition.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TimeConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TimeMark.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TireLeakageRate.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TireLocation.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TirePressure.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TirePressureThresholdDetection.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TireTemp.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TractionControlState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TrailerWeight.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TransitPreEmptionRequest.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TransitStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TransmissionAndSpeed.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TransmissionState.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TravelerInformation.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TravelerInfoType.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\TxTime.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\UniqueMSGID.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\URL-Base.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\URL-Link.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\URL-Short.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\ValidRegion.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleComputedLane.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleGroupAffected.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleHeight.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleIdent.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleLaneAttributes.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleLength.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleMass.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleReferenceLane.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleRequestStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleSafetyExtension.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleSize.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleStatusDeviceTypeTag.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleStatusRequest.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleType.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VehicleWidth.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VerticalAcceleration.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VerticalAccelerationThreshold.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\VINstring.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\WheelEndElectFault.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\WheelSensorStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\WiperRate.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\WiperStatus.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\WiperStatusFront.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\WiperStatusRear.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\WorkZone.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\xer_decoder.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\xer_encoder.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\xer_support.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\YawRate.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DSRC_TK\ASN_r36\YawRateConfidence.cpp">
+      <Filter>ASN_r36</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Acceleration.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AccelerationConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AccelerationSet4Way.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AccelSteerYawRateConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AlaCarte.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AllInclusive.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AmbientAirPressure.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AmbientAirTemperature.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AntennaOffsetSet.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AntiLockBrakeStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Approach.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ApproachNumber.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ApproachObject.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\asn_application.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\asn_codecs.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\asn_codecs_prim.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\asn_internal.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\asn_SEQUENCE_OF.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\asn_SET_OF.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\asn_system.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AuxiliaryBrakeStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AxleLocation.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\AxleWeight.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BarrierAttributes.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BarrierLane.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BasicSafetyMessage.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BasicSafetyMessageVerbose.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ber_decoder.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ber_tlv_length.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ber_tlv_tag.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BIT_STRING.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BLOB1_util.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BOOLEAN.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BrakeAppliedPressure.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BrakeAppliedStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BrakeBoostApplied.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BrakeSystemStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BSMblob.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BumperHeightFront.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BumperHeightRear.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\BumperHeights.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\CargoWeight.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Circle.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\CodeWord.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\CoefficientOfFriction.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ColorState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\CommonSafetyRequest.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ConfidenceSet.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ConnectsTo.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\constr_CHOICE.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\constr_SEQUENCE.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\constr_SEQUENCE_OF.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\constr_SET_OF.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\constr_TYPE.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\constraints.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Count.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\CrosswalkLane.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\CrosswalkLaneAttributes.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DataParameters.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DDate.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DDateTime.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DDay.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\der_encoder.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DescriptiveName.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DFullTime.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DHour.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DirectionOfUse.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DMinute.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DMonth.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DMonthDay.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DOffset.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DriveAxleLiftAirPressure.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DriveAxleLocation.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DriveAxleLubePressure.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DriveAxleTemperature.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DrivenLineOffset.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DrivingWheelAngle.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DSecond.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DSignalSeconds.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DSRC_ASN_Utils.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DSRCmsgID.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DTime.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DYear.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\DYearMonth.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Elevation.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ElevationConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\EmergencyDetails.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\EmergencyVehicleAlert.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\EssMobileFriction.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\EssPrecipRate.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\EssPrecipSituation.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\EssPrecipYesNo.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\EssSolarRadiation.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\EventFlags.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ExitService.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Extent.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ExteriorLights.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\FullPositionVector.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\FurtherInfoID.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\GenericSignage.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\GPSstatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Heading.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\HeadingConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\HeadingSlice.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\IA5String.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\IncidentResponseEquipment.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\INTEGER.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Intersection.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\IntersectionCollision.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\IntersectionID.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\IntersectionState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\IntersectionStatusObject.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ITIScodes.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ITIScodesAndText.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ITIStext.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\J1939data-org.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\J1939data.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\LaneCount.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\LaneManeuverCode.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\LaneNumber.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\LaneSet.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\LaneWidth.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Latitude.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\LayerID.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\LayerType.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\LightbarInUse.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Location-quality.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Location-tech.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Longitude.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\MapData.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\MinuteOfTheYear.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\MinutesDuration.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\MovementState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\MsgCount.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\MsgCRC.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\MultiVehicleResponse.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\MUTCDCode.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\NativeEnumerated.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\NativeInteger.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\NMEA-Corrections.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\NMEA-MsgType.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\NMEA-Payload.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\NMEA-Revision.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\NodeList.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\NTCIPVehicleclass.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ObjectCount.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ObstacleDirection.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ObstacleDistance.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\OCTET_STRING.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Offsets.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistory.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-01.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-02.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-03.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-04.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-05.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-06.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-07.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-08.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-09.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathHistoryPointType-10.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PathPrediction.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Payload.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PayloadData.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PedestrianDetect.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PedestrianSignalState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\per_decoder.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\per_encoder.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\per_opentype.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\per_support.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Position3D.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PositionalAccuracy.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PositionConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PositionConfidenceSet.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PreemptState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Priority.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\PriorityState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ProbeDataManagement.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ProbeSegmentNumber.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ProbeVehicleData.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RainSensor.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RegionList.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RegionOffsets.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RegionPointSet.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RequestedItem.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ResponderGroupAffected.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ResponseType.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RoadSideAlert.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RoadSignID.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RTCM-Corrections.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RTCM-ID.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RTCM-Payload.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RTCM-Revision.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RTCMHeader.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RTCMmsg.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\RTCMPackage.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Sample.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ShapePointSet.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SignalControlZone.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SignalLightState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SignalReqScheme.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SignalRequest.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SignalRequestMsg.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SignalState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SignalStatusMessage.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SignPrority.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SirenInUse.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Snapshot.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SnapshotDistance.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SnapshotTime.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SPAT.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SpecialLane.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SpecialLaneAttributes.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SpecialSignalState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\Speed.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SpeedandHeadingandThrottleConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SpeedConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SpeedLimit.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\StabilityControlStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\StateConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\stdafx.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SteeringAxleLubePressure.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SteeringAxleTemperature.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SteeringWheelAngle.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SteeringWheelAngleConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SteeringWheelAngleRateOfChange.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\SunSensor.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TemporaryID.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TermDistance.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TermTime.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ThrottleConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ThrottlePosition.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TimeConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TimeMark.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TireLeakageRate.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TireLocation.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TirePressure.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TirePressureThresholdDetection.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TireTemp.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TractionControlState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TrailerWeight.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TransitPreEmptionRequest.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TransitStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TransmissionAndSpeed.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TransmissionState.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TravelerInformation.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TravelerInfoType.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\TxTime.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\UniqueMSGID.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\URL-Base.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\URL-Link.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\URL-Short.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\ValidRegion.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleComputedLane.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleGroupAffected.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleHeight.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleIdent.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleLaneAttributes.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleLength.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleMass.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleReferenceLane.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleRequestStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleSafetyExtension.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleSize.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleStatusDeviceTypeTag.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleStatusRequest.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleType.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VehicleWidth.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VerticalAcceleration.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VerticalAccelerationThreshold.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\VINstring.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\WheelEndElectFault.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\WheelSensorStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\WiperRate.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\WiperStatus.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\WiperStatusFront.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\WiperStatusRear.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\WorkZone.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\xer_decoder.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\xer_encoder.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\xer_support.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\YawRate.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DSRC_TK\ASN_r36\YawRateConfidence.h">
+      <Filter>ASN_r36</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

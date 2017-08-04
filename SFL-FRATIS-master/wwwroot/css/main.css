@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+.ui-widget{font-size:14px!important;} 
+
+html, body, #map-canvas 
+{
+    font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	z-index: 0;
+}
+
+#services
+{
+	overflow-y:scroll;	
+	overflow-x:hidden;
+}
+
+#toolbarbg
+{
+	background-color: #FEF0F5;
+	width: 100%;
+	height: 70px;
+	position:absolute;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 10;
+	opacity:0.75;
+	filter:alpha(opacity=75);
+}
+
+#driving_overlay
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 999999999999;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border:5px dashed red;
+} 
+
+#gps_image_div
+{
+	width: 42px;
+	height: 48px;
+	position:absolute;
+	top: 170px;
+	right: 10px;
+	z-index: 50; 
+	opacity:0.75;
+	filter:alpha(opacity=75);
+}
+
+.tooltip
+{
+	background-color: #FFFFFF; 
+	border-style:solid;
+	border-width:1px;
+	border-color: #000000;
+	padding: 5px;
+	z-index: 1000;
+}
+
+#toolbar 
+{
+	border-bottom:2px solid;
+	border-color: #000;
+	width: 100%;
+	height: 70px;
+	position:absolute;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 11;
+}
+
+.ui-icon-map-osm{ width:24px; height:20px; background-image: url(../images/map_osm.jpg) !important; }
+.ui-icon-map-satellite{ width:24px; height:20px; background-image: url(../images/map_satelite.jpg) !important; }
+.ui-icon-map-road{ width:24px; height:20px; background-image: url(../images/map_road.jpg) !important; }
+
+.ui-textfield {
+	font-size: 16px !important;
+    color: inherit;
+    background: none;
+    text-align: inherit;
+    outline: none;
+    cursor: text;
+}
+
+.phdr 
+{
+    vertical-align: middle;
+    padding:6px;
+    cursor: pointer;
+}
+
+#menuContainer
+{
+	width:150px; 
+	position:fixed; 
+	z-index:100;
+}
+
+#userDialog
+{
+	z-index: 100001;
+}
+
+#map_filter_holder
+{
+	position:fixed; 
+	top:100px; 
+	left: -4px; 
+	width:160px; 
+	background-color:#FFFFFF;
+}
+
+#map_filter_holder_phone
+{
+	position:fixed; 
+	top:0px; 
+	left: -4px; 
+	width:160px; 
+	background-color:#FFFFFF;
+}
+
+#map_filter_holder_phone label
+{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#map_filter_holder_phone img
+{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#map_actions_holder
+{
+	position:fixed; 
+	top: 100px; 
+	right: -4px; 
+	width: 160px; 
+	background-color:#FFFFFF;
+	z-index: 100000;
+}
+#map_actions_holder_phone
+{
+	position:fixed; 
+	top: 0px; 
+	right: -4px; 
+	width: 150px; 
+	background-color:#FFFFFF;
+	z-index: 100000;
+}
+
+#map_actions_holder_phone label
+{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#actions_header
+{
+	padding-top:15px;
+	padding-bottom:15px;	
+}
+
+#filter_header
+{
+	padding-top:15px;
+	padding-bottom:15px;	
+}
+
+.menu_icon
+{
+	position:absolute; 
+	top:2px; 
+	left:2px;	
+}
+
+#warningDialog
+{
+	border-width: 3px;
+	padding:10px;
+	text-align:center;
+	vertical-align:middle;
+	position:fixed;
+	width:50%; 
+	top:45%; 
+	left:25%;	
+	z-index: 500;
+}
+
+#errorDialog
+{
+	border-width: 3px;
+	padding:10px;
+	text-align:center;
+	vertical-align:middle;
+	position:fixed;
+	width:50%; 
+	top:45%; 
+	left:25%;	
+	z-index: 500;
+}
+
+#infoDialog
+{
+	border-width: 3px;
+	padding:1%;
+	text-align:center;
+	vertical-align:middle;
+	position:fixed;
+	width:80%; 
+	top:5%; 
+	left:9%;	
+	z-index: 200;
+}
+
+input[type=checkbox], input[type=radio]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  margin:5px;
+}
+
+.big-checkbox
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2) !important; /* IE */
+  -moz-transform: scale(2) !important; /* FF */
+  -webkit-transform: scale(2) !important; /* Safari and Chrome */
+  -o-transform: scale(2) !important; /* Opera */
+  margin:5px;
+}
+
+.label
+{
+	padding: 5px;	
+}
+
+.parent-container
+{
+	margin: 5px;
+}
+
+.reportTextBox
+{
+	padding: 5px;
+	width: 100%;
+}
+
+.menuButton
+{
+	padding: 5px !important;
+}
+
+.cancelButton
+{
+	padding: 5px !important;
+}
+
+.submitButton
+{
+	padding: 15px !important;
+	background: #BFFF95 !important;
+	color: #000000 !important;
+}
+
+.finishButton
+{
+	padding: 15px !important;
+	background: #71B5FF !important; 
+	color: #000000 !important;
+}
+
+#map_type
+{
+	position:fixed; 
+	right: 5px; 
+	bottom:20px;
+}
+
+.drop-shadow 
+{
+-moz-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}

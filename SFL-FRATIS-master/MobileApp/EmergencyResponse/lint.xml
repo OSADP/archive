@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/fratis/emergencyresponse/EmergencyResponse.java" />
+    </issue>
+    <issue id="Wakelock">
+        <ignore path="src/com/fratis/emergencyresponse/EmergencyResponse.java" />
+    </issue>
+</lint>

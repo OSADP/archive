@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="InfloCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="BsmWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="StorageAccountConnectionString" value="DefaultEndpointsProtocol=http;AccountName=inflodevdata;AccountKey=lWJDQAQ7RU78I1XCg4gvlL1RdQt74I48ZzD29zXukwQcXoSLIFNt18y2dXirVrivjuyIFWbNJq051OEKoNrn2Q==" />
+      <Setting name="InfloDatabaseConnectionString" value="metadata=res://*/InfloDb.InfloDb.csdl|res://*/InfloDb.InfloDb.ssdl|res://*/InfloDb.InfloDb.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=172.16.7.100;initial catalog=inflodev-db-sql;user id=inflo;password=B@ttelle;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+      <Setting name="Stats_LogStatisticalData" value="false" />
+      <Setting name="Stats_MinimalLoggedElapsedTime" value="5000" />
+    </ConfigurationSettings>
+  </Role>
+  <!--Role name="ArchiverWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=inflodevdata;AccountKey=lWJDQAQ7RU78I1XCg4gvlL1RdQt74I48ZzD29zXukwQcXoSLIFNt18y2dXirVrivjuyIFWbNJq051OEKoNrn2Q==" />
+      <Setting name="StorageAccountConnectionString" value="DefaultEndpointsProtocol=http;AccountName=inflodevdata;AccountKey=lWJDQAQ7RU78I1XCg4gvlL1RdQt74I48ZzD29zXukwQcXoSLIFNt18y2dXirVrivjuyIFWbNJq051OEKoNrn2Q==" />
+      <Setting name="InfloDatabaseConnectionString" value="metadata=res://*/InfloDb.InfloDb.csdl|res://*/InfloDb.InfloDb.ssdl|res://*/InfloDb.InfloDb.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=172.16.7.100;initial catalog=inflodev-db-sql;user id=inflo;password=B@ttelle;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="DmsWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=inflodevdata;AccountKey=lWJDQAQ7RU78I1XCg4gvlL1RdQt74I48ZzD29zXukwQcXoSLIFNt18y2dXirVrivjuyIFWbNJq051OEKoNrn2Q==" />
+      <Setting name="StorageAccountConnectionString" value="DefaultEndpointsProtocol=http;AccountName=inflodevdata;AccountKey=lWJDQAQ7RU78I1XCg4gvlL1RdQt74I48ZzD29zXukwQcXoSLIFNt18y2dXirVrivjuyIFWbNJq051OEKoNrn2Q==" />
+      <Setting name="InfloDatabaseConnectionString" value="metadata=res://*/InfloDb.InfloDb.csdl|res://*/InfloDb.InfloDb.ssdl|res://*/InfloDb.InfloDb.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=172.16.7.100;initial catalog=inflodev-db-sql;user id=inflo;password=B@ttelle;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="TmeSurrogateWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=inflodevdata;AccountKey=lWJDQAQ7RU78I1XCg4gvlL1RdQt74I48ZzD29zXukwQcXoSLIFNt18y2dXirVrivjuyIFWbNJq051OEKoNrn2Q==" />
+      <Setting name="StorageAccountConnectionString" value="DefaultEndpointsProtocol=http;AccountName=inflodevdata;AccountKey=lWJDQAQ7RU78I1XCg4gvlL1RdQt74I48ZzD29zXukwQcXoSLIFNt18y2dXirVrivjuyIFWbNJq051OEKoNrn2Q==" />
+      <Setting name="InfloDatabaseConnectionString" value="metadata=res://*/InfloDb.InfloDb.csdl|res://*/InfloDb.InfloDb.ssdl|res://*/InfloDb.InfloDb.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=172.16.7.100;initial catalog=inflodev-db-sql;user id=inflo;password=B@ttelle;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+    </ConfigurationSettings>
+  </Role-->
+  <Role name="InfloWebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="StorageAccountConnectionString" value="DefaultEndpointsProtocol=http;AccountName=inflodevdata;AccountKey=lWJDQAQ7RU78I1XCg4gvlL1RdQt74I48ZzD29zXukwQcXoSLIFNt18y2dXirVrivjuyIFWbNJq051OEKoNrn2Q==" />
+      <Setting name="InfloDatabaseConnectionString" value="metadata=res://*/InfloDb.InfloDb.csdl|res://*/InfloDb.InfloDb.ssdl|res://*/InfloDb.InfloDb.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=172.16.7.100;initial catalog=inflodev-db-sql;user id=inflo;password=B@ttelle;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+      <Setting name="AlertSearchDistance" value="0.1" />
+      <Setting name="QWarnAlertDistance" value="1.0" />
+    </ConfigurationSettings>
+  </Role>
+  <NetworkConfiguration>
+    <VirtualNetworkSite name="inflo-virtual-network" />
+    <AddressAssignments>
+      <InstanceAddress roleName="BsmWorkerRole">
+        <Subnets>
+          <Subnet name="Inflo-Roles" />
+        </Subnets>
+      </InstanceAddress>
+      <InstanceAddress roleName="InfloWebRole">
+        <Subnets>
+          <Subnet name="Inflo-Roles" />
+        </Subnets>
+      </InstanceAddress>
+    </AddressAssignments>
+  </NetworkConfiguration>
+</ServiceConfiguration>

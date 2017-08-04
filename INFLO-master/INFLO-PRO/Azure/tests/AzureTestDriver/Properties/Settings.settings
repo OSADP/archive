@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AzureTestDriver.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MobileProxiesCount" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MobileBsmWebApi" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://inflo-bsm-dev.azurewebsites.net/api/bsm</Value>
+    </Setting>
+    <Setting Name="MobileBsmBundleMaxSize" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="MobileBsmBundlerTimeout" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">6500</Value>
+    </Setting>
+    <Setting Name="MobileBsmGenerateInterval" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="MobileBsmMaxSendWorkerCount" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="MobileI2VWebApi" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost/webapi/i2v</Value>
+    </Setting>
+    <Setting Name="MobileI2VPollInterval" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="BSMBerFileLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\milky-way\projects\NSD\INFLO\Team Collaboration\msgs</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

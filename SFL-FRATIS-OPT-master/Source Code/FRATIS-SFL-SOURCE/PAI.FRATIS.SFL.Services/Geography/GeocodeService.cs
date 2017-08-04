@@ -1,0 +1,53 @@
+﻿//    Copyright 2014 Productivity Apex Inc.
+//        http://www.productivityapex.com/
+//
+//    Licensed under the Apache License, Version 2.0 (the "License");
+//    you may not use this file except in compliance with the License.
+//    You may obtain a copy of the License at
+//
+//        http://www.apache.org/licenses/LICENSE-2.0
+//
+//    Unless required by applicable law or agreed to in writing, software
+//    distributed under the License is distributed on an "AS IS" BASIS,
+//    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//    See the License for the specific language governing permissions and
+//    limitations under the License.
+
+using System;
+
+//using PAI.FRATIS.Wrappers.WebFleet;
+
+//namespace PAI.FRATIS.SFL.Services.Geography
+//{
+//    public class GeocodeService : IGeocodeService
+//    {
+//        private readonly IWebFleetAddressService _webFleetAddressService;
+
+//        public GeocodeService(IWebFleetAddressService webFleetAddressService)
+//        {
+//            _webFleetAddressService = webFleetAddressService;
+//        }
+
+//        public GeocodeResult Geocode(string completeAddress)
+//        {
+//            throw new NotImplementedException();
+//        }
+
+//        public GeocodeResult Geocode(string houseNumber, string address, string city, string state, string zip)
+//        {
+//            var geocode = _webFleetAddressService.GeocodeAddress(city, zip, address, houseNumber);
+//            try
+//            {
+//                return new GeocodeResult()
+//                    {
+//                        Latitude = geocode.Latitude.Value, 
+//                        Longitude = geocode.Longitude.Value,
+//                    };                
+//            }
+//            catch(Exception ex)
+//            {
+//                return new GeocodeResult();
+//            }
+//        }
+//    }
+//}

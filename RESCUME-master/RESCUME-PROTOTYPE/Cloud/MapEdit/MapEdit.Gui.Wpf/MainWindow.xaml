@@ -1,0 +1,185 @@
+﻿<Window x:Class="MapEdit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        Title="Map Edit GUI" Height="768" Width="1024" WindowStartupLocation="CenterScreen">
+	<Window.Resources>
+		<!--<ControlTemplate x:Key="DefaultPinTemplate">
+			<Grid>
+				<Ellipse Fill="Red" Width="11" Height="11" />
+			</Grid>
+		</ControlTemplate>
+		<ControlTemplate x:Key="SelectedPinTemplate">
+			<Grid>
+				<Ellipse Fill="blue" Width="12" Height="12" >
+				</Ellipse>
+			</Grid>
+		</ControlTemplate>-->
+		<ControlTemplate x:Key="SelectedPinTemplate">
+			<Grid>
+				<Polygon Points="0,0 16,6  0,12" Stroke="Black" Fill="Blue"  Width="16" Height="12" >
+					<Polygon.RenderTransform>
+						<RotateTransform x:Name="RotateTransform" Angle="0" CenterX="7" CenterY="7"></RotateTransform>
+					</Polygon.RenderTransform>
+				</Polygon>
+			</Grid>
+		</ControlTemplate>
+		<ControlTemplate x:Key="DefaultPinTemplate">
+			<Grid>
+				<Polygon Points="0,0 16,6  0,12" Stroke="Black" Fill="Green"  Width="16" Height="12" >
+					<Polygon.RenderTransform>
+						<RotateTransform x:Name="RotateTransform" Angle="0" CenterX="7" CenterY="7"></RotateTransform>
+					</Polygon.RenderTransform>
+				</Polygon>
+			</Grid>
+		</ControlTemplate>
+		<ControlTemplate x:Key="FirstPinTemplate">
+			<Grid>
+				<Polygon Points="0,0 16,6  0,12" Stroke="Black" Fill="Green"  Width="16" Height="12" >
+					<Polygon.RenderTransform>
+						<RotateTransform x:Name="RotateTransform" Angle="0" CenterX="7" CenterY="7"></RotateTransform>
+					</Polygon.RenderTransform>
+				</Polygon>
+			</Grid>
+		</ControlTemplate>
+		<ControlTemplate x:Key="LastPinTemplate">
+			<Grid>
+				<Polygon Points="0,0 0,12 12,12, 12,0" Stroke="Black" Fill="Red"  Width="12" Height="12"  />
+			</Grid>
+		</ControlTemplate>
+		<ContextMenu x:Key="MyContextMenu">
+			<MenuItem Command="Cut">
+				<!--<MenuItem.Icon>
+					<Image Source="Images/cut.png" />
+				</MenuItem.Icon>-->
+			</MenuItem>
+			<MenuItem Command="Copy">
+				<!--<MenuItem.Icon>
+					<Image Source="Images/copy.png" />
+				</MenuItem.Icon>-->
+			</MenuItem>
+			<MenuItem Command="Paste">
+				<!--<MenuItem.Icon>
+					<Image Source="Images/paste.png" />
+				</MenuItem.Icon>-->
+			</MenuItem>
+		</ContextMenu>
+	</Window.Resources>
+	<DockPanel>
+		<Menu DockPanel.Dock="Top" IsMainMenu="True">
+			<MenuItem Header="_File">
+				<MenuItem Header="_Open File (UBlox) ..." Click="MenuItem_OpenFromFile_OnClick"/>
+				<MenuItem Header="_Save File (UBlox) ..." Click="MenuItem_SaveToFile_OnClick"/>
+				<Separator />
+				<MenuItem Header="_Open from Cloud..." Click="MenuItem_OpenFromCloud_OnClick"/>
+				<MenuItem Header="_Save to Cloud..." Click="MenuItem_SaveToCloud_OnClick"/>
+				<MenuItem Header="_Delete from Cloud..." Click="MenuItem_DeleteFromCloud_OnClick"/>
+				<Separator/>
+				<MenuItem Header="_Clear Tracks" Click="MenuItem_ClearTracks_OnClick"/>
+				<Separator />
+				<MenuItem Header="_Exit" Click="exitMenuItem_Click"/>
+			</MenuItem>
+			<MenuItem Header="_Edit">
+				<MenuItem Header="View_Aerial" Click="viewAerial_Click"/>
+				<MenuItem Header="View_Hybrid" Click="viewHybrid_Click"/>
+				<MenuItem Header="View_Map" Click="viewMap_Click"/>
+				<Separator />
+				<MenuItem Header="Sample_Filter" Click="MenuItem_OnClick"/>
+			</MenuItem>
+			<MenuItem Header="_Help" />
+		</Menu>
+		<!--<DockPanel DockPanel.Dock="Top" Margin="10,10,10,10" LastChildFill="True">
+			<Label DockPanel.Dock="Left" x:Name="startTimeLabel" Content="Start" Margin="2"/>
+			<Label DockPanel.Dock="Right" x:Name="endTimeLabel" Content="End"  Margin="2"/>
+			<TextBlock DockPanel.Dock="Bottom" x:Name="PinContent">test</TextBlock>
+			<Slider x:Name="timeSlider" ValueChanged="Slider_ValueChanged_1" Maximum="100" SmallChange="1"/>
+		</DockPanel>-->
+		<Rectangle DockPanel.Dock="top" Height="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+
+		<DockPanel DockPanel.Dock="Bottom" Margin="5">
+			<TextBlock DockPanel.Dock="Left" x:Name="StatusBlock" MinWidth="200"></TextBlock>
+			<ProgressBar x:Name="Progress" Height="20"></ProgressBar>
+		</DockPanel>
+
+		<StackPanel DockPanel.Dock="Left" Margin="5" MinWidth="150">
+			<TextBlock>Options:</TextBlock>
+			<Rectangle Stroke="Black" StrokeThickness="2" Margin="5"></Rectangle>
+			<Label>Offest Dist (KM)</Label>
+			<TextBox Name="Offest" KeyUp="Offest_OnKeyUp">0.0036576</TextBox>
+			<Rectangle Stroke="Black" StrokeThickness="2" Margin="5"></Rectangle>
+			<TextBlock>Point Data:</TextBlock>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Time:</TextBlock>
+				<TextBlock x:Name="Time">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Lat:</TextBlock>
+				<TextBlock x:Name="Lat">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Lon:</TextBlock>
+				<TextBlock x:Name="Lon">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Quality:</TextBlock>
+				<TextBlock x:Name="Quality">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>SatCount:</TextBlock>
+				<TextBlock x:Name="SatCount">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>HDOP:</TextBlock>
+				<TextBlock x:Name="Hdop">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Altitude:</TextBlock>
+				<TextBlock x:Name="Altitude">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Dgps Station Id:</TextBlock>
+				<TextBlock x:Name="DgpsStationId">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Last DGPS:</TextBlock>
+				<TextBlock x:Name="DgpsAge">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Lane Order:</TextBlock>
+				<TextBlock x:Name="laneOrder">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Posted Speed:</TextBlock>
+				<TextBlock x:Name="postedSpeed">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Lane Direction:</TextBlock>
+				<TextBlock x:Name="laneDirection">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Lane Type:</TextBlock>
+				<TextBlock x:Name="laneType">.</TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock>Number of Points:</TextBlock>
+				<TextBlock x:Name="numberOfPoints">.</TextBlock>
+			</StackPanel>
+			<!--<Grid>
+				<Polygon Points="0,0 0,12 12,12, 12,0" Stroke="Black" Fill="Red"  Width="12" Height="12" />
+				<Polygon Points="0,0 16,6  0,12" Stroke="Black" Fill="Green"  Width="16" Height="12" >
+					<Polygon.RenderTransform>
+						<RotateTransform x:Name="RotateTransform" Angle="0" CenterX="6" CenterY="6"></RotateTransform>
+					</Polygon.RenderTransform>
+				</Polygon>
+			</Grid>
+			<Grid>
+				<Ellipse Fill="blue" Width="12" Height="12" >
+				</Ellipse>
+			</Grid>-->
+		</StackPanel>
+
+		<m:Map x:Name="myMap" Margin="5" CredentialsProvider="Ar1AC2in-WgfE0LztN9dAq2LCe9sN3vklqSF5rI78H8YTCcl7dDBhhA2cqmzFVhL"></m:Map>
+
+	</DockPanel>
+</Window>
+

@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:onClick="onQWarnAlertClick"
+    tools:ignore="HardcodedText" >
+    
+    <View 
+        android:layout_height="3dp"
+        android:layout_width="match_parent"
+        android:background="#999999" />
+    
+    <!-- V2V Queued Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="onQWarnAlertClick"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:gravity="right|bottom"
+            android:layout_gravity="right|bottom"
+            android:text="V2V Queued"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="#ffffff"
+       		android:paddingRight="10dp" />
+		
+        <org.battelle.inflo.infloui.ui.LEDDisplay
+            android:id="@+id/dashboard_ledV2VQueued"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="right|center_vertical"
+            android:layout_gravity="right|center_vertical" />
+
+    </LinearLayout>
+    
+    
+	<TextView
+		android:id="@+id/dashboard_txtQWarnText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:textColor="#ffffff"
+		android:textAllCaps="true"
+		android:text="TEST" />
+    
+    <!-- DISTANCE TO BOQ -->
+    <LinearLayout 
+	    android:id="@+id/dashboard_layoutBoqInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        	<include layout="@layout/activity_dashboard_dist_boq"/>
+        </RelativeLayout>
+        
+        
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:paddingBottom="5dp"
+	        android:paddingTop="3dp"
+	        android:onClick="onQWarnAlertClick" >
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="left|center_vertical"
+	            android:layout_gravity="left|center_vertical"
+	            android:text="\n"
+	            android:textAllCaps="true"
+	            android:textSize="16sp"
+	            android:textStyle="italic"
+	            android:layout_weight="0.6"
+	            android:textColor="#ffffff" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+    <!-- TIME TILL FOQ -->
+    <LinearLayout 
+        android:id="@+id/dashboard_layoutFoqInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        	<include layout="@layout/activity_dashboard_dist_foq"/>
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#ff4343" />
+        
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:paddingBottom="5dp"
+	        android:paddingTop="3dp"
+	        android:onClick="onQWarnAlertClick" >
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="left|center_vertical"
+	            android:layout_gravity="left|center_vertical"
+	            android:text="Time Till Front\nOf Queue"
+	            android:textAllCaps="true"
+	            android:textSize="16sp"
+	            android:textStyle="italic"
+	            android:layout_weight="0.6"
+	            android:textColor="#ffffff" />
+	
+	        <TextView
+	            android:id="@+id/dashboard_txtTimeToFOQ"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="right|center_vertical"
+	            android:layout_gravity="right|center_vertical"
+	            android:textAllCaps="true"
+	            android:textSize="36sp"
+	            android:textColor="#ffffff" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="right|center_vertical"
+	            android:layout_gravity="right|center_vertical"
+	            android:textSize="24sp"
+	            android:textColor="#ffffff"
+	            android:text=" min" />
+	
+	    </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>
+    
