@@ -132,7 +132,7 @@ users to estimate the costs of proposed pilot deployments at a high level.
 
 Status: Beta
 
-Tags: transporation, connected vehicles, data emulator, BSM
+Tags: transporation, connected vehicles, cost planning
 
 Labor Hours: 0
 
