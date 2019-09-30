@@ -1,4 +1,4 @@
-﻿CO-PILOT 1.0 Overview
+﻿CO-PILOT 1.0
 ====================================
 The Cost Overview for Planning Ideas and Logical Organization Tool ("CO-PILOT") is designed to support 
 stakeholders considering connected vehicle pilot deployments. CO-PILOT is a web-based tool that allows 
@@ -16,18 +16,9 @@ detailed spreadsheet.
 
 The tool can be found at https://co-pilot.noblis.org/CVP_CET/
 
-
-
-
-
-CO-PILOT Version 1.0
+Release Notes
 ------------------------------------
 This version is the initial release. Any bugs found will be addressed in future releases. 
-
-
-
-
-
 
 
 License Information
@@ -46,16 +37,7 @@ KIND, either express or implied. See the License for the specific language gover
 
 permissions and limitations under the License.
 
-
-
-
-
-
-
-
-
-
-System Requirements
+Configuration
 ------------------------------------ 
 CO-PILOT can run on all operating systems and supports all major web browsers. 
 
@@ -79,41 +61,13 @@ Recommended Software:
 	Available for download at http://www.pgadmin.org/download/
 	
  
-
-	
-	
-	
-	
-	
-	
-	
-	
-Installation/Removal Instructions
-------------------------------------
-
-N/A
-
-	
-	
-	
-	
-	
-	
-	
-	
-Getting Started
+Installation
 ------------------------------------ 
 Within the CO-PILOT project folder:
 
 A User Guide for the tool titled "CO-PILOT_UserGuide_1_15.pptx" can be found in the csv folder (Co-Pilot\web\resources\noblis\csv)
 All source code (java and configuration files) is located in the "src" folder.
 All web files (HTML, CSS, javascript as well as the jquery and highcharts packages) are located in the "web" folder. 
-
-
-
-
-
-
 
 Data Input/Output
 ------------------------------------
@@ -125,13 +79,6 @@ CO-PILOT then produces three valuable outputs:
 2. A pie chart displaying the percentages of costs associated with each deployment building block.
 3. A cost probability distribution graph displaying the projected deployment costs.
 
- 
-
-
-
-
-
-
 Additional Features
 ------------------------------------  
 -Users have the ability to upload an existing CO-PILOT output spreadsheet to expedite data entry for future runs.
@@ -142,13 +89,6 @@ Additional Features
 (i.e for components not listed in the database)  
 
 Note: User-input costs added with the above two features will be fixed rather than simulated.
-
-
-
-
-
-
-
 
 
 Documentation
@@ -167,24 +107,9 @@ The documents can be retrieved from your downloaded copy from the following path
 recording and webinar slide deck are embedded in the help.html page in the web folder. You can also access the Help page 
 directly at https://co-pilot.noblis.org/CVP_CET/help.html and download the resources from there.  
 
-
-
-
 Web Sites
 ------------------------------------
-CO-PILOT is distributed through the USDOT's JPO
-Open Source Application Development Portal (OSADP)
-
-http://itsforge.net/
-
-
-
 URL to tool: https://co-pilot.noblis.org/CVP_CET/
-
-
-
-
-
 
 Disclaimer
 ------------------------------------
@@ -193,8 +118,25 @@ cost estimation. Outputs are intended to support long-range budget planning and 
 proposals required for Concept Development (Phase 1), Design/Build/Test (Phase 2), or Maintain and Operate (Phase 3). 
 
 
-
-
 Support Contact
 ------------------------------------
 For any technical support or inquiries regarding CO-PILOT, please e-mail co-pilot@noblis.org
+
+Code.gov Info
+----------------
+Agency: DOT
+
+Short Description: The Cost Overview for Planning Ideas and Logical Organization Tool ("CO-PILOT") is designed to support 
+stakeholders considering connected vehicle pilot deployments. CO-PILOT is a web-based tool that allows 
+users to estimate the costs of proposed pilot deployments at a high level. 
+
+Status: Beta
+
+Tags: transporation, connected vehicles, data emulator, BSM
+
+Labor Hours: 0
+
+Contact Name: James O'Hara
+
+Contact Phone: 703-610-1632
+
