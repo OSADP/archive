@@ -8,6 +8,12 @@ The DMA performance measurement application estimates mode-independent, trip-spe
 The output data are stored in a SQLite Database.  The database includes both the input as well as the output information.  The input tables are an echo of the user inputs to allow easy access to the input data in the database.  For detailed information on the input and output files, please refer sections on Input Data and Output Data.
 
 
+Release Notes
+------------------------------------
+Initial release version 1.0 
+The DMA performance measurement application estimates mode-independent, trip-based system productivity and traveler mobility performance measures.  The application was developed by making use of trip-based system performance measure algorithms developed as part of the USDOT’s Integrated Corridor Management (ICM) Program [1] and adapting them for use with observed data to measure impact in mobility and productivity.  The algorithms developed under ICM, estimate key measures of corridor performance (delay, travel time reliability, and throughput) from time-variant traffic simulation outputs.
+
+
 License information
 -------------------
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
@@ -35,9 +41,23 @@ The DMA performance measurement application software is packaged with Word based
 "PerformanceMeasuresPrototypeAppGuidelines_v1.0" that contains all information about background
 purpose, benefits, objectives, inputs/outputs, how to run the software and requirements for the software.
 
-Web sites
----------
-The DMA performance measurement applicatio software is distributed through the USDOT's JPO
-Open Source Application Development Portal (OSADP)
+Support Contact
+------------------------------------
+Key contributors to the development of the Preformance Measures Prototype software 1.0 include:
+- Jim Larkin, Meenakshy Vasudevan, and Karl Wunderlich of Noblis.
 
-http://itsforge.net/ 
+Code.gov Info
+----------------
+Agency: DOT
+
+Short Description: The DMA performance measurement application estimates mode-independent, trip-based system productivity and traveler mobility performance measures.
+
+Status: Beta
+
+Tags: transporation, connected vehicles, cost planning
+
+Labor Hours: 0
+
+Contact Name: Jim Larkin
+
+Contact Phone: 202-863-2978
